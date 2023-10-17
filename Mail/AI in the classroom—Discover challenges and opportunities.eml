@@ -1,0 +1,1535 @@
+Received: from IA1PR20MB4754.namprd20.prod.outlook.com (2603:10b6:208:3ee::15)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023
+ 15:01:41 +0000
+Received: from DM6PR17CA0024.namprd17.prod.outlook.com (2603:10b6:5:1b3::37)
+ by IA1PR20MB4754.namprd20.prod.outlook.com (2603:10b6:208:3ee::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.45; Thu, 12 Oct
+ 2023 15:01:36 +0000
+Received: from DS1PEPF00017098.namprd05.prod.outlook.com
+ (2603:10b6:5:1b3:cafe::13) by DM6PR17CA0024.outlook.office365.com
+ (2603:10b6:5:1b3::37) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.27 via Frontend
+ Transport; Thu, 12 Oct 2023 15:01:36 +0000
+Authentication-Results: spf=pass (sender IP is 172.82.209.68)
+ smtp.mailfrom=adobe-campaign.com; dkim=pass (signature was verified)
+ header.d=info.wiley.com;dmarc=pass action=none
+ header.from=info.wiley.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of adobe-campaign.com
+ designates 172.82.209.68 as permitted sender)
+ receiver=protection.outlook.com; client-ip=172.82.209.68;
+ helo=r68.info.wiley.com; pr=C
+Received: from r68.info.wiley.com (172.82.209.68) by
+ DS1PEPF00017098.mail.protection.outlook.com (10.167.18.102) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Thu, 12 Oct 2023 15:01:35 +0000
+Return-Path: wileypublishing-mid-prod7@adobe-campaign.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=info.wiley.com;
+	s=wileypublishing; t=1697122894;
+	bh=Oog0oJp/cMB1+85tBCZICk0aDScYFE28tJI6MV6FVq0=;
+	h=From:Subject:Date:To:MIME-Version:Message-ID:Content-Type;
+	b=SwD4rAArdnbSShka8H5ffdfQ+tSN7ercyRE2ekCtstkG7liJudAtK6L/xDhyWmdM5
+	 /misZW2Ia5H/om5vX4+fK1FriPaPxMacQ/yHkL6madpO+mBBiQssBzUgfoIMbKZD73
+	 PzLC5VvUt+h6UGEAvxrm6GRr72QuozUPJbDlYUWZaw2tBHilexePc/71LMpc+Tklke
+	 GpUbkS4Vh/ZlHSG/6PWskJEsFGHQeZE2RLXOiQMjoMnaP4G818NcCqJamKq4qdudZ/
+	 0+uEnwt5addvGw9ACK/X6AKAeF6p03FR4o7rzT4aK7TAKA6IEEz3yTZIq+D9z6ZO0+
+	 UoLkW8FvozqMA==
+X-MSFBL: dNGc9Hgng5gC3fivmmtiI6kI685YnCCC47due4Spoas=|eyJyY3B0X21ldGEiOns
+	gImluIjogIndpbGV5cHVibGlzaGluZ19taWRfcHJvZDciLCAiciI6ICJlZ3dlaW5
+	iZXJnQHZpdGVyYm8uZWR1IiwgIm0iOiAiNDZkYjNhODgtZDY2Ni00ZWRhLTkxMjE
+	tMzIzODEwZDIwMGZlIiwgImQiOiAiMTExMTA2NyIsICJpIjogIjFCNkUzNEI4NTI
+	4MkEwQUMwQTQ5MEQ0NEBBZG9iZU9yZyIgfSwiYiI6ImF3c193aWxleXB1Ymxpc2h
+	pbmdfcHJvZDhfcHJvZC5qb2hud2lsZXltYXJrZXRpbmdfbW9tZW50dW01OF9tdGE
+	wMDFfMTcyLjgyLjIwOS42OCIsImciOiJwcm9kLmpvaG53aWxleW1hcmtldGluZ18
+	5ZmJhZjdmMC01NjdkLTQ1YTktYWIyZS00MDhjOWM1NmE2NzUiLCJyIjoiZWd3ZWl
+	uYmVyZ0B2aXRlcmJvLmVkdSJ9
+Received: from [10.35.46.75] ([10.35.46.75:33049] helo=r69.info.wiley.com)
+	by momentum58.or1.cpt.adobe.net (envelope-from <wileypublishing-mid-prod7@adobe-campaign.com>)
+	(ecelerity 4.2.38.999 r(:)) with ESMTP
+	id D6/63-11447-E4A08256; Thu, 12 Oct 2023 08:01:34 -0700
+From: "Wiley" <e-service@info.wiley.com>
+Subject: =?windows-1252?Q?AI_in_the_classroom=97Discover_challenges_and_o?=
+ =?windows-1252?Q?pportunities?=
+Date: Thu, 12 Oct 2023 11:01:22 -0400
+To: <egweinberg@viterbo.edu>
+Reply-To: "Wiley" <e-service@wiley.com>
+X-mailer: nlserver, Build 8.5.2
+Message-ID: <NMFFDA46db3a88-d666-4eda-9121-323810d200fe0010F41Bwileypublishing_mid_prod7@adobe-campaign.com>
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2023 15:01:35.7642
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ cde8c42a-9c3e-43bb-8e52-08dbcb342121
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ DS1PEPF00017098:EE_|IA1PR20MB4754:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ DS1PEPF00017098.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: cde8c42a-9c3e-43bb-8e52-08dbcb342121
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:172.82.209.68;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:r68.info.wiley.com;PTR:r68.info.wiley.com;CAT:NONE;SFS:(13230031)(4636009)(286005)(451199024)(1690799017)(66899024)(76236004)(36756003)(40140700001)(26005)(120186005)(1096003)(336012)(42882007)(6916009)(83380400001)(58800400005)(6666004)(19627405001)(9686003)(356005)(83170400001)(166002)(7636003)(7596003)(76899018)(1406899027)(7446001)(579004);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2023 15:01:35.0923
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: cde8c42a-9c3e-43bb-8e52-08dbcb342121
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ DS1PEPF00017098.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: IA1PR20MB4754
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.2389852
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?4r+mnSYizzaa++DrF+tUjcP3Cy8N/v0PS29j2bK5Y9cvDgjH4G5o4hFm?=
+ =?Windows-1252?Q?bXrZIEs49AWrnOKRVT9gONGPWvHOaFZonRE/fj5PgNKSvHtl16++9Sim?=
+ =?Windows-1252?Q?HaOoYaHlwRt29F0mIeYiAYH1+91B0eaUy9zQos3Zre1aW49RgusEZBkl?=
+ =?Windows-1252?Q?xYVduEhvmHD1J2Yv1FCmgC9/eyJmxBfidoSf/9zAOXtQBLARkzN1JD97?=
+ =?Windows-1252?Q?32i5vYCXPYDj355Rujq8kSXGZPH6Pgncrj81ShR6VE4AJPcd2xFwPjJI?=
+ =?Windows-1252?Q?T8OSS2oah6pUmzh3vmdcpOC75vocmXY4ExkVcvp0NV5AVaX+zVdsZ7LW?=
+ =?Windows-1252?Q?H6JQDq3+egEMcZP7IOX1tw3v0vUBOq5GnaDvz6NYbRo5gzGSsM888M0k?=
+ =?Windows-1252?Q?UCqZuNH0o8PIz4NAzkrARQSdW9lKZGwau1Rpp5mHTk6IUbXb6DdcVtcI?=
+ =?Windows-1252?Q?qK9ReI/Fx7rfG4HLOp2CTygjISvO5reARkVOwWmrl+1D2t1/xsIRNV1A?=
+ =?Windows-1252?Q?YdtYOULOBff4jyU2Jtw/hdnXfJbd+RzxwJ43sAvG9Aac5TcBmbxCfWta?=
+ =?Windows-1252?Q?0xQzelM50GqHOtVsAgbzCVTL8Y7Ua02161KCIP99eNx6K6Y1oyX5znFH?=
+ =?Windows-1252?Q?b9vVhwkWW7BdAwo4D/u0tpB+yuV6V+EkuyfPnnGUtd38IxE1iPh7/zZE?=
+ =?Windows-1252?Q?UVPV8h/HdhPiLs+7WEeBPv+wCSSrt3u7N6/f5LKSdr7hKyGz2ySu9CDN?=
+ =?Windows-1252?Q?4KNMC5qHpsv5OMLwFByDck0MMKsIU1WrnYJzEPK0FjjjGqNtjskRAzGc?=
+ =?Windows-1252?Q?2Kj8v1DuhKBWRcIi6cm2yKAfaobOJZaFk7kjKnzG/vqslG8Nas1LWCDJ?=
+ =?Windows-1252?Q?1vq/P/0f9rm8CqisYgHM8ZLTUvt+HmPGr9BxOJdAPfEwkb/7JVH0jMS2?=
+ =?Windows-1252?Q?ZNyb8DH5W/JwGdO1WHuUzQvT9rsKV7b4KHL9FvYsFtW8JmMyN4jcw2ZQ?=
+ =?Windows-1252?Q?Jnw78A+b1ZTal0xnnTTE/Rt1nNSaRgaEvrkuNls4Yda3jYU4qbUO5CX4?=
+ =?Windows-1252?Q?K9TN93BZVdN2joea1UUT0h647xpYGYrA73HA/xLLVxT8RwuyaX9HRxZm?=
+ =?Windows-1252?Q?9YhQKIiE9dJZ/YLwzVM8dggvAHcLwW0wuzXCezFpo7KOCM1w/mpT3sQU?=
+ =?Windows-1252?Q?PBs8aQ5HpWE3eLWXJM9CV7w8zZgdCb8I3aRgthuInTYw2C0WddjGhu+k?=
+ =?Windows-1252?Q?RTiHsBpea7gANg5VjzFGtVG42dXaEPmCOHry8kOeB0DSubNYT6IcDRFk?=
+ =?Windows-1252?Q?2rRTlpYmtzMu8fJTAWXQQxW+yYX4lpC2t4SfHv6VAmtI4V+ksCJUfjJZ?=
+ =?Windows-1252?Q?Yg2L7lMPkMJV32T3Kgmdb0shmPgFevv1tKRL7Jmo0cPiOTjhKUYXE+f6?=
+ =?Windows-1252?Q?nxGVaZHrC9AwIkAKwZaxXUQaEx7sDB6W9yqnhmBlp86yusmEaYZD7PR0?=
+ =?Windows-1252?Q?EJgbt/Kxt7eUqZoKTl39aBvLQKV4MiFCg+eJojmr/oynYrgUhCbPfake?=
+ =?Windows-1252?Q?9DefW2XydUBqLsQMA9lFogQ/f8sYZsRFiH44RQ043xxMu1owwnhvfyy3?=
+ =?Windows-1252?Q?YXuKa5IrYvC6R+l+Ttzp3A2jFGi+bsR6rA9ya1sfvggL1b/8Sva2dUNx?=
+ =?Windows-1252?Q?hrDxSFr7qOQedrej/dsfSqZS1xrrclA/Vo2oRKWy2+IUSiIocOA49feR?=
+ =?Windows-1252?Q?R2jJbrsphjmY6DDJg3fj8bzCeggmO99gJyFPbBKldhBmSs/Y7mmipMcS?=
+ =?Windows-1252?Q?ZxdsNlNl8jB8pdMUzhtWNnILxiAAqkQ4jJNGDCZWPVvHNNMIGma4LhZh?=
+ =?Windows-1252?Q?aP/JdivgjxqcfzBGDE3xQSj9PJgSw0sMpFviD8NSMifOuwq2vy7OIArC?=
+ =?Windows-1252?Q?1cCfZMQ2b8Tet4SOL/xSpFFknNwhNZ+9xW85am/i97moqNbe0XJ0zpq4?=
+ =?Windows-1252?Q?bZQpGrUc?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252"><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+<!--[if !mso]><!-- -->
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<!--<![endif]--><style type=3D"text/css">
+      html,
+      body {
+        min-width: 260px;
+        min-height: 100%;
+        padding: 0;
+        margin: 0 auto;
+      }
+
+      a img {
+        border: none;
+      }
+
+      .ReadMsgBody {
+        width: 100%;
+      }
+
+      .ExternalClass {
+        width: 100%;
+      }
+
+      .ExternalClass * {
+        line-height: 100%;
+      }
+
+      table,
+      td {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      .button {
+        word-wrap: break-word;
+      }
+
+      @media screen and (max-width:480px) {
+        @-ms-viewport {
+          width: 320px;
+        }
+
+        @viewport {
+          width: 320px;
+        }
+      }
+
+      ul {
+        padding: 0 !important;
+        Margin: 0 0 0 40px !important;
+      }
+
+      li {
+        Margin-bottom: 10px !important;
+      }
+
+      sub,
+      sup {
+        font-size: 70%;
+        line-height: 0;
+        position: relative;
+      }
+
+      sup {
+        mso-text-raise: 60%;
+        vertical-align: super;
+      }
+
+      sub {
+        bottom: -0.25em;
+      }
+
+      a {
+        color: #115C36;
+      }
+
+      @media screen and (max-width:480px) {
+        .tolkien-column {
+          width: 100% !important;
+          max-width: 100% !important;
+          min-width: auto !important;
+        }
+
+        .tolkien-column img.full {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .tolkien-column img[shrinktofit=3Dtrue] {
+          width: auto !important;
+          max-width: 100% !important;
+        }
+      }
+
+      .hide-in-desktop {
+        display: none;
+        max-height: 0px;
+      }
+
+    </style><style id=3D"media-query" type=3D"text/css">
+      @media (max-width: 520px) {
+        .hide-in-mobile {
+          min-height: 0px;
+          max-height: 0px;
+          max-width: 0px;
+          display: none;
+          overflow: hidden;
+          font-size: 0px;
+        }
+
+        .hide-in-desktop {
+          display: block !important;
+          max-height: none !important;
+        }
+      }
+
+    </style><!--[if (gte mso 9)|(IE)]><style type=3D"text/css">.tolkien-col=
+umn { width: 100% !important }</style><![endif]--><!--[if gte mso 9]> <styl=
+e> ul > li { text-indent: -1em; /* Normalise space between bullets and text=
+ */ } a { border: none !important; /* Turn off border for anchor tag */ } <=
+/style> <![endif]--><style id=3D"asset-specific-css">
+      @import url('https://fonts.googleapis.com/css2?family=3DOpen+Sans:wgh=
+t@400;700;800&family=3DSource+Serif+Pro:wght@400;700&display=3Dswap');
+
+      body,
+      td,
+      li,
+      span,
+      ul,
+      li,
+      p,
+      p span {
+        font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+        font-weight: 400;
+        /*Normal*/
+        color: #000000;
+      }
+
+      h1,
+      h1 span,
+      h3,
+      h3 span,
+      h5,
+      h6 {
+        font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+        font-weight: 800;
+        /*'ExtraBold'*/
+        padding: 0px 0px 0px 0px !important;
+        margin: 0px 0px 0px 0px !important;
+      }
+
+      h2,
+      h2 span {
+        font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+        font-weight: 400;
+        /*Normal*/
+      }
+
+      h4,
+      h4 span {
+        font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+        font-weight: 800;
+        /*Bold*/
+      }
+
+      h1 {
+        font-size: 32px !important;
+        line-height: 39px !important;
+      }
+
+      h2 {
+        font-size: 23px !important;
+        line-height: 30px !important;
+        padding: 0px !important;
+        margin: 0px 0px 10px 0px !important;
+      }
+
+      h3 {
+
+        font-size: 18px !important;
+        line-height: 25px !important;
+      }
+
+      h4 {
+        font-size: 16px !important;
+        line-height: 23px !important;
+        padding: 0px !important;
+        margin: 0px 0px 10px 0px !important;
+      }
+
+      h5 {
+        font-size: 14px !important;
+        line-height: 21px !important;
+      }
+
+      h6 {
+        font-size: 11px !important;
+        line-height: 18px !important;
+        margin: 0px 0px 0px 0px !important;
+      }
+
+      .elq-button-cell div a strong,
+      button {
+        /*button style*/
+        font-family: 'Open Sans' !important;
+        font-weight: 800;
+      }
+
+      bold,
+      b,
+      strong {
+        font-weight: 700;
+        /*Bold*/
+      }
+
+      /* prevents iOS from automatically creating email links */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      a[href^=3D"x-apple-data-detectors:"] {
+        color: inherit;
+        text-decoration: inherit;
+      }
+
+      /* End prevents iOS from automatically creating email links */
+
+      /* links to sections */
+      .anchor {
+        display: block;
+        position: relative;
+        top: -40px;
+      }
+
+      /* end links to sections */
+
+      /* curved divs */
+      .curvedDiv {
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 60px;
+        margin: -20px 0 -10px 0;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 0%;
+      }
+
+      .div {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+      }
+
+      .div-inner {
+        position: relative;
+        background: #244C5A;
+        height: 0;
+      }
+
+      .div-inner:before {
+        box-shadow: 0 0 0 80px #244C5A;
+        border-radius: 100%;
+        position: absolute;
+        height: 120px;
+        content: '';
+        right: -20%;
+        left: -20%;
+        top: 100%
+      }
+
+      .div-inner:after {
+        bottom: 100%;
+        top: auto;
+      }
+
+      /* end curved divs */
+
+      .block {
+        height: 250px;
+        vertical-align: top;
+      }
+
+      /*Media Queries*/
+      @media (max-width: 520px) {
+        .row-1>tbody>tr>td {
+          /*background: #FFFFFF !important; */
+          background-image: none !important;
+          /*background-image: url("https://....") !important; */
+        }
+
+        .elq-image-cell,
+        .elq-button-cell div {
+          text-align: center !important;
+          padding-right: 30px !important;
+          padding-left: 30px !important;
+        }
+
+        .row-0 .tolkien-column.col-0 {
+          width: 49% !important;
+          margin: 0px !important;
+          padding: 0 auto !important;
+          display: inline-block !important;
+          float: left !important;
+        }
+
+        .row-0 .tolkien-column.col-1 {
+          width: 49% !important;
+          margin: 0px !important;
+          padding: 0 auto !important;
+          display: inline-block !important;
+          float: right !important;
+        }
+
+        .tolkien-column-12 .elq-image-cell {
+          padding-right: 0px !important;
+          padding-left: 0px !important;
+        }
+
+        .block {
+          height: 250px !important;
+        }
+      }
+
+      < !--[if gte mso 9]><style type=3D"text/css">h1,
+      h1 span,
+      h3,
+      h3 span,
+      h5,
+      h6 {
+        font-family: 'Open Sans ExtraBold';
+      }
+
+      .elq-button-cell div a strong,
+      button {
+        font-family: 'Open Sans ExtraBold' !important;
+      }
+
+      < ![endif]-->
+
+    </style>
+</head>
+<body style=3D"min-width:260px; min-height:100%; padding:0; margin:0 auto; =
+background-color:#FFFFFF;">
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div><!--[if (gte mso 9)|(IE)]><center><table border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" align=3D"center"><tr><td width=3D"600"><![endif]-->
+<table class=3D"color-wrap" style=3D"background:#FFFFFF;" width=3D"100%" ce=
+llspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table style=3D"max-width:600px;min-width:300px;margin:0 auto;" width=3D"10=
+0%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background-color:transparent;line-height:18px;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background-color:transparent;line-height:18px;padding:0px 0px =
+0px 0px;" class=3D"elq-header-footer-cell cell ">
+<div align=3D"center">
+<p align=3D"center"><font style=3D"font-family: Verdana, Arial; font-size: =
+10px">If you are unable to view this message correctly,
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Ft6.info.wiley.com%2Fr%2F%3Fid%3Dh46db3a88-d666-4eda-9121-323810d200fe%2=
+C28714d%2C12e224%26e%3DcDE9JTQwZlUlMkJpaiUyQll4NjRXMnB4akE5RzJSUXVndTlybnZO=
+UU4lMkJHMndWd2c5bHdMJTJCbG93eWlXNlkzQ0dhd0J2MlJqOXNtZEFRYk4xVFluZzN1QWNockh=
+GJTJGQjB3JTNEJTNE%26s%3DcqvxKtl5KfCcJC8xuSckioSu2Ec4A23TzNrdBGkRxO0&amp;dat=
+a=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ccde8c42a9c3e43bb8e5208dbcb342121%7=
+C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327197020499004%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C3000%7C%7C%7C&amp;sdata=3DWPZuMDLL1tpFNqYI2r46Dx0MjoysoGJVg4PGw1oTOU8=
+%3D&amp;reserved=3D0" originalsrc=3D"https://t6.info.wiley.com/r/?id=3Dh46d=
+b3a88-d666-4eda-9121-323810d200fe,28714d,12e224&amp;e=3DcDE9JTQwZlUlMkJpaiU=
+yQll4NjRXMnB4akE5RzJSUXVndTlybnZOUU4lMkJHMndWd2c5bHdMJTJCbG93eWlXNlkzQ0dhd0=
+J2MlJqOXNtZEFRYk4xVFluZzN1QWNockhGJTJGQjB3JTNEJTNE&amp;s=3DcqvxKtl5KfCcJC8x=
+uSckioSu2Ec4A23TzNrdBGkRxO0" shash=3D"kK3+iC9mB2PB5GviChGDX3oq5oaf25JL2rMWW=
+gLRNiabvfMELwIKl9KsbsFLuiVMMktAV+j8iQBNtdMX72ahq+ZPpNFnw37yb/lYLwrLOszwiFjf=
+hjwwMHj6wqiXscAS3Y5Ms5tdh/IKtTxdxH9LWj4axjnF1IC+8brVqSf9hE0=3D" _label=3D"M=
+irror Page" _type=3D"mirrorPage">
+click here</a> </font></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- ******INSERT YOUR CONTENT HERE START****** --><!-- Wiley Header Berry =
+START -->
+<table style=3D"max-width:600px;min-width:300px;margin:0 auto;" class=3D"ro=
+w row-0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background:#941e66;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"text-align:left;vertical-align:top;font-size:0px">
+<table class=3D"tolkien-column tolkien-column-3 col col-0" style=3D"vertica=
+l-align:top;display:inline-table;background:transparent;table-layout:fixed;=
+font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:12px;color:#=
+383838;max-width:100%;width:25%;width:-webkit-calc(230400px - 48000%);width=
+:calc(230400px - 48000%);min-width:120px;min-width:-webkit-calc(25%);min-wi=
+dth:calc(25%);" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"height:10px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-0">
+<div style=3D"height:10px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td class=3D"elq-image-cell  cell cell-1" style=3D"background-color:transpa=
+rent;line-height:0;padding:4px 30px 4px 30px;text-align:left;">
+<!--[if mso]><table width=3D"100%" style=3D"width:100%;height:auto;max-widt=
+h:90px" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td style=3D"p=
+adding-right: 0px; padding-left: 0px;" align=3D"left"><![endif]--><a target=
+=3D"_blank" title=3D"Wiley" href=3D"https://nam02.safelinks.protection.outl=
+ook.com/?url=3Dhttps%3A%2F%2Ft6.info.wiley.com%2Fr%2F%3Fid%3Dh46db3a88-d666=
+-4eda-9121-323810d200fe%2C28714d%2C12e225&amp;data=3D05%7C01%7Cegweinberg%4=
+0viterbo.edu%7Ccde8c42a9c3e43bb8e5208dbcb342121%7C6b9fc982e8d74958976cb0844=
+1cc9b0b%7C0%7C0%7C638327197020499004%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sd=
+ata=3Dg4hSMtP5VDQYngyxd5JtwYmWl7%2FYJFX0%2FivipK4soAc%3D&amp;reserved=3D0" =
+originalsrc=3D"https://t6.info.wiley.com/r/?id=3Dh46db3a88-d666-4eda-9121-3=
+23810d200fe,28714d,12e225" shash=3D"tWuTVCUdP5bLULKW30vFW7b3BhaLkyLCeydKHKa=
+ZAEfyQaK9PkMdm/PxSRh8ha8OCRRDHRlv+eER32qa9qvRafTNCMpDIYpFrFkqWiO6XyRv8H/fhp=
+M6ISJa+T6IpCH3PItEYuvFXZ4axaJHOdWtC+fxKKL7h3aA99nt5eTImKs=3D" data-targetty=
+pe=3D"webpage"><img src=3D"https://res6.info.wiley.com/res/tracking/0c898e1=
+09b7179c6892988a3287d0e569ae3e5fe01addf6f8f81180459405ed4.png" alt=3D"Wiley=
+" style=3D"width:90px;height:20px;" width=3D"90" height=3D"20"></a><!--[if =
+mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+<tr>
+<td style=3D"height:10px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-2">
+<div style=3D"height:10px;display:none;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td><td width=3D"75%" style=3D"text-align:left;v=
+ertical-align:top;font-size:0px"><![endif]-->
+<table class=3D"tolkien-column tolkien-column-9 col col-1" style=3D"vertica=
+l-align:top;display:inline-table;background:transparent;table-layout:fixed;=
+font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:12px;color:#=
+383838;max-width:100%;width:75%;width:-webkit-calc(230400px - 48000%);width=
+:calc(230400px - 48000%);min-width:360px;min-width:-webkit-calc(75%);min-wi=
+dth:calc(75%);" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"height:50px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-0 hide-in-mobile">
+<div style=3D"height:50px;display:none;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Wiley Header Berry END --><!-- Banner Placeholder START -->
+<table style=3D"max-width:600px;min-width:300px;margin:0 auto;" class=3D"ro=
+w row-9" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background:#FFFFFF;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"text-align:left;vertical-align:top;font-size:0px">
+<table class=3D"tolkien-column tolkien-column-12 col col-0" style=3D"vertic=
+al-align:top;display:inline-table;background:transparent;table-layout:fixed=
+;font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:12px;color:=
+#383838;max-width:100%;width:100%;width:-webkit-calc(230400px - 48000%);wid=
+th:calc(230400px - 48000%);min-width:480px;min-width:-webkit-calc(100%);min=
+-width:calc(100%);" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td class=3D"elq-image-cell  cell cell-0" style=3D"background-color:transpa=
+rent;line-height:0;padding:0px 0px 0px 0px;text-align:center;">
+<!--[if mso]><table width=3D"100%" style=3D"width:100%;height:auto;max-widt=
+h:600px" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td style=3D"=
+padding-right: 0px; padding-left: 0px;" align=3D"center"><![endif]--><a hre=
+f=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft6=
+.info.wiley.com%2Fr%2F%3Fid%3Dh46db3a88-d666-4eda-9121-323810d200fe%2C28714=
+d%2C12e226&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ccde8c42a9c3e43bb=
+8e5208dbcb342121%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383271970204=
+99004%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6I=
+k1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DOSRFAUr7gDUx%2FP8Ojj3QDnD=
+Q56z6rCvGLIScvxgkd3c%3D&amp;reserved=3D0" originalsrc=3D"https://t6.info.wi=
+ley.com/r/?id=3Dh46db3a88-d666-4eda-9121-323810d200fe,28714d,12e226" shash=
+=3D"u2yQF5y+K5IpDVffPVuKUKmRiQPd2uvii8lWFUYYeQSfqxY7Urra2s2vcH8TjC4eSpWgvdQ=
+S5A5LlR4DrQbd0uzdWbffULmPjl3PsnvLkVf2m4TENBmM9xqZD/auNkUelFDnio5TjU8g+/0b/F=
+kbkbaexHP7NRzQmu05bUCYKVk=3D"><img src=3D"https://res6.info.wiley.com/res/t=
+racking/c2f34c5c002854772bb171a541a9e8aa736a30fae820e90ecbd5f145bcfd41d0.jp=
+g" style=3D"width:100%;height:auto;max-width:600px;" width=3D"600" height=
+=3D"300"></a><!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"16 0 0">
+<td style=3D"height:20px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-0 hide-in-mobile">
+<div style=3D"height:30px;display:none;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Banner Placeholder END --><!-- H1+H2 titles + Image Placeholder Journa=
+l START -->
+<table style=3D"max-width:600px;min-width:300px;margin:0 auto;" data-locati=
+on-row=3D"26" class=3D"row row-26" role=3D"presentation" width=3D"100%" cel=
+lspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background:#FFFFFF;">
+<table role=3D"presentation" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td style=3D"text-align:left;vertical-align:top;font-size:0px">
+<table class=3D"tolkien-column tolkien-column-8 col col-0" style=3D"vertica=
+l-align:top;display:inline-table;background:transparent;table-layout:fixed;=
+font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:12px;color:#=
+383838;max-width:100%;width:66.66666667%;width:-webkit-calc(230400px - 4800=
+0%);width:calc(230400px - 48000%);min-width:320px;min-width:-webkit-calc(66=
+.66666667%);min-width:calc(66.66666667%);" role=3D"presentation" data-locat=
+ion-row-column=3D"26 0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr data-location-row-column-cell=3D"26 0 0">
+<td style=3D"height:20px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-0 hide-in-mobile">
+<div style=3D"height:20px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<!--[if !mso]>
+<!-->
+<tr data-location-row-column-cell=3D"26 0 1">
+<td style=3D"height:40px;background-color:transparent;line-height:18px;mso-=
+hide:all;display:none;max-height:0px;overflow:hidden;" class=3D"hide-in-des=
+ktop elq-space-cell cell cell-1">
+<div style=3D"height:40px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<!-- <![endif]-->
+<tr data-location-row-column-cell=3D"26 0 2">
+<td style=3D"background-color:transparent;line-height:18px;padding:0px 30px=
+ 0px 30px;" class=3D"elq-text-cell cell cell-2">
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"22 0 0">
+<td style=3D"height:10px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-0">
+<div style=3D"height:10px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"26 0 3">
+<td style=3D"background-color:transparent;line-height:18px;padding:0px 30px=
+ 0px 30px;" class=3D"elq-text-cell cell cell-3">
+<div style=3D"display:inline-block;width:100%;">
+<div style=3D"line-height: 21px;" data-lineheight=3D"1.5"><span style=3D"fo=
+nt-size: 16px;">Our latest research revealed four key trends impacting your=
+ classroom, including the rise of AI. Prepare yourself and your students to=
+ face both problems and possibilities
+ this year.</span></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:20px 30px; width:100% !important;" class=3D"" width=3D=
+"100%">
+<table align=3D"left">
+<tbody>
+<tr>
+<td class=3D"button" style=3D"padding: 10px 30px;display: block;text-decora=
+tion: none;border:0;text-align:left;font-weight: bold;font-size: 16px;font-=
+family: 'Open Sans', Verdana, Georgia, sans-serif;color: #fff; background: =
+rgb(148, 30, 102); line-height:28px; height: auto;" height=3D"auto" bgcolor=
+=3D"rgb(148, 30, 102)" align=3D"left">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Ft6.info.wiley.com%2Fr%2F%3Fid%3Dh46db3a88-d666-4eda-9121-323810d200fe%2=
+C28714d%2C12e227&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ccde8c42a9c=
+3e43bb8e5208dbcb342121%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383271=
+97020499004%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJ=
+BTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DumXUev83mf9WHyPnupU=
+ldtOi1mXsjlNjisxNnIBwSpI%3D&amp;reserved=3D0" originalsrc=3D"https://t6.inf=
+o.wiley.com/r/?id=3Dh46db3a88-d666-4eda-9121-323810d200fe,28714d,12e227" sh=
+ash=3D"COMvHBstGhO53ie+JSoKAkO/M6dO5qXaKM3dNee5wq9kyBRRzA2JrwbDliWJvQDF8epu=
+10dFf2KZRfdLnp2OPUyEPaEUklJKLLdWDfgvQcsQvKykvRHF8g0on3l9ALybYWj+eURHHZqhyxX=
+ZyM1zvgU5RHc87prsnOgzWHgnKuo=3D" style=3D"font-size: 16px !important; text-=
+decoration:none; font-family: 'Open Sans', Verdana, Georgia, sans-serif; co=
+lor: #fff;" target=3D"_blank"><b>Download full report
+</b></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td><td width=3D"33.33333333%" style=3D"text-ali=
+gn:left;vertical-align:top;font-size:0px"><![endif]-->
+<table class=3D"tolkien-column tolkien-column-4 col col-1" style=3D"vertica=
+l-align:top;display:inline-table;background:transparent;table-layout:fixed;=
+font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:12px;color:#=
+383838;max-width:100%;width:33.33333333%;width:-webkit-calc(230400px - 4800=
+0%);width:calc(230400px - 48000%);min-width:160px;min-width:-webkit-calc(33=
+.33333333%);min-width:calc(33.33333333%);" role=3D"presentation" data-locat=
+ion-row-column=3D"26 1" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr data-location-row-column-cell=3D"26 1 0">
+<td style=3D"height:30px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-0">
+<div style=3D"height:30px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"26 1 1">
+<td class=3D"elq-image-cell  cell cell-1" style=3D"background-color:transpa=
+rent;line-height:0;padding:0px 30px 0px 30px;text-align:center;">
+<!--[if mso]><table width=3D"100%" style=3D"width:100%;height:auto;max-widt=
+h:140px" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td style=3D"=
+padding-right: 0px; padding-left: 0px;" align=3D"center"><![endif]--><a hre=
+f=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft6=
+.info.wiley.com%2Fr%2F%3Fid%3Dh46db3a88-d666-4eda-9121-323810d200fe%2C28714=
+d%2C12e228&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ccde8c42a9c3e43bb=
+8e5208dbcb342121%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383271970206=
+55213%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6I=
+k1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DSiBzwv3QwsWf7QI9lL17tr6b6=
+UDJzEzJNzRtgwWCNQE%3D&amp;reserved=3D0" originalsrc=3D"https://t6.info.wile=
+y.com/r/?id=3Dh46db3a88-d666-4eda-9121-323810d200fe,28714d,12e228" shash=3D=
+"DomviVTwFrUQmQomfSTrisV8Lq4mLq6gyuWd/r9H7xw4lVkvtfUXry/61TUzCVaIdrbiAg1ce6=
+/hjrJIio2AfDmsQ6ks0jv1y0laZVmCBs0GvrVdaE5okEgNaLJl4zF0ERKosQTeavilsAVB7tNkG=
+JcgXtDpnRPZd1NAsa0O/mo=3D"><img src=3D"https://res6.info.wiley.com/res/trac=
+king/6dee0d9aa8dda2bbee586b40f57a0958500dbaddb8778198d285773f0bf36375.png" =
+style=3D"width:100%;height:auto;max-width:150px;" width=3D"150" height=3D"1=
+94"></a><!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"26 1 2">
+<td style=3D"height:40px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-2 hide-in-mobile">
+<div style=3D"height:40px;display:none;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- H1+H2 titles + Image Journal END --><!-- Spacer START -->
+<table style=3D"max-width:600px;min-width:300px;margin:0 auto;" class=3D"ro=
+w row-24" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background:#FFFFFF;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"text-align:left;vertical-align:top;font-size:0px">
+<table class=3D"tolkien-column tolkien-column-12 col col-0" style=3D"vertic=
+al-align:top;display:inline-table;background:transparent;table-layout:fixed=
+;font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:12px;color:=
+#383838;max-width:100%;width:100%;width:-webkit-calc(230400px - 48000%);wid=
+th:calc(230400px - 48000%);min-width:480px;min-width:-webkit-calc(100%);min=
+-width:calc(100%);" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"height:20px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-0">
+<div style=3D"height:20px;display:none;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Spacer END --><!-- 3 rows blocks big infographics START  -->
+<table style=3D"max-width:600px;min-width:300px;margin:0 auto;" data-locati=
+on-row=3D"5" class=3D"row row-5" role=3D"presentation" width=3D"100%" cells=
+pacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td style=3D"text-align:left;vertical-align:top;font-size:0px"><!--[if (gte=
+ mso 9)|(IE)]><td width=3D"4.33333333%" style=3D"text-align:left;vertical-a=
+lign:top;font-size:0px"><![endif]-->
+<table class=3D"tolkien-column tolkien-column-1 col col-0 hide-in-mobile" s=
+tyle=3D"vertical-align:top;display:inline-table;background:#FFFFFF;table-la=
+yout:fixed;font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:1=
+2px;color:#383838;max-width:100%;width:4.33333333%;width:-webkit-calc(23040=
+0px - 48000%);width:calc(230400px - 48000%);min-width:-webkit-calc(4.333333=
+33%);min-width:calc(4.33333333%);" role=3D"presentation" data-location-row-=
+column=3D"5 0" cellspacing=3D"0" cellpadding=3D"0" height=3D"210">
+<tbody>
+<tr data-location-row-column-cell=3D"5 0 0">
+<td style=3D"height:30px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-0">
+<div style=3D"height:30px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"5 0 1">
+<td style=3D"height:95px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-1">
+<div style=3D"height:95px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"5 0 2">
+<td style=3D"height:85px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-2">
+<div style=3D"height:85px;display:none;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td><td width=3D"44.66666667%" style=3D"text-ali=
+gn:center;vertical-align:middle;font-size:0px;height: 210px;background-colo=
+r:#941e66;"><![endif]-->
+<table class=3D"tolkien-column tolkien-column-5 col col-1" style=3D"vertica=
+l-align:middle;display:inline-table;table-layout:fixed;font-family: 'Open S=
+ans',Arial, Helvetica,sans-serif;font-size:12px;color:#383838;max-width:100=
+%;width:44.66666667%;width:-webkit-calc(230400px - 48000%);width:calc(23040=
+0px - 48000%);min-width:200px;min-width:-webkit-calc(44.66666667%);min-widt=
+h:calc(44.66666667%);background-color:#941e66;" role=3D"presentation" data-=
+location-row-column=3D"5 1" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr data-location-row-column-cell=3D"5 1 0">
+<td class=3D"elq-image-cell  cell cell-0" style=3D"background-color:#941e66=
+;line-height:0;padding:10px 30px 10px 30px;text-align:center;">
+<!--[if mso]><table width=3D"100%" style=3D"width:100%;height:auto;max-widt=
+h:190px" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td style=3D"=
+padding-right: 0px; padding-left: 0px;" align=3D"center"><![endif]--><img s=
+rc=3D"https://res6.info.wiley.com/res/tracking/8554950f581faf4e2e31256b10dc=
+fa4187e83802b234aad8559c036734824d4c.jpg" alt=3D"View icon" style=3D"width:=
+100%;height:auto;max-width:190px;" width=3D"190" height=3D"190"><!--[if mso=
+]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td><td width=3D"46.66666667%" style=3D"text-ali=
+gn:center;vertical-align:middle;font-size:0px;height: 210px;background-colo=
+r: #EFEFF0;"><![endif]-->
+<table class=3D"tolkien-column tolkien-column-5 col col-2" style=3D"backgro=
+und-color: #EFEFF0;height: 210px;vertical-align:middle;display:inline-table=
+;table-layout:fixed;font-family: 'Open Sans',Arial, Helvetica,sans-serif;fo=
+nt-size:12px;color:#383838;max-width:100%;width:46.66666667%;width:-webkit-=
+calc(230400px - 48000%);width:calc(230400px - 48000%);min-width:200px;min-w=
+idth:-webkit-calc(46.66666667%);min-width:calc(46.66666667%);" role=3D"pres=
+entation" data-location-row-column=3D"5 2" cellspacing=3D"0" cellpadding=3D=
+"0" height=3D"210">
+<tbody>
+<tr data-location-row-column-cell=3D"7 2 0">
+<td style=3D"background: #EFEFF0;line-height:18px;padding:24px 20px 4px 20p=
+x;" class=3D"elq-text-cell cell cell-0">
+<div style=3D"display:inline-block;width:100%;">
+<h1 style=3D"text-align: center; line-height: 36px !important;margin: 0 !im=
+portant;font-size: 32px !important;font-family: 'Open Sans',Arial, Helvetic=
+a,sans-serif;font-weight: 800;padding: 0px 0px 0px 0px !important;" data-li=
+neheight=3D"1.0">
+<span style=3D"font-size: 36px; color: rgb(148, 30, 102);">58%</span></h1>
+</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"7 2 1">
+<td style=3D"background: #EFEFF0;line-height:18px;padding:0px 20px 6px 20px=
+;" class=3D"elq-text-cell cell cell-1">
+<div style=3D"display:inline-block;width:100%;">
+<h2 style=3D"font-size: 23px !important;margin: 0!important;line-height: 12=
+px; text-align: center;padding: 0px !important;font-weight: 400;" data-line=
+height=3D"1.0">
+of instructors</h2>
+</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"5 2 2">
+<td style=3D"background: #EFEFF0;line-height:18px;padding:0px 20px 20px 20p=
+x;" class=3D"elq-text-cell cell cell-2">
+<div style=3D"display:inline-block;width:100%;">
+<div style=3D"text-align: center;margin: 0!important;"><span style=3D"font-=
+size: 16px;margin: 0!important;">or their students are already using
+</span><strong style=3D"font-size: 16px;">generative AI</strong><span style=
+=3D"font-size: 16px;"> in the classroom.</span></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td><td width=3D"4.33333333%" style=3D"text-alig=
+n:left;vertical-align:top;font-size:0px"><![endif]-->
+<table class=3D"tolkien-column tolkien-column-1 col col-3 hide-in-mobile" s=
+tyle=3D"vertical-align:top;display:inline-table;background:#FFFFFF;table-la=
+yout:fixed;font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:1=
+2px;color:#383838;max-width:100%;width:4.33333333%;width:-webkit-calc(23040=
+0px - 48000%);width:calc(230400px - 48000%);min-width:-webkit-calc(4.333333=
+33%);" role=3D"presentation" data-location-row-column=3D"5 3" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr data-location-row-column-cell=3D"5 3 0">
+<td style=3D"height:30px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-0">
+<div style=3D"height:30px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"5 3 1">
+<td style=3D"height:95px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-1">
+<div style=3D"height:95px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"5 3 2">
+<td style=3D"height:85px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-2">
+<div style=3D"height:85px;display:none;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"max-width:600px;min-width:300px;margin:0 auto;" data-locati=
+on-row=3D"6" class=3D"row row-6" role=3D"presentation" width=3D"100%" cells=
+pacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background:#FFFFFF;">
+<table role=3D"presentation" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td style=3D"text-align:left;vertical-align:top;font-size:0px">
+<table class=3D"tolkien-column tolkien-column-12 col col-0" style=3D"vertic=
+al-align:top;display:inline-table;background:transparent;table-layout:fixed=
+;font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:12px;color:=
+#383838;max-width:100%;width:100%;width:-webkit-calc(230400px - 48000%);wid=
+th:calc(230400px - 48000%);min-width:480px;min-width:-webkit-calc(100%);min=
+-width:calc(100%);" role=3D"presentation" data-location-row-column=3D"6 0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr data-location-row-column-cell=3D"6 0 0">
+<td style=3D"height:15px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-0">
+<div style=3D"height:15px;display:none;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"max-width:600px;min-width:300px;margin:0 auto;" data-locati=
+on-row=3D"5" class=3D"row row-5" role=3D"presentation" width=3D"100%" cells=
+pacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td style=3D"text-align:left;vertical-align:top;font-size:0px"><!--[if (gte=
+ mso 9)|(IE)]><td width=3D"4.33333333%" style=3D"text-align:left;vertical-a=
+lign:top;font-size:0px"><![endif]-->
+<table class=3D"tolkien-column tolkien-column-1 col col-0 hide-in-mobile" s=
+tyle=3D"vertical-align:top;display:inline-table;background:#FFFFFF;table-la=
+yout:fixed;font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:1=
+2px;color:#383838;max-width:100%;width:4.33333333%;width:-webkit-calc(23040=
+0px - 48000%);width:calc(230400px - 48000%);min-width:-webkit-calc(4.333333=
+33%);min-width:calc(4.33333333%);" role=3D"presentation" data-location-row-=
+column=3D"5 0" cellspacing=3D"0" cellpadding=3D"0" height=3D"210">
+<tbody>
+<tr data-location-row-column-cell=3D"5 0 0">
+<td style=3D"height:30px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-0">
+<div style=3D"height:30px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"5 0 1">
+<td style=3D"height:95px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-1">
+<div style=3D"height:95px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"5 0 2">
+<td style=3D"height:85px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-2">
+<div style=3D"height:85px;display:none;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td><td width=3D"44.66666667%" style=3D"text-ali=
+gn:center;vertical-align:middle;font-size:0px;height: 210px;background-colo=
+r:#941e66;"><![endif]-->
+<table class=3D"tolkien-column tolkien-column-5 col col-1" style=3D"vertica=
+l-align:middle;display:inline-table;table-layout:fixed;font-family: 'Open S=
+ans',Arial, Helvetica,sans-serif;font-size:12px;color:#383838;max-width:100=
+%;width:44.66666667%;width:-webkit-calc(230400px - 48000%);width:calc(23040=
+0px - 48000%);min-width:200px;min-width:-webkit-calc(44.66666667%);min-widt=
+h:calc(44.66666667%);background-color:#941e66;" role=3D"presentation" data-=
+location-row-column=3D"5 1" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr data-location-row-column-cell=3D"5 1 0">
+<td class=3D"elq-image-cell  cell cell-0" style=3D"background-color:#941e66=
+;line-height:0;padding:10px 30px 10px 30px;text-align:center;">
+<!--[if mso]><table width=3D"100%" style=3D"width:100%;height:auto;max-widt=
+h:190px" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td style=3D"=
+padding-right: 0px; padding-left: 0px;" align=3D"center"><![endif]--><img s=
+rc=3D"https://res6.info.wiley.com/res/tracking/d736bc042c12d62ca50b8b5bc439=
+1b8874955cad206b914df86bb5fa20c8fffe.jpg" alt=3D"Quote icon" style=3D"width=
+:100%;height:auto;max-width:190px;" width=3D"190" height=3D"190"><!--[if ms=
+o]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td><td width=3D"46.66666667%" style=3D"text-ali=
+gn:center;vertical-align:middle;font-size:0px;height: 210px;background-colo=
+r: #EFEFF0;"><![endif]-->
+<table class=3D"tolkien-column tolkien-column-5 col col-2" style=3D"backgro=
+und-color: #EFEFF0;height: 210px;vertical-align:middle;display:inline-table=
+;table-layout:fixed;font-family: 'Open Sans',Arial, Helvetica,sans-serif;fo=
+nt-size:12px;color:#383838;max-width:100%;width:46.66666667%;width:-webkit-=
+calc(230400px - 48000%);width:calc(230400px - 48000%);min-width:200px;min-w=
+idth:-webkit-calc(46.66666667%);min-width:calc(46.66666667%);" role=3D"pres=
+entation" data-location-row-column=3D"5 2" cellspacing=3D"0" cellpadding=3D=
+"0" height=3D"210">
+<tbody>
+<tr data-location-row-column-cell=3D"7 2 0">
+<td style=3D"background: #EFEFF0;line-height:18px;padding:24px 20px 4px 20p=
+x;" class=3D"elq-text-cell cell cell-0">
+<div style=3D"display:inline-block;width:100%;">
+<h1 style=3D"text-align: center; line-height: 36px !important;margin: 0 !im=
+portant;font-size: 32px !important;font-family: 'Open Sans',Arial, Helvetic=
+a,sans-serif;font-weight: 800;padding: 0px 0px 0px 0px !important;" data-li=
+neheight=3D"1.0">
+<span style=3D"font-size: 36px; color: rgb(148, 30, 102);">61%</span></h1>
+</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"7 2 1">
+<td style=3D"background: #EFEFF0;line-height:18px;padding:0px 20px 6px 20px=
+;" class=3D"elq-text-cell cell cell-1">
+<div style=3D"display:inline-block;width:100%;">
+<h2 style=3D"font-size: 23px !important;margin: 0!important;line-height: 12=
+px; text-align: center;padding: 0px !important;font-weight: 400;" data-line=
+height=3D"1.0">
+of instructors</h2>
+</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"5 2 2">
+<td style=3D"background: #EFEFF0;line-height:18px;padding:0px 20px 20px 20p=
+x;" class=3D"elq-text-cell cell cell-2">
+<div style=3D"display:inline-block;width:100%;">
+<div style=3D"text-align: center;"><span style=3D"font-size: 16px;">are loo=
+king for </span>
+<strong style=3D"font-size: 16px;">new ideas and solutions</strong><span st=
+yle=3D"font-size: 16px;"> to address students who might misuse AI tools.</s=
+pan></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td><td width=3D"4.33333333%" style=3D"text-alig=
+n:left;vertical-align:top;font-size:0px"><![endif]-->
+<table class=3D"tolkien-column tolkien-column-1 col col-3 hide-in-mobile" s=
+tyle=3D"vertical-align:top;display:inline-table;background:#FFFFFF;table-la=
+yout:fixed;font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:1=
+2px;color:#383838;max-width:100%;width:4.33333333%;width:-webkit-calc(23040=
+0px - 48000%);width:calc(230400px - 48000%);min-width:-webkit-calc(4.333333=
+33%);" role=3D"presentation" data-location-row-column=3D"5 3" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr data-location-row-column-cell=3D"5 3 0">
+<td style=3D"height:30px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-0">
+<div style=3D"height:30px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"5 3 1">
+<td style=3D"height:95px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-1">
+<div style=3D"height:95px;display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"5 3 2">
+<td style=3D"height:85px;background-color:#FFFFFF;line-height:18px;" class=
+=3D"hide-in-mobile elq-space-cell cell cell-2">
+<div style=3D"height:85px;display:none;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- 3 rows blocks big infographics END --><!-- Spacer START -->
+<table style=3D"max-width:600px;min-width:300px;margin:0 auto;" class=3D"ro=
+w row-24" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background:#FFFFFF;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"text-align:left;vertical-align:top;font-size:0px">
+<table class=3D"tolkien-column tolkien-column-12 col col-0" style=3D"vertic=
+al-align:top;display:inline-table;background:transparent;table-layout:fixed=
+;font-family: 'Open Sans',Arial, Helvetica,sans-serif;font-size:12px;color:=
+#383838;max-width:100%;width:100%;width:-webkit-calc(230400px - 48000%);wid=
+th:calc(230400px - 48000%);min-width:480px;min-width:-webkit-calc(100%);min=
+-width:calc(100%);" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"height:20px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-0">
+<div style=3D"height:20px;display:none;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Spacer END --><!-- ******INSERT YOUR CONTENT HERE END******* --><!-- F=
+ooter START  -->
+<table width=3D"100%" align=3D"center" class=3D"deviceWidth" style=3D"margi=
+n: 0px auto;max-width:600px;min-width:300px;background:#EFEFF0;" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"text-align:left;vertical-align:top;font-size:0px">
+<table class=3D"tolkien-column tolkien-column-12 col col-0" cellpadding=3D"=
+0" cellspacing=3D"0" style=3D"vertical-align:top;display:inline-table;backg=
+round:transparent;table-layout:fixed;font-family: 'Open Sans', Arial, sans-=
+serif !important;font-size:12px;color:#383838;max-width:100%;width:100%;wid=
+th:-webkit-calc(230400px - 48000%);width:calc(230400px - 48000%);min-width:=
+480px;min-width:-webkit-calc(100%);min-width:calc(100%);" data-location-row=
+-column=3D"57 0">
+<tbody>
+<tr data-location-row-column-cell=3D"57 0 0">
+<td style=3D"height:30px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-0">
+<div style=3D"height:30px;display:none;">&nbsp; </div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"57 0 1">
+<td class=3D"elq-image-cell  cell cell-1" style=3D"background-color:transpa=
+rent;line-height:0;padding:0px 30px 0px 30px;text-align:center;">
+<!--[if mso]><table width=3D"100%" style=3D"width:100%;height:auto;max-widt=
+h:130px" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td style=3D"=
+padding-right: 0px; padding-left: 0px;" align=3D"center"><![endif]--><a tar=
+get=3D"_blank" title=3D"Wiley" href=3D"https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Ft6.info.wiley.com%2Fr%2F%3Fid%3Dh46db3a88-d=
+666-4eda-9121-323810d200fe%2C28714d%2C12e229&amp;data=3D05%7C01%7Cegweinber=
+g%40viterbo.edu%7Ccde8c42a9c3e43bb8e5208dbcb342121%7C6b9fc982e8d74958976cb0=
+8441cc9b0b%7C0%7C0%7C638327197020655213%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp=
+;sdata=3DD9wh%2BKws7ZV1zYY7EwxY4kvTalw1wOsnAXCkYLI5GTU%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://t6.info.wiley.com/r/?id=3Dh46db3a88-d666-4eda-9121-=
+323810d200fe,28714d,12e229" shash=3D"SkqldTQLbdiM6uH8kLBRYP86FKgIYr+OrE8DsG=
+IURCcvzfI3e6wuB0Vb+ivoFpskxFNnTOhd1hPSNfo/GoybLEihvdmpJxUQCniS69SDelWeWS/vu=
+7nissZu+RQmL5kj4g3yXGX5Xn5e3U4gdCbCseG6++WBuOG/hhwKlcGDxx0=3D" data-targett=
+ype=3D"webpage"><img src=3D"https://res6.info.wiley.com/res/tracking/3c3401=
+13eba6368fa4015fc06e226119daee3009ca4ed46bdd29b88118491767.jpg" alt=3D"Wile=
+y" height=3D"34" width=3D"130" style=3D"width:100%;height:auto;max-width:13=
+0px;">
+</a><!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+<tr data-location-row-column-cell=3D"57 0 2">
+<td style=3D"height:20px;background-color:transparent;line-height:18px;" cl=
+ass=3D"elq-space-cell cell cell-2">
+<div style=3D"height:20px;display:none;">&nbsp; </div>
+</td>
+</tr>
+<tr data-location-row-column-cell=3D"57 0 3">
+<td style=3D"background-color:transparent;line-height:18px;padding:4px 30px=
+ 4px 30px;" class=3D"elq-code-cell cell cell-3">
+<div style=3D"display:inline-block;width:100%;">
+<p style=3D"margin: auto; padding: 0; text-align:center; line-height:30px;"=
+><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Ft6.info.wiley.com%2Fr%2F%3Fid%3Dh46db3a88-d666-4eda-9121-323810d200fe%=
+2C28714d%2C12e22a&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ccde8c42a9=
+c3e43bb8e5208dbcb342121%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327=
+197020655213%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLC=
+JBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D6UXYhCyCln%2BMDm0q=
+uqGc%2BLCxBGeNMn7umYoA%2BIXAeWQ%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/t6.info.wiley.com/r/?id=3Dh46db3a88-d666-4eda-9121-323810d200fe,28714d,12e=
+22a" shash=3D"it+RI5nWuz0G933OYLXG1wXBV16qldOql+TxA29Cst+IwctEpHRagKhVUDTLF=
+TjHo62Irf6URZ71dqcrrujPbq+0pTBDzgL6sj80h6ensSzsyLr+bdZrtEWjLzd2czqFShKqJwRd=
+nW0QR5tzYEHi/1phtW7OZuFCMX3rV9JCkCY=3D" target=3D"_blank" style=3D"text-dec=
+oration: none;"><img src=3D"https://res6.info.wiley.com/res/tracking/Facebo=
+ok.png" alt=3D"Facebook">
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=3D"https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Ft6.info.wiley.com%2Fr%2F%3Fid%3Dh46d=
+b3a88-d666-4eda-9121-323810d200fe%2C28714d%2C12e22b&amp;data=3D05%7C01%7Ceg=
+weinberg%40viterbo.edu%7Ccde8c42a9c3e43bb8e5208dbcb342121%7C6b9fc982e8d7495=
+8976cb08441cc9b0b%7C0%7C0%7C638327197020655213%7CUnknown%7CTWFpbGZsb3d8eyJW=
+IjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C=
+%7C&amp;sdata=3D7gk%2Bu%2FR4w8Ow%2Fl3O0wglQCkWYkaR6rTZu2HEx8jbU3I%3D&amp;re=
+served=3D0" originalsrc=3D"https://t6.info.wiley.com/r/?id=3Dh46db3a88-d666=
+-4eda-9121-323810d200fe,28714d,12e22b" shash=3D"FQsSUsYEf4Bq4iT2Ew37rLiLFTA=
+izZkTapm24xQXQwT4jwr6Iy0ha7p/ev2k9ntKqxQUC/CoTY2HFnjTStbwgIDP7bCwYLVBG9p70O=
+akHiQl4MYsiFkNYwsZvBkJ3/BFY+CIGK/ktH4d40rK0mnvnoQ9hC4YFK0r2dt2EqlowUI=3D" t=
+arget=3D"_blank" style=3D"text-decoration: none;">
+<img src=3D"https://res6.info.wiley.com/res/tracking/9c8d841c64c7bab748bf2b=
+ab47570cddf81916af42c9e908c6d2ff62c32c502d.png" alt=3D"Twitter">
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=3D"https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Ft6.info.wiley.com%2Fr%2F%3Fid%3Dh46d=
+b3a88-d666-4eda-9121-323810d200fe%2C28714d%2C12e22c&amp;data=3D05%7C01%7Ceg=
+weinberg%40viterbo.edu%7Ccde8c42a9c3e43bb8e5208dbcb342121%7C6b9fc982e8d7495=
+8976cb08441cc9b0b%7C0%7C0%7C638327197020655213%7CUnknown%7CTWFpbGZsb3d8eyJW=
+IjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C=
+%7C&amp;sdata=3D0LT9GRnzIChbJuyo5%2Flf%2FXR2V2QYBAw8ad9OV6aV7hI%3D&amp;rese=
+rved=3D0" originalsrc=3D"https://t6.info.wiley.com/r/?id=3Dh46db3a88-d666-4=
+eda-9121-323810d200fe,28714d,12e22c" shash=3D"KKnIN3f/dQoKi5HCdTYjeqS0nJBQB=
+pV7s9hL+IAXPCoqwgiiS+ZwTVzAu2gGzmEp7F1tWEiVIkyInidKyHfd1WOxZTMJ6ikyWnLioCYy=
+PK4pIfLeXu9toSGpxNI/n1zG53SedN9C73gXJ8/ioyZyYenz/3lq06cJgfMqNJzooFk=3D" tar=
+get=3D"_blank" style=3D"text-decoration: none;">
+<img src=3D"https://res6.info.wiley.com/res/tracking/0567e2704c9545f49b97be=
+66a66a7f0ce4740983f59b2ecd866a95c22c3ac788.png" alt=3D"Linkedin">
+</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- BEGIN MANUALLY INSERTED FOOTER -->
+<hr size=3D"1">
+<table width=3D"100%" align=3D"center" class=3D"deviceWidth" =A0=A0=A0=A0=
+=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=
+=A0=A0=3D"" style=3D"margin: 0px auto;" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody>
+<tr>
+<td width=3D"100%" align=3D"center" style=3D"padding: 10px 0fcpx; width: 10=
+0% !important;">
+<p style=3D"text-align: center; line-height: 20px; font-family: Open Sans, =
+Verdana, Georgia, sans-serif; font-size: 12px;">
+This message was sent to egweinberg@viterbo.edu <span style=3D"text-align: =
+center; line-height: 20px; font-family: Open Sans, Verdana, Georgia, sans-s=
+erif; font-size: 12px;" =A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=
+=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=3D"" bgcolor=3D"#ffffff;">
+by John Wiley Sons, Inc. <br>
+<br>
+<strong style=3D"text-transform: uppercase;">Americas</strong>: 111 River S=
+treet | Hoboken, NJ 07030-5774 USA | +1 877 762 2974<br>
+<strong style=3D"text-transform: uppercase;">EMEA</strong>: The Atrium Sout=
+hern Gate | Chichester, West Sussex PO19 8SQ UK | +44 1243 843294<br>
+<strong style=3D"text-transform: uppercase;">Australia</strong>: Level 4 | =
+600 Bourke St | Melbourne | Victoria 3000 | Australia | +61 7 3859 9611<br>
+<strong style=3D"text-transform: uppercase;">Asia</strong>: No. 18 Capitol =
+Singapore, 13 Stamford Road, #02-11 | Singapore 178905 | +65 6643 8000<br>
+</span><br>
+&nbsp; <span=3D"" style=3D"text-align: center; line-height: 20px; font-fami=
+ly: Open Sans, Verdana, Georgia, sans-serif; font-size: 12px;" bgcolor=3D"#=
+ffffff;">
+<a class=3D"outer_elm" style=3D"font-size: 12px;" href=3D"https://nam02.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft6.info.wiley.com%2Fr%2F=
+%3Fid%3Dh46db3a88-d666-4eda-9121-323810d200fe%2C28714d%2C12e22d&amp;data=3D=
+05%7C01%7Cegweinberg%40viterbo.edu%7Ccde8c42a9c3e43bb8e5208dbcb342121%7C6b9=
+fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327197020655213%7CUnknown%7CTWFp=
+bGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%=
+7C3000%7C%7C%7C&amp;sdata=3DijAD%2FJDFQizyELoBujrgqKaLvv%2Bbb5GsXN0hKzY15Yk=
+%3D&amp;reserved=3D0" originalsrc=3D"https://t6.info.wiley.com/r/?id=3Dh46d=
+b3a88-d666-4eda-9121-323810d200fe,28714d,12e22d" shash=3D"hcMvVicUjaj8gdaAQ=
+EfMVtIEK6VRgK0S5hURaUcJcdmT7jN+nymBXcm+Ymj5lanGXjq6vwgvS0vK16ViYfvmXZIfkCM/=
+PMxe30GQ0Ts1pOQfqWv04sSKxlAVFlBUskzoAgCvDS17fIktcaAog+qRQOyK2px22z8J04Qr0WH=
+2MMk=3D" target=3D"_blank" rel=3D"noopener">Update Subscription Preferences=
+</a> |
+<a style=3D"font-size: 12px;" href=3D"https://nam02.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Ft6.info.wiley.com%2Fr%2F%3Fid%3Dh46db3a88-d6=
+66-4eda-9121-323810d200fe%2C28714d%2C12e22e&amp;data=3D05%7C01%7Cegweinberg=
+%40viterbo.edu%7Ccde8c42a9c3e43bb8e5208dbcb342121%7C6b9fc982e8d74958976cb08=
+441cc9b0b%7C0%7C0%7C638327197020655213%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;=
+sdata=3DRh0q3pFBVSUyTOuv3OSKJgdo3rT7JgBrrg5OTeZ683E%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://t6.info.wiley.com/r/?id=3Dh46db3a88-d666-4eda-9121-323=
+810d200fe,28714d,12e22e" shash=3D"H4hmVHMO+yqv4fEKps9iLxkGHMngS7wKTh4GIZcIh=
+Lc9Vj5sg3wbr8enmVYJqadkztryQJA+rDKNDDHFfwsgTOPbAinyUw1tp5oWhcNhTJFOlC2UEugH=
+r0xbsTB1w/5KOdOQ14X77jJdMJEKpiDk3q90hxfohy/DSmVORFfapSg=3D" target=3D"_blan=
+k" rel=3D"noopener">
+Unsubscribe</a><br>
+We respect your privacy. <a style=3D"font-size: 12px;" href=3D"https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft6.info.wiley.com%2=
+Fr%2F%3Fid%3Dh46db3a88-d666-4eda-9121-323810d200fe%2C28714d%2C12e22f&amp;da=
+ta=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ccde8c42a9c3e43bb8e5208dbcb342121%=
+7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327197020655213%7CUnknown%7=
+CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn=
+0%3D%7C3000%7C%7C%7C&amp;sdata=3DWiO0BKYtDpUkKwLZeNYXMakja9Ps9Yi%2BzVue5t7q=
+XbA%3D&amp;reserved=3D0" originalsrc=3D"https://t6.info.wiley.com/r/?id=3Dh=
+46db3a88-d666-4eda-9121-323810d200fe,28714d,12e22f" shash=3D"KCqtYDLOjnjJIE=
+H0Ii9P/hou4znSMRNDiJiZrvWr0bwDpCwqBxo2K6N3oXXonkvpTSjnSZ+JZG38WhCegelIHlEzS=
+vyiBvj8DtPs/BOy9OdyJRG4P/zOWlaUFZQb/GvBcUiAm4iebIxzcWrs7WcSEq7GZE6R+kGi65qH=
+Ww1uQJI=3D">
+See our privacy policy</a><br>
+<a style=3D"font-size: 12px;" href=3D"https://nam02.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Ft6.info.wiley.com%2Fr%2F%3Fid%3Dh46db3a88-d6=
+66-4eda-9121-323810d200fe%2C28714d%2C12e230&amp;data=3D05%7C01%7Cegweinberg=
+%40viterbo.edu%7Ccde8c42a9c3e43bb8e5208dbcb342121%7C6b9fc982e8d74958976cb08=
+441cc9b0b%7C0%7C0%7C638327197020655213%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;=
+sdata=3DMYtmqyuxiXjJ%2FhdaubOb055OBtLQLgoJcXE58Kbgw48%3D&amp;reserved=3D0" =
+originalsrc=3D"https://t6.info.wiley.com/r/?id=3Dh46db3a88-d666-4eda-9121-3=
+23810d200fe,28714d,12e230" shash=3D"ZKCk/sxCWNqJcDL4O36MV0vnkeKgUT8pbeNSXLF=
++qxKrBF3jnaXnXA0by6fx4lo1F2yW7oWTX1sZnNrTC5NyCXVXesXXoXE5m62WtpxIIZs/jXG9Ip=
+PPnJkkMaKPC6ECvwgLLNImcwj+c1wLoS6SzchHUcK1AtjAz0h+C2Fzzcw=3D">About Wiley</=
+a> |
+<a style=3D"font-size: 12px;" href=3D"https://nam02.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Ft6.info.wiley.com%2Fr%2F%3Fid%3Dh46db3a88-d6=
+66-4eda-9121-323810d200fe%2C28714d%2C12e231&amp;data=3D05%7C01%7Cegweinberg=
+%40viterbo.edu%7Ccde8c42a9c3e43bb8e5208dbcb342121%7C6b9fc982e8d74958976cb08=
+441cc9b0b%7C0%7C0%7C638327197020655213%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;=
+sdata=3Djz9x0qnoHycaZpysTd45h48V%2Bqm%2FH9Fb3rNzD42YTdQ%3D&amp;reserved=3D0=
+" originalsrc=3D"https://t6.info.wiley.com/r/?id=3Dh46db3a88-d666-4eda-9121=
+-323810d200fe,28714d,12e231" shash=3D"kN3J3c9Bs4vynGvTRaQ6/iBbPqcVQyygAJkAW=
+O7nv+wzW3JO1h2Hla8r97uyR9hbtVwB+192ONW5Abhd1OfHt1nTqajrtHQVlc+02iEqFphsE2a0=
+twRoFM65zmQwAsdye57zYoMIj2/VPZXG34bujcFXrZ0ZamO9Iand2K7qJDY=3D">
+Contact Customer Service</a></p>
+<hr>
+</td>
+</tr>
+<tr>
+<td width=3D"100%" style=3D"padding: 0px 0px 20px; width: 100% !important;"=
+>
+<p style=3D"text-align: center; font-family: Open Sans, Verdana, Georgia, s=
+ans-serif; font-size: 13px;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Ft6.info.wiley.com%2Fr%2F%3Fid%3Dh46db3a88-d666-4eda-9121-323810d200fe%2=
+C28714d%2C12e232&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ccde8c42a9c=
+3e43bb8e5208dbcb342121%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383271=
+97020655213%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJ=
+BTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DHbhN7t%2Fv6%2BQsurO=
+Vbax37rG6wYmdoOq55AtGdFYxgkU%3D&amp;reserved=3D0" originalsrc=3D"https://t6=
+.info.wiley.com/r/?id=3Dh46db3a88-d666-4eda-9121-323810d200fe,28714d,12e232=
+" shash=3D"Ozn9tanECYfQnoEdHYIZV0Ald0upWT2iDc3NFtdF5S5zlmHuPDdckS+/oSYygKRm=
+3pBLev6/N75Bo12sxOh/f5HmQhhtIGE6cmxNjzc7eWp93JSEN39HOBiN/oqP0BYbBa91/dev1Jz=
+xl9aGftZB8pKL051NhlEllE7ukLu2b7A=3D">=A9 John Wiley &amp; Sons, Inc.</a> Al=
+l rights reserved.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- END MANUALLY INSERTED FOOTER --><!--overall closing tags START --></td=
+>
+</tr>
+</tbody>
+</table>
+<!-- Footer END  --></td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table></center><![endif]--><img heigh=
+t=3D"0" width=3D"0" alt=3D"" src=3D"https://t6.info.wiley.com/r/?id=3Dh46db=
+3a88-d666-4eda-9121-323810d200fe,28714d,1">
+</div>
+</body>
+</html>

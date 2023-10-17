@@ -1,0 +1,1548 @@
+Received: from PH0PR20MB4349.namprd20.prod.outlook.com (2603:10b6:510:141::22)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Fri, 13 Oct 2023
+ 12:16:01 +0000
+Received: from CH0PR03CA0183.namprd03.prod.outlook.com (2603:10b6:610:e4::8)
+ by PH0PR20MB4349.namprd20.prod.outlook.com (2603:10b6:510:141::22) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.45; Fri, 13 Oct
+ 2023 12:15:58 +0000
+Received: from DS3PEPF000099DD.namprd04.prod.outlook.com
+ (2603:10b6:610:e4:cafe::9e) by CH0PR03CA0183.outlook.office365.com
+ (2603:10b6:610:e4::8) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.30 via Frontend
+ Transport; Fri, 13 Oct 2023 12:15:58 +0000
+Authentication-Results: spf=pass (sender IP is 27.126.146.67)
+ smtp.mailfrom=cmail19.com; dkim=pass (signature was verified)
+ header.d=nybooks.com;dmarc=pass action=none
+ header.from=nybooks.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of cmail19.com designates
+ 27.126.146.67 as permitted sender) receiver=protection.outlook.com;
+ client-ip=27.126.146.67; helo=mx67.b.outbound.createsend.com; pr=C
+Received: from mx67.b.outbound.createsend.com (27.126.146.67) by
+ DS3PEPF000099DD.mail.protection.outlook.com (10.167.17.199) with Microsoft
+ SMTP Server id 15.20.6838.22 via Frontend Transport; Fri, 13 Oct 2023
+ 12:15:57 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=cs2022; d=nybooks.com;
+ h=Subject:From:To:Reply-To:Date:MIME-Version:Content-Type:List-Unsubscribe:
+ Message-ID; i=newsletters@nybooks.com;
+ bh=tACEj0MwogXJYqvGFvfE1QMnwIesOLh9i100p5Mh5z8=;
+ b=F8pZDOuHrjjGKAluj62q5t9XZwtPDuMJnh5TV4+ZMao04HjB6Cao2bvEcMCeRQH+2TEocJdiBDTn
+   rPx/8AJ8RQLIswr+Z0wFVECiNaQAlekBRinTnyc4C8GCZVyr45bIm8WpYHUTMlPGToWJHbrJpWCe
+   JO9Jcjx2QvljULLYHhM=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=cs2013; d=cmail2.com;
+ h=Subject:From:To:Reply-To:Date:MIME-Version:Content-Type:List-Unsubscribe:
+ Message-ID;
+ bh=tACEj0MwogXJYqvGFvfE1QMnwIesOLh9i100p5Mh5z8=;
+ b=R7E0yCeX9H5WxQkROBq5WLlLz4Dk6ldgtYqP3gXUnwRKrQOUi9s/+6WDMAZwCNdL7qWEKHDr6qqV
+   V3FokQkPO41JcbvCNnIjGujARbG29v642rzLEVWlW8dUSlyfi5LfA8xQI/uKIeIZw58Vsde78kz/
+   1OStH8yUFZcMwH5q/ok=
+Subject: On Israel, Hamas, and Gaza
+From: "The New York Review of Books" <newsletters@nybooks.com> 
+To: "Eric Weinberg" <egweinberg@viterbo.edu>
+Reply-To: newsletters@nybooks.com
+Date: Fri, 13 Oct 2023 23:15:39 +1100
+Content-Type: multipart/alternative;
+ boundary="_c745f5bc-f1a3-4bd7-894e-f8a4d365479f_"; charset=utf-8
+X-Mailer: Create Send
+X-Complaints-To: abuse@cmail19.com
+X-Feedback-ID: CA1-y-xldhhud:LI1-y-bulkr:CL1-y-jiidk:createSEND
+List-Unsubscribe: <http://unsub.cmail19.com/t/y-u-xldhhud-itzkiudlt/>,
+ <mailto:unsubscribe-xldhhud2itzkiudlt2y-4500B187@cmail19.com?subject=Unsubscribe>
+Message-ID: <cm.2315395068288.xldhhud.itzkiudlt.y@cmail19.com>
+Return-Path: TheNewYorkReviewofBooks-xldhhud1itzkiudlt1y@cmail19.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2023 12:15:57.3982
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ c19aef11-d4c2-411f-02ee-08dbcbe627d1
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ DS3PEPF000099DD:EE_|PH0PR20MB4349:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ DS3PEPF000099DD.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: c19aef11-d4c2-411f-02ee-08dbcbe627d1
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;
+X-Forefront-Antispam-Report:
+ CIP:27.126.146.67;CTRY:AU;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mx67.b.outbound.createsend.com;PTR:mx67.b.outbound.createsend.com;CAT:NONE;SFS:(13230031)(4636009)(286005)(451199024)(1690799017)(3450700001)(36756003)(9316004)(66899024)(6916009)(36736006)(16670700002)(1096003)(8676002)(76236004)(7636003)(166002)(356005)(7596003)(956004)(336012)(26005)(83380400001)(66574015)(42882007)(83170400001)(6486002)(19627405001)(6666004)(6506007)(6512007)(9686003)(33964004)(4306899006)(1406899027)(62040200015)(46736004)(579004)(559001);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2023 12:15:57.1639
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: c19aef11-d4c2-411f-02ee-08dbcbe627d1
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ DS3PEPF000099DD.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR20MB4349
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.9696879
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?windows-1256?Q?of3qI9iWZRPOqirbMRG3XSS96+gXCUGaob3DsSUPzgjWkGda36SATIAU?=
+ =?windows-1256?Q?4Kxrm6Xr8X70pxQ6QrYtqYoCHs7lJR3SPj8CyMx2167dz3kRTxaJxUUn?=
+ =?windows-1256?Q?PEyBKHILvjNorYqvydENJpC77Pav2iKuIN/lQJBoyvgeLsTRCAR914ij?=
+ =?windows-1256?Q?cRh16wL8MRliy+y2ruDQPuxJmgdmhw5qi2IxBTzWtyWlRkUShiqs2Z/j?=
+ =?windows-1256?Q?x4WgRj9xlzI6U1gcHmiQujc3qSjDzLiBc+F0Wp/WAIINvLECwbhn2gCB?=
+ =?windows-1256?Q?q0GTr7cBWAIj9mWgfqmXnqbrwD3YI7LmwrYsaut1uIKzvPLLb1m6speR?=
+ =?windows-1256?Q?BDKyNcjCatu6fP+evkkfyGsKTa0KuFV7yI6wHJOeCeLSP+1uSol+/ukX?=
+ =?windows-1256?Q?rmQISWAmReKnLsSXg5FV4Gj+XwacS8gTvzLUoz2t+Bgs7yozafLxnDlI?=
+ =?windows-1256?Q?qqtfUEJdZ3cJdkKrB6J/5VJy8VMtx0Y9snlRR2dHgtM8b5WAK+0oPdeX?=
+ =?windows-1256?Q?/q1o6NWco/r5NqZ/wVszcSpBwdrQEmEFA+bVfpnOSVL5V+xaXlL5KdfL?=
+ =?windows-1256?Q?sMPfTbdVPiQChT60XWbjlZKqxrx1cXlVbCtfny3gFq6F2R2cUsFDls5i?=
+ =?windows-1256?Q?atSda7EvOgv1Q+fa3nO8tzKnDdurL6tN8c8J5z9aJLOZ5CIGMkpRWKQg?=
+ =?windows-1256?Q?4DCDddY4bH9FGgBvYhxN+61pIHIh9KFBdKEWgUzJgVCELcEGqxB5Y7dn?=
+ =?windows-1256?Q?O4yoZ8Qv6AHh4wW4b0BLcraDPXelYmkot+06iJutP9O9nqOQz/rbRFDm?=
+ =?windows-1256?Q?Hpi5w2/BxogcX5A6saWmOK3ifCfF/B0mubOTUxmI54QvaqGPYfuGsvPi?=
+ =?windows-1256?Q?WvVnImnHTwJsbpXh6zRGWKwf1glbRaW0OLV1NlavFfzUCgibFfp8b+13?=
+ =?windows-1256?Q?n+QrRwNACEi/OReBs0GI+ozW3UvwprBwrYftP4nB0D8Rurh20gmJl7n9?=
+ =?windows-1256?Q?/mY1zQLnTahEz1B2W5t0Yojs9Lm/VDS5oRP7FMaSrroq5mlLJ9A2glkq?=
+ =?windows-1256?Q?xQSk/u64J+MBoQ/+D/xfCuVSLQOIJoSi7MV+sbzuwg61PmLTdL2SQeND?=
+ =?windows-1256?Q?ECvMgwAYslEkB4bz+s2TbwZ02elYxKL1yf9iiNBM1USPFkJRJpWPL1ki?=
+ =?windows-1256?Q?x8ufC4raZK+V0iD8mZWDyrr4+GeEOVScG3ZUfG9dSY587SwfK2SyE3tP?=
+ =?windows-1256?Q?+TwuD3lEOLFvN9j5kyqppG/j6ZWtjEJaW9oilAag7B2vdodTnSIk7Pjm?=
+ =?windows-1256?Q?H2qtncMG7Mp98B0dYFfc/whPG6qUOiM7wxGY9XlnDPaUkA7PaK2jmXyD?=
+ =?windows-1256?Q?YiCoa5Y9wGD5AjBPo1sLUYVOGl2ql6TWTFrMQz6RtuaHmo+HQmzpdF2q?=
+ =?windows-1256?Q?sZsQqthgwfbiIE5r9jDpkOfxRaQvxQ380NhCY+skbllwA6oUnWuXIgxK?=
+ =?windows-1256?Q?wF44UTtbsqiYmOAZ9th+wn9I0os+ihEZfHUGkkM7vgcZBz6jbGhReGid?=
+ =?windows-1256?Q?7XtVJMHShDxMS4IhKuJHWKEzVsBhN5YBdMIzjZYdr3lQrB5CVqauOxfR?=
+ =?windows-1256?Q?VfAGda2rnH6heav4TXS4XHK53R6PWDvOPfFN+ephN2Y8tmFssM2pUcZ0?=
+ =?windows-1256?Q?Cema9NkfXa51SbBEvLk8OVgmEbR/xGAOB9IdH3mGrbhxY7fZ7PzQ2yFM?=
+ =?windows-1256?Q?Mg4UbUscs6tlzq5SyA89l2mMMDKLi/xp9LGd+wWF4btKoIcVfWueq/Qg?=
+ =?windows-1256?Q?5NKiBxfO640jn6zc+/QXGBNkCtpkrTWnLkbQGhZzlbloUIVyN1j359pq?=
+ =?windows-1256?Q?fEWQUQKYH5czkA=3D=3D?=
+MIME-Version: 1.0
+
+--_c745f5bc-f1a3-4bd7-894e-f8a4d365479f_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+EXTERNAL: This email originated from a sender outside of Viterbo. Use cauti=
+on when clicking on links or opening attachments.
+
+New York Review Writers Respond =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C
+[The New York Review of Books]<https://email.nybooks.com/t/y-l-xldhhud-itzk=
+iudlt-r/>
+[Photograph of Palestinians walking in Gaza City=E2=80=99s al-Rimal distric=
+t following Israeli airstrikes]<https://email.nybooks.com/t/y-l-xldhhud-itz=
+kiudlt-y/>
+Raja Shehadeh
+Causes for Despair<https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-j/>
+
+Wars are usually harbingers of change, yet Israel=E2=80=99s previous wars h=
+ave achieved no fundamental progress toward peace.
+
+
+[Photograph of Israeli Prime Minister Benjamin Netanyahu]<https://email.nyb=
+ooks.com/t/y-l-xldhhud-itzkiudlt-t/>
+David Shulman
+D=C3=A9j=C3=A0 Vu in Israel<https://email.nybooks.com/t/y-l-xldhhud-itzkiud=
+lt-i/>
+
+The conceptual system that has dominated Israeli thinking and policy for de=
+cades has been exposed, repeatedly, as dangerous and delusional.
+
+
+[Photograph of smoke billowing in the aftermath of an Israeli airstrike on =
+Gaza=E2=80=99s port]<https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-d/>
+Tareq Baconi
+Gaza Without Pretenses<https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-h/=
+>
+
+For years Israel and Hamas maintained an unstable equilibrium that kept the=
+ Gaza Strip contained. But it was always likely to be temporary.
+
+
+[Photograph of a member of the press standing in front of a house destroyed=
+ during Hamas=E2=80=99s attack on Kibbutz Be=E2=80=99eri, Israel]<https://e=
+mail.nybooks.com/t/y-l-xldhhud-itzkiudlt-k/>
+Joshua Leifer
+Inhumane Times<https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-u/>
+
+Saturday=E2=80=99s devastating attacks have been met in Israel with rage at=
+ the government=E2=80=99s failures and demands for disproportionate vengean=
+ce.
+
+
+[Photograph of an Israeli residential building struck by rockets fired by H=
+amas, Ashkelon]<https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-o/>
+Fintan O=E2=80=99Toole
+Eyeless in Gaza<https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-b/>
+
+What lessons do people actually learn from the cruelties they applaud and t=
+he ones they suffer in return?
+
+
+[Subscribe today]<https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-n/>
+A thoughtful gift for serious readers.
+They=E2=80=99ll receive exclusive access to the current issue, complete arc=
+hive, and NYR App. You=E2=80=99ll receive a free David Levine 2024 calendar=
+!<https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-p/>
+Get the deal<https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-x/>
+Politics<https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-m/>   Literature=
+<https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-c/>   Arts<https://email=
+.nybooks.com/t/y-l-xldhhud-itzkiudlt-q/>   Ideas<https://email.nybooks.com/=
+t/y-l-xldhhud-itzkiudlt-a/>
+[http://i7.cmail19.com/ei/y/6E/B1C/94B/231223/csfinal/nyrev_divider2-990000=
+0000079e3c.png]
+
+You are receiving this message because you signed up
+for email newsletters from The New York Review.
+
+Update your address or preferences<https://thenewyorkreview.updatemyprofile=
+.com/y-xldhhud-4500B187-itzkiudlt-f>
+View this newsletter online<https://email.nybooks.com/t/y-e-xldhhud-itzkiud=
+lt-z/>
+
+The New York Review of Books
+207 East 32nd Street, New York, NY 10016-6305
+
+
+
+Preferences<https://thenewyorkreview.updatemyprofile.com/y-xldhhud-4500B187=
+-itzkiudlt-v>  |  Unsubscribe<https://email.nybooks.com/t/y-u-xldhhud-itzki=
+udlt-e/>
+
+
+
+--_c745f5bc-f1a3-4bd7-894e-f8a4d365479f_
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html style=3D"margin: 0;pad=
+ding: 0;" xmlns=3D"http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle></title>
+<!--[if !mso]><!-->
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<!--<![endif]-->
+<meta name=3D"viewport" content=3D"width=3Ddevice-width">
+<style type=3D"text/css">
+@media only screen and (min-width: 620px){.column{}.wrapper{min-width:600px=
+ !important}.wrapper h1{}.wrapper h1{font-size:30px !important;line-height:=
+38px !important}.wrapper h2{}.wrapper h2{font-size:24px !important;line-hei=
+ght:32px !important}.wrapper h3{}.wrapper h3{font-size:20px !important;line=
+-height:28px !important}.wrapper .size-8,.wrapper .size-8-m,.wrapper .size-=
+8-l{font-size:8px !important;line-height:14px !important}.wrapper .size-8-m=
+{line-height:16px !important}.wrapper .size-8-l{line-height:24px !important=
+}.wrapper .size-9,.wrapper .size-9-m,.wrapper .size-9-l{font-size:9px !impo=
+rtant;line-height:16px !important}.wrapper .size-9-m{line-height:18px !impo=
+rtant}.wrapper .size-9-l{line-height:27px !important}.wrapper .size-10,.wra=
+pper .size-10-m,.wrapper .size-10-l{font-size:10px !important;line-height:1=
+8px !important}.wrapper .size-10-m{line-height:20px !important}.wrapper=20
+.size-10-l{line-height:30px !important}.wrapper .size-11,.wrapper .size-11-=
+m,.wrapper .size-11-l{font-size:11px !important;line-height:19px !important=
+}.wrapper .size-11-m{line-height:22px !important}.wrapper .size-11-l{line-h=
+eight:33px !important}.wrapper .size-12,.wrapper .size-12-m,.wrapper .size-=
+12-l{font-size:12px !important;line-height:19px !important}.wrapper .size-1=
+2-m{line-height:24px !important}.wrapper .size-12-l{line-height:36px !impor=
+tant}.wrapper .size-13,.wrapper .size-13-m,.wrapper .size-13-l{font-size:13=
+px !important;line-height:21px !important}.wrapper .size-13-m{line-height:2=
+6px !important}.wrapper .size-13-l{line-height:39px !important}.wrapper .si=
+ze-14,.wrapper .size-14-m,.wrapper .size-14-l{font-size:14px !important;lin=
+e-height:21px !important}.wrapper .size-14-m{line-height:28px !important}.w=
+rapper .size-14-l{line-height:42px !important}.wrapper .size-15,.wrapper=20
+.size-15-m,.wrapper .size-15-l{font-size:15px !important;line-height:23px !=
+important}.wrapper .size-15-m{line-height:30px !important}.wrapper .size-15=
+-l{line-height:45px !important}.wrapper .size-16,.wrapper .size-16-m,.wrapp=
+er .size-16-l{font-size:16px !important;line-height:24px !important}.wrappe=
+r .size-16-m{line-height:32px !important}.wrapper .size-16-l{line-height:48=
+px !important}.wrapper .size-17,.wrapper .size-17-m,.wrapper .size-17-l{fon=
+t-size:17px !important;line-height:26px !important}.wrapper .size-17-m{line=
+-height:34px !important}.wrapper .size-17-l{line-height:51px !important}.wr=
+apper .size-18,.wrapper .size-18-m,.wrapper .size-18-l{font-size:18px !impo=
+rtant;line-height:26px !important}.wrapper .size-18-m{line-height:36px !imp=
+ortant}.wrapper .size-18-l{line-height:54px !important}.wrapper .size-20,.w=
+rapper .size-20-m,.wrapper .size-20-l{font-size:20px=20
+!important;line-height:28px !important}.wrapper .size-20-m{line-height:40px=
+ !important}.wrapper .size-20-l{line-height:60px !important}.wrapper .size-=
+22,.wrapper .size-22-m,.wrapper .size-22-l{font-size:22px !important;line-h=
+eight:31px !important}.wrapper .size-22-m{line-height:44px !important}.wrap=
+per .size-22-l{line-height:66px !important}.wrapper .size-24,.wrapper .size=
+-24-m,.wrapper .size-24-l{font-size:24px !important;line-height:32px !impor=
+tant}.wrapper .size-24-m{line-height:48px !important}.wrapper .size-24-l{li=
+ne-height:72px !important}.wrapper .size-26,.wrapper .size-26-m,.wrapper .s=
+ize-26-l{font-size:26px !important;line-height:34px !important}.wrapper .si=
+ze-26-m{line-height:52px !important}.wrapper .size-26-l{line-height:78px !i=
+mportant}.wrapper .size-28,.wrapper .size-28-m,.wrapper .size-28-l{font-siz=
+e:28px !important;line-height:36px !important}.wrapper=20
+.size-28-m{line-height:56px !important}.wrapper .size-28-l{line-height:84px=
+ !important}.wrapper .size-30,.wrapper .size-30-m,.wrapper .size-30-l{font-=
+size:30px !important;line-height:38px !important}.wrapper .size-30-m{line-h=
+eight:60px !important}.wrapper .size-30-l{line-height:90px !important}.wrap=
+per .size-32,.wrapper .size-32-m,.wrapper .size-32-l{font-size:32px !import=
+ant;line-height:40px !important}.wrapper .size-32-m{line-height:64px !impor=
+tant}.wrapper .size-32-l{line-height:96px !important}.wrapper .size-34,.wra=
+pper .size-34-m,.wrapper .size-34-l{font-size:34px !important;line-height:4=
+3px !important}.wrapper .size-34-m{line-height:68px !important}.wrapper .si=
+ze-34-l{line-height:102px !important}.wrapper .size-36,.wrapper .size-36-m,=
+.wrapper .size-36-l{font-size:36px !important;line-height:43px !important}.=
+wrapper .size-36-m{line-height:72px !important}.wrapper=20
+.size-36-l{line-height:108px !important}.wrapper .size-40,.wrapper .size-40=
+-m,.wrapper .size-40-l{font-size:40px !important;line-height:47px !importan=
+t}.wrapper .size-40-m{line-height:80px !important}.wrapper .size-40-l{line-=
+height:120px !important}.wrapper .size-44,.wrapper .size-44-m,.wrapper .siz=
+e-44-l{font-size:44px !important;line-height:50px !important}.wrapper .size=
+-44-m{line-height:88px !important}.wrapper .size-44-l{line-height:132px !im=
+portant}.wrapper .size-48,.wrapper .size-48-m,.wrapper .size-48-l{font-size=
+:48px !important;line-height:54px !important}.wrapper .size-48-m{line-heigh=
+t:96px !important}.wrapper .size-48-l{line-height:144px !important}.wrapper=
+ .size-56,.wrapper .size-56-m,.wrapper .size-56-l{font-size:56px !important=
+;line-height:60px !important}.wrapper .size-56-m{line-height:112px !importa=
+nt}.wrapper .size-56-l{line-height:168px !important}.wrapper=20
+.size-64,.wrapper .size-64-m,.wrapper .size-64-l{font-size:64px !important;=
+line-height:68px !important}.wrapper .size-64-m{line-height:128px !importan=
+t}.wrapper .size-64-l{line-height:192px !important}.wrapper .size-72,.wrapp=
+er .size-72-m,.wrapper .size-72-l{font-size:72px !important;line-height:76p=
+x !important}.wrapper .size-72-m{line-height:144px !important}.wrapper .siz=
+e-72-l{line-height:216px !important}.wrapper .size-80,.wrapper .size-80-m,.=
+wrapper .size-80-l{font-size:80px !important;line-height:84px !important}.w=
+rapper .size-80-m{line-height:160px !important}.wrapper .size-80-l{line-hei=
+ght:240px !important}.wrapper .size-96,.wrapper .size-96-m,.wrapper .size-9=
+6-l{font-size:96px !important;line-height:100px !important}.wrapper .size-9=
+6-m{line-height:192px !important}.wrapper .size-96-l{line-height:288px !imp=
+ortant}.wrapper .size-112,.wrapper .size-112-m,.wrapper=20
+.size-112-l{font-size:112px !important;line-height:116px !important}.wrappe=
+r .size-112-m{line-height:224px !important}.wrapper .size-112-l{line-height=
+:336px !important}.wrapper .size-128,.wrapper .size-128-m,.wrapper .size-12=
+8-l{font-size:128px !important;line-height:132px !important}.wrapper .size-=
+128-m{line-height:256px !important}.wrapper .size-128-l{line-height:384px !=
+important}.wrapper .size-144,.wrapper .size-144-m,.wrapper .size-144-l{font=
+-size:144px !important;line-height:148px !important}.wrapper .size-144-m{li=
+ne-height:288px !important}.wrapper .size-144-l{line-height:432px !importan=
+t}}
+</style>
+<meta name=3D"x-apple-disable-message-reformatting">
+<style type=3D"text/css">
+.main, .mso {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+* {
+  line-height: inherit;
+}
+[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.wrapper .footer__share-button a:hover,
+.wrapper .footer__share-button a:focus {
+  color: #ffffff !important;
+}
+.wrapper .footer__share-button a.icon-white:hover,
+.wrapper .footer__share-button a.icon-white:focus {
+  color: #ffffff !important;
+}
+.wrapper .footer__share-button a.icon-black:hover,
+.wrapper .footer__share-button a.icon-black:focus {
+  color: #000000 !important;
+}
+.btn a:hover,
+.btn a:focus,
+.footer__share-button a:hover,
+.footer__share-button a:focus,
+.email-footer__links a:hover,
+.email-footer__links a:focus {
+  opacity: 0.8;
+}
+.preheader,
+.header,
+.layout,
+.column {
+  transition: width 0.25s ease-in-out, max-width 0.25s ease-in-out;
+}
+.preheader td {
+  padding-bottom: 8px;
+}
+.layout,
+div.header {
+  max-width: 400px !important;
+  -fallback-width: 95% !important;
+  width: calc(100% - 20px) !important;
+}
+div.preheader {
+  max-width: 360px !important;
+  -fallback-width: 90% !important;
+  width: calc(100% - 60px) !important;
+}
+.snippet,
+.webversion {
+  Float: none !important;
+}
+.stack .column {
+  max-width: 400px !important;
+  width: 100% !important;
+}
+.fixed-width.has-border {
+  max-width: 402px !important;
+}
+.fixed-width.has-border .layout__inner {
+  box-sizing: border-box;
+}
+.snippet,
+.webversion {
+  width: 50% !important;
+}
+.mso .layout__edges {
+  font-size: 0;
+}
+.layout-fixed-width,
+.mso .layout-full-width {
+  background-color: #ffffff;
+}
+@media only screen and (min-width: 620px) {
+  .column,
+  .gutter {
+    display: table-cell;
+    Float: none !important;
+    vertical-align: top;
+  }
+  div.preheader,
+  .email-footer {
+    max-width: 560px !important;
+    width: 560px !important;
+  }
+  .snippet,
+  .webversion {
+    width: 280px !important;
+  }
+  div.header,
+  .layout,
+  .one-col .column {
+    max-width: 600px !important;
+    width: 600px !important;
+  }
+  .fixed-width.has-border,
+  .fixed-width.x_has-border,
+  .has-gutter.has-border,
+  .has-gutter.x_has-border {
+    max-width: 602px !important;
+    width: 602px !important;
+  }
+  .two-col .column {
+    max-width: 300px !important;
+    width: 300px !important;
+  }
+  .three-col .column,
+  .column.narrow,
+  .column.x_narrow {
+    max-width: 200px !important;
+    width: 200px !important;
+  }
+  .column.wide,
+  .column.x_wide {
+    width: 400px !important;
+  }
+  .two-col.has-gutter .column,
+  .two-col.x_has-gutter .column {
+    max-width: 290px !important;
+    width: 290px !important;
+  }
+  .three-col.has-gutter .column,
+  .three-col.x_has-gutter .column,
+  .has-gutter .narrow {
+    max-width: 188px !important;
+    width: 188px !important;
+  }
+  .has-gutter .wide {
+    max-width: 394px !important;
+    width: 394px !important;
+  }
+  .two-col.has-gutter.has-border .column,
+  .two-col.x_has-gutter.x_has-border .column {
+    max-width: 292px !important;
+    width: 292px !important;
+  }
+  .three-col.has-gutter.has-border .column,
+  .three-col.x_has-gutter.x_has-border .column,
+  .has-gutter.has-border .narrow,
+  .has-gutter.x_has-border .narrow {
+    max-width: 190px !important;
+    width: 190px !important;
+  }
+  .has-gutter.has-border .wide,
+  .has-gutter.x_has-border .wide {
+    max-width: 396px !important;
+    width: 396px !important;
+  }
+}
+@supports (display: flex) {
+  @media only screen and (min-width: 620px) {
+    .fixed-width.has-border .layout__inner {
+      display: flex !important;
+    }
+  }
+}
+/***
+* Mobile Styles
+*
+* 1. Overriding inline styles
+*/
+@media(max-width: 619px) {
+  .email-flexible-footer .left-aligned-footer .column,
+  .email-flexible-footer .center-aligned-footer,
+  .email-flexible-footer .right-aligned-footer .column {
+    max-width: 100% !important; /* [1] */
+    text-align: center !important; /* [1] */
+    width: 100% !important; /* [1] */
+  }
+  .flexible-footer-logo {
+    margin-left: 0px !important; /* [1] */
+    margin-right: 0px !important; /* [1] */
+  }
+  .email-flexible-footer .left-aligned-footer .flexible-footer__share-butto=
+n__container,
+  .email-flexible-footer .center-aligned-footer .flexible-footer__share-but=
+ton__container,
+  .email-flexible-footer .right-aligned-footer .flexible-footer__share-butt=
+on__container {
+    display: inline-block;
+    margin-left: 5px !important; /* [1] */
+    margin-right: 5px !important; /* [1] */
+  }
+  .email-flexible-footer__additionalinfo--center {
+    text-align: center !important; /* [1] */
+  }
+ =20
+  .email-flexible-footer .left-aligned-footer table,
+  .email-flexible-footer .center-aligned-footer table,
+  .email-flexible-footer .right-aligned-footer table {
+    display: table !important; /* [1] */
+    width: 100% !important; /* [1] */
+  }
+  .email-flexible-footer .footer__share-button,
+  .email-flexible-footer .email-footer__additional-info {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and=
+ (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-rat=
+io: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min=
+-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .fblike {
+    background-image: url(http://i7.cmail19.com/static/eb/master/13-the-blu=
+eprint-3/images/fblike@2x.png) !important;
+  }
+  .tweet {
+    background-image: url(http://i8.cmail19.com/static/eb/master/13-the-blu=
+eprint-3/images/tweet@2x.png) !important;
+  }
+  .linkedinshare {
+    background-image: url(http://i10.cmail19.com/static/eb/master/13-the-bl=
+ueprint-3/images/lishare@2x.png) !important;
+  }
+  .forwardtoafriend {
+    background-image: url(http://i9.cmail19.com/static/eb/master/13-the-blu=
+eprint-3/images/forward@2x.png) !important;
+  }
+}
+@media (max-width: 321px) {
+  .fixed-width.has-border .layout__inner {
+    border-width: 1px 0 !important;
+  }
+  .layout,
+  .stack .column {
+    min-width: 320px !important;
+    width: 320px !important;
+  }
+  .border {
+    display: none;
+  }
+  .has-gutter .border {
+    display: table-cell;
+  }
+}
+.cmctbl--inline table {
+  border-collapse: collapse;
+}
+</style><style type=3D"text/css">
+.main,.mso{background-color:#fff}.logo a:hover,.logo a:focus{color:#859bb1 =
+!important}.footer-logo a:hover,.footer-logo a:focus{color:#372d1b !importa=
+nt}.mso .layout-has-border{border-top:1px solid #ccc;border-bottom:1px soli=
+d #ccc}.mso .layout-has-bottom-border{border-bottom:1px solid #ccc}.mso .bo=
+rder{background-color:#ccc}.mso h1{}.mso h1{font-size:30px !important;line-=
+height:38px !important}.mso h2{}.mso h2{font-size:24px !important;line-heig=
+ht:32px !important}.mso h3{}.mso h3{font-size:20px !important;line-height:2=
+8px !important}.mso .layout__inner{}.mso .footer__share-button p{}.mso .foo=
+ter__share-button p{font-family:sans-serif}
+</style><!--[if mso]><style type=3D"text/css" emb-not-inline>
+.mso div{border:0 none white !important}.mso .w560 .divider{}.mso .w560 .di=
+vider{Margin-left:260px !important;Margin-right:260px !important}.mso .w360=
+ .divider{}.mso .w360 .divider{Margin-left:160px !important;Margin-right:16=
+0px !important}.mso .w260 .divider{}.mso .w260 .divider{Margin-left:110px !=
+important;Margin-right:110px !important}.mso .w160 .divider{}.mso .w160 .di=
+vider{Margin-left:60px !important;Margin-right:60px !important}.mso .w60 .d=
+ivider{}.mso .w60 .divider{Margin-left:10px !important;Margin-right:10px !i=
+mportant}.mso .w354 .divider{}.mso .w354 .divider{Margin-left:157px !import=
+ant;Margin-right:157px !important}.mso .w250 .divider{}.mso .w250 .divider{=
+Margin-left:105px !important;Margin-right:105px !important}.mso .w148 .divi=
+der{}.mso .w148 .divider{Margin-left:54px !important;Margin-right:54px !imp=
+ortant}.mso .size-8,.mso .size-8-m,.mso .size-8-l{font-size:8px=20
+!important;line-height:14px !important}.mso .size-8-m{line-height:16px !imp=
+ortant}.mso .size-8-l{line-height:24px !important}.mso .size-9,.mso .size-9=
+-m,.mso .size-9-l{font-size:9px !important;line-height:16px !important}.mso=
+ .size-9-m{line-height:18px !important}.mso .size-9-l{line-height:27px !imp=
+ortant}.mso .size-10,.mso .size-10-m,.mso .size-10-l{font-size:10px !import=
+ant;line-height:18px !important}.mso .size-10-m{line-height:20px !important=
+}.mso .size-10-l{line-height:30px !important}.mso .size-11,.mso .size-11-m,=
+.mso .size-11-l{font-size:11px !important;line-height:19px !important}.mso =
+.size-11-m{line-height:22px !important}.mso .size-11-l{line-height:33px !im=
+portant}.mso .size-12,.mso .size-12-m,.mso .size-12-l{font-size:12px !impor=
+tant;line-height:19px !important}.mso .size-12-m{line-height:24px !importan=
+t}.mso .size-12-l{line-height:36px !important}.mso .size-13,.mso=20
+.size-13-m,.mso .size-13-l{font-size:13px !important;line-height:21px !impo=
+rtant}.mso .size-13-m{line-height:26px !important}.mso .size-13-l{line-heig=
+ht:39px !important}.mso .size-14,.mso .size-14-m,.mso .size-14-l{font-size:=
+14px !important;line-height:21px !important}.mso .size-14-m{line-height:28p=
+x !important}.mso .size-14-l{line-height:42px !important}.mso .size-15,.mso=
+ .size-15-m,.mso .size-15-l{font-size:15px !important;line-height:23px !imp=
+ortant}.mso .size-15-m{line-height:30px !important}.mso .size-15-l{line-hei=
+ght:45px !important}.mso .size-16,.mso .size-16-m,.mso .size-16-l{font-size=
+:16px !important;line-height:24px !important}.mso .size-16-m{line-height:32=
+px !important}.mso .size-16-l{line-height:48px !important}.mso .size-17,.ms=
+o .size-17-m,.mso .size-17-l{font-size:17px !important;line-height:26px !im=
+portant}.mso .size-17-m{line-height:34px !important}.mso=20
+.size-17-l{line-height:51px !important}.mso .size-18,.mso .size-18-m,.mso .=
+size-18-l{font-size:18px !important;line-height:26px !important}.mso .size-=
+18-m{line-height:36px !important}.mso .size-18-l{line-height:54px !importan=
+t}.mso .size-20,.mso .size-20-m,.mso .size-20-l{font-size:20px !important;l=
+ine-height:28px !important}.mso .size-20-m{line-height:40px !important}.mso=
+ .size-20-l{line-height:60px !important}.mso .size-22,.mso .size-22-m,.mso =
+.size-22-l{font-size:22px !important;line-height:31px !important}.mso .size=
+-22-m{line-height:44px !important}.mso .size-22-l{line-height:66px !importa=
+nt}.mso .size-24,.mso .size-24-m,.mso .size-24-l{font-size:24px !important;=
+line-height:32px !important}.mso .size-24-m{line-height:48px !important}.ms=
+o .size-24-l{line-height:72px !important}.mso .size-26,.mso .size-26-m,.mso=
+ .size-26-l{font-size:26px !important;line-height:34px !important}.mso=20
+.size-26-m{line-height:52px !important}.mso .size-26-l{line-height:78px !im=
+portant}.mso .size-28,.mso .size-28-m,.mso .size-28-l{font-size:28px !impor=
+tant;line-height:36px !important}.mso .size-28-m{line-height:56px !importan=
+t}.mso .size-28-l{line-height:84px !important}.mso .size-30,.mso .size-30-m=
+,.mso .size-30-l{font-size:30px !important;line-height:38px !important}.mso=
+ .size-30-m{line-height:60px !important}.mso .size-30-l{line-height:90px !i=
+mportant}.mso .size-32,.mso .size-32-m,.mso .size-32-l{font-size:32px !impo=
+rtant;line-height:40px !important}.mso .size-32-m{line-height:64px !importa=
+nt}.mso .size-32-l{line-height:96px !important}.mso .size-34,.mso .size-34-=
+m,.mso .size-34-l{font-size:34px !important;line-height:43px !important}.ms=
+o .size-34-m{line-height:68px !important}.mso .size-34-l{line-height:102px =
+!important}.mso .size-36,.mso .size-36-m,.mso .size-36-l{font-size:36px=20
+!important;line-height:43px !important}.mso .size-36-m{line-height:72px !im=
+portant}.mso .size-36-l{line-height:108px !important}.mso .size-40,.mso .si=
+ze-40-m,.mso .size-40-l{font-size:40px !important;line-height:47px !importa=
+nt}.mso .size-40-m{line-height:80px !important}.mso .size-40-l{line-height:=
+120px !important}.mso .size-44,.mso .size-44-m,.mso .size-44-l{font-size:44=
+px !important;line-height:50px !important}.mso .size-44-m{line-height:88px =
+!important}.mso .size-44-l{line-height:132px !important}.mso .size-48,.mso =
+.size-48-m,.mso .size-48-l{font-size:48px !important;line-height:54px !impo=
+rtant}.mso .size-48-m{line-height:96px !important}.mso .size-48-l{line-heig=
+ht:144px !important}.mso .size-56,.mso .size-56-m,.mso .size-56-l{font-size=
+:56px !important;line-height:60px !important}.mso .size-56-m{line-height:11=
+2px !important}.mso .size-56-l{line-height:168px !important}.mso=20
+.size-64,.mso .size-64-m,.mso .size-64-l{font-size:64px !important;line-hei=
+ght:68px !important}.mso .size-64-m{line-height:128px !important}.mso .size=
+-64-l{line-height:192px !important}.mso .size-72,.mso .size-72-m,.mso .size=
+-72-l{font-size:72px !important;line-height:76px !important}.mso .size-72-m=
+{line-height:144px !important}.mso .size-72-l{line-height:216px !important}=
+.mso .size-80,.mso .size-80-m,.mso .size-80-l{font-size:80px !important;lin=
+e-height:84px !important}.mso .size-80-m{line-height:160px !important}.mso =
+.size-80-l{line-height:240px !important}.mso .size-96,.mso .size-96-m,.mso =
+.size-96-l{font-size:96px !important;line-height:100px !important}.mso .siz=
+e-96-m{line-height:192px !important}.mso .size-96-l{line-height:288px !impo=
+rtant}.mso .size-112,.mso .size-112-m,.mso .size-112-l{font-size:112px !imp=
+ortant;line-height:116px !important}.mso .size-112-m{line-height:224px=20
+!important}.mso .size-112-l{line-height:336px !important}.mso .size-128,.ms=
+o .size-128-m,.mso .size-128-l{font-size:128px !important;line-height:132px=
+ !important}.mso .size-128-m{line-height:256px !important}.mso .size-128-l{=
+line-height:384px !important}.mso .size-144,.mso .size-144-m,.mso .size-144=
+-l{font-size:144px !important;line-height:148px !important}.mso .size-144-m=
+{line-height:288px !important}.mso .size-144-l{line-height:432px !important=
+}.mso .cmctbl table td,.mso .cmctbl table th{Margin-left:20px !important;Ma=
+rgin-right:20px !important}.mso .cmctbl- -inline,.mso .cmctbl{padding-left:=
+20px !important;padding-right:20px !important}.mso .cmctbl- -inline table,.=
+mso .cmctbl=20
+table{mso-table-lspace:0pt;mso-table-rspace:0pt;
+mso-line-height-rule:exactly}.size-8,.size-9{mso-text-raise:9px}.size-34,h1=
+{mso-text-raise:13px}.size-36{mso-text-raise:14px}.size-40{mso-text-raise:1=
+6px}.size-44{mso-text-raise:17px}.size-48{mso-text-raise:18px}.size-56{mso-=
+text-raise:22px}.size-64{mso-text-raise:25px}.size-72{mso-text-raise:28px}.=
+size-80{mso-text-raise:32px}.size-96{mso-text-raise:40px}.size-112{mso-text=
+-raise:46px}.size-128{mso-text-raise:54px}.size-144{mso-text-raise:58px}.si=
+ze-11-m,.size-12-m{mso-text-raise:6px}.size-13-m,.size-14-m{mso-text-raise:=
+7px}.size-15-m,.size-16-m,.size-8-l{mso-text-raise:8px}.size-17-m,.size-18-=
+m{mso-text-raise:9px}.size-20-m,.size-10-l{mso-text-raise:10px}.size-22-m,.=
+size-11-l{mso-text-raise:11px}.size-24-m,.size-12-l{mso-text-raise:12px}.si=
+ze-26-m,.size-13-l{mso-text-raise:13px}.size-28-m,.size-14-l{mso-text-raise=
+:14px}.size-30-m,.size-15-l{mso-text-raise:15px}.size-32-m,.size-16
+-l{mso-text-raise:16px}.size-34-m,.size-17-l{mso-text-raise:17px}.size-36-m=
+,.size-18-l{mso-text-raise:18px}.size-40-m,.size-20-l{mso-text-raise:20px}.=
+size-44-m,.size-22-l{mso-text-raise:22px}.size-48-m,.size-24-l{mso-text-rai=
+se:24px}.size-26-l{mso-text-raise:26px}.size-56-m,.size-28-l{mso-text-raise=
+:28px}.size-30-l{mso-text-raise:30px}.size-64-m,.size-32-l{mso-text-raise:3=
+2px}.size-34-l{mso-text-raise:34px}.size-72-m,.size-36-l{mso-text-raise:36p=
+x}.size-80-m,.size-40-l{mso-text-raise:40px}.size-44-l{mso-text-raise:44px}=
+.size-96-m,.size-48-l{mso-text-raise:48px}.size-112-m,.size-56-l{mso-text-r=
+aise:56px}.size-128-m,.size-64-l{mso-text-raise:64px}.size-144-m,.size-72-l=
+{mso-text-raise:72px}.size-80-l{mso-text-raise:80px}.size-96-l{mso-text-rai=
+se:96px}.size-112-l{mso-text-raise:112px}.size-128-l{mso-text-raise:128px}.=
+size-144-l{mso-text-raise:144px}
+</style><![endif]--><!--[if mso]>
+  <body class=3D"mso">
+<![endif]--><!--[if !mso]><!-->
+</head>
+<body class=3D"main half-padding" style=3D"margin: 0;padding: 0;-webkit-tex=
+t-size-adjust: 100%;">
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div><!--<![endif]-->
+<div style=3D"mso-hide:all;position:fixed;height:0;max-height:0;overflow:hi=
+dden;font-size:0;">
+New York Review Writers Respond =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C</div>
+<table class=3D"wrapper" style=3D"border-collapse: collapse;table-layout: f=
+ixed;min-width: 320px;width: 100%;background-color: #fff;" cellpadding=3D"0=
+" cellspacing=3D"0" role=3D"presentation">
+<tbody>
+<tr>
+<td>
+<div role=3D"banner">
+<div class=3D"preheader" style=3D"Margin: 0 auto;max-width: 560px;min-width=
+: 280px; width: 280px;width: calc(28000% - 167440px);">
+<div style=3D"border-collapse: collapse;display: table;width: 100%;"><!--[i=
+f mso]><table align=3D"center" class=3D"preheader" cellpadding=3D"0" cellsp=
+acing=3D"0" role=3D"presentation"><tr><td style=3D"width: 280px" valign=3D"=
+top"><![endif]-->
+<div class=3D"snippet" style=3D"display: table-cell;Float: left;font-size: =
+12px;line-height: 19px;max-width: 280px;min-width: 140px; width: 140px;widt=
+h: calc(14000% - 78120px);padding: 10px 0 5px 0;color: #666;font-family: sa=
+ns-serif;">
+</div>
+<!--[if mso]></td><td style=3D"width: 280px" valign=3D"top"><![endif]-->
+<div class=3D"webversion" style=3D"display: table-cell;Float: left;font-siz=
+e: 12px;line-height: 19px;max-width: 280px;min-width: 139px; width: 139px;w=
+idth: calc(14100% - 78680px);padding: 10px 0 5px 0;text-align: right;color:=
+ #666;font-family: sans-serif;">
+</div>
+<!--[if mso]></td></tr></table><![endif]--></div>
+</div>
+<div class=3D"header" style=3D"Margin: 0 auto;max-width: 600px;min-width: 3=
+20px; width: 320px;width: calc(28000% - 167400px);" id=3D"emb-email-header-=
+container">
+<!--[if mso]><table align=3D"center" class=3D"header" cellpadding=3D"0" cel=
+lspacing=3D"0" role=3D"presentation"><tr><td style=3D"width: 600px"><![endi=
+f]-->
+<div class=3D"logo emb-logo-margin-box" style=3D"font-size: 26px;line-heigh=
+t: 32px;Margin-top: 0px;Margin-bottom: 0px;color: #c3ced9;font-family: Robo=
+to,Tahoma,sans-serif;" align=3D"center">
+<div class=3D"logo-center" align=3D"center" id=3D"emb-email-header"><a styl=
+e=3D"text-decoration: none;transition: opacity 0.1s ease-in;color: #c3ced9;=
+" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-r%2F&amp;data=3D05%7C01%7C=
+egweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7C6b9fc982e8d74=
+958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7CTWFpbGZsb3d8ey=
+JWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%=
+7C%7C&amp;sdata=3DMdARpZ70iUa68xpO24bY40iKScG8KwY899%2BvfVs8KCI%3D&amp;rese=
+rved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-=
+r/" shash=3D"tEGbSwssbi356fGW++JaUBUoTzlGn+d6qSxH6jgGy3TPre6Gp8eXZc8t9jhKwj=
+Z5BW0kTWIcX+QbccquJZQxLwyIxUpaXvnr94vblXDZf9MQ6Y1D7JxPrvcEru7/0r24J5iRFkwts=
+G1W1bFOdjxZMOqk8ewcUAB3gaOZmwVeaHE=3D"><img style=3D"display: block;height:=
+ auto;width: 100%;border: 0;max-width: 600px;" src=3D"http://i1.cmail19.com=
+/ei/y/6E/B1C/94B/231223/csfinal/NYR-Logo-Yellow-Green-2022.png" alt=3D"The =
+New York Review of Books" width=3D"600"></a></div>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></div>
+</div>
+<div>
+<div class=3D"layout two-col fixed-width stack" style=3D"Margin: 0 auto;max=
+-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px)=
+;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+<div class=3D"layout__inner" style=3D"border-collapse: collapse;display: ta=
+ble;width: 100%;background-color: #ffffff;">
+<!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"background-co=
+lor: #ffffff;"><td style=3D"width: 300px" valign=3D"top" class=3D"w260"><![=
+endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-=
+bottom: 12px;">
+<div style=3D"font-size: 12px;font-style: normal;font-weight: normal;line-h=
+eight: 19px;" align=3D"center">
+<a style=3D"text-decoration: underline;transition: opacity 0.1s ease-in;col=
+or: #990101;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-y%2F&amp;dat=
+a=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7=
+C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C3000%7C%7C%7C&amp;sdata=3DM3Mb3QpLmE92DuYLU8vbsJyAyY1b0dfz8d0EjdBNKfk=
+%3D&amp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xldhhu=
+d-itzkiudlt-y/" shash=3D"T5RqMCOyzqY1BCEQr9I+JNYf986M12LVhwFrbddLoy2Iy8t0sN=
+5GSD0OVFZKZRlkFpVMvcvnThnmk2ohfgyiatUIy90rUXHW/j6EU6BFbYI7LNSLIeoqeIevBF5hw=
+eN58BNUyERiw+STULFNb1IRDztu70X7c3iVVj3E1Fa50rg=3D"><img style=3D"border: 0;=
+display: block;height: auto;width: 100%;max-width: 480px;" alt=3D"Photograp=
+h of Palestinians walking in Gaza City=E2=80=99s al-Rimal district followin=
+g Israeli airstrikes" width=3D"260" src=3D"http://i1.cmail19.com/ei/y/6E/B1=
+C/94B/231223/csfinal/Shehadeh202310_3-990000079e028a3c.png"></a>
+</div>
+</div>
+</div>
+<!--[if mso]></td><td style=3D"width: 300px" valign=3D"top" class=3D"w260">=
+<![endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-=
+bottom: 12px;">
+<div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-a=
+lign: middle;">
+<h3 style=3D"Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight:=
+ normal;color: #222;font-size: 17px;line-height: 26px;">
+<a style=3D"text-decoration: none;transition: opacity 0.1s ease-in;color: #=
+990101;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-j%2F&amp;data=3D05%=
+7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7C6b9fc9=
+82e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7CTWFpbGZ=
+sb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3=
+000%7C%7C%7C&amp;sdata=3DEhlrxBVIGiErjoFI5fWOObYFP%2BxocwqZ8h06T76obTI%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xldhhud-itz=
+kiudlt-j/" shash=3D"DGxI91D4R2lTZ06NpTeVhfpsguUqc1aJ+I6vsKEgE59v430A1dbZ3xG=
+PZ2X6ErMjV8FyBz11LukuSUhyQ1/3QbY2iYPlSzm1WrK5ENg+jZMuMZhxxAImbmK0wwX93HTfg/=
+8lNnYKEBYqiCRE3Nu/wWmn8a9WdziwE2XbUQghHG4=3D"><span style=3D"text-decoratio=
+n: inherit;color: #222222;">Raja Shehadeh</span><br>
+<strong><span style=3D"text-decoration: inherit;color: #990101;">Causes for=
+ Despair</span></strong></a></h3>
+<p style=3D"Margin-top: 12px;Margin-bottom: 0;">Wars are usually harbingers=
+ of change, yet Israel=E2=80=99s previous wars have achieved no fundamental=
+ progress toward peace.</p>
+</div>
+</div>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></div>
+</div>
+<div style=3D"mso-line-height-rule: exactly;line-height: 20px;font-size: 20=
+px;">&nbsp;</div>
+<div class=3D"layout two-col fixed-width stack" style=3D"Margin: 0 auto;max=
+-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px)=
+;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+<div class=3D"layout__inner" style=3D"border-collapse: collapse;display: ta=
+ble;width: 100%;background-color: #ffffff;">
+<!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"background-co=
+lor: #ffffff;"><td style=3D"width: 300px" valign=3D"top" class=3D"w260"><![=
+endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-=
+bottom: 12px;">
+<div style=3D"font-size: 12px;font-style: normal;font-weight: normal;line-h=
+eight: 19px;" align=3D"center">
+<a style=3D"text-decoration: underline;transition: opacity 0.1s ease-in;col=
+or: #990101;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-t%2F&amp;dat=
+a=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7=
+C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C3000%7C%7C%7C&amp;sdata=3DVAwYrXGa97wKiFo6UPaUnhAFA279GRHI7tfZol8FcFs=
+%3D&amp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xldhhu=
+d-itzkiudlt-t/" shash=3D"nW042ldo5+4B4O4oVkMBQac1yi4+YuXR9gykqRqAmg3Bhs1Xjq=
+kUOWKq8NHQYjHkYzfch5Of2LQThUMnrSABudnDWIKXl2KcgPLkY0Y/SZqE/p7FzklXZNcM8zLr5=
+BtUqo5Ola346Yp9rARFFI7/GanJSSEHM3AwCEFoD1ptXYM=3D"><img style=3D"border: 0;=
+display: block;height: auto;width: 100%;max-width: 480px;" alt=3D"Photograp=
+h of Israeli Prime Minister Benjamin Netanyahu" width=3D"260" src=3D"http:/=
+/i2.cmail19.com/ei/y/6E/B1C/94B/231223/csfinal/Shulman202310_2-990000079e02=
+8a3c.png"></a>
+</div>
+</div>
+</div>
+<!--[if mso]></td><td style=3D"width: 300px" valign=3D"top" class=3D"w260">=
+<![endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-=
+bottom: 12px;">
+<div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-a=
+lign: middle;">
+<h3 style=3D"Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight:=
+ normal;color: #222;font-size: 17px;line-height: 26px;">
+<a style=3D"text-decoration: none;transition: opacity 0.1s ease-in;color: #=
+990101;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-i%2F&amp;data=3D05%=
+7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7C6b9fc9=
+82e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7CTWFpbGZ=
+sb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3=
+000%7C%7C%7C&amp;sdata=3DXgaHWcm0JRZjCZo9ZfHh9rg7qI5xxbkpbI1nmj%2Fa1DI%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xldhhud-itz=
+kiudlt-i/" shash=3D"vilyDWeVQrA+0aWvBECXPyoFgEsMwFOX2zI8hUWSfpM9pe/Q+1O2Pax=
+1nbfnHNbFxXdVX8XESs+UO2BFSVzOlXMwLqRcMzf0pAz1Nt6iYp0Ekku0AumwPxi/0mVvunpsd9=
+INlm+rG+6mAxEQ72g0Ex1S1LCWSckoiWma7fl7G/A=3D"><span style=3D"text-decoratio=
+n: inherit;color: #222222;">David Shulman</span><br>
+<strong><span style=3D"text-decoration: inherit;color: #990101;">D=C3=A9j=
+=C3=A0 Vu in Israel</span></strong></a></h3>
+<div style=3D"Margin-top: 12px;">
+<p style=3D"Margin-top: 0;Margin-bottom: 0;">The conceptual system that has=
+ dominated Israeli thinking and policy for decades has been exposed, repeat=
+edly, as dangerous and delusional.</p>
+</div>
+</div>
+</div>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></div>
+</div>
+<div style=3D"mso-line-height-rule: exactly;line-height: 20px;font-size: 20=
+px;">&nbsp;</div>
+<div class=3D"layout two-col fixed-width stack" style=3D"Margin: 0 auto;max=
+-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px)=
+;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+<div class=3D"layout__inner" style=3D"border-collapse: collapse;display: ta=
+ble;width: 100%;background-color: #ffffff;">
+<!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"background-co=
+lor: #ffffff;"><td style=3D"width: 300px" valign=3D"top" class=3D"w260"><![=
+endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-=
+bottom: 12px;">
+<div style=3D"font-size: 12px;font-style: normal;font-weight: normal;line-h=
+eight: 19px;" align=3D"center">
+<a style=3D"text-decoration: underline;transition: opacity 0.1s ease-in;col=
+or: #990101;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-d%2F&amp;dat=
+a=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7=
+C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C3000%7C%7C%7C&amp;sdata=3DTItKEmgDanwlX9Mfe%2FBFqMoAkF%2FXl%2BVtuFwQv=
+SAlAUQ%3D&amp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-=
+xldhhud-itzkiudlt-d/" shash=3D"xpUkFdAPg4xEff8XbSYY6CYrNf0uxYZVSNa3DLNG8Jfg=
+ZWyDpGXICBPpOy4Gq3BaB5Q1ntkVHICGCNGPfHXySWAIJUu2Xe/fJV+1OvR+OPHWTV3qsAvToUi=
+YlYhwlinKfyU+ls+B/7PU+58XGQRAKO/FNtabLlmO9vkQEKZEzzU=3D"><img style=3D"bord=
+er: 0;display: block;height: auto;width: 100%;max-width: 480px;" alt=3D"Pho=
+tograph of smoke billowing in the aftermath of an Israeli airstrike on Gaza=
+=E2=80=99s port" width=3D"260" src=3D"http://i3.cmail19.com/ei/y/6E/B1C/94B=
+/231223/csfinal/Baconi202310_2-990000079e028a3c.png"></a>
+</div>
+</div>
+</div>
+<!--[if mso]></td><td style=3D"width: 300px" valign=3D"top" class=3D"w260">=
+<![endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-=
+bottom: 12px;">
+<div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-a=
+lign: middle;">
+<h3 style=3D"Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight:=
+ normal;color: #222;font-size: 17px;line-height: 26px;">
+<a style=3D"text-decoration: none;transition: opacity 0.1s ease-in;color: #=
+990101;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-h%2F&amp;data=3D05%=
+7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7C6b9fc9=
+82e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7CTWFpbGZ=
+sb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3=
+000%7C%7C%7C&amp;sdata=3DDNUUkzOIDq1xbUiv5xE%2B07EZdO3IVqjXR3Vjovn63Rc%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xldhhud-itz=
+kiudlt-h/" shash=3D"IFLJTYTpT8aOc3NlTETEuEKdjwPc4Bc25HSdkuvvK8g1/wPWznjy3J7=
+yMeg5nnPAyu128Zye6HI9DMvskyPhvJFmLwEqEHEio+ashRD9vlMa10kYASdxeeZJ4gn2a7+zE+=
+6R2AbOdTmdSueQcW5tlcgh8ehRgJPKXaH8lz6prGI=3D"><span style=3D"text-decoratio=
+n: inherit;color: #222222;">Tareq Baconi</span><br>
+<strong><span style=3D"text-decoration: inherit;color: #990101;">Gaza Witho=
+ut Pretenses</span></strong></a></h3>
+<div style=3D"Margin-top: 12px;">
+<p style=3D"Margin-top: 0;Margin-bottom: 0;">For years Israel and Hamas mai=
+ntained an unstable equilibrium that kept the Gaza Strip contained. But it =
+was always likely to be temporary.</p>
+</div>
+</div>
+</div>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></div>
+</div>
+<div style=3D"mso-line-height-rule: exactly;line-height: 20px;font-size: 20=
+px;">&nbsp;</div>
+<div class=3D"layout two-col fixed-width stack" style=3D"Margin: 0 auto;max=
+-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px)=
+;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+<div class=3D"layout__inner" style=3D"border-collapse: collapse;display: ta=
+ble;width: 100%;background-color: #ffffff;">
+<!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"background-co=
+lor: #ffffff;"><td style=3D"width: 300px" valign=3D"top" class=3D"w260"><![=
+endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-=
+bottom: 12px;">
+<div style=3D"font-size: 12px;font-style: normal;font-weight: normal;line-h=
+eight: 19px;" align=3D"center">
+<a style=3D"text-decoration: underline;transition: opacity 0.1s ease-in;col=
+or: #990101;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-k%2F&amp;dat=
+a=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7=
+C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C3000%7C%7C%7C&amp;sdata=3DSVkwLEdg18DZ3HZJw2aVNylbvFrHW%2Bh6Ygepx9Hag=
+PA%3D&amp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xldh=
+hud-itzkiudlt-k/" shash=3D"rLDvI7OoeoKZY/VIrd9B1TjisxITGJcZ8N4BlY9zA24nbmD+=
+KJ8Lds+wYd8RjkfvRMC4uDILUopXmYZCNxsLhigwFsv8EL1CVmxsHauAl4LSRc7LwjYKtBwG8wG=
+3LTs5VYDd4jduOzX+NS+7z4S2bkrWJSg83tUwjKF7jQQEYN8=3D"><img style=3D"border: =
+0;display: block;height: auto;width: 100%;max-width: 480px;" alt=3D"Photogr=
+aph of a member of the press standing in front of a house destroyed during =
+Hamas=E2=80=99s attack on Kibbutz Be=E2=80=99eri, Israel" width=3D"260" src=
+=3D"http://i4.cmail19.com/ei/y/6E/B1C/94B/231223/csfinal/Leifer202310_2-990=
+000079e028a3c.png"></a>
+</div>
+</div>
+</div>
+<!--[if mso]></td><td style=3D"width: 300px" valign=3D"top" class=3D"w260">=
+<![endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-=
+bottom: 12px;">
+<div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-a=
+lign: middle;">
+<h3 style=3D"Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight:=
+ normal;color: #222;font-size: 17px;line-height: 26px;">
+<a style=3D"text-decoration: none;transition: opacity 0.1s ease-in;color: #=
+990101;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-u%2F&amp;data=3D05%=
+7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7C6b9fc9=
+82e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7CTWFpbGZ=
+sb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3=
+000%7C%7C%7C&amp;sdata=3DrN%2BovaP0wHKz5bc2LrW6B%2F00zNb0EDKMQRNY9pADvtg%3D=
+&amp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xldhhud-i=
+tzkiudlt-u/" shash=3D"gVXcxxB9iX+tEClYHQcSu2W0jqabNNEWRH+2gzWNhlVYW6YaKm3VT=
+qsJNaZkeQ3ZnujSqW9TW/s4LhhIEiIm5XQMjNcPUOaxuQW7MC1mp6hveR3ySfoua5fJ2uO+7glu=
+1dBvGnQFHCtdb9IHc2vrurAL8tNQIBH8+qSDIVgbLTA=3D"><span style=3D"text-decorat=
+ion: inherit;color: #222222;">Joshua Leifer</span><br>
+<strong><span style=3D"text-decoration: inherit;color: #990101;">Inhumane T=
+imes</span></strong></a></h3>
+<div style=3D"Margin-top: 12px;">
+<p style=3D"Margin-top: 0;Margin-bottom: 0;">Saturday=E2=80=99s devastating=
+ attacks have been met in Israel with rage at the government=E2=80=99s fail=
+ures and demands for disproportionate vengeance.</p>
+</div>
+</div>
+</div>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></div>
+</div>
+<div style=3D"mso-line-height-rule: exactly;line-height: 20px;font-size: 20=
+px;">&nbsp;</div>
+<div class=3D"layout two-col fixed-width stack" style=3D"Margin: 0 auto;max=
+-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px)=
+;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+<div class=3D"layout__inner" style=3D"border-collapse: collapse;display: ta=
+ble;width: 100%;background-color: #ffffff;">
+<!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"background-co=
+lor: #ffffff;"><td style=3D"width: 300px" valign=3D"top" class=3D"w260"><![=
+endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-=
+bottom: 12px;">
+<div style=3D"font-size: 12px;font-style: normal;font-weight: normal;line-h=
+eight: 19px;" align=3D"center">
+<a style=3D"text-decoration: underline;transition: opacity 0.1s ease-in;col=
+or: #990101;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-o%2F&amp;dat=
+a=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7=
+C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C3000%7C%7C%7C&amp;sdata=3DbSoYFNPZ3rYsIDHY%2BRmznRHUJG7JjprMSTLYjQD6v=
+Io%3D&amp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xldh=
+hud-itzkiudlt-o/" shash=3D"DBOtBKRt9U3Mqy3CnDiN/T09a4REpJKkPIGZ/euk1XRZ3Y3Z=
+oamXXSTvMRUC/yNNXQfteIil6kr49xBmRM2wibQ0LNC5+iR93upEOLkHq5/l7PDl6g/vjCQb9aD=
+RjTrRNNxu4ZANUETXrs4J40dPpAZGqgzRIKN1X4AWWtisNuA=3D"><img style=3D"border: =
+0;display: block;height: auto;width: 100%;max-width: 480px;" alt=3D"Photogr=
+aph of an Israeli residential building struck by rockets fired by Hamas, As=
+hkelon" width=3D"260" src=3D"http://i5.cmail19.com/ei/y/6E/B1C/94B/231223/c=
+sfinal/OToole202310_1-990000079e028a3c.png"></a>
+</div>
+</div>
+</div>
+<!--[if mso]></td><td style=3D"width: 300px" valign=3D"top" class=3D"w260">=
+<![endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-=
+bottom: 12px;">
+<div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-a=
+lign: middle;">
+<h3 style=3D"Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight:=
+ normal;color: #222;font-size: 17px;line-height: 26px;">
+<a style=3D"text-decoration: none;transition: opacity 0.1s ease-in;color: #=
+990101;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-b%2F&amp;data=3D05%=
+7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7C6b9fc9=
+82e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7CTWFpbGZ=
+sb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3=
+000%7C%7C%7C&amp;sdata=3D0ShoM1QCNyNZvbKSr5LkAkT%2BFNiKxVqOHTC2T16vcbg%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xldhhud-itz=
+kiudlt-b/" shash=3D"BZw6JFEZIcdG78C1ni2ALgJnuvByriChW5XDyB79/v4iZ0HrDKSd+bq=
+dtApHtL6iMON3nwIQJzRuGX7+J/AAWAa9Qq1v1KrBVT5T9rs99YScSF2/hOLumiSMCypOkGv6zS=
+T5+iFXnC0bWLUd+yqc7hkAmfnGe2597n+95A5HnVQ=3D"><span style=3D"text-decoratio=
+n: inherit;color: #222222;">Fintan O=E2=80=99Toole</span><br>
+<strong><span style=3D"text-decoration: inherit;color: #990101;">Eyeless in=
+ Gaza</span></strong></a></h3>
+<div style=3D"Margin-top: 12px;">
+<p style=3D"Margin-top: 0;Margin-bottom: 0;">What lessons do people actuall=
+y learn from the cruelties they applaud and the ones they suffer in return?=
+</p>
+</div>
+</div>
+</div>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></div>
+</div>
+<div style=3D"mso-line-height-rule: exactly;line-height: 20px;font-size: 20=
+px;">&nbsp;</div>
+<div class=3D"layout two-col fixed-width stack" style=3D"Margin: 0 auto;max=
+-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px)=
+;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+<div class=3D"layout__inner" style=3D"border-collapse: collapse;display: ta=
+ble;width: 100%;background-color: #ffd35b;">
+<!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"background-co=
+lor: #ffd35b;"><td style=3D"width: 300px" valign=3D"top" class=3D"w260"><![=
+endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-=
+bottom: 12px;">
+<div style=3D"font-size: 12px;font-style: normal;font-weight: normal;line-h=
+eight: 19px;" align=3D"center">
+<a style=3D"text-decoration: underline;transition: opacity 0.1s ease-in;col=
+or: #990101;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-n%2F&amp;dat=
+a=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7=
+C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614147854%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C3000%7C%7C%7C&amp;sdata=3DELRdh2CoxoUR35zh%2FysQvDwURmBu%2BiddeAQAd7%=
+2BOm3Q%3D&amp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-=
+xldhhud-itzkiudlt-n/" shash=3D"EtvAghc1NF97i0x0V3dHrvdo+TuY72KTdYhDm07ZC87/=
+rJUbd5Fx+R996PBPapDg45QTG1wvRe3blI4KosfH1VTavLMzbIRO8L7YTeM5aYmOY0632eYUD4i=
+wwQJ/Wjv7sdFE+x4gtLRkye+fHM24Qh2K9bx5tRnU17npZCJI2uM=3D"><img style=3D"bord=
+er: 0;display: block;height: auto;width: 100%;max-width: 480px;" alt=3D"Sub=
+scribe today" width=3D"260" src=3D"http://i6.cmail19.com/ei/y/6E/B1C/94B/23=
+1223/csfinal/Art_Sub_Digital_FREE2024cal-990000079e028a3c-990000079e028a3c.=
+png"></a>
+</div>
+</div>
+</div>
+<!--[if mso]></td><td style=3D"width: 300px" valign=3D"top" class=3D"w260">=
+<![endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;max-width: 320p=
+x;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;"=
+>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;">
+<div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-a=
+lign: middle;">
+<h3 class=3D"size-16" style=3D"Margin-top: 0;Margin-bottom: 12px;font-style=
+: normal;font-weight: normal;color: #222;font-size: 16px;line-height: 24px;=
+text-align: center;" lang=3D"x-size-16">
+<a style=3D"text-decoration: none;transition: opacity 0.1s ease-in;color: #=
+990101;" data-emb-iscopy=3D"true" href=3D"https://nam02.safelinks.protectio=
+n.outlook.com/?url=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzk=
+iudlt-p%2F&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f=
+02ee08dbcbe627d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383279616141=
+47854%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6I=
+k1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DIvLcBIiY1KscZ5FZL9V4ZizoF=
+e6zZ2FGG76PwtedAQA%3D&amp;reserved=3D0" originalsrc=3D"https://email.nybook=
+s.com/t/y-l-xldhhud-itzkiudlt-p/" shash=3D"SjDnEx8E/gNJMpCLYGMoMkGXVJN7j5Mt=
+tcH6ZXrdxRReVCBv6j2e0KFFnq6VAYJUW7F8dS5GsMS38FOjHlsgGuyw1vxDFypd3Vvtpbbm+H4=
+cJio2ILNLAlgf3KCjrdENrlsq/eNH7ZL43xtQhV+qM9Tukpj7zlYXykoT36FIca4=3D"><span =
+style=3D"text-decoration: inherit;color: #295042;"><strong><em>A thoughtful=
+ gift for serious
+ readers.</em></strong><br>
+They=E2=80=99ll receive exclusive access to the current issue, complete arc=
+hive, and NYR App. You=E2=80=99ll receive a free David Levine 2024 calendar=
+!</span></a></h3>
+</div>
+</div>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+<div class=3D"btn btn--flat btn--small" style=3D"text-align:center;"><!--[i=
+f !mso]><!--><a style=3D"border-radius: 0;display: inline-block;font-size: =
+11px;font-weight: bold;line-height: 19px;padding: 6px 12px;text-align: cent=
+er;text-decoration: none !important;transition: opacity 0.1s ease-in;color:=
+ #ffd35b !important;background-color: #295042;font-family: Times, Times New=
+ Roman, serif;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-x%2F&amp;dat=
+a=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7=
+C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614304070%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C3000%7C%7C%7C&amp;sdata=3DGNr9RcToh%2FGUv7qepyaZxxX9Coc5KVwlUr9A%2Ftc=
+P5to%3D&amp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xl=
+dhhud-itzkiudlt-x/" shash=3D"c3/D8nR4CBDp2bGtURPF/8F75N9coGxMBDo/ROxsi41488=
+x04OjpbgKLIsPzczcGk5mBH1kXoKnEsHdTWudCncYtEaalprp8IdAvgGo5qKTveuYI0xwU+xs98=
+Pp13mxLrTpvzcZBtRSPi6s4BStL+0qRFpN9pxEtnwHzscTqI/Y=3D">Get
+ the deal</a><!--<![endif]--><!--[if mso]><p style=3D"line-height:0;margin:=
+0;">&nbsp;</p><v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" href=3D"htt=
+ps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Femail.nybo=
+oks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-x%2F&amp;data=3D05%7C01%7Cegweinberg%40=
+viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7C6b9fc982e8d74958976cb08441=
+cc9b0b%7C0%7C0%7C638327961614304070%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sda=
+ta=3DGNr9RcToh%2FGUv7qepyaZxxX9Coc5KVwlUr9A%2FtcP5to%3D&amp;reserved=3D0" o=
+riginalSrc=3D"https://email.nybooks.com/t/y-l-xldhhud-itzkiudlt-x/" shash=
+=3D"c3/D8nR4CBDp2bGtURPF/8F75N9coGxMBDo/ROxsi41488x04OjpbgKLIsPzczcGk5mBH1k=
+XoKnEsHdTWudCncYtEaalprp8IdAvgGo5qKTveuYI0xwU+xs98Pp13mxLrTpvzcZBtRSPi6s4BS=
+tL+0qRFpN9pxEtnwHzscTqI/Y=3D" style=3D"width:60.75pt" fillcolor=3D"#295042"=
+ stroke=3D"f"><v:textbox style=3D"mso-fit-shape-to-text:t" inset=3D"0pt,4.5=
+pt,0pt,4.5pt"><center style=3D"font-size:11px;line-height:19px;color:#FFD35=
+B;font-family:Times,Times New Roman,serif;font-weight:bold;mso-line-height-=
+rule:exactly;mso-text-raise:1.25px">Get the deal</center></v:textbox></v:re=
+ct><![endif]-->
+</div>
+</div>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></div>
+</div>
+<div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 auto;max=
+-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px)=
+;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+<div class=3D"layout__inner" style=3D"border-collapse: collapse;display: ta=
+ble;width: 100%;background-color: #295042;">
+<!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"background-co=
+lor: #295042;"><td style=3D"width: 600px" class=3D"w560"><![endif]-->
+<div class=3D"column" style=3D"text-align: left;color: #222;font-size: 16px=
+;line-height: 24px;font-family: Times,Times New Roman,serif;">
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;">
+<div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-a=
+lign: middle;">
+<h3 class=3D"size-16" style=3D"Margin-top: 0;Margin-bottom: 12px;font-style=
+: normal;font-weight: normal;color: #222;font-size: 16px;line-height: 24px;=
+text-align: center;" lang=3D"x-size-16">
+<a style=3D"text-decoration: none;transition: opacity 0.1s ease-in;color: #=
+990101;" data-emb-iscopy=3D"true" href=3D"https://nam02.safelinks.protectio=
+n.outlook.com/?url=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzk=
+iudlt-m%2F&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f=
+02ee08dbcbe627d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383279616143=
+04070%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6I=
+k1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DvYpc0rvtyUxCR7lklpHfJSHVG=
+17M9%2BOXuXL9F%2FvFM0I%3D&amp;reserved=3D0" originalsrc=3D"https://email.ny=
+books.com/t/y-l-xldhhud-itzkiudlt-m/" shash=3D"DhLsk0pux6FiGs+m8aGqNfaKKTNs=
+l6vnp5TFPoxzlbGgcEa++tNGN1yDtc/4eh044QM/kg8sXmy//WtJOekmjEnwZjcqnAloE3d9Pqq=
+HEpJLV/xLA9MQ0KHWCuqX5mdL/lvq60Q1tSj4ldzzdMFKyGDd13iq1igjvu08qkQgZ5M=3D"><s=
+pan style=3D"text-decoration: inherit;color: #ffd35b;">Politics</span></a><=
+span style=3D"text-decoration: inherit;color: #ffd35b;">&nbsp;
+ &nbsp;</span><a style=3D"text-decoration: none;transition: opacity 0.1s ea=
+se-in;color: #990101;" data-emb-iscopy=3D"true" href=3D"https://nam02.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-=
+l-xldhhud-itzkiudlt-c%2F&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc1=
+9aef11d4c2411f02ee08dbcbe627d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7=
+C638327961614304070%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2l=
+uMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DAf1asLcT8dS=
+chu4C0ZEifTkobvT4n1Mcqu7V6gy4icc%3D&amp;reserved=3D0" originalsrc=3D"https:=
+//email.nybooks.com/t/y-l-xldhhud-itzkiudlt-c/" shash=3D"sFkI7vrHkZiHk2DW2L=
+UeD3KfUTZDNFXclI1nVFzgysor5r9xMZUoarvzqNVAUivr90ia7Hf9EKx2TkIP79DNe0dzBjguA=
+pzmEmDBo/9IbxAO/FDBSc+fir9Ny0Vpg9PwCtSQrjAIYAMtZmdNaiO3bUWIDqPdGpv52EZFzTAe=
+okI=3D"><span style=3D"text-decoration: inherit;color: #ffd35b;">Literature=
+</span></a><span style=3D"text-decoration: inherit;color: #ffd35b;">&nbsp;&=
+nbsp;&nbsp;</span><a style=3D"text-decoration:=20
+none;transition: opacity 0.1s ease-in;color: #990101;" data-emb-iscopy=3D"t=
+rue" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A=
+%2F%2Femail.nybooks.com%2Ft%2Fy-l-xldhhud-itzkiudlt-q%2F&amp;data=3D05%7C01=
+%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7C6b9fc982e8=
+d74958976cb08441cc9b0b%7C0%7C0%7C638327961614304070%7CUnknown%7CTWFpbGZsb3d=
+8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%=
+7C%7C%7C&amp;sdata=3DX26UJTU%2FVTbvtvrE8c5w6uA8hhL4x3SNDBMODoXBQHg%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-l-xldhhud-itzkiud=
+lt-q/" shash=3D"nwjLQhOWc9MMYGZkEidvFDjkXdDn+WNPa1QlfLkox5W+9tKKcG+Mh0X+PC7=
+oB0yvOveR1vnYor0Ra6m22VtgrY1IFuHj6ySTB8fspmjY7pVkBCoxqCRFxbffhAaKlc6S1cWQiX=
+goY/mYOdcHE9xWdIQHas81a4KQ0fcoeA/rh1w=3D"><span style=3D"text-decoration: i=
+nherit;color: #ffd35b;">Arts</span></a><span style=3D"text-decoration: inhe=
+rit;color: #ffd35b;">&nbsp;
+ &nbsp;</span><a style=3D"text-decoration: none;transition: opacity 0.1s ea=
+se-in;color: #990101;" data-emb-iscopy=3D"true" href=3D"https://nam02.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-=
+l-xldhhud-itzkiudlt-a%2F&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc1=
+9aef11d4c2411f02ee08dbcbe627d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7=
+C638327961614304070%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2l=
+uMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DiikLovOUsr2=
+U82CrT674lWFluwTenqva91vhgtjiUE4%3D&amp;reserved=3D0" originalsrc=3D"https:=
+//email.nybooks.com/t/y-l-xldhhud-itzkiudlt-a/" shash=3D"et5KeGiZzG7y52+KC5=
+cnkc8TVSqYXEYCI852CjFcUOriNJ8d3NyGCGNbGdrbapJX8+SI7uAJCbL6YQgyWtkBeWzxLpXr0=
+E5EBeb1p4SX++tGnQMhsrboqS36oxLIpuJUySBhHO2l4aXIzqCeskjBAIJfj2B/wzRVqD8XuxiX=
+Qdg=3D"><span style=3D"text-decoration: inherit;color: #ffd35b;">Ideas</spa=
+n></a></h3>
+</div>
+</div>
+<div style=3D"font-size: 12px;font-style: normal;font-weight: normal;line-h=
+eight: 19px;" align=3D"center">
+<img style=3D"border: 0;display: block;height: auto;width: 100%;max-width: =
+900px;" alt=3D"" width=3D"600" src=3D"http://i7.cmail19.com/ei/y/6E/B1C/94B=
+/231223/csfinal/nyrev_divider2-9900000000079e3c.png">
+</div>
+<div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: 20px;Margin-=
+bottom: 12px;">
+<div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-a=
+lign: middle;">
+<p class=3D"size-12" style=3D"Margin-top: 0;Margin-bottom: 0;font-size: 12p=
+x;line-height: 19px;text-align: center;" lang=3D"x-size-12">
+<span style=3D"text-decoration: inherit;color: #ffffff;">You are receiving =
+this message because you signed up<br>
+for email newsletters from <em>The New York Review</em>.</span></p>
+<h3 class=3D"size-12" style=3D"Margin-top: 20px;Margin-bottom: 0;font-style=
+: normal;font-weight: normal;color: #222;font-size: 12px;line-height: 19px;=
+text-align: center;" lang=3D"x-size-12">
+<strong><a style=3D"text-decoration: none;transition: opacity 0.1s ease-in;=
+color: #990101;" data-emb-iscopy=3D"true" href=3D"https://nam02.safelinks.p=
+rotection.outlook.com/?url=3Dhttps%3A%2F%2Fthenewyorkreview.updatemyprofile=
+.com%2Fy-xldhhud-4500B187-itzkiudlt-f&amp;data=3D05%7C01%7Cegweinberg%40vit=
+erbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7C6b9fc982e8d74958976cb08441cc9=
+b0b%7C0%7C0%7C638327961614304070%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMD=
+AiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=
+=3D7Ln2E6UmcAx3jvhI74ShFM7lZ8g8f%2Bu6w4Q%2FxE7PpCo%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://thenewyorkreview.updatemyprofile.com/y-xldhhud-4500B187=
+-itzkiudlt-f" shash=3D"Uh71h14Yc1v2qbFK0rNZtRM2YwJE99Rzbg2IIH5dS4VOAYgv5mv5=
+qVHt4Q5qJiC4oErLzv2t4s672sd5h4w2WUZU1VQTStkRICLZ8vIozapPagYTqijkYl/CMyF1I/2=
+hWUaf0ljwbjhhadEdBCIBieBSd0/KJS44Dutt9yT42kc=3D"><span style=3D"text-decora=
+tion: inherit;color: #ffd35b;">Update
+ your address or preferences</span></a></strong></h3>
+<h3 class=3D"size-12" style=3D"Margin-top: 12px;Margin-bottom: 0;font-style=
+: normal;font-weight: normal;color: #222;font-size: 12px;line-height: 19px;=
+text-align: center;" lang=3D"x-size-12">
+<strong><a style=3D"text-decoration: none;transition: opacity 0.1s ease-in;=
+color: #990101;" data-emb-iscopy=3D"true" href=3D"https://nam02.safelinks.p=
+rotection.outlook.com/?url=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-e-xldh=
+hud-itzkiudlt-z%2F&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11=
+d4c2411f02ee08dbcbe627d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63832=
+7961614304070%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiL=
+CJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DKD8ExU%2B%2BnBroC=
+SJjLqUnEw5dQ3ftETBnzkUZ2EgCGIs%3D&amp;reserved=3D0" originalsrc=3D"https://=
+email.nybooks.com/t/y-e-xldhhud-itzkiudlt-z/" shash=3D"jOCjO9k2XOT2HJ9KPII8=
+DhGt8c6di6VMYIX5Y7PPMlpo3qlsixf4+yMuK5WJIMvEYCUIqls5hqKTF6qahSie4/tJHo3JnCL=
+go1cIOMvh/mAwoFOsLenCuP7XZdUeb0u2Lvy6swOwGdUHkQ8VxvhxR8RXepmydPb8bFL0Qix0W5=
+g=3D"><span style=3D"text-decoration: inherit;color: #ffd35b;">View this ne=
+wsletter online</span></a></strong></h3>
+<p class=3D"size-12" style=3D"Margin-top: 12px;Margin-bottom: 0;font-size: =
+12px;line-height: 19px;text-align: center;" lang=3D"x-size-12">
+<span style=3D"text-decoration: inherit;color: #ffffff;">The New York Revie=
+w of Books<br>
+207 East 32nd Street,&nbsp;New York, NY 10016-6305</span></p>
+</div>
+</div>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></div>
+</div>
+<div style=3D"mso-line-height-rule: exactly;line-height: 20px;font-size: 20=
+px;">&nbsp;</div>
+</div>
+<div role=3D"contentinfo">
+<div style=3D"line-height:10px;font-size:10px;" id=3D"footer-top-spacing">&=
+nbsp;</div>
+<div class=3D"layout email-flexible-footer email-footer" style=3D"Margin: 0=
+ auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - =
+167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break=
+-word;" id=3D"footer-content">
+<div class=3D"layout__inner left-aligned-footer flexible-footer--horizontal=
+-padding" style=3D"border-collapse: collapse;display: table;width: calc(100=
+% - 40px);margin: 0 auto;">
+<!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation"><tr class=3D"layout-email-footer"><![endif]--><!--[if m=
+so]><td><table cellpadding=3D"0" cellspacing=3D"0"><![endif]--><!--[if mso]=
+><td valign=3D"top"><![endif]-->
+<div class=3D"column" style=3D"text-align: left;font-size: 12px;line-height=
+: 19px;color: #666;font-family: sans-serif;display: none;">
+<div class=3D"footer-logo emb-logo-margin-box" style=3D"font-size: 26px;lin=
+e-height: 32px;Margin-top: 0px;Margin-bottom: 0px;color: #7b663d;font-famil=
+y: Roboto,Tahoma,sans-serif;" align=3D"center">
+<div emb-flexible-footer-logo=3D"" align=3D"center"></div>
+</div>
+</div>
+<!--[if mso]></td><![endif]--><!--[if mso]><td valign=3D"top"><![endif]-->
+<div class=3D"column" style=3D"text-align: left;font-size: 12px;line-height=
+: 19px;color: #666;font-family: sans-serif;display: none;">
+<div style=3D"margin-left: 0;margin-right: 0;Margin-top: 10px;Margin-bottom=
+: 10px;">
+<div class=3D"footer__share-button"></div>
+</div>
+</div>
+<!--[if mso]></td><![endif]--><!--[if mso]><td valign=3D"top"><![endif]-->
+<table style=3D"border-collapse: collapse;table-layout: fixed;display: inli=
+ne-block;width: 560px;" cellpadding=3D"0" cellspacing=3D"0">
+<tbody>
+<tr>
+<td>
+<div class=3D"column js-footer-additional-info" style=3D"text-align: left;f=
+ont-size: 12px;line-height: 19px;color: #666;font-family: sans-serif;width:=
+ 560px;">
+<div style=3D"margin-left: 0;margin-right: 0;Margin-top: 10px;Margin-bottom=
+: 10px;">
+<div class=3D"email-footer__additional-info" style=3D"font-size: 12px;line-=
+height: 19px;margin-bottom: 15px;">
+<span><a style=3D"text-decoration: underline;transition: opacity 0.1s ease-=
+in;color: #666;" href=3D"https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Fthenewyorkreview.updatemyprofile.com%2Fy-xldhhud-4500B187=
+-itzkiudlt-v&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c241=
+1f02ee08dbcbe627d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63832796161=
+4304070%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI=
+6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DQnJlK3aIj9MXb1whNYEhzrz=
+KRRU0neJWPYbi3lbuETk%3D&amp;reserved=3D0" originalsrc=3D"https://thenewyork=
+review.updatemyprofile.com/y-xldhhud-4500B187-itzkiudlt-v" shash=3D"Y8dcKxt=
+blTjUxcOFe/qOU+y9f8xsk8Ja3EphPj6W9FX1PZqad3xpKRVPK/vREMRv7R4O/k82D5q8UtExbg=
+mWpx42tldAFO2zYiziwtCd1UQQSXZcXozrAytADEuAOHC8khc7FQD0huMJP3X6jRgqmhSwZAKJJ=
+c0/lIJxuV+vIc8=3D" lang=3D"en">Preferences</a>&nbsp;&nbsp;|&nbsp;&nbsp;</sp=
+an><a style=3D"text-decoration: underline;transition: opacity 0.1s ease-in;=
+color: #666;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Femail.nybooks.com%2Ft%2Fy-u-xldhhud-itzkiudlt-e%2F&amp;dat=
+a=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc19aef11d4c2411f02ee08dbcbe627d1%7=
+C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327961614304070%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C3000%7C%7C%7C&amp;sdata=3Dpifm74LWePajzPOxugZ3NnW%2F9u0Y8Ea9NJ4fciUrJ=
+D4%3D&amp;reserved=3D0" originalsrc=3D"https://email.nybooks.com/t/y-u-xldh=
+hud-itzkiudlt-e/" shash=3D"X/T5A7gDPvVWXKFHMx893RLFX5bXvz1qYGBQqzIoD0X6nS+n=
+/ylhbk8WI+5KcGEt3lB4/xZZyM5mA3JPiT/HcSuL2iUW1NHdUkylqroX4F8SJPR3mc80frOLMOr=
+llXQM1odTLX8RMTMEABkthukXnZl3UgbHJHwUW5gkcI6zHw8=3D" lang=3D"en">Unsubscrib=
+e</a>
+</div>
+<!--[if mso]>&nbsp;<![endif]--></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]></table></td><![endif]--><!--[if mso]></td></tr></table><![end=
+if]--></div>
+</div>
+<div style=3D"line-height:20px;font-size:20px;" id=3D"footer-bottom-spacing=
+">&nbsp;</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<style type=3D"text/css">
+@media (max-width:619px){.email-flexible-footer .left-aligned-footer .colum=
+n,.email-flexible-footer .center-aligned-footer,.email-flexible-footer .rig=
+ht-aligned-footer .column{max-width:100% !important;text-align:center !impo=
+rtant;width:100% !important}.flexible-footer-logo{margin-left:0px !importan=
+t;margin-right:0px !important}.email-flexible-footer .left-aligned-footer .=
+flexible-footer__share-button__container,.email-flexible-footer .center-ali=
+gned-footer .flexible-footer__share-button__container,.email-flexible-foote=
+r .right-aligned-footer .flexible-footer__share-button__container{display:i=
+nline-block;margin-left:5px !important;margin-right:5px !important}.email-f=
+lexible-footer__additionalinfo--center{text-align:center !important}.email-=
+flexible-footer .left-aligned-footer table,.email-flexible-footer .center-a=
+ligned-footer table,.email-flexible-footer .right-aligned-footer=20
+table{display:table !important;width:100% !important}.email-flexible-footer=
+ .footer__share-button,.email-flexible-footer .email-footer__additional-inf=
+o{margin-left:20px;margin-right:20px}}
+</style><img style=3D"visibility: hidden !important; display: block !import=
+ant; height:1px !important; width:1px !important; border: 0 !important; mar=
+gin: 0 !important; padding: 0 !important" src=3D"https://thenewyorkreview.c=
+mail19.com/t/y-o-xldhhud-itzkiudlt/o.gif" width=3D"1" height=3D"1" border=
+=3D"0" alt=3D"">
+</div>
+</body>
+</html>
+
+--_c745f5bc-f1a3-4bd7-894e-f8a4d365479f_--

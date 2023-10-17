@@ -1,0 +1,884 @@
+Received: from IA0PR20MB5636.namprd20.prod.outlook.com (2603:10b6:208:43c::10)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023
+ 16:42:49 +0000
+Received: from DS7PR06CA0053.namprd06.prod.outlook.com (2603:10b6:8:54::8) by
+ IA0PR20MB5636.namprd20.prod.outlook.com (2603:10b6:208:43c::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.37; Thu, 12 Oct
+ 2023 16:42:45 +0000
+Received: from DS3PEPF000099D9.namprd04.prod.outlook.com
+ (2603:10b6:8:54:cafe::af) by DS7PR06CA0053.outlook.office365.com
+ (2603:10b6:8:54::8) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.30 via Frontend
+ Transport; Thu, 12 Oct 2023 16:42:44 +0000
+Authentication-Results: spf=pass (sender IP is 161.71.34.76)
+ smtp.mailfrom=bounce.ouphe.oup.com; dkim=pass (signature was verified)
+ header.d=ouphe.oup.com;dmarc=pass action=none
+ header.from=ouphe.oup.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of bounce.ouphe.oup.com
+ designates 161.71.34.76 as permitted sender) receiver=protection.outlook.com;
+ client-ip=161.71.34.76; helo=gr76.mta.exacttarget.com; pr=C
+Received: from gr76.mta.exacttarget.com (161.71.34.76) by
+ DS3PEPF000099D9.mail.protection.outlook.com (10.167.17.10) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Thu, 12 Oct 2023 16:42:44 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=50dkim1; d=ouphe.oup.com;
+ h=From:To:Subject:Date:List-Unsubscribe:List-Unsubscribe-Post:MIME-Version:
+ Reply-To:List-ID:X-CSA-Complaints:Message-ID:Content-Type;
+ i=reply@ouphe.oup.com;
+ bh=7zsbzVy2VOHQx01Dil4F1XBiIreq3ujKirtT4n6XPEU=;
+ b=jSlfy5bNwDJQB/amyp0/RVc5BHgMOrXo9AK14vPqPDwVECaVPF8KIb3VCN4QiIUEn7kcMaCVVRlS
+   fWajodKXnJVON8zopr9nbxY//iuTtNvCPUec1bunYPz/f3+Bj89Lsj8vgRisnDcdI2aT4yW4P0/I
+   ZKwx7ysmpBGKcXDAplZsUtlCY6lhVBB4DtUGMtghfkQnerD0Ak1bnS751YRv9+7ZlZU4yNoBtEQ5
+   RkTBX3TUguIzdqhP7bX6zhUBSmOhoOuLAIHKfWJOuhmFTLX3W7iKJQJdxLq73VLHEttpr8qzj3Lf
+   Xd/+UgcM8zxgj5xidKOtqlkMVMJ6S/3pHuS1bw==
+Received: by gr76.mta.exacttarget.com id h50h082fmd4v for <egweinberg@viterbo.edu>; Thu, 12 Oct 2023 16:42:43 +0000 (envelope-from <bounce-132_HTML-36226485-263835-510003244-2@bounce.ouphe.oup.com>)
+From: "Oxford University Press (USA)" <reply@ouphe.oup.com>
+To: <egweinberg@viterbo.edu>
+Subject: Request your digital copy of Chris Suh's The Allure of Empire today
+Date: Thu, 12 Oct 2023 10:42:43 -0600
+List-Unsubscribe: <http://click.ouphe.oup.com/subscription_center.aspx?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtaWQiOiI1MTAwMDMyNDQiLCJzIjoiMzYyMjY0ODUiLCJsaWQiOiIxMzIiLCJqIjoiMjYzODM1IiwiamIiOiIyIiwiZCI6IjUwMDAwOSJ9.LmCCG6AapT5wC0Sl8LoKlQ826oIGjaWn6ohHCq92SWg>, <mailto:leave-fd551573770b5c392848-fe5b1776776602797d11-fec41676766c0778-fe3c11717564047e771074-ffcd16@leave.ouphe.oup.com>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+x-CSA-Compliance-Source: SFMC
+Reply-To: "Academic Higher Education North America" <reply-fec41676766c0778-132_HTML-36226485-510003244-2@ouphe.oup.com>
+List-ID: <500009276.xt.local>
+X-CSA-Complaints: csa-complaints@eco.de
+X-SFMC-Stack: 50
+x-job: 510003244_263835
+Message-ID: <723ead39-5c54-44bb-9fe7-2bb90341a25e@fra3s50mta11.xt.local>
+Content-Type: multipart/alternative;
+	boundary="vyTCtfjpZ7HT=_?:"
+Return-Path: bounce-132_HTML-36226485-263835-510003244-2@bounce.ouphe.oup.com
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2023 16:42:44.7937
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 1798c72f-67cf-4aea-f9a3-08dbcb42428d
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ DS3PEPF000099D9:EE_|IA0PR20MB5636:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ DS3PEPF000099D9.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 1798c72f-67cf-4aea-f9a3-08dbcb42428d
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:161.71.34.76;CTRY:GB;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:gr76.mta.exacttarget.com;PTR:gr76.mta.exacttarget.com;CAT:NONE;SFS:(13230031)(4636009)(286005)(451199024)(1690799017)(33964004)(9686003)(5426002)(42186006)(336012)(7066003)(8676002)(6916009)(1096003)(19810500001)(16670700002)(76236004)(26005)(31696002)(83380400001)(83170400001)(15974865002)(166002)(356005)(7636003)(7596003)(31686004)(19627405001)(66899024)(1406899027)(38960500002);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2023 16:42:44.2625
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 1798c72f-67cf-4aea-f9a3-08dbcb42428d
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ DS3PEPF000099D9.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: IA0PR20MB5636
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.0579844
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?Xyj4D/RXt2DEx1qUzNvj7pHWXLWJMRZVj2fRijbPU6fgUIaOrrvEwa8RklzY?=
+ =?us-ascii?Q?KnARlDC9zrEpHOmk2soPH+dhlVQoz/dmNsH2dphV0CRfR/2K3E/hxs1ZEMZI?=
+ =?us-ascii?Q?DWHA5bxcK9+Q/1f+TIBXn5AGjuIMlFKcJtxEBd5ujDDgeAMqii0200194rX7?=
+ =?us-ascii?Q?wY4Hjza0AicertteU2+Chvm9DM1zfNH2esdSL8EBql6NQx56ZvS+ArGyMuNa?=
+ =?us-ascii?Q?aOcD+J+m51e41P7o79qXuIFeSS3/ImrA9xnKy0JPCa0Rlmay3laHXLb1QtNm?=
+ =?us-ascii?Q?QYasinqbyWrlbN/FdQyd81vXtJfhifpFAJmcwlkqxsLxsXNQ6Hr7c4rvNkVd?=
+ =?us-ascii?Q?NKkSDMzPI5GFo+xLgrfs1/yKdgC8Rqbe0OcwOleirNPMJ6c8hHIzYUjEvILb?=
+ =?us-ascii?Q?uJ8R+x0ovKjI6YByE97pqG0CAQSThB82j+szM3cyZ0k9KouodEso3KSSSm4W?=
+ =?us-ascii?Q?Eu4cfd2zFjVm1LEIPHnXMan6HLV5JEQM2sKcTlQYbE2yEGYqsr+zFQgVSGd5?=
+ =?us-ascii?Q?R0FxmkeHFTm7PoPnOVdJ2HRxNB7L+YeQMTjw3vqG9CqNkOQHEQi8kho2BFEl?=
+ =?us-ascii?Q?q79ZDp5hpRq5rDBEitC6ZiJEkYMWmVzXgXAUl+WGttzt6nmHEkNEr6wFtG9w?=
+ =?us-ascii?Q?pE20hOLGUEJMQ0pubpj3WHr2sykMCJiqQbRMjxfYWd/vHMfqJLoT1PRDKFe6?=
+ =?us-ascii?Q?oJ+hbQezQgpuR+zE9Bdd8rUbuV6LlxnAjqBmo76XQJV0vrzb6pXEOeb5DkTT?=
+ =?us-ascii?Q?owAKIwpzs8M4fWk5Rbyzt8+Jgqa/cTppDFZ5alUZNHnbabvBEr9SSkqOgfZE?=
+ =?us-ascii?Q?svhCQKR3o6VyD4cvvI8Wd7lA1dGPSfoqMVwyNiWEHrU5+zj8WqanTqTPRMar?=
+ =?us-ascii?Q?6sgOrXmkPjqSHP+oYnVT3GyZugcK8MsYuPkvWri1FEyCtkcHYPRWrRy2wUzH?=
+ =?us-ascii?Q?FHgCFctqJeZkA3ytdyzi51TzJPHEpoRA8OMmFlRYXNT89eXA0FRx/OYp7PHv?=
+ =?us-ascii?Q?5C/0KlYVP2+k4p32bOgonOBxFxZnXGdOO+ZZIboRlcB73dyUDWnMSqotgEg7?=
+ =?us-ascii?Q?qZTyhKZD6MPcf2MPR/sOJ+9BPR+wn/zgXa5pRjB/rSR9HXhPe4Rl26NF28Hn?=
+ =?us-ascii?Q?ae4HSLeGt+OdXX1IN6wnNCqanQx1C9Q4rAMvRqqxo+k5FSdqWkz/1EZRgXUU?=
+ =?us-ascii?Q?HrO5KRBAQKKHaD4QoUOEEeLHUBiQWsYLflUqtKnFtQdvJinKWEoovD2iImXP?=
+ =?us-ascii?Q?ajdKiLbT33EH6n5QcAX1nkeerIHfmfWhC3LVZIW4RPc2I8w3E6+kd4hUFqCQ?=
+ =?us-ascii?Q?2/ms59jMPedG/L1JqS+qHcv1iYgiUWOwq1hEPvu1b3+hO+d8kL/1klcoRidV?=
+ =?us-ascii?Q?FYpci3AxvOt9EExJzK8iea4Wv+as8om5J6p0inNHSNWb94bQVvuSbzpalp6I?=
+ =?us-ascii?Q?XkWN3uO68E88pQuAChZhES6LVAiz46xNTs+iYQIj7WNKhPhxx4PzM0ieHKkH?=
+ =?us-ascii?Q?WIVE92e3iSASH3BN8db1BiSRBF2H3eOnPPakIicHoZUO7T276N3zKJq5VAVx?=
+ =?us-ascii?Q?OxNq9Y1WeUnyXsyJVgmK/FTb/gHXRFCCSgCc+bUisLlDQ7k3pin97GLlgfqX?=
+ =?us-ascii?Q?aFLBLPdtzsMHJMjnfWN72xbY+tRT7baEz75Nq2jSNzGgNdmF+zijYYD4XLP2?=
+ =?us-ascii?Q?Uj5rZnk19nA2q5Tq1LyH2D76YzXhx/IUWoFpvzQaXUROjxztDXge7wcRtXhF?=
+ =?us-ascii?Q?cKbrKiFgnw=3D=3D?=
+MIME-Version: 1.0
+
+--vyTCtfjpZ7HT=_?:
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+EXTERNAL: This email originated from a sender outside of Viterbo. Use cauti=
+on when clicking on links or opening attachments.
+
+Traces how American ideas about race in the Pacific were made and remade on=
+ the imperial stage and how these ideas shaped US foreign and immigration p=
+olicies before World War II
+
+To view this email as a web page, go here.<http://view.ouphe.oup.com/?qs=3D=
+3edcbdfbdc8d7cbe200b51a77d84e0bb0e39efecc379fd72d42a5a2f9bfd10bba973e3976ac=
+2fb36d9533afe3a44dbefba528db91a400d324a753a898fcc9584196243d0b1801379ea39dd=
+06fc89d63a>
+[Oxford University Press]<http://click.ouphe.oup.com/?qs=3D952c6fa3b06985e0=
+0837bea8ffed7311b6656735b719194f5dbb6d77e72e17c2687c8822278451060a3cfd894d7=
+c6107e3d4cbf28aa9088f>
+
+Traces how American ideas about race in the
+Pacific were made and remade on the imperial stage
+and how these ideas shaped US foreign and
+immigration policies before World War II
+
+[The Allure of Empire]<http://click.ouphe.oup.com/?qs=3D952c6fa3b06985e0a01=
+0c1295953453c2ad02c1124f43b2bd6cc87cedc9151479f1c7b7c1726ec2ec0430c77aa0efa=
+b0a6b53891e698c061>
+REQUEST A DIGITAL COPY<http://click.ouphe.oup.com/?qs=3D952c6fa3b06985e0669=
+9c4b3002a9fd0e58d8a73b80a0fc34413338bfa70a206ba5b0fb8aa106635b1f9a00b0b88db=
+ea658678aac113e24e>
+
+"The Allure of Empire offers a thought-provoking and illuminating narrative=
+ of mutual attractions and collusions between self-proclaimed progressive e=
+mpires. Taking readers from Korea to Cuba and California via the Philippine=
+s, and from Washington, DC, back to East Asia via Hawai'i, this book interw=
+eaves the separate(d) stories of immigration politics, military conquest, m=
+issionary expansionism, social science research, and global racial struggle=
+ into a coherent history of the imperial
+Pacific. This is transimperial
+scholarship at its best."
+
+Eiichiro Azuma, author of In Search of Our Frontier: Japanese America and S=
+ettler Colonialism in the Construction of Japan's Borderless Empire
+[Oxford University Press Inclusive Access]<http://click.ouphe.oup.com/?qs=
+=3D952c6fa3b06985e0b933d462386f1015bbf41d990c0f8ef5fd667b2091bb929884aee215=
+f3e1f6bb420e40fe7a24872f7715829b8d3ccd60>
+
+To view this email as a web page, click here<http://view.ouphe.oup.com/?qs=
+=3D3edcbdfbdc8d7cbe200b51a77d84e0bb0e39efecc379fd72d42a5a2f9bfd10bba973e397=
+6ac2fb36d9533afe3a44dbefba528db91a400d324a753a898fcc9584a1006cc4e989beb6cf5=
+86c3265f2cbf7>.
+
+Our Privacy Policy<http://click.ouphe.oup.com/?qs=3D1c55dfa47720798c9088dff=
+3087405e00af0dce8830b94ef2027e5b4a092d5852479b092eb251a6b6e6e92edf4ac0c24b2=
+b35513f94c9277> sets out how Oxford University Press handles your personal =
+information.
+
+For those titles covered by Section 112 of the Higher Education Opportunity=
+ Act,
+additional information can be found at www.oup.com/us/he<http://click.ouphe=
+.oup.com/?qs=3D1c55dfa47720798cfc762ad18e3f53565016f7898cb181a63f253ef34b11=
+a75145b6d3f0825c142cf0e5ffe643f5aeb14a959e44ce8f2a5f>.<http://click.ouphe.o=
+up.com/?qs=3D1c55dfa47720798cfc762ad18e3f53565016f7898cb181a63f253ef34b11a7=
+5145b6d3f0825c142cf0e5ffe643f5aeb14a959e44ce8f2a5f>
+
+This message was sent by or on behalf of
+Oxford University Press USA
+4000 Centregreen Way, Suite 310
+Cary, NC 27513-2009
+
+Privacy Policy<http://click.ouphe.oup.com/?qs=3D1c55dfa47720798cfde1f446d46=
+d74574fbca73c78d0a58cd74c91dbe475debecf62534f50381912d5cb2a8b9cf2c74a24764c=
+6ba7325e4b>
+
+Update Profile and Manage Subscriptions<http://click.ouphe.oup.com/profile_=
+center.aspx?qs=3D165b86447846f5be89584a01d3b5ecbf21ec48f7a285db2609487f2e34=
+d5e02e8b86aca58139e33c69479c820700c58d10cd95579dc2a9982b97331b5b428bf2>    =
+  Unsubscribe<http://click.ouphe.oup.com/unsub_center.aspx?qs=3D165b8644784=
+6f5be5b6c8dd4ab64428ed0d9023a27ea2a0de723ffbb2b2e9b770697f8f3e68eebc14ddc42=
+15586ebcae192965137451acee0b9eb0961eee979b8da8f4c5e949d92d>
+
+--vyTCtfjpZ7HT=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1, m=
+aximum-scale=3D1, user-scalable=3D0">
+<style type=3D"text/css">
+      ReadMsgBody{ width: 100%;}
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass=
+ font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+      body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin=
+:0 !important;}
+      p { margin: 1em 0;}
+      table td { border-collapse: collapse;}
+      img {outline:0;}
+      a img {border:none;}
+      @-ms-viewport{ width: device-width;}
+    </style><style type=3D"text/css">
+      @media only screen and (max-width: 480px) {
+        .container {width: 100% !important;}
+        .footer { width:auto !important; margin-left:0; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        img { max-width:100% !important; height:auto !important; max-height=
+:auto !important;}
+        .header img{max-width:100% !important;height:auto !important; max-h=
+eight:auto !important;}
+        .photo img { width:100% !important; max-width:100% !important; heig=
+ht:auto !important;}
+        .drop { display:block !important; width: 100% !important; float:lef=
+t; clear:both;}
+        .footerlogo { display:block !important; width: 100% !important; pad=
+ding-top:15px; float:left; clear:both;}
+        .nav4, .nav5, .nav6 { display: none !important; }
+        .tableBlock {width:100% !important;}
+        .responsive-td {width:100% !important; display:block !important; pa=
+dding:0 !important; }
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+        body { padding: 0px !important; font-size: 16px !important; line-he=
+ight: 150% !important;}
+        h1 { font-size: 22px !important; line-height: normal !important;}
+        h2 { font-size: 20px !important; line-height: normal !important;}
+        h3 { font-size: 18px !important; line-height: normal !important;}
+        .buttonstyles {
+          font-family:arial,helvetica,sans-serif !important;
+          font-size: 16px !important;
+          color: #FFFFFF !important;
+          padding: 10px !important;
+        }
+        /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+      }
+      @media only screen and (max-width: 640px) {
+        .container { width:100% !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        .photo img { width:100% !important; height:auto !important;}
+        .nav5, .nav6 { display: none !important;}
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+      }
+    </style><!--[if mso]>       <style type=3D"text/css">           /* Begi=
+n Outlook Font Fix */           body, table, td {               font-family=
+: Arial, Helvetica, sans-serif ;               font-size:16px;             =
+  color:#808080;               line-height:1;           }           /* End =
+Outlook Font Fix */       </style>     <![endif]-->
+</head>
+<body bgcolor=3D"#efefef" text=3D"#808080" style=3D"background-color: #efef=
+ef; color: #808080; margin: 0px; padding: 20px; -webkit-text-size-adjust:no=
+ne; line-height: normal; font-size: 16px; font-family:arial,helvetica,sans-=
+serif;">
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div><style type=3D"text/css">
+div.preheader=20
+{ display: none !important; }=20
+</style>
+<div class=3D"preheader" style=3D"font-size: 1px; display: none !important;=
+">Traces how American ideas about race in the Pacific were made and remade =
+on the imperial stage and how these ideas shaped US foreign and immigration=
+ policies before World War II</div>
+<div style=3D"font-size:0; line-height:0;"><img src=3D"http://click.ouphe.o=
+up.com/open.aspx?ffcb10-fec41676766c0778-fe5f15737661077f7c12-fe3c117175640=
+47e771074-ff69157377-fe5b1776776602797d11-ffcd16&amp;d=3D500009&amp;bmt=3D0=
+" width=3D"1" height=3D"1" alt=3D""></div>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" alig=
+n=3D"center">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<div style=3D"margin:18px 0;"><!--   To view this email as a web page, clic=
+k on the link below,  or copy and paste it into your browser's address wind=
+ow.  http://view.ouphe.oup.com/?qs=3D3edcbdfbdc8d7cbe200b51a77d84e0bb0e39ef=
+ecc379fd72d42a5a2f9bfd10bba973e3976ac2fb36d9533afe3a44dbef01b6ed6ab1bcf7ab =
+ .//--><font face=3D"verdana" size=3D"1" color=3D"#444444">To
+ view this email as a web page, go <a href=3D"https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttp%3A%2F%2Fview.ouphe.oup.com%2F%3Fqs%3D3edcbdfb=
+dc8d7cbe200b51a77d84e0bb0e39efecc379fd72d42a5a2f9bfd10bba973e3976ac2fb36d95=
+33afe3a44dbefba528db91a400d324a753a898fcc9584196243d0b1801379ea39dd06fc89d6=
+3a&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C1798c72f67cf4aeaf9a308db=
+cb42428d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327257697891497%7C=
+Unknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiL=
+CJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D%2B6xTUU83o6igGq2ho%2BAoyRM%2Flhz=
+nSsKnvMKPvqRKJeE%3D&amp;reserved=3D0" originalsrc=3D"http://view.ouphe.oup.=
+com/?qs=3D3edcbdfbdc8d7cbe200b51a77d84e0bb0e39efecc379fd72d42a5a2f9bfd10bba=
+973e3976ac2fb36d9533afe3a44dbefba528db91a400d324a753a898fcc9584196243d0b180=
+1379ea39dd06fc89d63a" shash=3D"wKvvNudvF9P3EYZc47DYtle/VILfxDy0ReLvNlY9t3gB=
+6Nd0vi+3/QGCCOAWjY0V8eWLGeC+/WkXAqS1tD5xaXxLEsy8etlH89wU8VffX3b3SbLYwaHm7Bc=
+51cuIvuckmuJbTyBKGbw7B5V2Ffe0d6fA8quXGgjQubztt9C6ArI=3D">
+here.</a></font></div>
+</td>
+</tr>
+<tr>
+<td align=3D"center">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"600" class=
+=3D"container" align=3D"center">
+<tbody>
+<tr>
+<td><!-- added the border style here -->
+<table class=3D"tb_properties border_style" cellspacing=3D"0" cellpadding=
+=3D"0" bgcolor=3D"#ffffff" width=3D"100%">
+<!-- end of comment -->
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%">
+<tbody>
+<tr>
+<!-- added padding here -->
+<td class=3D"content_padding" style=3D"padding:10px;border:0px;"><!-- end o=
+f comment -->
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"left" class=3D"header" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"background-color: transparent; min-width: 100%; border-top: 0=
+px; border-right: 0px; border-bottom: 1px solid transparent; border-left: 0=
+px; " class=3D"slot-styling">
+<tbody>
+<tr>
+<td style=3D"padding: 0px 0px 5px; " class=3D"slot-styling camarker-inner">=
+<!---->
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"min-width: 100%; " class=3D"stylingblock-content-wrapper">
+<tbody>
+<tr>
+<td style=3D"padding-top: 10px; padding-left: 10px; padding-right: 10px; " =
+class=3D"stylingblock-content-wrapper camarker-inner">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentat=
+ion">
+<tbody>
+<tr>
+<td align=3D"left"><a href=3D"https://nam02.safelinks.protection.outlook.co=
+m/?url=3Dhttp%3A%2F%2Fclick.ouphe.oup.com%2F%3Fqs%3D952c6fa3b06985e00837bea=
+8ffed7311b6656735b719194f5dbb6d77e72e17c2687c8822278451060a3cfd894d7c6107e3=
+d4cbf28aa9088f&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C1798c72f67cf=
+4aeaf9a308dbcb42428d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327257=
+698047706%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBT=
+iI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DT8BeSBnUcS5Xpf60IXuKD=
+eZXtt3YGN5aVnXU8hy2W68%3D&amp;reserved=3D0" originalsrc=3D"http://click.oup=
+he.oup.com/?qs=3D952c6fa3b06985e00837bea8ffed7311b6656735b719194f5dbb6d77e7=
+2e17c2687c8822278451060a3cfd894d7c6107e3d4cbf28aa9088f" shash=3D"f23TdZihAV=
+7wrj9zazaNXYAst5ey/71LCzT5qPZF0/FhgUrZDdLd8qYXascQk39L/0ACgOGdch/Estmqwznor=
+kQoTOB2oD0gdLAq2i8jiNNQ7FakdfWgK5XCYKFCSwGELahCoUlHz1rXfhPFgTyqoi1+uVivJ5cT=
+OCWDCbOuX0c=3D" title=3D"" data-linkto=3D"http://"><img data-assetid=3D"398=
+34" src=3D"http://image.ouphe.oup.com/lib/fe3c11717564047e771074/m/1/OUPBlu=
+eCombinedLogo.png" alt=3D"Oxford University Press" height=3D"106" width=3D"=
+300" style=3D"display: block; padding: 0px; width: 300px; height: 106px; te=
+xt-align: left;"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!----><!---->
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"background-color: #002147; min-width: 100%; " class=3D"stylin=
+gblock-content-wrapper">
+<tbody>
+<tr>
+<td style=3D"padding: 10px 50px; " class=3D"stylingblock-content-wrapper ca=
+marker-inner">
+<p style=3D"text-align: center;"><span style=3D"font-size:19px;"><span styl=
+e=3D"font-family:Calibri,Candara,Segoe,&quot;Segoe UI&quot;,Optima,Arial,sa=
+ns-serif;"><span style=3D"color:#ffffff;"><span style=3D"line-height:107%">=
+Traces how American ideas about race in the<br>
+Pacific were made and remade on the imperial stage<br>
+and how these ideas shaped US foreign and<br>
+immigration policies before World War II</span></span></span></span><span s=
+tyle=3D"font-size:18px;"><span style=3D"color:#ffffff;">&nbsp;</span></span=
+></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!----></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"left" class=3D"" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"background-color: transparent; min-width: 100%; border-top: 0=
+px; border-right: 0px; border-bottom: 1px solid transparent; border-left: 0=
+px; " class=3D"slot-styling">
+<tbody>
+<tr>
+<td style=3D"padding: 0px 10px 20px; " class=3D"slot-styling camarker-inner=
+"><!---->
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"background-color: transparent; text-align: left; min-width: 1=
+00%; " class=3D"stylingblock-content-wrapper">
+<tbody>
+<tr>
+<td style=3D"padding: 5px 10px; " class=3D"stylingblock-content-wrapper cam=
+arker-inner" align=3D"left">
+<table cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" style=3D"w=
+idth: 100%;">
+<tbody>
+<tr>
+<td>
+<table cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" style=3D"w=
+idth: 100%;">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"responsive-td" style=3D"width: 45%; padding-rig=
+ht: 17.5px;">
+<!---->
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"background-color: transparent; min-width: 100%; " class=3D"st=
+ylingblock-content-wrapper">
+<tbody>
+<tr>
+<td style=3D"padding: 0px 0px 25px; " class=3D"stylingblock-content-wrapper=
+ camarker-inner">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentat=
+ion">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttp%3A%2F%2Fclick.ouphe.oup.com%2F%3Fqs%3D952c6fa3b06985e0a010c=
+1295953453c2ad02c1124f43b2bd6cc87cedc9151479f1c7b7c1726ec2ec0430c77aa0efab0=
+a6b53891e698c061&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C1798c72f67=
+cf4aeaf9a308dbcb42428d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383272=
+57698047706%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJ=
+BTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D6twuHHsmt4tOhkNNPx7=
+C9FQ6HRAH%2F7lf1LtDKsk1Py4%3D&amp;reserved=3D0" originalsrc=3D"http://click=
+.ouphe.oup.com/?qs=3D952c6fa3b06985e0a010c1295953453c2ad02c1124f43b2bd6cc87=
+cedc9151479f1c7b7c1726ec2ec0430c77aa0efab0a6b53891e698c061" shash=3D"nM82b2=
+9nmOjyjrDocViiZCu1+L8tBNzgnMT3ciQ95apyHWRhQ7bfY6nokERskq5Er/hWWQvIbUEEvf1lS=
+v6wY+gq51Hj6SePyvVqQZtWBbE0VcZDRn4DZvDCsheJ/QaCnGhG36CyaPqQfpmgUMXRXN7Nrdz5=
+1GHvI9EB1W80GcA=3D" title=3D"" data-linkto=3D"https://"><img data-assetid=
+=3D"91945" src=3D"http://image.ouphe.oup.com/lib/fe3c11717564047e771074/m/1=
+/Suh_Ebook.png" alt=3D"The Allure of Empire" height=3D"353" width=3D"240" s=
+tyle=3D"display: block; padding: 0px; width: 240px; height: 353px; text-ali=
+gn: center;"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!----><!---->
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"min-width: 100%; " class=3D"stylingblock-content-wrapper">
+<tbody>
+<tr>
+<td class=3D"stylingblock-content-wrapper camarker-inner">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentatio=
+n">
+<tbody>
+<tr>
+<td class=3D"innertd buttonblock" bgcolor=3D"#FD5821" style=3D" border-radi=
+us: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background-co=
+lor: #FD5821;">
+<a style=3D" font-size: 17px; font-family: &quot;Trebuchet MS&quot;, sans-s=
+erif; color: #FFFFFF; text-align: center; text-decoration: none; display: b=
+lock; background-color: #FD5821; border: 0px solid #FD5821; padding: 12px; =
+border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;" t=
+arget=3D"_blank" class=3D"buttonstyles" href=3D"https://nam02.safelinks.pro=
+tection.outlook.com/?url=3Dhttp%3A%2F%2Fclick.ouphe.oup.com%2F%3Fqs%3D952c6=
+fa3b06985e06699c4b3002a9fd0e58d8a73b80a0fc34413338bfa70a206ba5b0fb8aa106635=
+b1f9a00b0b88dbea658678aac113e24e&amp;data=3D05%7C01%7Cegweinberg%40viterbo.=
+edu%7C1798c72f67cf4aeaf9a308dbcb42428d%7C6b9fc982e8d74958976cb08441cc9b0b%7=
+C0%7C0%7C638327257698047706%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DsJM=
+GZrs703VbeoPCCAlldWgxGWWH%2BtTpj2415L%2BZEmM%3D&amp;reserved=3D0" originals=
+rc=3D"http://click.ouphe.oup.com/?qs=3D952c6fa3b06985e06699c4b3002a9fd0e58d=
+8a73b80a0fc34413338bfa70a206ba5b0fb8aa106635b1f9a00b0b88dbea658678aac113e24=
+e" shash=3D"RlZdrmq56kjlgLT0f6ITwqbdVoBP7V6AwFmzQjULDItyBzdNo1jzMPyE9OQruCZ=
+W+wtso/5MLEyXHTnTReCNDJzartRgGb3ktcQHVX+eNB8s8BQ0AEMf/hAvGAnzZZ65o95qb9yIiw=
+iiw0eUSxfF0CHwNhebGIpJrqlO5YoATbE=3D" title=3D"" data-linkto=3D"https://">R=
+EQUEST
+ A DIGITAL COPY</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!----></td>
+<td valign=3D"top" class=3D"responsive-td" style=3D"width: 55%; padding-lef=
+t: 17.5px;">
+<!---->
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"text-align: left; background-color: transparent; min-width: 1=
+00%; " class=3D"stylingblock-content-wrapper">
+<tbody>
+<tr>
+<td style=3D"padding: 10px 10px 0px 0px; " class=3D"stylingblock-content-wr=
+apper camarker-inner" align=3D"left">
+<div style=3D"line-height: 140%;">
+<div style=3D"line-height: 140%;">
+<table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"1=
+00%">
+<tbody>
+<tr>
+<td align=3D"left">
+<p style=3D"text-align: center;"><span style=3D"color: rgb(0, 0, 0); font-f=
+amily: Calibri, Candara, Segoe, &quot;Segoe UI&quot;, Optima, Arial, sans-s=
+erif; text-align: start;">&quot;<span style=3D"font-size:16px;"><i>The Allu=
+re of Empire
+</i></span></span><span style=3D"font-size: 16px; color: rgb(0, 0, 0); font=
+-family: Calibri, Candara, Segoe, &quot;Segoe UI&quot;, Optima, Arial, sans=
+-serif; text-align: start;">offers a thought-provoking and illuminating nar=
+rative of mutual attractions and collusions
+ between self-proclaimed progressive empires. Taking readers from Korea to =
+Cuba and California via the Philippines, and from Washington, DC, back to E=
+ast Asia via Hawai'i, this book interweaves the separate(d) stories of immi=
+gration politics, military conquest,
+ missionary expansionism, social science research, and global racial strugg=
+le into a coherent history of the imperial
+<br>
+Pacific. This is transimperial<br>
+scholarship at its best.&quot;</span></p>
+<div style=3D"text-align: center;"><span style=3D"font-size:16px;"><span st=
+yle=3D"font-family:Calibri,Candara,Segoe,&quot;Segoe UI&quot;,Optima,Arial,=
+sans-serif;"><span style=3D"color:#000000;"><span style=3D"line-height:107%=
+"><span style=3D"font-variant-ligatures:normal; text-align:start"><span sty=
+le=3D"text-decoration-thickness:initial"><span style=3D"text-decoration-sty=
+le:initial"><span style=3D"text-decoration-color:initial"><span style=3D"fl=
+oat:none">Eiichiro
+ Azuma, author of&nbsp;</span></span></span></span></span><em style=3D"font=
+-variant-ligatures:normal; text-align:start; text-decoration-thickness:init=
+ial; text-decoration-style:initial; text-decoration-color:initial">In Searc=
+h of Our Frontier: Japanese America and
+ Settler Colonialism in the Construction of Japan's Borderless Empire</em><=
+/span></span></span></span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!----></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!----></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"left" class=3D"" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"background-color: transparent; min-width: 100%; border-top: 0=
+px; border-right: 0px; border-bottom: 1px solid transparent; border-left: 0=
+px; " class=3D"slot-styling">
+<tbody>
+<tr>
+<td style=3D"padding: 5px 0px 0px; " class=3D"slot-styling camarker-inner">=
+<!---->
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"background-color: transparent; min-width: 100%; " class=3D"st=
+ylingblock-content-wrapper">
+<tbody>
+<tr>
+<td style=3D"padding: 0px 0px 6px; " class=3D"stylingblock-content-wrapper =
+camarker-inner">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentat=
+ion">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttp%3A%2F%2Fclick.ouphe.oup.com%2F%3Fqs%3D952c6fa3b06985e0b933d=
+462386f1015bbf41d990c0f8ef5fd667b2091bb929884aee215f3e1f6bb420e40fe7a24872f=
+7715829b8d3ccd60&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C1798c72f67=
+cf4aeaf9a308dbcb42428d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383272=
+57698047706%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJ=
+BTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DxNLkErbcl4%2BWI7rsB=
+WijCQI6%2FZ6RsEGr8hrFvUpYhYA%3D&amp;reserved=3D0" originalsrc=3D"http://cli=
+ck.ouphe.oup.com/?qs=3D952c6fa3b06985e0b933d462386f1015bbf41d990c0f8ef5fd66=
+7b2091bb929884aee215f3e1f6bb420e40fe7a24872f7715829b8d3ccd60" shash=3D"sXOV=
+QAz4KfrjivxkvcNr2zUeDGNBeH+5qc5YrEAnjev+6ehF3b4yluJZhrgkWLbhJuxzJLduLgXttLj=
+xaaZaUGmOvdx1jITdCCKILKVYS0H8WGPxxzC6HwQHSLIuYtAFFruKNzrcNpF73Y5xIHmXKsNOE4=
+wPFQCl+L9JiNNk9Bw=3D" title=3D"" data-linkto=3D"https://"><img data-assetid=
+=3D"26168" src=3D"http://image.ouphe.oup.com/lib/fe3c11717564047e771074/m/1=
+/IAbannerHiRes_600.png" alt=3D"Oxford University Press Inclusive Access" wi=
+dth=3D"600" style=3D"display: block; padding: 0px; text-align: center; heig=
+ht: auto; width: 100%; border: 0px;"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!----></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"left" class=3D"" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"min-width: 100%; " class=3D"slot-styling">
+<tbody>
+<tr>
+<td style=3D"padding-top: 20px; " class=3D"slot-styling camarker-inner"><!-=
+--->
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"text-align: left; background-color: transparent; min-width: 1=
+00%; " class=3D"stylingblock-content-wrapper">
+<tbody>
+<tr>
+<td style=3D"padding: 0px 10px; " class=3D"stylingblock-content-wrapper cam=
+arker-inner" align=3D"left">
+<div style=3D"text-align: center;">
+<div style=3D"text-align: center;">
+<p align=3D"center" style=3D"text-align: center; line-height: 13.5pt;"><spa=
+n style=3D"font-family: verdana, geneva, sans-serif; font-size: 11px;">To v=
+iew this email as a web page, click
+</span><a data-linkto=3D"other" href=3D"https://nam02.safelinks.protection.=
+outlook.com/?url=3Dhttp%3A%2F%2Fview.ouphe.oup.com%2F%3Fqs%3D3edcbdfbdc8d7c=
+be200b51a77d84e0bb0e39efecc379fd72d42a5a2f9bfd10bba973e3976ac2fb36d9533afe3=
+a44dbefba528db91a400d324a753a898fcc9584a1006cc4e989beb6cf586c3265f2cbf7&amp=
+;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C1798c72f67cf4aeaf9a308dbcb4242=
+8d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327257698047706%7CUnknow=
+n%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI=
+6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DdIjEuYsXzmx7%2B3tZxMIWbHkZJKmnbiTDyKxmY=
+ymDpkU%3D&amp;reserved=3D0" originalsrc=3D"http://view.ouphe.oup.com/?qs=3D=
+3edcbdfbdc8d7cbe200b51a77d84e0bb0e39efecc379fd72d42a5a2f9bfd10bba973e3976ac=
+2fb36d9533afe3a44dbefba528db91a400d324a753a898fcc9584a1006cc4e989beb6cf586c=
+3265f2cbf7" shash=3D"S2yaT7TEXnxic52kp29p3AqaXKbZYN4Imby/T2WzdTVwFwSiAUrMh5=
+pRwf+7nYXIg/B1iVwliO6ZK8Cz/bL+bT+TGcJsWZwt/UGiG+vEeL3dudf/TYd8sZQuCmGqFwfM1=
+LxVXw+Apexs3CgKWh4CZYG9tKDd6dwpG71a7EIFYXs=3D" style=3D"font-family: verdan=
+a, geneva, sans-serif; font-size: 11px; color: rgb(147, 147, 147);" title=
+=3D"here">here</a><span style=3D"font-family: verdana, geneva, sans-serif; =
+font-size: 11px;">.</span></p>
+<p align=3D"center" style=3D"text-align: center; line-height: 100%;"><span =
+style=3D"font-family: verdana, geneva, sans-serif; font-size: 11px;">Our
+</span><a data-linkto=3D"https://" href=3D"https://nam02.safelinks.protecti=
+on.outlook.com/?url=3Dhttp%3A%2F%2Fclick.ouphe.oup.com%2F%3Fqs%3D1c55dfa477=
+20798c9088dff3087405e00af0dce8830b94ef2027e5b4a092d5852479b092eb251a6b6e6e9=
+2edf4ac0c24b2b35513f94c9277&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7=
+C1798c72f67cf4aeaf9a308dbcb42428d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C=
+0%7C638327257698047706%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoi=
+V2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DUcdjx7s%=
+2BP4lfVZ%2F%2Bfy1gFFCPwVG425kF7AzbA6GxyzA%3D&amp;reserved=3D0" originalsrc=
+=3D"http://click.ouphe.oup.com/?qs=3D1c55dfa47720798c9088dff3087405e00af0dc=
+e8830b94ef2027e5b4a092d5852479b092eb251a6b6e6e92edf4ac0c24b2b35513f94c9277"=
+ shash=3D"VSNotXJHN+zQajM+6AHrpdU1prNUf/vNW/raenYeA9KKYBg8YOLaq6L3R2tbnXqXb=
+IkY3Pb0tNYk5fBvTpc8jZdhQeUhGMUo1gz2z/TG2cCdTUgmhWzgnH9q0tMi3MVHbrxQYIiSwjuJ=
+yjnaO12Ia8zrB76KdYQ0Tt5ZJ6FvJQI=3D" style=3D"font-family: verdana, geneva, =
+sans-serif; font-size: 11px; color: rgb(147, 147, 147);" title=3D"Privacy P=
+olicy">Privacy
+ Policy</a><span style=3D"font-family: verdana, geneva, sans-serif; font-si=
+ze: 11px;"> sets out how&nbsp;Oxford University Press handles your personal=
+ information.&nbsp;</span></p>
+<p align=3D"center" style=3D"text-align: center; line-height: 100%;"><span =
+style=3D"font-family: verdana, geneva, sans-serif; font-size: 11px;">For th=
+ose titles covered by Section 112 of the Higher Education Opportunity Act,<=
+br>
+additional information can be found at&nbsp;</span><u style=3D"font-family:=
+ verdana, geneva, sans-serif; font-size: 11px;"><a data-linkto=3D"http://" =
+href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2F=
+click.ouphe.oup.com%2F%3Fqs%3D1c55dfa47720798cfc762ad18e3f53565016f7898cb18=
+1a63f253ef34b11a75145b6d3f0825c142cf0e5ffe643f5aeb14a959e44ce8f2a5f&amp;dat=
+a=3D05%7C01%7Cegweinberg%40viterbo.edu%7C1798c72f67cf4aeaf9a308dbcb42428d%7=
+C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327257698047706%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C3000%7C%7C%7C&amp;sdata=3D2pS94yF712eeQ%2BXFoT2lJjlXhP25AaVfcsP10Tahw=
+Hg%3D&amp;reserved=3D0" originalsrc=3D"http://click.ouphe.oup.com/?qs=3D1c5=
+5dfa47720798cfc762ad18e3f53565016f7898cb181a63f253ef34b11a75145b6d3f0825c14=
+2cf0e5ffe643f5aeb14a959e44ce8f2a5f" shash=3D"P3fmJN4kSyGZUzPdImdWqeEanyXTpj=
+TSrrlOpETcWiiyKnoKZZmdHQm6V0pHX3gQ0eVyaJKptuuNq4VyRoXfbX/4RNvQo5Vje0NiOnSdC=
+tCVEtGgA6sKlv8Xh4FbPZj5FYnfd18CuS2MSJjPfZVHc+CQ6LjR0QbaoPvASdkR0H0=3D" styl=
+e=3D"color: rgb(128, 128, 128); text-decoration-line: none;" title=3D"www.o=
+up.com/us/he.">www.oup.com/us/he</a></u><a data-linkto=3D"http://" href=3D"=
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fclick.ou=
+phe.oup.com%2F%3Fqs%3D1c55dfa47720798cfc762ad18e3f53565016f7898cb181a63f253=
+ef34b11a75145b6d3f0825c142cf0e5ffe643f5aeb14a959e44ce8f2a5f&amp;data=3D05%7=
+C01%7Cegweinberg%40viterbo.edu%7C1798c72f67cf4aeaf9a308dbcb42428d%7C6b9fc98=
+2e8d74958976cb08441cc9b0b%7C0%7C0%7C638327257698047706%7CUnknown%7CTWFpbGZs=
+b3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C30=
+00%7C%7C%7C&amp;sdata=3D2pS94yF712eeQ%2BXFoT2lJjlXhP25AaVfcsP10TahwHg%3D&am=
+p;reserved=3D0" originalsrc=3D"http://click.ouphe.oup.com/?qs=3D1c55dfa4772=
+0798cfc762ad18e3f53565016f7898cb181a63f253ef34b11a75145b6d3f0825c142cf0e5ff=
+e643f5aeb14a959e44ce8f2a5f" shash=3D"P3fmJN4kSyGZUzPdImdWqeEanyXTpjTSrrlOpE=
+TcWiiyKnoKZZmdHQm6V0pHX3gQ0eVyaJKptuuNq4VyRoXfbX/4RNvQo5Vje0NiOnSdCtCVEtGgA=
+6sKlv8Xh4FbPZj5FYnfd18CuS2MSJjPfZVHc+CQ6LjR0QbaoPvASdkR0H0=3D" style=3D"fon=
+t-family: verdana, geneva, sans-serif; font-size: 11px; color: rgb(128, 128=
+, 128); text-decoration-line: none;" title=3D"www.oup.com/us/he.">.</a></p>
+</div>
+<div style=3D"text-align: center;">
+<div style=3D"text-align: center;">
+<p align=3D"center" style=3D"text-align: center; line-height: 13.5pt;"><spa=
+n style=3D"font-size:11px;"><span style=3D"font-family: verdana,geneva,sans=
+-serif;"><span style=3D"text-align: center;"><span style=3D"font-size:11px;=
+"><span style=3D"font-family: verdana,geneva,sans-serif;"><span style=3D"te=
+xt-align: center;"><span style=3D"font-size: 11px;"><span style=3D"font-fam=
+ily: verdana,geneva,sans-serif;"><span style=3D"text-align: center;">This
+ message was sent by or on behalf of<br>
+Oxford University Press USA<br>
+4000 Centregreen Way, Suite 310<br>
+Cary, NC 27513-2009</span></span></span></span></span></span></span></span>=
+</span></p>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!----></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=3D"top">
+<table width=3D"85%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center" style=3D"background:#fff;">
+<!-- FOOTER CONTENT -->
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"background:#fff;" width=3D"100=
+%">
+<table class=3D"container" cellpadding=3D"0" cellspacing=3D"0" width=3D"600=
+">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"font-family: Verdana, Helvetica, Arial, sans-=
+serif; font-size: 11px; color: #959595; padding:0px 0px 25px 0px;">
+<br>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fclick.ouphe.oup.com%2F%3Fqs%3D1c55dfa47720798cfde1f446d46d74574fbca73c78=
+d0a58cd74c91dbe475debecf62534f50381912d5cb2a8b9cf2c74a24764c6ba7325e4b&amp;=
+data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C1798c72f67cf4aeaf9a308dbcb42428=
+d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327257698047706%7CUnknown=
+%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6=
+Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DUvWw7CKk21S0oDX332TAB%2F%2FnL%2B%2BRf1KZ=
+l%2FeRrl8ELGU%3D&amp;reserved=3D0" originalsrc=3D"http://click.ouphe.oup.co=
+m/?qs=3D1c55dfa47720798cfde1f446d46d74574fbca73c78d0a58cd74c91dbe475debecf6=
+2534f50381912d5cb2a8b9cf2c74a24764c6ba7325e4b" shash=3D"jil45Z87MZAc0imOZRt=
+29tuPBIUT9hrkFv1aML7jKMjDxrJsZUEaif3ofpJ15uzAM+elmn+kbtXu6AJ3aVr+7VQ8VgsFPd=
+qqRE6r5GaTia5hjVUlGiDmSi9H5uxXvRha4lYDLrGtAFRWYzh4xTBblU/uMw+ZRLIzT64+KRQnC=
+W4=3D" target=3D"_blank" style=3D"font-size:12px; color: #959595; text-deco=
+ration: none; font-weight:bold;">Privacy
+ Policy</a> <br>
+<br>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fclick.ouphe.oup.com%2Fprofile_center.aspx%3Fqs%3D165b86447846f5be89584a0=
+1d3b5ecbf21ec48f7a285db2609487f2e34d5e02e8b86aca58139e33c69479c820700c58d10=
+cd95579dc2a9982b97331b5b428bf2&amp;data=3D05%7C01%7Cegweinberg%40viterbo.ed=
+u%7C1798c72f67cf4aeaf9a308dbcb42428d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0=
+%7C0%7C638327257698047706%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DfF1Dt=
+R%2BIDSqFyr%2Bem00U7mPgKQb3686YKqjh7go6D%2Bk%3D&amp;reserved=3D0" originals=
+rc=3D"http://click.ouphe.oup.com/profile_center.aspx?qs=3D165b86447846f5be8=
+9584a01d3b5ecbf21ec48f7a285db2609487f2e34d5e02e8b86aca58139e33c69479c820700=
+c58d10cd95579dc2a9982b97331b5b428bf2" shash=3D"FWwsh2LESJ/BkK+4XlQtGtzYRj79=
+BaMeZb/nvkRCOiYU6YCe/5MKwc8/CghCoqxy5jWMJ5exoBrRmh38QK7/SE5mGTjjX6qf2bFa2H6=
+NXxvwR35IL2h0yKcY4XrifHgrFyYjhs6UVEkHsAHfDR/FCPFF1bP74vp/VJWxI2zv2mk=3D" ta=
+rget=3D"_blank" style=3D"font-size:12px; color: #959595; text-decoration: n=
+one; font-weight:bold;">Update
+ Profile and Manage Subscriptions</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a=
+ href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2=
+Fclick.ouphe.oup.com%2Funsub_center.aspx%3Fqs%3D165b86447846f5be5b6c8dd4ab6=
+4428ed0d9023a27ea2a0de723ffbb2b2e9b770697f8f3e68eebc14ddc4215586ebcae192965=
+137451acee0b9eb0961eee979b8da8f4c5e949d92d&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C1798c72f67cf4aeaf9a308dbcb42428d%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327257698047706%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3D7PysOFY9Y6G9krtvl1MNg8A3Tt6NUs49SkBGgvQZiEQ%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"http://click.ouphe.oup.com/unsub_center.aspx?qs=3D165b86447846f=
+5be5b6c8dd4ab64428ed0d9023a27ea2a0de723ffbb2b2e9b770697f8f3e68eebc14ddc4215=
+586ebcae192965137451acee0b9eb0961eee979b8da8f4c5e949d92d" shash=3D"nG/lgmxa=
+Gq2qqBl7R9kLDpUxV1WjeKOmchQJR+MePwNRb5tCeM4NFTz7gIXCEaQ3xddfTza7O3NLPBKqYzU=
+YVwfJmqSmlOa5yNKHcbgj2rvYDPeVU3f0UAJEm8oF2jIXm2xpXHsMKlmM+EB11qO0YEIgHCboKn=
+zE1GWgq8Yv+Kk=3D" target=3D"_blank" style=3D"font-size:12px; color: #959595=
+; text-decoration: none; font-weight:bold;">Unsubscribe</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
+
+--vyTCtfjpZ7HT=_?:--

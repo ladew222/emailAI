@@ -1,0 +1,1106 @@
+Received: from MN2PR20MB3352.namprd20.prod.outlook.com (2603:10b6:208:265::15)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023
+ 20:13:50 +0000
+Received: from MW4PR03CA0344.namprd03.prod.outlook.com (2603:10b6:303:dc::19)
+ by MN2PR20MB3352.namprd20.prod.outlook.com (2603:10b6:208:265::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.38; Thu, 12 Oct
+ 2023 20:13:46 +0000
+Received: from CO1PEPF000044F7.namprd21.prod.outlook.com
+ (2603:10b6:303:dc:cafe::b1) by MW4PR03CA0344.outlook.office365.com
+ (2603:10b6:303:dc::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.30 via Frontend
+ Transport; Thu, 12 Oct 2023 20:13:46 +0000
+Authentication-Results: spf=pass (sender IP is 199.15.213.183)
+ smtp.mailfrom=email.autodeskcommunications.com; dkim=pass (signature was
+ verified) header.d=autodeskcommunications.com;dmarc=pass action=none
+ header.from=autodeskcommunications.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ email.autodeskcommunications.com designates 199.15.213.183 as permitted
+ sender) receiver=protection.outlook.com; client-ip=199.15.213.183;
+ helo=email.autodeskcommunications.com; pr=C
+Received: from email.autodeskcommunications.com (199.15.213.183) by
+ CO1PEPF000044F7.mail.protection.outlook.com (10.167.241.197) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6907.6 via Frontend Transport; Thu, 12 Oct 2023 20:13:45 +0000
+X-MSFBL: a4osX9rNoYSpGfkY3zzzQXMylhJc9pWalVUnsmh4DQA=|eyJ1IjoiOTE4LUZPRC0
+	0MzM6MDoyMzExMDA6MTI4NDM3Nzo1MDgwMDgwOjMxNjEzMzo5OjQ5NzgzMjI6NTk
+	5MDg3OTgxIiwiZyI6ImJnLWFiZC05NSIsInIiOiJlZ3dlaW5iZXJnQHZpdGVyYm8
+	uZWR1IiwiYiI6ImR2cC0xOTktMTUtMjEzLTE4MyJ9
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1697141576;
+	s=m1; d=autodeskcommunications.com; i=@autodeskcommunications.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=q/hofzoWeq2wDYBo9xysOk2zFakEaKnxc5nG+N5Ezeo=;
+	b=ldhDQEBP/NCdV73y89qt0T0jqc9CFVRCYJHuCJxIEd0eGjTJWT15WMMXosurcPTz
+	fWR7jJ8zdrAKZ8jk74F83Yt0KaU71/Ivkeb3MrluM/YQBdb40OQh8BmiVXsdng6RaIC
+	JD2YI75BujTnELByhGtgvMUMQLb1/DobyTpKB0xc=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1697141576;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=q/hofzoWeq2wDYBo9xysOk2zFakEaKnxc5nG+N5Ezeo=;
+	b=SSlZ7W83EZ++txUK8/mLFRxdKoGq4OLxuM6vNHHm0jkZJFX7cf91hGz7l8IVyj4n
+	+Zc7V57iFvQYCFCIbK2rD/E9nuiRQVbzGR6169BJoZpWwZvbOoM2VXqI2oUr6TzrSFg
+	h2QxK3OaAOG2Qy15Nlg90DCZYcXKw3efqgZ7lFJ8=
+Date: Thu, 12 Oct 2023 15:12:56 -0500 (CDT)
+From: Autodesk University <autodesk@autodeskcommunications.com>
+Reply-To: noreply@autodesk.com
+To: egweinberg@viterbo.edu
+Message-ID: <284030850.59273379.1697141576924@abmktmail-batch1f.marketo.org>
+Subject: egweinberg, you're invited to AU 2023
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_59273378_1170741629.1697141576924"
+X-Binding: bg-abd-95
+List-Unsubscribe: <mailto:MVHS2ZLDOVWESM2OI5LHE32TORIGMSBWGVVVCQTSMZTGIMDVORWDSTBNPBMFO53VL4YGGPI=.4978322.316133.9@unsub-ab.mktomail.com>
+X-MarketoID: 918-FOD-433:0:231100:1284377:5080080:316133:9:4978322:599087981
+X-PVIQ: mkto-918FOD433-000001-000004-978322
+X-Mailfrom: 918-FOD-433.0.4978322.0.0.316133.9.599087981@email.autodeskcommunications.com
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+Return-Path:
+ 918-FOD-433.0.4978322.0.0.316133.9.599087981@email.autodeskcommunications.com
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2023 20:13:46.1238
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a3cf0990-532c-4318-9d3c-08dbcb5fbd4b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ CO1PEPF000044F7:EE_|MN2PR20MB3352:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ CO1PEPF000044F7.namprd21.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: a3cf0990-532c-4318-9d3c-08dbcb5fbd4b
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;
+X-Forefront-Antispam-Report:
+ CIP:199.15.213.183;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:email.autodeskcommunications.com;PTR:email.autodeskcommunications.com;CAT:NONE;SFS:(13230031)(4636009)(286005)(1690799017)(451199024)(6916009)(956004)(7036003)(36736006)(7066003)(336012)(9686003)(6512007)(83380400001)(6486002)(7636003)(7596003)(166002)(356005)(33964004)(19627405001)(8676002)(26005)(1096003)(6666004)(83170400001)(118246002)(76236004)(66899024)(9316004)(1406899027)(94166001)(19625255004)(19627315001);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2023 20:13:45.7019
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a3cf0990-532c-4318-9d3c-08dbcb5fbd4b
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1PEPF000044F7.namprd21.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR20MB3352
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.6170947
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?windows-1256?Q?0tdG0lA0zGKLY2N6/b4VeTlZrBkLkUgWa3q8DA+XY/U+tNBC/WVyDlCD?=
+ =?windows-1256?Q?hUNk4v+AAxTb1WObglPMBNYKxB6nPyHf68MQurfBcGBv759ObtSxN8PC?=
+ =?windows-1256?Q?zz5V4SchR7UEiehxQkA1iApWmm+KxL++almotVsnoqW54HAf2URnRuoT?=
+ =?windows-1256?Q?Kzd9E3iedX8SsfoOIhYSzbc5NNgz1AdZoBha9RoRwVQ6NcBsffp6jy1d?=
+ =?windows-1256?Q?zW4qkMTd6CfEgXpq8+cVKBhYQqQePifPqw97eqNM8JenyVnFhXWyfPUS?=
+ =?windows-1256?Q?7TGqElhhORuZdGgixLrWxM/1jQ7xeB6N92l7YMyqVVvmX72Ljqt4ajGk?=
+ =?windows-1256?Q?eRIFJCCWvaTN+fN5xMVDk1UqpvupAq3K08viXRuS4RdHEvdVFUuTo7Q0?=
+ =?windows-1256?Q?p36TCeQkvRtsutAt5ZrhQAyyp4b5kW8UsYlQqffZiFieI7hgphgQIII6?=
+ =?windows-1256?Q?M3kwQzeavk4yBIj8TMuQMXT+k+n07Ox3GTg6ozTQFFfUAJN2BGwW/h2j?=
+ =?windows-1256?Q?xFtU8wSg6jxpOAWKwnd8RuP7fIwFrr4l06zlDeuMROS25RTD691wwFni?=
+ =?windows-1256?Q?2p5k2sYUWPBpfR2bic6sD4Ibd7JVHODqUBqu8JYxZuLfI6G+bEpI+LTr?=
+ =?windows-1256?Q?HlP04G6c8NursSzkpgHzMmMdtIY1vbniHjwO0oKbF0cUtdAJQuBsYQEh?=
+ =?windows-1256?Q?2MJYvwaHwuaqbHBEL/dH8EqUbMKD9ZT+XoOmqdR/im3Bz5qYNIgIxdOV?=
+ =?windows-1256?Q?KV7Q/Vu/ReWvl82HpwllVsJ1p5Wf/8Cwja5cEkSvqg5nTw3gEKLTs+Fy?=
+ =?windows-1256?Q?02FfnNcplRAatNAhdDAO21DXDFdkveamd0DU/jLdwKFMRZ/aLxwwhwxG?=
+ =?windows-1256?Q?r+okfHZWKUXEtEvxi+jQu5IYQYnekx1fF3YpqPx0i2zpsUfhZrG4GsLS?=
+ =?windows-1256?Q?SHUhl3TP30V/9Q2Vwggw1a5BC2IsGHzkk02HKLuZYMFtvB9hw3EMFE0s?=
+ =?windows-1256?Q?5wKTuWwPlxjW9HIQr5QU+v7YcrZ8NhT66/MZX75jrg1Ok1tuAQChTO4o?=
+ =?windows-1256?Q?74sRnybdPsyUKHzbhI6JQVWn337ZDnQpb1iIAzgAhpG4p1X19vkcD6FJ?=
+ =?windows-1256?Q?Fzr6PYZj3gMSXhl1Vg2b9FYk/fFp3aIJBYjHt75UOizw3roUDHpDF8C2?=
+ =?windows-1256?Q?AAcZ91cmqTjBb4cDlR7q0UxLmNQ28UlHFnZF5dIJBe6y69uJ4Is/jWyj?=
+ =?windows-1256?Q?NClyQlTEygidbgZLJMpLW5Ha+zKtEjzPJJ7JgEljV/+qiwhOkATK+vrz?=
+ =?windows-1256?Q?//kLLKv7FcMTOYJj5SND4Uw5njT9jzECkiFRsZGyg2wQlPQv8QabqswV?=
+ =?windows-1256?Q?u8B6Yd4z9IQNXiQkiEYwpe1VvHWRn4NnM3Ojstlj5bAPJBQTxs3txUtZ?=
+ =?windows-1256?Q?AkYyew09F7Dwd2OIOc8wBYVQ59H9ghq1u34U4fmngCtQdJy6iQIRJOyH?=
+ =?windows-1256?Q?vp0EV+Vaa61AEABlMiOgsEL6AZWwl8zSjAozKwAhMNvV5Exhw2/TT4KW?=
+ =?windows-1256?Q?UDcpqM7l99WHVWhqiVbiih4jI29rz99jFXutDRtX1uy6uoARU68dpbuV?=
+ =?windows-1256?Q?+zFyFKgWOrw89yqBMetPPGiJslug3GF2E8y86eLtnh1dTU/fKHAJcUDF?=
+ =?windows-1256?Q?nem/3IRQ29WIbezzhLa0nn7uNEBavzgAsqSYywWk3MmV+/q51CavgA3Z?=
+ =?windows-1256?Q?bufXI3ghMlc4usWNlzOvrec2PWb+fOeX6qDdNHeHP6Pd3ipgcG5rHkyr?=
+ =?windows-1256?Q?gVOhfsIruSRgU2uUGouvohC8y+YZEoH3FPoHEwMUrzhoo/uxuUwv5f+8?=
+ =?windows-1256?Q?bmyL5EesoNZ8y6/54DkdFQBFNKmPrACXcpHh62PHlKsXtr3pW5+KLyDZ?=
+ =?windows-1256?Q?aNR3sgscLHqRtCF6LcyhXeQjw/Zy43H8XkLJHXaIfHE8FRkTY2bsLc3r?=
+ =?windows-1256?Q?Z4GH2TZRBdxAbTyLXNRaBZQBAOrXbLSc1iTtf0WmTp4k5LV/n57uxtG7?=
+ =?windows-1256?Q?SlZH0/ovkOMNvAEh?=
+MIME-Version: 1.0
+
+------=_Part_59273378_1170741629.1697141576924
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+EXTERNAL: This email originated from a sender outside of Viterbo. Use cauti=
+on when clicking on links or opening attachments.
+
+You don't want to miss this =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C
+[Autodesk]<http://click.autodesk.com/dc/C-5RRqJPc3RscdoKAAo_aMR5NrEDOqzgk5c=
+IG_Sb4LQulDaHlshuadjB9JMfpw4XThfSdpFMUFVUgSo9b3oG2scxiFiBjpueL57lj-YEzyPa0W=
+PTslG5tXwTYZl4bTvLOpHYWqaRPRdM5Q7ItDqAjbbqep8_du_lteVwnnx__7dtjlRW1KQWeCEqg=
+BiqTGD56_vECXovrU0SMrwA63TRQVqtMHvD8WJRRYgjfYW6hRyTd6ekTZaZglln9Vmtj_-qCR9O=
+NwjBxojg5avqr9wUnWGTAHcfHnKNrt9OEcyGBgg=3D/OTE4LUZPRC00MzMAAAGOxH4E2Byw7cBv=
+J5lpL_o41-Em3C1oont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4=3D>
+Hi egweinberg,
+
+AU 2023 The Design & Make Conference will be in Las Vegas on November 13=E2=
+=80=9315 and we'd love for you to join us! AU is more than a conference=E2=
+=80=94it's your community. It brings together innovators from around the wo=
+rld to share ideas, advance industry practices, and explore opportunities f=
+or the future.
+
+Learn from 600+ expert-led sessions. Find solutions to your tough challenge=
+s. Explore the many ways to connect and build your network. And much more!
+
+
+How to get started:
+
+  *   Get your boss on board with our Convince Your Manager page<http://cli=
+ck.autodesk.com/n/OTE4LUZPRC00MzMAAAGOxH4E2Gpd7gIQPUXQqrkb7ndUoY_xW7XAyVswj=
+KMMKBUjQdYIu3FpHbGsZnok-1OlMaWW_T4=3D> for a helpful cost calculator and em=
+ail template.
+  *   Secure your hotel=E2=80=94we're seeing high demand for hotels this ye=
+ar. Register now<http://click.autodesk.com/dc/C-5RRqJPc3RscdoKAAo_aMR5NrEDO=
+qzgk5cIG_Sb4LQulDaHlshuadjB9JMfpw4Xx4SrhqnccyoPk7OwCQbVqEP6WY31A6YaAgU6HDfX=
+-YpepUgz0JtkQ2hG6_d_U-DWvQRY60XYaeOw1laRG73XmEq09Zo8y-FRYOt5hloKvKAH6PZJjA3=
+Vu72eZwbj1sStn6G4VwPcwmhNlhmMXv2BxOiX94zIKvk2PK1HK-XOtfr1M0ZPVd2Th8O7-hcylt=
+lLQseI3NGcoOIUB_gBAek_DrfPiczkvrr98IKyj-VMII0=3D/OTE4LUZPRC00MzMAAAGOxH4E2B=
+yw7cBvJ5lpL_o41-Em3C1oont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4=3D> and d=
+on't miss out on our discounted room rates at partner hotels.
+  *   Build your schedule=E2=80=94sessions are available now! Add your favo=
+rite sessions to your catalog and save your seat.
+
+
+
+
+For more conference info, you can explore the AU 2023 website<http://click.=
+autodesk.com/dc/C-5RRqJPc3RscdoKAAo_aMR5NrEDOqzgk5cIG_Sb4LQulDaHlshuadjB9JM=
+fpw4XThfSdpFMUFVUgSo9b3oG2scxiFiBjpueL57lj-YEzyPa0WPTslG5tXwTYZl4bTvLOpHYWq=
+aRPRdM5Q7ItDqAjbbqep8_du_lteVwnnx__7dtjlRW1KQWeCEqgBiqTGD56_vECXovrU0SMrwA6=
+3TRQVqtMHvD8WJRRYgjfYW6hRyTd6ekTZaZglln9Vmtj_-qCR9ONwjBxojg5avqr9wUnWGTAHcf=
+HnKNrt9OEcyGBgg=3D/OTE4LUZPRC00MzMAAAGOxH4E2Byw7cBvJ5lpL_o41-Em3C1oont2BMjB=
+K3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4=3D>.
+
+Best wishes,
+The AU Team
+[https://pages.autodesk.com/rs/918-FOD-433/images/autodesk-wireframes-space=
+r.gif]
+Autodesk, Inc. =E2=80=A2 One Market, Ste. 400 San Francisco, CA 94105, Unit=
+ed States
+=C2=A9 Autodesk, Inc. All rights reserved. Legal Notices & Trademarks<http:=
+//click.autodesk.com/dc/5YIt5_QCIUpPHR2l6s4kVneiXMmKUSUsNu5BbEYz_tn3WeImunS=
+oqJ8ZuhiiEHtQeYroJVTJLO2y8r0mLwRh2-WOiw9zPp_YSaHM3KMqtte58uM7JQrl3TW9EtL2_Z=
+B3CqeIEbt4XCbHQMV3gkTU5vppFJ-uvchA9dLXMcpph2dFj0sRPl98ByGsHdhH25wZO5A7Z0Au-=
+15R9uIpzWGiIr4CSUsm9Cx61phUGuHpMD92vkubLvztg_liAd3hOGNpcJzgnGLHpE9IqumBwYOd=
+sJszdhRFa0e9rgr7VNeiX_c=3D/OTE4LUZPRC00MzMAAAGOxH4E2Byw7cBvJ5lpL_o41-Em3C1o=
+ont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4=3D>. Autodesk Privacy Statement=
+<http://click.autodesk.com/dc/5YIt5_QCIUpPHR2l6s4kVneiXMmKUSUsNu5BbEYz_tn3W=
+eImunSoqJ8ZuhiiEHtQUQRkMMIsofim4rPRPAfUJ_9Txsost4wkMGqDT9GWtAFfU27CM5VtgjN7=
+fLHKC-ZWdSxHGm2v1wWb1Lg9tLLhV2h8eROp0cIhP9heAT4_8dhL_-3S-fN4-wY8Dcx14MvqKgi=
+kYco5lfip2NmIr0J_jq45p0PJ-vmtPzfCGHF1fWFX-sCWlEudp5V5Yym4NGl0v0nrD6VoYY4PH6=
+a5Y-Wga5goRYYrWkoiC9H60l_U-Y8plWzKAniJkVvmoi900Y_h/OTE4LUZPRC00MzMAAAGOxH4E=
+2Byw7cBvJ5lpL_o41-Em3C1oont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4=3D>
+If you do not want to receive commercial emails from Autodesk, please click=
+ here<http://click.autodesk.com/dc/5YIt5_QCIUpPHR2l6s4kVm1dBR7ggXpqj3VGazVD=
+LPUf_pKQTHCpzzMQHdfigR_1Lo4EGzcTA6BC3ZmXJDyiaw0LdQ3ruLMEC63DmCbEidUkS0ZL3Vf=
+X9KzmeQ1rT8mVO0kTKGWThLum9yEAcFBvC7VfWAcnatBhJp3QUsoGENPVQ3T_bu4ekdm8HuoGm2=
+-OGtcYplivdEfGJoLEOAgwjGFRY7uyNGcjr9pGa0KUq112SQSz4H3H0JvkHDhu52C7xAE84S_T2=
+JLznPKpPuzP5LTx9U3QwrYneFSSaGbZ66Wk-wv9OOIEUZMgj0Db4T8_/OTE4LUZPRC00MzMAAAG=
+OxH4E2Byw7cBvJ5lpL_o41-Em3C1oont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4=3D=
+> to unsubscribe.
+Please do not reply to this email. Replies to this email will not be respon=
+ded to or read.
+Autodesk and the Autodesk logo are registered trademarks of Autodesk, Inc.,=
+ and/or its subsidiaries and/or affiliates in the USA and/or other countrie=
+s. All other brand names, product names, or trademarks belong to their resp=
+ective holders. Autodesk reserves the right to alter product and services o=
+fferings, and specifications and pricing at any time without notice, and is=
+ not responsible for typographical or graphical errors that may appear in t=
+his document.
+<http://click.autodesk.com/OTE4LUZPRC00MzMAAAGOxH4E2DURbPyp6Dl6QlxvgmsUMMAh=
+cGicOrflvMBhGE0H9iHIEkoEdjdwC3NsYIOixW-RP1c=3D>
+
+------=_Part_59273378_1170741629.1697141576924
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:sc=
+hemas-microsoft-com:office:office" dir=3D"ltr"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<meta name=3D"color-scheme" content=3D"light dark">
+<meta name=3D"supported-color-schemes" content=3D"light dark">
+<title>egweinberg, you're invited to AU 2023</title>
+<style>
+/* CLIENT-SPECIFIC STYLES */
+body,
+table,
+td,
+a {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+table,
+td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+td {
+  mso-line-height-rule: exactly;
+}
+.ExternalClass * {
+  line-height: 100%;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+}
+/* iOS BLUE LINKS */
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+/*DARK MODE SUPPORT*/  =20
+@media (prefers-color-scheme: dark) {=20
+    .button-text{
+    	color: #020202 !important;
+    }
+    .medium-button{
+    	background-color: #fefefe !important;
+    }
+    .button-text-secondary{
+    	color: #fefefe !important;
+    }
+    .medium-button-secondary{
+    	background-color: #020202 !important;
+    }
+   =20
+}
+
+@media (prefers-color-scheme: light) {=20
+    .button-text{
+    	color: #fefefe !important;
+    }
+    .medium-button{
+      border: none !important;
+    	background-color: #020202 !important;
+    }
+    .button-text-secondary{
+    	color: #020202 !important;
+    }
+    .medium-button-secondary{
+      border: 1px solid #000 !important;
+    	background-color: #fefefe !important;
+    }
+   =20
+}
+
+/* RESET STYLES */
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse !important;
+}
+body {
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+.display-none {
+  mso-hide: all;
+  display: none;
+  max-height: 0px;
+  overflow: hidden;
+}
+td.mobile-padding {
+  padding: 0 35px 0 35px !important;
+}
+td.three-col-image {
+  padding-right: 20px;
+}
+.footer-nav-cell{
+    padding: 0px 24px 0px 16px;
+    height: 38px;
+}
+
+#footer-nav-cell-first
+#footer-nav-cell-first-no-border {
+    padding: 0px 24px 0px 0px;
+}
+
+.footer-nav-link{
+    display: flex !important;
+    /* align-items: center !important; */
+}
+
+.footer-nav-container{
+    padding: 12px 32px 8px;
+}
+td.mobile-text-link{
+  width: 100% !important;
+}
+td.mobile-80-text-link{
+  width: 100% !important;
+}
+td.mobile-85-text-link{
+  width: 100% !important;
+}
+</style><style type=3D"text/css" media=3D"only screen and (max-width: 600px=
+)">
+@media only screen and (max-width: 600px) {
+  /* Remove extraneous right padding in Gmail iOS */
+  u + .body .gwfw {
+    width: 100% !important;
+    width: 100vw !important;
+  }
+  .devicewidth {
+    min-width: 320px !important;
+    width: 100% !important;
+  }
+  .full-width {
+    width: 100% !important;
+  }
+  .image-credit {
+    position: absolute;
+    bottom: 0px;
+  }
+  .adsk-logo_container,
+  .secondary-logo_container {
+    display: block !important;
+    text-align: left !important;
+  }
+    .adsk-logo_image-rosetta{
+        height: 16px !important;
+        width: 130px !important;
+    }
+  .adsk-logo_image {
+    height: auto !important;
+    width: 250px !important;
+  }
+  img.fluid-img {
+    height: auto !important;
+    width: 100% !important;
+  }
+  .img-max {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .max-width {
+    max-width: 100% !important;
+  }
+  .mobile-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .mobile-padding,
+  .mobile-only-padding {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+  .mobile-center {
+    text-align: center !important;
+  }
+  .mobile-pad-left {
+    padding-left: 20px !important;
+  }
+  .mobile-border-bottom {
+    border-bottom: solid 1px #dadada;
+  }
+  .mobile-padding-top {
+    padding-top: 20px;
+  }
+  .pad-253232 {
+    padding: 25px 32px 32px !important;
+  }
+  .display-mobile {
+    display: block !important;
+    max-height: none !important;
+  }
+  .display-none-mobile {
+    mso-hide: all;
+    display: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .mobile-border-bottom {
+    border-bottom: solid 1px #dadada;
+  }
+  .desktop-show {
+    display: none; /* from body-3 */
+  }
+  td.preheader-container {
+    padding: 0 15px 5px 15px !important;
+  }
+  td.view-web-container {
+    padding: 0 15px 15px 15px !important;
+  }
+  /* from body-3 */
+  .mobile-show, .itm-mobile-show {
+    display: none;
+  }
+
+  .mobile-left-align {
+    background-repeat: no-repeat;
+    background-position: 0% 100% !important;
+    background-size: cover;
+  }
+
+  .mobile-left-align-center {
+    background-repeat: no-repeat;
+    background-position: 0% 50% !important;
+    background-size: cover;
+  }
+
+  .mobile-padding-vertical {
+    padding: 32px 0;
+  }
+  .itm-countdown-mobile-pad {
+    padding-right: 0px !important;
+  }
+
+  td.mobile-hr-pd {
+    padding: 0 30px 12px 15px !important;
+  }
+
+  td.mobile-hr-pd-itmleft {
+    padding: 0 30px 12px 0 !important;
+  }
+
+  td.mb-pr-15 {
+    padding-right: 15px !important;
+  }
+
+  td.itm-subscribe-mobile-padding {
+    padding: 15px 0 12px 15px !important;
+  }
+
+  td.itm-subscribe-mobile-padding-alignleft {
+    padding: 15px 0 12px 32px !important;
+  }
+
+  td.title-text.mb-headline-pad {
+    /* left padding =3D right padding - countdown width */
+    padding: 0px 14px 0 70px !important;
+  }
+
+  td.pad-032 {
+    padding: 0 32px 32px 32px !important;
+  }
+
+  .body-8-padding-mobile {
+    height: 18px !important;
+  }
+
+  td.two-col-image, td.three-col-image {
+    padding: 0 !important;
+  }
+  td.mobile-text-link{
+  width: 90% !important;
+  }
+  td.mobile-80-text-link{
+    width: 80% !important;
+  }
+  td.mobile-85-text-link{
+    width: 85% !important;
+  }
+}
+</style><style type=3D"text/css" media=3D"only screen and (max-width: 639px=
+)">
+@media only screen and (max-width: 639px) {
+  .responsive-width-639 {
+    width: 100% !important; /* body-11 body-13 body-16 */
+  }
+  .responsive-img-100 {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important; /* body-14 body-15 */
+  }
+    .footer-nav-cell{
+        display: block;
+        padding: 18px 0px 16px 0px !important;
+        height: auto;
+    }
+
+    #footer-nav-cell-first{
+        border-bottom: 1px solid #dddddd;
+        border-right: none!important;
+    }
+
+    #footer-nav-cell-first-no-border {
+        border-bottom: none!important;
+        border-right: none!important;
+    }
+
+    #footer-nav-cell-second{
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    #footer-nav-cell-second-no-border {
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: none !important;
+    }
+
+    .display-mobile-lockup {
+        max-width: 280px !important;
+        max-height: 32px !important;
+    }
+
+    .footer-nav-table{
+        width: 100%;
+    }
+    .footer-nav-container{
+        padding: 0px 32px 0px;
+    }
+}
+</style><style type=3D"text/css" media=3D"only screen and (max-width: 480px=
+)">
+@media only screen and (max-width: 480px) {
+  .responsive-height-480 {
+    height: 100% !important; /* body-13 */
+  }
+  .mobile-hide {
+    display: none !important;
+  }
+  .mobile-show {
+    display: table !important;
+    font-size: 12px !important;
+    max-height: none !important;
+    line-height: 1.5 !important;
+    overflow: visible !important;
+    float: none !important;
+  }
+
+  td.itm-mobile-show {
+    display: table-cell !important;
+    max-height: none !important;
+  }
+
+  table.itm-mobile-show {
+    display: table !important;
+    max-height: none !important;
+  }
+
+  div.itm-mobile-show {
+    display: block !important;
+    max-height: none !important;
+    width: auto !important;
+  }
+}
+</style><style type=3D"text/css" media=3D"only screen and (max-width: 600px=
+)">
+@media only screen and (max-width: 600px) {
+  .headline640 {
+    padding: 10px 12px !important; /* body-11 body-16 */
+  }
+  tr.itm-mobile-only-cta-container {
+  display: grid !important;
+  }
+}
+</style><!--[if gt mso 15]>
+<style type=3D"text/css" media=3D"all">
+table, tr, td {
+    border-collapse: collapse;
+}
+tr {
+    font-size:0px;
+    line-height:0px;
+    border-collapse: collapse;
+}
+</style>
+<![endif]--><!--[if gte mso 9]>
+    <style type=3D"text/css">
+        a.underline {
+         text-decoration: underline !important;
+        }
+    </style>
+<![endif]--><!--[if gte mso 9]><xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+</xml><![endif]-->
+</head>
+<body bgcolor=3D"#eeeeee" topmargin=3D"0" leftmargin=3D"0" marginheight=3D"=
+0" marginwidth=3D"0" mobile=3D"fix">
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div><!-- This email's Draftr asset ID is 3876186 --><!-- This email's Draf=
+tr language is eng-US --><!-- This email's Marketo Activity ID (according t=
+o Draftr) is 5904152032 --><span class=3D"preheader" style=3D"display: none=
+; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0;"=
+>You
+ don't want to miss this</span> <span class=3D"preheader-whitespace" style=
+=3D"display: none; visibility: hidden; opacity: 0; color: transparent; heig=
+ht: 0; width: 0;">
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+</span><!-- Begin Body Table - 100% -->
+<table width=3D"100%" bgcolor=3D"#FBFBFB" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" style=3D"border-collapse: collapse; background-color: #FBFB=
+FB;">
+<tbody>
+<tr>
+<td style=3D"vertical-align: top;"><!-- Main Table Container - 670px -->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"devicewidth" style=3D"border-collapse: collapse; margin: 0 auto; min=
+-width: 670px; width: 670px;">
+<tbody>
+<tr>
+<td style=3D"padding-top: 20px; vertical-align: top;" align=3D"left" valign=
+=3D"top"><!-- Content -->
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" styl=
+e=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td style=3D"background-color: #000000;"><!-- [Banner_0] - Banner with logo=
+ -->
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" styl=
+e=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td class=3D"adsk-logo_container " style=3D"background-color: #000000; padd=
+ing: 17px 0 17px 32px;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fclick.autodesk.com%2Fdc%2FC-5RRqJPc3RscdoKAAo_aMR5NrEDOqzgk5cIG_Sb4LQulD=
+aHlshuadjB9JMfpw4XThfSdpFMUFVUgSo9b3oG2scxiFiBjpueL57lj-YEzyPa0WPTslG5tXwTY=
+Zl4bTvLOpHYWqaRPRdM5Q7ItDqAjbbqep8_du_lteVwnnx__7dtjlRW1KQWeCEqgBiqTGD56_vE=
+CXovrU0SMrwA63TRQVqtMHvD8WJRRYgjfYW6hRyTd6ekTZaZglln9Vmtj_-qCR9ONwjBxojg5av=
+qr9wUnWGTAHcfHnKNrt9OEcyGBgg%3D%2FOTE4LUZPRC00MzMAAAGOxH4E2Byw7cBvJ5lpL_o41=
+-Em3C1oont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4%3D&amp;data=3D05%7C01%7C=
+egweinberg%40viterbo.edu%7Ca3cf0990532c43189d3c08dbcb5fbd4b%7C6b9fc982e8d74=
+958976cb08441cc9b0b%7C0%7C0%7C638327384306001923%7CUnknown%7CTWFpbGZsb3d8ey=
+JWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%=
+7C%7C&amp;sdata=3D%2FFNVn1C%2B7h12IbBKNtqSLqtr38T3yyC%2F%2Fkwi0v0a26E%3D&am=
+p;reserved=3D0" originalsrc=3D"http://click.autodesk.com/dc/C-5RRqJPc3Rscdo=
+KAAo_aMR5NrEDOqzgk5cIG_Sb4LQulDaHlshuadjB9JMfpw4XThfSdpFMUFVUgSo9b3oG2scxiF=
+iBjpueL57lj-YEzyPa0WPTslG5tXwTYZl4bTvLOpHYWqaRPRdM5Q7ItDqAjbbqep8_du_lteVwn=
+nx__7dtjlRW1KQWeCEqgBiqTGD56_vECXovrU0SMrwA63TRQVqtMHvD8WJRRYgjfYW6hRyTd6ek=
+TZaZglln9Vmtj_-qCR9ONwjBxojg5avqr9wUnWGTAHcfHnKNrt9OEcyGBgg=3D/OTE4LUZPRC00=
+MzMAAAGOxH4E2Byw7cBvJ5lpL_o41-Em3C1oont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTAS=
+aym4=3D" shash=3D"LZKLHhWERdgnenVcHEbS0YTM8NQMqTf9quzHG4Cvr5qSSILIw7TqzArFQ=
+DNlLHLEC8rSyrr+EGKzyII3bLPWRDuYEmBaOx798XnfAvZh6H5m8DHyYlQNUch7oisSw3nfNKF1=
+nwHP1qh1d12vEJNCtNuiALtv3ZiqXdHFvWJFeOM=3D" target=3D"_blank"><img class=3D=
+"adsk-logo_image-rosetta " src=3D"https://damassets.autodesk.net/content/da=
+m/autodesk/email-image-assets/autodesk-logo-black-260x32.png" alt=3D"Autode=
+sk" style=3D"border: none; display: block; -ms-interpolation-mode: bicubic;=
+ outline: none;" width=3D"130" height=3D"16" border=3D"0"></a>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- End [Banner_0] - Banner with logo --></td>
+</tr>
+</tbody>
+</table>
+<!-- body-2 -->
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"devicewidth" align=3D"center" style=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" class=3D"devicewidth" style=3D"min-widt=
+h: 670px; width: 670px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"devicewidt=
+h" style=3D"min-width: 670px; width: 670px;" align=3D"center">
+<tbody>
+<tr>
+<td bgcolor=3D"#FFFFFF" style=3D"background-color: #FFFFFF;" align=3D"left"=
+ valign=3D"top">
+<a name=3D"panel-1"></a>
+<table class=3D"full-width" width=3D"100%" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td class=3D"full-width" align=3D"left" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"devicewidt=
+h" style=3D"min-width: 670px; width: 670px; border-collapse: collapse;">
+<!-- Body panel padding -->
+<tbody>
+<tr>
+<td height=3D"32"></td>
+</tr>
+<tr>
+<td class=3D"mobile-padding" style=3D"vertical-align: top; text-align: left=
+;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td class=3D"normal_copy_wrapper mktoText" style=3D"font-size: 15px; color:=
+ #212121; font-family: Arial, Helvetica, sans-serif; font-weight: normal; t=
+ext-align: left; line-height: 22px; word-break: break-word;" id=3D"mkto-edi=
+table-1">
+Hi egweinberg, <br>
+<br>
+AU 2023 The Design &amp; Make Conference will be in Las Vegas on November 1=
+3=E2=80=9315 and we'd love for you to join us! AU is more than a conference=
+=E2=80=94it's your community. It brings together innovators from around the=
+ world to share ideas, advance industry practices, and
+ explore opportunities for the future.&nbsp;<br>
+<br>
+Learn from 600+ expert-led sessions. Find solutions to your tough challenge=
+s. Explore the many ways to connect and build your network. And much more!<=
+br>
+<div style=3D"display:none;">&nbsp; </div>
+<br>
+How to get started:&nbsp;<br>
+<ul>
+<li>Get your boss on board with our <a style=3D"color:#000000;" class=3D"mk=
+tNoTok mktNoTok" href=3D"https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttp%3A%2F%2Fclick.autodesk.com%2Fn%2FOTE4LUZPRC00MzMAAAGOxH4E2Gpd7gIQP=
+UXQqrkb7ndUoY_xW7XAyVswjKMMKBUjQdYIu3FpHbGsZnok-1OlMaWW_T4%3D&amp;data=3D05=
+%7C01%7Cegweinberg%40viterbo.edu%7Ca3cf0990532c43189d3c08dbcb5fbd4b%7C6b9fc=
+982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327384306001923%7CUnknown%7CTWFpbG=
+Zsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C=
+3000%7C%7C%7C&amp;sdata=3DIX6u0xY3u%2FtgwkFbesYOyr5thPA7BuLs14U%2BYQPnJ0E%3=
+D&amp;reserved=3D0" originalsrc=3D"http://click.autodesk.com/n/OTE4LUZPRC00=
+MzMAAAGOxH4E2Gpd7gIQPUXQqrkb7ndUoY_xW7XAyVswjKMMKBUjQdYIu3FpHbGsZnok-1OlMaW=
+W_T4=3D" shash=3D"jdz6NRoeI0YgfqB1wSQzudSopFx+GT/uV3pNcE+MUgqv3AoFB8lQt+sij=
+TL7vJ2b1kJtvbny15kLMh+ML2yr1djgfez4ioXydccAH1TMajjCZ6EyPCiuyIAZ4HaRA9xU9y1w=
+qGS5vOFqMB494UshUt2TZMPHtUQJIsLpgpInk+A=3D">
+Convince Your Manager page</a> for a helpful cost calculator and email temp=
+late.</li><li>Secure your hotel=E2=80=94we're seeing high demand for hotels=
+ this year. <a style=3D"color:#000000;" href=3D"https://nam02.safelinks.pro=
+tection.outlook.com/?url=3Dhttp%3A%2F%2Fclick.autodesk.com%2Fdc%2FC-5RRqJPc=
+3RscdoKAAo_aMR5NrEDOqzgk5cIG_Sb4LQulDaHlshuadjB9JMfpw4Xx4SrhqnccyoPk7OwCQbV=
+qEP6WY31A6YaAgU6HDfX-YpepUgz0JtkQ2hG6_d_U-DWvQRY60XYaeOw1laRG73XmEq09Zo8y-F=
+RYOt5hloKvKAH6PZJjA3Vu72eZwbj1sStn6G4VwPcwmhNlhmMXv2BxOiX94zIKvk2PK1HK-XOtf=
+r1M0ZPVd2Th8O7-hcyltlLQseI3NGcoOIUB_gBAek_DrfPiczkvrr98IKyj-VMII0%3D%2FOTE4=
+LUZPRC00MzMAAAGOxH4E2Byw7cBvJ5lpL_o41-Em3C1oont2BMjBK3iyKHXp5ggKwIXXlauPW8G=
+j9Z2WTASaym4%3D&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ca3cf0990532=
+c43189d3c08dbcb5fbd4b%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63832738=
+4306001923%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJB=
+TiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3Dj8aZA0%2FyZVdeO209MC=
+QPfLyRIFdN9vk6MIpB82kvPdM%3D&amp;reserved=3D0" originalsrc=3D"http://click.=
+autodesk.com/dc/C-5RRqJPc3RscdoKAAo_aMR5NrEDOqzgk5cIG_Sb4LQulDaHlshuadjB9JM=
+fpw4Xx4SrhqnccyoPk7OwCQbVqEP6WY31A6YaAgU6HDfX-YpepUgz0JtkQ2hG6_d_U-DWvQRY60=
+XYaeOw1laRG73XmEq09Zo8y-FRYOt5hloKvKAH6PZJjA3Vu72eZwbj1sStn6G4VwPcwmhNlhmMX=
+v2BxOiX94zIKvk2PK1HK-XOtfr1M0ZPVd2Th8O7-hcyltlLQseI3NGcoOIUB_gBAek_DrfPiczk=
+vrr98IKyj-VMII0=3D/OTE4LUZPRC00MzMAAAGOxH4E2Byw7cBvJ5lpL_o41-Em3C1oont2BMjB=
+K3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4=3D" shash=3D"tw2vOxYOvLmfyYU+ns7UsDoIWu=
+yPF/O3OQzSlANz/VOHVBe8M9S2IKJch9ILVxzYKQnt+XzxCWyaVVab0I9qSexnSdQ9iO1jMMeHA=
+EQaBL7dG/2NZR2NY+RwlfaDAKcgiMyKIn/DLUrFi8Cc6JlY4iwuqGM2oh/m7+lFSlj5MfQ=3D">
+Register now</a> and don't miss out on our discounted room rates at partner=
+ hotels.</li><li>Build your schedule=E2=80=94sessions are available now! Ad=
+d your favorite sessions to your catalog and save your seat.&nbsp;</li></ul=
+>
+<div style=3D"display:none;">&nbsp; </div>
+<br>
+<div style=3D"display:none;">&nbsp; </div>
+For more conference info, you can explore the <a style=3D"color:#000000;" h=
+ref=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fc=
+lick.autodesk.com%2Fdc%2FC-5RRqJPc3RscdoKAAo_aMR5NrEDOqzgk5cIG_Sb4LQulDaHls=
+huadjB9JMfpw4XThfSdpFMUFVUgSo9b3oG2scxiFiBjpueL57lj-YEzyPa0WPTslG5tXwTYZl4b=
+TvLOpHYWqaRPRdM5Q7ItDqAjbbqep8_du_lteVwnnx__7dtjlRW1KQWeCEqgBiqTGD56_vECXov=
+rU0SMrwA63TRQVqtMHvD8WJRRYgjfYW6hRyTd6ekTZaZglln9Vmtj_-qCR9ONwjBxojg5avqr9w=
+UnWGTAHcfHnKNrt9OEcyGBgg%3D%2FOTE4LUZPRC00MzMAAAGOxH4E2Byw7cBvJ5lpL_o41-Em3=
+C1oont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4%3D&amp;data=3D05%7C01%7Cegwe=
+inberg%40viterbo.edu%7Ca3cf0990532c43189d3c08dbcb5fbd4b%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327384306001923%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3D%2FFNVn1C%2B7h12IbBKNtqSLqtr38T3yyC%2F%2Fkwi0v0a26E%3D&amp;re=
+served=3D0" originalsrc=3D"http://click.autodesk.com/dc/C-5RRqJPc3RscdoKAAo=
+_aMR5NrEDOqzgk5cIG_Sb4LQulDaHlshuadjB9JMfpw4XThfSdpFMUFVUgSo9b3oG2scxiFiBjp=
+ueL57lj-YEzyPa0WPTslG5tXwTYZl4bTvLOpHYWqaRPRdM5Q7ItDqAjbbqep8_du_lteVwnnx__=
+7dtjlRW1KQWeCEqgBiqTGD56_vECXovrU0SMrwA63TRQVqtMHvD8WJRRYgjfYW6hRyTd6ekTZaZ=
+glln9Vmtj_-qCR9ONwjBxojg5avqr9wUnWGTAHcfHnKNrt9OEcyGBgg=3D/OTE4LUZPRC00MzMA=
+AAGOxH4E2Byw7cBvJ5lpL_o41-Em3C1oont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4=
+=3D" shash=3D"LZKLHhWERdgnenVcHEbS0YTM8NQMqTf9quzHG4Cvr5qSSILIw7TqzArFQDNlL=
+HLEC8rSyrr+EGKzyII3bLPWRDuYEmBaOx798XnfAvZh6H5m8DHyYlQNUch7oisSw3nfNKF1nwHP=
+1qh1d12vEJNCtNuiALtv3ZiqXdHFvWJFeOM=3D">
+AU 2023 website</a>.<br>
+<br>
+Best wishes, <br>
+The AU Team</td>
+</tr>
+<!-- Primary CTA --><!-- Text Link with Pointer --><!-- Spacer -->
+<tr>
+<td height=3D"25" style=3D"mso-line-height-rule:exactly; line-height: 10px;=
+"></td>
+</tr>
+<!-- Body panel padding -->
+<tr>
+<td height=3D"32"></td>
+</tr>
+<!-- End Text Link with Pointer -->
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- Spacer -->
+<tr>
+<td height=3D"10" style=3D"mso-line-height-rule:exactly; line-height: 10px;=
+"><img src=3D"https://pages.autodesk.com/rs/918-FOD-433/images/autodesk-wir=
+eframes-spacer.gif" width=3D"10" height=3D"10" border=3D"0" style=3D"displa=
+y: block;"></td>
+</tr>
+</tbody>
+</table>
+<!-- [Footer] - Footer -->
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"background-color: #FBFBFB; border-collapse: collapse;">
+<tbody>
+<tr>
+<td id=3D"footer-container" style=3D"padding: 22px 32px 32px 32px; vertical=
+-align: top;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td dir=3D"ltr" class=3D"mktoText" style=3D"font-size: 10px; color: #212121=
+; font-family: Arial, Helvetica, sans-serif; font-weight: normal; text-alig=
+n: left; line-height:14px; padding-bottom: 10px;" align=3D"left" id=3D"mkto=
+-editable-2">
+Autodesk, Inc. =E2=80=A2 One Market, Ste. 400 San Francisco, CA 94105, Unit=
+ed States</td>
+</tr>
+<tr>
+<td>
+<div class=3D"mktoSnippet" id=3D"legal-copy">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" styl=
+e=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td dir=3D"ltr" style=3D"font-size: 10px; color: #212121; font-family: Aria=
+l, Helvetica, sans-serif; font-weight: normal; text-align: left; line-heigh=
+t:14px; padding-bottom: 10px;" align=3D"left">
+=C2=A9 Autodesk, Inc. All rights reserved. <a href=3D"https://nam02.safelin=
+ks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fclick.autodesk.com%2Fdc%2F5YI=
+t5_QCIUpPHR2l6s4kVneiXMmKUSUsNu5BbEYz_tn3WeImunSoqJ8ZuhiiEHtQeYroJVTJLO2y8r=
+0mLwRh2-WOiw9zPp_YSaHM3KMqtte58uM7JQrl3TW9EtL2_ZB3CqeIEbt4XCbHQMV3gkTU5vppF=
+J-uvchA9dLXMcpph2dFj0sRPl98ByGsHdhH25wZO5A7Z0Au-15R9uIpzWGiIr4CSUsm9Cx61phU=
+GuHpMD92vkubLvztg_liAd3hOGNpcJzgnGLHpE9IqumBwYOdsJszdhRFa0e9rgr7VNeiX_c%3D%=
+2FOTE4LUZPRC00MzMAAAGOxH4E2Byw7cBvJ5lpL_o41-Em3C1oont2BMjBK3iyKHXp5ggKwIXXl=
+auPW8Gj9Z2WTASaym4%3D&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ca3cf0=
+990532c43189d3c08dbcb5fbd4b%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63=
+8327384306001923%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DApK3%2B1npVbXT=
+PVp9CVEKRF8fUji%2B6zZL%2BJHSILYomHE%3D&amp;reserved=3D0" originalsrc=3D"htt=
+p://click.autodesk.com/dc/5YIt5_QCIUpPHR2l6s4kVneiXMmKUSUsNu5BbEYz_tn3WeImu=
+nSoqJ8ZuhiiEHtQeYroJVTJLO2y8r0mLwRh2-WOiw9zPp_YSaHM3KMqtte58uM7JQrl3TW9EtL2=
+_ZB3CqeIEbt4XCbHQMV3gkTU5vppFJ-uvchA9dLXMcpph2dFj0sRPl98ByGsHdhH25wZO5A7Z0A=
+u-15R9uIpzWGiIr4CSUsm9Cx61phUGuHpMD92vkubLvztg_liAd3hOGNpcJzgnGLHpE9IqumBwY=
+OdsJszdhRFa0e9rgr7VNeiX_c=3D/OTE4LUZPRC00MzMAAAGOxH4E2Byw7cBvJ5lpL_o41-Em3C=
+1oont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4=3D" shash=3D"cLkoroZrdqI0mmWX=
+zRrSC7Paq5uDyaF1VCiblHSHHlVmxxNdMcPVbOCWFOqo5q0Em5LwqB2elqAF5x4KTaWiyD3txNN=
+7HAeDu1ECgLX/CBfwhQOrZxw7WbAWL6z+2/Pj7T995CJEz7uKdG2WCQ8g+7BevZ4CSW/NkXhNgO=
+LejSI=3D" target=3D"_blank" style=3D"color: rgb(0, 0, 0); text-decoration: =
+underline;">
+Legal Notices &amp; Trademarks</a>. <a href=3D"https://nam02.safelinks.prot=
+ection.outlook.com/?url=3Dhttp%3A%2F%2Fclick.autodesk.com%2Fdc%2F5YIt5_QCIU=
+pPHR2l6s4kVneiXMmKUSUsNu5BbEYz_tn3WeImunSoqJ8ZuhiiEHtQUQRkMMIsofim4rPRPAfUJ=
+_9Txsost4wkMGqDT9GWtAFfU27CM5VtgjN7fLHKC-ZWdSxHGm2v1wWb1Lg9tLLhV2h8eROp0cIh=
+P9heAT4_8dhL_-3S-fN4-wY8Dcx14MvqKgikYco5lfip2NmIr0J_jq45p0PJ-vmtPzfCGHF1fWF=
+X-sCWlEudp5V5Yym4NGl0v0nrD6VoYY4PH6a5Y-Wga5goRYYrWkoiC9H60l_U-Y8plWzKAniJkV=
+vmoi900Y_h%2FOTE4LUZPRC00MzMAAAGOxH4E2Byw7cBvJ5lpL_o41-Em3C1oont2BMjBK3iyKH=
+Xp5ggKwIXXlauPW8Gj9Z2WTASaym4%3D&amp;data=3D05%7C01%7Cegweinberg%40viterbo.=
+edu%7Ca3cf0990532c43189d3c08dbcb5fbd4b%7C6b9fc982e8d74958976cb08441cc9b0b%7=
+C0%7C0%7C638327384306314370%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DEpH=
+mclE53MtouWZyDlNM%2Fr0ecFwqpaXaSIcvFtB6Rco%3D&amp;reserved=3D0" originalsrc=
+=3D"http://click.autodesk.com/dc/5YIt5_QCIUpPHR2l6s4kVneiXMmKUSUsNu5BbEYz_t=
+n3WeImunSoqJ8ZuhiiEHtQUQRkMMIsofim4rPRPAfUJ_9Txsost4wkMGqDT9GWtAFfU27CM5Vtg=
+jN7fLHKC-ZWdSxHGm2v1wWb1Lg9tLLhV2h8eROp0cIhP9heAT4_8dhL_-3S-fN4-wY8Dcx14Mvq=
+KgikYco5lfip2NmIr0J_jq45p0PJ-vmtPzfCGHF1fWFX-sCWlEudp5V5Yym4NGl0v0nrD6VoYY4=
+PH6a5Y-Wga5goRYYrWkoiC9H60l_U-Y8plWzKAniJkVvmoi900Y_h/OTE4LUZPRC00MzMAAAGOx=
+H4E2Byw7cBvJ5lpL_o41-Em3C1oont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4=3D" =
+shash=3D"b0ze5kf/RG/XyHuLEc5xcKv7dAAp9ljT2S1+TWSDRTZ+vvkTIJNXUzbOWss/qVAaKi=
+DRj4HKY0aBFa7MxaI34ta++L9j7Z61MqJ7tEMvuq9DqicyEcqNHfMP8uQ4FTP1/YzAjGM2nNVSL=
+sxJ6hWk2gWcnkwPEryIjbooyz/3Vrc=3D" target=3D"_blank" style=3D"color: rgb(0,=
+ 0, 0); text-decoration: underline;">
+Autodesk Privacy Statement</a></td>
+</tr>
+<tr>
+<td dir=3D"ltr" style=3D"font-size: 10px; color: #212121; font-family: Aria=
+l, Helvetica, sans-serif; font-weight: normal; text-align: left; line-heigh=
+t:14px; padding-bottom: 10px;" align=3D"left">
+If you do not want to receive commercial emails from Autodesk, please <a hr=
+ef=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcl=
+ick.autodesk.com%2Fdc%2F5YIt5_QCIUpPHR2l6s4kVm1dBR7ggXpqj3VGazVDLPUf_pKQTHC=
+pzzMQHdfigR_1Lo4EGzcTA6BC3ZmXJDyiaw0LdQ3ruLMEC63DmCbEidUkS0ZL3VfX9KzmeQ1rT8=
+mVO0kTKGWThLum9yEAcFBvC7VfWAcnatBhJp3QUsoGENPVQ3T_bu4ekdm8HuoGm2-OGtcYplivd=
+EfGJoLEOAgwjGFRY7uyNGcjr9pGa0KUq112SQSz4H3H0JvkHDhu52C7xAE84S_T2JLznPKpPuzP=
+5LTx9U3QwrYneFSSaGbZ66Wk-wv9OOIEUZMgj0Db4T8_%2FOTE4LUZPRC00MzMAAAGOxH4E2Byw=
+7cBvJ5lpL_o41-Em3C1oont2BMjBK3iyKHXp5ggKwIXXlauPW8Gj9Z2WTASaym4%3D&amp;data=
+=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ca3cf0990532c43189d3c08dbcb5fbd4b%7C=
+6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327384306314370%7CUnknown%7CT=
+WFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%=
+3D%7C3000%7C%7C%7C&amp;sdata=3DIzeybrn0e6Z1rQ12tGKWRPkVTYTtwUjo5LF8F%2Fr6pp=
+o%3D&amp;reserved=3D0" originalsrc=3D"http://click.autodesk.com/dc/5YIt5_QC=
+IUpPHR2l6s4kVm1dBR7ggXpqj3VGazVDLPUf_pKQTHCpzzMQHdfigR_1Lo4EGzcTA6BC3ZmXJDy=
+iaw0LdQ3ruLMEC63DmCbEidUkS0ZL3VfX9KzmeQ1rT8mVO0kTKGWThLum9yEAcFBvC7VfWAcnat=
+BhJp3QUsoGENPVQ3T_bu4ekdm8HuoGm2-OGtcYplivdEfGJoLEOAgwjGFRY7uyNGcjr9pGa0KUq=
+112SQSz4H3H0JvkHDhu52C7xAE84S_T2JLznPKpPuzP5LTx9U3QwrYneFSSaGbZ66Wk-wv9OOIE=
+UZMgj0Db4T8_/OTE4LUZPRC00MzMAAAGOxH4E2Byw7cBvJ5lpL_o41-Em3C1oont2BMjBK3iyKH=
+Xp5ggKwIXXlauPW8Gj9Z2WTASaym4=3D" shash=3D"DZBk2V4U7s3F1+FEr3CVugbih6jbSeYR=
+61oTGH4d+pQWCNMxvt4D+nLeQV1bG/ofsAknsbSp+l2/Yv+wl/5pm1rLL0l6SyCviRqgNvJ8Nc+=
+MWlZLwU2Q5q8F35RRjGGucfx7s54tEH7fbbYN46vj80pvXaefrC+8eo3DP3MZ1fA=3D" target=
+=3D"_blank" style=3D"color: rgb(0, 0, 0); text-decoration: underline;">
+click here</a> to unsubscribe.</td>
+</tr>
+<tr>
+<td dir=3D"ltr" style=3D"font-size: 10px; color: #212121; font-family: Aria=
+l, Helvetica, sans-serif; font-weight: normal; text-align: left; line-heigh=
+t:14px; padding-bottom: 10px;" align=3D"left">
+Please do not reply to this email. Replies to this email will not be respon=
+ded to or read.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td dir=3D"ltr" class=3D"mktoText" style=3D"font-size: 10px; color: #212121=
+; font-family: Arial, Helvetica, sans-serif; font-weight: normal; text-alig=
+n: left; line-height:14px;" align=3D"left" id=3D"mkto-editable-3">
+Autodesk and the Autodesk logo are registered trademarks of Autodesk, Inc.,=
+ and/or its subsidiaries and/or affiliates in the USA and/or other countrie=
+s. All other brand names, product names, or trademarks belong to their resp=
+ective holders. Autodesk reserves
+ the right to alter product and services offerings, and specifications and =
+pricing at any time without notice, and is not responsible for typographica=
+l or graphical errors that may appear in this document.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- End [Footer] - Footer --><!-- End Content --></td>
+</tr>
+</tbody>
+</table>
+<!-- End Main Table Container - 670px --></td>
+</tr>
+</tbody>
+</table>
+<!-- End Body Table - 100% --><a href=3D"https://nam02.safelinks.protection=
+.outlook.com/?url=3Dhttp%3A%2F%2Fclick.autodesk.com%2FOTE4LUZPRC00MzMAAAGOx=
+H4E2DURbPyp6Dl6QlxvgmsUMMAhcGicOrflvMBhGE0H9iHIEkoEdjdwC3NsYIOixW-RP1c%3D&a=
+mp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ca3cf0990532c43189d3c08dbcb5f=
+bd4b%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327384306470578%7CUnkn=
+own%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXV=
+CI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DEEsIyDPXMa7D%2F2Y%2Fhtiso6shd%2Fxp%2B=
+BPTtfpu3MdrRTg%3D&amp;reserved=3D0" originalsrc=3D"http://click.autodesk.co=
+m/OTE4LUZPRC00MzMAAAGOxH4E2DURbPyp6Dl6QlxvgmsUMMAhcGicOrflvMBhGE0H9iHIEkoEd=
+jdwC3NsYIOixW-RP1c=3D" shash=3D"zdNRNbtPkxIhwcPedahU7NKzw7rU9apM7vnchu4RHxO=
+CgKS6KA+bHoNPTIdebW3ZX4S4pKsaGjWjnRL8V1ZtMxiCIxLZbPW4Sop0QvBMrpV+eb2xDqnfUA=
+AtH4OQMaYSQHl29OSbWAju0UlNsgYXpnT3qJYeMNkwNuqPGKsbrd4=3D"></a><img src=3D"h=
+ttp://click.autodesk.com/trk?t=3D1&amp;mid=3DOTE4LUZPRC00MzMAAAGOxH4E2AVZ_i=
+xORuBxQ_jigyZz99l9aM0eqP16sSumkE9CLeSaOdaRtoAtWdqmu4-fS1kwwS81iH2-dHrVxCKHu=
+Zk2vnNG-leCFBRQsyPVbupS7hlfNuMmYbnD977gZ9wsn1o1LuuFS4cTxioZs2EytHMQXZhyNg" =
+width=3D"1" height=3D"1" style=3D"display:none !important;" alt=3D"">
+ &nbsp; </div>
+</body>
+</html>
+
+------=_Part_59273378_1170741629.1697141576924--

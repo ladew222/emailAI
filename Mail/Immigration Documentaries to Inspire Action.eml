@@ -1,0 +1,2067 @@
+Received: from SJ2PR20MB6974.namprd20.prod.outlook.com (2603:10b6:a03:56d::21)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023
+ 18:00:55 +0000
+Received: from DS7PR06CA0002.namprd06.prod.outlook.com (2603:10b6:8:2a::16) by
+ SJ2PR20MB6974.namprd20.prod.outlook.com (2603:10b6:a03:56d::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.45; Thu, 12 Oct
+ 2023 18:00:49 +0000
+Received: from DS1PEPF00017096.namprd05.prod.outlook.com
+ (2603:10b6:8:2a:cafe::40) by DS7PR06CA0002.outlook.office365.com
+ (2603:10b6:8:2a::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.28 via Frontend
+ Transport; Thu, 12 Oct 2023 18:00:49 +0000
+Authentication-Results: spf=pass (sender IP is 198.2.130.37)
+ smtp.mailfrom=mail37.atl91.mcsv.net; dkim=pass (signature was verified)
+ header.d=mailchimpapp.net;dmarc=none action=none
+ header.from=LasAbogadasFilm.com;compauth=fail reason=001
+Received-SPF: Pass (protection.outlook.com: domain of mail37.atl91.mcsv.net
+ designates 198.2.130.37 as permitted sender) receiver=protection.outlook.com;
+ client-ip=198.2.130.37; helo=mail37.atl91.mcsv.net; pr=C
+Received: from mail37.atl91.mcsv.net (198.2.130.37) by
+ DS1PEPF00017096.mail.protection.outlook.com (10.167.18.100) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Thu, 12 Oct 2023 18:00:48 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mailchimpapp.net;
+	s=k2; t=1697133638; x=1697394138;
+	i=info=3Dlasabogadasfilm.com@mailchimpapp.net;
+	bh=VVIGxsmAwUVK656j1+MLn77jM1r4PVAjkIfhHdB6eAc=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:
+	 List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:
+	 MIME-Version:CC:Date:Subject:From;
+	b=b3PDPKEU7R863TM50MZBOW2g3D9GcOfakl7YUv9i7j1fn08RM8yRFDKuUsRCF+UCO
+	 GqFmFg5LrNmD+dqeoSP/eIA5PPUvVr/BWHdhC33K0MlzH/A+RucFpXmN743qdOecYx
+	 JzO5xGWbjBxHfnuT8PYLYlbEpuVeNFGbWppNnUm+bDGHhxw7ReLZLauIhuD/snlC9t
+	 FLNUXJXjp+8+RLTnYi0FqAagVe56js76dBkTVy+/RjwuvZ8dT3FrxG1lwyzIzHgOIs
+	 UygNpITgCoPMIUQEinQvsUdyNqL4WfXTk/efPMTxJhR+M9Yql+iRYLq/FYlXSq/bF1
+	 9+GeWGiHGizdg==
+Received: from localhost (localhost [127.0.0.1])
+	by mail37.atl91.mcsv.net (Mailchimp) with ESMTP id 4S5y9K6pVfzJKZkKV
+	for <EGWEINBERG@VITERBO.EDU>; Thu, 12 Oct 2023 18:00:37 +0000 (GMT)
+Subject: =?utf-8?Q?Immigration=20Documentaries=20to=20Inspire=20Action?=
+From: =?utf-8?Q?Laura=20Seltzer=2DDuny?= <info@LasAbogadasFilm.com>
+Reply-To: =?utf-8?Q?Laura=20Seltzer=2DDuny?= <info@LasAbogadasFilm.com>
+To: <EGWEINBERG@VITERBO.EDU>
+Date: Thu, 12 Oct 2023 18:00:04 +0000
+Message-ID: <80dd94390a565dd5529e24fed.d9e2e6a57e.20231012175947.853e8f3939.447a7296@mail37.atl91.mcsv.net>
+X-Mailer: Mailchimp Mailer - **CID853e8f3939d9e2e6a57e**
+X-Campaign: mailchimp80dd94390a565dd5529e24fed.853e8f3939
+X-campaignid: mailchimp80dd94390a565dd5529e24fed.853e8f3939
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=80dd94390a565dd5529e24fed&id=853e8f3939&e=d9e2e6a57e
+X-MC-User: 80dd94390a565dd5529e24fed
+Feedback-ID: 114590894:114590894.17407414:us20:mc
+List-ID: 80dd94390a565dd5529e24fedmc list <80dd94390a565dd5529e24fed.52501.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <https://SeltzerFilmVideo.us20.list-manage.com/unsubscribe?u=80dd94390a565dd5529e24fed&id=3e80f82c6c&e=d9e2e6a57e&c=853e8f3939>, <mailto:unsubscribe-mc.us20_80dd94390a565dd5529e24fed.853e8f3939-d9e2e6a57e@unsubscribe.mailchimpapp.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1079770276"
+Return-Path:
+ bounce-mc.us20_114590894.17407414-d9e2e6a57e@mail37.atl91.mcsv.net
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2023 18:00:48.9283
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 0a368e0b-5001-40cb-30ed-08dbcb4d2a84
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ DS1PEPF00017096:EE_|SJ2PR20MB6974:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ DS1PEPF00017096.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 0a368e0b-5001-40cb-30ed-08dbcb4d2a84
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:198.2.130.37;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail37.atl91.mcsv.net;PTR:mail37.atl91.mcsv.net;CAT:NONE;SFS:(13230031)(4636009)(1690799017)(451199024)(33964004)(19627405001)(6666004)(3450700001)(7126003)(1096003)(22186003)(58800400005)(336012)(42882007)(66574015)(26005)(5660300002)(9686003)(83380400001)(66899024)(6916009)(83170400001)(166002)(16670700002)(8676002)(356005)(16119065003)(7636003)(7596003)(19810500001)(16799955002)(76236004)(1406899027)(76899018)(4306899006)(81826014)(85282002)(579004)(559001);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2023 18:00:48.8346
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 0a368e0b-5001-40cb-30ed-08dbcb4d2a84
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ DS1PEPF00017096.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ2PR20MB6974
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.5534320
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?UkxyZC9iTlZib1U2M0F1UmdadStGd1o3Zk9PR1pTODJmQUhCdEV2ZVVVQmtJ?=
+ =?utf-8?B?MzJCeUVXRTIwYXFRUVhWUWxqRmlKblRtVGFBNGQ5VVkzMi9uajdBdFZ1NDJ0?=
+ =?utf-8?B?RE11M1U0WnZ1ZXRlaWI2MkJwNmxGZEZoWjZhWmlaYjZ2cnVSWWJEVlRNaC91?=
+ =?utf-8?B?OXMrbHJDVzJFaUpYMktYRDVwcEJkeDZtMkNUYktKSjk0SEZwZHAvZkFtTGlZ?=
+ =?utf-8?B?bEZWczJISXVBTnlwT21wRXkyK2pLZzNiTjZHUERKT1JmUUg1UHRuczkvcGI5?=
+ =?utf-8?B?eHE1WWpFZHZXb1M1cGxnVmtNM0MwTDZYQ1B4b0hTZVQvdWMzQmkxa0lqRENt?=
+ =?utf-8?B?WVc2ZG9oakJmNGdhVE1xWnIvSElPcmEvRDZXampoWU9BRERlSVJBeUNBek05?=
+ =?utf-8?B?R1BsL2w2OGF1TUxXbEM4dDVyRUtRSURBaTVtZnN3MzFFZi9QY1NITHFGVWx4?=
+ =?utf-8?B?dUs1bmVjeUlnbEZOd0ptNnVBYTV5eSsvblNKdjFJcXZpYXNsUzhtUmsydTJm?=
+ =?utf-8?B?d3N3MVg2RDR5SklPVGwzSXZRLytXRURlY2loayttWldGNTZLOTRNL2tBQkVs?=
+ =?utf-8?B?SWIrTGdoYVl6dWg3blFFY3l2UVFqdUp6K09PRGNtdzNFQXZTQlVYWVM0QTJi?=
+ =?utf-8?B?ZlJzUTI4N01oaWJSakhtWVlqdDNISFFZQ3NXUFVCOVprbFZXbDlVRnNjaGhX?=
+ =?utf-8?B?cnFSYWdpWkJ3bTBWYkJnNmZaZDBZL2U2WVplUTh3VzVRTExhNGpjVlhuQmFZ?=
+ =?utf-8?B?alZUUEI1dkFleGMzcnNCUFg3c3A3eVdQaTBDRXNEOWtGaG8xbHJXb2FJM21Z?=
+ =?utf-8?B?UlVvdlJPU0hDL1RZcGtadmpKYUtmWlZTbWN3SmVDa0tXbXRKajIyVFRHRDRV?=
+ =?utf-8?B?VUhkZ2xYMGIxTnFGcnpGaEJPcTlwUUVHZ0szOXhoRDZYWFhLd3ZyNDNjem5Y?=
+ =?utf-8?B?allDRmJHRVRGMDZTdjhnQ0psS2hkNm0rMHhIOVQ0cWpOaU5tMHhVNmZHMlNQ?=
+ =?utf-8?B?cjFXL3RJRzZOWkNwNTVjUitLYTRvSEM0WjllS29uZzk3WUlOck43QlVVWGhO?=
+ =?utf-8?B?b2grd294eWQ0ZzRLcUdrWlJBdUx5Q1VBRVhndWVJNS9NdGhDODJpNlhiS3hn?=
+ =?utf-8?B?OFoyTHJ1N0xhVE5XQzA2OVlLSll1T1hkMk95R3AvdHFVNG51OVpPc1REeGJx?=
+ =?utf-8?B?OUIxMTZET1NUMk1Lc0FZS0hYZVZ3c3RORzJZaGk5TjBPbXBCMGxKWFBDaThI?=
+ =?utf-8?B?KzFHWjZvdnpzK2xMeGtxald0MXMwQmFrUnRiTTVtczRTWUNpdzZSTzZVcWYy?=
+ =?utf-8?B?aUhjUEEvL2x6ODFGMEZpbEh2SGltaThac1d4aU56cjA3K3pTZEh2VEYyQy9S?=
+ =?utf-8?B?dW1GMlkvRElDUGQ2N3oyak9rVEJiM2tWaVNHVUJiU2JRMlJGSjVGWmpzZXVw?=
+ =?utf-8?B?ZGhhNkV5TDFpaGV6eTZCMGc3NnM2WmVzdExlTkkrQ2liaU9mSjFtZDJPZ1ZU?=
+ =?utf-8?B?cU83cnp3cVU3Q1gxT3A4WW1PVGw4QzY0MzNYMGNKSFlMVGpIWG5OeE5ST1I4?=
+ =?utf-8?B?YW0rOVRlK1crN0lDUnVaYk4zOHN2MmVWLzY1RXVBelFNM0JSMGV1NnpaREsw?=
+ =?utf-8?B?aUkxZTJvL0R5ZTBYaWd1dXA4c0hXbEQxdDBTVHV1azZEZ1RiOXExSUVVMzdx?=
+ =?utf-8?B?T0hxbmRhTVJoU0l5MHJoZFJtYkNvMnVabDlZZUduR0haaHFhNEZNMWQrMzNL?=
+ =?utf-8?B?TEViQVRaMDdzK2YxMm9HVEZyY0lMM0lZSjRXUGVPbmlOWlRaMGRXNFZaMzFu?=
+ =?utf-8?B?TjNLSWptekdUNnRiR0IzdGlBVnU1ajRPYUhrczhaK2ZTNExhVXcxMkZYVnJO?=
+ =?utf-8?B?dGdpU1RKWDdoeElBdW1RZVJjdVVIb2dMaXRPNStickIwZnlsTFhrWkdJSTBU?=
+ =?utf-8?B?eCtDMTZSMjd0RW1EQ2RRc2o5OHErb3Y5aFZCMnIvK2hJVlJRakh2SWUrMWNj?=
+ =?utf-8?B?cTl2M2NvOHg2ZnBtZGVVZkMzdDE0R1RrcVBYOXFjdWQwc0MyVEFsYzNHYXhk?=
+ =?utf-8?B?ZG9PUEJHdEpGZUlvaXR1QVVLdXp3WUE2YzdjbjU2YXdTcitrVG9FWTBBMVh4?=
+ =?utf-8?B?YW1qNUtOajNub1dORzd4Qml5NmFPdkVRV2wxTkk4UHZMSGt0QlB1TkVibncx?=
+ =?utf-8?B?d21xaGxIZGZEaWc1QWFZWENkdnN4RDFOVlRPQkZOaDlJeWdZRUFKV0tLaHlX?=
+ =?utf-8?B?ZUJVd3EvbWFQanRUSUljTXZVYlhWSTYvbm9uaXhpeTUzRGNCS0ppTXNsVkhO?=
+ =?utf-8?B?QStuM3ozSTIwVGxYc1dlOGQwaGkwR0xmVEpmSElhUEpiZTdlcXY4MU5qait1?=
+ =?utf-8?B?TVdxdUhyZVhSd1gwMEl5V2lYMVBnOUV3YlV2OFkyQ1VwaUNQSVpzdFU5ZThV?=
+ =?utf-8?B?TldxZjliaFJuQTNjTWwvaHBTblMzWXpGSnUxd2M5ekt3Y1crcjcvUVdZTkJi?=
+ =?utf-8?B?aUE2VVdQNzQrazZwZjU0L201Z1ZUVmJKNmxXeUF2bWV2NkVLcE5YWVBQa3Jt?=
+ =?utf-8?B?bEd6OWFjQi9qeUw1U1ZXNE9XK0Jvb1h3U2dOQm82aURmRUZrOE5oY1FHaVJJ?=
+ =?utf-8?B?YjVHVWxxUi9zQ1N2MHhyUktTY0VWT3M3NlJCRDJpd0xiWlVKOFdmUlg5Sncx?=
+ =?utf-8?B?eWxPNzNYcWk1cjMvS2t6YWF1VmwydG9uclNZYTBERHZtQ0x5bG9LWjliOStQ?=
+ =?utf-8?B?OG9oRlE5WHh6REFEVUU0TU03amYxaWZCWUZPV2FiRkM5MDdwOGRUeE9PQmJt?=
+ =?utf-8?Q?FDXC2OlmNiSI2fuY9D7wk=3D?=
+MIME-Version: 1.0
+
+--_----------=_MCPart_1079770276
+Content-Type: text/plain; charset="utf-8"; format=fixed
+Content-Transfer-Encoding: quoted-printable
+
+EXTERNAL: This email originated from a sender outside of Viterbo. Use cauti=
+on when clicking on links or opening attachments.
+
+Personal stories of courage from the front lines bring the response to huma=
+nitarian crises to life in the classroom.
+View In Browser<https://mailchi.mp/seltzerfilmvideo/seltzer-updates-1740741=
+4?e=3Dd9e2e6a57e>
+Two Immigration Documentaries to Inspire Action
+"LAS ABOGADAS" & "NOBODY WANTS US"
+Personal stories of courage from the front lines bring
+the response to humanitarian crises to life in the classroom.
+=E2=80=9CNothing brings you behind the scenes of the immigration and asylum=
+ law chaos of the past several years as well as this intimate film, LAS ABO=
+GADAS.=E2=80=9D
+LENNI BENSON, Distinguished Chaired Professor
+Immigration & Human Rights Law, New York Law School
+[https://mcusercontent.com/80dd94390a565dd5529e24fed/images/54864966-961f-d=
+ee1-c0ee-ed3a817317bb.png] <https://SeltzerFilmVideo.us20.list-manage.com/t=
+rack/click?u=3D80dd94390a565dd5529e24fed&id=3Dbeac2a097d&e=3Dd9e2e6a57e>
+LAS ABOGADAS
+=E2=9C=A8Internationally Acclaimed Documentary=E2=9C=A8
+For a group of immigration lawyers, the US border crisis is a call to actio=
+n they can't ignore. An inspiring film about women attorneys standing up to=
+ insurmountable odds. Available in 90 and 60-minute versions.
+
+REQUEST FILM<https://SeltzerFilmVideo.us20.list-manage.com/track/click?u=3D=
+80dd94390a565dd5529e24fed&id=3Decfd0970b6&e=3Dd9e2e6a57e> FOR A CLASS OR CO=
+MMUNITY
+WATCH TRAILER<https://SeltzerFilmVideo.us20.list-manage.com/track/click?u=
+=3D80dd94390a565dd5529e24fed&id=3Da41ef37fed&e=3Dd9e2e6a57e>
+
+"NOBODY WANTS US gives students a deeper insight & comparative analysis of =
+the U.S. response to the current refugee crisis and that of WWII."
+NADIA HASSAN, AP Government High School Teacher
+Founder of the Young Leaders Institute
+[https://mcusercontent.com/80dd94390a565dd5529e24fed/images/554d8942-1266-e=
+420-c96c-0d099f23df33.png] <https://SeltzerFilmVideo.us20.list-manage.com/t=
+rack/click?u=3D80dd94390a565dd5529e24fed&id=3D96405d3b8c&e=3Dd9e2e6a57e>
+NOBODY WANTS US
+=E2=9C=A8EMMY Nominated PBS film=E2=9C=A8
+The true story of Jewish teens and their families hoping to make it safely =
+into the US. Filled with engaging firsthand stories, teaching resources, an=
+d standards-aligned modules, this film helps educators create empathy for r=
+efugees - then & now.
+REQUEST FILM<https://SeltzerFilmVideo.us20.list-manage.com/track/click?u=3D=
+80dd94390a565dd5529e24fed&id=3D54fa0adae6&e=3Dd9e2e6a57e> FOR A CLASS OR CO=
+MMUNITY
+WATCH TRAILER<https://SeltzerFilmVideo.us20.list-manage.com/track/click?u=
+=3D80dd94390a565dd5529e24fed&id=3Dffbb971f9b&e=3Dd9e2e6a57e>
+[https://mcusercontent.com/80dd94390a565dd5529e24fed/images/de4388e0-faeb-4=
+935-886d-1b186bc091fb.png] <https://SeltzerFilmVideo.us20.list-manage.com/t=
+rack/click?u=3D80dd94390a565dd5529e24fed&id=3D8f40f4049a&e=3Dd9e2e6a57e>
+BRING THESE RESOURCES TO YOUR CLASS
+TO SPARK MEANINGFUL CONVERSATION
+[https://mcusercontent.com/80dd94390a565dd5529e24fed/images/b7c6018b-0601-e=
+18c-cadd-ba160b3a6ecb.png] <https://SeltzerFilmVideo.us20.list-manage.com/t=
+rack/click?u=3D80dd94390a565dd5529e24fed&id=3Db77882b9d9&e=3Dd9e2e6a57e>
+[https://mcusercontent.com/80dd94390a565dd5529e24fed/images/df8ebcae-3d8b-8=
+616-69c2-bb3054cba2fb.jpg] <https://SeltzerFilmVideo.us20.list-manage.com/t=
+rack/click?u=3D80dd94390a565dd5529e24fed&id=3Dc0452543d6&e=3Dd9e2e6a57e>
+[Seltzer on Facebook]<https://SeltzerFilmVideo.us20.list-manage.com/track/c=
+lick?u=3D80dd94390a565dd5529e24fed&id=3Dcd3a3fd2db&e=3Dd9e2e6a57e>
+[Seltzer on Twitter]<https://SeltzerFilmVideo.us20.list-manage.com/track/cl=
+ick?u=3D80dd94390a565dd5529e24fed&id=3D3c48e4fb3e&e=3Dd9e2e6a57e>
+[Seltzer on Instagram]<https://SeltzerFilmVideo.us20.list-manage.com/track/=
+click?u=3D80dd94390a565dd5529e24fed&id=3Df7e76fadf3&e=3Dd9e2e6a57e>
+[Website]<https://SeltzerFilmVideo.us20.list-manage.com/track/click?u=3D80d=
+d94390a565dd5529e24fed&id=3D434df65300&e=3Dd9e2e6a57e>
+[LinkedIn]<https://SeltzerFilmVideo.us20.list-manage.com/track/click?u=3D80=
+dd94390a565dd5529e24fed&id=3D4909517af6&e=3Dd9e2e6a57e>
+View This Email In Your Browser<https://mailchi.mp/seltzerfilmvideo/seltzer=
+-updates-17407414?e=3Dd9e2e6a57e>.
+
+You are receiving this email because you opted in via our website.
+
+Our mailing address is:
+Seltzer Film & Video, LLC
+1405 Anna Marie Ct
+Annapolis, MD 21409-5634
+
+Add us to your address book<https://SeltzerFilmVideo.us20.list-manage.com/v=
+card?u=3D80dd94390a565dd5529e24fed&id=3D3e80f82c6c>
+
+
+Want to change how you receive these emails?
+You can update your preferences<https://SeltzerFilmVideo.us20.list-manage.c=
+om/profile?u=3D80dd94390a565dd5529e24fed&id=3D3e80f82c6c&e=3Dd9e2e6a57e&c=
+=3D853e8f3939> or unsubscribe from this list<https://SeltzerFilmVideo.us20.=
+list-manage.com/unsubscribe?u=3D80dd94390a565dd5529e24fed&id=3D3e80f82c6c&e=
+=3Dd9e2e6a57e&c=3D853e8f3939>.
+
+[Email Marketing Powered by Mailchimp]<http://www.mailchimp.com/email-refer=
+ral/?utm_source=3Dfreemium_newsletter&utm_medium=3Demail&utm_campaign=3Dref=
+erral_marketing&aid=3D80dd94390a565dd5529e24fed&afl=3D1>
+
+Copyright =C2=A9 2023 Seltzer Film & Video, LLC, All rights reserved.
+
+
+--_----------=_MCPart_1079770276
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:offi=
+ce"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"twitter:image:src" content=3D"https://mcusercontent.com/80dd943=
+90a565dd5529e24fed/images/ff668381-4f84-080d-e7ba-d587a26934d3.png">
+<meta name=3D"twitter:description" content=3D"We've been busy promoting imp=
+ortant causes, fashion &amp; futball! We're helping spread the reach of doc=
+umentaries and causes, location scouting for commercials and Field Producin=
+g for our corporate clients.">
+<meta name=3D"twitter:title" content=3D"Seltzer team in Qatar, England &amp=
+; Los Angeles!">
+<meta name=3D"twitter:card" content=3D"summary_large_image">
+<meta property=3D"og:type" content=3D"article">
+<meta property=3D"og:description" content=3D"We've been busy promoting impo=
+rtant causes, fashion &amp; futball! We're helping spread the reach of docu=
+mentaries and causes, location scouting for commercials and Field Producing=
+ for our corporate clients.">
+<meta property=3D"og:image" content=3D"https://mcusercontent.com/80dd94390a=
+565dd5529e24fed/images/ff668381-4f84-080d-e7ba-d587a26934d3.png">
+<meta property=3D"og:title" content=3D"Seltzer team in Qatar, England &amp;=
+ Los Angeles!">
+<meta property=3D"og:url" content=3D"http://eepurl.com/iBGaRE">
+<!-- NAME: ANNOUNCE --><!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+>
+<title>Immigration Documentaries to Inspire Action</title>
+<style type=3D"text/css">
+		p{
+			margin:10px 0;
+			padding:0;
+		}
+		table{
+			border-collapse:collapse;
+		}
+		h1,h2,h3,h4,h5,h6{
+			display:block;
+			margin:0;
+			padding:0;
+		}
+		img,a img{
+			border:0;
+			height:auto;
+			outline:none;
+			text-decoration:none;
+		}
+		body,#bodyTable,#bodyCell{
+			height:100%;
+			margin:0;
+			padding:0;
+			width:100%;
+		}
+		.mcnPreviewText{
+			display:none !important;
+		}
+		#outlook a{
+			padding:0;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		table{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		.ReadMsgBody{
+			width:100%;
+		}
+		.ExternalClass{
+			width:100%;
+		}
+		p,a,li,td,blockquote{
+			mso-line-height-rule:exactly;
+		}
+		a[href^=3Dtel],a[href^=3Dsms]{
+			color:inherit;
+			cursor:default;
+			text-decoration:none;
+		}
+		p,a,li,td,body,table,blockquote{
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%;
+		}
+		.ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.Ext=
+ernalClass span,.ExternalClass font{
+			line-height:100%;
+		}
+		a[x-apple-data-detectors]{
+			color:inherit !important;
+			text-decoration:none !important;
+			font-size:inherit !important;
+			font-family:inherit !important;
+			font-weight:inherit !important;
+			line-height:inherit !important;
+		}
+		.templateContainer{
+			max-width:600px !important;
+		}
+		a.mcnButton{
+			display:block;
+		}
+		.mcnImage,.mcnRetinaImage{
+			vertical-align:bottom;
+		}
+		.mcnTextContent{
+			word-break:break-word;
+		}
+		.mcnTextContent img{
+			height:auto !important;
+		}
+		.mcnDividerBlock{
+			table-layout:fixed !important;
+		}
+		h1{
+			color:#222222;
+			font-family:Helvetica;
+			font-size:40px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:150%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h2{
+			color:#222222;
+			font-family:Helvetica;
+			font-size:34px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:150%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+		h3{
+			color:#444444;
+			font-family:Helvetica;
+			font-size:22px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:150%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+		h4{
+			color:#949494;
+			font-family:Georgia;
+			font-size:20px;
+			font-style:italic;
+			font-weight:normal;
+			line-height:125%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		#templateHeader{
+			background-color:#ffffff;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0px;
+			padding-bottom:0px;
+		}
+		.headerContainer{
+			background-color:#transparent;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0;
+			padding-bottom:0;
+		}
+		.headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
+			color:#757575;
+			font-family:Helvetica;
+			font-size:16px;
+			line-height:150%;
+			text-align:left;
+		}
+		.headerContainer .mcnTextContent a,.headerContainer .mcnTextContent p a{
+			color:#007C89;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		#templateBody{
+			background-color:#fdfdfd;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:36px;
+			padding-bottom:54px;
+		}
+		.bodyContainer{
+			background-color:#transparent;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0;
+			padding-bottom:0;
+		}
+		.bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
+			color:#757575;
+			font-family:Helvetica;
+			font-size:16px;
+			line-height:150%;
+			text-align:left;
+		}
+		.bodyContainer .mcnTextContent a,.bodyContainer .mcnTextContent p a{
+			color:#007C89;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		#templateFooter{
+			background-color:#013273;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:45px;
+			padding-bottom:63px;
+		}
+		.footerContainer{
+			background-color:transparent;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0;
+			padding-bottom:0;
+		}
+		.footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
+			color:#FFFFFF;
+			font-family:Helvetica;
+			font-size:12px;
+			line-height:150%;
+			text-align:center;
+		}
+		.footerContainer .mcnTextContent a,.footerContainer .mcnTextContent p a{
+			color:#FFFFFF;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+	@media only screen and (min-width:768px){
+		.templateContainer{
+			width:600px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body{
+			width:100% !important;
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnRetinaImage{
+			max-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImage{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnCapti=
+onBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.mcn=
+ImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCaptionR=
+ightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptionRi=
+ghtImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImageCar=
+dRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnImage=
+CardRightImageContentContainer{
+			max-width:100% !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnBoxedTextContentContainer{
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupContent{
+			padding:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOuter =
+.mcnTextContent{
+			padding-top:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcnCapt=
+ionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-chil=
+d .mcnTextContent{
+			padding-top:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardBottomImageContent{
+			padding-bottom:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupBlockInner{
+			padding-top:0 !important;
+			padding-bottom:0 !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupBlockOuter{
+			padding-top:9px !important;
+			padding-bottom:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnTextContent,.mcnBoxedTextContentColumn{
+			padding-right:18px !important;
+			padding-left:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+			padding-right:18px !important;
+			padding-bottom:0 !important;
+			padding-left:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcpreview-image-uploader{
+			display:none !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h1{
+			font-size:30px !important;
+			line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h2{
+			font-size:26px !important;
+			line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h3{
+			font-size:20px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h4{
+			font-size:18px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentContain=
+er .mcnTextContent p{
+			font-size:14px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
+			font-size:14px !important;
+			line-height:150% !important;
+		}
+
+}</style>
+</head>
+<body style=3D"height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;">
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div>
+<div itemscope=3D"" itemtype=3D"http://schema.org/EmailMessage">
+<div itemprop=3D"publisher" itemscope=3D"" itemtype=3D"http://schema.org/Or=
+ganization">
+<meta itemprop=3D"name" content=3D"Seltzer Film &amp; Video, LLC">
+<link itemprop=3D"url" content=3D""></div>
+<div itemprop=3D"about" itemscope=3D"" itemtype=3D"http://schema.org/Offer"=
+><link itemprop=3D"image" href=3D"https://mcusercontent.com/80dd94390a565dd=
+5529e24fed/images/ff668381-4f84-080d-e7ba-d587a26934d3.png"></div>
+</div>
+<!--
+--><!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=3D"displ=
+ay:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opa=
+city:0; overflow:hidden; visibility:hidden; mso-hide:all;">Personal stories=
+ of courage from the front lines
+ bring the response to humanitarian crises to life in the classroom.</span>=
+<!--<![endif]--><!--
+-->
+<center>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" he=
+ight=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 1=
+00%;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" id=3D"bodyCell" style=3D"mso-line-heigh=
+t-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;h=
+eight: 100%;margin: 0;padding: 0;width: 100%;">
+<!-- BEGIN TEMPLATE // -->
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" id=3D"templateHeader" data-template-con=
+tainer=3D"" style=3D"background:#ffffff none no-repeat center/cover;mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;background-color: #ffffff;background-image: none;background-repeat: n=
+o-repeat;background-position: center;background-size: cover;border-top: 0;b=
+order-bottom: 0;padding-top: 0px;padding-bottom: 0px;">
+<!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"templateContainer" style=3D"border-collapse: collapse=
+;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;max-width: 600px !important;">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"headerContainer" style=3D"background:#transpare=
+nt none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #transparent;=
+background-image: none;background-repeat: no-repeat;background-position: ce=
+nter;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0;p=
+adding-bottom: 0;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+<tbody class=3D"mcnTextBlockOuter">
+<tr>
+<td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding-top: 9px;ms=
+o-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]--><!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-ls=
+pace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"mcnTextContent" style=3D"padding: 0px 18px 9px;=
+text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;word-break: break-word;color: #757575;font-=
+family: Helvetica;font-size: 16px;line-height: 150%;">
+<span style=3D"font-size:13px"><a href=3D"https://nam02.safelinks.protectio=
+n.outlook.com/?url=3Dhttps%3A%2F%2Fmailchi.mp%2Fseltzerfilmvideo%2Fseltzer-=
+updates-17407414%3Fe%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWEINBERG%40VITERBO=
+.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d74958976cb08441cc9b0b%=
+7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLC=
+JQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DoM=
+ChQc%2Byvp2bKjjJXlmWdXJiQWFtjB8FXp6K5Dbcez0%3D&amp;reserved=3D0" originalsr=
+c=3D"https://mailchi.mp/seltzerfilmvideo/seltzer-updates-17407414?e=3Dd9e2e=
+6a57e" shash=3D"R947kizVuspYVPHKTI/1RD5EsAz/2tOGfPATrB7935R29VjjxNum0MAiP7q=
+PKkITqT4VKKalKofx62owXlX6wKeFAJ/sKlwSDLFJD7GBsEGD8KFEPrMT80j6OIxcUh9EPcdv64=
+YeGicRSsg9/hBYz5+dMjJH2GYCjRAIJOYwpZ4=3D" target=3D"_blank" style=3D"mso-li=
+ne-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust=
+: 100%;color: #007C89;font-weight: normal;text-decoration: underline;"><spa=
+n style=3D"color:#000000"><em>View
+ In Browser</em></span></a></span> </td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+				</td>
+				<![endif]--><!--[if mso]>
+				</tr>
+				</table>
+				<![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+<tbody class=3D"mcnTextBlockOuter">
+<tr>
+<td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding-top: 9px;ms=
+o-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]--><!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-ls=
+pace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"mcnTextContent" style=3D"padding: 0px 18px 9px;=
+line-height: 200%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;word-break: break-word;color: #757575;font-f=
+amily: Helvetica;font-size: 16px;text-align: left;">
+<div style=3D"text-align: center;"><span style=3D"color:#006699"><span styl=
+e=3D"font-size:24px"><span style=3D"font-family:helvetica neue,helvetica,ar=
+ial,verdana,sans-serif"><strong>Two Immigration Documentaries&nbsp;to Inspi=
+re Action<br>
+<em>&quot;LAS ABOGADAS&quot;</em> &amp; <em>&quot;NOBODY WANTS US&quot;</em=
+></strong></span></span></span><br>
+<span style=3D"font-size:18px"><span style=3D"font-family:helvetica neue,he=
+lvetica,arial,verdana,sans-serif"><span style=3D"color:#000000">Personal st=
+ories of courage from the&nbsp;front lines bring<br>
+the response to humanitarian crises to life in the classroom.</span></span>=
+</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+				</td>
+				<![endif]--><!--[if mso]>
+				</tr>
+				</table>
+				<![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+<tbody class=3D"mcnDividerBlockOuter">
+<tr>
+<td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;padding: 18px;m=
+so-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-a=
+djust: 100%;">
+<table class=3D"mcnDividerContent" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;border-top: 2px solid #080=
+808;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+<span></span></td>
+</tr>
+</tbody>
+</table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+<tbody class=3D"mcnTextBlockOuter">
+<tr>
+<td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding-top: 9px;ms=
+o-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]--><!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-ls=
+pace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"mcnTextContent" style=3D"padding: 0px 18px 9px;=
+line-height: 200%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;word-break: break-word;color: #757575;font-f=
+amily: Helvetica;font-size: 16px;text-align: left;">
+<div style=3D"text-align: left;"><span style=3D"font-size:19px"><em><span s=
+tyle=3D"color:#006699"><span style=3D"font-family:helvetica neue,helvetica,=
+arial,verdana,sans-serif"><strong>=E2=80=9CNothing brings you behind the sc=
+enes of the immigration and asylum law chaos of
+ the past several years as well as this intimate film, LAS ABOGADAS.=E2=80=
+=9D</strong></span></span></em></span></div>
+<div style=3D"text-align: right;"><span style=3D"font-size:17px"><span styl=
+e=3D"color:#006699"><span style=3D"font-family:helvetica neue,helvetica,ari=
+al,verdana,sans-serif">LENNI BENSON,&nbsp;Distinguished Chaired Professor<b=
+r>
+Immigration &amp; Human Rights Law, New York Law School</span></span></span=
+></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+				</td>
+				<![endif]--><!--[if mso]>
+				</tr>
+				</table>
+				<![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnImageBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+<tbody class=3D"mcnImageBlockOuter">
+<tr>
+<td valign=3D"top" style=3D"padding: 9px;mso-line-height-rule: exactly;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class=3D"mcnImageBl=
+ockInner">
+<table align=3D"left" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" class=3D"mcnImageContentContainer" style=3D"min-width: 100%;bord=
+er-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td class=3D"mcnImageContent" valign=3D"top" style=3D"padding-right: 9px;pa=
+dding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80dd94390a5=
+65dd5529e24fed%26id%3Dbeac2a097d%26e%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWE=
+INBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3DYJGGCSbyoqwjwLAU2qg%2FatSut2kEaWgWL6kEbV1rpDM%3D&amp;reserved=
+=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.com/track/cl=
+ick?u=3D80dd94390a565dd5529e24fed&amp;id=3Dbeac2a097d&amp;e=3Dd9e2e6a57e" s=
+hash=3D"iMAOFFDfczlkQP1Oj0wa7n1OIY8iLxwtuLpxFOBdxlO1HCb2SJ3L5E4HIoWA6Iq8LDc=
+WZRsr+izfiijnbw/if2Pwc5xm5z3KNiszn27HZ/Cwipbj7lapAY+AwTDj0dirUv5yq01PQBcJlG=
+eMtf+f96zjV1vt0Qfjb7cSNFIxqIo=3D" title=3D"" class=3D"" target=3D"_blank" s=
+tyle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;"><img align=3D"center" alt=3D"" src=3D"https://mcuser=
+content.com/80dd94390a565dd5529e24fed/images/54864966-961f-dee1-c0ee-ed3a81=
+7317bb.png" width=3D"564" style=3D"max-width: 1280px;padding-bottom: 0px;ve=
+rtical-align: bottom;display: inline !important;border: 3px solid #006699;b=
+order-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-inter=
+polation-mode: bicubic;" class=3D"mcnImage">
+</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+<tbody class=3D"mcnTextBlockOuter">
+<tr>
+<td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding-top: 9px;ms=
+o-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]--><!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-ls=
+pace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"mcnTextContent" style=3D"padding-top: 0;padding=
+-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: e=
+xactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break=
+: break-word;color: #757575;font-family: Helvetica;font-size: 16px;line-hei=
+ght: 150%;text-align: left;">
+<div style=3D"text-align: center;"><span style=3D"font-size:16px"><span sty=
+le=3D"color:#000000"><span style=3D"font-family:arial,helvetica neue,helvet=
+ica,sans-serif"><strong>LAS ABO</strong></span><span style=3D"font-family:a=
+rial,helvetica neue,helvetica,sans-serif"><strong>GADAS</strong></span></sp=
+an></span><br>
+=E2=9C=A8<span style=3D"font-size:16px"><span style=3D"color:#000000"><span=
+ style=3D"font-family:arial,helvetica neue,helvetica,sans-serif"><strong>In=
+ternationally Acclaimed Documentary</strong></span></span></span>=E2=9C=A8<=
+/div>
+<div style=3D"text-align: left;"><span style=3D"color:#000000">For a group =
+of immigration lawyers, the US border&nbsp;crisis is a call to action they =
+can't ignore.&nbsp;An inspiring film about&nbsp;women attorneys standing up=
+ to insurmountable odds. Available in 90 and 60-minute
+ versions.</span></div>
+<div style=3D"text-align: left;">
+<p style=3D"text-align: center;margin: 10px 0;padding: 0;mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color=
+: #757575;font-family: Helvetica;font-size: 16px;line-height: 150%;">
+<strong><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80d=
+d94390a565dd5529e24fed%26id%3Decfd0970b6%26e%3Dd9e2e6a57e&amp;data=3D05%7C0=
+1%7CEGWEINBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e=
+8d74958976cb08441cc9b0b%7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3=
+d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000=
+%7C%7C%7C&amp;sdata=3DNIDe%2FVy%2BJIlXbxDEYWfS9Voa2%2BxZZgmHGPBiDkdVORs%3D&=
+amp;reserved=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.=
+com/track/click?u=3D80dd94390a565dd5529e24fed&amp;id=3Decfd0970b6&amp;e=3Dd=
+9e2e6a57e" shash=3D"l0OSGGxZr56aZd7gsjhWDkBcR9WHBX/yHDFnYCxyuHewPzuyjTJqTPG=
+5PIYi1x7QShei8ka1a6DVstaKITAVFEEk5jc2OqoKvdWOyjwfd20snWVZ6Rh+qGT/93yWByjZz+=
+G7FtnjrzIJR2Vcaxyfs0Yi0K2YUgMzlRWNZ60N0u0=3D" style=3D"mso-line-height-rule=
+: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: =
+#007C89;font-weight: normal;text-decoration: underline;"><span style=3D"col=
+or:#006699">REQUEST
+ FILM</span></a></strong><span style=3D"color:#000000"><strong>&nbsp;FOR A =
+CLASS OR COMMUNITY</strong></span><br>
+<strong><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80d=
+d94390a565dd5529e24fed%26id%3Da41ef37fed%26e%3Dd9e2e6a57e&amp;data=3D05%7C0=
+1%7CEGWEINBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e=
+8d74958976cb08441cc9b0b%7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3=
+d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000=
+%7C%7C%7C&amp;sdata=3DDSnKxrFpU7TCZ1FN6RKWc%2ByuCZ37QjfKlXkn1KO6%2BVI%3D&am=
+p;reserved=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.co=
+m/track/click?u=3D80dd94390a565dd5529e24fed&amp;id=3Da41ef37fed&amp;e=3Dd9e=
+2e6a57e" shash=3D"Ar2AOU8v9zLDuDV34rXzVsaG4sNH4z+c6IkHgKNoO9eiwjPt91WV5sJ2b=
+t47q9qOGqusRCAKtG8t15v5lbGLjWRJwhMw0MyGLC4FV86i2KWjuGSxrk0sOcn+LBiMGrI1Druq=
++uU++SkBAWld1BVstIIWm7yB5ophQT5VWZwPyM0=3D" target=3D"_blank" style=3D"mso-=
+line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;color: #007C89;font-weight: normal;text-decoration: underline;"><s=
+pan style=3D"color:#006699">WATCH
+ TRAILER</span></a></strong></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+				</td>
+				<![endif]--><!--[if mso]>
+				</tr>
+				</table>
+				<![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+<tbody class=3D"mcnDividerBlockOuter">
+<tr>
+<td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;padding: 18px;m=
+so-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-a=
+djust: 100%;">
+<table class=3D"mcnDividerContent" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;border-top: 2px solid #080=
+808;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+<span></span></td>
+</tr>
+</tbody>
+</table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+<tbody class=3D"mcnTextBlockOuter">
+<tr>
+<td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding-top: 9px;ms=
+o-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]--><!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-ls=
+pace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"mcnTextContent" style=3D"padding: 0px 18px 9px;=
+line-height: 200%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;word-break: break-word;color: #757575;font-f=
+amily: Helvetica;font-size: 16px;text-align: left;">
+<div style=3D"text-align: left;"><span style=3D"font-size:19px"><em><span s=
+tyle=3D"color:#006699"><span style=3D"font-family:helvetica neue,helvetica,=
+arial,verdana,sans-serif"><strong>&quot;NOBODY WANTS US gives students a de=
+eper insight &amp; comparative analysis of the U.S.
+ response to the current refugee crisis and that of WWII.&quot;</strong></s=
+pan></span></em></span></div>
+<div style=3D"text-align: right;"><span style=3D"font-size:17px"><span styl=
+e=3D"color:#006699"><span style=3D"font-family:helvetica neue,helvetica,ari=
+al,verdana,sans-serif">NADIA HASSAN,&nbsp;AP Government High School Teacher=
+<br>
+Founder of the Young Leaders Institute</span></span></span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+				</td>
+				<![endif]--><!--[if mso]>
+				</tr>
+				</table>
+				<![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnCaptionBlock" style=3D"border-collapse: collapse;mso-table-lspace: =
+0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;">
+<tbody class=3D"mcnCaptionBlockOuter">
+<tr>
+<td class=3D"mcnCaptionBlockInner" valign=3D"top" style=3D"padding: 9px;mso=
+-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adj=
+ust: 100%;">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"mcnCaptionBottomContent" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+<tbody>
+<tr>
+<td class=3D"mcnCaptionBottomImageContent" align=3D"center" valign=3D"top" =
+style=3D"padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size=
+-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80dd94390a5=
+65dd5529e24fed%26id%3D96405d3b8c%26e%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWE=
+INBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3DhAppao4SLaDlfUld15VN32Vcfg8PS%2FF2nd8U17UMWlY%3D&amp;reserved=
+=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.com/track/cl=
+ick?u=3D80dd94390a565dd5529e24fed&amp;id=3D96405d3b8c&amp;e=3Dd9e2e6a57e" s=
+hash=3D"M9RneMl7dXfvchGafpxnlnbiykgcaV1iu91W6/oyxCe+esQHyopMDdOD/JJA28/YrVO=
+/w4MEdO3erVRZMMtDZUTT3V5xcQn/SXZ42CoIoZDcvaZxM+HsOZNb+Wa9apH3GpfJL2KOwBgb3M=
+ldxNnQgsF320s/ZinqYM7k/eacYsw=3D" title=3D"" class=3D"" target=3D"_blank" s=
+tyle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;"><img alt=3D"" src=3D"https://mcusercontent.com/80dd9=
+4390a565dd5529e24fed/images/554d8942-1266-e420-c96c-0d099f23df33.png" width=
+=3D"564" style=3D"max-width: 1920px;border: 3px solid #006699;border-radius=
+: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mod=
+e: bicubic;vertical-align: bottom;" class=3D"mcnImage">
+</a></td>
+</tr>
+<tr>
+<td class=3D"mcnTextContent" valign=3D"top" style=3D"padding: 0px 9px;color=
+: #1D4B87;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;word-break: break-word;font-family: Helvetica;font-s=
+ize: 16px;line-height: 150%;text-align: left;" width=3D"564">
+<div style=3D"text-align: center;"><span style=3D"color: #000000;text-align=
+: left;"><font face=3D"arial, helvetica neue, helvetica, sans-serif"><span =
+style=3D"font-size:16px"><strong>NOBODY WANTS US&nbsp;</strong></span></fon=
+t></span><br>
+=E2=9C=A8<span style=3D"color: #000000;text-align: left;"><font face=3D"ari=
+al, helvetica neue, helvetica, sans-serif"><span style=3D"font-size:16px"><=
+strong>EMMY Nominated PBS film</strong></span></font></span>=E2=9C=A8</div>
+<div style=3D"text-align: left;"><span style=3D"color: #000000;text-align: =
+left;">The true story of Jewish teens and their families hoping to make it =
+safely into the US. Filled with engaging firsthand stories, teaching resour=
+ces, and standards-aligned modules,
+ this film helps educators create empathy for refugees - then &amp; now.</s=
+pan></div>
+<div style=3D"text-align: center;"><strong><a href=3D"https://nam02.safelin=
+ks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseltzerfilmvideo.us20.list-m=
+anage.com%2Ftrack%2Fclick%3Fu%3D80dd94390a565dd5529e24fed%26id%3D54fa0adae6=
+%26e%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWEINBERG%40VITERBO.EDU%7C0a368e0b5=
+00140cb30ed08dbcb4d2a84%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327=
+304555286306%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLC=
+JBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DFRpRgoBK5ybuTPgG%2=
+BsiSeIQG89cfPH23JR4qW4ratGs%3D&amp;reserved=3D0" originalsrc=3D"https://sel=
+tzerfilmvideo.us20.list-manage.com/track/click?u=3D80dd94390a565dd5529e24fe=
+d&amp;id=3D54fa0adae6&amp;e=3Dd9e2e6a57e" shash=3D"uagaRZdHF732ctdMrxEjqoKb=
+/xrM1phxoWlykKVI1Jm/Scj5sOQUPQ2ERbOWMq4SmzvRnEVPZ+m9+vnbmUSs24gloYtemhyanK6=
+dJNxoAwG2w88XQHzs3eP5B+D61ZNyMtHg20Cvw9He9n3Wai6gszN4XI5KAuwSTN+hyohHXgc=3D=
+" target=3D"_blank" style=3D"mso-line-height-rule: exactly;-ms-text-size-ad=
+just: 100%;-webkit-text-size-adjust: 100%;color: #007C89;font-weight: norma=
+l;text-decoration: underline;"><span style=3D"color:#006699">REQUEST
+ FILM</span></a></strong><span style=3D"color:#000000"><strong>&nbsp;FOR A =
+CLASS OR COMMUNITY</strong></span><br>
+<strong><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80d=
+d94390a565dd5529e24fed%26id%3Dffbb971f9b%26e%3Dd9e2e6a57e&amp;data=3D05%7C0=
+1%7CEGWEINBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e=
+8d74958976cb08441cc9b0b%7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3=
+d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000=
+%7C%7C%7C&amp;sdata=3Dee5FUHbfKL%2ByX4NZmQ5P2RtrmCzJo7zhujOk%2FAZeZ9Y%3D&am=
+p;reserved=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.co=
+m/track/click?u=3D80dd94390a565dd5529e24fed&amp;id=3Dffbb971f9b&amp;e=3Dd9e=
+2e6a57e" shash=3D"J9nOxyaFPE0aF69QvBXruN/KxrDBh9hhFavBeSxNa2WdfaKs/qoedXHp3=
+U+GskTkKqWTgzv8zg+fOKH6eSXcjIPhcY02OSL4YoamcqysrcPOgGc/c2Czr+H+24xukWAjTxPz=
+8p4Uc22sf+q2sQraoDc0XWtyDCySF9pbaLGZHMg=3D" target=3D"_blank" style=3D"mso-=
+line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;color: #007C89;font-weight: normal;text-decoration: underline;"><s=
+pan style=3D"color:#006699">WATCH
+ TRAILER</span></a></strong></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+<tbody class=3D"mcnDividerBlockOuter">
+<tr>
+<td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;padding: 18px;m=
+so-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-a=
+djust: 100%;">
+<table class=3D"mcnDividerContent" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;border-top: 2px solid #080=
+808;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+<span></span></td>
+</tr>
+</tbody>
+</table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnCaptionBlock" style=3D"border-collapse: collapse;mso-table-lspace: =
+0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;">
+<tbody class=3D"mcnCaptionBlockOuter">
+<tr>
+<td class=3D"mcnCaptionBlockInner" valign=3D"top" style=3D"padding: 9px;mso=
+-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adj=
+ust: 100%;">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"mcnCaptionBottomContent" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+<tbody>
+<tr>
+<td class=3D"mcnCaptionBottomImageContent" align=3D"center" valign=3D"top" =
+style=3D"padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size=
+-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80dd94390a5=
+65dd5529e24fed%26id%3D8f40f4049a%26e%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWE=
+INBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3D45U3N7T3CxvdBL%2FJB8HB1ZPUIAfechCBYxWOIXVKrCM%3D&amp;reserved=
+=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.com/track/cl=
+ick?u=3D80dd94390a565dd5529e24fed&amp;id=3D8f40f4049a&amp;e=3Dd9e2e6a57e" s=
+hash=3D"yTVyRkPJnOrS/b5xmdqT0k0By1Xnm102hURlYUD5NegaNxgjaG8FR7osv0wQWziQt/w=
+NKjy1yEncgF657FJ9ATw9qXB6IR8jNu1dRdSK+P69G7AxSPzCeSdXe13T6dPwzpP0N/W0ImV3N3=
+MghyDZHGAVOqfk5jKmV5WkKQRV4i8=3D" title=3D"" class=3D"" target=3D"_blank" s=
+tyle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;"><img alt=3D"" src=3D"https://mcusercontent.com/80dd9=
+4390a565dd5529e24fed/images/de4388e0-faeb-4935-886d-1b186bc091fb.png" width=
+=3D"564" style=3D"max-width: 1920px;border: 3px ridge #006699;border-radius=
+: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mod=
+e: bicubic;vertical-align: bottom;" class=3D"mcnImage">
+</a></td>
+</tr>
+<tr>
+<td class=3D"mcnTextContent" valign=3D"top" style=3D"padding: 0px 9px;color=
+: #222222;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;word-break: break-word;font-family: Helvetica;font-s=
+ize: 16px;line-height: 150%;text-align: left;" width=3D"564">
+<div style=3D"text-align: center;">
+<div style=3D"text-align: center;"><span style=3D"color:#000000"><font face=
+=3D"arial, helvetica neue, helvetica, sans-serif"><span style=3D"font-size:=
+16px"><strong>BRING THESE&nbsp;RESOURCES TO YOUR CLASS<br>
+TO SPARK MEANINGFUL CONVERSATION</strong></span></font></span></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top" id=3D"templateBody" data-template-conta=
+iner=3D"" style=3D"background:#fdfdfd none no-repeat center/cover;mso-line-=
+height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 1=
+00%;background-color: #fdfdfd;background-image: none;background-repeat: no-=
+repeat;background-position: center;background-size: cover;border-top: 0;bor=
+der-bottom: 0;padding-top: 36px;padding-bottom: 54px;">
+<!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"templateContainer" style=3D"border-collapse: collapse=
+;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;max-width: 600px !important;">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"bodyContainer" style=3D"background:#transparent=
+ none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-ad=
+just: 100%;-webkit-text-size-adjust: 100%;background-color: #transparent;ba=
+ckground-image: none;background-repeat: no-repeat;background-position: cent=
+er;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0;pad=
+ding-bottom: 0;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+<tbody class=3D"mcnDividerBlockOuter">
+<tr>
+<td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;padding: 18px 1=
+8px 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;">
+<table class=3D"mcnDividerContent" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;border-collapse: collapse;=
+mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+<span></span></td>
+</tr>
+</tbody>
+</table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnImageBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+<tbody class=3D"mcnImageBlockOuter">
+<tr>
+<td valign=3D"top" style=3D"padding: 9px;mso-line-height-rule: exactly;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class=3D"mcnImageBl=
+ockInner">
+<table align=3D"left" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" class=3D"mcnImageContentContainer" style=3D"min-width: 100%;bord=
+er-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td class=3D"mcnImageContent" valign=3D"top" style=3D"padding-right: 9px;pa=
+dding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80dd94390a5=
+65dd5529e24fed%26id%3Db77882b9d9%26e%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWE=
+INBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3DGcCjCmgEy9tqMX6TqYJhFmBI%2FsjneMtzgw%2FnaPXFOws%3D&amp;reserv=
+ed=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.com/track/=
+click?u=3D80dd94390a565dd5529e24fed&amp;id=3Db77882b9d9&amp;e=3Dd9e2e6a57e"=
+ shash=3D"NOrDU4J8edcgamqvgWUBuLqxLvSuG8d/ikGjcZHlhrU1guP761L/ATq9c5P9vBIMa=
+nk449gvYYyQQ+5DuB+Al975yIcTVCGcAOtvGfKAdPb098gE7O4um/Vj6GNd3KsS9+t6wltRggL0=
+WC6rs2HxnyGe1GYX7HjuUWlvaBsd4Q4=3D" title=3D"" class=3D"" target=3D"_blank"=
+ style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;"><img align=3D"center" alt=3D"" src=3D"https://mcus=
+ercontent.com/80dd94390a565dd5529e24fed/images/b7c6018b-0601-e18c-cadd-ba16=
+0b3a6ecb.png" width=3D"205" style=3D"max-width: 250px;padding-bottom: 0;dis=
+play: inline !important;vertical-align: bottom;border: 0;height: auto;outli=
+ne: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class=3D"m=
+cnImage">
+</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnImageBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+<tbody class=3D"mcnImageBlockOuter">
+<tr>
+<td valign=3D"top" style=3D"padding: 9px;mso-line-height-rule: exactly;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class=3D"mcnImageBl=
+ockInner">
+<table align=3D"left" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" class=3D"mcnImageContentContainer" style=3D"min-width: 100%;bord=
+er-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td class=3D"mcnImageContent" valign=3D"top" style=3D"padding-right: 9px;pa=
+dding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80dd94390a5=
+65dd5529e24fed%26id%3Dc0452543d6%26e%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWE=
+INBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3DSlOk0mc350tOcFq1o3ru%2F4hQvSvYKbQiYl0PYRm2loc%3D&amp;reserved=
+=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.com/track/cl=
+ick?u=3D80dd94390a565dd5529e24fed&amp;id=3Dc0452543d6&amp;e=3Dd9e2e6a57e" s=
+hash=3D"srFxwq9e4MNpzlyFbShItAGpGprIkUKiej7YLS90ruilqbGRG1Hq4MBPFK9a67P7Ali=
+KH+iJ7q7Trron1hvu83UwDECeH9VQucgqbtFi6lXhM2ralKJRBiJybxLCzZ1cyP64oP79U1GOoN=
+AmoliTVEGqB4K/s4UA5SHs5G8TBrI=3D" title=3D"" class=3D"" target=3D"_blank" s=
+tyle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;"><img align=3D"center" alt=3D"" src=3D"https://mcuser=
+content.com/80dd94390a565dd5529e24fed/images/df8ebcae-3d8b-8616-69c2-bb3054=
+cba2fb.jpg" width=3D"195" style=3D"max-width: 500px;padding-bottom: 0;displ=
+ay: inline !important;vertical-align: bottom;border: 0;height: auto;outline=
+: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class=3D"mcn=
+Image">
+</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top" id=3D"templateFooter" data-template-con=
+tainer=3D"" style=3D"background:#013273 none no-repeat center/cover;mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;background-color: #013273;background-image: none;background-repeat: n=
+o-repeat;background-position: center;background-size: cover;border-top: 0;b=
+order-bottom: 0;padding-top: 45px;padding-bottom: 63px;">
+<!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"templateContainer" style=3D"border-collapse: collapse=
+;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;max-width: 600px !important;">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"footerContainer" style=3D"background:transparen=
+t none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;background-color: transparent;ba=
+ckground-image: none;background-repeat: no-repeat;background-position: cent=
+er;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0;pad=
+ding-bottom: 0;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnFollowBlock" style=3D"min-width: 100%;border-collapse: collapse;mso=
+-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit=
+-text-size-adjust: 100%;">
+<tbody class=3D"mcnFollowBlockOuter">
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 9px;mso-line-height-r=
+ule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cl=
+ass=3D"mcnFollowBlockInner">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnFollowContentContainer" style=3D"min-width: 100%;border-collapse: c=
+ollapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"padding-left: 9px;padding-right: 9px;mso-line=
+-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: =
+100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-ta=
+ble-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"=
+ class=3D"mcnFollowContent">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-top: 9px;padding-right=
+: 9px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"mso-line-height-rule: exactly;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<!--[if mso]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                    <![endif]--><!--[if mso]>
+                                        <td align=3D"center" valign=3D"top"=
+>
+                                        <![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-ta=
+ble-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"=
+>
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding-right: 10px;padding-bottom: 9px;mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;" class=3D"mcnFollowContentItemContainer">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnFollowContentItem" style=3D"border-collapse: collapse;mso-table-lsp=
+ace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size=
+-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"middle" style=3D"padding-top: 5px;padding-righ=
+t: 10px;padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly=
+;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnFollowIconC=
+ontent" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80dd94390a5=
+65dd5529e24fed%26id%3Dcd3a3fd2db%26e%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWE=
+INBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3DHlmy4ND7XmrA7%2BXIpPHZMBbT2wbrXBACD%2F3H%2F23jsR0%3D&amp;rese=
+rved=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.com/trac=
+k/click?u=3D80dd94390a565dd5529e24fed&amp;id=3Dcd3a3fd2db&amp;e=3Dd9e2e6a57=
+e" shash=3D"EPcWHBAcN7RalLJ6VQreSoi5aoX5cVJxG4OKxvx9PTgnM24wugZlNGXyirW8zRE=
+Kt6Kx6HpY32LPw5IgQIt/noee6laPNhJy8xeGqDLOEA0+oW+Jzf/RNxjme82XcUV3c11RfcRQTr=
+NOVCt5VHqTorBIzFw5HU1+NmhvixZ7gG0=3D" target=3D"_blank" style=3D"mso-line-h=
+eight-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 10=
+0%;"><img src=3D"https://cdn-images.mailchimp.com/icons/social-block-v2/out=
+line-light-facebook-48.png" alt=3D"Seltzer on Facebook" style=3D"display: b=
+lock;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpo=
+lation-mode: bicubic;" height=3D"24" width=3D"24" class=3D""></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+                                        </td>
+                                        <![endif]--><!--[if mso]>
+                                        <td align=3D"center" valign=3D"top"=
+>
+                                        <![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-ta=
+ble-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"=
+>
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding-right: 10px;padding-bottom: 9px;mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;" class=3D"mcnFollowContentItemContainer">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnFollowContentItem" style=3D"border-collapse: collapse;mso-table-lsp=
+ace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size=
+-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"middle" style=3D"padding-top: 5px;padding-righ=
+t: 10px;padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly=
+;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnFollowIconC=
+ontent" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80dd94390a5=
+65dd5529e24fed%26id%3D3c48e4fb3e%26e%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWE=
+INBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3D98w3oZSH9fENVQ6iGQGYp5EpVHQ3G%2BLA82LsxU0x90s%3D&amp;reserved=
+=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.com/track/cl=
+ick?u=3D80dd94390a565dd5529e24fed&amp;id=3D3c48e4fb3e&amp;e=3Dd9e2e6a57e" s=
+hash=3D"mxOwb0W+FlKBd1oNFYM281oNNJXRb2Ig4/dP88LXPLoYOqGpf1TP9e0IgjzkKRcNCCT=
+iK8LmjbitDj3z9P7a+lvupZsnBKAT2Cmb5WLiLiv49Sd0m/b3xDy0cNB/Ny9BMVRnHaDBJbto9+=
+XfuGYiGcIrbRw7bOEwql3MpoyS0BA=3D" target=3D"_blank" style=3D"mso-line-heigh=
+t-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"=
+><img src=3D"https://cdn-images.mailchimp.com/icons/social-block-v2/outline=
+-light-twitter-48.png" alt=3D"Seltzer on Twitter" style=3D"display: block;b=
+order: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation=
+-mode: bicubic;" height=3D"24" width=3D"24" class=3D""></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+                                        </td>
+                                        <![endif]--><!--[if mso]>
+                                        <td align=3D"center" valign=3D"top"=
+>
+                                        <![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-ta=
+ble-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"=
+>
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding-right: 10px;padding-bottom: 9px;mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;" class=3D"mcnFollowContentItemContainer">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnFollowContentItem" style=3D"border-collapse: collapse;mso-table-lsp=
+ace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size=
+-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"middle" style=3D"padding-top: 5px;padding-righ=
+t: 10px;padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly=
+;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnFollowIconC=
+ontent" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80dd94390a5=
+65dd5529e24fed%26id%3Df7e76fadf3%26e%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWE=
+INBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327304555286306%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3DHL1BtUrh%2F6b5hm%2B0x7rmOtwvx9CghRqTY5vFBhnLEGo%3D&amp;reserv=
+ed=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.com/track/=
+click?u=3D80dd94390a565dd5529e24fed&amp;id=3Df7e76fadf3&amp;e=3Dd9e2e6a57e"=
+ shash=3D"E3wMwdtYD2uYKRIQf9CNrPv7mHr91ZRaR93T/+c7X7RVFUZBaHPigZZxdOEaWS37Y=
+VACArf0INp31q2+3CCYhB/bQdMq7+vlfyj5A0vo/VXeTEDzDoqcO3riljaFYLlamX11DFO4NZfc=
+0nkl+qqlj8ef70rynClSYAZzJVOuZIk=3D" target=3D"_blank" style=3D"mso-line-hei=
+ght-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;"><img src=3D"https://cdn-images.mailchimp.com/icons/social-block-v2/outli=
+ne-light-instagram-48.png" alt=3D"Seltzer on Instagram" style=3D"display: b=
+lock;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpo=
+lation-mode: bicubic;" height=3D"24" width=3D"24" class=3D""></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+                                        </td>
+                                        <![endif]--><!--[if mso]>
+                                        <td align=3D"center" valign=3D"top"=
+>
+                                        <![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-ta=
+ble-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"=
+>
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding-right: 10px;padding-bottom: 9px;mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;" class=3D"mcnFollowContentItemContainer">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnFollowContentItem" style=3D"border-collapse: collapse;mso-table-lsp=
+ace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size=
+-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"middle" style=3D"padding-top: 5px;padding-righ=
+t: 10px;padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly=
+;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnFollowIconC=
+ontent" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80dd94390a5=
+65dd5529e24fed%26id%3D434df65300%26e%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWE=
+INBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327304555442594%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3DAgMEcphxZFBfhVwv3MeXVM8jCgRbfBTdQdIHGPB%2FKok%3D&amp;reserved=
+=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.com/track/cl=
+ick?u=3D80dd94390a565dd5529e24fed&amp;id=3D434df65300&amp;e=3Dd9e2e6a57e" s=
+hash=3D"ZSFb8aCvbmcbcdKODuU90IZKS+mrwGUTS+bvxbFTOJb09X0CnxyJBY7aJBrUOvZ0vuV=
+rW4LyesxiJm24a876WARx2/1vP0hxoLfucsFM7ryB31+LOOvQRP6nslqKlgovc93akVdj1xB9UY=
+9x9L1O3ZFASA5xME985zPomlzEw8o=3D" target=3D"_blank" style=3D"mso-line-heigh=
+t-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"=
+><img src=3D"https://cdn-images.mailchimp.com/icons/social-block-v2/outline=
+-light-link-48.png" alt=3D"Website" style=3D"display: block;border: 0;heigh=
+t: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic=
+;" height=3D"24" width=3D"24" class=3D""></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+                                        </td>
+                                        <![endif]--><!--[if mso]>
+                                        <td align=3D"center" valign=3D"top"=
+>
+                                        <![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-ta=
+ble-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"=
+>
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding-right: 0;padding-bottom: 9px;mso-line-h=
+eight-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 10=
+0%;" class=3D"mcnFollowContentItemContainer">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnFollowContentItem" style=3D"border-collapse: collapse;mso-table-lsp=
+ace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size=
+-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"middle" style=3D"padding-top: 5px;padding-righ=
+t: 10px;padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly=
+;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnFollowIconC=
+ontent" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseltzerfilmvideo.us20.list-manage.com%2Ftrack%2Fclick%3Fu%3D80dd94390a5=
+65dd5529e24fed%26id%3D4909517af6%26e%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWE=
+INBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327304555442594%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3DgTBaouxUIWflHmpnPk2SYGX%2FuHTYry%2B4ii5NKCmHlw4%3D&amp;reserv=
+ed=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-manage.com/track/=
+click?u=3D80dd94390a565dd5529e24fed&amp;id=3D4909517af6&amp;e=3Dd9e2e6a57e"=
+ shash=3D"UNMEG6Oxgm58yekhNOINefJQlQbpOGyabJxSGZa0M5d2LNhbBYtXG3jPlU05DZMfb=
+yNnIagEMxVwuRsw75i+8ZjkA/qBGPdjRln2T548l/Jn75vD/ltiXUVVkio6NwT4oCpDkc5II8rN=
+rW7W7J6ulQOLsEXYBTJowYyea1JnSc8=3D" target=3D"_blank" style=3D"mso-line-hei=
+ght-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;"><img src=3D"https://cdn-images.mailchimp.com/icons/social-block-v2/outli=
+ne-light-linkedin-48.png" alt=3D"LinkedIn" style=3D"display: block;border: =
+0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: =
+bicubic;" height=3D"24" width=3D"24" class=3D""></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+                                        </td>
+                                        <![endif]--><!--[if mso]>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+<tbody class=3D"mcnDividerBlockOuter">
+<tr>
+<td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;padding: 18px;m=
+so-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-a=
+djust: 100%;">
+<table class=3D"mcnDividerContent" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;border-top: 2px solid #505=
+050;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+<span></span></td>
+</tr>
+</tbody>
+</table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+<tbody class=3D"mcnTextBlockOuter">
+<tr>
+<td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding-top: 9px;ms=
+o-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]--><!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-ls=
+pace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"mcnTextContent" style=3D"padding: 0px 18px 9px;=
+color: #B6BFC4;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;word-break: break-word;font-family: Helvetica;f=
+ont-size: 12px;line-height: 150%;text-align: center;">
+<div style=3D"text-align: center;"><a href=3D"https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Fmailchi.mp%2Fseltzerfilmvideo%2Fselt=
+zer-updates-17407414%3Fe%3Dd9e2e6a57e&amp;data=3D05%7C01%7CEGWEINBERG%40VIT=
+ERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d74958976cb08441cc9=
+b0b%7C0%7C0%7C638327304555442594%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMD=
+AiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=
+=3D1X9SXjDmh22h%2F2oNFuGda1uS%2FxfsvP1YaIR5IiDRpXA%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://mailchi.mp/seltzerfilmvideo/seltzer-updates-17407414?e=
+=3Dd9e2e6a57e" shash=3D"ItvssGkAduFAujC7vrt3vglxE8lSaxP48799QdWt1HQskqdyx1S=
+34OrxPVJGAHQEFrIdpq/yLyIt1+clnu07C1uJSEllE/UI6yH/wTZ80FiB/0LDOv5chaQKV+tCWX=
+cLXeI0RNE7jIayPA/ZnbY8iEDJgd0Fj1Dk30nGLezBU4w=3D" target=3D"_blank" style=
+=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;color: #FFFFFF;font-weight: normal;text-decoration: underl=
+ine;">View
+ This Email In Your Browser</a>.<br>
+<br>
+You are receiving this email because you opted in via our website.<br>
+<br>
+<strong>Our mailing address is:</strong><br>
+<div class=3D"vcard"><span class=3D"org fn">Seltzer Film &amp; Video, LLC</=
+span>
+<div class=3D"adr">
+<div class=3D"street-address">1405 Anna Marie Ct</div>
+<span class=3D"locality">Annapolis</span>, <span class=3D"region">MD</span>=
+ <span class=3D"postal-code">
+21409-5634</span></div>
+<br>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseltzerfilmvideo.us20.list-manage.com%2Fvcard%3Fu%3D80dd94390a565dd5529=
+e24fed%26id%3D3e80f82c6c&amp;data=3D05%7C01%7CEGWEINBERG%40VITERBO.EDU%7C0a=
+368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7=
+C638327304555442594%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2l=
+uMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DOTJLyv3ljX6=
+7w3LWsPCfCOslv1RLWmrMxAkhUD2qJwk%3D&amp;reserved=3D0" originalsrc=3D"https:=
+//seltzerfilmvideo.us20.list-manage.com/vcard?u=3D80dd94390a565dd5529e24fed=
+&amp;id=3D3e80f82c6c" shash=3D"wIRBHk79TbOE8s+QJ6Pu5JUdpWrE+SDqVkrnWCUt+max=
+7lEAvmAicEl86x0m3rhTHHGDGLsNGRhmDCrMUe++foObzLdARrb4RQ9lnvZFzk6ViPx7SaT16M0=
+saM3wq9K/CZvDbxIkFneKNr1mOsj9lqJihYtOLAnrCMpUfIyQVjQ=3D" class=3D"hcard-dow=
+nload">Add us to your address book</a></div>
+<br>
+<br>
+Want to change how you receive these emails?<br>
+You can <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fseltzerfilmvideo.us20.list-manage.com%2Fprofile%3Fu%3D80dd94390=
+a565dd5529e24fed%26id%3D3e80f82c6c%26e%3Dd9e2e6a57e%26c%3D853e8f3939&amp;da=
+ta=3D05%7C01%7CEGWEINBERG%40VITERBO.EDU%7C0a368e0b500140cb30ed08dbcb4d2a84%=
+7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327304555442594%7CUnknown%7=
+CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn=
+0%3D%7C3000%7C%7C%7C&amp;sdata=3Dk5QbOjujBnS8CNAV3ZAWQawHVPDMcmKF8HM2pSdGAp=
+8%3D&amp;reserved=3D0" originalsrc=3D"https://seltzerfilmvideo.us20.list-ma=
+nage.com/profile?u=3D80dd94390a565dd5529e24fed&amp;id=3D3e80f82c6c&amp;e=3D=
+d9e2e6a57e&amp;c=3D853e8f3939" shash=3D"L13Nyt1/cJqmvGDFVfcH68N8HFoPotRAn4l=
+QOE6mALFcbK3FsK5W/UGQryHb9BdXqjxpi5myRkz988bHN8DaAYFCEZXALjHVdSkn4Eh0Yty3PX=
+9EzlLMbyjxohJ36HGBKQusNXXjzby6aCm5QsnXWFD7KMCnKtNkjw7itxiwmbc=3D" style=3D"=
+mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-=
+adjust: 100%;color: #FFFFFF;font-weight: normal;text-decoration: underline;=
+">
+update your preferences</a> or <a href=3D"https://nam02.safelinks.protectio=
+n.outlook.com/?url=3Dhttps%3A%2F%2Fseltzerfilmvideo.us20.list-manage.com%2F=
+unsubscribe%3Fu%3D80dd94390a565dd5529e24fed%26id%3D3e80f82c6c%26e%3Dd9e2e6a=
+57e%26c%3D853e8f3939&amp;data=3D05%7C01%7CEGWEINBERG%40VITERBO.EDU%7C0a368e=
+0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638=
+327304555442594%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzI=
+iLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3Dj32jjXDODD3r7tj=
+st9Oi4pHzQvaPGjttXBkPOt9vF5c%3D&amp;reserved=3D0" originalsrc=3D"https://se=
+ltzerfilmvideo.us20.list-manage.com/unsubscribe?u=3D80dd94390a565dd5529e24f=
+ed&amp;id=3D3e80f82c6c&amp;e=3Dd9e2e6a57e&amp;c=3D853e8f3939" shash=3D"PX3t=
+1piC83r3K0WE07qYCwCiI99tl+DScl1lVwcDUhby45oUzPaIfAlEDIqhCzbVNvb+k9mzloq0/PS=
+yu44OFXSt2Vduy0RjcBcD0O+nOLY6z6hXTfNjvtW2+eplNWHLrAzwyRd9p+5EwgT5+m3SXWMjUs=
+TscuDOWdITCHINVYc=3D" style=3D"mso-line-height-rule: exactly;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-weight: nor=
+mal;text-decoration: underline;">
+unsubscribe from this list</a>.<br>
+<br>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fwww.mailchimp.com%2Femail-referral%2F%3Futm_source%3Dfreemium_newsletter=
+%26utm_medium%3Demail%26utm_campaign%3Dreferral_marketing%26aid%3D80dd94390=
+a565dd5529e24fed%26afl%3D1&amp;data=3D05%7C01%7CEGWEINBERG%40VITERBO.EDU%7C=
+0a368e0b500140cb30ed08dbcb4d2a84%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327304555442594%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DKbPZCkMdc=
+ywTd2JegL4fk5e7ef3yiBO7Tv1o2pXNA2U%3D&amp;reserved=3D0" originalsrc=3D"http=
+://www.mailchimp.com/email-referral/?utm_source=3Dfreemium_newsletter&amp;u=
+tm_medium=3Demail&amp;utm_campaign=3Dreferral_marketing&amp;aid=3D80dd94390=
+a565dd5529e24fed&amp;afl=3D1" shash=3D"GdT20z9B0m/nctKpKf9OjQN2Rxu6lVgGk7K2=
+6pwX8Zu3IhDAI57oa7/5n8WhlT4pcU/1NkWBqM7vr6auosgk+C6QO9aBM4atx0CC7mQGehBnbAs=
+zq0yKmZQtdEOMarp/t+tdi9nRkLX93gTyffFAKd8DI+YPn/nLTE+BPvdS+pA=3D"><img src=
+=3D"https://cdn-images.mailchimp.com/monkey_rewards/intuit-mc-rewards-2.png=
+" border=3D"0" alt=3D"Email Marketing Powered by Mailchimp" title=3D"Mailch=
+imp Email Marketing" width=3D"137" height=3D"53" style=3D"max-width: 100%; =
+height: auto;"></a>
+</div>
+<br>
+<em>Copyright =C2=A9 2023 Seltzer Film &amp; Video, LLC, All rights reserve=
+d.</em> </td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+				</td>
+				<![endif]--><!--[if mso]>
+				</tr>
+				</table>
+				<![endif]--></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+</tr>
+</tbody>
+</table>
+<!-- // END TEMPLATE --></td>
+</tr>
+</tbody>
+</table>
+</center>
+<img src=3D"https://SeltzerFilmVideo.us20.list-manage.com/track/open.php?u=
+=3D80dd94390a565dd5529e24fed&amp;id=3D853e8f3939&amp;e=3Dd9e2e6a57e" height=
+=3D"1" width=3D"1" alt=3D"">
+</div>
+</body>
+</html>
+
+--_----------=_MCPart_1079770276--

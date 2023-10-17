@@ -1,0 +1,134 @@
+Received: from BL3PR20MB5017.namprd20.prod.outlook.com (2603:10b6:208:3bc::6)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023
+ 14:44:35 +0000
+Received: from DM6PR20MB3244.namprd20.prod.outlook.com (2603:10b6:5:1d5::26)
+ by BL3PR20MB5017.namprd20.prod.outlook.com (2603:10b6:208:3bc::6) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.44; Thu, 12 Oct
+ 2023 14:44:34 +0000
+Received: from DM6PR20MB3244.namprd20.prod.outlook.com
+ ([fe80::3528:8218:cb18:dfd8]) by DM6PR20MB3244.namprd20.prod.outlook.com
+ ([fe80::3528:8218:cb18:dfd8%4]) with mapi id 15.20.6863.046; Thu, 12 Oct 2023
+ 14:44:31 +0000
+From: Neil L Rouse <nlrouse@viterbo.edu>
+To: Eric G Weinberg <egweinberg@viterbo.edu>, Philip A Briskey
+	<pabriskey@viterbo.edu>
+Subject: Curl Fixes
+Thread-Topic: Curl Fixes
+Thread-Index: Adn9GpuLPzqhais9RjOAdISxAak+9Q==
+Date: Thu, 12 Oct 2023 14:44:31 +0000
+Message-ID:
+	<DM6PR20MB3244BFD8F6265926EF0D32CAADD3A@DM6PR20MB3244.namprd20.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: DM6PR20MB3244.namprd20.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	eef839b9-ecba-4d3e-bf83-08dbcb31be9a
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic:
+	DM6PR20MB3244:EE_|BL3PR20MB5017:EE_|PH7PR20MB4988:EE_
+x-ms-exchange-crosstenant-originalarrivaltime: 12 Oct 2023 14:44:31.4113 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+x-ms-exchange-crosstenant-network-message-id:
+	eef839b9-ecba-4d3e-bf83-08dbcb31be9a
+x-ms-exchange-transport-crosstenantheadersstamped: BL3PR20MB5017
+x-ms-exchange-transport-endtoendlatency: 00:00:04.4222619
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=viterbo.edu;
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DM6PR20MB3244.namprd20.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INT;
+x-ms-office365-filtering-correlation-id: eef839b9-ecba-4d3e-bf83-08dbcb31be9a
+x-microsoft-antispam: BCL:0;
+x-ms-exchange-atpmessageproperties: SA
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	IFxyLk6vhFFkW7Nm/5PDGcFnwTY6wgZ1i1K++4jb7u39gbi4p3usLse3l+D9UYBI5TDhkOZA3guw+R+ylxFpnw==
+x-ms-exchange-crosstenant-authsource: DM6PR20MB3244.namprd20.prod.outlook.com
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-processed-by-bccfoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	ZfAHatIcgX5IchHVlYzqtSNbOZlIymRZQGCoaCLxwlbpZ0VsMnCx2by0TToVrlfNxDqvw8ABv236psY8qmDW8RQ7GeZO/6Rei0IijXU1Cpg6QoCPyr0TOFKmnbFE39iK4sLfgOIVZD8XPvk1SFbGz7Qr6m3e7xxTOE6PiApUorp3teRs5AYdXANT1iO02z7XxbwULxFPyx6Ky7+IVNTIivtPgaRosOkP98N1y6EIgkyklt0crxNy3V2Qgnbz442Qx+QZHkOAS/NPaFDB5e/ilrylw9WasH7pH1qK5ELuQ0zCTLS4ODXEIN00DAWeUro8iBAngCmprNNfJ2pp1lH70DkkvJ5J0OE4vPawokFlMDH3qrBZwuYKySGOYpcB2uuLHJNpSpMS9vhZjUp2vt0rUO2btnthntzMQzANy5W+090lUCW/TxGX26Sv7PxIgbNK4QUKWnJgW7nyGKUHIWzz32EU9HbdOZCsWT/9tZY+imOvH3VFkNHNcucBXt9V2juPVgVmKihJqEl04QcDT3bYaQppYHfJQCIY+N3QEyJE+PJHZGkSrlTtCBFB3Kd0ngE1NKTdgjdW7yHRVU9UCwNfyO6QeJUp5nOcwn9nDe0ExjD5KW10Og8sP1cN0i/bJXO1531VlnRA6rvPc3ZXQRFUyDznwMWaolUbRKqlS9e9lS0AjLOTSiRgKjNoJ8AbXS6dRfFbMTuHCk3lSguKdGSYZw==
+Content-Type: multipart/alternative;
+	boundary="_000_DM6PR20MB3244BFD8F6265926EF0D32CAADD3ADM6PR20MB3244namp_"
+MIME-Version: 1.0
+
+--_000_DM6PR20MB3244BFD8F6265926EF0D32CAADD3ADM6PR20MB3244namp_
+Content-Type: text/plain; charset="us-ascii"
+
+Infosecurity Magazine
+
+In a recent security alert, the team behind the popular open-source tool curl has announced the release of fixes for two vulnerabilities: CVE-2023-38545 and CVE-2023-38546.
+
+Today's release marks a crucial step in addressing these security concerns. Curl, a command-line tool for data transfer supporting various network protocols, plays a vital role in countless applications, with over 20 billion installations worldwide. Its underlying library, libcurl, also serves as a backbone for web-aware applications, making it an essential component of the internet ecosystem.
+
+The high-severity vulnerability, CVE-2023-38545, affects both curl and libcurl, potentially allowing a heap buffer overflow in the SOCKS5 proxy handshake. This flaw could be exploited under specific conditions and poses a significant security risk.
+
+The low-severity CVE-2023-38546, on the other hand, pertains to a cookie injection issue within libcurl, offering attackers the ability to insert cookies into a running program.
+
+
+--_000_DM6PR20MB3244BFD8F6265926EF0D32CAADD3ADM6PR20MB3244namp_
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-US" link="#0563C1" vlink="#954F72" style="word-wrap:break-word">
+<div class="WordSection1">
+<p><span style="font-size:12.0pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#0A0A0A">Infosecurity Magazine<o:p></o:p></span></p>
+<p><span style="font-size:12.0pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#0A0A0A">In a recent security alert, the team behind the popular open-source tool curl has announced the release of fixes for two vulnerabilities: CVE-2023-38545 and CVE-2023-38546.&nbsp;<o:p></o:p></span></p>
+<p><span style="font-size:12.0pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#0A0A0A">Today&#8217;s release marks a crucial step in addressing these security concerns. Curl, a command-line tool for data transfer supporting various network protocols, plays a vital role
+ in countless applications, with over 20 billion installations worldwide. Its underlying library, libcurl, also serves as a backbone for web-aware applications, making it an essential component of the internet ecosystem.<o:p></o:p></span></p>
+<p><span style="font-size:12.0pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#0A0A0A">The high-severity vulnerability, CVE-2023-38545, affects both curl and libcurl, potentially allowing a heap buffer overflow in the SOCKS5 proxy handshake. This flaw could be
+ exploited under specific conditions and poses a significant security risk.<o:p></o:p></span></p>
+<p><span style="font-size:12.0pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#0A0A0A">The low-severity CVE-2023-38546, on the other hand, pertains to a cookie injection issue within libcurl, offering attackers the ability to insert cookies into a running program.<o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_DM6PR20MB3244BFD8F6265926EF0D32CAADD3ADM6PR20MB3244namp_--

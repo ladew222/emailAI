@@ -1,0 +1,2061 @@
+Received: from MW5PR20MB4258.namprd20.prod.outlook.com (2603:10b6:303:190::18)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023
+ 17:00:31 +0000
+Received: from SJ0PR03CA0190.namprd03.prod.outlook.com (2603:10b6:a03:2ef::15)
+ by MW5PR20MB4258.namprd20.prod.outlook.com (2603:10b6:303:190::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.41; Thu, 12 Oct
+ 2023 17:00:27 +0000
+Received: from SN1PEPF0002BA4F.namprd03.prod.outlook.com
+ (2603:10b6:a03:2ef:cafe::a1) by SJ0PR03CA0190.outlook.office365.com
+ (2603:10b6:a03:2ef::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.38 via Frontend
+ Transport; Thu, 12 Oct 2023 17:00:27 +0000
+Authentication-Results: spf=pass (sender IP is 13.111.92.159)
+ smtp.mailfrom=bounce.s10.mc.pd25.com; dkim=pass (signature was verified)
+ header.d=wwnorton.com;dmarc=pass action=none
+ header.from=wwnorton.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of bounce.s10.mc.pd25.com
+ designates 13.111.92.159 as permitted sender)
+ receiver=protection.outlook.com; client-ip=13.111.92.159;
+ helo=gc159.mta.exacttarget.com; pr=C
+Received: from gc159.mta.exacttarget.com (13.111.92.159) by
+ SN1PEPF0002BA4F.mail.protection.outlook.com (10.167.242.72) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Thu, 12 Oct 2023 17:00:26 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=200608; d=wwnorton.com;
+ h=From:To:Subject:Date:MIME-Version:List-ID:X-CSA-Complaints:List-Unsubscribe:
+ List-Unsubscribe-Post:Message-ID:Content-Type; i=history@wwnorton.com;
+ bh=RiwhEAemjE4gV8zZdida1uBsUauzeMZpc2c9YTe3ADg=;
+ b=sjkDGB4I/gVnHjAOotyH6MuoCLModU5XxkhVxMVJZsziukVw8KeEdKrFtl5uC2E7GSiDWb4HLf6b
+   qjwmDbYff0O/GSVPky/Uhs00L+KM8VPcj82t1C1QDbWoe/vsr9aVfrT0SXShm501i1MtULBgXSQm
+   DcEqQ+73EKZjxIWyOjQ=
+Received: by gc159.mta.exacttarget.com id h50j2k2fmd43 for <egweinberg@viterbo.edu>; Thu, 12 Oct 2023 17:00:26 +0000 (envelope-from <bounce-19696_HTML-1342159977-60758-100026718-303105@bounce.s10.mc.pd25.com>)
+From: "W. W. Norton History" <history@wwnorton.com>
+To: <egweinberg@viterbo.edu>
+Subject: Celebrating Hispanic and Latin American Voices
+Date: Thu, 12 Oct 2023 11:00:26 -0600
+List-ID: <100026718.xt.local>
+X-CSA-Complaints: csa-complaints@eco.de
+x-messageKey: 710463-853563627-10787248
+X-Delivery: Transactional
+X-SFMC-Stack: 10
+x-job: 100026718_60758
+List-Unsubscribe: <https://seagull.wwnorton.com/listUnsubscribeHeader/u/710463/fa080e92dcc9b3e865d5296cdf8f4ceffe164cf60d6efc4671a56660da912b16/853620042>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Report-Abuse-To: abuse@pd25.com
+Message-ID: <154dbe65-4e83-4eee-ad1a-4366fc5c2feb@dfw1s10mta354.xt.local>
+Content-Type: multipart/alternative;
+	boundary="qUJ2qXTMxS1Z=_?:"
+Return-Path:
+ bounce-19696_HTML-1342159977-60758-100026718-303105@bounce.s10.mc.pd25.com
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2023 17:00:26.9467
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5c5e92ca-20ff-4d19-a944-08dbcb44bba5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ SN1PEPF0002BA4F:EE_|MW5PR20MB4258:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ SN1PEPF0002BA4F.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 5c5e92ca-20ff-4d19-a944-08dbcb44bba5
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:13.111.92.159;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:gc159.mta.exacttarget.com;PTR:gc159.mta.exacttarget.com;CAT:NONE;SFS:(13230031)(4636009)(1690799017)(451199024)(4001150100001)(2013699003)(66899024)(31696002)(7636003)(356005)(7596003)(83170400001)(166002)(19810500001)(6916009)(9686003)(42186006)(33964004)(5426002)(40140700001)(58800400005)(26005)(76236004)(19627405001)(31686004)(83380400001)(22186003)(5660300002)(42882007)(8676002)(336012)(1096003)(76899018)(1406899027)(38960500002)(559001)(579004)(19627315001)(19607625013)(19625255004);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2023 17:00:26.7436
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5c5e92ca-20ff-4d19-a944-08dbcb44bba5
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1PEPF0002BA4F.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW5PR20MB4258
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.1300524
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?TFhHSGZFODVFV0V2ODFCRXNpdkxBbWVhOGJvZDFSK3pHdkMxdkdTcW0rUUk5?=
+ =?utf-8?B?TVJXRlZwNHR0LzlJcDhjUUF0Vkg5aGppV0tnTVE4VlZLc0l4VFg2bTUxbjNY?=
+ =?utf-8?B?c0VPaFBtb2xqcTRJVS94U2ZyTzcwVTQra2VNa0Rhd05iT05OSXkycjlLL20x?=
+ =?utf-8?B?WS9PclBydHBJM2ZGU1JNNW9DV1YvMU56ZUpIREwrcjdOd0svcW1OVW0vYytJ?=
+ =?utf-8?B?MnFHRzRrOGJ1VWlQNVhZZmVFVUZxZnVZT0FTTzY2NWxDdCtJU1RRNERSbmg2?=
+ =?utf-8?B?cG5KdWtjYmRZRGpNNjduK3crSEJFK0RiVGdCRFVyT21LOU9kODlXMmxkZUdu?=
+ =?utf-8?B?Ym11NThyb3hSWTQremR2eWFKZ0NqTFdtSW4yd2Erd1hVamZwVjZHUUZnQ3k0?=
+ =?utf-8?B?SlpBcm9ldHNuM1VYeW1rcVJuc2VGQXpvNVJHOW5pSVpTK05VNUpkaHNlVUp5?=
+ =?utf-8?B?ZllhZFV4WXVINkpGVzJweVAzZWRIVHFhOWlwUGlYZUdVMU1PY3ZUTDhnOW91?=
+ =?utf-8?B?Y3JEWU5vbzRFTlhKdS9HRUhlMkt6RmNtTVB3ZWp0Q3lNbTRaTXBDNlZHRGFL?=
+ =?utf-8?B?U1UwdVY0TTMvbmVWVnJ5YjdydjVWWUJvUHJnTDQwUVZqcEc3bkhUU056WHZ1?=
+ =?utf-8?B?MzAwZm1xQWVlQ3EvbEpQc2xDY0c2QUtaSmFJSW00RFYvS29Cc0YxYWpPUjBX?=
+ =?utf-8?B?dHVCaC9acWxUTGM1cG5NQjcybGpOQU91TWM0ZUVxZkFlTXdmVC9hUTVhOHM2?=
+ =?utf-8?B?UGZTeXQ3NzJRZjVJYlVKUW16VU5mZ0ZrOS91TlNsZ3NGSVpKYloxSy9hK3NO?=
+ =?utf-8?B?a1JLaVhvaSt6S3FNYlN2VktxSXNtYkZNbElYa2JnVlRuSzVuVGIxZERQSzFs?=
+ =?utf-8?B?S1R3R3QySFJxdThMREt3MkhDNUZmR2dNb2Npdlp0SFRTNnI4QWtKMC94WjJ0?=
+ =?utf-8?B?ZDNTRmJ1OGpGQmplYXFCaFlHS3VBbmN0azU2YWVNZFVBRmtpczc1bkRicTVq?=
+ =?utf-8?B?MmxtbXdudXF3VzN1WEFPaEx5VStXMjcvRlFDYklwWkpwaVdwSVN3Q0owL3RZ?=
+ =?utf-8?B?dk9STlJSMSs5bG9CYUYxVzhJUVpSRCt3K3hWYS9rRWtVYlZWMm0xSndZSUdm?=
+ =?utf-8?B?WTZzbW5OQmJBdU9STFNoNEQ5MTk5aU02Um13SDcwTktlQ09IdStBYzdqS25u?=
+ =?utf-8?B?V1YrTTk3NXdjYlhOYlU2VHB3WDh1WmtsNmllZmNsMHYvckZrOWdUb3BraytZ?=
+ =?utf-8?B?dy9DSVh3enlWSXVKcXY0R0QvVERvbkw2WXdEemJ4QkNJRldRYXlyN01rcG16?=
+ =?utf-8?B?RHhBc2hLRzhLaWpIb1Rvbk1wM0pvdE5NeThWWExmeTI3T3BDaWZ5MWZqOVlX?=
+ =?utf-8?B?cGhDVzNoZ0ZkSWJYNWs3ODluM1BwSDVqRVROc3VRR0pmVUtsanA0Y25xaG45?=
+ =?utf-8?B?Rko5azJRVlJVcVlzVGlsdnJrNHNnMGQ0MksvUHAzVzViZTFCVWNYVE5mamJW?=
+ =?utf-8?B?anVHN1ZxM0FtNGtXZERiSHo1UkpOMDJDc3NSMXpyUkljQTlTa25UMlA4Y0RM?=
+ =?utf-8?B?UUlBR1VkZm1QWUQ5MTFFbFVjSDIrYm5WT1A1S0hJMHVLZE5WUSs0QTZmSHVB?=
+ =?utf-8?B?ZkczeEVGZ3psNVZISjAyT0JDekhqRkltNUhnTWo0akZOTE1VTEk5VHBZQjVq?=
+ =?utf-8?B?Rng2TWhpbDJuYjhwZWk4Qy9rb2FPWlpyM05SeFluRUJ2ZS9kdGJzenpjVFBw?=
+ =?utf-8?B?ZHRuYmJVOGVUZWdrUE1Cdkl1T2V0TVp4V1V4c1dNVVgyWWNyUlVqN1JnTWtw?=
+ =?utf-8?B?SmNZYXpqTHVIMW5RVFVvdG5YbmFQeUlXUkhDR0QrMDBtaGZVazVaMU1kYjFN?=
+ =?utf-8?B?NU5BekEycjRiMnB1VmFONXBrbUk1Vjh6N1B1eEhHbWJibm83MEFUSnlISVlE?=
+ =?utf-8?B?WitIb3Jqd3RhWFlGbHpSeDBWaHdEMVJPcEY4cnhMMUtsLyswcVc3WXZTaGhG?=
+ =?utf-8?B?RUViQnhKU0FScFZTdzJzdUdJRUE1Szd6WWhsYVdOS2YveHBFRGtWOU9sVVNR?=
+ =?utf-8?B?ci9uZUswZklNR2pFOXZkb2lMNzdEYzJicFMybGx5YVl2RWxqMzFpUnN0cGdV?=
+ =?utf-8?B?Yk9MYXpTRklaV2ZsbGNFeTBoYXdMY2FHNUMycW1PMlhLWlFMYmdGUnVCTmtC?=
+ =?utf-8?B?NnlqTElDMHF1eUR4dVoreTAxcDVSQVU5MWhPb3pZUVh1ZWZ5azNyM3J2MTNI?=
+ =?utf-8?B?ZGJsR3VKZXNad0Jmd3pyWmFDY2crTk1kRTFBUjNwTm4vaXBuek1waHR0NzZB?=
+ =?utf-8?B?T0d4SVNQR1ZMT0djQ0N0TU52b2pkY2VQYWJocUVKUU11c3BCVW9xbjVwYjZI?=
+ =?utf-8?B?ejRIQ2NXUHZNR1lQQ1RSdTVjdm5QRUpTSWxPd2dad0hPN05qdHBWT1NyUGx4?=
+ =?utf-8?B?Zy9xK0R0cmNrbFhveit4SUZuMHl6OGM2a0RTQjRyUmdIZlMrbGcwU1hvZytt?=
+ =?utf-8?B?dVNtdGNqS21Wc3BRaHVXVGh4RnlPNk9UZ05JU29lS3ljTVZPTWlTamppaTRu?=
+ =?utf-8?B?Ky9YbHFyTEhXcG9BNnVSaVFvemQyUU5iU0RDdlZwK2RzZ1AvVDVZM0hxYzE2?=
+ =?utf-8?B?UVpUUHJVQT09?=
+MIME-Version: 1.0
+
+--qUJ2qXTMxS1Z=_?:
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+EXTERNAL: This email originated from a sender outside of Viterbo. Use cauti=
+on when clicking on links or opening attachments.
+
+Explore new releases,=E2=80=8C college titles,=E2=80=8C and a workshop with=
+ historian Kelly Lytle Hern=C3=A1ndez below=E2=80=8C.
+=E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=
+=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=
+=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=
+=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=
+=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =
+=E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=
+=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=
+=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=
+=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=
+=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =
+=E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=
+=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=
+=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=
+=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=
+=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =
+=E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=
+=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=
+=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=
+=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=
+=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD
+[Norton Seagull]<https://seagull.wwnorton.com/e/710463/2023-10-12/2td4rx/85=
+3620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+[https://client-data.knak.io/production/email_assets/633dac4655ece/versions=
+/rRdbeyLlswzUUZimXwnl.png]
+
+Celebrating Hispanic & Latin American Voices
+
+As W. W. Norton celebrates 100 years of publishing =E2=80=9Cbooks that live=
+,=E2=80=9D we=E2=80=99re happy to be the home of great literature and textb=
+ooks that highlight the history and cultures of Hispanic and Latin American=
+ countries. Explore below to find some of our favorite reads!
+
+=E2=80=9CBad Mexicans: Race, Empire, and Revolution in the Borderlands=E2=
+=80=9D hosted by Kelly Lytle Hern=C3=A1ndez
+
+[Circle photo of Leslie Ramos-Salazar.]
+
+Watch our special virtual lecture and Q & A with award-wining historian Kel=
+ly Lytle Hern=C3=A1ndez. Her book, Bancroft Award=E2=80=93winning Bad Mexic=
+ans<https://seagull.wwnorton.com/e/710463/books-9781324004370/2td4q1/853620=
+042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>, reframes our understand=
+ing of U.S. history in this groundbreaking narrative of revolution in the b=
+orderlands. In this 30-minute lecture, Hern=C3=A1ndez explores the dramatic=
+ story of the magonistas, the migrant rebels who sparked the 1910 Mexican R=
+evolution from the United States.
+
+Watch Now =E2=80=BA<https://seagull.wwnorton.com/e/710463/l-710463-2022-03-=
+25-296rk3/2td4q4/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+
+Explore College Titles
+
+Latin American History
+
+[Born in Blood and Fire: A Concise History of Latin America, 5e cover]<http=
+s://seagull.wwnorton.com/e/710463/books-9781324069812/2td4q7/853620042/h/Gr=
+7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+[Born in Blood and Fire: Latin American Voices, 2e cover]<https://seagull.w=
+wnorton.com/e/710463/books-9780393283068/2td4qb/853620042/h/Gr7GGQzouTXJ4Zp=
+6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+
+
+Norton Critical Editions (Hispanic & Latin American Literature)
+
+[Sor Juana In=C3=A9s de la Cruz: Selected Works cover]<https://seagull.wwno=
+rton.com/e/710463/books-9780393920161/2td4qf/853620042/h/Gr7GGQzouTXJ4Zp6kk=
+h5KcmIx3-DAh_ApEYFrD8Xfg8>
+[Lazarillo de Tormes cover]<https://seagull.wwnorton.com/e/710463/books-978=
+0393938050/2td4qj/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+[Don Quijote, 2e cover]<https://seagull.wwnorton.com/e/710463/books-9780393=
+617474/2td4qm/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+[The Underdogs cover (Centenary Edition)]<https://seagull.wwnorton.com/e/71=
+0463/books-9780393922349/2td4qq/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_=
+ApEYFrD8Xfg8>
+Explore More College Titles <https://seagull.wwnorton.com/e/710463/catalog-=
+college/2td4qt/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+
+
+Find Your Next Read
+
+[Bad Mexicans: Race, Empire, and Revolution in the Borderlands]<https://sea=
+gull.wwnorton.com/e/710463/books-9781324064411/2td4qx/853620042/h/Gr7GGQzou=
+TXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+[Discourses of the Elders: The Aztec Huehuetlatolli A First English Transla=
+tion cover]<https://seagull.wwnorton.com/e/710463/books-9781324020585/2td4r=
+1/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+[Into the Amazon: The Life of C=C3=A2ndido Rondon, Trailblazing Explorer, S=
+cientist, Statesman, and Conservationist cover]<https://seagull.wwnorton.co=
+m/e/710463/books-9781324021261/2td4r4/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx=
+3-DAh_ApEYFrD8Xfg8>
+[The Shining Path: Love, Madness, and Revolution in the Andes]<https://seag=
+ull.wwnorton.com/e/710463/books-9780393292800/2td4r7/853620042/h/Gr7GGQzouT=
+XJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+
+[Dom Casmurro cover]<https://seagull.wwnorton.com/e/710463/books-9781324090=
+700/2td4rb/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+[The Golden Age: Poems of the Spanish Renaissance]<https://seagull.wwnorton=
+.com/e/710463/books-9780393329919/2td4rf/853620042/h/Gr7GGQzouTXJ4Zp6kkh5Kc=
+mIx3-DAh_ApEYFrD8Xfg8>
+[So Far from God cover]<https://seagull.wwnorton.com/e/710463/books-9780393=
+326932/2td4rj/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+[Sudden Fiction: Latino Short-Short Stories from the United States and  Lat=
+in America cover]<https://seagull.wwnorton.com/e/710463/books-9780393336450=
+/2td4rm/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+Explore More Norton Titles <https://seagull.wwnorton.com/e/710463/reader/2t=
+d4rq/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+
+ Norton is turning 100! =E2=80=8B=E2=80=8B=E2=80=8B=E2=80=8B=E2=80=8BDiscov=
+er our history and explore
+a century of books that live. Learn more<https://seagull.wwnorton.com/e/710=
+463/norton-celebrates-a-century/2td4rt/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmI=
+x3-DAh_ApEYFrD8Xfg8>.
+
+[Norton Seagull]<https://seagull.wwnorton.com/e/710463/2023-10-12/2td4rx/85=
+3620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+
+500 Fifth Avenue, New York, NY 10110 | (800) 233-4830 | wwnorton.com<https:=
+//seagull.wwnorton.com/e/710463/2023-10-12/2td4rx/853620042/h/Gr7GGQzouTXJ4=
+Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8>
+
+Please do not respond to this email. For questions or requests,
+contact your local representative and reference the title that interests yo=
+u.
+
+
+
+Image Credit: (Hern=C3=A1ndez) Photo by Sebastian Hern=C3=A1ndez
+
+Unsubscribe<https://seagull.wwnorton.com/unsubscribeConfirm/710463/fa080e92=
+dcc9b3e865d5296cdf8f4ceffe164cf60d6efc4671a56660da912b16/853620042>
+
+[https://seagull.wwnorton.com/r/710463/1/853620042/open/1]
+
+
+--qUJ2qXTMxS1Z=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html lang=3D"en-US" xmlns=3D"http://www.w3.org/1999/xhtml" =
+xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-=
+com:office:office"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>Celebrating Hispanic and Latin American Voices</title>
+<!--[if(!mso)]><!-- -->
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<!--<![endif]-->
+<meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1">
+<style type=3D"text/css">#outlook a { padding:0; }
+          body, .body { margin:0;padding:0;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%; }
+          table { border-spacing:0;}
+          img { border:0;height:auto;line-height:100%; outline:none;text-de=
+coration:none;-ms-interpolation-mode:bicubic; }
+          p { display:block;margin:13px 0; }</style><!--[if(mso)]>        =
+=20
+          <xml>        =20
+            <o:OfficeDocumentSettings>          =20
+              <o:AllowPNG/>          =20
+              <o:PixelsPerInch>96</o:PixelsPerInch>        =20
+            </o:OfficeDocumentSettings>        =20
+          </xml>            =20
+          <style type=3D"text/css">
+            table { border-collapse:collapse;mso-table-lspace:0pt;mso-table=
+-rspace:0pt; }
+            .mj-outlook-group-fix { width:100% !important; }
+            .mso-button-dark-mode a {background: transparent !important;}
+          </style>        =20
+        <![endif]--><!--[if(!mso)]><!--><style type=3D"text/css">@import ur=
+l(https://fonts.googleapis.com/css?family=3DLato:300,400,500,700);
+
+@import url(https://fonts.googleapis.com/css?family=3DRaleway:400,400i,700)=
+;
+@import url(https://fonts.googleapis.com/css?family=3DLato:400,400i,700);</=
+style><!--<![endif]--><style type=3D"text/css">@media only screen and (min-=
+width:620px) {
+        .mj-column-per-100 { width:100% !important; max-width: 100%; }
+.mj-column-per-35 { width:35% !important; max-width: 35%; }
+.mj-column-per-65 { width:65% !important; max-width: 65%; }
+.mj-column-per-50 { width:50% !important; max-width: 50%; }
+.mj-column-per-25 { width:25% !important; max-width: 25%; }
+      }</style><style type=3D"text/css">u ~ div .img-container img + div { =
+display: none }
+.links-0068A5-underline a { color: #0068A5; text-decoration: underline; }
+[x-apple-data-detectors-type] {=20
+          color: inherit !important;=20
+          -webkit-text-decoration-color: inherit !important;=20
+          text-decoration: inherit !important;
+          font-weight: inherit !important;
+         }
+.links-05A0DC-bold a { color: #05A0DC; text-decoration: none; font-weight: =
+bold; }
+.links-000000-underline a { color: #000000; text-decoration: underline; }
+.links-0068A5-bold a { color: #0068A5; text-decoration: none; font-weight: =
+bold; }
+.links-FFFFFF a { color: #FFFFFF; text-decoration: none; }
+.links-0068A5 a { color: #0068A5; text-decoration: none; }
+       =20
+
+       =20
+            @media only screen and (min-width:620px) {       =20
+                .padding-0px-0px-30px-0px { padding: 0px 0px 30px 0px !impo=
+rtant}
+.padding-0px-0px-0px-0px { padding: 0px 0px 0px 0px !important}
+.text-align-left { text-align: left !important}
+.padding-0px-0px-0px-50px { padding: 0px 0px 0px 50px !important}
+.padding-0px-0px-0px-30px { padding: 0px 0px 0px 30px !important}
+.padding-0px-115px-0px-0px { padding: 0px 115px 0px 0px !important}
+.img-full-width { max-width: 100% !important}
+.padding-0px-0px-0px-10px { padding: 0px 0px 0px 10px !important}
+.padding-0px-0px-0px-5px { padding: 0px 0px 0px 5px !important}
+.padding-0px-5px-0px-0px { padding: 0px 5px 0px 0px !important}
+.padding-0px-10px-0px-2px { padding: 0px 10px 0px 2px !important}
+.margin-0-auto-0-0 { margin: 0 auto 0 0 !important}
+.padding-0px-10px-0px-0px { padding: 0px 10px 0px 0px !important}
+            }</style><style type=3D"text/css">p{margin: 0 0;}ul{display: bl=
+ock;}ul li{list-style: disc;}li li{list-style: circle;}sup, sub{line-height=
+:0;}body a{text-decoration: none; color: #0068A5;}.image-highlight{transiti=
+on: 0.3s;}.image-highlight:hover{filter: brightness(1.2);}.button-highlight=
+{transition: 0.3s;}.button-highlight:hover{filter: brightness(1.5);}@media =
+only screen and (min-width: 620px) { .hide-on-mobile{display:block !importa=
+nt;}.hide-on-desktop{display:none !important;} }.hide-on-desktop{display:bl=
+ock;}.hide-on-mobile{display:none;}</style><!--[if(mso)]>
+            <style>
+                .hide-on-mobile {display:block !important}
+            </style>
+        <![endif]--><!--[if(mso)]>
+                <style>        =20
+                    .mso-text-align-left { text-align: left !important; }
+                </style>
+            <![endif]--><!--[if(gte mso 16)]>
+                <style>
+                    .mso-text-white a { mso-style-textfill-type: gradient; =
+mso-style-textfill-fill-gradientfill-stoplist: "0 \#FFFFFF 0 100000\,100000=
+ \#FFFFFF 0 100000"; color: #000000 !important; }=20
+                </style>
+            <![endif]--><style>[class~=3D"x_body"] { width: 99.9% }</style>
+</head>
+<body style=3D"word-spacing:normal;background-color:#FFFFFF;" class=3D"body=
+">
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div><!--[if !mso 9]><!-->
+<div id=3D"emailPreHeader" style=3D"display: none;">Explore new releases,=
+=E2=80=8C college titles,=E2=80=8C and a workshop with historian Kelly Lytl=
+e Hern=C3=A1ndez below=E2=80=8C.</div>
+<div style=3D"display: none;">=E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=
+=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=
+=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =
+=E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=
+=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=
+=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=
+=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=
+=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =
+=E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=
+=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=
+=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=
+=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=
+=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =
+=E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=
+=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=
+=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=
+=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=
+=87=CD=8F
+ =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=
+=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=
+=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =E2=80=87=CD=8F =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =
+=C2=AD =C2=AD
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD &nbsp;</div>
+<!--<![endif]-->
+<div style=3D"background-color:#FFFFFF;background-position:center center;ba=
+ckground-size:auto;background-repeat:repeat;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"background-color:#FFFFFF;wid=
+th:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#193862;background-color:#193862;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#193862;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"img-container" style=3D"font-size:0px;padding:0px 0px 0px 0px;=
+word-break:break-word;text-align:left;">
+<div style=3D"margin:0 auto 0 0;max-width:120px;"><a href=3D"https://nam02.=
+safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%=
+2Fe%2F710463%2F2023-10-12%2F2td4rx%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6kkh5Kc=
+mIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C5c5e9=
+2ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63=
+8327268320611177%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3Da99R8GS2oU42Ok=
+wcgwDmHAWN0vsdY8yddBtE6VM7Pfc%3D&amp;reserved=3D0" originalsrc=3D"https://s=
+eagull.wwnorton.com/e/710463/2023-10-12/2td4rx/853620042/h/Gr7GGQzouTXJ4Zp6=
+kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"WmAWnASLwAhhpy2QdJ0eWCBYeLMBDWpU+QPP0=
+OYMgU16tpERToulDDNZV+hYrOjEebAp31U0Azz/iBQPU0l1MsDpI3SOL3lA+xyg77cG6xmdv9tP=
+YS3Raa68fDjN/F+6hnd7W9zWbGq34ayxpGc4NkNf0smGwON0tRQhyiHnVMU=3D" style=3D"te=
+xt-decoration: none; color: #0068A5;" target=3D"_blank"><img alt=3D"Norton =
+Seagull" height=3D"auto" src=3D"https://client-data.knak.io/production/emai=
+l_assets/633dac4655ece/D0zNnH2icD0wojeVWvqXLhwBspTwWL6HvYfsOvl9.png" style=
+=3D"border:none;outline:none;text-decoration:none;height:auto;width:100%;fo=
+nt-size:13px;display:block;" width=3D"120"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"img-container" style=3D"font-size:0px;padding:0px 0px 0px 0px;=
+word-break:break-word;text-align:center;">
+<div style=3D"margin:0 auto;"><img alt=3D"" height=3D"auto" src=3D"https://=
+client-data.knak.io/production/email_assets/633dac4655ece/versions/rRdbeyLl=
+swzUUZimXwnl.png" style=3D"border:none;outline:none;text-decoration:none;he=
+ight:auto;width:100%;font-size:13px;display:block;" width=3D"600"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:20px 25px 10px =
+25px;word-break:break-word;text-align:center;">
+<div class=3D"links-0068A5-underline">
+<div style=3D"font-family:Arial, sans-serif;font-size:24px;letter-spacing:n=
+one;line-height:1.2;text-align:center;mso-line-height-alt:1.813em;color:#00=
+0000;">
+<p style=3D"margin: 0 0;"><span style=3D"color: rgb(25, 56, 98); font-size:=
+ 24px;"><strong><span style=3D"font-family: Raleway, sans-serif, Helvetica,=
+ Arial;">Celebrating Hispanic &amp; Latin American Voices</span></strong></=
+span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:10px 25px 20px =
+25px;word-break:break-word;text-align:left;">
+<div class=3D"links-0068A5-underline">
+<div style=3D"font-family:Arial, sans-serif;font-size:16px;letter-spacing:n=
+one;line-height:1.2;text-align:left;mso-line-height-alt:1.188em;color:#0000=
+00;">
+<p style=3D"margin: 0 0;"><span style=3D"font-size: 16px; color: rgb(25, 56=
+, 98);">As W. W. Norton celebrates 100 years of publishing =E2=80=9Cbooks t=
+hat live,=E2=80=9D we=E2=80=99re happy to be the home of great literature a=
+nd textbooks that highlight the history and cultures of Hispanic
+ and Latin American countries. Explore below to find some of our favorite r=
+eads!</span></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:10px 25px 0px 2=
+5px;word-break:break-word;text-align:center;">
+<div class=3D"links-0068A5-underline">
+<div style=3D"font-family:Arial, sans-serif;font-size:22px;letter-spacing:n=
+one;line-height:1.2;text-align:center;mso-line-height-alt:1.625em;color:#00=
+0000;">
+<p style=3D"margin: 0 0;"><span style=3D"font-size: 22px;"><strong><span st=
+yle=3D"font-family: Raleway, sans-serif, Helvetica, Arial; color: rgb(25, 5=
+6, 98);">=E2=80=9CBad Mexicans: Race, Empire, and Revolution in the Borderl=
+ands=E2=80=9D hosted by Kelly Lytle Hern=C3=A1ndez</span></strong></span></=
+p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"background-color:#FFFFFF;wid=
+th:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:20px 0px 0px 0px;te=
+xt-align:center;vertical-align:top;mso-padding-alt:20px 0px 0px 0px;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:210px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-35 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"padding-0px-0px-30px-0px" style=3D"border-radius:0px;vertical-=
+align:top;padding:0px 0px 10px 0px;mso-padding-alt:0px 0px 30px 0px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"padding-0px-0px-0px-0px img-container" style=3D"font-size:0px;=
+padding:0px 0px 10px 0px;word-break:break-word;mso-padding-alt:0px 0px 0px =
+0px;text-align:center;">
+<div style=3D"margin:0 auto;max-width:147px;"><img alt=3D"Circle photo of L=
+eslie Ramos-Salazar." height=3D"auto" src=3D"https://client-data.knak.io/pr=
+oduction/email_assets/633dac4655ece/FONS5iBXpzGEmmGRQAEuEZ8P8IGKy2m2WBOqY1k=
+T.png" style=3D"border:none;outline:none;text-decoration:none;height:auto;w=
+idth:100%;font-size:13px;display:block;" width=3D"147"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td><td style=3D"vertical-align:top;width:390px;" ><![e=
+ndif]-->
+<div class=3D"mj-column-per-65 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"padding-0px-0px-30px-0px" style=3D"border-radius:0px;vertical-=
+align:top;padding:0px 0px 40px 0px;mso-padding-alt:0px 0px 30px 0px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:0px 20px 10px 2=
+0px;word-break:break-word;text-align:center;">
+<div class=3D"links-05A0DC-bold">
+<div class=3D"mso-text-align-left text-align-left" style=3D"font-family:Ari=
+al, sans-serif;font-size:15px;letter-spacing:-0.4px;line-height:1.2;text-al=
+ign:center;mso-line-height-alt:1.125em;color:#193862;">
+<p style=3D"margin: 0 0;">Watch our special virtual lecture and Q &amp; A w=
+ith award-wining historian Kelly Lytle Hern=C3=A1ndez. Her book, Bancroft A=
+ward=E2=80=93winning
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseagull.wwnorton.com%2Fe%2F710463%2Fbooks-9781324004370%2F2td4q1%2F8536=
+20042%2Fh%2FGr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%=
+7Cegweinberg%40viterbo.edu%7C5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d=
+74958976cb08441cc9b0b%7C0%7C0%7C638327268320611177%7CUnknown%7CTWFpbGZsb3d8=
+eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7=
+C%7C%7C&amp;sdata=3D6JrMcvkKyi0EfOnUCtoPWA9BiE8n5fxVxU1t%2Bud%2Fq%2FA%3D&am=
+p;reserved=3D0" originalsrc=3D"https://seagull.wwnorton.com/e/710463/books-=
+9781324004370/2td4q1/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg=
+8" shash=3D"YVbyzybAAetOAVwF69es9nsUWcY5zwUmQyF6xGzS0VBlDVivq4JVK04ZczZ+udM=
+PZZJkDcYkmIlVSDEjyE1kZTt2lB7iTHN9GqoTnfR7IPxBU7CXAQKleLI4TJWoEeTncGYQqPhWJ/=
+Zilg1u+YkiNRACvtILo2fUpKyAOpWkapI=3D" rel=3D"noopener" style=3D"color: rgb(=
+5, 160, 220); text-decoration: none; font-weight: 700;" target=3D"_blank">
+<em style=3D"text-decoration: none;">Bad Mexicans</em></a>, reframes our un=
+derstanding of U.S. history in this groundbreaking narrative of revolution =
+in the borderlands. In this 30-minute lecture, Hern=C3=A1ndez explores the =
+dramatic story of the&nbsp;<em>magonistas</em>,
+ the migrant rebels who sparked the 1910 Mexican Revolution from the United=
+ States.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:0px 20px 0px 20=
+px;word-break:break-word;text-align:center;">
+<div class=3D"links-000000-underline">
+<div class=3D"mso-text-align-left text-align-left" style=3D"font-family:Ral=
+eway, sans-serif, Helvetica, Arial;font-size:17px;letter-spacing:-0.4px;lin=
+e-height:1.2;text-align:center;mso-line-height-alt:1.25em;color:#000000;">
+<p style=3D"margin: 0 0;"><span style=3D"color: rgb(5, 160, 220);"><strong>=
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fseagull.wwnorton.com%2Fe%2F710463%2Fl-710463-2022-03-25-296rk3%2F2td4q4=
+%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D0=
+5%7C01%7Cegweinberg%40viterbo.edu%7C5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9f=
+c982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327268320611177%7CUnknown%7CTWFpb=
+GZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7=
+C3000%7C%7C%7C&amp;sdata=3DruvPYBoVn8rOBJ1nIRhxvxkUN5QPs4G38ueS3YT6cHA%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://seagull.wwnorton.com/e/710463/l-710=
+463-2022-03-25-296rk3/2td4q4/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApE=
+YFrD8Xfg8" shash=3D"uS6em6Q5CR0/bTUBPhSjaJDDVJSAk4onSUjIMc0hW44Vj8r0gg4d8CP=
+9ic3wbzZk0UTlDH3XdSPpnxJFRC5gHSJPHJO62pNa71C8vuVHCNj1E91z+tPVlmhXVYBdNkR5wR=
+4+mJ83SLGcdS6PRWSQrlaLChUpD3suqwl/JxDQYgk=3D" rel=3D"noopener" style=3D"col=
+or: rgb(5, 160, 220); text-decoration: underline;" target=3D"_blank">Watch
+ Now =E2=80=BA</a></strong></span></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:10px 25px 20px =
+25px;word-break:break-word;text-align:center;">
+<div class=3D"links-0068A5-underline">
+<div style=3D"font-family:Arial, sans-serif;font-size:22px;letter-spacing:n=
+one;line-height:1.2;text-align:center;mso-line-height-alt:1.625em;color:#00=
+0000;">
+<p style=3D"margin: 0 0;"><span style=3D"font-family: Raleway, sans-serif, =
+Helvetica, Arial; font-size: 22px;"><strong><span style=3D"color: rgb(25, 5=
+6, 98);">Explore College Titles</span></strong></span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:0px 25px 20px 2=
+5px;word-break:break-word;text-align:center;">
+<div class=3D"links-0068A5-underline">
+<div style=3D"font-family:Arial, sans-serif;font-size:18px;letter-spacing:n=
+one;line-height:1.2;text-align:center;mso-line-height-alt:1.375em;color:#00=
+0000;">
+<p style=3D"margin: 0 0;"><span style=3D"font-size: 18px; color: rgb(0, 140=
+, 135);"><strong><span style=3D"font-family: Raleway, sans-serif, Helvetica=
+, Arial;">Latin American History</span></strong></span></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid padding-0px-0px-0px-50px" style=3D"font-size:0px;pa=
+dding:0px;text-align:center;vertical-align:top;mso-padding-alt:0px 0px 0px =
+50px;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:275px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-50 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-0px-0px-30px image-highlight img-=
+container" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 30px 20p=
+x 0px; word-break: break-word; mso-padding-alt: 0px 0px 0px 30px; text-alig=
+n: center;">
+<div style=3D"margin:0 auto;max-width:198px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9781324069812%2F2td4q7%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320611177%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DwT4aCNVe4=
+J83l4%2BAMZlzm5ReE376rzZl6tdo8%2FCT9X0%3D&amp;reserved=3D0" originalsrc=3D"=
+https://seagull.wwnorton.com/e/710463/books-9781324069812/2td4q7/853620042/=
+h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"YaAcRLHtX2xmPFLXnpe=
+LBh3zZTGjsyrjeISSzuwWkk9Q2Teh3wT3SygvDz3SqFqDBpbYpPDzLMgEiNJVl7bOcCJoW6DBE6=
+roNizweudMNWql624drDOfN5HAJDo5H9xXaq4Aks99yP+ApnIlRK5e40O6n+U1vfttpl/kdl511=
+Cs=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blank"><=
+img alt=3D"Born in Blood and Fire: A Concise History of Latin America, 5e c=
+over" height=3D"auto" src=3D"https://client-data.knak.io/production/email_a=
+ssets/633dac4655ece/versions/smoa3wXtyNHhCx6zSWwd.png" style=3D"border:none=
+;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;di=
+splay:block;" width=3D"198"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td><td style=3D"vertical-align:top;width:275px;" ><![e=
+ndif]-->
+<div class=3D"mj-column-per-50 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-115px-0px-0px image-highlight img=
+-container" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 0px=
+ 0px; word-break: break-word; mso-padding-alt: 0px 115px 0px 0px; text-alig=
+n: center;">
+<div class=3D"img-full-width" style=3D"margin:0 auto;max-width:160px;"><a h=
+ref=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2F=
+seagull.wwnorton.com%2Fe%2F710463%2Fbooks-9780393283068%2F2td4qb%2F85362004=
+2%2Fh%2FGr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Ceg=
+weinberg%40viterbo.edu%7C5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d7495=
+8976cb08441cc9b0b%7C0%7C0%7C638327268320611177%7CUnknown%7CTWFpbGZsb3d8eyJW=
+IjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C=
+%7C&amp;sdata=3DxQvedMOMRTxj0%2FCEQ%2BP9rF6G%2Be9jlwFZ9mRTq1i9nw4%3D&amp;re=
+served=3D0" originalsrc=3D"https://seagull.wwnorton.com/e/710463/books-9780=
+393283068/2td4qb/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" s=
+hash=3D"fPGWBk0vYFNqM79PXMEb0sFlltiRNsAuCOntYMdnkjrbJ9p71TqsKgy0t8J63XPkDxT=
+DzyCvuoXkiOi0vKp7XpSpfmIYM5vzqH6FEChCQKUehCfvG5QV3krwqyENlUYfowCczaoQQSb4dP=
+CluHQnNXAFI0hYSDEzOsBBaW8+C0U=3D" style=3D"text-decoration: none; color: #0=
+068A5;" target=3D"_blank"><img alt=3D"Born in Blood and Fire: Latin America=
+n Voices, 2e cover" height=3D"auto" src=3D"https://client-data.knak.io/prod=
+uction/email_assets/633dac4655ece/xh6Bos5MakO64cp4eeiL5kGVKuoFRzF0xSgxVlUT.=
+jpg" style=3D"border:none;outline:none;text-decoration:none;height:auto;wid=
+th:100%;font-size:13px;display:block;" width=3D"160"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"font-size:0px;padding:0 0 0 0;word-break:break-word;" class=3D=
+"">
+<div style=3D"line-height:20px;height:20px;mso-line-height-alt:20px;">&nbsp=
+;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:0px 25px 20px 2=
+5px;word-break:break-word;text-align:center;">
+<div class=3D"links-0068A5-underline">
+<div style=3D"font-family:Arial, sans-serif;font-size:18px;letter-spacing:n=
+one;line-height:1.2;text-align:center;mso-line-height-alt:1.375em;color:#00=
+0000;">
+<p style=3D"margin: 0 0;"><span style=3D"font-size: 18px; color: rgb(0, 140=
+, 135);"><strong><span style=3D"font-family: Raleway, sans-serif, Helvetica=
+, Arial;">Norton Critical Editions (Hispanic &amp; Latin American Literatur=
+e)</span></strong></span></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;mso-padding-alt:0px;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:150px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-0px-0px-10px image-highlight img-=
+container" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 20px=
+ 0px; word-break: break-word; mso-padding-alt: 0px 0px 0px 10px; text-align=
+: center;">
+<div style=3D"margin:0 auto;max-width:130px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9780393920161%2F2td4qf%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320611177%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DoiYJNTmaI=
+VdYKlHYI9z4Tj7X%2B1%2FcLINo%2BVjFnJzxDQM%3D&amp;reserved=3D0" originalsrc=
+=3D"https://seagull.wwnorton.com/e/710463/books-9780393920161/2td4qf/853620=
+042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"uIWWc5CmGiMahj3=
+YkaIrR4micPQhel+jOq4rH6yPYYEk/tLNnbQYMaol8AU56FA13PHNAQc/qrJfhJkr1YtOHziUXr=
+yBc1FTpJYgP7gF8Y37VM9EHkGJFYLdBnF6YuNbfK/e0rKWneY+VSXNOdmFGVySkB2kLlf+1GFMU=
+2UwdNQ=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blan=
+k"><img alt=3D"Sor Juana In=C3=A9s de la Cruz: Selected Works cover" height=
+=3D"auto" src=3D"https://client-data.knak.io/production/email_assets/633dac=
+4655ece/PspJR4ZvyhBGS47J6E00RO0imXIxoVmDKqJruSOP.jpg" style=3D"border:none;=
+outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;dis=
+play:block;" width=3D"130"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td><td style=3D"vertical-align:top;width:150px;" ><![e=
+ndif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-0px-0px-5px image-highlight img-c=
+ontainer" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 10px 20px=
+ 0px; word-break: break-word; mso-padding-alt: 0px 0px 0px 5px; text-align:=
+ center;">
+<div style=3D"margin:0 auto;max-width:130px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9780393938050%2F2td4qj%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320611177%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DPRPmWE6ql=
+7MeKNcWHxHervx%2FnLXr3HdNMUTFerzYASc%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://seagull.wwnorton.com/e/710463/books-9780393938050/2td4qj/853620042/h/=
+Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"EBzh2bq8x0EI5RxG61lNn=
+evPV9n0Q7Qip+r9/jFwAn2SYXMLyFJzsXPQi9w2JRwIBdz3Olk6INzlc68xZFw3xuUeY+rQyVQz=
+PGWpZD2vLYNEBzgKQgQmbsi+UUwU7QpllgHes622BoQNS5NG/HhSmylVgSZHW6/ncKsuXVNjGHc=
+=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blank"><im=
+g alt=3D"Lazarillo de Tormes cover" height=3D"auto" src=3D"https://client-d=
+ata.knak.io/production/email_assets/633dac4655ece/ybbE5oI2lMZFkgLuFlsPwcrEQ=
+gJwghladtCXxJkX.jpg" style=3D"border:none;outline:none;text-decoration:none=
+;height:auto;width:100%;font-size:13px;display:block;" width=3D"130"></a></=
+div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td><td style=3D"vertical-align:top;width:150px;" ><![e=
+ndif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-5px-0px-0px image-highlight img-c=
+ontainer" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 20px =
+0px; word-break: break-word; mso-padding-alt: 0px 5px 0px 0px; text-align: =
+center;">
+<div style=3D"margin:0 auto;max-width:130px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9780393617474%2F2td4qm%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320611177%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DZevl2IcYQ=
+PuYIZOCGnImWH7VGRNGFGyV0TfJ5wImaJQ%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://seagull.wwnorton.com/e/710463/books-9780393617474/2td4qm/853620042/h/Gr=
+7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"x+f8Bb6dhKwN04u8b2nW1/L=
+Q0pTtbC+F77HoHckE63YJEHMxbtee1tsAQLUhyYkkpKByR3viL6BtfEQYVUZwzB21OzHBN8sxwY=
++imS/GTZooLc0ZCLXCpunX5wRhBTksP461z/aTwVBhwO9NqJd9fIkih8D8+073xsOyAsMBbyw=
+=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blank"><im=
+g alt=3D"Don Quijote, 2e cover" height=3D"auto" src=3D"https://client-data.=
+knak.io/production/email_assets/633dac4655ece/NNCIw3m9uSPukbqfZiGSzx2XTow23=
+kBiLtE1ROQk.jpg" style=3D"border:none;outline:none;text-decoration:none;hei=
+ght:auto;width:100%;font-size:13px;display:block;" width=3D"130"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td><td style=3D"vertical-align:top;width:150px;" ><![e=
+ndif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"left" class=3D"padding-0px-10px-0px-2px image-highlight img-co=
+ntainer" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 20px 0=
+px; word-break: break-word; mso-padding-alt: 0px 10px 0px 2px; text-align: =
+left;">
+<div class=3D"margin-0-auto-0-0" style=3D"margin:0 auto;max-width:131px;"><=
+a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fseagull.wwnorton.com%2Fe%2F710463%2Fbooks-9780393922349%2F2td4qq%2F85362=
+0042%2Fh%2FGr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7=
+Cegweinberg%40viterbo.edu%7C5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d7=
+4958976cb08441cc9b0b%7C0%7C0%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8e=
+yJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C=
+%7C%7C&amp;sdata=3DluW3ahfyuLzzG8b3jte2Gjr%2FVJxJiakbHDhmlgLnITs%3D&amp;res=
+erved=3D0" originalsrc=3D"https://seagull.wwnorton.com/e/710463/books-97803=
+93922349/2td4qq/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" sh=
+ash=3D"wl/ukp2ijNL0wItzdAswCAvRhih6rQbTU0i0DueI0afrY1MeBBkSTr2EtniKdcjUWORB=
+s3U5rJwg7KXVmnH9tCZdk21f3htOks0FN00a9B6jj3JOtavxc2A7A3y7MDcg55tNOzoPBwEDRGE=
+wTr979+TIh2jJA7MDzIje5luoJvI=3D" style=3D"text-decoration: none; color: #00=
+68A5;" target=3D"_blank"><img alt=3D"The Underdogs cover (Centenary Edition=
+)" height=3D"auto" src=3D"https://client-data.knak.io/production/email_asse=
+ts/633dac4655ece/atsqxm8XHjmiQnQGpaoBjRnQ2EmnBvaxS0qlVf2l.jpg" style=3D"bor=
+der:none;outline:none;text-decoration:none;height:auto;width:100%;font-size=
+:13px;display:block;" width=3D"131"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"button-highlight button-container" style=3D"t=
+ransition: 0.3s; font-size: 0px; padding: 20px 25px 10px 25px; word-break: =
+break-word; text-align: center;" valign=3D"middle">
+<div><!--[if(mso)]><table width=3D"100%" align=3D"center" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0;border-collapse:c=
+ollapse;mso-table-lspace:0pt;mso-table-rspace:0pt;"><tr><td align=3D"center=
+" class=3D"mso-button-dark-mode"><a:roundrect xmlns:a=3D"urn:schemas-micros=
+oft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" href=3D"http=
+s://wwnorton.com/catalog/college" fillcolor=3D"#0070BB" arcsize=3D"278%" st=
+yle=3D"v-text-anchor:middle;width:156.75pt;height:27pt;" stroke=3D"f" ><w:a=
+nchorlock/><a:textbox inset=3D"0,0,0,0"><center style=3D"color:#ffffff; fon=
+t-family:sans-serif, Arial; font-size:16px" class=3D"mso-text-white"><![end=
+if]--><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Fseagull.wwnorton.com%2Fe%2F710463%2Fcatalog-college%2F2td4qt%2F85=
+3620042%2Fh%2FGr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C0=
+1%7Cegweinberg%40viterbo.edu%7C5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e=
+8d74958976cb08441cc9b0b%7C0%7C0%7C638327268320767400%7CUnknown%7CTWFpbGZsb3=
+d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000=
+%7C%7C%7C&amp;sdata=3D6T0Y%2FEkwfJNx3yG%2FCFwTs6mIjZnfq%2F8UW87F1OWe4J4%3D&=
+amp;reserved=3D0" originalsrc=3D"https://seagull.wwnorton.com/e/710463/cata=
+log-college/2td4qt/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8"=
+ shash=3D"oj06X3n9RmtYVhcbbixN6eHtB/G4xFLbYq+24ZkY9aQikhSU0xCgjPregxDpKY2CC=
+HIfkzEv5hcoR2R15sjA9aR7q4zVAW2x+9i7cs+T6qKfIx5O+mhbLQORTBNM+nDa1k8mTGODg3fg=
+rkNskgNtFUvPYkurOzSp9mmqIvnqq6o=3D" style=3D"display: inline-block; backgro=
+und: #0070BB; color: #ffffff; font-family: Arial, sans-serif; font-size: 13=
+px;
+font-weight: normal; line-height: 1.2; margin: 0; text-align: center; text-=
+decoration: none; text-transform: none; padding: 10px 25px 10px 25px; mso-p=
+adding-alt: 0px; border-radius: 100px; mso-border-alt: none; box-sizing: bo=
+rder-box;" target=3D"_blank" width=3D"209">Explore
+ More College Titles </a><!--[if(mso)]></center></a:textbox></a:roundrect><=
+/td></tr></table><![endif]--></div>
+</td>
+</tr>
+<tr>
+<td style=3D"font-size:0px;padding:0 0 0 0;word-break:break-word;" class=3D=
+"">
+<div style=3D"line-height:20px;height:20px;mso-line-height-alt:20px;">&nbsp=
+;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:10px 25px 20px =
+25px;word-break:break-word;text-align:center;">
+<div class=3D"links-0068A5-underline">
+<div style=3D"font-family:Arial, sans-serif;font-size:22px;letter-spacing:n=
+one;line-height:1.2;text-align:center;mso-line-height-alt:1.625em;color:#00=
+0000;">
+<p style=3D"margin: 0 0;"><span style=3D"color: rgb(25, 56, 98); font-famil=
+y: Raleway, sans-serif, Helvetica, Arial; font-size: 22px;"><strong>Find Yo=
+ur Next Read</strong></span></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:150px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-0px-0px-10px image-highlight img-=
+container" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 20px=
+ 0px; word-break: break-word; mso-padding-alt: 0px 0px 0px 10px; text-align=
+: center;">
+<div style=3D"margin:0 auto;max-width:134px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9781324064411%2F2td4qx%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DmZsEg%2FX=
+4pCngdhymlbUrCxGEn%2Bb0QurLyR7MGkEHnmU%3D&amp;reserved=3D0" originalsrc=3D"=
+https://seagull.wwnorton.com/e/710463/books-9781324064411/2td4qx/853620042/=
+h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"QEWezATLykZPYZEatAI=
+v2WRAWnT66DT/Tzvi21zmHSJkbz8WYau0m0oIKqKYrc1+L07RFSTrglYm8wIU7r6flM1V0VhR/f=
+FF4xO4FA/LblfYKDzr3fvPiGFVbXQOMxp3PSx5c/wA6AkouYwaY4YxJIPp/oDau8GvD3cqT6R6g=
+N0=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blank"><=
+img alt=3D"Bad Mexicans: Race, Empire, and Revolution in the Borderlands" h=
+eight=3D"auto" src=3D"https://client-data.knak.io/production/email_assets/6=
+33dac4655ece/R0A2cMBZcK7XlBMtWBiCGt9peOqccyvyCIJbAwwL.jpg" style=3D"border:=
+none;outline:none;text-decoration:none;height:auto;width:100%;font-size:13p=
+x;display:block;" width=3D"134"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td><td style=3D"vertical-align:top;width:150px;" ><![e=
+ndif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-0px-0px-5px image-highlight img-c=
+ontainer" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 20px =
+0px; word-break: break-word; mso-padding-alt: 0px 0px 0px 5px; text-align: =
+center;">
+<div style=3D"margin:0 auto;max-width:130px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9781324020585%2F2td4r1%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DnmBxQdWn8=
+ywqgg18bIvn2C3xZttd%2BKjsUImEuJ2gdHU%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://seagull.wwnorton.com/e/710463/books-9781324020585/2td4r1/853620042/h/=
+Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"eilETBKxsBP978lwFgSkG=
+oGYzeJOTpFBmTCUn8yBihNyjrELdjqqn4cX2FfKSp7/lS1awHb0DwsXdkcSwUYYCQBecBYWshEU=
+eB9qF2rPMTg2c9bKQTI9f3j6O7oe6u7wAgpVXA0Avb8e/aCEQZhwP4qyg1ygXK8KxatDiQpcaRw=
+=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blank"><im=
+g alt=3D"Discourses of the Elders: The Aztec Huehuetlatolli A First English=
+ Translation cover" height=3D"auto" src=3D"https://client-data.knak.io/prod=
+uction/email_assets/633dac4655ece/k9P7LwPaiiz3BX9dFlxgEQoTdkQf82EzWTBHEFZP.=
+jpg" style=3D"border:none;outline:none;text-decoration:none;height:auto;wid=
+th:100%;font-size:13px;display:block;" width=3D"130"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td><td style=3D"vertical-align:top;width:150px;" ><![e=
+ndif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-5px-0px-0px image-highlight img-c=
+ontainer" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 20px =
+0px; word-break: break-word; mso-padding-alt: 0px 5px 0px 0px; text-align: =
+center;">
+<div style=3D"margin:0 auto;max-width:134px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9781324021261%2F2td4r4%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3Drn6qkfOgu=
+PupKhqW0RnctbkWjQn%2Bc2jt%2BCqK1Jx9%2ByI%3D&amp;reserved=3D0" originalsrc=
+=3D"https://seagull.wwnorton.com/e/710463/books-9781324021261/2td4r4/853620=
+042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"QxR4nX+e0YvLOu3=
+g+RoioLnJB6/cn6roxixB2fVLlfrWDnBj3XIpjVrVjwAbI7+T9nPmsMpuqIbQP0cBZjTyEkPNHh=
+mhe3ttEhd7fuTMFQdNtoyszNuRiBP3JFBRd4oA9EzNoYvRmO43OgYRLzgJk5z8QPiTca9seE8m9=
+DsiaHA=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blan=
+k"><img alt=3D"Into the Amazon: The Life of C=C3=A2ndido Rondon, Trailblazi=
+ng Explorer, Scientist, Statesman, and Conservationist cover" height=3D"aut=
+o" src=3D"https://client-data.knak.io/production/email_assets/633dac4655ece=
+/qSbXzOT0Nm75u78KNFPj6D6rwKBOe5qLf2Subz6t.jpg" style=3D"border:none;outline=
+:none;text-decoration:none;height:auto;width:100%;font-size:13px;display:bl=
+ock;" width=3D"134"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td><td style=3D"vertical-align:top;width:150px;" ><![e=
+ndif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-10px-0px-0px image-highlight img-=
+container" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 20px=
+ 0px; word-break: break-word; mso-padding-alt: 0px 10px 0px 0px; text-align=
+: center;">
+<div style=3D"margin:0 auto;max-width:133px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9780393292800%2F2td4r7%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DhLxAsyz%2=
+BUYLWHSSTlMgeIYg06x%2BlUpxoIZPkiKnB628%3D&amp;reserved=3D0" originalsrc=3D"=
+https://seagull.wwnorton.com/e/710463/books-9780393292800/2td4r7/853620042/=
+h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"uNQMig90QwMCh32fbwI=
+6fkmaygLbnlYZHRpmgUSsKBqFUlOGIo9tf1Zd/Vyd4QgCw1mYdVV98QMNcE8tFu53QJHQsRhQPP=
+nj0xA24ygIwZinQAbCdBiZUV6HbNxVgLiL5nPuLVFnqg4c6gxdc+DA65SkrgzsZ2dmGnyLDIvmu=
+a0=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blank"><=
+img alt=3D"The Shining Path: Love, Madness, and Revolution in the Andes" he=
+ight=3D"auto" src=3D"https://client-data.knak.io/production/email_assets/63=
+3dac4655ece/hA8J502Cmet9VnlhXnp5Cjszzge8qdvpjaJqU4Rl.jpg" style=3D"border:n=
+one;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px=
+;display:block;" width=3D"133"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"font-size:0px;padding:0 0 0 0;word-break:break-word;" class=3D=
+"">
+<div style=3D"line-height:10px;height:10px;mso-line-height-alt:10px;">&nbsp=
+;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:150px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-0px-0px-10px image-highlight img-=
+container" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 20px=
+ 0px; word-break: break-word; mso-padding-alt: 0px 0px 0px 10px; text-align=
+: center;">
+<div style=3D"margin:0 auto;max-width:130px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9781324090700%2F2td4rb%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DdjWRVuImp=
+J7eVMBuTvMXZlJiKBR8jRyatyKPH7O3SiE%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://seagull.wwnorton.com/e/710463/books-9781324090700/2td4rb/853620042/h/Gr=
+7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"CcxIV/VWMkvoWuBNAEWEbw4=
+Tv2oChuzQDJpOanPnICNylxasgxlRHy3GQHRlhghvrrKxj+nAG6ngMPONl3h///XqwaKTr1ISkp=
+djdavWLggaimpaNbnGerIlP6/l2eIywL89I/j+jUchbC/CCJ+wvwyYNm5Ht8KCk+QchTqarjY=
+=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blank"><im=
+g alt=3D"Dom Casmurro cover" height=3D"auto" src=3D"https://client-data.kna=
+k.io/production/email_assets/633dac4655ece/Ap7tnaZlLS0tbHTaCfYQpip7MmHSKoee=
+6pRx46Ci.jpg" style=3D"border:none;outline:none;text-decoration:none;height=
+:auto;width:100%;font-size:13px;display:block;" width=3D"130"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td><td style=3D"vertical-align:top;width:150px;" ><![e=
+ndif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-0px-0px-5px image-highlight img-c=
+ontainer" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 20px =
+0px; word-break: break-word; mso-padding-alt: 0px 0px 0px 5px; text-align: =
+center;">
+<div style=3D"margin:0 auto;max-width:131px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9780393329919%2F2td4rf%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DcDbrkvOa7=
+7t32AnmAimLLpIvusQOBotcLkRD0X5t3xU%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://seagull.wwnorton.com/e/710463/books-9780393329919/2td4rf/853620042/h/Gr=
+7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"D8r1yYc6VjxTX+N/0ZE9Vvk=
+XpYMyO9y6BC+f0V1zAPBkP7AzXteG9JM3fWy5t28Cg693gX7wP0fS3rRQkaUnQIFRW/3detdMNx=
+BHC70MKWx56rRUrOm7HQv3DeY9xpLdn7i/xRkOmrFmH/f/JuvZxeHCsItP86/PO6v7Tbl3jCc=
+=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blank"><im=
+g alt=3D"The Golden Age: Poems of the Spanish Renaissance" height=3D"auto" =
+src=3D"https://client-data.knak.io/production/email_assets/633dac4655ece/FQ=
+1wttrZ83ve5FA5Qn3niD55eraBKxgwPP7Z1jW0.jpg" style=3D"border:none;outline:no=
+ne;text-decoration:none;height:auto;width:100%;font-size:13px;display:block=
+;" width=3D"131"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td><td style=3D"vertical-align:top;width:150px;" ><![e=
+ndif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-5px-0px-0px image-highlight img-c=
+ontainer" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 20px =
+0px; word-break: break-word; mso-padding-alt: 0px 5px 0px 0px; text-align: =
+center;">
+<div style=3D"margin:0 auto;max-width:131px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9780393326932%2F2td4rj%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DsaJwXMv38=
+hGEUKwIVgmv%2FJhepRiaIsIgfwxLi%2BEE4Z0%3D&amp;reserved=3D0" originalsrc=3D"=
+https://seagull.wwnorton.com/e/710463/books-9780393326932/2td4rj/853620042/=
+h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"rd9ebjWqB7VM8LLwkwO=
+FWydA9g9NhSuqyA1dUK8RdiZ5rYVfwjpfqFr3kPWyhIdVYIdU0UBg2OgsGBd1wI02SAYWE2H12A=
+OSAg/jMSvVWNdPoEbBfZYCyR2Ypk3VbnZTMwBLkrOZH6qlSAxj/DCqZLQgjs8leGn1zeqC5qvne=
+p4=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blank"><=
+img alt=3D"So Far from God cover" height=3D"auto" src=3D"https://client-dat=
+a.knak.io/production/email_assets/633dac4655ece/klLiFHYVEiRQCHlbCftuFczPJnn=
+WvWDyNemHJaHb.jpg" style=3D"border:none;outline:none;text-decoration:none;h=
+eight:auto;width:100%;font-size:13px;display:block;" width=3D"131"></a></di=
+v>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td><td style=3D"vertical-align:top;width:150px;" ><![e=
+ndif]-->
+<div class=3D"mj-column-per-25 mj-outlook-group-fix" style=3D"font-size:0px=
+;text-align:left;direction:ltr;display:inline-block;vertical-align:top;widt=
+h:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"padding-0px-10px-0px-0px image-highlight img-=
+container" style=3D"transition: 0.3s; font-size: 0px; padding: 0px 0px 20px=
+ 0px; word-break: break-word; mso-padding-alt: 0px 10px 0px 0px; text-align=
+: center;">
+<div style=3D"margin:0 auto;max-width:131px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2Fbooks-9780393336450%2F2td4rm%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6k=
+kh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DEnVHTHRwt=
+U0Z71a3d%2F77BpykKxqWhwp2aAizKVK9Cuo%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://seagull.wwnorton.com/e/710463/books-9780393336450/2td4rm/853620042/h/=
+Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"Ew0mhKMEeXD3WjKzHb2qI=
+oRy4QA64ZBwMWeaDix53OrREDKCyvTx5++hibAQA1wQQPLEERYz1BeaaGZ94LrtiFdk4zbXsPg/=
+Q79t5Tv3CbeyujoCbTryQFZ7HX7WmvB7yFXB8+XoivG4q9+2wF7aJug4X/lIB1quC1LBB/LNpkc=
+=3D" style=3D"text-decoration: none; color: #0068A5;" target=3D"_blank"><im=
+g alt=3D"Sudden Fiction: Latino Short-Short Stories from the United States =
+and  Latin America cover" height=3D"auto" src=3D"https://client-data.knak.i=
+o/production/email_assets/633dac4655ece/VEA66IHbQw24cHAnv2M6kN5NQ1r8b9h4Bzh=
+JQ9H3.jpg" style=3D"border:none;outline:none;text-decoration:none;height:au=
+to;width:100%;font-size:13px;display:block;" width=3D"131"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#E3F5FF;background-color:#E3F5FF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#E3F5FF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"button-highlight button-container" style=3D"t=
+ransition: 0.3s; font-size: 0px; padding: 20px 25px 20px 25px; word-break: =
+break-word; text-align: center;" valign=3D"middle">
+<div><!--[if(mso)]><table width=3D"100%" align=3D"center" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0;border-collapse:c=
+ollapse;mso-table-lspace:0pt;mso-table-rspace:0pt;"><tr><td align=3D"center=
+" class=3D"mso-button-dark-mode"><a:roundrect xmlns:a=3D"urn:schemas-micros=
+oft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" href=3D"http=
+s://wwnorton.com/reader" fillcolor=3D"#0070BB" arcsize=3D"278%" style=3D"v-=
+text-anchor:middle;width:153pt;height:27pt;" stroke=3D"f" ><w:anchorlock/><=
+a:textbox inset=3D"0,0,0,0"><center style=3D"color:#ffffff; font-family:san=
+s-serif, Arial; font-size:16px" class=3D"mso-text-white"><![endif]--><a hre=
+f=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fse=
+agull.wwnorton.com%2Fe%2F710463%2Freader%2F2td4rq%2F853620042%2Fh%2FGr7GGQz=
+ouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40vite=
+rbo.edu%7C5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b=
+0b%7C0%7C0%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDA=
+iLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=
+=3DQwjUj5VEXe%2Bk7%2FktP0mUONEFW90KHSU8svQacEq%2Fb50%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://seagull.wwnorton.com/e/710463/reader/2td4rq/853620042=
+/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"IHzncHGzQgudgnu2yU=
+6M4YrbEfuExJo90FiywAaL82AWQkILX3YGSNPaSyHW+vNqbVLDb8Wb+ONfy5Z12991xKuHt59cH=
+pYD7U+DiIyvRCXJTxAfnY8deog0HF79A/CUvGzbdktoxTzbXdMDPJ9fDqmC9GGyruLfEsWECQ6P=
+LAA=3D" style=3D"display: inline-block; background: #0070BB; color: #ffffff=
+; font-family: Arial, sans-serif; font-size: 13px; font-weight: normal;
+line-height: 1.2; margin: 0; text-align: center; text-decoration: none; tex=
+t-transform: none; padding: 10px 25px; mso-padding-alt: 0px; border-radius:=
+ 100px; mso-border-alt: none; box-sizing: border-box;" target=3D"_blank" wi=
+dth=3D"204">Explore
+ More Norton Titles </a><!--[if(mso)]></center></a:textbox></a:roundrect></=
+td></tr></table><![endif]--></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#FFFFFF;background-color:#FFFFFF;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#FFFFFF;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:0px;text-align:cent=
+er;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:10px 25px 10px =
+25px;word-break:break-word;text-align:center;">
+<div class=3D"links-0068A5-bold">
+<div style=3D"font-family:Arial, sans-serif;font-size:14px;letter-spacing:n=
+one;line-height:1.2;text-align:center;mso-line-height-alt:1.063em;color:#19=
+3862;">
+<p style=3D"margin: 0 0;"><strong>&nbsp;Norton is turning 100! =E2=80=8B=E2=
+=80=8B=E2=80=8B=E2=80=8B=E2=80=8BDiscover our history and explore<br>
+a century of books that live. </strong><strong><a href=3D"https://nam02.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe=
+%2F710463%2Fnorton-celebrates-a-century%2F2td4rt%2F853620042%2Fh%2FGr7GGQzo=
+uTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viter=
+bo.edu%7C5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0=
+b%7C0%7C0%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D=
+GfdNcf3xNVDCetq9sjDOvPgDy5hCaqJ4fwIYD8R8Phg%3D&amp;reserved=3D0" originalsr=
+c=3D"https://seagull.wwnorton.com/e/710463/norton-celebrates-a-century/2td4=
+rt/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"c1Gig3=
+jBi2HARE+JDQwR9qJvzVP9LUJqgLIPJOyxRgjk2qWdygxoUH/gKGK8jSkcgjX89cQEq6EOLXN5r=
+RRyylPgDM2ADeX32uDy9xFmAhdD4Az5/CvAMf8zNmGgPlTowohxWUviBZFnjSAIP+D9VDj8xqQF=
+NU3ALwnWVGOTcdc=3D" rel=3D"noopener" style=3D"color: rgb(0, 104, 165); text=
+-decoration: none; font-weight: 700;" target=3D"_blank">Learn
+ more</a>.</strong></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"section" role=3D"presentation" style=3D"width:100%;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D""><!--[if(mso)|(IE)]><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"block-grid-outloo=
+k" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style=3D"background:#193862;background-color:#193862;Margin:0px auto;m=
+ax-width:600px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"background-color:#193862;width:100%;">
+<tbody>
+<tr>
+<td class=3D"block-grid" style=3D"font-size:0px;padding:25px 0px 20px 0px;t=
+ext-align:center;vertical-align:top;">
+<!--[if(mso)|(IE)]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td style=3D"vertical-align:top;width:600px;" ><!=
+[endif]-->
+<div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0p=
+x;text-align:left;direction:ltr;display:inline-block;vertical-align:top;wid=
+th:100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"border-radius:0px;vertical-align:top;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"image-highlight img-container" style=3D"trans=
+ition: 0.3s; font-size: 0px; padding: 0px 10px 10px 10px; word-break: break=
+-word; text-align: center;">
+<div style=3D"margin:0 auto;max-width:261px;"><a href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2Fe%=
+2F710463%2F2023-10-12%2F2td4rx%2F853620042%2Fh%2FGr7GGQzouTXJ4Zp6kkh5KcmIx3=
+-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C5c5e92ca2=
+0ff4d19a94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327=
+268320767400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLC=
+JBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3Dcdjx18nbVZ3IJ6F7Xc=
+6TnhXsFB23JEAz2wYMfUBTXg8%3D&amp;reserved=3D0" originalsrc=3D"https://seagu=
+ll.wwnorton.com/e/710463/2023-10-12/2td4rx/853620042/h/Gr7GGQzouTXJ4Zp6kkh5=
+KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"y/VHQ/N6tLiRasyfYOqLrQiGcxrCX5D3Ud73Z3lBA=
+9YusbUBzrJ4QZdFnDap4AOIWwIfmmbKKjB3WfAEUJm65ECDXC6072Vnnb1DdEsnjJ5/Ae7URauG=
+p+G7kOlHdX0AXNDlwc51LnCvNJFGg3j8VpnSwtdNz4nNfz9pLvMMVPY=3D" style=3D"text-d=
+ecoration: none; color: #0068A5;" target=3D"_blank"><img alt=3D"Norton Seag=
+ull" height=3D"auto" src=3D"https://client-data.knak.io/production/email_as=
+sets/633dac4655ece/jgd0Smi23eZmOA69q0RfbwgfvCv5UvXpARDYKt77.png" style=3D"b=
+order:none;outline:none;text-decoration:none;height:auto;width:100%;font-si=
+ze:13px;display:block;" width=3D"261"></a></div>
+</td>
+</tr>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:10px 10px 10px =
+10px;word-break:break-word;text-align:center;">
+<div class=3D"links-FFFFFF">
+<div style=3D"font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-siz=
+e:16px;font-weight:700;letter-spacing:none;line-height:1.2;text-align:cente=
+r;mso-line-height-alt:1.188em;color:#FFFFFF;">
+<p style=3D"margin: 0 0;">500 Fifth Avenue, New York, NY 10110 | (800) 233-=
+4830 | <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fseagull.wwnorton.com%2Fe%2F710463%2F2023-10-12%2F2td4rx%2F853620=
+042%2Fh%2FGr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8&amp;data=3D05%7C01%7C=
+egweinberg%40viterbo.edu%7C5c5e92ca20ff4d19a94408dbcb44bba5%7C6b9fc982e8d74=
+958976cb08441cc9b0b%7C0%7C0%7C638327268320767400%7CUnknown%7CTWFpbGZsb3d8ey=
+JWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%=
+7C%7C&amp;sdata=3Dcdjx18nbVZ3IJ6F7Xc6TnhXsFB23JEAz2wYMfUBTXg8%3D&amp;reserv=
+ed=3D0" originalsrc=3D"https://seagull.wwnorton.com/e/710463/2023-10-12/2td=
+4rx/853620042/h/Gr7GGQzouTXJ4Zp6kkh5KcmIx3-DAh_ApEYFrD8Xfg8" shash=3D"y/VHQ=
+/N6tLiRasyfYOqLrQiGcxrCX5D3Ud73Z3lBA9YusbUBzrJ4QZdFnDap4AOIWwIfmmbKKjB3WfAE=
+UJm65ECDXC6072Vnnb1DdEsnjJ5/Ae7URauGp+G7kOlHdX0AXNDlwc51LnCvNJFGg3j8VpnSwtd=
+Nz4nNfz9pLvMMVPY=3D" rel=3D"noopener" style=3D"color: rgb(255, 255, 255); t=
+ext-decoration: none;" target=3D"_blank">
+wwnorton.com</a></p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:10px 10px 10px =
+10px;word-break:break-word;mso-padding-alt:10px 10px 10px 10px;text-align:c=
+enter;">
+<div class=3D"links-0068A5">
+<div style=3D"font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-siz=
+e:16px;font-weight:700;letter-spacing:none;line-height:1.4;text-align:cente=
+r;mso-line-height-alt:1.375em;color:#FFFFFF;">
+<p style=3D"margin: 0 0;">Please do not respond to this email. For question=
+s or requests,&nbsp;<br>
+contact your local representative and reference the title that interests yo=
+u.</p>
+<p style=3D"margin: 0 0;">&nbsp;</p>
+<p style=3D"margin: 0 0;">Image Credit: (Hern=C3=A1ndez) Photo by Sebastian=
+ Hern=C3=A1ndez</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"text-container" style=3D"font-size:0px;padding:10px 10px 10px =
+10px;word-break:break-word;mso-padding-alt:10px 10px 10px 10px;text-align:c=
+enter;">
+<div class=3D"links-FFFFFF">
+<div style=3D"font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-siz=
+e:16px;font-weight:700;letter-spacing:none;line-height:1.2;text-align:cente=
+r;mso-line-height-alt:1.188em;color:#FFFFFF;">
+<p style=3D"margin: 0 0;"><a href=3D"https://nam02.safelinks.protection.out=
+look.com/?url=3Dhttps%3A%2F%2Fseagull.wwnorton.com%2FunsubscribeConfirm%2F7=
+10463%2Ffa080e92dcc9b3e865d5296cdf8f4ceffe164cf60d6efc4671a56660da912b16%2F=
+853620042&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C5c5e92ca20ff4d19a=
+94408dbcb44bba5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63832726832076=
+7400%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik=
+1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DYr6fdSkYkxfvjc4nV55T%2BBOP=
+t01Paqv%2FECMV1CIW7Mk%3D&amp;reserved=3D0" originalsrc=3D"https://seagull.w=
+wnorton.com/unsubscribeConfirm/710463/fa080e92dcc9b3e865d5296cdf8f4ceffe164=
+cf60d6efc4671a56660da912b16/853620042" shash=3D"tEJTn6dzorL/iEZW4Ksk817E6DQ=
+ihIZTONFDW2KjEAv5asKPTH9kOktgqKwN7ObyF/tiBPB0AsEaSt5AKTyFcxuL/5YlsoXSz8bKWG=
+EtCWXgJx4BtCwQ/kHYHyXEs4MylZHZJ0DfM11WXSRYXHamTAvXkhy61/lZrpIgs6aFGNU=3D" r=
+el=3D"noopener" style=3D"color: rgb(255, 255, 255); text-decoration: none;"=
+ target=3D"_blank">Unsubscribe</a></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if(mso)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</div>
+<img alt=3D"" src=3D"https://seagull.wwnorton.com/r/710463/1/853620042/open=
+/1"><style data-ignore-inlining=3D"">@media (prefers-color-scheme: dark) { =
+#_t::before {content:url('https://wraaoezw.emltrk.com/v2/wraaoezw?rd&d=3D[U=
+NIQUE]');}} @media (prefers-color-scheme: light) { #_t::before {content:url=
+('https://wraaoezw.emltrk.com/v2/wraaoezw?rl&d=3D[UNIQUE]');}} @media print=
+{ #_t {background-image:url('https://wraaoezw.emltrk.com/v2/wraaoezw?p&d=3D=
+[UNIQUE]');}} div.OutlookMessageHeader {background-image:url('https://wraao=
+ezw.emltrk.com/v2/wraaoezw?f&d=3D[UNIQUE]')} table.moz-email-headers-table =
+{background-image:url('https://wraaoezw.emltrk.com/v2/wraaoezw?f&d=3D[UNIQU=
+E]')} blockquote #_t {background-image:url('https://wraaoezw.emltrk.com/v2/=
+wraaoezw?f&d=3D[UNIQUE]')} #MailContainerBody #_t {background-image:url('ht=
+tps://wraaoezw.emltrk.com/v2/wraaoezw?f&d=3D[UNIQUE]')}</style>
+<div id=3D"_t"></div>
+<img src=3D"https://wraaoezw.emltrk.com/v2/wraaoezw?d=3D[UNIQUE]" width=3D"=
+1" height=3D"1" border=3D"0" alt=3D"">
+</div>
+</body>
+</html>
+
+--qUJ2qXTMxS1Z=_?:--

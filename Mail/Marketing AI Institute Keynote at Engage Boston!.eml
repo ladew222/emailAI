@@ -1,0 +1,788 @@
+Received: from MW4PR20MB4526.namprd20.prod.outlook.com (2603:10b6:303:18c::6)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023
+ 15:08:21 +0000
+Received: from SN7PR04CA0231.namprd04.prod.outlook.com (2603:10b6:806:127::26)
+ by MW4PR20MB4526.namprd20.prod.outlook.com (2603:10b6:303:18c::6) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.45; Thu, 12 Oct
+ 2023 15:08:17 +0000
+Received: from SN1PEPF000252A3.namprd05.prod.outlook.com
+ (2603:10b6:806:127:cafe::8b) by SN7PR04CA0231.outlook.office365.com
+ (2603:10b6:806:127::26) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.27 via Frontend
+ Transport; Thu, 12 Oct 2023 15:08:17 +0000
+Authentication-Results: spf=pass (sender IP is 13.110.237.26)
+ smtp.mailfrom=bounce.marketing.acquia.com; dkim=none (message not signed)
+ header.d=none;dmarc=pass action=none header.from=acquia.com;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ bounce.marketing.acquia.com designates 13.110.237.26 as permitted sender)
+ receiver=protection.outlook.com; client-ip=13.110.237.26;
+ helo=mta.marketing.acquia.com; pr=C
+Received: from mta.marketing.acquia.com (13.110.237.26) by
+ SN1PEPF000252A3.mail.protection.outlook.com (10.167.242.10) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Thu, 12 Oct 2023 15:08:14 +0000
+Received: by mta.marketing.acquia.com id h505u02fmd4t for <egweinberg@viterbo.edu>; Thu, 12 Oct 2023 15:07:12 +0000 (envelope-from <bounce-79_HTML-6172113-37257-534007292-17009@bounce.marketing.acquia.com>)
+From: "Acquia" <engageteam@acquia.com>
+To: <egweinberg@viterbo.edu>
+Subject: Marketing AI Institute Keynote at Engage Boston!
+Date: Thu, 12 Oct 2023 09:07:12 -0600
+List-Unsubscribe: <https://click.marketing.acquia.com/subscription_center.aspx?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtaWQiOiI1MzQwMDcyOTIiLCJzIjoiNjE3MjExMyIsImxpZCI6Ijc5IiwiaiI6IjM3MjU3IiwiamIiOiIxNzAwOSIsImQiOiIxMjAwMTYifQ.776siwYXfZot2IrNgeZHWhItHBX3jeUL03pNzFG38_Q>, <mailto:leave-fd7b13791a3c402029-fe9a12717266057c76-fef71777776103-fe2f11737164047a771d72-fefe157775640d@leave.marketing.acquia.com>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+x-CSA-Compliance-Source: SFMC
+Reply-To: "Acquia Events" <reply-fef71777776103-79_HTML-6172113-534007292-17009@marketing.acquia.com>
+List-ID: <534006912.xt.local>
+X-CSA-Complaints: csa-complaints@eco.de
+X-SFMC-Stack: 12
+x-job: 534007292_37257
+Message-ID: <cae7cf0e-6cf4-4dba-9a93-c48ee12ebd6c@iad4s12mta816.xt.local>
+Content-Type: multipart/alternative;
+	boundary="7fQdW8HYqYSI=_?:"
+Return-Path:
+ bounce-79_HTML-6172113-37257-534007292-17009@bounce.marketing.acquia.com
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2023 15:08:16.9765
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 3c2a5678-ace9-4054-b1fd-08dbcb351045
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ SN1PEPF000252A3:EE_|MW4PR20MB4526:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ SN1PEPF000252A3.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 3c2a5678-ace9-4054-b1fd-08dbcb351045
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:13.110.237.26;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mta.marketing.acquia.com;PTR:mta.marketing.acquia.com;CAT:NONE;SFS:(13230031)(4636009)(286005)(451199024)(1690799017)(66899024)(9686003)(5426002)(26005)(83170400001)(336012)(426003)(166002)(7636003)(7596003)(356005)(76236004)(16670700002)(8676002)(1096003)(31696002)(42186006)(6916009)(19810500001)(33964004)(31686004)(19627405001)(83380400001)(1406899027)(38960500002);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2023 15:08:14.8983
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3c2a5678-ace9-4054-b1fd-08dbcb351045
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1PEPF000252A3.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW4PR20MB4526
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.4058114
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?Ije9Qj7G4nUeyQbIiHiSgIUlQHCBo3wS0OFxvZroSRRPKbRQ2Qjmy+S/?=
+ =?Windows-1252?Q?iNeb5tPUW8bWxsrjDwAl49vBf6hdAM6CS1zUMFLXryCommoA0jdLGBh+?=
+ =?Windows-1252?Q?Q0mBpAgVkzliNczDzlyCKT1P4I1/wPmkojTsFId1wfL6BFx18VSMx6F7?=
+ =?Windows-1252?Q?4KNnuD6y6GeVZ0uGjdLNuvnGoO0rfYCbpzR0ozzzUNnRh0OkvaZdHv4O?=
+ =?Windows-1252?Q?IoB6fFC8aVrwnUh7+JJ1IaIS8ztqkPT/F2UVOz/qy8CweP9y+GLKzrqr?=
+ =?Windows-1252?Q?aTdQWylpwQlpMoMDk7cKhF2qENLFrj2m3xw8MmDcCeua4ilbKCr80s65?=
+ =?Windows-1252?Q?hjUp5+zC/w8hNjTTdmmv7eHNDYTs9GGXarN6IvVBTCo8UGnLF2tA2hHp?=
+ =?Windows-1252?Q?SyLY6ZkEvqkBX0GCqc1E0SYGzz8LevkZ0KBoI+eBUkQGy43Q27dNRGy3?=
+ =?Windows-1252?Q?k978lSFJiX5IctsMJRQp5AwiYyNwYGzXZQb2GRoRWnI0ur8ZUuGzaFTj?=
+ =?Windows-1252?Q?EJCT4AvPmhh5THN/JrBJmU98pEBEUVhD4XH0cxEb/H1i3rpGVPpxPlEA?=
+ =?Windows-1252?Q?N2l4xahXQRqtzJryu5VA5KlE1IKP90sY++WLEwKic1vJ1faCSMHGlNaw?=
+ =?Windows-1252?Q?nbqiUUFc2OkWMdNcZMJE63jb8p4rGtPjNdqBTAp1TaKYa1G4En9G+LzV?=
+ =?Windows-1252?Q?L/zTQgsgR8RcjDCI94/J3eHmlcmnhjcK1QZELUpEZoaNUvzN/qBUXRf9?=
+ =?Windows-1252?Q?44/1/WRiuBYQO+0FpJddrzKtAVs07Z6bALoFncPtPb6WLtAEpMbVaPyj?=
+ =?Windows-1252?Q?o2uZ9hFxo63QGIHCN9dy40GWviqsAo+s1LpYUIgmd7YKN4t6XnaSbqja?=
+ =?Windows-1252?Q?sMEoglC6ylNnXxjZfZB3VYE1HWZn0AD9yqb9HZGoHNMr37OX5pKddQss?=
+ =?Windows-1252?Q?Si8j0pTSRWP1E/YGsJrwnJ2nY4UTi6n6xruktFpJqpl/T7EQI1K96K7P?=
+ =?Windows-1252?Q?47Fd730IYFsfZdp5VwUA5RiATFhyoiCzy7HX4Y/whGPCd3f13EpylRtF?=
+ =?Windows-1252?Q?VTJ2rifQxncwiY6yDR/nmFP0/yrDUvyH656I1rsp8g4MREBJ22wZWHqB?=
+ =?Windows-1252?Q?vXc7A9gtn9hi4SzVERXtrmmAos/fghyaiD3udKbT5NosutMMfHoIOY0a?=
+ =?Windows-1252?Q?NmBKfXkXsaurp7SxkSEHp9UTG2FyYYBXhAMBlwyJUfvL74mRAURgmJTx?=
+ =?Windows-1252?Q?UKKvIz3ooyd5NmXyfqhjtuzYIQXoQY+9kP1bngOO3DdtuXo4C08pJQGN?=
+ =?Windows-1252?Q?du31//r9UvoyRUB20EVSvXp9gr+31Zpg3fXkaGr5qx9c8zR9+tbKDxc+?=
+ =?Windows-1252?Q?OO749pVByqXGwPQr5T7V5nm8S3zKGNnE4LxWQHTIVmb9Rm/3lJBCfA+H?=
+ =?Windows-1252?Q?d239WWhX2Ui4fo8TYbKrkfetemN/mhGqDr6NMBfyMM0dpv3MYIfrd8bb?=
+ =?Windows-1252?Q?SHiyeLWBoh6oZvJzwfvcmNrX8xOgqlEZFsCnNLTyMJQWuRcJ5fxrITUy?=
+ =?Windows-1252?Q?ki+tKx4ziDgeEMCgwAdRFk0+RuxsPveHfv7ti2/S4O6ZyMMbrOXSKpzD?=
+ =?Windows-1252?Q?N51H6zfYs7KycAP+URIMHM1uVRU9PI+8NvW7sdlk+eiurx6xcpwcHQgT?=
+ =?Windows-1252?Q?90fBoO7tq2/FKOi1yojZyuRP6K4Si0071Gh5YxaXTDkq6wWFiDiBnvCl?=
+ =?Windows-1252?Q?jJTdbi344tYLqlR8TVge3JSXpGmquKg0A7IuJevAy9KYWJiAKVGooBK8?=
+ =?Windows-1252?Q?UlNPhbkJ7a7yMQmJc6goxYOsGjwF0YGZbjjH2WOXvGpNtvFDdyCbISoz?=
+ =?Windows-1252?Q?t0aVEeQnt4AYL1U42OY/JDRc0JBfu0lvPaE7LbkjrmmgQSNMQMP9Noqi?=
+ =?Windows-1252?Q?n5svFtc+ruldKKhzEDvD1auSM4HL7DS+SEFi18ek77jj3ABIGYNRYGl+?=
+ =?Windows-1252?Q?y0hp4E0QhVDyAqpBqkQiVvlczdVmHg=3D=3D?=
+MIME-Version: 1.0
+
+--7fQdW8HYqYSI=_?:
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+EXTERNAL: This email originated from a sender outside of Viterbo. Use cauti=
+on when clicking on links or opening attachments.
+
+We=E2=80=99re five weeks out!
+
+To view this email as a web page, go here.<https://view.marketing.acquia.co=
+m/?qs=3D7019a4fa75a95fcb3e24edfa0d75d28f7b00680f9b8ed7f509fa64f6bba8b2fda9c=
+fdfe0793073e9f991dc8975fb2ba4e59feca86cbb5baeac22d8750489585915eee1e1142d57=
+bc>
+[https://image.marketing.acquia.com/lib/fe2f11737164047a771d72/m/1/608e0aaf=
+-9447-4def-b43f-0492e7e7bdac.jpg]<https://click.marketing.acquia.com/?qs=3D=
+e4092c1c10751c2419c915c73c2f33dde7a0e4c963a96bc1961af74745424bb0e4e4f1d4e53=
+0c7255d1e62e25b824db76288b70b7940b6d7b611fcf83d9c5099>
+
+Hi Eric,
+
+We=E2=80=99ve added another enlightening keynote speaker to our Acquia Enga=
+ge Boston lineup, Paul Roetzer<https://click.marketing.acquia.com/?qs=3De40=
+92c1c10751c2485f8aa759695f1bf14e0ff7d21308f4c0ed48f0bbdc793a9ed8f79d12cc26c=
+4a9f07c4697e0fdb3d5e1a3b3facde33f33adc7551ece4ade3>, the founder and CEO of=
+ the Marketing AI Institute. He will explore Next-Generation Marketing Lead=
+ership, exploring key points on:
+
+  *   What AI is and why it should matter to marketers
+  *   How generative AI is changing marketing and creativity
+  *   Preparing your team to pilot and scale AI across your organization
+
+Between keynotes from Paul Roetzer and Haben Girma, you can check out the t=
+ailored track sessions and full agenda here<https://click.marketing.acquia.=
+com/?qs=3De4092c1c10751c24eb0803f4407c3a7357a0d38a5e07b74b0b27fba5aacd76b91=
+7e05e0c18553a293ac79ded9915defefe781fd1270919ed6d238d1667a84692>. Plan your=
+ days around what=E2=80=99s most valuable to your role!
+
+Finally, make sure to book your discounted hotel<https://book.passkey.com/g=
+o/acquia2023> before October 22, and lock your spot in at the Encore Boston=
+ Harbor.
+
+We hope to see you soon!
+
+Register Now!<https://click.marketing.acquia.com/?qs=3De4092c1c10751c247052=
+c346e1cd7543a29650b7c2c10ef2da07cd7221181dd8c94c72ba0d0a43447d9c3ac02bc4154=
+dfeddf6eb38c44258f3a2f2442aaf1549>
+[https://image.marketing.acquia.com/lib/fe2f11737164047a771d72/m/1/5f048611=
+-96f7-4b6e-bd59-83fca82297d2.png]<https://click.marketing.acquia.com/?qs=3D=
+e4092c1c10751c24cc4fddaacc50b01f8b16301d2c610e58d571aea4742541797cbca8d6cf5=
+4e39c290d831237400f9c2907a6f5f4a7cfec0251e23cfae2e89b>
+[Acquia_Logo]<https://click.marketing.acquia.com/?qs=3De4092c1c10751c24072f=
+f72f1ba666d9435fead173fbdbac0742056808cbaf24d45f143dfc7d8ba5dd8200003958511=
+146ef04e36ae92c5ff85ca03839ed4191>
+
+Privacy Policy<https://click.marketing.acquia.com/?qs=3De4092c1c10751c2480b=
+188d30afd529bcd508d292d4a7577cc0bc90bfa833a72a501e4d24d0fde776b90e6d2e2d19c=
+4db175f7ae45411e0f5ddeef3f6ef5cbf5>
+
+Update Profile<https://click.marketing.acquia.com/profile_center.aspx?qs=3D=
+7658c0f1a97565a4575c00743f309f11f2b984065b6178c1fda6b3ddce2e822090c8988cd3f=
+4288dc732600af4b525b01a2c016cbc86f80c52de81dbcbd70520>      Unsubscribe<htt=
+ps://click.marketing.acquia.com/subscription_center.aspx?qs=3D7658c0f1a9756=
+5a4588fd464f2807a45affbeff0e6c36b7d43177d232d5bb47621f069f5c6907ed28d0adce6=
+13924b199c8eb95b27c572be396f9422ddd7613f>       Contact Us<https://click.ma=
+rketing.acquia.com/?qs=3De4092c1c10751c24a268d7c622faf6f43fbdb719376c46db09=
+469a61df128dd71dfcdb9515b1c85b42283e442738b1b9ce02b4eb83ec6cc72261c95662ba7=
+d6a>
+
+This email was sent by: Acquia, Inc.
+53 State Street, Boston, MA, 02109 US
+
+--7fQdW8HYqYSI=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1">
+<link href=3D"https://static.mautic.net/Proxima-Nova/0.0.2/Proxima-Nova-fon=
+t.css" data-source=3D"mautic" rel=3D"stylesheet"><style type=3D"text/css">
+      ReadMsgBody{ width: 100%;}
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass=
+ font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+      body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin=
+:0 !important;}
+      p { margin: 1em 0;}
+      table td { border-collapse: collapse;}
+      img {outline:0;}
+      a img {border:none;}
+      @-ms-viewport{ width: device-width;}
+    </style><style type=3D"text/css">
+      @media only screen and (max-width: 480px) {
+        .container {width: 100% !important;}
+        .footer { width:auto !important; margin-left:0; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        img { max-width:100% !important; height:auto !important; max-height=
+:auto !important;}
+        .header img{max-width:100% !important;height:auto !important; max-h=
+eight:auto !important;}
+        .photo img { width:100% !important; max-width:100% !important; heig=
+ht:auto !important;}
+        .drop { display:block !important; width: 100% !important; float:lef=
+t; clear:both;}
+        .footerlogo { display:block !important; width: 100% !important; pad=
+ding-top:15px; float:left; clear:both;}
+        .nav4, .nav5, .nav6 { display: none !important; }
+        .tableBlock {width:100% !important;}
+        .responsive-td {width:100% !important; display:block !important; pa=
+dding:0 !important; }
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+        body { padding: 0px !important; font-size: 16px !important; line-he=
+ight: 150% !important;}
+        h1 { font-size: 22px !important; line-height: normal !important;}
+        h2 { font-size: 20px !important; line-height: normal !important;}
+        h3 { font-size: 18px !important; line-height: normal !important;}
+        .buttonstyles {
+          font-family:arial,helvetica,sans-serif !important;
+          font-size: 16px !important;
+          color: #FFFFFF !important;
+          padding: 10px !important;
+        }
+        /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+      }
+      @media only screen and (max-width: 640px) {
+        .container { width:100% !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        .photo img { width:100% !important; height:auto !important;}
+        .nav5, .nav6 { display: none !important;}
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+      }
+    </style><!--[if mso]>       <style type=3D"text/css">           /* Begi=
+n Outlook Font Fix */               body, table, td {                  font=
+-family : Arial, helvetica, sans-serif;                  line-height : 100%=
+;                  font-size : 16px;                  color : #232C61;     =
+          }           /* End Outlook Font Fix */       </style>     <![endi=
+f]-->
+</head>
+<body bgcolor=3D"#F2F2F2" text=3D"#000000" style=3D"-webkit-text-size-adjus=
+t:none;background-color : #F2F2F2; font-family : Arial, helvetica, sans-ser=
+if; line-height : 100%; font-size : 16px; color : #232C61; padding : 0px; "=
+>
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div><style type=3D"text/css">
+div.preheader=20
+{ display: none !important; }=20
+</style>
+<div class=3D"preheader" style=3D"font-size: 1px; display: none !important;=
+">We=E2=80=99re five weeks out!</div>
+<div style=3D"font-size:0; line-height:0;"><img src=3D"https://click.market=
+ing.acquia.com/open.aspx?ffcb10-fef71777776103-fe8215777d620c7a7d-fe2f11737=
+164047a771d72-ff8f1379-fe9a12717266057c76-fefe157775640d&amp;d=3D120016&amp=
+;bmt=3D0" width=3D"1" height=3D"1" alt=3D""></div>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" alig=
+n=3D"center">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<div style=3D"margin:18px 0;"><!--   To view this email as a web page, clic=
+k on the link below,  or copy and paste it into your browser's address wind=
+ow.  https://view.marketing.acquia.com/?qs=3D7019a4fa75a95fcb3e24edfa0d75d2=
+8f7b00680f9b8ed7f509fa64f6bba8b2fda9cfdfe0793073e9f991dc8975fb2ba43941e8cde=
+b85ee85  .//--><font face=3D"verdana" size=3D"1" color=3D"#444444">To
+ view this email as a web page, go <a href=3D"https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Fview.marketing.acquia.com%2F%3Fqs%3D=
+7019a4fa75a95fcb3e24edfa0d75d28f7b00680f9b8ed7f509fa64f6bba8b2fda9cfdfe0793=
+073e9f991dc8975fb2ba4e59feca86cbb5baeac22d8750489585915eee1e1142d57bc&amp;d=
+ata=3D05%7C01%7Cegweinberg%40viterbo.edu%7C3c2a5678ace94054b1fd08dbcb351045=
+%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327201015071994%7CUnknown%=
+7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6M=
+n0%3D%7C3000%7C%7C%7C&amp;sdata=3DARh6L1PYHFdrI0Re8BSP59IHXyUJtBcOi2i%2BYA7=
+Tay0%3D&amp;reserved=3D0" originalsrc=3D"https://view.marketing.acquia.com/=
+?qs=3D7019a4fa75a95fcb3e24edfa0d75d28f7b00680f9b8ed7f509fa64f6bba8b2fda9cfd=
+fe0793073e9f991dc8975fb2ba4e59feca86cbb5baeac22d8750489585915eee1e1142d57bc=
+" shash=3D"HfKNTytlpA5CbnJH2xs+v4yWbukPoIo5Izhl6RwsbpyzFrKrTNoHa0UNZdip55xF=
+ei/EOGOXGS9Di4drVYR5cN3sQ2VgOPUNZIMm56EFOci/iQ4FnwYjIYFU+NYMu6dmmrpUyvIxxjU=
+zJnF8P+IukEcnzEBFalDhNyqwPfcSXRY=3D">
+here.</a></font></div>
+</td>
+</tr>
+<tr>
+<td align=3D"center">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"600" class=
+=3D"container" align=3D"center">
+<tbody>
+<tr>
+<td>
+<table class=3D"tb_properties border_style" style=3D"background-color : #FF=
+FFFF; border : 0px solid transparent;font-size : 16px; font-family : Arial,=
+ helvetica, sans-serif; line-height : 100%; color : #232C61; " cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#FFFFFF" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%">
+<tbody>
+<tr>
+<!-- added padding here -->
+<td class=3D"content_padding" style=3D"padding : 0px; "><!-- end of comment=
+ -->
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tbody>
+<tr>
+<!-- top slot -->
+<td align=3D"center" class=3D"header" valign=3D"top">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"width:100%">
+<tbody>
+<tr>
+<td class=3D"responsive-td" valign=3D"top" style=3D"width: 100%;"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<!-- main slot -->
+<td align=3D"center" class=3D"header" valign=3D"top">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"width:100%">
+<tbody>
+<tr>
+<td class=3D"responsive-td" valign=3D"top" style=3D"width: 100%;">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"min-width: 100%; " class=3D"stylingblock-content-wrapper">
+<tbody>
+<tr>
+<td class=3D"stylingblock-content-wrapper camarker-inner">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentat=
+ion">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fclick.marketing.acquia.com%2F%3Fqs%3De4092c1c10751=
+c2419c915c73c2f33dde7a0e4c963a96bc1961af74745424bb0e4e4f1d4e530c7255d1e62e2=
+5b824db76288b70b7940b6d7b611fcf83d9c5099&amp;data=3D05%7C01%7Cegweinberg%40=
+viterbo.edu%7C3c2a5678ace94054b1fd08dbcb351045%7C6b9fc982e8d74958976cb08441=
+cc9b0b%7C0%7C0%7C638327201015071994%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sda=
+ta=3Dk%2BkqvLtlC6rO0SGuENjcLumRo8B8RsYQWebeZGA5mKM%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://click.marketing.acquia.com/?qs=3De4092c1c10751c2419c915=
+c73c2f33dde7a0e4c963a96bc1961af74745424bb0e4e4f1d4e530c7255d1e62e25b824db76=
+288b70b7940b6d7b611fcf83d9c5099" shash=3D"R7M69rXPqyPdJh+CRlo4+Odm/eaSuc3IK=
+TFrBR1fXnal9fIgSxquJCzk6X3f/u/konchGBCqAcyUaUGn4aSrtmmswI18rWrzKfKwuQ+lJt4B=
+Ckrooohyi09YytFTkbAbHTNjWO8Sr3I57vkGExCEIBgxNC0Nd65jAUWg8Mbw+lw=3D" title=
+=3D"Banner CTA" data-linkto=3D"https://"><img data-assetid=3D"17102" src=3D=
+"https://image.marketing.acquia.com/lib/fe2f11737164047a771d72/m/1/608e0aaf=
+-9447-4def-b43f-0492e7e7bdac.jpg" alt=3D"" width=3D"600" style=3D"display: =
+block; width: 100%; height: auto; padding: 0px; text-align: center;"></a></=
+td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" class=3D"stylingblock-content-wrapper" style=3D"min-width: 100%; ">
+<tbody>
+<tr>
+<td class=3D"stylingblock-content-margin-cell" style=3D"padding: 10px 10px =
+0px; ">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"background-color: transparent; min-width: 100%; " class=3D"st=
+ylingblock-content-wrapper">
+<tbody>
+<tr>
+<td style=3D"padding: 10px 15px 0px; " class=3D"stylingblock-content-wrappe=
+r camarker-inner">
+<p style=3D"line-height: 150%;"><span style=3D"color:#232c61;">Hi Eric,<br>
+<br>
+We=E2=80=99ve added another enlightening keynote speaker to our Acquia Enga=
+ge Boston lineup,</span>
+<b><a data-linkto=3D"https://" href=3D"https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Fclick.marketing.acquia.com%2F%3Fqs%3De4092c=
+1c10751c2485f8aa759695f1bf14e0ff7d21308f4c0ed48f0bbdc793a9ed8f79d12cc26c4a9=
+f07c4697e0fdb3d5e1a3b3facde33f33adc7551ece4ade3&amp;data=3D05%7C01%7Cegwein=
+berg%40viterbo.edu%7C3c2a5678ace94054b1fd08dbcb351045%7C6b9fc982e8d74958976=
+cb08441cc9b0b%7C0%7C0%7C638327201015071994%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi=
+MC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&=
+amp;sdata=3DIrQ3QANJi%2BAtMot7C2uH2kv5yAA1uhUJcO0OCbpi6tY%3D&amp;reserved=
+=3D0" originalsrc=3D"https://click.marketing.acquia.com/?qs=3De4092c1c10751=
+c2485f8aa759695f1bf14e0ff7d21308f4c0ed48f0bbdc793a9ed8f79d12cc26c4a9f07c469=
+7e0fdb3d5e1a3b3facde33f33adc7551ece4ade3" shash=3D"FJ5FktwFarRkirekSbBjUxaF=
+wsB0eFZbTOnw0rSrRi3GFgWsWimm3bu/j/7f/AYEnOrdfHpX9psFElDVGKfrQciapCIFzGTBCdV=
++ENSahq5wSd5ydnljnJ72TJvu0nT3f9nUychhi/n2fBfNR+kWf4XeIIv6mzZFZZ9nJ//5TsQ=3D=
+" style=3D"color:#0176d3;text-decoration:none;" title=3D"Paul Roetzer">Paul
+ Roetzer</a></b><span style=3D"color:#232c61;">, the founder and CEO of the=
+ Marketing AI Institute. He will explore
+<b>Next-Generation Marketing Leadership</b>, exploring key points on:</span=
+></p>
+<ul>
+<li style=3D"line-height: 150%;"><span style=3D"color:#232c61;">What AI is =
+and why it should matter to marketers</span></li><li style=3D"line-height: =
+150%;"><span style=3D"color:#232c61;">How generative AI is changing marketi=
+ng and creativity</span></li><li style=3D"line-height: 150%;"><span style=
+=3D"color:#232c61;">Preparing your team to pilot and scale AI across your o=
+rganization</span></li></ul>
+<p style=3D"line-height: 150%;"><span style=3D"color:#232c61;">Between keyn=
+otes from Paul Roetzer and Haben Girma, you can check out the tailored trac=
+k sessions and full agenda
+<b><a data-linkto=3D"https://" href=3D"https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Fclick.marketing.acquia.com%2F%3Fqs%3De4092c=
+1c10751c24eb0803f4407c3a7357a0d38a5e07b74b0b27fba5aacd76b917e05e0c18553a293=
+ac79ded9915defefe781fd1270919ed6d238d1667a84692&amp;data=3D05%7C01%7Cegwein=
+berg%40viterbo.edu%7C3c2a5678ace94054b1fd08dbcb351045%7C6b9fc982e8d74958976=
+cb08441cc9b0b%7C0%7C0%7C638327201015071994%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi=
+MC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&=
+amp;sdata=3DBTJfo87iZwDQgi6R69WiptGmlVAeWfU%2BJ%2FhRKkfJwq4%3D&amp;reserved=
+=3D0" originalsrc=3D"https://click.marketing.acquia.com/?qs=3De4092c1c10751=
+c24eb0803f4407c3a7357a0d38a5e07b74b0b27fba5aacd76b917e05e0c18553a293ac79ded=
+9915defefe781fd1270919ed6d238d1667a84692" shash=3D"AdscjyAtr/wK8Ip4W9JcJW4b=
+rtg9YClFXBkIXU8bweG69moALI4sOpIHrI6f3EZIcoEzLeOc8+0OOShxb4QIfqFbRkUHSt/20YS=
+9PZYzPIy0U+E8mXyHJNa685I88WPQc+bbYOTE2DrY6GHf3TSRv3I9c3yHn+HVPGgI5MtaN60=3D=
+" style=3D"color:#0176d3;text-decoration:none;" title=3D"here">here</a></b>=
+.
+ Plan your days around what=E2=80=99s most valuable to your role!&nbsp;<br>
+<br>
+Finally, make sure to <b><a alias=3D"book your discounted hotel" conversion=
+=3D"false" data-linkto=3D"other" href=3D"https://nam02.safelinks.protection=
+.outlook.com/?url=3Dhttps%3A%2F%2Fbook.passkey.com%2Fgo%2Facquia2023&amp;da=
+ta=3D05%7C01%7Cegweinberg%40viterbo.edu%7C3c2a5678ace94054b1fd08dbcb351045%=
+7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327201015071994%7CUnknown%7=
+CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn=
+0%3D%7C3000%7C%7C%7C&amp;sdata=3DoYRZ2fAQj87dAxCjb1hceoaP5AQ8Su344roQHGrrpG=
+s%3D&amp;reserved=3D0" originalsrc=3D"https://book.passkey.com/go/acquia202=
+3" shash=3D"EqMsCyRi8+uDo2xg0pchVZ7LQhtXTzwjO/ZHYm0AaHu1k7MbIAmWMsWirS2z2rp=
+57toJNQ+z89UahD3XC7YmExAgYyFgi7mkVdMsjdbWpqvXXk4TBahNSTBe4tXNi4AlCuU8b9ypLL=
+5n4Ed45JUq99HYzzOTsrrbnwAXDqabQ/Y=3D" style=3D"color:#0176d3;text-decoratio=
+n:none;" title=3D"book your discounted hotel">book your discounted hotel</a=
+></b>
+ before October 22, and lock your spot in at the Encore Boston Harbor.&nbsp=
+;<br>
+<br>
+We hope to see you soon!&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" class=3D"stylingblock-content-wrapper" style=3D"min-width: 100%; ">
+<tbody>
+<tr>
+<td class=3D"stylingblock-content-margin-cell" style=3D"padding: 10px; ">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"background-color: transparent; min-width: 100%; " class=3D"st=
+ylingblock-content-wrapper">
+<tbody>
+<tr>
+<td style=3D"padding: 10px; " class=3D"stylingblock-content-wrapper camarke=
+r-inner">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentatio=
+n">
+<tbody>
+<tr>
+<td class=3D"innertd buttonblock" bgcolor=3D"#232C61" style=3D" border-radi=
+us: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background-co=
+lor: #232C61;">
+<a style=3D" font-size: 16px; font-family: Arial, helvetica, sans-serif; co=
+lor: #FFFFFF; text-align: center; text-decoration: none; display: block; ba=
+ckground-color: #232C61; border: 1px solid #232C61; padding: 15px 20px; bor=
+der-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;" targ=
+et=3D"_blank" class=3D"buttonstyles" href=3D"https://nam02.safelinks.protec=
+tion.outlook.com/?url=3Dhttps%3A%2F%2Fclick.marketing.acquia.com%2F%3Fqs%3D=
+e4092c1c10751c247052c346e1cd7543a29650b7c2c10ef2da07cd7221181dd8c94c72ba0d0=
+a43447d9c3ac02bc4154dfeddf6eb38c44258f3a2f2442aaf1549&amp;data=3D05%7C01%7C=
+egweinberg%40viterbo.edu%7C3c2a5678ace94054b1fd08dbcb351045%7C6b9fc982e8d74=
+958976cb08441cc9b0b%7C0%7C0%7C638327201015071994%7CUnknown%7CTWFpbGZsb3d8ey=
+JWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%=
+7C%7C&amp;sdata=3Dw0s1Yg2TcEaFAGFKFNOJE9D%2FsmYeeqfLC%2BrMGhtxzRk%3D&amp;re=
+served=3D0" originalsrc=3D"https://click.marketing.acquia.com/?qs=3De4092c1=
+c10751c247052c346e1cd7543a29650b7c2c10ef2da07cd7221181dd8c94c72ba0d0a43447d=
+9c3ac02bc4154dfeddf6eb38c44258f3a2f2442aaf1549" shash=3D"Kc1O8NiH/Ng6sO2+2n=
+UOv+YFkC14tit8oQrpgTycWsfXrogvelk5XIL7oOaIi8Yq9NhOmnEqGpqm1vRtAcEBGCk7Lh35c=
+45zY93tosCe5CI+PuS9AyiFUTN0nB3+d5AbaS9q9qAP5jP6ANqaHkjBuzY5I9qZyvvt6dhcXKhb=
+n7o=3D" title=3D"https://www.acquia.com/engage/boston" data-linkto=3D"https=
+://">Register
+ Now!</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"min-width: 100%; " class=3D"stylingblock-content-wrapper">
+<tbody>
+<tr>
+<td class=3D"stylingblock-content-wrapper camarker-inner">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentat=
+ion">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fclick.marketing.acquia.com%2F%3Fqs%3De4092c1c10751=
+c24cc4fddaacc50b01f8b16301d2c610e58d571aea4742541797cbca8d6cf54e39c290d8312=
+37400f9c2907a6f5f4a7cfec0251e23cfae2e89b&amp;data=3D05%7C01%7Cegweinberg%40=
+viterbo.edu%7C3c2a5678ace94054b1fd08dbcb351045%7C6b9fc982e8d74958976cb08441=
+cc9b0b%7C0%7C0%7C638327201015071994%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sda=
+ta=3DvTgQ0D9iBV19ZMc6MF%2BEiaSdXU3ynqc0Ge83OxcYfSA%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://click.marketing.acquia.com/?qs=3De4092c1c10751c24cc4fdd=
+aacc50b01f8b16301d2c610e58d571aea4742541797cbca8d6cf54e39c290d831237400f9c2=
+907a6f5f4a7cfec0251e23cfae2e89b" shash=3D"Vc7hFACCb50ITLEExFKdAGmppmSYRwbnD=
+b4thr4tEM4OAPkMOGNANqem5RHP+HmfwC/7+FLtabnZyHnyOToySkmta8O0YdndLXqAeDY62nnL=
+oPY3D38OG3Toqt41m0qvNcMH5fomxgAUaZZ+ZhIFdULqXGs1O6/AHq4OrR6VM9c=3D" title=
+=3D"https://www.acquia.com/engage/boston-sponsors" data-linkto=3D"https://"=
+><img data-assetid=3D"17112" src=3D"https://image.marketing.acquia.com/lib/=
+fe2f11737164047a771d72/m/1/5f048611-96f7-4b6e-bd59-83fca82297d2.png" alt=3D=
+"" width=3D"200" style=3D"display: block; width: 100%; height: auto; paddin=
+g: 0px; text-align: center;"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<!-- footer slot -->
+<td align=3D"center" class=3D"header" valign=3D"top">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"width:100%">
+<tbody>
+<tr>
+<td class=3D"responsive-td" valign=3D"top" style=3D"width: 100%;">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentat=
+ion" style=3D"background-color: #F2F2F2; border: 1px solid transparent; min=
+-width: 100%; " class=3D"stylingblock-content-wrapper">
+<tbody>
+<tr>
+<td style=3D"padding: 10px; " class=3D"stylingblock-content-wrapper camarke=
+r-inner">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" styl=
+e=3D"background:#fff;">
+<!-- SALESFORCE MARKETING CLOUD IMAGE -->
+<tbody>
+<tr>
+<td bgcolor=3D"#F2F2F2">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" alig=
+n=3D"center">
+<tbody>
+<tr>
+<td align=3D"center">
+<table class=3D"container" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ width=3D"550">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fclick.marketing.acquia.com%2F%3Fqs%3De4092c1c10751=
+c24072ff72f1ba666d9435fead173fbdbac0742056808cbaf24d45f143dfc7d8ba5dd820000=
+3958511146ef04e36ae92c5ff85ca03839ed4191&amp;data=3D05%7C01%7Cegweinberg%40=
+viterbo.edu%7C3c2a5678ace94054b1fd08dbcb351045%7C6b9fc982e8d74958976cb08441=
+cc9b0b%7C0%7C0%7C638327201015071994%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sda=
+ta=3DzLIjhtgg36ZaD60LCEIY0osv7CU97WT4ym%2BGOeNBjz8%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://click.marketing.acquia.com/?qs=3De4092c1c10751c24072ff7=
+2f1ba666d9435fead173fbdbac0742056808cbaf24d45f143dfc7d8ba5dd820000395851114=
+6ef04e36ae92c5ff85ca03839ed4191" shash=3D"eL4xBYXB0lP5QxxrrSK0/RvfpRABn8OTZ=
+JR1IcEO43rc3qDGkv29a86uwa6IXuaP5QMcRJEpL27ad8aKvOW3mIA1MqncnxH7ze90PP0cDTme=
+NHEiuPrYy3d3lcPWwqfsUQHyQVbrze0D+qP6OXtZoy2zuiL57iyxh4M9s3aUGu4=3D" title=
+=3D"Link to Acquia.com" target=3D"_blank"><img border=3D"0" style=3D"displa=
+y:block" src=3D"https://image.marketing.acquia.com/lib/fe2f11737164047a771d=
+72/m/1/86026ec6-4466-48f7-b24e-74b884e22e66.png" alt=3D"Acquia_Logo" name=
+=3D"Acquia Logo" width=3D"150" height=3D"50"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- FOOTER CONTENT -->
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"background:#f2f2f2;" width=3D"=
+100%">
+<table class=3D"container" cellpadding=3D"0" cellspacing=3D"0" width=3D"600=
+">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"font-family: Proxima Nova,sans-serif; font-si=
+ze: 11px; color: #000000; padding:0px 0px 25px 0px;">
+<br>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fclick.marketing.acquia.com%2F%3Fqs%3De4092c1c10751c2480b188d30afd529bcd=
+508d292d4a7577cc0bc90bfa833a72a501e4d24d0fde776b90e6d2e2d19c4db175f7ae45411=
+e0f5ddeef3f6ef5cbf5&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C3c2a567=
+8ace94054b1fd08dbcb351045%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383=
+27201015071994%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIi=
+LCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DowPFpMHZz5uqMGU4=
+Xw4Burdflzht7iqg8Q%2B2ZquGQMI%3D&amp;reserved=3D0" originalsrc=3D"https://c=
+lick.marketing.acquia.com/?qs=3De4092c1c10751c2480b188d30afd529bcd508d292d4=
+a7577cc0bc90bfa833a72a501e4d24d0fde776b90e6d2e2d19c4db175f7ae45411e0f5ddeef=
+3f6ef5cbf5" shash=3D"nIC9M7Mk5keZDMgDWO3IA+41s0MZHmo3IOEAeEV5GR5+B6Jq1rjB9R=
+AA4c7trgC01t575lJwFfF4r79HcnfbWvs1UFPZIkyBG6/pLyIycg0aPK32LXc5tRIfmt9N/4Zh2=
+DYXamHbMRZkl7V1EoS/6eBk8p2R2eE7B09OZUgo8K8=3D" target=3D"_blank" style=3D"f=
+ont-size:12px; color: #26A3DD; text-decoration: none; font-weight:bold;">Pr=
+ivacy
+ Policy</a> <br>
+<br>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fclick.marketing.acquia.com%2Fprofile_center.aspx%3Fqs%3D7658c0f1a97565a=
+4575c00743f309f11f2b984065b6178c1fda6b3ddce2e822090c8988cd3f4288dc732600af4=
+b525b01a2c016cbc86f80c52de81dbcbd70520&amp;data=3D05%7C01%7Cegweinberg%40vi=
+terbo.edu%7C3c2a5678ace94054b1fd08dbcb351045%7C6b9fc982e8d74958976cb08441cc=
+9b0b%7C0%7C0%7C638327201015071994%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwM=
+DAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=
+=3DF%2BjCUjbUEMqd9iN7Xs3VwzbWrpG4OPWefURLgxVVizo%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://click.marketing.acquia.com/profile_center.aspx?qs=3D7658c=
+0f1a97565a4575c00743f309f11f2b984065b6178c1fda6b3ddce2e822090c8988cd3f4288d=
+c732600af4b525b01a2c016cbc86f80c52de81dbcbd70520" shash=3D"z3XnH+wVj2k6NVSt=
+4rt/cBtjeuEMfbr9UnzXB7LJraIMMrvduNi2fslFCrfGJz1OgxE9/yvBeYQYM00cr2Eo6u8LByH=
+LaBbUz3JZpQgr9Gyv1LaOtECsvmY2Mw2Xm6TVL9c/5zTW8eWfcGm4Xz6OTpGruu1t/U3NehXXNA=
+r7vFM=3D" target=3D"_blank" style=3D"font-size:12px; color: #26A3DD; text-d=
+ecoration: none; font-weight:bold;">Update
+ Profile</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"https://nam02.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fclick.marketing.acquia.=
+com%2Fsubscription_center.aspx%3Fqs%3D7658c0f1a97565a4588fd464f2807a45affbe=
+ff0e6c36b7d43177d232d5bb47621f069f5c6907ed28d0adce613924b199c8eb95b27c572be=
+396f9422ddd7613f&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C3c2a5678ac=
+e94054b1fd08dbcb351045%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383272=
+01015071994%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJ=
+BTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DWswQt3jybFhPfpJp3Tl=
+9zBofqJLJeGmgp5dEucgm%2BIw%3D&amp;reserved=3D0" originalsrc=3D"https://clic=
+k.marketing.acquia.com/subscription_center.aspx?qs=3D7658c0f1a97565a4588fd4=
+64f2807a45affbeff0e6c36b7d43177d232d5bb47621f069f5c6907ed28d0adce613924b199=
+c8eb95b27c572be396f9422ddd7613f" shash=3D"ujiq83VMbvyglo4p0QleCwBaKqJr4oraS=
+yUwBtxXkQdRXJ7MdOUaQo3+aL4opgo9eZ7i3TDWy/7yCGGuzYBWsdXZQZ4SHQ0cdYmKPO1qITty=
+L4ndXjLOnbVghCykrgmxFzELmGTaA1BFwMXxZMvS3vglgpOtJ6PaZ5xS0QPQWvw=3D" target=
+=3D"_blank" style=3D"font-size:12px; color: #26A3DD; text-decoration: none;=
+ font-weight:bold;">Unsubscribe</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fclick.marketing.acquia.com%2F%3Fqs%3De4092c1c10751c24a268d7c622faf6f43f=
+bdb719376c46db09469a61df128dd71dfcdb9515b1c85b42283e442738b1b9ce02b4eb83ec6=
+cc72261c95662ba7d6a&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C3c2a567=
+8ace94054b1fd08dbcb351045%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383=
+27201015071994%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIi=
+LCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DGdBoo5dRJBoRcY6%=
+2F2oQ1TgGCaK%2FZe%2By2KY8MC%2Fcc6OU%3D&amp;reserved=3D0" originalsrc=3D"htt=
+ps://click.marketing.acquia.com/?qs=3De4092c1c10751c24a268d7c622faf6f43fbdb=
+719376c46db09469a61df128dd71dfcdb9515b1c85b42283e442738b1b9ce02b4eb83ec6cc7=
+2261c95662ba7d6a" shash=3D"NheIFFU6F7JkTb02v9VrhOCsW4BALSBsGEl0xPayy3YOoiGm=
+laUogIvYB0kFKuFGN42wtS6FzTvmpOecq4vLaNXt/yTqVrBK0gv0jTXTtHqbYZMUAVhJXEfO1T3=
+qlCSO4or3q+nWPDuhzMJ84RCOTiSBX1Uja5DFd+xRmXk1teo=3D" target=3D"_blank" styl=
+e=3D"font-size:12px; color: #26A3DD; text-decoration: none; font-weight:bol=
+d;">
+Contact Us</a> <br>
+<br>
+This email was sent by: <span>Acquia, Inc.<br>
+53 State Street, Boston, MA, 02109 US</span> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=3D"top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
+
+--7fQdW8HYqYSI=_?:--

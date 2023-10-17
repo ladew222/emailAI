@@ -1,0 +1,1093 @@
+Received: from CH0PR20MB6419.namprd20.prod.outlook.com (2603:10b6:610:181::12)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Fri, 13 Oct 2023
+ 08:06:41 +0000
+Received: from SN4PR0501CA0070.namprd05.prod.outlook.com
+ (2603:10b6:803:41::47) by CH0PR20MB6419.namprd20.prod.outlook.com
+ (2603:10b6:610:181::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.45; Fri, 13 Oct
+ 2023 08:06:37 +0000
+Received: from SN1PEPF000252A4.namprd05.prod.outlook.com
+ (2603:10b6:803:41:cafe::c1) by SN4PR0501CA0070.outlook.office365.com
+ (2603:10b6:803:41::47) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.30 via Frontend
+ Transport; Fri, 13 Oct 2023 08:06:37 +0000
+Authentication-Results: spf=pass (sender IP is 198.2.137.26)
+ smtp.mailfrom=mandrillapp.com; dkim=pass (signature was verified)
+ header.d=hypothes.is;dmarc=pass action=none
+ header.from=hypothes.is;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of mandrillapp.com
+ designates 198.2.137.26 as permitted sender) receiver=protection.outlook.com;
+ client-ip=198.2.137.26; helo=mail137-26.atl71.mandrillapp.com; pr=C
+Received: from mail137-26.atl71.mandrillapp.com (198.2.137.26) by
+ SN1PEPF000252A4.mail.protection.outlook.com (10.167.242.11) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Fri, 13 Oct 2023 08:06:37 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hypothes.is;
+	s=mandrill; t=1697184396; x=1697444896;
+	i=noreply-UphPpC28@hypothes.is;
+	bh=VChtnxRGIXo3WG5zAawTL4ka1bM/Ch5JjRh+7Qy6yW8=;
+	h=From:Subject:List-Unsubscribe:To:Feedback-ID:Message-Id:Date:
+	 MIME-Version:Content-Type:CC:Date:Subject:From;
+	b=YoiV/DJbul+b+nl1NPt4DEqVJFDwcKt29EVTOQgn0gHZ3MQhG6GDWLML+HnKcaAxg
+	 GflfJH7Rqql8MWgmPGI/rUpYe7UnTES0jNs2OExvCgcPIQhcKZSUmBHg4SCD7nP8dZ
+	 DfpdqyEG5YheKjkGmzV6Pgc1FKpBQfk+YUrFC+DU=
+Received: from pmta07.mandrill.prod.atl01.rsglab.com (localhost [127.0.0.1])
+	by mail137-26.atl71.mandrillapp.com (Mailchimp) with ESMTP id 4S6JxS4nYtzJKFDNm
+	for <egweinberg@viterbo.edu>; Fri, 13 Oct 2023 08:06:36 +0000 (GMT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mandrillapp.com;
+ i=@mandrillapp.com; q=dns/txt; s=mandrill; t=1697184396; h=from :
+ subject : list-unsubscribe : to : message-id : date : mime-version :
+ content-type : from : x-mandrill-user : list-unsubscribe;
+ bh=VChtnxRGIXo3WG5zAawTL4ka1bM/Ch5JjRh+7Qy6yW8=;
+ b=gjOKMxDw75LhCIMwNnA5YHQLjyJKwc+cuEBPAG1M/8WS0n8AQYr2Dr4Z8qckXj56JLzc5
+ Z4bzkh4uqecWNDomZmLDEGVTWpY/i2eEQ6+NEKaGFSdFLQwo+fS5SXuYAUNMuDtmbGa8qPk
+ bgsGqwSvn+/3dAew/0yAOotDB+0//Kw=
+From: Hypothesis <noreply-UphPpC28@hypothes.is>
+Subject: =?utf-8?Q?Hypothesis:=202=20annotations=20from=201=20student=20in=201=20course?=
+Received: from [52.53.166.41] by mandrillapp.com id 1dde9aa5792f4b9fa29bba7ac15203d8; Fri, 13 Oct 2023 08:06:36 +0000
+List-Unsubscribe: http://lms.hypothes.is/email/unsubscribe?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoX3VzZXJpZCI6ImFjY3Q6NmFhZGFkMTAxZTc3NTVhYTcxMDI1ZTc0NDNkYjExQGxtcy5oeXBvdGhlcy5pcyIsInRhZyI6Imluc3RydWN0b3JfZGlnZXN0IiwiZXhwIjoxNjk5Nzc0NzQ3fQ.zwFI3RecUgC4vb4l00Ad-a_RBWQgx7CABceQj5-zqTU
+To: Eric Weinberg <egweinberg@viterbo.edu>
+X-Native-Encoded: 1
+X-Report-Abuse: =?UTF-8?Q?Please=20forward=20a=20copy=20of=20this=20message,=20including=20all=20headers,=20to=20abuse@mandrill.com.=20You=20can=20also=20report=20abuse=20here:=20https://mandrillapp.com/contact/abuse=3Fid=3D30369633.1dde9aa5792f4b9fa29bba7ac15203d8?=
+X-Mandrill-User: md_30369633
+Feedback-ID: 30369633:30369633.20231013:md
+Message-Id: <30369633.20231013080636.6528fa8c989ad9.07034439@mail137-26.atl71.mandrillapp.com>
+Date: Fri, 13 Oct 2023 08:06:36 +0000
+Content-Type: multipart/alternative; boundary="_av-fZvF0LW4NHdrqHx4wVcvhw"
+Return-Path:
+ bounce-md_30369633.6528fa8c.v1-1dde9aa5792f4b9fa29bba7ac15203d8@mandrillapp.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2023 08:06:37.1004
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 887e2d9c-b6ff-4ccf-ba2e-08dbcbc352c8
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ SN1PEPF000252A4:EE_|CH0PR20MB6419:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ SN1PEPF000252A4.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 887e2d9c-b6ff-4ccf-ba2e-08dbcbc352c8
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:4;
+X-Forefront-Antispam-Report:
+ CIP:198.2.137.26;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail137-26.atl71.mandrillapp.com;PTR:mail137-26.atl71.mandrillapp.com;CAT:NONE;SFS:(13230031)(4636009)(286005)(1690799017)(451199024)(26005)(956004)(6916009)(8676002)(336012)(1096003)(42882007)(9686003)(33964004)(19627405001)(66899024)(83170400001)(166002)(7596003)(356005)(7636003)(103116003)(16799955002)(76236004)(1406899027);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2023 08:06:37.0223
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 887e2d9c-b6ff-4ccf-ba2e-08dbcbc352c8
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1PEPF000252A4.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH0PR20MB6419
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.4429347
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?fTJzKgxuhEz6Er9VtuR7iW/SicHY7r+NNCjL6PBcDWUD/RdleaXefPg9ULMJ?=
+ =?us-ascii?Q?DfjY741+3SR2tObbzcWNtrs57R8Br3mdt5gY+jPBdO5+CFe9rR4Izpfbzy8E?=
+ =?us-ascii?Q?5lz7aNrjZDMJIGznH+JGr5dW7WllJasLa1XfbANDuW57ucuG7TZXSVT7Hj1J?=
+ =?us-ascii?Q?65RFOoG0WO9Nf+bOJudwCgCjMLJGrNJK42wKInforiTyZL3yZrIQv9Z/DkMs?=
+ =?us-ascii?Q?dmbf1SnIYjZt5QUl1p1x+lj6Is7Lz8S0HC9TI5eyMP+TJA8g+T8va2UnaEoN?=
+ =?us-ascii?Q?GIzyA+tzWfttrLyHGXwMKQLmO1qoN8Bd8JXs3onAdaMwF73gWx0IPF7KAEFs?=
+ =?us-ascii?Q?kG5SE0I+rhwSsny1/bG9FkDLEUuNoezom9+HHIsp4it93yjaIbrByoEr2C/A?=
+ =?us-ascii?Q?FaZvi1KLpjwFTIM8qvQT0mf9AMUQ3L3t5kJZyH4pwBPQ/DN+DsMqkKZR8O+V?=
+ =?us-ascii?Q?pV2on/+wy+o6GWyJzZL0/2NuCkXs6/1nHWKAFKZ0LsCn+5VchT9XIT0Ca6Kg?=
+ =?us-ascii?Q?IoTtF6CxKBybDqoKs0z3GGqF+/OVqv6gVOZlSxZrPwtW9hTD2GB0fZMBhBsj?=
+ =?us-ascii?Q?ybfuDY3QWoVlVDfZQdYEG+YpbWaEkcsdf5wZm9TapiDNQuS1o5UW8BTrhv+/?=
+ =?us-ascii?Q?xKWIz9Ty8rAe0Wa0FC9LD7tpPVtqRL3VstCJyB+b6PlDNhwQj+0vzkVGFY5i?=
+ =?us-ascii?Q?/iUsRhaGTD9HRa6998BReS2OmE3lxzR3myvSgeaBP6cjO2eHCqmS9qInNNmC?=
+ =?us-ascii?Q?K/y2jFOqJpfPcxGU4Tq+IdKY83p/6cyhXQGzBiDfsGejq6OwAa3K0Db9Gu2i?=
+ =?us-ascii?Q?oNk/gr0ovsd5oi/4NGz9GxxF7FbHXnxx/bE4cdEBWSEC4IKqLb63RzCi84I3?=
+ =?us-ascii?Q?Ra+C241N7aNi2nLMhUVKqjMSY8MOosA7gAxg+ILw0jnA72XEjGk7HcqhXC7Q?=
+ =?us-ascii?Q?8EYveXEeOsYCh8tNP54g32XKvvoob8PcVy4/xxL4qqDnwM4eQvhAXH/zzX1o?=
+ =?us-ascii?Q?HOH71bwCkMIlizF5TSR6zNUpmOq7o11e0yRELPsZf2aydbF77/BJNIQ1vS5h?=
+ =?us-ascii?Q?xahIzIp+r7xBc8pxxDKsW3fcU6RH3b0nXwKRykYowKMjXRvF11I31QfAkpvq?=
+ =?us-ascii?Q?Azp6Wf4C8voRweXI3wdTXbkFR5JCikf4oWWi+5lZ72MPGwWr0EAutxr1weM8?=
+ =?us-ascii?Q?12g5MsXWYy+yCaGe/Hsj7nzzSBKIwyaeiMWkAcEWAPKg65H11aLZuoH7acsR?=
+ =?us-ascii?Q?7CdqpdeWRqQO/WRf6xpvuD9B2KCrSxPIp0YNdQDfmnVl978MEqc6mZ6pTvh3?=
+ =?us-ascii?Q?Lk+5WKBadlGNLzjRwbIcKPMxEmSkF4/XgDLP+XIGi0uzrejqiwj9dft5qjg4?=
+ =?us-ascii?Q?Wg/dEk/bBqt6s84oP6CS+I7SE/Iz7rcRx2SekxFyndAlFv6DrYlcjdEm7IPn?=
+ =?us-ascii?Q?ux/1PoiqfndMs3w6hjtqyknqXbA2zmyhaBeXE39QIz2H+w2N8K1dxAmXXSqo?=
+ =?us-ascii?Q?GbB9RGPYAzVzbkKwgCCGsHevqyG6TL1uxUWJDVqsQt6vw7JrYEKnFzfBv18D?=
+ =?us-ascii?Q?+B2V/nb9L4BHh9LzuUQrNSDfLUhRhl81PlwD0jZYl6a6BZYbH44AzAMad0Hl?=
+ =?us-ascii?Q?vBRu02wtp5FPDLZk2v0gh33aPQxLWn6eIU43ar6zj5+yLWoK3K6S2TQrLagV?=
+ =?us-ascii?Q?JEfO+g=3D=3D?=
+MIME-Version: 1.0
+
+--_av-fZvF0LW4NHdrqHx4wVcvhw
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+EXTERNAL: This email originated from a sender outside of Viterbo. Use cauti=
+on when clicking on links or opening attachments.
+
+[http://lms.hypothes.is/static/images/email_header.png]
+There has been some activity in Hypothesis
+
+Hi,
+
+Your students made 2 annotations in assignments yesterday. Let your student=
+s know about the activity to encourage the ongoing conversation.
+
+HIST-153-001.U2.2023FA
+1 student made 2 annotations in assignments.
+
+We'd love your feedback so we can continue to make improvements to our prod=
+uct. Take our survey<https://mandrillapp.com/track/click/30369633/survey.hs=
+forms.com?p=3DeyJzIjoiMHFIeHl2OVltV1k3dHRZQXE1NENrQkVnM0ZFIiwidiI6MSwicCI6I=
+ntcInVcIjozMDM2OTYzMyxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3N1cnZleS5o=
+c2Zvcm1zLmNvbVxcXC8xcFkyTEJiX2hSOWFKTWdvOWpTMG1WUTNxdWV3XCIsXCJpZFwiOlwiMWR=
+kZTlhYTU3OTJmNGI5ZmEyOWJiYTdhYzE1MjAzZDhcIixcInVybF9pZHNcIjpbXCI5MmMxMGM4Yz=
+UyMDJkMjc1YjFiZmI3MDcyM2EwZmRmMmFmODJmZjI3XCJdfSJ9> to tell us what you thi=
+nk of these new daily emails for instructors.
+
+Share Feedback<https://mandrillapp.com/track/click/30369633/survey.hsforms.=
+com?p=3DeyJzIjoiMHFIeHl2OVltV1k3dHRZQXE1NENrQkVnM0ZFIiwidiI6MSwicCI6IntcInV=
+cIjozMDM2OTYzMyxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3N1cnZleS5oc2Zvcm=
+1zLmNvbVxcXC8xcFkyTEJiX2hSOWFKTWdvOWpTMG1WUTNxdWV3XCIsXCJpZFwiOlwiMWRkZTlhY=
+TU3OTJmNGI5ZmEyOWJiYTdhYzE1MjAzZDhcIixcInVybF9pZHNcIjpbXCI5MmMxMGM4YzUyMDJk=
+Mjc1YjFiZmI3MDcyM2EwZmRmMmFmODJmZjI3XCJdfSJ9>
+[https://cdn-images.mailchimp.com/template_images/gallery/couponshadow.png]
+Hypothesis, 2261 Market Street, #632, San Francisco, California 94114, Unit=
+ed States of America
+
+
+Unsubscribe from this list<http://lms.hypothes.is/email/unsubscribe?token=
+=3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoX3VzZXJpZCI6ImFjY3Q6NmFhZGFkMTA=
+xZTc3NTVhYTcxMDI1ZTc0NDNkYjExQGxtcy5oeXBvdGhlcy5pcyIsInRhZyI6Imluc3RydWN0b3=
+JfZGlnZXN0IiwiZXhwIjoxNjk5Nzc0NzQ3fQ.zwFI3RecUgC4vb4l00Ad-a_RBWQgx7CABceQj5=
+-zqTU>.
+
+
+--_av-fZvF0LW4NHdrqHx4wVcvhw
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:offi=
+ce"><head><!-- NAME: FLYER --><!--[if gte mso 15]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+>
+<title>There has been some activity in Hypothesis</title>
+<style type=3D"text/css">
+ p{
+     margin:10px 0;
+     padding:0;
+}
+ table{
+     border-collapse:collapse;
+}
+ h1,h2,h3,h4,h5,h6{
+     display:block;
+     margin:0;
+     padding:0;
+}
+ img,a img{
+     border:0;
+     height:auto;
+     outline:none;
+     text-decoration:none;
+}
+ body,#bodyTable,#bodyCell{
+     height:100%;
+     margin:0;
+     padding:0;
+     width:100%;
+}
+ .mcnPreviewText{
+     display:none !important;
+}
+ #outlook a{
+     padding:0;
+}
+ img{
+     -ms-interpolation-mode:bicubic;
+}
+ table{
+     mso-table-lspace:0pt;
+     mso-table-rspace:0pt;
+}
+ .ReadMsgBody{
+     width:100%;
+}
+ .ExternalClass{
+     width:100%;
+}
+ p,a,li,td,blockquote{
+     mso-line-height-rule:exactly;
+}
+ a[href^=3Dtel],a[href^=3Dsms]{
+     color:inherit;
+     cursor:default;
+     text-decoration:none;
+}
+ p,a,li,td,body,table,blockquote{
+     -ms-text-size-adjust:100%;
+     -webkit-text-size-adjust:100%;
+}
+ .ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.Exte=
+rnalClass span,.ExternalClass font{
+     line-height:100%;
+}
+ a[x-apple-data-detectors]{
+     color:inherit !important;
+     text-decoration:none !important;
+     font-size:inherit !important;
+     font-family:inherit !important;
+     font-weight:inherit !important;
+     line-height:inherit !important;
+}
+ a.mcnButton{
+     display:block;
+}
+ .mcnImage,.mcnRetinaImage{
+     vertical-align:bottom;
+}
+ .mcnTextContent{
+     word-break:break-word;
+}
+ .mcnTextContent img{
+     height:auto !important;
+}
+ .mcnDividerBlock{
+     table-layout:fixed !important;
+}
+/* @tab Page @section background style @tip Set the background color and to=
+p border for your email. You may want to choose colors that match your comp=
+any's branding. */
+ body,#bodyTable{
+    /*@editable*/
+    background-color:#363636;
+}
+/* @tab Page @section background style @tip Set the background color and to=
+p border for your email. You may want to choose colors that match your comp=
+any's branding. */
+ #bodyCell{
+    /*@editable*/
+    border-top:0;
+}
+/* @tab Page @section heading 1 @tip Set the styling for all first-level he=
+adings in your emails. These should be the largest of your headings. @style=
+ heading 1 */
+ h1{
+    /*@editable*/
+    color:#bd1c2b !important;
+    /*@editable*/
+    font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*@editable*/
+    font-size:40px;
+    /*@editable*/
+    font-style:normal;
+    /*@editable*/
+    font-weight:bold;
+    /*@editable*/
+    line-height:100%;
+    /*@editable*/
+    letter-spacing:-1px;
+    /*@editable*/
+    text-align:center;
+}
+/* @tab Page @section heading 2 @tip Set the styling for all second-level h=
+eadings in your emails. @style heading 2 */
+ h2{
+    /*@editable*/
+    color:#404040 !important;
+    /*@editable*/
+    font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*@editable*/
+    font-size:26px;
+    /*@editable*/
+    font-style:normal;
+    /*@editable*/
+    font-weight:bold;
+    /*@editable*/
+    line-height:125%;
+    /*@editable*/
+    letter-spacing:-.75px;
+    /*@editable*/
+    text-align:left;
+}
+/* @tab Page @section heading 3 @tip Set the styling for all third-level he=
+adings in your emails. @style heading 3 */
+ h3{
+    /*@editable*/
+    color:#606060 !important;
+    /*@editable*/
+    font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*@editable*/
+    font-size:18px;
+    /*@editable*/
+    font-style:normal;
+    /*@editable*/
+    font-weight:bold;
+    /*@editable*/
+    line-height:125%;
+    /*@editable*/
+    letter-spacing:-.5px;
+    /*@editable*/
+    text-align:left;
+}
+/* @tab Page @section heading 4 @tip Set the styling for all fourth-level h=
+eadings in your emails. These should be the smallest of your headings. @sty=
+le heading 4 */
+ h4{
+    /*@editable*/
+    color:#808080 !important;
+    /*@editable*/
+    font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*@editable*/
+    font-size:16px;
+    /*@editable*/
+    font-style:normal;
+    /*@editable*/
+    font-weight:bold;
+    /*@editable*/
+    line-height:125%;
+    /*@editable*/
+    letter-spacing:normal;
+    /*@editable*/
+    text-align:left;
+}
+/* @tab Preheader @section preheader style @tip Set the background color an=
+d borders for your email's preheader area. */
+ #templatePreheader{
+    /*@editable*/
+    background-color:#FFFFFF;
+    /*@editable*/
+    border-top:0;
+    /*@editable*/
+    border-bottom:1px solid #D5D5D5;
+}
+/* @tab Preheader @section preheader text @tip Set the styling for your ema=
+il's preheader text. Choose a size and color that is easy to read. */
+ .preheaderContainer .mcnTextContent,.preheaderContainer .mcnTextContent p{
+    /*@editable*/
+    color:#bd1c2b;
+    /*@editable*/
+    font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*@editable*/
+    font-size:11px;
+    /*@editable*/
+    line-height:125%;
+    /*@editable*/
+    text-align:left;
+}
+/* @tab Preheader @section preheader link @tip Set the styling for your ema=
+il's header links. Choose a color that helps them stand out from your text.=
+ */
+ .preheaderContainer .mcnTextContent a{
+    /*@editable*/
+    color:#bd1c2b;
+    /*@editable*/
+    font-weight:normal;
+    /*@editable*/
+    text-decoration:underline;
+}
+/* @tab Header @section header style @tip Set the background color and bord=
+ers for your email's header area. */
+ #templateHeader{
+    /*@editable*/
+    background-color:#EEEEEE;
+    /*@editable*/
+    border-top:0;
+    /*@editable*/
+    border-bottom:0;
+}
+/* @tab Header @section header text @tip Set the styling for your email's h=
+eader text. Choose a size and color that is easy to read. */
+ .headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
+    /*@editable*/
+    color:#606060;
+    /*@editable*/
+    font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*@editable*/
+    font-size:15px;
+    /*@editable*/
+    line-height:150%;
+    /*@editable*/
+    text-align:left;
+}
+/* @tab Header @section header link @tip Set the styling for your email's h=
+eader links. Choose a color that helps them stand out from your text. */
+ .headerContainer .mcnTextContent a{
+    /*@editable*/
+    color:#bd1c2b;
+    /*@editable*/
+    font-weight:normal;
+    /*@editable*/
+    text-decoration:underline;
+}
+/* @tab Body @section body style @tip Set the background color and borders =
+for your email's body area. */
+ #templateBody{
+    /*@editable*/
+    background-color:#eeeeee;
+    /*@editable*/
+    border-top:0;
+    /*@editable*/
+    border-bottom:0;
+}
+/* @tab Body @section body container @tip Set the background color and bord=
+er for your email's body text container. */
+ #bodyBackground{
+    /*@editable*/
+    background-color:#FFFFFF;
+    /*@editable*/
+    border:1px solid #D5D5D5;
+}
+/* @tab Body @section body text @tip Set the styling for your email's body =
+text. Choose a size and color that is easy to read. */
+ .bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
+    /*@editable*/
+    color:#606060;
+    /*@editable*/
+    font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*@editable*/
+    font-size:15px;
+    /*@editable*/
+    line-height:150%;
+    /*@editable*/
+    text-align:left;
+}
+/* @tab Body @section body link @tip Set the styling for your email's body =
+links. Choose a color that helps them stand out from your text. */
+ .bodyContainer .mcnTextContent a{
+    /*@editable*/
+    color:#bd1c2b;
+    /*@editable*/
+    font-weight:normal;
+    /*@editable*/
+    text-decoration:underline;
+}
+/* @tab Footer @section footer style @tip Set the background color and bord=
+ers for your email's footer area. */
+ #templateFooter{
+    /*@editable*/
+    background-color:#363636;
+    /*@editable*/
+    border-top:0;
+    /*@editable*/
+    border-bottom:0;
+}
+/* @tab Footer @section footer text @tip Set the styling for your email's f=
+ooter text. Choose a size and color that is easy to read. */
+ .footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
+    /*@editable*/
+    color:#CCCCCC;
+    /*@editable*/
+    font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*@editable*/
+    font-size:11px;
+    /*@editable*/
+    line-height:125%;
+    /*@editable*/
+    text-align:center;
+}
+/* @tab Footer @section footer link @tip Set the styling for your email's f=
+ooter links. Choose a color that helps them stand out from your text. */
+ .footerContainer .mcnTextContent a{
+    /*@editable*/
+    color:#CCCCCC;
+    /*@editable*/
+    font-weight:normal;
+    /*@editable*/
+    text-decoration:underline;
+}
+ @media only screen and (max-width: 480px){
+     body,table,td,p,a,li,blockquote{
+         -webkit-text-size-adjust:none !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     body{
+         width:100% !important;
+         min-width:100% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .templateContainer{
+         max-width:600px !important;
+         width:100% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnRetinaImage{
+         max-width:100% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnImage{
+         height:auto !important;
+         width:100% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnCa=
+ptionBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.=
+mcnImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCapti=
+onRightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptio=
+nRightImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImage=
+CardRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnIm=
+ageCardRightImageContentContainer{
+         max-width:100% !important;
+         width:100% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnBoxedTextContentContainer{
+         min-width:100% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnImageGroupContent{
+         padding:9px !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOut=
+er .mcnTextContent{
+         padding-top:9px !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcnC=
+aptionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-c=
+hild .mcnTextContent{
+         padding-top:18px !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnImageCardBottomImageContent{
+         padding-bottom:9px !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnImageGroupBlockInner{
+         padding-top:0 !important;
+         padding-bottom:0 !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnImageGroupBlockOuter{
+         padding-top:9px !important;
+         padding-bottom:9px !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnTextContent,.mcnBoxedTextContentColumn{
+         padding-right:18px !important;
+         padding-left:18px !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+         padding-right:18px !important;
+         padding-bottom:0 !important;
+         padding-left:18px !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+     .mcpreview-image-uploader{
+         display:none !important;
+         width:100% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+    /* @tab Mobile Styles @section heading 1 @tip Make the first-level head=
+ings larger in size for better readability on small screens. */
+     h1{
+        /*@editable*/
+        font-size:24px !important;
+        /*@editable*/
+        line-height:125% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+    /* @tab Mobile Styles @section heading 2 @tip Make the second-level hea=
+dings larger in size for better readability on small screens. */
+     h2{
+        /*@editable*/
+        font-size:20px !important;
+        /*@editable*/
+        line-height:125% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+    /* @tab Mobile Styles @section heading 3 @tip Make the third-level head=
+ings larger in size for better readability on small screens. */
+     h3{
+        /*@editable*/
+        font-size:18px !important;
+        /*@editable*/
+        line-height:125% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+    /* @tab Mobile Styles @section heading 4 @tip Make the fourth-level hea=
+dings larger in size for better readability on small screens. */
+     h4{
+        /*@editable*/
+        font-size:16px !important;
+        /*@editable*/
+        line-height:125% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+    /* @tab Mobile Styles @section Boxed Text @tip Make the boxed text larg=
+er in size for better readability on small screens. We recommend a font siz=
+e of at least 16px. */
+     .mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentCont=
+ainer .mcnTextContent p{
+        /*@editable*/
+        font-size:18px !important;
+        /*@editable*/
+        line-height:125% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+    /* @tab Mobile Styles @section Preheader Visibility @tip Set the visibi=
+lity of the email's preheader on small screens. You can hide it to save spa=
+ce. */
+     #templatePreheader{
+        /*@editable*/
+        display:block !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+    /* @tab Mobile Styles @section Preheader Text @tip Make the preheader t=
+ext larger in size for better readability on small screens. */
+     .preheaderContainer .mcnTextContent,.preheaderContainer .mcnTextConten=
+t p{
+        /*@editable*/
+        font-size:14px !important;
+        /*@editable*/
+        line-height:115% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+    /* @tab Mobile Styles @section Header Text @tip Make the header text la=
+rger in size for better readability on small screens. */
+     .headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
+        /*@editable*/
+        font-size:18px !important;
+        /*@editable*/
+        line-height:125% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+    /* @tab Mobile Styles @section Body Text @tip Make the body text larger=
+ in size for better readability on small screens. We recommend a font size =
+of at least 16px. */
+     .bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
+        /*@editable*/
+        font-size:18px !important;
+        /*@editable*/
+        line-height:125% !important;
+    }
+}
+ @media only screen and (max-width: 480px){
+    /* @tab Mobile Styles @section footer text @tip Make the body content t=
+ext larger in size for better readability on small screens. */
+     .footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
+        /*@editable*/
+        font-size:14px !important;
+        /*@editable*/
+        line-height:115% !important;
+    }
+}
+    </style>
+</head>
+<body leftmargin=3D"0" marginwidth=3D"0" topmargin=3D"0" marginheight=3D"0"=
+ offset=3D"0">
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div>
+<center>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" he=
+ight=3D"100%" width=3D"100%" id=3D"bodyTable">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" id=3D"bodyCell">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" id=
+=3D"templatePreheader">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" class=
+=3D"templateContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"preheaderContainer" style=3D"padding-top:10px; =
+padding-bottom:10px;">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" id=
+=3D"templateHeader">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" class=
+=3D"templateContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"headerContainer" style=3D"padding-top:15px; pad=
+ding-bottom:10px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width:100%;">
+<tbody class=3D"mcnDividerBlockOuter">
+<tr>
+<td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%; padding: 15px =
+18px 10px;">
+<table class=3D"mcnDividerContent" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;border-top: 2px solid #EEE=
+EEE;">
+<tbody>
+<tr>
+<td><span></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnImageBlock" style=3D"min-width:100%;">
+<tbody class=3D"mcnImageBlockOuter">
+<tr>
+<td valign=3D"top" style=3D"padding:9px" class=3D"mcnImageBlockInner">
+<table align=3D"left" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" class=3D"mcnImageContentContainer" style=3D"min-width:100%;">
+<tbody>
+<tr>
+<td class=3D"mcnImageContent" valign=3D"top" style=3D"padding-right: 9px; p=
+adding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+<img align=3D"center" alt=3D"" src=3D"http://lms.hypothes.is/static/images/=
+email_header.png" width=3D"225.60000000000002" style=3D"max-width:1358px; p=
+adding-bottom: 0; display: inline !important; vertical-align: bottom;" clas=
+s=3D"mcnImage">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" id=
+=3D"templateBody">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-top:10px; padding-righ=
+t:10px; padding-bottom:5px; padding-left:10px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" class=
+=3D"templateContainer">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" id=
+=3D"bodyBackground">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"bodyContainer" style=3D"padding-top:10px; paddi=
+ng-bottom:10px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width:100%;">
+<tbody class=3D"mcnTextBlockOuter">
+<tr>
+<td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding-top:9px;"><=
+!--[if mso]>
+                                            <table align=3D"left" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;=
+">
+                                              <tr>
+                                                <![endif]--><!--[if mso]>
+                                                <td valign=3D"top" width=3D=
+"599" style=3D"width:599px;">
+                                                  <![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"max-width:100%; min-width:100%;" width=3D"100%" class=3D"mcnTextConten=
+tContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"mcnTextContent" style=3D"padding-top:0; padding=
+-right:18px; padding-bottom:9px; padding-left:18px;">
+<h1 style=3D"text-align: center;"><span style=3D"font-size:31px">There has =
+been some activity in Hypothesis</span></h1>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+                                                </td>
+                                                <![endif]--><!--[if mso]>
+                                              </tr>
+                                            </table>
+                                            <![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width:100%;">
+<tbody class=3D"mcnTextBlockOuter">
+<tr>
+<td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding-top:9px;"><=
+!--[if mso]>
+                                            <table align=3D"left" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;=
+">
+                                              <tr>
+                                                <![endif]--><!--[if mso]>
+                                                <td valign=3D"top" width=3D=
+"599" style=3D"width:599px;">
+                                                  <![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"max-width:100%; min-width:100%;" width=3D"100%" class=3D"mcnTextConten=
+tContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"mcnTextContent" style=3D"padding-top:0; padding=
+-right:18px; padding-bottom:9px; padding-left:18px;">
+<p>Hi,</p>
+<p>Your students made 2 annotations in assignments yesterday. Let your stud=
+ents know about the activity to encourage the ongoing conversation.
+</p>
+<p><strong>HIST-153-001.U2.2023FA</strong><br>
+1 student made 2 annotations in assignments. </p>
+<p><b>We'd love your feedback so we can continue to make improvements to ou=
+r product.
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fmandrillapp.com%2Ftrack%2Fclick%2F30369633%2Fsurvey.hsforms.com%3Fp%3De=
+yJzIjoiMHFIeHl2OVltV1k3dHRZQXE1NENrQkVnM0ZFIiwidiI6MSwicCI6IntcInVcIjozMDM2=
+OTYzMyxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3N1cnZleS5oc2Zvcm1zLmNvbVx=
+cXC8xcFkyTEJiX2hSOWFKTWdvOWpTMG1WUTNxdWV3XCIsXCJpZFwiOlwiMWRkZTlhYTU3OTJmNG=
+I5ZmEyOWJiYTdhYzE1MjAzZDhcIixcInVybF9pZHNcIjpbXCI5MmMxMGM4YzUyMDJkMjc1YjFiZ=
+mI3MDcyM2EwZmRmMmFmODJmZjI3XCJdfSJ9&amp;data=3D05%7C01%7Cegweinberg%40viter=
+bo.edu%7C887e2d9cb6ff4ccfba2e08dbcbc352c8%7C6b9fc982e8d74958976cb08441cc9b0=
+b%7C0%7C0%7C638327812017308098%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D=
+VNvNtToDjvK5mw82c7ksa5lbCzoME3grSwDSt1x8U2k%3D&amp;reserved=3D0" originalsr=
+c=3D"https://mandrillapp.com/track/click/30369633/survey.hsforms.com?p=3Dey=
+JzIjoiMHFIeHl2OVltV1k3dHRZQXE1NENrQkVnM0ZFIiwidiI6MSwicCI6IntcInVcIjozMDM2O=
+TYzMyxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3N1cnZleS5oc2Zvcm1zLmNvbVxc=
+XC8xcFkyTEJiX2hSOWFKTWdvOWpTMG1WUTNxdWV3XCIsXCJpZFwiOlwiMWRkZTlhYTU3OTJmNGI=
+5ZmEyOWJiYTdhYzE1MjAzZDhcIixcInVybF9pZHNcIjpbXCI5MmMxMGM4YzUyMDJkMjc1YjFiZm=
+I3MDcyM2EwZmRmMmFmODJmZjI3XCJdfSJ9" shash=3D"srNCYpMp3Td6TdwN6/R3E9erE8AbGE=
+5EStAHWVFOeRBX7gvcZqjpj2wOxSGA1zdg9EDLNl4Prg4+/FGdrOO8CmoOoIT6jBBcT7vcrADbg=
+pghMO7TKBsiFeXDvwTu/cIIz5LyJfEOsqi5/THz8N79sL6c5iK0Wb05NGpTJqsIbQg=3D">
+Take our survey</a> to tell us what you think of these new daily emails for=
+ instructors.</b></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+                                                </td>
+                                                <![endif]--><!--[if mso]>
+                                              </tr>
+                                            </table>
+                                            <![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnButtonBlock" style=3D"min-width:100%;">
+<tbody class=3D"mcnButtonBlockOuter">
+<tr>
+<td style=3D"padding-top:0; padding-right:18px; padding-bottom:18px; paddin=
+g-left:18px;" valign=3D"top" align=3D"center" class=3D"mcnButtonBlockInner"=
+>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mcnButtonC=
+ontentContainer" style=3D"border-collapse: separate !important;border-radiu=
+s: 3px;background-color: #BD1C2B;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" class=3D"mcnButtonContent" style=3D"=
+font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-siz=
+e: 16px; padding: 15px;">
+<a class=3D"mcnButton " title=3D"Share feedback" href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fmandrillapp.com%2Ftrack%2=
+Fclick%2F30369633%2Fsurvey.hsforms.com%3Fp%3DeyJzIjoiMHFIeHl2OVltV1k3dHRZQX=
+E1NENrQkVnM0ZFIiwidiI6MSwicCI6IntcInVcIjozMDM2OTYzMyxcInZcIjoxLFwidXJsXCI6X=
+CJodHRwczpcXFwvXFxcL3N1cnZleS5oc2Zvcm1zLmNvbVxcXC8xcFkyTEJiX2hSOWFKTWdvOWpT=
+MG1WUTNxdWV3XCIsXCJpZFwiOlwiMWRkZTlhYTU3OTJmNGI5ZmEyOWJiYTdhYzE1MjAzZDhcIix=
+cInVybF9pZHNcIjpbXCI5MmMxMGM4YzUyMDJkMjc1YjFiZmI3MDcyM2EwZmRmMmFmODJmZjI3XC=
+JdfSJ9&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C887e2d9cb6ff4ccfba2e=
+08dbcbc352c8%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63832781201730809=
+8%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1ha=
+WwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DVNvNtToDjvK5mw82c7ksa5lbCzoME=
+3grSwDSt1x8U2k%3D&amp;reserved=3D0" originalsrc=3D"https://mandrillapp.com/=
+track/click/30369633/survey.hsforms.com?p=3DeyJzIjoiMHFIeHl2OVltV1k3dHRZQXE=
+1NENrQkVnM0ZFIiwidiI6MSwicCI6IntcInVcIjozMDM2OTYzMyxcInZcIjoxLFwidXJsXCI6XC=
+JodHRwczpcXFwvXFxcL3N1cnZleS5oc2Zvcm1zLmNvbVxcXC8xcFkyTEJiX2hSOWFKTWdvOWpTM=
+G1WUTNxdWV3XCIsXCJpZFwiOlwiMWRkZTlhYTU3OTJmNGI5ZmEyOWJiYTdhYzE1MjAzZDhcIixc=
+InVybF9pZHNcIjpbXCI5MmMxMGM4YzUyMDJkMjc1YjFiZmI3MDcyM2EwZmRmMmFmODJmZjI3XCJ=
+dfSJ9" shash=3D"srNCYpMp3Td6TdwN6/R3E9erE8AbGE5EStAHWVFOeRBX7gvcZqjpj2wOxSG=
+A1zdg9EDLNl4Prg4+/FGdrOO8CmoOoIT6jBBcT7vcrADbgpghMO7TKBsiFeXDvwTu/cIIz5LyJf=
+EOsqi5/THz8N79sL6c5iK0Wb05NGpTJqsIbQg=3D" target=3D"_blank" style=3D"font-w=
+eight: bold;letter-spacing: normal;line-height: 100%;text-align: center;tex=
+t-decoration: none;color: #FFFFFF;">Share
+ Feedback</a> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top"><img src=3D"https://cdn-images.mailchim=
+p.com/template_images/gallery/couponshadow.png" height=3D"20" width=3D"600"=
+ class=3D"mcnImage" style=3D"display:block; max-width:560px;">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-bottom:40px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" id=
+=3D"templateFooter">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" class=
+=3D"templateContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"footerContainer" style=3D"padding-top:10px; pad=
+ding-bottom:10px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width:100%;">
+<tbody class=3D"mcnTextBlockOuter">
+<tr>
+<td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding-top:9px;"><=
+!--[if mso]>
+                                      <table align=3D"left" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;">
+                                        <tr>
+                                          <![endif]--><!--[if mso]>
+                                          <td valign=3D"top" width=3D"600" =
+style=3D"width:600px;">
+                                            <![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"max-width:100%; min-width:100%;" width=3D"100%" class=3D"mcnTextConten=
+tContainer">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"mcnTextContent" style=3D"padding-top:0; padding=
+-right:18px; padding-bottom:9px; padding-left:18px;">
+Hypothesis, 2261 Market Street, #632, San Francisco, California 94114, Unit=
+ed States of America<br>
+<br>
+<br>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Flms.hypothes.is%2Femail%2Funsubscribe%3Ftoken%3DeyJhbGciOiJIUzI1NiIsInR5=
+cCI6IkpXVCJ9.eyJoX3VzZXJpZCI6ImFjY3Q6NmFhZGFkMTAxZTc3NTVhYTcxMDI1ZTc0NDNkYj=
+ExQGxtcy5oeXBvdGhlcy5pcyIsInRhZyI6Imluc3RydWN0b3JfZGlnZXN0IiwiZXhwIjoxNjk5N=
+zc0NzQ3fQ.zwFI3RecUgC4vb4l00Ad-a_RBWQgx7CABceQj5-zqTU&amp;data=3D05%7C01%7C=
+egweinberg%40viterbo.edu%7C887e2d9cb6ff4ccfba2e08dbcbc352c8%7C6b9fc982e8d74=
+958976cb08441cc9b0b%7C0%7C0%7C638327812017308098%7CUnknown%7CTWFpbGZsb3d8ey=
+JWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%=
+7C%7C&amp;sdata=3DRqvsMnZCjHSE5nQMy5yPYC3VmW9GsXwUdCERhTBwStA%3D&amp;reserv=
+ed=3D0" originalsrc=3D"http://lms.hypothes.is/email/unsubscribe?token=3DeyJ=
+hbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoX3VzZXJpZCI6ImFjY3Q6NmFhZGFkMTAxZTc3N=
+TVhYTcxMDI1ZTc0NDNkYjExQGxtcy5oeXBvdGhlcy5pcyIsInRhZyI6Imluc3RydWN0b3JfZGln=
+ZXN0IiwiZXhwIjoxNjk5Nzc0NzQ3fQ.zwFI3RecUgC4vb4l00Ad-a_RBWQgx7CABceQj5-zqTU"=
+ shash=3D"X5Kk1VbELEU6jBY6mbmKgZP3enswLPybD+HibnrQdc/pQJDX1X99x6MDtBiORaS6K=
+bY9b52fm5IO+lELpyzcIhQps6IWiQqbBU5pzFz9sacLsrF+XvXqMwjHOofxcImx9SEBizTeay0g=
+Uao0tYIAYZSvKwi+mNYcHbeowKojCGI=3D">Unsubscribe
+ from this list</a>. </td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+                                          </td>
+                                          <![endif]--><!--[if mso]>
+                                        </tr>
+                                      </table>
+                                      <![endif]--></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<img src=3D"https://mandrillapp.com/track/open.php?u=3D30369633&amp;id=3D1d=
+de9aa5792f4b9fa29bba7ac15203d8" height=3D"1" width=3D"1" alt=3D"">
+</div>
+</body>
+</html>
+
+--_av-fZvF0LW4NHdrqHx4wVcvhw--

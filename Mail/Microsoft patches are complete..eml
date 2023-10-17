@@ -1,0 +1,518 @@
+
+------------------------------------------------------------------------
+
+## **Introduction to Bag of Words & The Enron Dataset**
+
+------------------------------------------------------------------------
+
+### **1. Introduction** (Page 1)
+
+------------------------------------------------------------------------
+
+**Objective**
+
+In the realm of text data representation, various models exist to transform human-readable text into machine-understandable formats. One of the simplest, yet most effective of these methods, is the Bag of Words (BoW) model. In this document, we will explore the BoW model and its application on the Enron dataset.
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+------------------------------------------------------------------------
+
+### **2. Bag of Words (BoW) Overview** (Page 2)
+
+------------------------------------------------------------------------
+
+#### **What is BoW?**
+
+Bag of Words (BoW) is a method to represent text data. Instead of viewing a document in its original sequential format, BoW views it as a collection (or "bag") of its individual words.
+# Python block: Simple BoW Representation
+from collections import Counter
+
+def bow_representation(text):
+    return Counter(text.split())
+
+example_text = "Hello world! This is a simple BoW example."
+print(bow_representation(example_text))
+**Limitations**
+While BoW is straightforward, it does have its drawbacks. For instance, it ignores the order of words, potentially losing context. However, for many tasks, it's more than sufficient.
+
+
+**Significance of the Dataset**
+The Enron dataset is not just a collection of emails. It's a snapshot of corporate America, capturing business practices, decision-making processes, and even personal communications. It has been used for various research purposes, especially in the field of Natural Language Processing (NLP) and machine learning, to develop and test algorithms.
+
+
+**Why Use BoW?**
+Given its simplicity, BoW is computationally efficient. It's a great starting point for text classification tasks and offers a foundational understanding before delving into more complex models.
+# Python block: BoW with sklearn
+from sklearn.feature_extraction.text import CountVectorizer
+
+vectorizer = CountVectorizer()
+X = vectorizer.fit_transform(["Hello world", "Goodbye world"])
+print(vectorizer.get_feature_names_out())
+print(X.toarray())
+
+**Limitations**
+
+While BoW is straightforward, it does have its drawbacks. For instance, it ignores the order of words, potentially losing context. However, for many tasks, it's more than sufficient.
+##
+# Data Processing
+## Loading the Dataset
+import pandas as pd
+
+# Load the dataset
+data = pd.read_csv("Ask0729-fixed.txt", delimiter="\t", header=None, names=['Label', 'Email'])
+
+# Display the first few rows
+data.head()
+
+data.describe(include='all')
+from nltk.corpus import stopwords
+import pandas as pd
+from nltk.tokenize import word_tokenize
+
+stop_words = set(stopwords.words('english'))
+
+# Tokenizing the 'Email' column
+data['Tokenized_Email'] = data['Email'].apply(word_tokenize)
+data['Tokenized_Email'].head()
+
+## Stemming and Lemmatization
+Natural language processing often requires reducing words to a more generic form for analysis, modeling, or comparison. Two common techniques used for this purpose are stemming and lemmatization.
+
+Stemming reduces words to their root form, while lemmatization reduces them to their base or dictionary form
+
+Advantages of Stemming:
+
+Reduces the corpus of words the model is exposed to and explicitly correlates words with similar meanings.
+Typically faster as it simply chops off endings (and sometimes beginnings) without understanding the context.
+Limitations of Stemming:
+
+It can produce words that are not actual words. For instance, "flies" becomes "fli".
+It may not always be semantically correct. For instance, "university" and "universe" might be stemmed to the same root of "univers".
+
+
+running" → "run"
+"flies" → "fli"
+"happily" → "happili"
+
+from nltk.stem import PorterStemmer, WordNetLemmatizer
+
+stemmer = PorterStemmer()
+lemmatizer = WordNetLemmatizer()
+
+data['Stemmed_Email'] = data['Tokenized_Email'].apply(lambda x: [stemmer.stem(word) for word in x])
+data['Lemmatized_Email'] = data['Tokenized_Email'].apply(lambda x: [lemmatizer.lemmatize(word) for word in x])
+
+data[['Tokenized_Email', 'Stemmed_Email', 'Lemmatized_Email']].head()
+
+
+# Labels
+
+In order to train a supervised learning model, we need labeled data. This means that each email in our dataset should have an associated label indicating whether it's 'personal' or 'professional'. If the dataset doesn't come pre-labeled, we might have to do this manually for a subset of emails. However, this can be a time-consuming process, so we'll skip this step for now and assume that the dataset is already labeled which it is.
+
+#Feature Extraction
+**Email Length:**
+
+The length of an email might be indicative of its category. For instance, professional emails might be longer due to their formal nature. We also want the bag of words.
+from sklearn.feature_extraction.text import CountVectorizer
+
+vectorizer = CountVectorizer(max_features=5000)  # We limit to 5000 most frequent words
+X_bow = vectorizer.fit_transform(data['Email']).toarray()
+data['Email_Length'] = data['Email'].apply(len)
+
+
+# 5. Building the Bag of Words Model
+
+# Display the shape to get an idea of the vectorized data
+print(X_bow.shape)
+
+## 5.2 Training/Testing Split
+
+from sklearn.model_selection import train_test_split
+
+#Concatenate the BoW features and the Email_Length feature
+import numpy as np
+X_combined = np.hstack((X_bow, data['Email_Length'].values.reshape(-1, 1)))
+
+X_combined.shape
+
+# Split the data - 80% for training and 20% for testing, using our BoW representation
+X_train, X_test, y_train, y_test = train_test_split(X_bow, data['Label'], test_size=0.2, random_state=42)
+
+When it comes to text classification, several machine learning algorithms can be employed. For our task of email categorization based on Bag of Words features, a popular and effective choice is the Naive Bayes classifier, specifically the Multinomial Naive Bayes.
+
+Why Naive Bayes?
+
+Simplicity: Naive Bayes is based on the Bayes theorem with the 'naive' assumption of conditional independence between every pair of features. This simplicity makes it fast.
+
+Scalability: It scales well with the dataset's dimensionality, which is crucial given the high-dimensional nature of text data.
+
+Performance: Despite its simplicity, Naive Bayes tends to perform notably well on text classification tasks, especially when the dataset isn't enormous.
+
+Probabilistic Nature: Naive Bayes provides probabilities for each class, offering an understanding of the model's confidence in its predictions.
+
+
+from sklearn.naive_bayes import MultinomialNB
+
+# Initialize the classifier
+clf = MultinomialNB()
+
+# Train the classifier
+clf.fit(X_train, y_train)
+
+# After training the model
+predicted_labels = clf.predict(X_test)
+
+
+
+
+# Model Evaluation
+
+In the process of building a classification model, once the model is trained, it's essential to evaluate its performance on unseen data. This will provide insights on how well the model might perform in a real-world setting.
+
+
+from sklearn.metrics import accuracy_score
+accuracy = accuracy_score(y_test, predicted_labels)
+print(f"Accuracy: {accuracy:.2f}")
+
+
+from sklearn.metrics import recall_score
+sensitivity = recall_score(y_test, predicted_labels, pos_label='Yes')
+print(f"Sensitivity: {sensitivity:.2f}")
+
+
+from sklearn.metrics import confusion_matrix
+tn, fp, fn, tp = confusion_matrix(y_test, predicted_labels).ravel()
+specificity = tn / (tn+fp)
+print(f"Specificity: {specificity:.2f}")
+
+
+
+# Explination
+Definition: Accuracy is the ratio of correctly predicted instances to the total number of instances.
+Interpretation: In this context, an accuracy of 0.71 means that 71% of all the emails were correctly classified by the model. Put simply, for every 100 emails you run through the classifier, it will predict the correct label for 71 of them on average.
+2. Sensitivity (Recall) (0.84 or 84%):
+
+Definition: Sensitivity or Recall gives the true positive rate. It's the proportion of all the positive cases (in your case, let's say emails labeled 'Yes') that the model correctly identified as positive.
+Interpretation: A sensitivity of 0.84 indicates that the model correctly identified 84% of the actual positive cases. This means if there were 100 emails that were truly 'Yes', the model would detect 84 of them correctly while missing out on 16.
+3. Specificity (0.61 or 61%):
+
+Definition: Specificity is the true negative rate. It represents the proportion of all the negative cases (emails labeled 'No') that were correctly identified by the model.
+Interpretation: A specificity of 0.61 means that the model correctly identified 61% of the actual negative cases. So, if there were 100 emails that were truly 'No', the model would correctly classify 61 of them and incorrectly classify the remaining 39 as 'Yes'.
+
+The model is particularly good at identifying positive cases, with a high sensitivity of 84%. This implies it's effective at catching emails labeled 'Yes'.
+However, its specificity is a bit lower at 61%, which suggests that while it's good at identifying 'Yes' labels, it might misclassify a decent chunk of 'No' labeled emails.
+
+## New Features
+
+The Bag of Words model represents text data in terms of word frequencies. However, often the sheer frequency of a word doesn't give its exact importance. That's where Term Frequency-Inverse Document Frequency (TF-IDF) comes in. It not only considers the frequency of a word in a particular document but also how frequent the word is across all documents.
+
+Advantages:
+
+Gives more weight to terms that are more specific to a particular document.
+Common words that are frequently present across all documents get lower weights, making it a better representation than simple counts.
+Certainly! Let's use a simple, hands-on example to illustrate the concept of TF-IDF.
+
+### Example:
+
+Suppose we have the following three documents:
+
+1. `Doc1`: "I love blue skies."
+2. `Doc2`: "Blue and bright skies are beautiful."
+3. `Doc3`: "Love the blue color of the ocean."
+
+Let's compute the TF-IDF values for the word "blue" in each document:
+
+**1. Term Frequency (TF) of "blue"**:
+
+For `Doc1`: 
+TF("blue", Doc1) = (Number of times "blue" appears in Doc1) / (Total number of terms in Doc1)
+                 = 1/4
+                 = 0.25
+
+For `Doc2`: 
+TF("blue", Doc2) = 1/6 = 0.1667
+
+For `Doc3`: 
+TF("blue", Doc3) = 1/7 ≈ 0.1429
+
+**2. Inverse Document Frequency (IDF) of "blue"**:
+
+Since "blue" appears in all three documents:
+
+IDF("blue") = log(Total number of documents / Number of documents with "blue")
+            = log(3/3)
+            = 0 (because log(1) = 0)
+
+**3. Compute TF-IDF**:
+
+For `Doc1`: 
+TF-IDF("blue", Doc1) = TF("blue", Doc1) * IDF("blue")
+                    = 0.25 * 0
+                    = 0
+
+Similarly, TF-IDF values for "blue" in `Doc2` and `Doc3` will also be 0 due to the IDF value being 0.
+
+From this example, since the term "blue" appears in all documents, it's considered not to be a distinctive word, and hence, its TF-IDF value is 0.
+
+### Another Example: Word "ocean" in `Doc3`
+
+**1. Term Frequency (TF) of "ocean"**:
+
+TF("ocean", Doc3) = 1/7 ≈ 0.1429
+
+**2. Inverse Document Frequency (IDF) of "ocean"**:
+
+"ocean" appears only in `Doc3`:
+
+IDF("ocean") = log(3/1) = log(3) ≈ 1.0986
+
+**3. Compute TF-IDF**:
+
+TF-IDF("ocean", Doc3) = TF("ocean", Doc3) * IDF("ocean")
+                      ≈ 0.1429 * 1.0986
+                      ≈ 0.157
+
+Here, since "ocean" is unique to `Doc3`, it gets a higher TF-IDF value, indicating its importance or specificity to that document.
+
+This example showcases how TF-IDF helps in weighing down common words and giving importance to words that are more unique to specific documents in a corpus.
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+
+tfidf_vectorizer = TfidfVectorizer(max_features=5000)
+X_tfidf = tfidf_vectorizer.fit_transform(data['Email']).toarray()
+
+# Split the data again using the TF-IDF representation
+X_train_tfidf, X_test_tfidf, y_train, y_test = train_test_split(X_tfidf, data['Label'], test_size=0.2, random_state=42)
+
+# Train the classifier using TF-IDF representation
+clf.fit(X_train_tfidf, y_train)
+
+
+
+
+#Predict on the test set
+y_pred_tfidf = clf.predict(X_test_tfidf)
+from sklearn.metrics import accuracy_score, classification_report
+
+# Evaluate the model
+accuracy_tfidf = accuracy_score(y_test, y_pred_tfidf)
+print(f"Accuracy with TF-IDF: {accuracy_tfidf:.2f}")
+
+# Display a more detailed classification report
+print(classification_report(y_test, y_pred_tfidf))
+It appears that the model trained on the TF-IDF representation has improved slightly in accuracy compared to the earlier Bag of Words (BoW) representation. The accuracy is now 0.74 or 74%.
+# Bi-grams and Tri-grams Can Improve a Model
+
+Why Adding Bi-grams and Tri-grams Can Improve a Model
+When we process textual data for machine learning, we often convert the text into numerical vectors that the model can understand. One of the simplest ways to do this is using unigrams, which means every word is treated as a separate feature. For instance, in the sentence "I love ice cream", the unigrams would be ["I", "love", "ice", "cream"].
+
+However, sometimes just looking at individual words might not be enough. Words in combination can carry very different meanings than when they stand alone.
+
+Bi-grams are combinations of two words. For our example sentence, the bi-grams would be ["I love", "love ice", "ice cream"].
+Tri-grams are combinations of three words. For the same sentence, the tri-grams would be ["I love ice", "love ice cream"].
+By looking at bi-grams and tri-grams, we can start to understand phrases and combinations of words that occur frequently together and might have a specific meaning in our dataset.
+
+However, a word of caution: While adding bi-grams and tri-grams can improve the model by providing more context and capturing phrases, it also increases the number of features. This can sometimes lead to overfitting, where the model performs well on the training data but poorly on unseen data. So, it's essential to ensure that the model is still generalizing well to new, unseen data after adding these features.
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import MultinomialNB
+
+# I'm assuming you've defined data['Email'] and data['Label'] somewhere earlier in your code
+
+# Initialize the TF-IDF vectorizer to consider both unigrams and bi-grams
+tfidf_vectorizer = TfidfVectorizer(max_features=5000, ngram_range=(1, 3))
+
+# Convert the emails to a matrix of TF-IDF features
+X_tfidf = tfidf_vectorizer.fit_transform(data['Email']).toarray()
+
+# Split the data using the TF-IDF representation
+X_train_tfidf, X_test_tfidf, y_train, y_test = train_test_split(X_tfidf, data['Label'], test_size=0.2, random_state=42)
+
+# Initialize and train the classifier using TF-IDF representation
+clf = MultinomialNB()
+clf.fit(X_train_tfidf, y_train)
+
+# Get the feature names (terms) from the TF-IDF vectorizer
+feature_names = tfidf_vectorizer.get_feature_names_out()
+
+# Filter out only the bi-grams
+bigrams = [name for name in feature_names if len(name.split()) == 2]
+
+# Display first few bi-grams for inspection
+print(bigrams[:20])
+
+# Sum the occurrences of each bigram across all documents
+bigram_counts = X_tfidf[:, [tfidf_vectorizer.vocabulary_.get(bigram) for bigram in bigrams]].sum(axis=0)
+
+# Pair the bigrams with their counts and sort by count
+sorted_bigrams = sorted(list(zip(bigrams, bigram_counts)), key=lambda x: x[1], reverse=True)
+
+# Display the top most common bigrams for inspection
+for bigram, count in sorted_bigrams[:20]:
+    print(f"{bigram}: {count}")
+
+# Get the feature names (terms) from the TF-IDF vectorizer
+feature_names = tfidf_vectorizer.get_feature_names_out()
+
+# Filter out only the trigrams
+trigrams = [name for name in feature_names if len(name.split()) == 3]
+
+# Sum the occurrences of each trigram across all documents
+trigram_counts = X_tfidf[:, [tfidf_vectorizer.vocabulary_.get(trigram) for trigram in trigrams]].sum(axis=0)
+
+# Pair the trigrams with their counts and sort by count
+sorted_trigrams = sorted(list(zip(trigrams, trigram_counts)), key=lambda x: x[1], reverse=True)
+
+# Display the top most common trigrams for inspection
+for trigram, count in sorted_trigrams[:20]:
+    print(f"{trigram}: {count}")
+
+#Predict on the test set
+y_pred_tfidf = clf.predict(X_test_tfidf)
+from sklearn.metrics import accuracy_score, classification_report
+
+# Evaluate the model
+accuracy_tfidf = accuracy_score(y_test, y_pred_tfidf)
+print(f"Accuracy with TF-IDF: {accuracy_tfidf:.2f}")
+
+# Display a more detailed classification report
+print(classification_report(y_test, y_pred_tfidf))
+# True Cross Validation
+import os
+import email
+from email import policy
+from email.parser import BytesParser
+from bs4 import BeautifulSoup
+from nltk.tokenize import word_tokenize
+from nltk.stem import PorterStemmer, WordNetLemmatizer
+from nltk.corpus import stopwords
+from sklearn.feature_extraction.text import CountVectorizer
+
+def extract_content_from_eml(file_path):
+    with open(file_path, 'rb') as f:
+        msg = BytesParser(policy=policy.default).parse(f)
+    content = ''
+    if msg.is_multipart():
+        for part in msg.walk():
+            if part.get_content_type() == 'text/plain':
+                charset = part.get_content_charset()
+                content += part.get_payload(decode=True).decode(charset if charset else 'utf-8', 'ignore')
+            elif part.get_content_type() == 'text/html':
+                charset = part.get_content_charset()
+                html_content = part.get_payload(decode=True).decode(charset if charset else 'utf-8', 'ignore')
+                soup = BeautifulSoup(html_content, 'html.parser')
+                content += soup.get_text(separator=' ')
+    else:
+        charset = msg.get_content_charset()
+        content_type = msg.get_content_type()
+        raw_content = msg.get_payload(decode=True).decode(charset if charset else 'utf-8', 'ignore')
+        if content_type == 'text/html':
+            soup = BeautifulSoup(raw_content, 'html.parser')
+            content = soup.get_text(separator=' ')
+        else:
+            content = raw_content
+    
+    return content.strip()
+
+
+
+
+
+# Setup 
+stop_words = set(stopwords.words('english'))
+stemmer = PorterStemmer()
+lemmatizer = WordNetLemmatizer()
+vectorizer = CountVectorizer(max_features=5000)
+
+def preprocess(email_content):
+    # Tokenization
+    tokens = word_tokenize(email_content)
+    
+    # Removing stopwords
+    tokens = [word for word in tokens if word not in stop_words]
+    
+    # Stemming
+    stemmed_tokens = [stemmer.stem(word) for word in tokens]
+    
+    # Lemmatization
+    lemmatized_tokens = [lemmatizer.lemmatize(word) for word in tokens]
+    
+    # Convert list of tokens back to string
+    preprocessed_text = ' '.join(lemmatized_tokens)
+    
+    # BoW Vectorization (If needed)
+    # vectorized_content = vectorizer.transform([preprocessed_text]).toarray()
+    
+    return preprocessed_text
+
+
+# Set directory path
+directory_path = 'Mail'
+
+# Loop through each .eml file in the directory
+for file_name in os.listdir(directory_path):
+    if file_name.endswith('.eml'):
+        file_path = os.path.join(directory_path, file_name)
+        
+        # Extract content
+        content = extract_content_from_eml(file_path)
+        #print(content)
+        # Skip emails with empty content
+        if not content.strip():
+            print(f"Skipping {file_name} due to empty content.")
+            continue
+        
+        # Preprocess the content
+        processed_content = preprocess(content)
+        
+        # Vectorize the content
+        vectorized_content = tfidf_vectorizer.transform([processed_content]).toarray()
+        
+        # Predict the label
+        predicted_label = clf.predict(vectorized_content)[0]
+        
+        # Print the email file name and its predicted label
+        print(f"{file_name}: {predicted_label}")
+
+**1. What is Cross-Validation?**
+Cross-validation is a technique used to assess how well a machine learning model will perform on unseen data. Instead of splitting the dataset into just two parts (training and testing), cross-validation further divides the training set into multiple subsets. The model is trained on some of these subsets and tested on the remaining one. This process is repeated multiple times, with each subset getting a chance to be the test set.
+
+**Why is Cross-Validation Important in Email Classification?**
+a. Diverse Email Content: Emails can be diverse. They might belong to different topics, have different structures, or be written in varied tones. Cross-validation ensures that the model gets trained and tested on a wide variety of emails, making it more robust.
+
+b. Avoid Overfitting: Just as memorizing answers won't help in understanding a subject, a model that just 'memorizes' training data won't classify emails correctly. Such a model is said to be "overfitting". Cross-validation helps in detecting overfitting by evaluating the model on multiple test sets.
+
+c. Better Utilization of Data: In standard train-test split, a significant chunk of data might be set aside for testing. With cross-validation, since every part of the data gets its turn as both training and testing, there's better utilization of available data.
+
+d. Reliable Model Assessment: By testing the model on different subsets, we get multiple accuracy scores instead of just one. This gives a better idea of the model's average performance and its variability.
+
+1. Challenges and Considerations
+a. Computational Cost: Since the model is trained multiple times, cross-validation can be computationally expensive.
+
+b. Data Leakage: It's crucial to ensure that preprocessing steps (like feature scaling) are computed separately for each fold to avoid data leakage.
+
+c. Choice of Splits: The number of splits (or "folds") is a decision point. Common choices are 5 or 10, but the best number might vary based on the dataset's size and diversity.
+
+In conclusion, while cross-validation adds complexity to the training process, it's a valuable tool to ensure the model's reliability, especially in tasks with diverse data, like email classification. Without it, there's a risk of overly trusting a model that might not perform well on new, unseen emails.
+
+
+
+
+

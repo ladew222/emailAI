@@ -1,0 +1,146 @@
+Received: from IA0PR20MB6000.namprd20.prod.outlook.com (2603:10b6:208:408::7)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Fri, 13 Oct 2023
+ 15:29:03 +0000
+Received: from MN2PR01CA0027.prod.exchangelabs.com (2603:10b6:208:10c::40) by
+ IA0PR20MB6000.namprd20.prod.outlook.com (2603:10b6:208:408::7) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6863.45; Fri, 13 Oct 2023 15:28:59 +0000
+Received: from BL02EPF0001A107.namprd05.prod.outlook.com
+ (2603:10b6:208:10c:cafe::51) by MN2PR01CA0027.outlook.office365.com
+ (2603:10b6:208:10c::40) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.31 via Frontend
+ Transport; Fri, 13 Oct 2023 15:28:59 +0000
+Authentication-Results: spf=pass (sender IP is 54.240.27.231)
+ smtp.mailfrom=us-west-2.amazonses.com; dkim=pass (signature was verified)
+ header.d=viterbo.edu;dmarc=bestguesspass action=none
+ header.from=viterbo.edu;compauth=pass reason=109
+Received-SPF: Pass (protection.outlook.com: domain of us-west-2.amazonses.com
+ designates 54.240.27.231 as permitted sender)
+ receiver=protection.outlook.com; client-ip=54.240.27.231;
+ helo=a27-231.smtp-out.us-west-2.amazonses.com; pr=C
+Received: from a27-231.smtp-out.us-west-2.amazonses.com (54.240.27.231) by
+ BL02EPF0001A107.mail.protection.outlook.com (10.167.241.136) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.14 via Frontend Transport; Fri, 13 Oct 2023 15:28:59 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=4ik7zd44fzgqvqydgizx5hmuwsuccjje; d=viterbo.edu; t=1697210938;
+	h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=Ll6bfPw9kaGdJdzGeSPRz0TUuWcJ6DLX4b7KQ6JNsrM=;
+	b=FC+rnVfaWT+eBc/YOxEP8rDC3KmmjbZYOlZV5J3VEayV64AmCrxoDibcb1QdmGan
+	UxE7KMuNBmgchR8XQmO4bfnzQL0yWmnojxQl5Enhlt7ox5mW4MbEiXjgDvrvrVaXZzH
+	Jt062qkNnCC9eO7BPf1A4/gSMB2UxQl3AVcACCMw=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1697210938;
+	h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
+	bh=Ll6bfPw9kaGdJdzGeSPRz0TUuWcJ6DLX4b7KQ6JNsrM=;
+	b=ZEuT55RFKV+eNfQz19kbkTV4EfN0pedNwIbPxu5AuRmQ+9JNIgXAQ1ObOJ4dCv3j
+	nAdwYZljBKgGQvbbRLjeKtsOmy0B9X8c2ks2bcUalPe0d45nL0kWGUq587CCjomvnL4
+	o6If7HuHJCAr0br1XfGsn/3yhIYIT5FEOluKgDfY=
+Date: Fri, 13 Oct 2023 15:28:58 +0000
+From: starfish@viterbo.edu
+Reply-To: starfish@viterbo.edu
+To: egweinberg@viterbo.edu
+Message-ID: <0101018b29a7b3b7-97e3789e-214f-445d-a235-76602261da06-000000@us-west-2.amazonses.com>
+Subject: [Starfish] The Struggle to Keep Pace item you created for Felix
+ Lidenmark has been closed
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_7950_2103669111.1697210938090"
+X-Starfish-SystemSignature: tomcat-ops-2dde7-ops
+X-Starfish-MessageTemplate: 560:FLAG_FEEDBACK_HTML
+Feedback-ID: 1.us-west-2.oiHEqVZBcnEFS4f3V6HmFMnUjT2YsQZZxYW6u+Ulycc=:AmazonSES
+X-SES-Outgoing: 2023.10.13-54.240.27.231
+Return-Path:
+ 0101018b29a7b3b7-97e3789e-214f-445d-a235-76602261da06-000000@us-west-2.amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2023 15:28:59.6234
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ fa5b7df3-2749-47cf-5266-08dbcc011f5c
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ BL02EPF0001A107:EE_|IA0PR20MB6000:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ BL02EPF0001A107.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: fa5b7df3-2749-47cf-5266-08dbcc011f5c
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:54.240.27.231;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKA;H:a27-231.smtp-out.us-west-2.amazonses.com;PTR:a27-231.smtp-out.us-west-2.amazonses.com;CAT:NONE;SFS:(13230031)(4636009)(451199024)(26005)(83170400001)(42882007)(336012)(6506007)(6916009)(36736006)(83380400001)(7696005)(79850400001)(9686003)(956004)(7596003)(356005)(7636003)(564344004)(6486002)(71280400001)(5660300002)(9316004)(1096003)(8676002)(2292003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2023 15:28:59.3266
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: fa5b7df3-2749-47cf-5266-08dbcc011f5c
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL02EPF0001A107.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: IA0PR20MB6000
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.0556709
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?bVNGS1JLMUd6VFQzNTUvSXMyL3JGdElmWjYxQURJb0FFRTE5Q3BsS2FnZWtl?=
+ =?utf-8?B?UnZoRUlDeFdsenJHRFhQU0tVNllGSTdHVWlYbnVmZUFBUkR4YWZ3anJReDlJ?=
+ =?utf-8?B?QkpiS2tUL21MWTFlb1RkTG44VitqTGVVMVMxR1FlakxpSk1wZVRHd3FVaFhH?=
+ =?utf-8?B?MHhIOFZLclZ0Q0pyMjFSVnl4MndUWXRCNFF1a3V5VENnTnI1OWt6dy9CVUp4?=
+ =?utf-8?B?UkdTcWsyRXQvTkwvZGM1Zy9POGNmSGF0eHZBUno5L0FOVythRTA3aHpLeklk?=
+ =?utf-8?B?QXo1bFYySFpQSnNyUlVBMG1VaUdFdHNBc0swQmxKVFNYNWVpSjdUL1IxUEdj?=
+ =?utf-8?B?Z2kyQ2Mrb2tUeXFIQ0dmeThOZlZMWXlyRjUxT0VXVm9zK29nWVNlYTlNZHZr?=
+ =?utf-8?B?Ni9ScXBlNWI0eUszc3hXSXI0LzVoRE12WjE2RWFsLzJYWTU0cThxVjVoMUxJ?=
+ =?utf-8?B?UkRqQ3JERk00cDk5WEpvcGxZMDZ5U1RhMUt2T1o2NG5lR20xVDUwNnM3dlZr?=
+ =?utf-8?B?WjcyT2JjZUtzenczcHBuZnU5U1RKV1hUTkNVWmlpc3hPQjRNRnBaV0pEcUNT?=
+ =?utf-8?B?djZRZmZ4VFZoU2ZRdU1WZkpvVGhnSW9BVVpVa2dpRGRHd05sNXYraHFKdjJJ?=
+ =?utf-8?B?QzVxNlY3OTRLN09TWFVxQ3hlYlhGZWNvaU9nNGJJajd0TDdHREx1UXhySFBr?=
+ =?utf-8?B?RmpxUkRDOFEvdGthMkR2NU16OVc2QlJKblc5b01qR0N0L0RRdDhVMDNHRnA3?=
+ =?utf-8?B?SEltOVBpc1pqQ01pZFBIQ0xKZmUvbVMxWTArL0RRUlNpRVNqQWxiQVFYbXNv?=
+ =?utf-8?B?WFluNEU4RnhyNDNCWG1IdUYwMkNoZXE2bm95WGJHVGNicTgzOE9ITnN2b0NV?=
+ =?utf-8?B?ZERRNExoRlVNM1lKWHRIemdwT1VUZWhYNnl4TFN4S2d6YnpmdS8xTDFPMC9P?=
+ =?utf-8?B?WHMzN2x5ZGcrcTFhdVVmMlo0ZWd4dUM2b0szZnNJYnNJc0Fab0lJQXI3Yk9a?=
+ =?utf-8?B?TEhhVHY1VlJlY25ibFhlMTMwUkVqQnRhUGx2R21HQkk0eFZWakNRTCtsdnpp?=
+ =?utf-8?B?RUNPNWRBRFhZdnc4ZE1iQVhCc2xjTklpMEw1eTd5bXlQakpMQ2Y5QVFzUnVC?=
+ =?utf-8?B?SlFkUk93eHZqWThwb290d0RGYktBVThaUHUza3k0QUNqWnFiS2dlZ3V1M1k5?=
+ =?utf-8?B?NTVUU091ajNQT0paREUzWXpvRlBkUXgwZ1RFaFJmaTRuTGlNTHc1VUIzSzEx?=
+ =?utf-8?B?aGphcE5PUFlsdXdiUkhKak5NN0YzWC9EcmRnN25DY2tBbEptdElWRnNBbFdX?=
+ =?utf-8?B?a2t0Rmp0ajdRZWptSjRoWUMyTjNCd0p6ZjMxMzdOYnlDZ2hEcEpZOWIyVGRi?=
+ =?utf-8?B?LzRvV1FTYUJSSHlDNTJaUk1SZGRVVVh3TUVQYk93TkRwVzcwZmdUUFRnSjli?=
+ =?utf-8?B?UHc5aE9IWXdlMXpoejRxTW1YbWp5OHZ5b3M2YjU1d1pjSU5wdXJkYkwza1V6?=
+ =?utf-8?B?S1dRb2RvbG9OeTZnQ2xldTBLU3gwRW9MelBSdmx1SHJoSERxblZzdVJoajR4?=
+ =?utf-8?B?TjA1Z0ZDbSs1TmVmdUh6eDJoV0lpTkZHQW9iUHMwWkRyY05ISHlIMW9xY2VG?=
+ =?utf-8?B?eUtpSUlKMUhMNEN3L3I3RXZnSXVjeTIvR1hCSEI0NzUwLzV0Uyt2OEpMQi9x?=
+ =?utf-8?B?UlNYb0hLcENuLytqV0x4dGtsdnBIUDg5VjlaVUZjMEo0QXZXa0JYck4zNXVT?=
+ =?utf-8?Q?Gl2lL/eX8aUP+/XKw+Umrcn8VDxA3KzcE/mmVyt?=
+MIME-Version: 1.0
+
+------=_Part_7950_2103669111.1697210938090
+Content-Type: multipart/related; 
+	boundary="----=_Part_7951_320623091.1697210938090"
+
+------=_Part_7951_320623091.1697210938090
+Content-Type: text/html;charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title></title>
+       
+     <meta http-equiv="Content-Language" content="en-us">
+    </head>
+   <body>
+Dear Eric,
+<p>The <b>&quot;Struggle to Keep Pace&quot;</b> item which you created for Felix Lidenmark on 10/11/2023 was closed on 10/13/2023.<p>Lisa Konkel included this message to you: <br>
+<i>Felix is aware of the late assignments and he is working on completing them.</i>
+</p>
+
+    <img src="https://vitearlyalert.starfishsolutions.com/starfish-ops/remote/image.html?log_email_id=8228aef6-a832-4917-9b0c-0cdd80e4789a">
+  </body>
+</html>
+------=_Part_7951_320623091.1697210938090--
+
+------=_Part_7950_2103669111.1697210938090--

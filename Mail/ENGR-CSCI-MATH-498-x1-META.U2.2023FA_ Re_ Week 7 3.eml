@@ -1,0 +1,354 @@
+Received: from BN0PR20MB4053.namprd20.prod.outlook.com (2603:10b6:408:127::24)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023
+ 20:07:50 +0000
+Received: from DS7PR06CA0001.namprd06.prod.outlook.com (2603:10b6:8:2a::12) by
+ BN0PR20MB4053.namprd20.prod.outlook.com (2603:10b6:408:127::24) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.45; Thu, 12 Oct
+ 2023 20:07:46 +0000
+Received: from DS1PEPF0001708F.namprd03.prod.outlook.com
+ (2603:10b6:8:2a:cafe::63) by DS7PR06CA0001.outlook.office365.com
+ (2603:10b6:8:2a::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.27 via Frontend
+ Transport; Thu, 12 Oct 2023 20:07:46 +0000
+Authentication-Results: spf=pass (sender IP is 167.89.52.170)
+ smtp.mailfrom=sendgrid.net; dkim=pass (signature was verified)
+ header.d=sendgrid.net;dmarc=none action=none
+ header.from=viterbo.edu;compauth=pass reason=704
+Received-SPF: Pass (protection.outlook.com: domain of sendgrid.net designates
+ 167.89.52.170 as permitted sender) receiver=protection.outlook.com;
+ client-ip=167.89.52.170; helo=xtrwpqxx.outbound-mail.sendgrid.net; pr=C
+Received: from xtrwpqxx.outbound-mail.sendgrid.net (167.89.52.170) by
+ DS1PEPF0001708F.mail.protection.outlook.com (10.167.17.139) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Thu, 12 Oct 2023 20:07:46 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=from:subject:list-id:list-help:list-unsubscribe:in-reply-to:
+	references:mime-version:reply-to:to:content-type:cc:content-type:from:subject:to;
+	s=smtpapi; bh=WhSoUSyJIGMmQiUEmxLywvk1MKOJrZ5Gpn05kOmBWhU=;
+	b=HyT9du/GfcpITuwiaXBWim7ecdUtGDtpmfeZPNYcCa3bLESpB74vxrxv9u9dg9MSnjQs
+	+ppKqjn2h+zOZ0A9v9U9QaXelqXUaUqVGsn+wwh7x3EFZpdQMUvfGkbCdMBWK4MI5mJeMd
+	/IIg3xqple0tQ9cESOlMrqTen4QnnWox8=
+Received: by filterdrecv-f5d548686-p5gbz with SMTP id filterdrecv-f5d548686-p5gbz-1-65285211-AF
+        2023-10-12 20:07:45.790913385 +0000 UTC m=+171875.049889214
+Received: from saas-admin01c (unknown)
+	by geopod-ismtpd-37 (SG) with ESMTP
+	id ehwSCBUfQcSEMqIRIW7sdg
+	for <egweinberg@viterbo.edu>;
+	Thu, 12 Oct 2023 20:07:45.750 +0000 (UTC)
+Date: Thu, 12 Oct 2023 20:07:45 +0000 (UTC)
+From: "Abram Markofski (via Viterbo)" <amarko73107@viterbo.edu>
+Subject: ENGR-CSCI-MATH-498-x1-META.U2.2023FA: Re: Week 7
+Message-ID: <f6ff634d5fd1d0cd6e79375cf58c7f88aa4755987e413a7b059aeed5e95bafea@moodle.viterbo.edu>
+X-Mailer: PHPMailer 6.5.3 (https://github.com/PHPMailer/PHPMailer)
+List-Id: "Meeting Minutes" <moodleforum144139@moodle.viterbo.edu>
+List-Help: https://moodle.viterbo.edu/mod/forum/view.php?f=144139
+X-Course-Id: 59610
+X-Course-Name: ENGR-CSCI-MATH-498-x1-META.U2.2023FA
+Precedence: Bulk
+X-Auto-Response-Suppress: All
+Auto-Submitted: auto-generated
+List-Unsubscribe: <https://moodle.viterbo.edu/mod/forum/subscribe.php?id=144139&d=623119>
+In-Reply-To: <c37f92d736cec08ef630fd564348e6e55b6772ec278f6f8602b369f65add02ab@moodle.viterbo.edu>
+References: <c37f92d736cec08ef630fd564348e6e55b6772ec278f6f8602b369f65add02ab@moodle.viterbo.edu>
+Thread-Topic: ENGR-CSCI-MATH-498-x1-META.U2.2023FA: Week 7
+Thread-Index: c37f92d736cec08ef630fd564348
+Reply-To: Abram Markofski <amarko73107@viterbo.edu>
+X-SG-EID:
+ =?us-ascii?Q?4wSf=2FdiORehbtUuwGorxTZgKe6YxZHHIdGBUqjFGbODvlpki3cvdFEwobQNgBk?=
+ =?us-ascii?Q?4RILinIZMkehMSH+HKgfI1J70ZvZ4IvGgIddBYe?=
+ =?us-ascii?Q?9gntP26NJFvaUMvqBNYVr8o8IFpbMgts43MZ29k?=
+ =?us-ascii?Q?rkWuvo3e2awpkREi3j9IBe8IKayxnhcDpr4ZwIt?=
+ =?us-ascii?Q?tVu34soeOucF3UyPYoZ5WE8Ya85+oBgg5YczpJR?=
+ =?us-ascii?Q?f34+g22D2ScNG9GzRCR7ryMh46ikbJJQU2ys9Ro?=
+ =?us-ascii?Q?A8Rks=2FtSe1UN5bhiYRDNg=3D=3D?=
+To: Eric Weinberg <egweinberg@viterbo.edu>
+X-Entity-ID: D4NCMPyVXHFW/SCj6o5gxg==
+Content-Type: multipart/alternative;
+ boundary="b1_l6vLbqsyTRzgnY2i2oH7ASdDfCN3CIo5oHfGwcQxA"
+Return-Path: bounces+13139427-4f1b-egweinberg=viterbo.edu@sendgrid.net
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2023 20:07:46.2893
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ dc0c821b-b739-406f-3d71-08dbcb5ee6d1
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ DS1PEPF0001708F:EE_|BN0PR20MB4053:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ DS1PEPF0001708F.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: dc0c821b-b739-406f-3d71-08dbcb5ee6d1
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:167.89.52.170;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:SKN;H:xtrwpqxx.outbound-mail.sendgrid.net;PTR:xtrwpqxx.outbound-mail.sendgrid.net;CAT:NONE;SFS:(13230031)(4636009)(1690799017)(451199024)(966005)(6636002)(19810500001)(8676002)(1096003)(6916009)(66899024)(83170400001)(76236004)(356005)(7596003)(7636003)(166002)(16799955002)(336012)(426003)(42882007)(83380400001)(26005)(5660300002)(3450700001)(1406899027)(39280500004);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2023 20:07:46.1643
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: dc0c821b-b739-406f-3d71-08dbcb5ee6d1
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ DS1PEPF0001708F.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN0PR20MB4053
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.3153361
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?xy1FtcwGqdSK1xcQxFpSvgHmn0Kxomg/vPI6or7HdgwYwNK+NC2MgAWvTm?=
+ =?iso-8859-1?Q?SiMqpb3VpG9MXZ2syJMXVOMcbyY7TFyH/Ywe1sa8UmnImcOFX9bM9wasZ0?=
+ =?iso-8859-1?Q?ih5jqNiuLxvhXlZDO/s43//33Q0YofwYogs67Lewa1I98ApEiHPeFsLn+i?=
+ =?iso-8859-1?Q?XXRAqjdZ57oP39JSEMIfjIDDTOk98OxsbPA51vLyyfUD05mzH4p+qMhVzZ?=
+ =?iso-8859-1?Q?T/uXw4/Ssjhxkv8+mg9HOiqwrkHMZgvwWLJSyrrKjCPg+0lxqsHZYCwNKH?=
+ =?iso-8859-1?Q?DXx5bei4+aVAf5gj+kno5/0tGLroPIIhXDu5ko1XsITomRKbW9FBM/+uY4?=
+ =?iso-8859-1?Q?flA0AwqMp0rc/HhFq7QlL9+HGnf6CtaiyPU39SlygFaq+0XqYJYnP7tXCp?=
+ =?iso-8859-1?Q?+AftSVHMhLflCEP18GlcpcnA1czuyaV1LYCXVBxHUv7iZ/FS4IxPnBv6sp?=
+ =?iso-8859-1?Q?hQ4i8TODMyJmq7xikBZs63dC8Lrw/5Xr9/xpMSlxc9ItCobOhGejS3dd/F?=
+ =?iso-8859-1?Q?BIQLc8i0nzndk25Ndt45Z+M6I0zKpdwlFUvF5n+JMu3OPoiwEM9GER9qQI?=
+ =?iso-8859-1?Q?0jy2jznXPzlEqniAFxQgDmc9XZ7Qu/Oen+AA1tTXkR2zp/O3AGNS1lTgrn?=
+ =?iso-8859-1?Q?Fxm6+OGuBtJr3AL693fKyDVL3wEEkhfrv8hhN0OSbxYTNulDRZ0BYFJoK9?=
+ =?iso-8859-1?Q?x3HwBTt6kTR9BotRn02uciHRpgHRxiOFeXmbpgukcR7R277D6sKIVAfZa3?=
+ =?iso-8859-1?Q?lQNXxDnxhDmNWRc5mM8OWYdVC8XkqCgeBr9+0oDbdrWuY5j7HRo01zDh1Q?=
+ =?iso-8859-1?Q?OX1UNtkPRGgeUa1nTxSYNIwcie4NXirgvxqSF44PqzIIJClVChCgjuCaUU?=
+ =?iso-8859-1?Q?+YiQIthQLtKDFgqVL5t6Fd4DFLLSQbHZZHfVQ280Q/lbFwKb1Hf4dTK1w5?=
+ =?iso-8859-1?Q?eNNyZcZOVP7YfAqahMhfYF2rjB7/lQ20jUThq2mqDtIeMvmdKjg3prgNNb?=
+ =?iso-8859-1?Q?Sq8lw7VafsKJsvxW8ilYWvAaQxvGsSp2Wjgd97pZzP9HO4i7x2PGNZ0eDM?=
+ =?iso-8859-1?Q?0QuvC4/jgZqlL2SmkjOHc23N8dFbo0AdETZXa/BBsbDPlBbN9D3N+ONd/L?=
+ =?iso-8859-1?Q?zHyx9EcztA1RnmgBIWc9WtjWKsulKPFAHceJUZ99MOoziNlvsh5JMdXfrF?=
+ =?iso-8859-1?Q?hmed0wa2HdPQM5KLRYUILjiAY87+NyUmrqGptGRdel5RzM8BFy9CUkCr0U?=
+ =?iso-8859-1?Q?CXvrP0kChUrbB4MMKsDQ=3D=3D?=
+MIME-Version: 1.0
+
+--b1_l6vLbqsyTRzgnY2i2oH7ASdDfCN3CIo5oHfGwcQxA
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+
+ENGR-CSCI-MATH-498-x1-META.U2.2023FA -> Forums -> Meeting Minutes -> Week 7
+https://moodle.viterbo.edu/mod/forum/discuss.php?d=3D623119#p2046720
+Re: Week 7
+by Abram Markofski - Thursday, October 12, 2023, 2:37 PM
+---------------------------------------------------------------------
+[meeting minutes HEAT]
+
+---------------------------------------------------------------------
+This is a copy of a message posted in ENGR-CSCI-MATH-498-x1-META.U2.2023FA.
+
+To reply click on this link:
+https://moodle.viterbo.edu/mod/forum/post.php?reply=3D2046720
+Unsubscribe from this forum:
+https://moodle.viterbo.edu/mod/forum/subscribe.php?id=3D144139
+Unsubscribe from this discussion:
+https://moodle.viterbo.edu/mod/forum/subscribe.php?id=3D144139&d=3D623119
+Change your forum digest preferences:
+https://moodle.viterbo.edu/mod/forum/index.php?id=3D59610
+
+--b1_l6vLbqsyTRzgnY2i2oH7ASdDfCN3CIo5oHfGwcQxA
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+><div class=3D"navbar">
+    <a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fcourse%2Fview.php%3Fid%3D596=
+10&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cdc0c821bb739406f3d7108db=
+cb5ee6d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327380706514782%7C=
+Unknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiL=
+CJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DMUrWFZKd0elFey%2FEL%2BoNPz6JF2P3C=
+LkwF2ZJi1JEVv8%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.viterbo.e=
+du/course/view.php?id=3D59610" shash=3D"XYfKhdwoaEQKhamQbTT20RSzWGAhnPmG23y=
++NrQgZneT7H2khN9uHwiCYmYQlwG8/7/cO7ygmv//4ctXNAgWOBA+da1J4RSqo+PnajQk4bzwHx=
+sA7K8kQB7kv4yIXL77VjJJUdVw8dRwOdURNEKVMtL3VwM0kNpTkyBQDOz4WvM=3D">ENGR-CSCI=
+-MATH-498-x1-META.U2.2023FA</a>
+    &raquo;
+    <a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Findex.php%3Fid=
+%3D59610&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cdc0c821bb739406f3d=
+7108dbcb5ee6d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327380706514=
+782%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1=
+haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DqaWAwguNnzYXGDIMWgnt9Xa%2BN=
+lil3B0PiYS%2Bpa7gqJ0%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.vit=
+erbo.edu/mod/forum/index.php?id=3D59610" shash=3D"GIPSp2qLNv7FmoQc6uNdhirQz=
+NH5pxw/ipDR8cRoyn4QeFIq2whWS5ZLHLkwC25PTBeYA/+YijSKm8qEBbxeSycY/Kevvlf4pBKN=
+o8w/fa2WKfdC1LiKeshO108+GOenCZ/YOxR4kaw7GXGnbyK+f+Y2iEqojp76HmMQt1pEzUY=3D"=
+>Forums</a>
+    &raquo;
+    <a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Fview.php%3Ff%3=
+D144139&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cdc0c821bb739406f3d7=
+108dbcb5ee6d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383273807065147=
+82%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1h=
+aWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DYTsl0gqrXK2wYxHKHwXeVaSTP%2B=
+5jXWDaDEQFfeTboyE%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.viterb=
+o.edu/mod/forum/view.php?f=3D144139" shash=3D"Vqvy6z5U+MZpBQDODZxuqxfv9P5c2=
+l8alAOl1IYkBE+4hz8CYF3nEfdcE9I6UzEkiPc+4KOgpx5SBjqgLKBWBW29/11+nJhVLj7NvUub=
+bdQQ/CyLuP5iJoevU6T47hMUPH+B4D2qWW2kkuKNq7WoLuXKgyaeDgYjiB/9wYRJKvo=3D">Mee=
+ting Minutes</a>
+    &raquo;
+    <a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Fdiscuss.php%3F=
+d%3D623119&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cdc0c821bb739406f=
+3d7108dbcb5ee6d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383273807065=
+14782%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6I=
+k1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DaBD9m6hleeGJVbPFunQVLt5%2=
+B0M1mFSyyqszg7ERHRg0%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.vit=
+erbo.edu/mod/forum/discuss.php?d=3D623119" shash=3D"ZSQoH7USLr+i5nPd62qaLTu=
+Y+huKwWexcAUWroO0jUu+i2wYu+a6NZEhpS5bmcM8tB2kOi2U9sjzwApVzYRDYOii2xn/tKJeSi=
+w3U+iw8t2UcV6g+GZTrolZgGeIr38p/MwuUE6S3L9keiH1p74qZOOQVTdDgqT4EZcTqkZM+NM=
+=3D">Week 7</a>
+</div>
+
+<table border=3D"0" cellpadding=3D"3" cellspacing=3D"0" class=3D"forumpost"=
+>
+    <tr class=3D"header">
+        <td width=3D"35" valign=3D"top" class=3D"picture left">
+            <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fuser%2Fview.php%3Fid%3D37120%26course=
+%3D59610&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cdc0c821bb739406f3d=
+7108dbcb5ee6d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327380706514=
+782%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1=
+haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DguQlM5lcZKniKXwlp0D29lfzhIG=
+vQPcRap81LImP5JE%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.viterbo=
+.edu/user/view.php?id=3D37120&amp;course=3D59610" shash=3D"KIj/7NQBbGKjZ3cx=
+K+bnXngmzuddRvXaNvNZQG6AKjkRXrdOB6Xpx7/J77RQyM+lzT8J8i2ZNpB8/2+I+xCnap8NuUA=
+Hl1VYsDDzlnldelMgWkTMBRlaIS3lcU2c4PV+j/CwUpnoi8P7mc/2X+yU56pWqd4+ZctPfh2eyW=
+YBrFU=3D" class=3D"d-inline-block aabtn"><img src=3D"https://moodle.viterbo=
+.edu/pluginfile.php/1095436/user/icon/boost_campus/f2?rev=3D25249558" class=
+=3D"userpicture" width=3D"35" height=3D"35" alt=3D"Abram Markofski " title=
+=3D"Abram Markofski "></a>
+        </td>
+        <td class=3D"topic ">
+            <div class=3D"subject">
+                Re: Week 7
+            </div>
+            <div class=3D"author">
+                by <a target=3D"_blank" href=3D"https://nam02.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fuser%2Fview.p=
+hp%3Fid%3D37120%26course%3D59610&amp;data=3D05%7C01%7Cegweinberg%40viterbo.=
+edu%7Cdc0c821bb739406f3d7108dbcb5ee6d1%7C6b9fc982e8d74958976cb08441cc9b0b%7=
+C0%7C0%7C638327380706514782%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DguQ=
+lM5lcZKniKXwlp0D29lfzhIGvQPcRap81LImP5JE%3D&amp;reserved=3D0" originalsrc=
+=3D"https://moodle.viterbo.edu/user/view.php?id=3D37120&amp;course=3D59610"=
+ shash=3D"KIj/7NQBbGKjZ3cxK+bnXngmzuddRvXaNvNZQG6AKjkRXrdOB6Xpx7/J77RQyM+lz=
+T8J8i2ZNpB8/2+I+xCnap8NuUAHl1VYsDDzlnldelMgWkTMBRlaIS3lcU2c4PV+j/CwUpnoi8P7=
+mc/2X+yU56pWqd4+ZctPfh2eyWYBrFU=3D">Abram Markofski</a> - Thursday, October=
+ 12, 2023, 2:37 PM
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class=3D"left side" valign=3D"top">
+                &nbsp;
+        </td>
+        <td class=3D"content">
+            <div class=3D"text_to_html"><img src=3D"https://moodle.viterbo.=
+edu/tokenpluginfile.php/b4c9bf0df1a628648fc932af8b09af77/1793533/mod_forum/=
+post/2046720/week7.png" alt=3D"meeting minutes HEAT" width=3D"838" height=
+=3D"1091" class=3D"img-fluid atto_image_button_text-bottom"><br>
+</div>
+
+            <div class=3D"commands">
+                    <a target=3D"_blank" href=3D"https://nam02.safelinks.pr=
+otection.outlook.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%=
+2Fdiscuss.php%3Fd%3D623119%26parent%3D2011790&amp;data=3D05%7C01%7Cegweinbe=
+rg%40viterbo.edu%7Cdc0c821bb739406f3d7108dbcb5ee6d1%7C6b9fc982e8d74958976cb=
+08441cc9b0b%7C0%7C0%7C638327380706671020%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&am=
+p;sdata=3DlL9N992lliqAzb8k1ebyfkmMTpKdqskigsGwIwYw360%3D&amp;reserved=3D0" =
+originalsrc=3D"https://moodle.viterbo.edu/mod/forum/discuss.php?d=3D623119&=
+amp;parent=3D2011790" shash=3D"M1Blbw+2czomGm39pBGT4Brwg2jiNJb1OD8DKcwuTRTe=
+zb4wjbxnyK0HYu0D5bHjyg14nAixRnktAnyp7EYXgR2X51ZZUWKFS3rMXSFcyhTnmBcj/8gX3jK=
+YdTuTKmEg1wifumLNCJvtV2MOXXjXOBumcF57MJfpP/advfc66vQ=3D">
+                        Show parent
+                    </a>
+                        |
+                    <a target=3D"_blank" href=3D"https://nam02.safelinks.pr=
+otection.outlook.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%=
+2Fpost.php%3Freply%3D2046720&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%=
+7Cdc0c821bb739406f3d7108dbcb5ee6d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7=
+C0%7C638327380706671020%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjo=
+iV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DKqaeOcn=
+cVxsBcGtAnvdY9tD54gJFXXG1cFD2yOIFMl8%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://moodle.viterbo.edu/mod/forum/post.php?reply=3D2046720" shash=3D"a1+Ko=
+yid3iKZNLw9AMeXVj3TPr+CCyoCkH2VhFrPz95FZIjgID7RYsiAHz5LIQiitRRb8BaI44uDwcDw=
+apkwG7va4BD43n74VTJsGPPyeAWpRWDu1GEczxPx3tAbwIqg0gMl2wPv04xqhsN8iuk608x7671=
+PsmV0H/Wzfp/Z1B8=3D">
+                        Reply
+                    </a>
+            </div>
+
+            <div class=3D"link">
+                <a target=3D"_blank" href=3D"https://nam02.safelinks.protec=
+tion.outlook.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Fdi=
+scuss.php%3Fd%3D623119%23p2046720&amp;data=3D05%7C01%7Cegweinberg%40viterbo=
+.edu%7Cdc0c821bb739406f3d7108dbcb5ee6d1%7C6b9fc982e8d74958976cb08441cc9b0b%=
+7C0%7C0%7C638327380706671020%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLC=
+JQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DOf=
+O7lwSEPhSuuhqqHJWewR6tburYNbPFGfTS851Q5ks%3D&amp;reserved=3D0" originalsrc=
+=3D"https://moodle.viterbo.edu/mod/forum/discuss.php?d=3D623119#p2046720" s=
+hash=3D"eY2oQO6Q8t5qBgcwFQdd5fU8p2x3EFQjHuAeSRFqjNukD2FrOdia1Hiok2JESOF7o/l=
+ROZlqVqclZx6nPZ1Lx/Xzr+anNDYDNqqJv30YuVCItaHSHvh4AOlQ2Jwct38q5PwAZeGhFReI0Y=
+jIRiEwBoN95XpMKV0gYwEKW5qwlig=3D">
+                    See this post in context
+                </a>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<hr>
+<div class=3D"mdl-align unsubscribelink">
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Fsubscribe.php%3Fid%3D144139&amp;=
+data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cdc0c821bb739406f3d7108dbcb5ee6d=
+1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327380706671020%7CUnknown=
+%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6=
+Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DB3B1IyrnmOH47dGddLalXA3puN%2BpuT4KbmBoZ4=
+BwPa4%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.viterbo.edu/mod/fo=
+rum/subscribe.php?id=3D144139" shash=3D"BhhEQMi8Gee6PZldGySKv2splEqx1mdJoEd=
+7qdbjhaSid8lPD2e/W5BuL1KbmNPw8pLHiRtvgiBFRYhUGaJF7Wb0ajOebb8gmiGvZ+Enf9j09P=
+kuX+WVOK1dNccQ0jMqnf7JVY4BKySsdvDIgHN09gLeNr9u7+ptDQDLWsPHcS0=3D">Unsubscri=
+be from this forum</a>&nbsp;
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Fsubscribe.php%3Fid%3D144139%26d%=
+3D623119&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cdc0c821bb739406f3d=
+7108dbcb5ee6d1%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327380706671=
+020%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1=
+haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D2%2FT5OJs2AHnkbbpNKOYSoHvzW=
+oDq2pVY89PU4AQ2P0k%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.viter=
+bo.edu/mod/forum/subscribe.php?id=3D144139&amp;d=3D623119" shash=3D"n6Td20l=
++pj1+qrV9Tlxz/DOaUtA/eu1ZPZ8gcBUlC/cZr/249v7pJojvGIyNvfLFs0M5cPiMRBvh9xpPE2=
+bOezMPvvWIyd8Qe/2odVyKw4KuizS229R6Iwj6D+iT6o8qJhr67OOg1pGGMUrWYhMaDq2VbBVrv=
+g7bvRKXrOGGau8=3D">Unsubscribe from this discussion</a>&nbsp;
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Findex.php%3Fid%3D59610&amp;data=
+=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cdc0c821bb739406f3d7108dbcb5ee6d1%7C=
+6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327380706671020%7CUnknown%7CT=
+WFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%=
+3D%7C3000%7C%7C%7C&amp;sdata=3DALAQpGh0BtIMhNMevc1kje7HyrmYQGgvdGkbDbIY1t8%=
+3D&amp;reserved=3D0" originalsrc=3D"https://moodle.viterbo.edu/mod/forum/in=
+dex.php?id=3D59610" shash=3D"DWa22c1NYzBf/gp+SxmphccOC67OLXwVjoWUiB+X/h0pML=
+c3gxxz9Hjlv0AU6InO7aTlhHMNgm9wz0Q3M1OVsEFzPj4W+tFNbJpCWGWWFDerHSZ7HgJ/yi1g4=
+cgQXPmIyFCMTsjXjX8YDD+9xRFPEzWtVutszQ/P4e8dfi9xO8E=3D">Change your forum di=
+gest preferences</a>
+</div>
+<img src=3D"https://u13139427.ct.sendgrid.net/wf/open?upn=3DmweMMgkj8FbV4Zh=
+-2B4o4HF5rMdjckcxKsVog0fMxU67QNx8JrUszZIegjFPgryupeW9bXh2GVXYDYVnJo43sP4Uxm=
+BN4Qul0mld2UuXipxVrK4vzOutFzCOd8-2BZL9ztWLvpwv0ichPCkB-2F2WECQ5BbyCo8EFmisW=
+0kgcRyosHas5RJtlZJP9SOCeT9rxBH1Es10aacFscJmwSZxHPr2hBONshPFPvMNAbmBzXIOAPOa=
+g-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !i=
+mportant;width:1px !important;border-width:0 !important;margin-top:0 !impor=
+tant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !im=
+portant;padding-top:0 !important;padding-bottom:0 !important;padding-right:=
+0 !important;padding-left:0 !important;">=
+
+--b1_l6vLbqsyTRzgnY2i2oH7ASdDfCN3CIo5oHfGwcQxA--

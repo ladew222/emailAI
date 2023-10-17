@@ -1,0 +1,581 @@
+Received: from DS0PR20MB6807.namprd20.prod.outlook.com (2603:10b6:8:fa::5) by
+ PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Mon, 2 Oct 2023 18:25:11
+ +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=mVd5F/6e/PzHXhojHt6sHnZfd1T/ZuOQdlopHXPOeh84/9z+CA5B3ox2mwWyZDpcToIaRxmZXl8e63RZfBeJqvj4kFmlEi4ArBdT1UYBV8JlES5MVI+wDm9CswBHlbqCOT2N9+vqImqLx7k6DHJvAk07r+Kqa1qQlld7pq+wE1j2gi1R5MEzZO4qampwqLEuOacRU5/8OvP5kjfniqOnmpnRzGleMFvhKKAUM8JPZXpXFs8xMk1CKKUYB2LXdVNfiYxVJHpxkMrjDOJ6wzxOkfbXKQCsNnhBvfWTCY+eL6MpLuV/27hwr4ZPYH5P6oD0S10T6J+KtBJwPURb6HNiOw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=K64M9kFq/3Cw6RPTEWT8bzyn1gJl2xRfUg8bWYnuzwE=;
+ b=igJUHFkHhlrazl2PQjX5tugg10YG0F5NaX6qPZBbw5xJ7I9vvYonMqHRQq3qm7poEZRaFo22vpxtH4vdF9mBWczGm/1ZFLlFynJ6wq48nx87PYb+zE+PGUK9Q/xPC7qlk/dFLC7Jf1ODnvNGkS+sxNrbH4zJQcTvYRL3YqmyWBBkKanOSxD3gPz+ZcstvUCqwPpxNZIUe5cvVcpjAHF1WARePwqj1jxiwprF6Ep6fflDBujgRpeqg2Kxu6N4kHsVw6cT5vJxL13NZbfesv2aXRxM/W1AEVxogyYTsxwpwlOvMFB9+csolXw3zAe6KWfk5j+6OFM4uOigEcsjx4hN8w==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 216.71.152.166) smtp.rcpttodomain=viterbo.edu
+ smtp.mailfrom=gundersenhealth.org; dmarc=pass (p=quarantine sp=quarantine
+ pct=100) action=none header.from=gundersenhealth.org; dkim=pass (signature
+ was verified) header.d=gundersenhealth.org; dkim=pass (signature was
+ verified) header.d=gundersenhealth.onmicrosoft.com; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=gundersenhealth.org]
+ dkim=[1,1,header.d=gundersenhealth.org]
+ dmarc=[1,1,header.from=gundersenhealth.org])
+Received: from BL0PR02CA0012.namprd02.prod.outlook.com (2603:10b6:207:3c::25)
+ by DS0PR20MB6807.namprd20.prod.outlook.com (2603:10b6:8:fa::5) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.29; Mon, 2 Oct 2023 18:25:08 +0000
+Received: from BL6PEPF0001AB52.namprd02.prod.outlook.com
+ (2603:10b6:207:3c:cafe::2c) by BL0PR02CA0012.outlook.office365.com
+ (2603:10b6:207:3c::25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6838.31 via Frontend
+ Transport; Mon, 2 Oct 2023 18:25:08 +0000
+Authentication-Results: spf=pass (sender IP is 216.71.152.166)
+ smtp.mailfrom=gundersenhealth.org; dkim=pass (signature was verified)
+ header.d=gundersenhealth.org;dmarc=pass action=none
+ header.from=gundersenhealth.org;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gundersenhealth.org
+ designates 216.71.152.166 as permitted sender)
+ receiver=protection.outlook.com; client-ip=216.71.152.166;
+ helo=esa2.hc3480-24.iphmx.com; pr=C
+Received: from esa2.hc3480-24.iphmx.com (216.71.152.166) by
+ BL6PEPF0001AB52.mail.protection.outlook.com (10.167.241.4) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.14 via Frontend Transport; Mon, 2 Oct 2023 18:25:07 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple;
+  d=gundersenhealth.org; i=@gundersenhealth.org;
+  q=dns/txt; s=selector3; t=1696271107; x=1727807107;
+  h=from:to:subject:date:message-id:references:in-reply-to:
+   mime-version;
+  bh=g2le5uC5C40UDB7LDcGhGmkfzMnRrE5F1AAOT2AzKLs=;
+  b=5e7c/4M2rIq34HpEYkIsZsEdLnspk7CsEJMWxtcYhZULWJn99eWGfCGu
+   cXED6AvRkjRyCuhZTj8HHCTzYVW7J5haC/enRtMVkFkBtCu7/gQRx1yhO
+   qOS/c7kR08X9R2mRC10E2Bdwrm/chn58C7aw4013PtFkz8kW/SwZSky5J
+   IucwADNYveB0EUz2Zt5jv0sgJDCKK9u+dwZIjLvJ9EJJFnVSK6TNaSAF7
+   DvtNUhtEdips0wB91QW204Cq57yryMfhcd9AgBUvyzYmkPtDRwkYpSxzZ
+   486IXax4PvoOT2SKnwuzve2XLQO7mF2cchH/DedNpmYMiGPBks5rEYni4
+   g==;
+X-CSE-ConnectionGUID: 55ifCqb7RUydFNE0+GxIhw==
+X-CSE-MsgGUID: gw7z2ZzDRBWUi06rHKzSyA==
+Received: from mail-bn7nam10lp2100.outbound.protection.outlook.com (HELO NAM10-BN7-obe.outbound.protection.outlook.com) ([104.47.70.100])
+  by ob1.hc3480-24.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 02 Oct 2023 13:25:05 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=LJ4BcYI9bzPb+LM4PK/O/eQ/j/gpld341mXoqCeAFcrapCm3i3mS0ntcz8tb5YpoHQx9GqN945kkSfqKgJmb0VuU8I5EIRiVM16Gt6YCyc1pOBSwnnTPnRs8XJ2FOJsNV8h6B7aORCMoSwQHsLJaqvnbjjxOMxs08MFd9pmgde84RNNm9xKyWlywIBx2gSNS0vC0Xu+zlxPPzKrxCdRwlEfx0eDUCpMbQtBf0O8OlQzGth4KTkjQypegKKg9GTziO2r4MS+uzvYVNTMUdpU6mAZsiz7cAsAmFkHqykCHFkLpeQga15o8UPuFaeDzzxGBoC4rDwOPgb5q91zCFDr4Bg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=K64M9kFq/3Cw6RPTEWT8bzyn1gJl2xRfUg8bWYnuzwE=;
+ b=PCRMNkNSTQH6TqeaT+RSdN4hmyjOg9gaRG/rKAUeUJTlnIQ1SnCPB++tekQoZ+WUViEbVAKtU2lh0luayDDzKvReTIgxmFyPBkXCsLAMTGxMhHW9vD5VUJ1nh6W85eyZQ5qvccF2AstxFOIPzL4VSUycrBPmGUySchcTl9OpRNFrXPrInb8BRuwEpNy1W7y+nTfCEo62YKm6VniBYCkjI5urdtRt7fFmorQZ2VOYxluTX7lLN/dWS+HURHsiy53+Vi0iTF0SIM5FTzpLVjCA5vnVuVqVFQa2BabFmWEJ0IZ3gHf6CnVH8+VYSCTuR4uOXAslnsV+xVaqr2kwt+h7IA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=gundersenhealth.org; dmarc=pass action=none
+ header.from=gundersenhealth.org; dkim=pass header.d=gundersenhealth.org;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=gundersenhealth.onmicrosoft.com;
+ s=selector2-gundersenhealth-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=K64M9kFq/3Cw6RPTEWT8bzyn1gJl2xRfUg8bWYnuzwE=;
+ b=Fk6BelB6Qfblg4/cmTBJXfi2P5mJb9RpeJtuFovC9XpStFMts3quvOnlNwNs7eYpIcy4ayfQ3RCKA+PYyPf/Y0jrqndfxCVYl2mTpo0OWKPfrSOOVyVMLt8LzVgjHZRVzxPuTkKKJH3jhoSgIdVSCs5B3UJxl5Ych0Be1E7yd4E=
+Received: from DM4PR10MB5989.namprd10.prod.outlook.com (2603:10b6:8:b3::8) by
+ MW4PR10MB5728.namprd10.prod.outlook.com (2603:10b6:303:18e::9) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6813.28; Mon, 2 Oct 2023 18:25:03 +0000
+Received: from DM4PR10MB5989.namprd10.prod.outlook.com
+ ([fe80::d763:2732:5a62:660a]) by DM4PR10MB5989.namprd10.prod.outlook.com
+ ([fe80::d763:2732:5a62:660a%4]) with mapi id 15.20.6838.028; Mon, 2 Oct 2023
+ 18:25:03 +0000
+From: "Dyko, Kelly J" <kelly.dyko@gundersenhealth.org>
+To: "egweinberg@viterbo.edu" <egweinberg@viterbo.edu>
+Subject: Ethics and AI Grant/ Krister Mattson
+Thread-Topic: Ethics and AI Grant/ Krister Mattson
+Thread-Index: AQHZ9V3CaXlckQHBQUy+nuSd1mf4gg==
+Date: Mon, 2 Oct 2023 18:25:02 +0000
+Message-ID:
+ <DM4PR10MB5989D5F18449204DFA0320F885C5A@DM4PR10MB5989.namprd10.prod.outlook.com>
+References: <7C7F5B4A-C0B8-4CEA-B588-AB56E564B4E9@viterbo.edu>
+ <DS7PR10MB50399ADF71EBD7D9FF7C79A9CAC5A@DS7PR10MB5039.namprd10.prod.outlook.com>
+ <DS7PR10MB5039E6AC91CFB10148FAE903CAC5A@DS7PR10MB5039.namprd10.prod.outlook.com>
+In-Reply-To:
+ <DS7PR10MB5039E6AC91CFB10148FAE903CAC5A@DS7PR10MB5039.namprd10.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=gundersenhealth.org;
+x-ms-traffictypediagnostic:
+ DM4PR10MB5989:EE_|MW4PR10MB5728:EE_|BL6PEPF0001AB52:EE_|DS0PR20MB6807:EE_|PH7PR20MB4988:EE_
+X-MS-Office365-Filtering-Correlation-Id: 7ef136e6-7b35-4121-f79f-08dbc374e804
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ fjBqNcUmGXxcdU6CUujRP+ujoD5HbMGk1HnwWIMIWIjkCothrboS24TrwFcm5Jsqs/0A4LYzI4I7YakaZME9Zo+nT+Swd9aWzIMMNLonpnEwhuLMWLYrxq2sy/JjPdJ/V5otX/7PT9+oG/Im8VdrLcYesnPGnUU1ZtJH1xM4A+/WRdmVio7nkKDwm8t2ZQ4+uXkjrqKq9/L9yeE/W+xTUjanQpY1+cD0mc+rSOx+K3mjPWNze8LV2MbSn2DswQiDzI5dLDlkoQNwrVX4I602h4elrQtWizMH5rk3RBVbjKUSZKfnrtfF0SnQezpJ/vCB3k/p0TcOHNPlTzKE5f1mElZYFkZQQYNKjBIsfBG6t4QM0lKPifXxX8pffNby/H6mjWFOHThsHPvVbdzku7rxMgzDNmkXogSqjmQBr0nZd5p8ZcPn5FW/SuuR8U2DfvrbDDzbAuqP6n0V7Gqh+ieEa920QQlqCcqoSsSSpyrwL3VeFM9BwNiAxabwF+4PnESFTQV9EvbagaW4OgnsK5mHxAhZg/3pv5r/7wN7gpuq0mG3vFztv/a44RBShKzqrMfJA5ZNhuoKF26qhGITqNkxQlia/mIlY48RSQb9gIU3WgQkND6xu4mhNGyFeH+O6OC9
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DM4PR10MB5989.namprd10.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230031)(366004)(136003)(39860400002)(346002)(376002)(396003)(230922051799003)(64100799003)(451199024)(186009)(1800799009)(296002)(478600001)(38100700002)(122000001)(71200400001)(45080400002)(6506007)(26005)(40140700001)(33656002)(38070700005)(7696005)(9686003)(53546011)(66446008)(66476007)(66946007)(66556008)(76116006)(83380400001)(6916009)(64756008)(41300700001)(316002)(77540400001)(55016003)(2906002)(86362001)(8936002)(8676002)(5660300002)(52536014);DIR:OUT;SFP:1102;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0:
+ =?us-ascii?Q?uVi9W791ihON2aMN9x7+6zVYjBGeBKrMOVVsHkfosalH8o91DCmiWITSmytd?=
+ =?us-ascii?Q?cJqpSy1DzQVPLYbBKmnh61lzWAiJFaekTZ7ZfjkG8DPXFHJ0VReuzEWnFpOt?=
+ =?us-ascii?Q?JT/Bfr/dMXN9CmVBqHivSsJ9jsga/7ai0noh2J2fKzwIt+1WoThAfCpkMuRV?=
+ =?us-ascii?Q?L8bEXyUXvCHpKb/U0PkFlkigtyXwaV2spUgDunqW7ANGyPcuIxWOzRki37ey?=
+ =?us-ascii?Q?AXRkLsItHwk5bBbfJ5uBIUy0rIUW+7Y0dgyc2xftbdY4d7F5hcgMMNWBNko/?=
+ =?us-ascii?Q?oH0+6YVAZ7k4ssKya/e9NDtFAXjb4zdhg7ziZCvvc1R6ZvMoIh7KqbuGwEiT?=
+ =?us-ascii?Q?8zkj5Ws3CH9FHbCeK3fdDmZgm3EyFgNkE3OGHXZA6fzn5oTcw5QTsmJ98PO1?=
+ =?us-ascii?Q?HsJw7HOjOjkDa/6gAuqB0riGXdBmFk6wblK63/Rmuwdt3G4FIgB96CllhzkP?=
+ =?us-ascii?Q?Cws+ZmYIojWnyJ7PIwGeIrI1swjJxtT4tRWfzA1ZaypLcmIBUvwgUSW3QbKD?=
+ =?us-ascii?Q?yNBzJFGjCSSGi/N7xLmHWSoHa0ZKrbZjNUWBpxjR6bGabOOjukxN3x1mU1l0?=
+ =?us-ascii?Q?lKRuLbDG2RiYFcjdRi7SFSY1TBfbk7X9jj5cbTm48q1nS4XO4fBgBlr3xXsA?=
+ =?us-ascii?Q?mkOiCDWlM0dMINiJdaExjInLG16gYIPg5nn9cz1oWIJ0VwJkbpfjfLBUaz6I?=
+ =?us-ascii?Q?2ihP6MQm+RwHoiXQwQp9R8rqMcKAURrooaH8NBq6amolY+WofUK5WyTwEzUS?=
+ =?us-ascii?Q?sdEcKk+GXyqIDsGG+ij0zuFLUPGyeCFTv04Q83Ed4vE3hloCdvh6R3QeWRa6?=
+ =?us-ascii?Q?hMN/TfVY5UE3U9xmo59TOAA4ur4UZg/amRzsw7NM+7B0WQAVD8wPskRr89Qe?=
+ =?us-ascii?Q?r0v9EdJdH+wCJLkdv1fPNTtYjVFV40ayTeQKPnVFOvkZ74976p/Groo0GEkB?=
+ =?us-ascii?Q?ZkX6FY4CuoPJ5+ZVZDdif2QCPKt9103ZstkhrG9Y/42fZKVlvRItoW43VcH3?=
+ =?us-ascii?Q?M9dZumqugP+0X2jv8P6SD43JkhS124FEO9qief9nB0nU5elx4oUoHuOfQA/n?=
+ =?us-ascii?Q?pjd5vW8zMFUA8o/LNGUstdQb2J3Z2x0RHczvlNIFBMmv9PBF3k4/1k7Hs2aR?=
+ =?us-ascii?Q?OeunzobSlxF9h12aT2kRn5OMnVRsU9xuqPGIdzkbBayg7o4ikHNdL+xlZjPn?=
+ =?us-ascii?Q?LreoVeHXv4UmIXA7srW57dzL4kb/5s3oBSgRYMxatxFBlFtvr8ATj4TbrUXG?=
+ =?us-ascii?Q?V+WB6xC/ejD1bMPZfR2CWqYKSMha7IkIerot/SGIZshCejfkJwrSSvv5ndiS?=
+ =?us-ascii?Q?uGqCW5foyWAwjPgV0YrKtm7gKUeNi848ZoJm1tSwqaH7EmaHeUbnNQ129EZF?=
+ =?us-ascii?Q?CuxB5ngaw134Pu3PkSIlHWrzRHLJd5Bhf1/58eoMM7BXxsA//cvi2tu9+yxY?=
+ =?us-ascii?Q?8NkUiUoMzyrj0Pr3QhojAWWV0dYl8ZQYJaR0RHzfMQPgKYGXUgGBcq9X4/er?=
+ =?us-ascii?Q?Db42sduktC7wXkRxh9ul4AWfI3kTJXl6jg87a2fZjhBNEsWW/GTuGn3zxqnt?=
+ =?us-ascii?Q?q+z/HCfweO5aR9yOpnSXsSyBpPBDvr7cp9U0U2M8+LFFJGuJf5SH6lGyYmb3?=
+ =?us-ascii?Q?Kw=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_DM4PR10MB5989D5F18449204DFA0320F885C5ADM4PR10MB5989namp_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW4PR10MB5728
+Return-Path: kelly.dyko@gundersenhealth.org
+X-MS-Exchange-Organization-ExpirationStartTime: 02 Oct 2023 18:25:07.9319
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 7ef136e6-7b35-4121-f79f-08dbc374e804
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ BL6PEPF0001AB52.namprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL6PEPF0001AB52.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ c2168f85-bd0d-4395-7a68-08dbc374e517
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:216.71.152.166;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:esa2.hc3480-24.iphmx.com;PTR:esa2.hc3480-24.iphmx.com;CAT:NONE;SFS:(13230031)(4636009)(451199024)(77540400001)(52536014)(55016003)(6916009)(84300400001)(83290400002)(83320400002)(83300400002)(83380400001)(83280400002)(83310400002)(7636003)(356005)(6506007)(7596003)(7696005)(8676002)(1096003)(26005)(8636004)(336012)(86362001)(58800400005)(5660300002)(22186003)(45080400002)(53546011)(9686003)(40140700001)(33656002);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Oct 2023 18:25:07.6038
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7ef136e6-7b35-4121-f79f-08dbc374e804
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL6PEPF0001AB52.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS0PR20MB6807
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.2070595
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6838.030
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?xN9bblfPaaMr5GvXzo/VsCffIbw2zgublDkM0j+1OdEPmLbsESQH7gNsG4QG?=
+ =?us-ascii?Q?uoJrBbs05biXHcLI4pSKx+AydD1JfH0mRzKVLSTKSFrsF6ELu1MAEDmD368M?=
+ =?us-ascii?Q?qYWIM3xjP7pS7URqpmQV1YF8GpZsuSsqFF4W4gJLd99PlUqqJCaaWaidGpIc?=
+ =?us-ascii?Q?0rv11RE8l+54ao9QtMgYGMecf5SNUM4N9KrKnd/XVMANs07kGdd7pw6OrtrY?=
+ =?us-ascii?Q?Rz8Q832tFDwsdOm0URwNUNFh1dBaJo9QK2eZKEhQEuuRbxL2fr1gRnC1UXqc?=
+ =?us-ascii?Q?6JI1aJkdjp5jj4xoDnIhwQvWFsfEJCm2qYlOqyawzN9tIx4ZGIXwLNmCwMtM?=
+ =?us-ascii?Q?u7oqCVfKyPhhI2MNHif9MOdm7iCxqnFARUfHIV65biRDo5VeL4QzTi5Oc+8t?=
+ =?us-ascii?Q?Pchuhr1wEW+NWdMH8j0ISFvUsdH/lAESzDFnecFGNo6c0281k6mLoL6Vr72A?=
+ =?us-ascii?Q?zzIGwuytnW/HTe5q6sofMFaYwBkD9CvMoVrOccOnlkGHAxuyG6cKhVxq9sXm?=
+ =?us-ascii?Q?1QpaKIQV42UC9KQZDO2OU7BxnHDi9ulOeUbLa5umtpGEO5svtmuXQH13eYlq?=
+ =?us-ascii?Q?6VBbCLprobqnabQIgGRFhQFvfJVhZEa2f/n2D3nfVxvyEYV3TIv14UzhNZ+u?=
+ =?us-ascii?Q?/pp+V7b4YQt9DsUWJ6zTsQkPReq0tZY8uSe/eXNdZ/N9ginwyp4+WHJpONfM?=
+ =?us-ascii?Q?YM99S9WfArIFZW4CBg70BRy3Xw0hrDn6t/bcJUCde4GxSMVzE5s3oH70Y4P9?=
+ =?us-ascii?Q?aJxrq8/aS5Yf/HB1t/F75D/z8PAz0cWgcWmqsoaFRb8kvGIwjBTY/rY2bxA0?=
+ =?us-ascii?Q?O2+XOWYjq0gTga3OrCplGryIPi/rJzklOJezO3PFJHjKqb5jEpnJKZ4sh4EU?=
+ =?us-ascii?Q?Cq9JtpVHI3Tsj0xh1I/5gESJ237A/SnJCYT4B4M1PznPlx2j3VOwrX5DQxoF?=
+ =?us-ascii?Q?wX0tRvdkyKktFoBOn5a6lzKujOZLME1ISL4WkUwYl+kqpUhn3C3l0qQUPvgS?=
+ =?us-ascii?Q?bgcp5cSXxVjegi8SdVcMTCcPbGCR9JirCs6TTupW8rK+DQ8q0OdkXSSdnEy6?=
+ =?us-ascii?Q?R07TiRPuO/lY5ppYuOrf64zyFW9X04KgPNRyMOIRlHQ2tvrYmvndgX3pMX3P?=
+ =?us-ascii?Q?aSsIOLh1Kkk8hbUBMTai3oKHjXtK9ARNuBFfZ/YCRSimAQ3MId7zuVBJtDcg?=
+ =?us-ascii?Q?HZvnD7HACrpIqLmOllJvRWmzucAWQss5VlkQ5ZmvZEYnvEKJonCGhoAiFMkI?=
+ =?us-ascii?Q?/vRvaCaiDwWebTCfL0eTxUhZSHL8kZKxoxycUhT/0h/6JAQ9agJKyQA87Tly?=
+ =?us-ascii?Q?lARQIeuyO6uLYqyiqtAhBvKThPW6ymtyq5rhbX4hoVVWg1qWt0p9LPNrhIoM?=
+ =?us-ascii?Q?yvF9NSi5sW0W7TC/NyOBq4szMOQZb23KOlzh/0hnDzCn/AYK+qlj2F69ZufO?=
+ =?us-ascii?Q?7VqBG4RZ2UJU9R8q4Ot5j1xG1ITTYXBS4M6bTfMPUahQID3yfoXiFc81UIIJ?=
+ =?us-ascii?Q?mSwWXMKhSCgf9EhRvJOx8U2DXAeRKbOgwardtEXwG7b83TMi5SRbbotSltTP?=
+ =?us-ascii?Q?ABdKX6w0siltL4A+MTwEbNsc6pw8qo7HXO2hLwHY7naxV3rc+5/LAeuXhonL?=
+ =?us-ascii?Q?1HtSYUaMZdXo49b2a+Hndx3l6cws/mmNJUUPp0THq0RAZTKeBwQ9tL8GG6Qy?=
+ =?us-ascii?Q?WAA+RVVlE1j3DBN4H0x4LoYZIFPJipFxinA9QyLnD17ZpaSPGOchBsZym8Qr?=
+ =?us-ascii?Q?SaEz4CIX6g=3D=3D?=
+MIME-Version: 1.0
+
+--_000_DM4PR10MB5989D5F18449204DFA0320F885C5ADM4PR10MB5989namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+EXTERNAL: This email originated from a sender outside of Viterbo. Use cauti=
+on when clicking on links or opening attachments.
+
+Hello Eric-
+
+I have listed below some times that Krister is free next week.
+I am hoping that one of these windows may work for you to meet for 30 minut=
+es.
+If I need to send you some more options, please let me know.
+
+Monday 10/9
+8-9am
+9:30-10am
+
+Tuesday 10/10
+11-12:30pm
+2:30-3:30pm
+
+Thursday 10/12
+9-10am
+3-4:30pm
+
+Friday 10/13
+2:30-3:30pm
+
+Thank you
+Kelly
+
+Kelly J Dyko
+Senior Office Assistant
+Information Technology and Digital Services Department
+
+GUNDERSEN HEALTH SYSTEM
+Phone: 608-775-2748 or 800-362-9567 x52748
+3190 Gundersen Dr. | Mail Stop:  NCA2-02
+Onalaska, WI  54650
+kelly.dyko@gundersenhealth.org<mailto:kelly.dyko@gundersenhealth.org>
+Confidentiality Notice:  This e-mail message, including all attachments, is=
+ for the sole use of the intended recipient(s) and may contain confidential=
+ or privileged information
+If you are not the intended recipient, you may NOT use, disclose, copy or d=
+isseminate this information
+
+From: Mattson, Krister T <ktmattso@gundersenhealth.org>
+Sent: Monday, October 2, 2023 1:12 PM
+To: Dyko, Kelly J <kelly.dyko@gundersenhealth.org>
+Subject: FW: Ethics and AI Grant
+
+
+
+From: Mattson, Krister T
+Sent: Monday, October 2, 2023 11:11 AM
+To: Eric G Weinberg <egweinberg@viterbo.edu<mailto:egweinberg@viterbo.edu>>
+Subject: RE: Ethics and AI Grant
+
+Eric,
+
+Just let you a voicemail after learning all your communication went to my a=
+lternative email folders.
+
+
+May I have my admin reach out to you to set some time up for us to connect?
+
+Again apologies.
+
+Krister Mattson
+
+Personal Cell phone  218-428-7835
+
+
+
+
+From: Eric G Weinberg <egweinberg@viterbo.edu<mailto:egweinberg@viterbo.edu=
+>>
+Sent: Wednesday, August 9, 2023 3:01 PM
+To: Mattson, Krister T <ktmattso@gundersenhealth.org<mailto:ktmattso@gunder=
+senhealth.org>>; Chopra, Praveen K <pkchopra@gundersenhealth.org<mailto:pkc=
+hopra@gundersenhealth.org>>
+Subject: Ethics and AI Grant
+
+Attention: You have received this email from someone outside of Gundersen. =
+Please use caution responding, opening attachments or clicking on links. Re=
+port this email using the "Report Phish" button in Outlook if you are uncer=
+tain about it, if it asks for an account validation, password reset, or cla=
+ims to be a security alert.
+
+
+We are working on Developing a NEH Humanities Connection grant where we wou=
+ld establish an integrated humanities center and an Ethics and AI certifica=
+te. I have attached a draft letter. Examples of commitment would be to serv=
+e in an advisory role, to present to courses, to host interns or to partici=
+pate in lectures. Would you be interested in this a supporting our grant ap=
+plication.  The commitment is relatively low but can also be more involved.=
+ Feel free to ask questions as well as I can provide more context.
+
+See More from Rebecca Traynor
+
+
+
+~~~~~~~~~~~~~~~~~~
+Eric G. Weinberg, Ph.D.
+Assistant Professor
+Viterbo University
+Brophy, 109
+608 796-3045
+608-796-3359
+
+He/Him/His
+
+
+--_000_DM4PR10MB5989D5F18449204DFA0320F885C5ADM4PR10MB5989namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle24
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div>
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hello Eric-<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">I have listed below some times that Krister is free =
+next week.
+<o:p></o:p></p>
+<p class=3D"MsoNormal">I am hoping that one of these windows may work for y=
+ou to meet for 30 minutes.
+<o:p></o:p></p>
+<p class=3D"MsoNormal">If I need to send you some more options, please let =
+me know.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Monday 10/9<o:p></o:p></p>
+<p class=3D"MsoNormal">8-9am<o:p></o:p></p>
+<p class=3D"MsoNormal">9:30-10am<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Tuesday 10/10 <o:p></o:p></p>
+<p class=3D"MsoNormal">11-12:30pm<o:p></o:p></p>
+<p class=3D"MsoNormal">2:30-3:30pm<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thursday 10/12<o:p></o:p></p>
+<p class=3D"MsoNormal">9-10am<o:p></o:p></p>
+<p class=3D"MsoNormal">3-4:30pm<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Friday 10/13<o:p></o:p></p>
+<p class=3D"MsoNormal">2:30-3:30pm<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank you<o:p></o:p></p>
+<p class=3D"MsoNormal">Kelly <o:p></o:p></p>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"line-height:12.0pt"><b><i><span style=3D"fo=
+nt-size:12.0pt">Kelly J Dyko<o:p></o:p></span></i></b></p>
+<p class=3D"MsoNormal" style=3D"line-height:12.0pt"><span style=3D"font-siz=
+e:12.0pt">Senior Office Assistant</span><span style=3D"font-size:10.0pt"><o=
+:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt">Information Technol=
+ogy and Digital Services Department<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:12.0pt;color:teal">&nbsp=
+;</span></b><span style=3D"font-size:10.0pt"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:12.0pt;color:teal">GUNDE=
+RSEN</span></b><b><span style=3D"font-size:12.0pt;color:green">&nbsp;</span=
+></b><b><span style=3D"font-size:12.0pt;color:#17365D">HEALTH SYSTEM</span>=
+</b><b><span style=3D"font-size:12.0pt;color:green">&nbsp;<o:p></o:p></span=
+></b></p>
+<p class=3D"MsoNormal">Phone: 608-775-2748 or 800-362-9567 x52748<o:p></o:p=
+></p>
+<p class=3D"MsoNormal" style=3D"line-height:12.0pt"><u><span style=3D"font-=
+size:12.0pt">3190 Gundersen Dr. | Mail Stop:&nbsp; NCA2-02</span></u><u><sp=
+an style=3D"font-size:10.0pt"><o:p></o:p></span></u></p>
+<p class=3D"MsoNormal" style=3D"line-height:12.0pt"><u><span style=3D"font-=
+size:12.0pt">Onalaska, WI&nbsp; 54650</span></u><span style=3D"font-size:10=
+.0pt"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:12.0pt"><span style=3D"font-siz=
+e:12.0pt;color:blue"><a href=3D"mailto:kelly.dyko@gundersenhealth.org"><spa=
+n style=3D"color:#0563C1">kelly.dyko@gundersenhealth.org</span></a>&nbsp;&n=
+bsp;</span><span style=3D"font-size:10.0pt"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:7.0pt">Confidentiality N=
+otice:</span></b><span style=3D"font-size:7.0pt">&nbsp; This e-mail message=
+, including all attachments, is for the sole use of the intended recipient(=
+s) and may contain confidential or privileged
+ information<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:7.0pt">If you are not the i=
+ntended recipient, you may NOT use, disclose, copy or disseminate this info=
+rmation<o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b>From:</b> Mattson, Krister T &lt;ktmattso@gunders=
+enhealth.org&gt;
+<br>
+<b>Sent:</b> Monday, October 2, 2023 1:12 PM<br>
+<b>To:</b> Dyko, Kelly J &lt;kelly.dyko@gundersenhealth.org&gt;<br>
+<b>Subject:</b> FW: Ethics and AI Grant<o:p></o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b>From:</b> Mattson, Krister T <br>
+<b>Sent:</b> Monday, October 2, 2023 11:11 AM<br>
+<b>To:</b> Eric G Weinberg &lt;<a href=3D"mailto:egweinberg@viterbo.edu">eg=
+weinberg@viterbo.edu</a>&gt;<br>
+<b>Subject:</b> RE: Ethics and AI Grant<o:p></o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Eric,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Just let you a voicemail after learning all your com=
+munication went to my alternative email folders.&nbsp;
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">May I have my admin reach out to you to set some tim=
+e up for us to connect?&nbsp;
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Again apologies.&nbsp; <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Krister Mattson<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Personal Cell phone&nbsp; 218-428-7835<o:p></o:p></p=
+>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b>From:</b> Eric G Weinberg &lt;<a href=3D"mailto:e=
+gweinberg@viterbo.edu">egweinberg@viterbo.edu</a>&gt;
+<br>
+<b>Sent:</b> Wednesday, August 9, 2023 3:01 PM<br>
+<b>To:</b> Mattson, Krister T &lt;<a href=3D"mailto:ktmattso@gundersenhealt=
+h.org">ktmattso@gundersenhealth.org</a>&gt;; Chopra, Praveen K &lt;<a href=
+=3D"mailto:pkchopra@gundersenhealth.org">pkchopra@gundersenhealth.org</a>&g=
+t;<br>
+<b>Subject:</b> Ethics and AI Grant<o:p></o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt"><strong><i><u><span s=
+tyle=3D"font-family:&quot;Calibri&quot;,sans-serif">Attention:</span></u></=
+i></strong><em><span style=3D"font-family:&quot;Calibri&quot;,sans-serif"> =
+You have received this email from someone outside of Gundersen.
+ Please use caution responding, opening attachments or clicking on links. R=
+eport this email using the &quot;Report Phish&quot; button in Outlook if yo=
+u are uncertain about it, if it asks for an account validation, password re=
+set, or claims to be a security alert.</span></em><i><br>
+<br>
+</i><o:p></o:p></p>
+<div>
+<div>
+<p class=3D"xmsonormal" style=3D"margin:0in">We are working on Developing a=
+ NEH Humanities Connection grant where we would establish an integrated hum=
+anities center and an Ethics and AI certificate. I have attached a draft le=
+tter. Examples of commitment would be
+ to serve in an advisory role, to present to courses, to host interns or to=
+ participate in lectures. Would you be interested in this a supporting our =
+grant application. &nbsp;The commitment is relatively low but can also be m=
+ore involved. Feel free to ask questions
+ as well as I can provide more context.<o:p></o:p></p>
+<div>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<p class=3D"MsoNormal"><span class=3D"MsoHyperlink"><b><span style=3D"color=
+:#0563C1">See More</span></b></span><span class=3D"MsoHyperlink"><span styl=
+e=3D"color:#0563C1">&nbsp;from Rebecca Traynor</span></span>
+<o:p></o:p></p>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt">~~~~~~~~~~~~~~~~~~<br=
+>
+Eric G. Weinberg, Ph.D.<br>
+Assistant Professor&nbsp;<br>
+Viterbo University<br>
+Brophy, 109<br>
+608 796-3045<br>
+608-796-3359<br>
+<br>
+He/Him/His<o:p></o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_DM4PR10MB5989D5F18449204DFA0320F885C5ADM4PR10MB5989namp_--

@@ -1,0 +1,259 @@
+Received: from SN7PR20MB3725.namprd20.prod.outlook.com (2603:10b6:806:f4::14)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Fri, 13 Oct 2023
+ 05:26:59 +0000
+Received: from CY5PR13CA0023.namprd13.prod.outlook.com (2603:10b6:930::9) by
+ SN7PR20MB3725.namprd20.prod.outlook.com (2603:10b6:806:f4::14) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6863.45; Fri, 13 Oct 2023 05:26:57 +0000
+Received: from CY4PEPF0000EDD1.namprd03.prod.outlook.com
+ (2603:10b6:930:0:cafe::51) by CY5PR13CA0023.outlook.office365.com
+ (2603:10b6:930::9) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.29 via Frontend
+ Transport; Fri, 13 Oct 2023 05:26:57 +0000
+Authentication-Results: spf=pass (sender IP is 54.240.60.175)
+ smtp.mailfrom=us-west-2.amazonses.com; dkim=pass (signature was verified)
+ header.d=my.workfront.com;dmarc=pass action=none
+ header.from=my.workfront.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of us-west-2.amazonses.com
+ designates 54.240.60.175 as permitted sender)
+ receiver=protection.outlook.com; client-ip=54.240.60.175;
+ helo=a60-175.smtp-out.us-west-2.amazonses.com; pr=C
+Received: from a60-175.smtp-out.us-west-2.amazonses.com (54.240.60.175) by
+ CY4PEPF0000EDD1.mail.protection.outlook.com (10.167.241.205) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Fri, 13 Oct 2023 05:26:57 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=5n73nhcel2qoi6ksjfxlca3svigkappv; d=my.workfront.com;
+	t=1697174816;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=ZJcKjZ/UB5XlrdQOxZw0W6ISpnh3za9AxzRFwdYug48=;
+	b=PeBX9OVTfg4Y5iOHRpYHacdkR04dKCKk4L9GyEDgXGSqOtB8DNb38TT2Hyw/zINQ
+	uIYI+UQA8Nt5PIIO1jToXr5eO1IVTD1gcmaBewd4bO0yyd5CmIbySGftpeJa5C9+M07
+	5HjNHZG3EGDHfzILAsRJzHjtHcUBp0711qOcqrVM=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1697174816;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
+	bh=ZJcKjZ/UB5XlrdQOxZw0W6ISpnh3za9AxzRFwdYug48=;
+	b=oExipWHJYz0nEDC7MFSbNmzel9NB/qz8cmEYdGiCVc+oB51ewfZbrZIYHiwuSCXB
+	KubBIC8mWBfKy9su9FUQ8r9kdIz4zfVnGQk3BM1K/vGa2RxsGCwtjtQYJK4WMSgIEK5
+	v9BCiWNPC2RbWXWu3Cm95niSrlXK9MwLC2V3+41g=
+Date: Fri, 13 Oct 2023 05:26:56 +0000
+From: Workfront <notifications@my.workfront.com>
+To: egweinberg@viterbo.edu
+Message-ID: <0101018b278085f1-caaa1a6e-c004-4ba2-bbca-48284980c43c-000000@us-west-2.amazonses.com>
+Subject: Overdue Notification
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2429_1361140793.1697174816230"
+X-AtTask-Message-ID: 178ce707-f6af-494b-9e50-dca7daccc8bb
+Feedback-ID: 1.us-west-2.qdKVY72eVsxRLm/Yi+bt7Neveb62FNS6pWia2kTyvkI=:AmazonSES
+X-SES-Outgoing: 2023.10.13-54.240.60.175
+Return-Path:
+ 0101018b278085f1-caaa1a6e-c004-4ba2-bbca-48284980c43c-000000@us-west-2.amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2023 05:26:57.3929
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 53ee1412-8203-4f05-5c42-08dbcbad04d5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ CY4PEPF0000EDD1:EE_|SN7PR20MB3725:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ CY4PEPF0000EDD1.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 53ee1412-8203-4f05-5c42-08dbcbad04d5
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:2;
+X-Forefront-Antispam-Report:
+ CIP:54.240.60.175;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:SKN;H:a60-175.smtp-out.us-west-2.amazonses.com;PTR:a60-175.smtp-out.us-west-2.amazonses.com;CAT:NONE;SFS:(13230031)(4636009)(286005)(451199024)(6506007)(7696005)(71280400001)(9686003)(6486002)(33964004)(336012)(83380400001)(956004)(26005)(42882007)(79850400001)(6916009)(7116003)(8676002)(1096003)(36736006)(9316004)(3480700007)(166002)(83170400001)(7636003)(356005)(7596003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2023 05:26:57.2054
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 53ee1412-8203-4f05-5c42-08dbcbad04d5
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY4PEPF0000EDD1.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN7PR20MB3725
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.4679710
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?BT73wUzQVQPPXDO9GLInkW+8cK9lrXArY9Le3mM3z+lXTm4LkObKykgg527Q?=
+ =?us-ascii?Q?wHF744zpaCF9c8UmmG8K84DHnLa3g8NwU3C8cjH8x0AK9B0NhZa+ZRxa+g/j?=
+ =?us-ascii?Q?D73zd5nzsFoNwoMf6qXSqLz+KtBvmwyLpVerr35kR3nxvFd0C+zT7ubinw+n?=
+ =?us-ascii?Q?SU9FbJcQaw3OzofKNCpM45xj00uqeDGA+b59BNwd9kWaGHeAqFWkZkTi94Zl?=
+ =?us-ascii?Q?syu2catzAJsd0Yi3jzyLfTnXMjqDV+pPAuCXa0wNEUyQneCQWSrIkpqo0/hf?=
+ =?us-ascii?Q?DHkmXySycGMiQnLAiLM5q7lFxhf0mXWmGUSIpCZt3O8vFIUVk8bxcMFniPF1?=
+ =?us-ascii?Q?GJxTeXiS8R6nQJPNoVT+fLRqI3ZASSnL1xunY4C7iOgj+1R1mBuqOAvGCEVg?=
+ =?us-ascii?Q?6vdTmQVVzyyI90ABnHwsvhHxyrWNmNV2Fh1bzEUcAnVeuvKKaGnsN07694g2?=
+ =?us-ascii?Q?dLRuOFw1kHwSAhKdrVQf17XLRlwDs9Ob+MdHyeOq40CugHR5l2ZNBnnsXFB+?=
+ =?us-ascii?Q?Mlcd1zNLCy0+n/oBMeg/g1+Mi8hSe66SWj671BMrbPkG+MCEW+2jjwU4Z+lv?=
+ =?us-ascii?Q?fRP00SZb7jvRAU/0AWre0AULqwo4P4eLI7xlB4o5i9X+/2Fr7A0ysQAiQdgt?=
+ =?us-ascii?Q?9DbqkXYWtGzPPN8aGNbmf/Aidwva73Q/UdAqEp4itJ6x49usBuDixy9AFH9g?=
+ =?us-ascii?Q?mzCjSPCG7vOJbCDOhWe4p3LfPHW51WzqKA3CN4HFeFJ+YAMVGaObBtU7qezc?=
+ =?us-ascii?Q?GRRti4jCLZNmFdzgL9MYWcWzRku6SxOXXcawWXAdkg4PrNjxeYII8Mkv8sKf?=
+ =?us-ascii?Q?nnrpfv8KXNmg/qPKOQJ3HzQXQeBYF24GIdsa7a+tp9PwXe4WeInzCshflREP?=
+ =?us-ascii?Q?SZubKax3BTf2m0JEA/f+F2sYuJmkPIR9NdMzz5c6sGwnI7lmt/CkxlwpYePR?=
+ =?us-ascii?Q?pYLYLivXgJJzW2byG2SVAyKyrPdoNMKEP0RpC3XO3p7+VyYA0fY7qCMgPOBl?=
+ =?us-ascii?Q?34ZzaRXP2bjLpz+S7qFb2WvxrCYRVuf9c4zeN+/+FAwi1QPUhV39doYjm9QH?=
+ =?us-ascii?Q?nXItv98KNYaO3LTZoj76Y/CmaWUpntwRh5sxcfQp978CoLxWuYGEYGaGWiD+?=
+ =?us-ascii?Q?JE3M8f+i27Oj6nwcdpuyDSvDgQ3ciW1SYt4DLiU+d3mQ8c+z45pYpm9BJyoo?=
+ =?us-ascii?Q?ltTuB7DWJhP5rZ9V3OFvBx/SPiwz2VZQiqE54SvZPrGx2YUt1KQJVlTlncMO?=
+ =?us-ascii?Q?aqjo5bGd0/x2B1E6PuSFM4e9XPjhMy/Jh86h9kCYm9436/OdMsHpgYS1GHHZ?=
+ =?us-ascii?Q?1NoovL1dATy5XLZvcuadq4YTQZsY+Lgw635V0a4pRlftGG3aqCIQYC+7MGyv?=
+ =?us-ascii?Q?xnW92kNkjgCiU1bTA5BgYh+PgYBpu2i4kJNzgqeQzh+5QjtbiXfo6hHL7Nsu?=
+ =?us-ascii?Q?L1YUToTyNdvNuecCmUhqVrdpuLfajKIY9BrlHWOIAebMVNoCdbSPtPJfhEDJ?=
+ =?us-ascii?Q?TUJ92sSSA9r88zbbj5LSf6MatSoDPYbmthrzgJxFBfv1vbz1OlHkweUdtJtA?=
+ =?us-ascii?Q?bm7q8Uj/KURtGUfetYNZk5NjSO3sRe4C366GV+wXRBE9aUkKqPjM2BKjWwv8?=
+ =?us-ascii?Q?u5j2ouwFbrIzlo7As6VhH3lY1g4/XwBEtuxnfK4JTdiBj8h0r4KTSsQA1irs?=
+ =?us-ascii?Q?55i8Qf306HVzADaInLMSaYzpZbwBg8LjXjJXUoVkOPodj39G7D7vBwvz8RLH?=
+ =?us-ascii?Q?uADZGWbgmw=3D=3D?=
+MIME-Version: 1.0
+
+------=_Part_2429_1361140793.1697174816230
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This e-mail is an HTML formatted e-mail. Your e-mail client cannot display HTML.
+------=_Part_2429_1361140793.1697174816230
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><style>
+  a {
+    color:#333333; font-weight:bold; text-decoration:underline;
+  }
+  div.detailLabel {
+    margin-bottom:5px;
+  }
+  div.detailValue {
+    font-weight:normal;
+  }
+  table.information {
+    width:100%;
+  }
+  table.information_td {
+    vertical-align:top; font-size:12px;
+  }
+  table.details_.date {
+    white-space: nowrap;
+  }
+  table {
+    border-collapse: collapse;
+    border: 0px;
+    padding: 0px;
+  }
+  td.details {
+    width:auto; min-width:250px;
+
+  }
+
+  .email {
+    font-family:Arial, Helvetica, sans-serif; font-size:12px;font-family:Arial, Helvetica, sans-serif; font-size:12px;
+  }
+  .titlebar {
+    padding:10px; background-color:#EFEFEF; border:1px solid #DDDDDD; font-size:12px; color:#666666; min-width:320px;
+  }
+  .box {
+    background-color:#fafafa; border:1px solid #eeeeee; float:right; font-size:12px; margin:0px 0px 5px 5px; vertical-align:top; width:320px;
+  }
+  .padding {
+    padding:10px;
+  }
+  .details {
+    font-size:12px; width:250px;
+  }
+  .detailValue {
+    font-weight:bold; vertical-align:top; color:#000000; text-decoration:none;
+  }
+  .detailLabel {
+    white-space:nowrap; font-weight:normal; text-align:left; vertical-align:top; color:#444444;
+  }
+  .divider {
+    border-bottom:1px solid #dddddd; height:12px;
+  }
+  .actiondate {
+    font-size:12px; font-style:italic; font-weight:normal !important; color:#888888 !important;
+  }
+</style>
+
+
+<div id="email" class="email">
+
+  <div id="titlebar" class="titlebar">
+    The following task(s)/issue(s) are running late on Workfront:<br>
+  </div><br>
+
+      
+    
+    
+          
+    
+    
+          <div id="titlebar" class="titlebar">
+        You are the 'Manager1' for the following issue(s)
+      </div>
+      <br>
+
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td valign="top" class="padding" style="padding:10px; font-size:12px;">
+            <div class="actiondate" id="actiondate">Overdue Since: <b>Thu, Aug 25, 2022 10:00 PM</b><br></div>
+            <br>
+
+            <table cellpadding="0" cellspacing="0" border="0" class="details">
+              <tr>
+                <td valign="top" style="padding-right:10px; font-size:12px;"><span class="detailLabel">Name:</span></td>
+                                <td style="font-size:12px;"><span class="detailValue"><a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fviterbo.my.workfront.com%2Fissue%2Fview%3FID%3D62bb4957006bc01f6dec0aa9757b9ff3%26email-source%3DlateNotification&amp;data=05%7C01%7Cegweinberg%40viterbo.edu%7C53ee141282034f055c4208dbcbad04d5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327716198764152%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=2tS9RJPVTF30dc2aPjEZtLbq2QVaNiRGQnsBx9ipCTs%3D&amp;reserved=0" originalsrc="https://viterbo.my.workfront.com/issue/view?ID=62bb4957006bc01f6dec0aa9757b9ff3&amp;email-source=lateNotification" shash="QxHlvW0qZGnoZ7WjTNgml4365IeFoakT80QxKCCJHI3ZACLB3BFTicPOIKhxFmqgfiUUFDVS8e3sdWkUVjpAy4tLXcN/nNcBrXlPTg8CHQBi2LqC3591C/Bvll8YMU9lPAwePE2lR8tpm2xA30k/wMxQHhiyERnkm0zrBSqkNSg=">Class of 2026 Photo</a></span><br></td>
+              </tr>
+              <tr>
+                <td valign="top" style="padding-right:10px; font-size:12px;"><span class="detailLabel">Project:</span></td>
+                <td style="font-size:12px;"> <span class="detailValue">Photo/Photography Request</span><br></td>
+              </tr>
+            </table>
+
+            <br>
+            <div class="detailLabel">Description:<br></div>
+            <div class="detailValue"><br></div>
+            <br>
+            <br>
+          </td>
+          <td valign="top" width="33%" style="width:33%; vertical-align:top; font-size:12px;"><div class="box padding" style="padding:10px; background-color:#fafafa; border:1px solid #eeeeee;">
+            <table cellpadding="0" cellspacing="0" border="0" class="details">
+              <tr>
+                <td valign="top" style="padding-right:10px; font-size:12px;"><span class="detailLabel">Created On:</span></td>
+                <td style="font-size:12px;"><span class="detailValue">Tue, Jun 28, 2022 6:32 PM</span><br></td>
+              </tr>
+              <tr>
+                <td valign="top" style="padding-right:10px; font-size:12px;"><span class="detailLabel">Entered By:</span></td>
+                <td style="font-size:12px;"> <span class="detailValue">Colin Burns-Gilbert</span><br></td>
+              </tr>
+              <tr>
+                <td valign="top" style="padding-right:10px; font-size:12px;"><span class="detailLabel">Priority:</span></td>
+                <td style="font-size:12px;"> <span class="detailValue">Normal</span><br></td>
+              </tr>
+              <tr><td colspan="2"><div class="divider"></div><br></td></tr>
+              <tr>
+                <td valign="top" style="padding-right:10px; font-size:12px;"><span class="detailLabel">Assigned To:</span></td>
+                <td style="font-size:12px;"><span class="detailValue">Vee Luz</span><br></td>
+              </tr>
+            </table>
+          </div></td>
+        </tr>
+      </table>
+                
+    
+    
+      
+    </div>
+
+
+
+------=_Part_2429_1361140793.1697174816230--

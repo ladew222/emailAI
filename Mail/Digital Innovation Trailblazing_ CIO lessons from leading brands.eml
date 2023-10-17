@@ -1,0 +1,924 @@
+Received: from DS0PR20MB6253.namprd20.prod.outlook.com (2603:10b6:8:f3::11) by
+ PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023 17:10:17
+ +0000
+Received: from CH2PR15CA0015.namprd15.prod.outlook.com (2603:10b6:610:51::25)
+ by DS0PR20MB6253.namprd20.prod.outlook.com (2603:10b6:8:f3::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6838.38; Thu, 12 Oct
+ 2023 17:10:13 +0000
+Received: from DS2PEPF00003443.namprd04.prod.outlook.com
+ (2603:10b6:610:51:cafe::ab) by CH2PR15CA0015.outlook.office365.com
+ (2603:10b6:610:51::25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.30 via Frontend
+ Transport; Thu, 12 Oct 2023 17:10:13 +0000
+Authentication-Results: spf=pass (sender IP is 149.72.185.22)
+ smtp.mailfrom=marketopages.twilio.com; dkim=pass (signature was verified)
+ header.d=marketopages.twilio.com;dmarc=pass action=none
+ header.from=team.twilio.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of marketopages.twilio.com
+ designates 149.72.185.22 as permitted sender)
+ receiver=protection.outlook.com; client-ip=149.72.185.22;
+ helo=o6.smtpgw.twilio.com; pr=C
+Received: from o6.smtpgw.twilio.com (149.72.185.22) by
+ DS2PEPF00003443.mail.protection.outlook.com (10.167.17.70) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Thu, 12 Oct 2023 17:10:13 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=marketopages.twilio.com;
+	h=from:subject:mime-version:content-type:list-unsubscribe:reply-to:to:
+	cc:content-type:from:subject:to;
+	s=s1; bh=vlfX4y0C0aAAm32jFLJ1GkxsI+IDlusM8frn/FTkuOo=;
+	b=p15OFbYE+0GDng+iE7VAHhaOn2kjJCsPkCNE0P6DjPqVT9kAMeXR/3cNCYuy7SDcZNhm
+	UqLGFGbxRQ72ZtGQ+gRiiPd13e1RtbjRom3BptTISqpFYq9ZUGUi7AzYaEulNKm1rjoL/D
+	yKojYB75gtOJHjNMPQP3WQC9jcQzSWQuA6160OjZL0Uz9JGjbu/rM18sjOauHEv1n5lSug
+	YCtOco2P6Yrx2qanXcIk0ec66itIk3W3Y3ywSV0fRvuVcgDG8it9RFlwPO3o/ebm6XWE8M
+	Nv8NrBYNNW0AcuA4tRgKBjvo5+qBPL7PoOhuSWwOyVB6EhdlwI1jAEFhhj0hAqPw==
+Received: by filterdrecv-7d8bb89c46-jx5dc with SMTP id filterdrecv-7d8bb89c46-jx5dc-1-65282873-5B
+        2023-10-12 17:10:12.015473002 +0000 UTC m=+161231.326528466
+Received: from marketorelayer0004p1mdw1.sendgrid.net (unknown)
+	by geopod-ismtpd-14 (SG) with ESMTP id Vqg6QSleSs6JG6JRoOIq5w
+	for <egweinberg@viterbo.edu>; Thu, 12 Oct 2023 17:10:11.821 +0000 (UTC)
+Received: from marketopages.twilio.com (unknown [10.42.8.57])
+	by marketorelayer0004p1mdw1.sendgrid.net (Postfix) with ESMTP id 6D7362C12EA
+	for <egweinberg@viterbo.edu>; Thu, 12 Oct 2023 17:10:11 +0000 (UTC)
+X-MSFBL: hp3LPaCnoJ+3+u0crCK6AFntydYYCJR6mM/6krCzmkQ=|eyJnIjoiYmctc2pkLTM
+	wOSIsImIiOiJkdnAtMTkyLTI4LTE0Ny01NCIsInIiOiJlZ3dlaW5iZXJnQHZpdGV
+	yYm8uZWR1IiwidSI6IjI5NC1US0ItMzAwOjA6Mzg3MTQ6NDAwOTkzOjExOTE3MTM
+	6NDkwMzQ6OTozMTI0MTA6NTIwODQ0NCJ9
+Date: Thu, 12 Oct 2023 17:10:12 +0000 (UTC)
+From: Team Twilio <teamtwilio@team.twilio.com>
+Message-ID: <2110980551.59135646.1697130273709@sjmktmail-batch1f.marketo.org>
+Subject: Digital Innovation Trailblazing: CIO lessons from leading brands
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_59135644_1498477360.1697130273709"
+X-Binding: bg-sjd-309
+List-Unsubscribe: <mailto:FVCUKV3VORZGWRZYNUZTMVCDGZBVQZSGGFAT2PI=.312410.49034.9@unsub-sj.mktomail.com>
+X-MarketoID: 294-TKB-300:0:38714:400993:1191713:49034:9:312410:5208444
+X-PVIQ: mkto-294TKB300-000001-000000-312410
+X-Mailfrom: 294-TKB-300.0.312410.0.0.49034.9.5208444@marketopages.twilio.com
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+Reply-To: teamtwilio@team.twilio.com
+X-SG-EID:
+ =?us-ascii?Q?tZ5lMlOwv4qvkJKB+uUUpQyD64N4DeeubhRDzmul=2Fc6qJLhut=2FLXZkHoKJM323?=
+ =?us-ascii?Q?F1b1j+miMkrAZ+CUtpmdVTzQ+yqz6CO6E92cFGh?=
+ =?us-ascii?Q?lgeE3K9YZSAyKwz6YiAaB5zvjqC4DaMJvEWFWRs?=
+ =?us-ascii?Q?S27Cq074paEuT9ALqP6C0uZPvoL20WHnq9om0vR?=
+ =?us-ascii?Q?Hn4VR0SoQf77z=2F=2FeqrFo1DIVbVQeVBq1+3smNGh?=
+ =?us-ascii?Q?0SHBX4nOw=2F8DRsgHI1p+6SmVtXDqZRpEXjin=2FW?=
+To: egweinberg@viterbo.edu
+X-Entity-ID: kkJi8LAd8zjiEfndTN/FNA==
+Return-Path: 294-TKB-300.0.312410.0.0.49034.9.5208444@marketopages.twilio.com
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2023 17:10:13.5392
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5a9bbb78-a0b4-4a65-926a-08dbcb461948
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ DS2PEPF00003443:EE_|DS0PR20MB6253:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ DS2PEPF00003443.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 5a9bbb78-a0b4-4a65-926a-08dbcb461948
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:149.72.185.22;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o6.smtpgw.twilio.com;PTR:o6.smtpgw.twilio.com;CAT:NONE;SFS:(13230031)(4636009)(286005)(451199024)(1690799017)(33964004)(26005)(6916009)(7036003)(3450700001)(9686003)(356005)(19627405001)(7596003)(7636003)(336012)(166002)(8676002)(83170400001)(1096003)(966005)(6266002)(42882007)(83380400001)(76236004)(1406899027)(94166001)(19627315001);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2023 17:10:13.1642
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5a9bbb78-a0b4-4a65-926a-08dbcb461948
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ DS2PEPF00003443.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS0PR20MB6253
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.8352765
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?xXWtxYlUfZ8Cf53gTKOKmjTSOP87Jwbb5rjtRiGmDvsowS2TQZYTh5el?=
+ =?Windows-1252?Q?zGBQjA8+mmBAGVWip4SR12yKLSDu0F0iiunrmwKYzvqOyyTU7Bsy4R2S?=
+ =?Windows-1252?Q?DrfqgT7hbt/lp7CfnG7vSOjAug/WklCFF8Ku9LAXbpSvt5ZzjLqYmGxu?=
+ =?Windows-1252?Q?WueHiK5FV26c3lHWVDyhBGZVff8LXscUIRAq47BzoMNscpPcVLQjquiS?=
+ =?Windows-1252?Q?PiLlpHAvR17Heanb7YCdjRZhGXdXCGOLBxekE554R7lXdDxDAQOhcR17?=
+ =?Windows-1252?Q?9OhL1XLAg5k9MEnaFQ9EpTn3Q4orPOxITU7z0Ef8EkMxtB3cyf3br4TU?=
+ =?Windows-1252?Q?gqYoVUjol+mYQuwu7g0Xt6Z1UGRRUf+spPWkeTTiGpTMqQVw/aPvl64o?=
+ =?Windows-1252?Q?nTtXa//pXq95Y/7GZev5lLRdObMBKjXSjRO+nZghFz7CV5LqyezaOmGx?=
+ =?Windows-1252?Q?EKhvRqHh5ZfkQdswZQeEobWoJc7y9OcLoq7y52bdRX75F4BTnGkn/jKG?=
+ =?Windows-1252?Q?fYnOvgSLPkROUzvPzztFjBUXq7oQejS+Bj3USxPb/Z8yI0Oeq2oY1o93?=
+ =?Windows-1252?Q?SrEZpy09/66cvf9/4pCYiqnCIKw2QngVifEuqJN/RgsV+ZRobtJmlruD?=
+ =?Windows-1252?Q?o3mTfOs8VaxyKd9Q8/T7mCYbHSxm6SJxlSnRqnohp2IXe2egi+NoJY41?=
+ =?Windows-1252?Q?1TTPqlq2nJ+pfMioHmChTOsGUBEzJtbivNA928nE7jh2K/DbjyMUfoTq?=
+ =?Windows-1252?Q?bqYrmjkUGTOx1AIbRSkX4ogET8FFbjHAuBUX6y+zok1aP/rNeiduRIzz?=
+ =?Windows-1252?Q?m3HfA5bEnRw/ukOA3fZyUPyHWbZ90H94b/J4Hk80sdv/qn7Fmf2oHE71?=
+ =?Windows-1252?Q?uSjvcouOzKRHdA9UoLl/KrpJkKzeATcR3djxJt7uf1zaB6HUXKUffzjl?=
+ =?Windows-1252?Q?t9tFuNuVZQZYo6T5O0QiQ5RSJvF4Mfx6zEZ4hjPri/7sa5L8duobLGjq?=
+ =?Windows-1252?Q?sEJUbE1A0fCod/aBujCYUIJgSluS69o7yQZ/2ZMmTWlgkNUju+Y3OZKC?=
+ =?Windows-1252?Q?oUnz/M+OCH1BLssWejBzVUFLO7KWUelBSgY9SO0kwVMpZLkmLJWNMQC7?=
+ =?Windows-1252?Q?THP0wt4IrxG8+vJJxjSoh3pCZwsmutc61zyKJUyPaZ3jwa7fFfsW/vXQ?=
+ =?Windows-1252?Q?Fp/pUWj9NVXo4VTjNOXNjkQzPg8iPonUd/vSeO0odwuiNeL5T0llR/S7?=
+ =?Windows-1252?Q?Q00wv49h2cfVQN5QlfPdUyUmgO4eTStxJ1n1iLkZWl0JvHz/5Gl/vAKX?=
+ =?Windows-1252?Q?3LrWuNLjCaNVpazDCkbmuRm8UCp0Zo3nNdH8Pxrdd4PWl5c3kr6FnPHK?=
+ =?Windows-1252?Q?rOSCAW5xfsdQEVXmrSsT+uD/0VHMfRD71BUO8hbDZnTA2uFe6hK8BI0k?=
+ =?Windows-1252?Q?ouRqOqE35598j9/zxrLJ+02HDfr0eTG4rQcud75MxvLRfepdRvQhTNph?=
+ =?Windows-1252?Q?FD6s3xlc6gol2Vl6uqP9pBJJTgR/q17EjIkQwb6oIkTiNahDs/nL0w7p?=
+ =?Windows-1252?Q?Qr9lLoJ8wJionjuPsyLlKhmfD0OaEEvgjQkRr9Ta9ouL925sKgYRQ5bo?=
+ =?Windows-1252?Q?NhRXVj+kbLWa64X6B77jXy29ScWsAbM1/ZLiJmlF4Zt08DC05mnDMNHX?=
+ =?Windows-1252?Q?RW1ZO2YZwvdbP5Ug/VgtCyE68YY9XhhsQkBntSRxUx8c1G1mPC45RgcR?=
+ =?Windows-1252?Q?psFICst9U26JpFpDNfNKVRAO3/QfzWMG3tVkeR+65ufrQ7zkIxlRb2Y2?=
+ =?Windows-1252?Q?MQUqPnp05vSVegRU4dAxta4Kuwc=3D?=
+MIME-Version: 1.0
+
+------=_Part_59135644_1498477360.1697130273709
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+EXTERNAL: This email originated from a sender outside of Viterbo. Use cauti=
+on when clicking on links or opening attachments.
+
+How to apply the digital strategies from the NFL and The Wizarding World of=
+ Harry Potter to revolutionize your business
+[Transform Together] <https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-=
+2FqkTPBIi8pj9zljUkGvaabq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaM8lyFpJ0TrlII=
+vyznDhgZJnlKxwk-2F4Tl9-2FJfZcICDYJPykMDbamu4bs7CdB7p6TXKqfJ1s76OpQ-2Fk4onSJ=
+GDZu9n-2BAlOvfI1btA4g0s15TqY-3DdPGq_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2=
+B2bB0S-2B0JZuKp3q42G8Ujf0ZYzp6zDhSFC7hIehz2A0r5UAqDDFOWLXexeykxawrmGAnnnnf7=
+PUqMlQDSRJhtvCWuTvRDQfWdP-2BKU39rPjaGEoEke17riQUmM8lsTaWoFGjpuHCJmwVoYb2-2B=
+z1Zzj86qPoZpqrclqO1WVZgf6MvhMbGxC9g-3D-3D>
+
+Join the discussion on digital strategy, leadership dynamics, and business =
+impact on November 7th
+
+As the wave of digital transformation sweeps across industries, there are s=
+tandout leaders who are not just riding the wave but leading the charge. Th=
+e NFL, Disney and Universal Studios are some of these trailblazers.
+
+On November 7, join us online for a thought-provoking conversation with Mic=
+helle McKenna, former NFL CIO, and Khozema Shipchandler, President of Twili=
+o Communications, as they discuss the game-changing aspects of digital inno=
+vation and their profound implications for business leaders today.
+
+Discover what=E2=80=99s behind the digital transformation at some of the mo=
+st well-known trailblazing companies such as NFL, Disney and Universal Stud=
+ios, and learn valuable insights on how you can apply these strategies to y=
+our business.
+
+JOIN PEERS AND INDUSTRY LEADERS
+
+on November 7 | 9 AM PT / 12 PM ET
+
+REGISTER NOW <https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBI=
+i8pj9zljUkGvaabq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaM8lyFpJ0TrlIIvyznDhgZ=
+JnlKxwk-2F4Tl9-2FJfZcICDYJPykMDbamu4bs7CdB7p6TXKqfJ1s76OpQ-2Fk4onSJGDZu9n-2=
+BAlOvfI1btA4g0s15TqY-3Dalc6_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2=
+B0JZuKp3q42G8Ujf0ZYzp6z-2FhgDw1M2z5ZlFXJPFaghlZy7Ei-2BkAgZMS2m7eXII6va-2FcP=
+IhXBuz18AJeP1cr8OqdMuph0mXQIF8v2WX2C2SFjub6-2BFyisj5QIlWVsM0Yr-2FNYfWtUdil2=
+0-2BjrfjCouUkx82KLZL6Ch1xE5oQqj6XHA-3D-3D>
+
+[We can't wait to see what you build!]
+
+[Twilio] <https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj=
+9zljUkGvaabq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaM52YL5DH48dXk3aUGhAwUdWOH=
+teYGl2lNDMjc9ilzx7X-2Fxi6zbej-2FXXO-2BPE6zLEYTg8iB11GRfz7bFgJSvvO5IGgjWKPOd=
+nLUK2vYzggsdh4-3DmGy0_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuK=
+p3q42G8Ujf0ZYzp6zD419LFydMkr2lEYx752UY3LKYcF5ji8VIjBaUTLRD9iSm3kRD4sayl0cOZ=
+-2Fx-2FNptQa-2BjQZRwIekDn2GweMV2ErICekPtSsmiQMy4UkwxyP7KafX9-2B13-2FWnqIYAk=
+EzbGNkFeyAyggMA8qJ-2BwdGSOSGA-3D-3D>
+
+This email was sent to egweinberg@viterbo.edu<mailto:egweinberg@viterbo.edu=
+>.
+Don't want to receive emails from Twilio? Change your email preferences<htt=
+ps://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGvaabq0=
+ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMvxlH-2F4geQ3uXyqEusalOoUdLUYhVstiUzVX=
+2AZP09lQXx0m9mWT-2Fb00NUpBGAXLTn3T93VcZ-2BdwqvCJky6-2BA9GnZNPOxdBTqykPMkyKn=
+PO4-3DsFSI_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G8Ujf0=
+ZYzp6zRcxT7vs32h7UvkkMaVCkXOPipi0usimauq7f6rcRBaarLleEMWInRxp1QDKsdZk-2BMGW=
+iqbZ5onRrY8zTZ25ktZ-2F8MbVBedvUkN3Tp264wZxC-2Ft-2F4WO6AVgoCrxDdNm-2Fty4-2Fk=
+yQr4z-2BBIOBCub5TyfQ-3D-3D><https://u3528416.ct.sendgrid.net/ls/click?upn=
+=3DOHV4-2FqkTPBIi8pj9zljUkLjItY90ZL4gJ-2BRbbhpMOMqHKmaHNzXZQpEgfL3YNcqI5K-2=
+B12UIZbt5jjc3HkrfwnTZnr5r9XWhK4R4Nm793SRYsS6-2FKpDCLIdHSeLF7zVGx4yf-2FurBt1=
+XclrXYDeBvFKk1vKHNuUv-2BH7shJFkocjNZe8sIo7hETDWhG24fKLuALQb0N9D-2B-2BKR1-2B=
+wNqg6gK8XHQ8Jp3Pom6M4wJwfU2S3A3GBaN-2BBHlemXflWC1VC5byKEBYwg0RnJvwiqpz2RzHf=
+C0YSKSYJy46SjLczHhfAYc-3DWoXU_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S=
+-2B0JZuKp3q42G8Ujf0ZYzp6zfM090hSBDjaQtQzl73Ny4wz-2Bu5YEyKfFNMFJdLZZyOu1bfji=
+RdD2eMZJz01-2FaR-2B8MACN7l190eZSNQvyWpN7fPdux4PwDePcvwEeXwRUyBbDxgjnZqpqZLU=
+-2F9rQZ-2B5U9PmK0bpus0ZGTmRdlDBk1kQ-3D-3D>.
+If you have any questions or concerns, please contact us at https://www.twi=
+lio.com/help/contact<https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2=
+FqkTPBIi8pj9zljUkLw1bglmhJGzuA3zs-2F4EN1htXgmpD9iMlUhDdPJxeHFwQVsH_pMMt9G-2=
+BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G8Ujf0ZYzp6zDaJOeUm88McxS=
+yzlV0kLzlKTuf5z47PzDLHa43P-2FvjSyIQACmu9PwW5fyDG5o3adIKjI0ddjbmd52a8eryFRZh=
+jKtmIQtaVOmCppnUfeoqY6Utt61xgS1lv4fQ-2BdRYNDjnSw2jfK-2F1XfSMqoiVK2VQ-3D-3D>=
+.
+
+If you're having trouble reading this email, try the web version<https://u3=
+528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGvaabq0ecKgjN5=
+WVH8ZDzcyYmFbWHrcs6BVgK5Of-2FiZEJ8AtXB-2BAwXUYwC42vEaXZROV25eyuf9qXowCiTRKb=
+4riuhPV9V4-2BXl-2FQrrwIiPa14jMS7JJpDJppprY1l4xxz5mYeZgvblsqonfkzmQHGU-3DclD=
+-_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G8Ujf0ZYzp6zMtt=
+gNFg4TliEMQQX-2B7hJ41zTRRiYhV-2FDYGP1fRp6soduGJ6l60yXstK5IaRh7x-2FRWeswcxV-=
+2FdQTB2iKWcEu3VPVdO1HXERWQ3MuY9Jf5cpGD80fy1KVkez5tl5zhYODADLYarLZE-2BsrZw7i=
+1AL1EGsQgd4zB9MmlAKULYBzj-2FNs-3D>.
+
+Twilio 101 Spear Street, San Francisco, CA 94105
+
+<https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMeBouvdMO8r04yqwcgaVnM74fQlj5-2Flb=
+MyQ034ZYo9LLHdaMFDl2NFxsN0nGGWK-2BYefVcGkIt06iPNNB5F-2FbACJZ5GPKZHp-2Bs5YI3=
+gbahUKI-3DO5NJ_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G8=
+Ujf0ZYzp6zMttgNFg4TliEMQQX-2B7hJ47MUqNjfk-2FwSUKJboJ8Zay9AkarFO816TSxjxxmo0=
+XOTA-2F4vkbdrowO8GDFArUK3YP9vCIEDqYhFV-2FVk6DNXTesOOnxtkCQOjeFh9gnZIYyZAV3a=
+iKeusIs6w060b7-2FDCqTNl7WJnMxif5AHRgYUxTw-3D>
+
+------=_Part_59135644_1498477360.1697130273709
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml" style=3D"width: 100%;"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle></title>
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<link rel=3D"shortcut icon" href=3D"https://pages.twilio.com/rs/294-TKB-300=
+/images/favicon_1.jpg"><style>
+    div[style*=3D"margin: 16px 0"] {
+        margin: 0 !important
+    }
+    p {
+        margin: 0 !important;
+    }
+    @media screen and (min-width: 500px) and (max-width: 615px) {
+        .one-col .inner {
+            padding-left: 50px !important;
+            padding-right: 50px !important;
+        }
+        .two-col .inner {
+            padding-left: 50px !important;
+            padding-right: 50px !important;
+        }
+        .two-col .left .copy {
+            padding-left: 25px !important;
+            padding-right: 12.5px !important;
+        }
+     =20
+      	.two-col .center .copy {
+            padding-left: 12.5px !important;
+            padding-right: 12.5px !important;
+        }
+        .two-col .right .copy {
+            padding-left: 12.5px !important;
+            padding-right: 25px !important;
+        }
+    }
+    @media screen and (min-width: 500px) and (max-width: 640px) {
+        .two-col .column {
+            max-width: 33% !important;
+            vertical-align: top !important;
+        }
+    }
+    @media screen and (max-width: 499px) {
+        .contents {
+            font-size: 14px !important;
+        }
+        .section-hero {
+            font-size: 20px !important;
+        }
+        .section-hero-inner {
+            font-size: 16px !important;
+        }
+        .logo {
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+        }
+        .inner {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+        .one-col .copy {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+        .two-col .copy {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+        .image img {
+            margin: 0 auto !important;
+        }
+        .two-col .image img {
+            max-width: 100% !important;
+        }
+        .column {
+            max-width: 100% !important;
+        }
+        .left .buffered {
+            padding-bottom: 15px !important;
+        }
+     =20
+      	.center .buffered {
+            padding-bottom: 15px !important;
+        }
+        .right .buffered {
+            padding-left: 0px !important;
+        }
+    }
+    @media screen and (min-width: 370px) and (max-width: 499px) {
+        .outer {
+            width: 85% !important;
+            margin: 0 auto !important;
+        }
+    }
+    </style><!--[if(mso)|(IE)]>
+<style type=3D"text/css">
+            table,tbody,tr,td {border-collapse: collapse !important; mso-ta=
+ble-lspace:0pt !important; mso-table-rspace:0pt !important;font-family: Hel=
+vetica Neue, Helvetica, Arial, sans-serif !important;-webkit-text-size-adju=
+st: 100%;-webkit-font-smoothing: antialiased;-ms-text-size-adjust:100%;}
+        </style>
+    <![endif]--><!--[if mso]>
+<style type=3D"text/css">
+            table,tbody,tr,td {border-collapse: collapse !important; font-f=
+amily: Helvetica Neue, Helvetica, Arial, sans-serif !important;-webkit-text=
+-size-adjust: 100%;-webkit-font-smoothing: antialiased;-ms-text-size-adjust=
+:100%;}
+            span.MsoHyperlink {
+                mso-style-priority:99;
+                color:inherit;
+            }
+            span.MsoHyperlinkFollowed {
+                mso-style-priority:99;
+                color:inherit;
+            }
+            a:visited {
+                color:inherit;
+            }
+            #footer p {
+                margin-bottom:24px !important;
+            }
+        </style>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    <![endif]-->
+</head>
+<body style=3D"margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;pa=
+dding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div><style type=3D"text/css">div#emailPreHeader{ display: none !important;=
+ }</style>
+<div id=3D"emailPreHeader" style=3D"mso-hide:all; visibility:hidden; opacit=
+y:0; color:transparent; mso-line-height-rule:exactly; line-height:0; font-s=
+ize:0px; overflow:hidden; border-width:0; display:none !important;">
+How to apply the digital strategies from the NFL and The Wizarding World of=
+ Harry Potter to revolutionize your business</div>
+<!-- PRE HEADER TEXT START --><span class=3D"preview-text" style=3D"-webkit=
+-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing=
+: antialiased; color: #EEEEEE; font-family: Helvetica Neue, Helvetica, Aria=
+l, sans-serif; line-height: 1px; font-size: 1px; display: block; max-height=
+: 0; overflow: hidden;"></span><!-- PRE HEADER TEXT END -->
+<center>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" =
+border=3D"0" class=3D"wrapper" style=3D"background-color:#EEEEEE;margin-top=
+:0;margin-bottom:0;margin-right:auto;margin-left:auto;font-family: Helvetic=
+a Neue, Helvetica, Arial, sans-serif;table-layout:fixed;width:100%;-webkit-=
+text-size-adjust: 100%;-webkit-font-smoothing: antialiased;-ms-text-size-ad=
+just:100%;">
+<tbody>
+<tr>
+<td align=3D"center">
+<center><!--[if(mso)|(IE)]>
+                           =20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"600">
+                               =20
+<tr>
+<td>
+                            <![endif]--><!-- Header -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"outer" sty=
+le=3D"margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;width=
+:100%;max-width:600px;">
+<tbody>
+<tr class=3D"one-col">
+<!-- START CONTAINER -->
+<td bgcolor=3D"#FFFFFF" class=3D"mktoContainer" id=3D"main-container" style=
+=3D"padding-left: 0px;padding-right: 0px;">
+<table class=3D"mktoModule" id=3D"module-banner-image" align=3D"center" wid=
+th=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"font-=
+size:14px;line-height:150%;text-align:center;color:#233659;padding: 0px;">
+<tbody>
+<tr class=3D"one-col">
+<td align=3D"center" class=3D"image" style=3D"padding-top: 0px;padding-bott=
+om: 60px; padding-left: 0px; padding-right: 0px; text-align:center;">
+<div class=3D"mktoImg" id=3D"banner-image" style=3D"margin-top:0;margin-bot=
+tom:0;margin-right:0;margin-left:0;text-align:center;" mktolockimgsize=3D"t=
+rue" mktolockimgstyle=3D"true">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fu3528416.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DOHV4-2FqkTPBIi8pj9zljUkGv=
+aabq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaM8lyFpJ0TrlIIvyznDhgZJnlKxwk-2F4T=
+l9-2FJfZcICDYJPykMDbamu4bs7CdB7p6TXKqfJ1s76OpQ-2Fk4onSJGDZu9n-2BAlOvfI1btA4=
+g0s15TqY-3DdPGq_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G=
+8Ujf0ZYzp6zDhSFC7hIehz2A0r5UAqDDFOWLXexeykxawrmGAnnnnf7PUqMlQDSRJhtvCWuTvRD=
+QfWdP-2BKU39rPjaGEoEke17riQUmM8lsTaWoFGjpuHCJmwVoYb2-2Bz1Zzj86qPoZpqrclqO1W=
+VZgf6MvhMbGxC9g-3D-3D&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C5a9bb=
+b78a0b44a65926a08dbcb461948%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63=
+8327274181244508%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DwlDQ1tQYpMTgt4=
+0%2FLm7mq5TnkO76Pc%2FLeRWelt82Rbk%3D&amp;reserved=3D0" originalsrc=3D"https=
+://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGvaabq0ec=
+KgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaM8lyFpJ0TrlIIvyznDhgZJnlKxwk-2F4Tl9-2FJf=
+ZcICDYJPykMDbamu4bs7CdB7p6TXKqfJ1s76OpQ-2Fk4onSJGDZu9n-2BAlOvfI1btA4g0s15Tq=
+Y-3DdPGq_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G8Ujf0ZY=
+zp6zDhSFC7hIehz2A0r5UAqDDFOWLXexeykxawrmGAnnnnf7PUqMlQDSRJhtvCWuTvRDQfWdP-2=
+BKU39rPjaGEoEke17riQUmM8lsTaWoFGjpuHCJmwVoYb2-2Bz1Zzj86qPoZpqrclqO1WVZgf6Mv=
+hMbGxC9g-3D-3D" shash=3D"eKHQmCzi+LAzgBoO+lInGnCaRcEa2bVzGymmB0yzs+6ZHwVjzq=
+RfurRDdw/o87K2V4aWIZPvPAPChFG+Yzu2f4g77I7P6/TzwX+zsChEM9XsivoRzcGS00fdxkrXD=
+HmQ1imQx5oYGhkCPT3w/iMzW4znOQl3AmvqCRSUt2XJ1mQ=3D" target=3D"_blank" style=
+=3D"color:#233659;text-decoration:none;"><img src=3D"https://pages.twilio.c=
+om/rs/294-TKB-300/images/McKenna _ Transform Together _ Email Banner 1.png?=
+version=3D0" alt=3D"Transform Together" width=3D"600" style=3D"border-width=
+:0;height:auto;width:100%;max-width:600px;">
+</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"mktoModule section-hero" id=3D"module-heading" width=3D"100=
+%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" style=
+=3D"font-size:25px;line-height:150%;text-align:center;color:#233659;padding=
+: 0px;">
+<tbody>
+<tr class=3D"one-col">
+<td align=3D"center" class=3D"mktEditable inner" id=3D"heading" style=3D"co=
+lor:#233659;text-align: center; letter-spacing: 1px; padding-left: 50px; pa=
+dding-right: 50px; padding-top: 0px; padding-bottom: 30px;">
+<p><span style=3D"font-size: 20px;">Join the discussion on digital strategy=
+, leadership dynamics, and business impact on November 7th</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"mktoModule contents" id=3D"module-body-content" width=3D"10=
+0%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"font-size:14p=
+x;line-height:170%;text-align:left;color:#565B73;padding: 0px;">
+<tbody>
+<tr class=3D"one-col">
+<td class=3D"mktEditable inner" id=3D"body-content" style=3D"color:#565B73;=
+text-align: left; padding-left: 50px; padding-right: 50px; padding-top: 25p=
+x; padding-bottom: 0px;">
+<p>As the wave of digital transformation sweeps across industries, there ar=
+e standout leaders who are not just riding the wave but leading the charge.=
+ The NFL, Disney and Universal Studios are some of these trailblazers.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"mktoModule contents" id=3D"module-body-content869c61a7-24b7=
+-4446-afb5-a338e923f4b3" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0" style=3D"font-size:14px;line-height:170%;text-align:left;colo=
+r:#565B73;padding: 0px;">
+<tbody>
+<tr class=3D"one-col">
+<td class=3D"mktEditable inner" id=3D"body-content869c61a7-24b7-4446-afb5-a=
+338e923f4b3" style=3D"color:#565B73;text-align: left; padding-left: 50px; p=
+adding-right: 50px; padding-top: 25px; padding-bottom: 0px;">
+<p>On November 7, join us online for a thought-provoking conversation with =
+Michelle McKenna, former NFL CIO, and Khozema Shipchandler, President of Tw=
+ilio Communications, as they discuss the game-changing aspects of digital i=
+nnovation and their profound implications
+ for business leaders today.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"mktoModule contents" id=3D"module-body-content869c61a7-24b7=
+-4446-afb5-a338e923f4b30f643e0e-0b92-4d29-bf5b-0a14a1ee64dc" width=3D"100%"=
+ cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"font-size:14px;l=
+ine-height:170%;text-align:left;color:#565B73;padding: 0px;">
+<tbody>
+<tr class=3D"one-col">
+<td class=3D"mktEditable inner" id=3D"body-content869c61a7-24b7-4446-afb5-a=
+338e923f4b30f643e0e-0b92-4d29-bf5b-0a14a1ee64dc" style=3D"color:#565B73;tex=
+t-align: left; padding-left: 50px; padding-right: 50px; padding-top: 25px; =
+padding-bottom: 0px;">
+<p>Discover what=E2=80=99s behind the digital transformation at some of the=
+ most well-known trailblazing companies such as NFL, Disney and Universal S=
+tudios, and learn valuable insights on how you can apply these strategies t=
+o your business.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"mktoModule contents" id=3D"module-spacer" width=3D"100%" ce=
+llpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" style=3D"text=
+-align:left;color:#565B73;padding:0px;margin: 0px;">
+<tbody>
+<tr class=3D"one-col">
+<td style=3D"text-align:left;color:#565B73;font-size:0px;height:0px;" heigh=
+t=3D"0"></td>
+</tr>
+</tbody>
+</table>
+<table class=3D"mktoModule section-hero-inner" id=3D"module-stay-up-to-date=
+80aedd74-88a3-46f4-bc75-27570f329371" width=3D"100%" cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" style=3D"font-size:18px;line-height:170%;text-al=
+ign:center;color:#FFFFFF;padding: 0px;">
+<tbody>
+<tr class=3D"one-col">
+<td style=3D"color:#FFFFFF;text-align: center; padding-left: 0px; padding-r=
+ight: 0px; padding-top: 0px; padding-bottom: 0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"height:476px; background-color:#3497d7; background-image:url(h=
+ttps://pages.twilio.com/rs/294-TKB-300/images/stay_up_to_date_bg_image.jpg)=
+;" background=3D"https://pages.twilio.com/rs/294-TKB-300/images/stay_up_to_=
+date_bg_image.jpg" bgcolor=3D"#3497d7" valign=3D"top" width=3D"600" height=
+=3D"476">
+<!--[if gte mso 9]>
+                                                                        <v:=
+rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"true" stroke=3D"fals=
+e" style=3D"width:600px;height:476px;">
+                                                                        <v:=
+fill type=3D"tile" src=3D"https://pages.twilio.com/rs/294-TKB-300/images/st=
+ay_up_to_date_bg_image.jpg" color=3D"#3497d7" />
+                                                                        <v:=
+textbox inset=3D"0,0,0,0">
+                                                                        <![=
+endif]-->
+<div>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" styl=
+e=3D"font-size:18px;line-height:170%;text-align:center;color:#FFFFFF;paddin=
+g: 0px;">
+<tbody>
+<tr class=3D"one-col">
+<td style=3D"color:#FFFFFF;text-align: center; padding-left: 0px; padding-r=
+ight: 0px; padding-top: 0px; padding-bottom: 0px;height:120px;" height=3D"1=
+20">
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"section-hero-inner" width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" style=3D"font-size:16px;line-height:170%;text-alig=
+n:center;color:#FFFFFF;padding: 0px;">
+<tbody>
+<tr class=3D"one-col">
+<td class=3D"mktEditable inner" id=3D"stay-up-to-date-headinged4acf5f-a87e-=
+4b35-8de2-bc6eded21311" style=3D"color:#FFFFFF;text-align: center; font-wei=
+ght: 500; letter-spacing: 1px; text-transform: uppercase; padding-left: 50p=
+x; padding-right: 50px; padding-top: 0px; padding-bottom: 25px;">
+<p>JOIN PEERS AND INDUSTRY LEADERS</p>
+<p>on November 7 | 9 AM PT / 12 PM ET</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"contents" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" style=3D"font-size:14px;line-height:170%;text-align:center;c=
+olor:#FFFFFF;padding: 0px;">
+<tbody>
+<tr class=3D"one-col">
+<td class=3D"mktEditable inner" id=3D"stay-up-to-date-contente81cbbc3-cbb5-=
+4ec7-aa82-d69bf7089e78" style=3D"color:#FFFFFF;text-align: center; padding-=
+left: 50px; padding-right: 50px; padding-top: 0px; padding-bottom: 0px;">
+</td>
+</tr>
+</tbody>
+</table>
+<!-- CTA -->
+<table class=3D"contents" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" align=3D"center" style=3D"font-size:14px;line-height:170%;te=
+xt-align:center;color:#FFFFFF;">
+<tbody>
+<tr class=3D"one-col">
+<td class=3D"inner" style=3D"text-align:center;color:#FFFFFF;padding-top: 5=
+0px; padding-bottom: 0px;">
+<table style=3D"border-spacing: 0; border-collapse: collapse;" align=3D"cen=
+ter" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"word-break: break-word; -webkit-hyphens: none; -moz-hyphens: n=
+one; hyphens: none; border-collapse: collapse; text-align: center;border-ra=
+dius: 4px;" align=3D"center" bgcolor=3D"#F22F46">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fu3528416.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DOHV4-2FqkTPBIi8pj9zljUkGv=
+aabq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaM8lyFpJ0TrlIIvyznDhgZJnlKxwk-2F4T=
+l9-2FJfZcICDYJPykMDbamu4bs7CdB7p6TXKqfJ1s76OpQ-2Fk4onSJGDZu9n-2BAlOvfI1btA4=
+g0s15TqY-3Dalc6_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G=
+8Ujf0ZYzp6z-2FhgDw1M2z5ZlFXJPFaghlZy7Ei-2BkAgZMS2m7eXII6va-2FcPIhXBuz18AJeP=
+1cr8OqdMuph0mXQIF8v2WX2C2SFjub6-2BFyisj5QIlWVsM0Yr-2FNYfWtUdil20-2BjrfjCouU=
+kx82KLZL6Ch1xE5oQqj6XHA-3D-3D&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu=
+%7C5a9bbb78a0b44a65926a08dbcb461948%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%=
+7C0%7C638327274181244508%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIj=
+oiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DSQSTWJ=
+KIXwELwyVebgqe0mXpTwXow1MPUdLcxRfhCxc%3D&amp;reserved=3D0" originalsrc=3D"h=
+ttps://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGvaab=
+q0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaM8lyFpJ0TrlIIvyznDhgZJnlKxwk-2F4Tl9-=
+2FJfZcICDYJPykMDbamu4bs7CdB7p6TXKqfJ1s76OpQ-2Fk4onSJGDZu9n-2BAlOvfI1btA4g0s=
+15TqY-3Dalc6_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G8Uj=
+f0ZYzp6z-2FhgDw1M2z5ZlFXJPFaghlZy7Ei-2BkAgZMS2m7eXII6va-2FcPIhXBuz18AJeP1cr=
+8OqdMuph0mXQIF8v2WX2C2SFjub6-2BFyisj5QIlWVsM0Yr-2FNYfWtUdil20-2BjrfjCouUkx8=
+2KLZL6Ch1xE5oQqj6XHA-3D-3D" shash=3D"f3t4dPKdrjDJBFqfCxKWD+MHUb7VpcgBUEpyav=
+KRo1b4g6sI8kaPFHDZJqKkCk4Yq5T6U/ZJHqOde9mjyokUQffXRFPAXVXGg3JgkkMyFvF3fqVxO=
+YmtqDvU1Z0mh5Nb6DsFkfEmhneZ62yRC294aDGB6UgB0DaZEaz7WRf+BZo=3D" target=3D"_b=
+lank" style=3D"border-top-style: solid;font-size: 14px;text-decoration: non=
+e;padding-top: 1.2em;padding-bottom: 1.2em;padding-left: 2.5em;padding-righ=
+t:=20
+2.5em;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;b=
+order-left-width:1px;color: #FFFFFF;border-right-style: solid;border-bottom=
+-style: solid;border-left-style: solid;border-top-color:#F22F46;border-righ=
+t-color:#F22F46;border-bottom-color:#F22F46;border-left-color:#F22F46;displ=
+ay: inline-block;font-weight:=20
+normal;background-color:#F22F46;border-radius: 4px;"><!--[if gte mso 9]>&nb=
+sp;&nbsp;<![endif]-->REGISTER
+ NOW<!--[if gte mso 9]>&nbsp;&nbsp;<![endif]--> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if gte mso 9]>
+                                                                        </v=
+:textbox>
+                                                                        </v=
+:rect>
+                                                                        <![=
+endif]--></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- END CONTAINER -->
+</tr>
+<!-- Footer Start -->
+<tr>
+<td>
+<div class=3D"mktoSnippet" id=3D"Footer">
+<table id=3D"footer" style=3D"-webkit-text-size-adjust: 100%; -ms-text-size=
+-adjust: 100%; -webkit-font-smoothing: antialiased; color: #2c2c2a; font-fa=
+mily: Helvetica Neue, Helvetica, Arial, sans-serif; width: 100%; padding: 2=
+4px 0;">
+<tbody>
+<tr style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -w=
+ebkit-font-smoothing: antialiased; color: #2c2c2a; font-family: Helvetica N=
+eue, Helvetica, Arial, sans-serif;">
+<td style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -w=
+ebkit-font-smoothing: antialiased; color: #2c2c2a; font-family: Helvetica N=
+eue, Helvetica, Arial, sans-serif; border-collapse: collapse; width: 100%;"=
+ height=3D"150" align=3D"center">
+<p style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -we=
+bkit-font-smoothing: antialiased; color: #bcb6aa; font-family: Helvetica Ne=
+ue, Helvetica, Arial, sans-serif; margin: 0; font-size: 13px; line-height: =
+18px; text-decoration: none; padding-bottom: 12px;">
+<img alt=3D"We can't wait to see what you build!" src=3D"https://pages.twil=
+io.com/rs/294-TKB-300/images/twilio-footer-byline-serif.png" style=3D"max-w=
+idth: 100%; border: none; outline: none; -ms-interpolation-mode: bicubic; w=
+idth: 306px; height: 30px;" width=3D"306" height=3D"30"></p>
+<p style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -we=
+bkit-font-smoothing: antialiased; color: #b1aca0; font-family: Helvetica Ne=
+ue, Helvetica, Arial, sans-serif; margin: 0; font-size: 13px; line-height: =
+18px; text-decoration: none; padding-bottom: 24px;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fu3528416.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DOHV4-2FqkTPBIi8pj9zljUkGv=
+aabq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaM52YL5DH48dXk3aUGhAwUdWOHteYGl2lN=
+DMjc9ilzx7X-2Fxi6zbej-2FXXO-2BPE6zLEYTg8iB11GRfz7bFgJSvvO5IGgjWKPOdnLUK2vYz=
+ggsdh4-3DmGy0_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G8U=
+jf0ZYzp6zD419LFydMkr2lEYx752UY3LKYcF5ji8VIjBaUTLRD9iSm3kRD4sayl0cOZ-2Fx-2FN=
+ptQa-2BjQZRwIekDn2GweMV2ErICekPtSsmiQMy4UkwxyP7KafX9-2B13-2FWnqIYAkEzbGNkFe=
+yAyggMA8qJ-2BwdGSOSGA-3D-3D&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7=
+C5a9bbb78a0b44a65926a08dbcb461948%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C=
+0%7C638327274181244508%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoi=
+V2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DUgXiflcb=
+bsYhOsFJagE2Aj%2FSm8Gst%2B%2FXHL%2BE29exumk%3D&amp;reserved=3D0" originalsr=
+c=3D"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljU=
+kGvaabq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaM52YL5DH48dXk3aUGhAwUdWOHteYGl=
+2lNDMjc9ilzx7X-2Fxi6zbej-2FXXO-2BPE6zLEYTg8iB11GRfz7bFgJSvvO5IGgjWKPOdnLUK2=
+vYzggsdh4-3DmGy0_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42=
+G8Ujf0ZYzp6zD419LFydMkr2lEYx752UY3LKYcF5ji8VIjBaUTLRD9iSm3kRD4sayl0cOZ-2Fx-=
+2FNptQa-2BjQZRwIekDn2GweMV2ErICekPtSsmiQMy4UkwxyP7KafX9-2B13-2FWnqIYAkEzbGN=
+kFeyAyggMA8qJ-2BwdGSOSGA-3D-3D" shash=3D"ZhduUnzbH21BU6yE3YtVA4+hZI6oSP81nR=
+b5q40ACFCvCUyP1XnUwtXFB0SVT82twKGbvGbahb4TtrHv/IgTC+AbfiKJ2MkmskhcZkyzAFYUn=
+BLp5Zigi3nc5hm1DDHG63fnWd2puxLMEOjhzGLhyC/RwLB1LpEK+BovPAoTzkM=3D" style=3D=
+"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-s=
+moothing:=20
+antialiased; color: #8f8776; font-family: Helvetica Neue, Helvetica, Arial,=
+ sans-serif; text-decoration: none; font-size: 13px; line-height: 18px;" ta=
+rget=3D"_blank"><img alt=3D"Twilio" src=3D"https://pages.twilio.com/rs/294-=
+TKB-300/images/twilio-footer-logo.png" style=3D"-webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; color=
+: #2c2c2a; font-family:=20
+Helvetica Neue, Helvetica, Arial, sans-serif; outline: none; text-decoratio=
+n: none; -ms-interpolation-mode: bicubic; max-width: 100%; border: none;" w=
+idth=3D"32" height=3D"32">
+</a></p>
+<p style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -we=
+bkit-font-smoothing: antialiased; color: #b1aca0; font-family: Helvetica Ne=
+ue, Helvetica, Arial, sans-serif; margin: 0; font-size: 13px; line-height: =
+18px; text-decoration: none; padding-bottom: 24px;">
+This email was sent to <a href=3D"mailto:egweinberg@viterbo.edu" style=3D"-=
+webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;=20
+-webkit-font-smoothing: antialiased; color: #8f8776; font-family: Helvetica=
+ Neue, Helvetica, Arial, sans-serif; text-decoration: none; font-size: 13px=
+; line-height: 18px;" target=3D"_blank" class=3D"mktNoTrack">
+egweinberg@viterbo.edu</a>.<br>
+Don't want to receive emails from Twilio? <a href=3D"https://nam02.safelink=
+s.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu3528416.ct.sendgrid.net%2Fls=
+%2Fclick%3Fupn%3DOHV4-2FqkTPBIi8pj9zljUkGvaabq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8=
+K-2B2VpbaMvxlH-2F4geQ3uXyqEusalOoUdLUYhVstiUzVX2AZP09lQXx0m9mWT-2Fb00NUpBGA=
+XLTn3T93VcZ-2BdwqvCJky6-2BA9GnZNPOxdBTqykPMkyKnPO4-3DsFSI_pMMt9G-2BNGQm6YsI=
+zqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G8Ujf0ZYzp6zRcxT7vs32h7UvkkMaVCkXO=
+Pipi0usimauq7f6rcRBaarLleEMWInRxp1QDKsdZk-2BMGWiqbZ5onRrY8zTZ25ktZ-2F8MbVBe=
+dvUkN3Tp264wZxC-2Ft-2F4WO6AVgoCrxDdNm-2Fty4-2FkyQr4z-2BBIOBCub5TyfQ-3D-3D&a=
+mp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C5a9bbb78a0b44a65926a08dbcb46=
+1948%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327274181244508%7CUnkn=
+own%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXV=
+CI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DBF6%2BfR98cJC85pXOLpwzrqE%2FyurkZ%2Fa=
+t30bfzhMU2D8%3D&amp;reserved=3D0" originalsrc=3D"https://u3528416.ct.sendgr=
+id.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGvaabq0ecKgjN5WVH8ZDzf9L2e5lzg=
+Ufaj8K-2B2VpbaMvxlH-2F4geQ3uXyqEusalOoUdLUYhVstiUzVX2AZP09lQXx0m9mWT-2Fb00N=
+UpBGAXLTn3T93VcZ-2BdwqvCJky6-2BA9GnZNPOxdBTqykPMkyKnPO4-3DsFSI_pMMt9G-2BNGQ=
+m6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G8Ujf0ZYzp6zRcxT7vs32h7UvkkMa=
+VCkXOPipi0usimauq7f6rcRBaarLleEMWInRxp1QDKsdZk-2BMGWiqbZ5onRrY8zTZ25ktZ-2F8=
+MbVBedvUkN3Tp264wZxC-2Ft-2F4WO6AVgoCrxDdNm-2Fty4-2FkyQr4z-2BBIOBCub5TyfQ-3D=
+-3D" shash=3D"llT/PfStS1M1MaenrDq1wyz5NRJ2NrhKHd9UFwOIFlv2PVqs8QDvewAYzOSol=
+y4/Yw4Ir5GTO2hXEwFkiKJMyyYXU4PLlSOcm7LsVrYlaIH78rK2mCzwR8vk4zCj5fEhtY63VkCQ=
+yusAPFSiPfIfjqpMjkbP+Qw06KG8FUBKjkg=3D" style=3D"-webkit-text-size-adjust: =
+100%; -ms-text-size-adjust:=20
+100%; -webkit-font-smoothing: antialiased; color: #8f8776; font-family: Hel=
+vetica Neue, Helvetica, Arial, sans-serif; text-decoration: none; font-size=
+: 13px; line-height: 18px;" target=3D"_blank">
+Change your email preferences</a><a href=3D"https://nam02.safelinks.protect=
+ion.outlook.com/?url=3Dhttps%3A%2F%2Fu3528416.ct.sendgrid.net%2Fls%2Fclick%=
+3Fupn%3DOHV4-2FqkTPBIi8pj9zljUkLjItY90ZL4gJ-2BRbbhpMOMqHKmaHNzXZQpEgfL3YNcq=
+I5K-2B12UIZbt5jjc3HkrfwnTZnr5r9XWhK4R4Nm793SRYsS6-2FKpDCLIdHSeLF7zVGx4yf-2F=
+urBt1XclrXYDeBvFKk1vKHNuUv-2BH7shJFkocjNZe8sIo7hETDWhG24fKLuALQb0N9D-2B-2BK=
+R1-2BwNqg6gK8XHQ8Jp3Pom6M4wJwfU2S3A3GBaN-2BBHlemXflWC1VC5byKEBYwg0RnJvwiqpz=
+2RzHfC0YSKSYJy46SjLczHhfAYc-3DWoXU_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B=
+2bB0S-2B0JZuKp3q42G8Ujf0ZYzp6zfM090hSBDjaQtQzl73Ny4wz-2Bu5YEyKfFNMFJdLZZyOu=
+1bfjiRdD2eMZJz01-2FaR-2B8MACN7l190eZSNQvyWpN7fPdux4PwDePcvwEeXwRUyBbDxgjnZq=
+pqZLU-2F9rQZ-2B5U9PmK0bpus0ZGTmRdlDBk1kQ-3D-3D&amp;data=3D05%7C01%7Cegweinb=
+erg%40viterbo.edu%7C5a9bbb78a0b44a65926a08dbcb461948%7C6b9fc982e8d74958976c=
+b08441cc9b0b%7C0%7C0%7C638327274181244508%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiM=
+C4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&a=
+mp;sdata=3D5IHxNkStVzYTGgtgPg%2F1mMoGF9dIcOqtYXrff2Fpx48%3D&amp;reserved=3D=
+0" originalsrc=3D"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2Fqk=
+TPBIi8pj9zljUkLjItY90ZL4gJ-2BRbbhpMOMqHKmaHNzXZQpEgfL3YNcqI5K-2B12UIZbt5jjc=
+3HkrfwnTZnr5r9XWhK4R4Nm793SRYsS6-2FKpDCLIdHSeLF7zVGx4yf-2FurBt1XclrXYDeBvFK=
+k1vKHNuUv-2BH7shJFkocjNZe8sIo7hETDWhG24fKLuALQb0N9D-2B-2BKR1-2BwNqg6gK8XHQ8=
+Jp3Pom6M4wJwfU2S3A3GBaN-2BBHlemXflWC1VC5byKEBYwg0RnJvwiqpz2RzHfC0YSKSYJy46S=
+jLczHhfAYc-3DWoXU_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q4=
+2G8Ujf0ZYzp6zfM090hSBDjaQtQzl73Ny4wz-2Bu5YEyKfFNMFJdLZZyOu1bfjiRdD2eMZJz01-=
+2FaR-2B8MACN7l190eZSNQvyWpN7fPdux4PwDePcvwEeXwRUyBbDxgjnZqpqZLU-2F9rQZ-2B5U=
+9PmK0bpus0ZGTmRdlDBk1kQ-3D-3D" shash=3D"MKjawAmC1wwUYn76OqmfIK4RmP+0sSemeJq=
+aNvLqj/oxG9DtNSIIXdfllUnWQT8Ami6jtR4/I2FqaTq+ttO4reFkk/yIqSfaLnMRn1M2sIHP6y=
+Kd610PC2GZJHTqxdIziXyuo1PYGuDWchdgEA+L0qosAkqRAfzzQHrs2hPJ4Lk=3D"></a>.<br>
+If you have any questions or concerns, please contact us at <a href=3D"http=
+s://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu3528416.ct=
+.sendgrid.net%2Fls%2Fclick%3Fupn%3DOHV4-2FqkTPBIi8pj9zljUkLw1bglmhJGzuA3zs-=
+2F4EN1htXgmpD9iMlUhDdPJxeHFwQVsH_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2b=
+B0S-2B0JZuKp3q42G8Ujf0ZYzp6zDaJOeUm88McxSyzlV0kLzlKTuf5z47PzDLHa43P-2FvjSyI=
+QACmu9PwW5fyDG5o3adIKjI0ddjbmd52a8eryFRZhjKtmIQtaVOmCppnUfeoqY6Utt61xgS1lv4=
+fQ-2BdRYNDjnSw2jfK-2F1XfSMqoiVK2VQ-3D-3D&amp;data=3D05%7C01%7Cegweinberg%40=
+viterbo.edu%7C5a9bbb78a0b44a65926a08dbcb461948%7C6b9fc982e8d74958976cb08441=
+cc9b0b%7C0%7C0%7C638327274181244508%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sda=
+ta=3DK5Xv6gqFFTLowPxh95eKIm4v9zYHqimQMKuA7z7hIDU%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj=
+9zljUkLw1bglmhJGzuA3zs-2F4EN1htXgmpD9iMlUhDdPJxeHFwQVsH_pMMt9G-2BNGQm6YsIzq=
+DuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G8Ujf0ZYzp6zDaJOeUm88McxSyzlV0kLzlKT=
+uf5z47PzDLHa43P-2FvjSyIQACmu9PwW5fyDG5o3adIKjI0ddjbmd52a8eryFRZhjKtmIQtaVOm=
+CppnUfeoqY6Utt61xgS1lv4fQ-2BdRYNDjnSw2jfK-2F1XfSMqoiVK2VQ-3D-3D" shash=3D"e=
+ovTgDyRpiVztjDP2lamkONILlP/+AjbJj5nCCCvE+zCIi1U27Dd1JUZpVYjFC8UgfZpErmisT/2=
+5RqxQza+BGG0Bp7yO3vL74HBNNLbsEg/U0osWTGeW80f7TuHjnRAtNxvF/5uT4LKmdXNDOP/6on=
+HPv5zuOhgduOswLrjLEY=3D" style=3D"-webkit-text-size-adjust: 100%;=20
+-ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; color: #8f=
+8776; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-decor=
+ation: none; font-size: 13px; line-height: 18px;" target=3D"_blank" class=
+=3D"mktNoTrack">
+https://www.twilio.com/help/contact</a>.</p>
+<p style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -we=
+bkit-font-smoothing: antialiased; color: #b1aca0; font-family: Helvetica Ne=
+ue, Helvetica, Arial, sans-serif; margin: 0; font-size: 13px; line-height: =
+18px; text-decoration: none; padding-bottom: 24px;">
+If you're having trouble reading this email, try the<span class=3D"link" st=
+yle=3D"-webkit-text-size-adjust: 100%;=20
+-ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; color: #8f=
+8776; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fu3528416.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DOHV4-2FqkTPBIi8pj9zljUkGv=
+aabq0ecKgjN5WVH8ZDzcyYmFbWHrcs6BVgK5Of-2FiZEJ8AtXB-2BAwXUYwC42vEaXZROV25eyu=
+f9qXowCiTRKb4riuhPV9V4-2BXl-2FQrrwIiPa14jMS7JJpDJppprY1l4xxz5mYeZgvblsqonfk=
+zmQHGU-3DclD-_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G8U=
+jf0ZYzp6zMttgNFg4TliEMQQX-2B7hJ41zTRRiYhV-2FDYGP1fRp6soduGJ6l60yXstK5IaRh7x=
+-2FRWeswcxV-2FdQTB2iKWcEu3VPVdO1HXERWQ3MuY9Jf5cpGD80fy1KVkez5tl5zhYODADLYar=
+LZE-2BsrZw7i1AL1EGsQgd4zB9MmlAKULYBzj-2FNs-3D&amp;data=3D05%7C01%7Cegweinbe=
+rg%40viterbo.edu%7C5a9bbb78a0b44a65926a08dbcb461948%7C6b9fc982e8d74958976cb=
+08441cc9b0b%7C0%7C0%7C638327274181400723%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&am=
+p;sdata=3D9ekr17qirQTIbvxYG8Yetkd8ATo2SZP3n5qfas3ZcbA%3D&amp;reserved=3D0" =
+originalsrc=3D"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPB=
+Ii8pj9zljUkGvaabq0ecKgjN5WVH8ZDzcyYmFbWHrcs6BVgK5Of-2FiZEJ8AtXB-2BAwXUYwC42=
+vEaXZROV25eyuf9qXowCiTRKb4riuhPV9V4-2BXl-2FQrrwIiPa14jMS7JJpDJppprY1l4xxz5m=
+YeZgvblsqonfkzmQHGU-3DclD-_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B=
+0JZuKp3q42G8Ujf0ZYzp6zMttgNFg4TliEMQQX-2B7hJ41zTRRiYhV-2FDYGP1fRp6soduGJ6l6=
+0yXstK5IaRh7x-2FRWeswcxV-2FdQTB2iKWcEu3VPVdO1HXERWQ3MuY9Jf5cpGD80fy1KVkez5t=
+l5zhYODADLYarLZE-2BsrZw7i1AL1EGsQgd4zB9MmlAKULYBzj-2FNs-3D" shash=3D"A8fywj=
+6jhlyeGTLWE/eAtlfzEHpSfJMg6Lk/i03AYiDRj7sCx+ChUKry+zuTcmCAGOJfmxnaBgfhPQsec=
+8YC6XiH/H5Ijy5Uysoug5PWsTyCGXRA81v08AO/vCjz2yCFBu3RzsGf8DnRfGsnT/o2y60fkfHG=
++eeLTunKBTAyd+c=3D" style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; -webkit-font-smoothing: antialiased; color: #8f8776; font-fam=
+ily: Helvetica Neue, Helvetica, Arial, sans-serif; text-decoration: none; f=
+ont-size: 13px; line-height: 18px;" target=3D"_blank" class=3D"mktNoTrack">
+web version</a></span>.</p>
+<p style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -we=
+bkit-font-smoothing: antialiased; color: #b1aca0; font-family: Helvetica Ne=
+ue, Helvetica, Arial, sans-serif; margin: 0; font-size: 13px; line-height: =
+18px; text-decoration: none; padding-bottom: 24px;">
+Twilio <a style=3D"text-decoration: none; color: #b1aca0;">101 Spear Street=
+, San Francisco, CA 94105</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<!-- Footer End -->
+</tbody>
+</table>
+<!--[if(mso)|(IE)]>
+                                    </td>
+                               =20
+</tr>
+                           =20
+</table>
+                            <![endif]--></center>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fu3528416.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DOHV4-2FqkTPBIi8pj9zljUkGv=
+aabq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMeBouvdMO8r04yqwcgaVnM74fQlj5-2Fl=
+bMyQ034ZYo9LLHdaMFDl2NFxsN0nGGWK-2BYefVcGkIt06iPNNB5F-2FbACJZ5GPKZHp-2Bs5YI=
+3gbahUKI-3DO5NJ_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0S-2B0JZuKp3q42G=
+8Ujf0ZYzp6zMttgNFg4TliEMQQX-2B7hJ47MUqNjfk-2FwSUKJboJ8Zay9AkarFO816TSxjxxmo=
+0XOTA-2F4vkbdrowO8GDFArUK3YP9vCIEDqYhFV-2FVk6DNXTesOOnxtkCQOjeFh9gnZIYyZAV3=
+aiKeusIs6w060b7-2FDCqTNl7WJnMxif5AHRgYUxTw-3D&amp;data=3D05%7C01%7Cegweinbe=
+rg%40viterbo.edu%7C5a9bbb78a0b44a65926a08dbcb461948%7C6b9fc982e8d74958976cb=
+08441cc9b0b%7C0%7C0%7C638327274181400723%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&am=
+p;sdata=3DfhLUvlz03qBh7sNmEA%2FYPhjJjF63r5j5COuM0xdQGUE%3D&amp;reserved=3D0=
+" originalsrc=3D"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkT=
+PBIi8pj9zljUkGvaabq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMeBouvdMO8r04yqwcg=
+aVnM74fQlj5-2FlbMyQ034ZYo9LLHdaMFDl2NFxsN0nGGWK-2BYefVcGkIt06iPNNB5F-2FbACJ=
+Z5GPKZHp-2Bs5YI3gbahUKI-3DO5NJ_pMMt9G-2BNGQm6YsIzqDuSwmhe2KvZZt1rruN-2B2bB0=
+S-2B0JZuKp3q42G8Ujf0ZYzp6zMttgNFg4TliEMQQX-2B7hJ47MUqNjfk-2FwSUKJboJ8Zay9Ak=
+arFO816TSxjxxmo0XOTA-2F4vkbdrowO8GDFArUK3YP9vCIEDqYhFV-2FVk6DNXTesOOnxtkCQO=
+jeFh9gnZIYyZAV3aiKeusIs6w060b7-2FDCqTNl7WJnMxif5AHRgYUxTw-3D" shash=3D"YSKX=
+/ouJixzwNuF9/uEdPoJ2XFHyTdtZnLccDuC3zsIRfHCXoBbTDXc5T4XHQMeo+hqnsmBOWXTcINh=
+x0NL2eLVz3KvEE497omPB9oHooHbnWML/oAqpD7Z3oC/PeeuX0MuW/CbLIfHFDpsAy9gWt0/Qro=
+4abcVJ3dKwmVFpmQ4=3D"></a><img src=3D"https://links.twilio.com/trk?t=3D1&am=
+p;mid=3DMjk0LVRLQi0zMDAAAAGOw9GLqXGVYUzFTVGZMz_QpzcQgUXlPNsCLHgh07tHzGSMrQh=
+UWeXStBEZb4ltxN0OUT8gYy0__XusGpSeb4BwZ28gBa9kqh8kKYHepKQQd1IoCZZDB7V3fdZ7ll=
+FXfD92iTrfzlFzJ1n1IBkyC0QKlQ" width=3D"1" height=3D"1" style=3D"display:non=
+e !important;" alt=3D"">
+<img src=3D"https://u3528416.ct.sendgrid.net/wf/open?upn=3DmweMMgkj8FbV4Zh-=
+2B4o4HF5rMdjckcxKsVog0fMxU67QHSpuk5g83xc4rK-2FDA2RNeJTVp1ytj45PbvuG4JH-2Fdb=
+M05yQSlgYqiOUeiI585M-2BKkDVxMqT5YQAWuQOVJ-2BWFu2cAlVQuriLjV-2BTj8zJe99A4m6X=
+p98GKqR0PMMB8vUPRbzhiVYFksv4y5kpktB9HzHRmnDPPjZEXjN15-2FYryLTU-2BjDgwWDaK18=
+FWarHfcwxU-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"heig=
+ht:1px !important;width:1px !important;border-width:0 !important;margin-top=
+:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-l=
+eft:0 !important;padding-top:0 !important;padding-bottom:0 !important;paddi=
+ng-right:0 !important;padding-left:0 !important;">
+</div>
+</body>
+</html>
+
+------=_Part_59135644_1498477360.1697130273709--

@@ -1,0 +1,1681 @@
+Received: from LV8PR20MB7151.namprd20.prod.outlook.com (2603:10b6:408:1e9::6)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023
+ 20:36:49 +0000
+Received: from CYZPR20CA0018.namprd20.prod.outlook.com (2603:10b6:930:a2::6)
+ by LV8PR20MB7151.namprd20.prod.outlook.com (2603:10b6:408:1e9::6) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.44; Thu, 12 Oct
+ 2023 20:36:45 +0000
+Received: from CY4PEPF0000FCC1.namprd03.prod.outlook.com
+ (2603:10b6:930:a2:cafe::c8) by CYZPR20CA0018.outlook.office365.com
+ (2603:10b6:930:a2::6) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.30 via Frontend
+ Transport; Thu, 12 Oct 2023 20:36:45 +0000
+Authentication-Results: spf=pass (sender IP is 185.194.85.45)
+ smtp.mailfrom=k12.corwin.com; dkim=pass (signature was verified)
+ header.d=k12.corwin.com;dmarc=pass action=none
+ header.from=k12.corwin.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of k12.corwin.com
+ designates 185.194.85.45 as permitted sender)
+ receiver=protection.outlook.com; client-ip=185.194.85.45;
+ helo=sdcb045.slgnt.us; pr=C
+Received: from sdcb045.slgnt.us (185.194.85.45) by
+ CY4PEPF0000FCC1.mail.protection.outlook.com (10.167.242.103) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Thu, 12 Oct 2023 20:36:44 +0000
+From: "Corwin" <info@k12.corwin.com>
+To: "egweinberg@viterbo.edu" <egweinberg@viterbo.edu>
+Reply-To: "Corwin" <info@corwin.com>
+Subject: A Little Something to Say Thank You
+Date: Thu, 12 Oct 2023 20:35:09 +0000
+List-Unsubscribe: <https://k12.corwin.com/optiext/optiextension.dll?ID=pTSpTzBwGlDDsICrANQWfxNqQ%2B7fcyXNUZNXBMg2mB2sJ0qFNEqrCwQINRkCe0rpUUe8UNDdtLag8jGq7w7TYZyyxfAhWy_7yAMmIVpw>, <mailto:corwin_unsubscribe@corwin.slgnt.us?subject=UNSUB.8c290bacc39a4cf6fa1f5b0aca26ebcc.pTSpTzBwGlDDsICrANQWfxNqQ%2B7fcyXNUZNXBMg2mB2sJ0qFNEqrCwQINRkCe0rpUUe8UNDdtLag8jGq7w7TYZyyxfAhWy_7yAMmIVpw>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-MA-Reference: SIM_pMmpQymGGP0B9PyJNpO7M4yEJXDUzQwvsUqO00PlHwW_vZ9V9
+X-MA-Instance: SIM_pMmpQymGGP0B9PyJNpO7M4yEJXDUzQwvsUqO00PlHwW_vZ9V9.8c290bacc39a4cf6fa1f5b0aca26ebcc
+X-rpcampaign: corwin_13835_1000300_34128
+Feedback-ID: :13835:SLGNT
+List-ID: <6.13835.k12.corwin.com>
+X-MailingID: 13835_0
+X-GRID-REF: SDCPrd.PATT3L0__SNzhoQKL-Yo7TcD/UQzx/lboh3ROV18zC4r/HyD6M1IQUHV4/JApJEdMLzYsUaIoe9YUTh2151ThGBCU4Nc4e/s6-Xt1SjWiMEkX8mAXg8UIeYtWrBnUFr732ffXreFr
+X-SDC-Acc: 51783803-1350-44a8-b1d5-21fc06e50f31
+X-SDC-Shard: buyan
+X-SDC-ExtRef: 96ce884fc1604daf81234c1a32a2b51e_988989903
+Message-Id: <96ce884fc1604daf81234c1a32a2b51e_988989903@slgnt.us>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=k12.corwin.com; 
+ s=sim; x=1697747709; i=@k12.corwin.com; 
+ h=from:to:reply-to:subject:mime-version:date:list-unsubscribe:list-unsubscribe-post:feedback-id:list-id:message-id; 
+ bh=7DB0eNMH/0nOyVa5djmLQqeIo7sMsdi/zz6ZmUoru+0=; 
+ b=gsKCB8IbYW9WV252KIkaMZouIo0RVPiUNec3uK2Tia0sFtxuODBbco1qYuL5kP8tL1A+NKJkOPNk4dnOwpHXgOSMu+a3xJoTCM4eIK+Arhe5x6V2BVb66rYNy74O0nA/C0Uuike3Z5tjQb2R0MLycWPY6MSvtkMWbWtSNFlDZss=
+Content-Type: multipart/alternative;
+	boundary="_NexPart_001_"
+Return-Path: info@k12.corwin.com
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2023 20:36:45.3287
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b4fedfd5-bc83-4302-9644-08dbcb62f35d
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ CY4PEPF0000FCC1:EE_|LV8PR20MB7151:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ CY4PEPF0000FCC1.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b4fedfd5-bc83-4302-9644-08dbcb62f35d
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:185.194.85.45;CTRY:BE;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:sdcb045.slgnt.us;PTR:sdcb045.slgnt.us;CAT:NONE;SFS:(13230031)(4636009)(286005)(1690799017)(451199024)(6486002)(58800400005)(6666004)(66899024)(76236004)(36736006)(6916009)(19810500001)(7596003)(166002)(356005)(8676002)(16670700002)(40140700001)(36756003)(1096003)(7636003)(15974865002)(118246002)(22186003)(86362001)(9316004)(26005)(9686003)(32586004)(66574015)(83380400001)(956004)(120186005)(336012)(6506007)(33964004)(7696005)(19627405001)(5006899006)(76899018)(1406899027)(4448075009)(75396010)(579004)(559001);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2023 20:36:44.6881
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b4fedfd5-bc83-4302-9644-08dbcb62f35d
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY4PEPF0000FCC1.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV8PR20MB7151
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.6866810
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?windows-1256?Q?+CdkMquz0DCpIL6A9814/7IA02dsSUMGDQ+Bgchco39lcxej5rlWwVtM?=
+ =?windows-1256?Q?8LscuHeUfDXG6aRV0JgdvkR4co1eQKwLumEfyOtEgvCmX8XKTrRw60xZ?=
+ =?windows-1256?Q?xhspfReXN7AuRJwy/7awQZHai71ZwKYG654QOvYzmkBdLYPwyfseGrJC?=
+ =?windows-1256?Q?J9IkZedZh2ny9aONvCs/+CyIQ9soSm6IE8XsfhmZKfXCLk8Np5oaFOC5?=
+ =?windows-1256?Q?ZmzX9xmIBimi2GHMdyutBEWYc8jd1u+vJDMk68VZmcCjYzMdWtMnRMrz?=
+ =?windows-1256?Q?cGrAGd1Zuprf8TFnsAwbMLDJJ1G2LrXEw8LFe8+Wtj2wUk16RB/DMHfG?=
+ =?windows-1256?Q?7zQNZ6FRGcpbIRkb/fDtD4RMvK4B/NN4Z4DSTZTCTuuVQ4FdGpwgZZXF?=
+ =?windows-1256?Q?pPaT4bVyWAjo4itRLUgpt+KwkyWKiyoFRrInVeJbMorWKAmsy6J27uuz?=
+ =?windows-1256?Q?cQ5TzZHnXjcm1HwBFDmjonNoJ3yQRqwbeR1HcFf4KJgVzy5RgDTr92pz?=
+ =?windows-1256?Q?SGyXA/oyMjtJAY/MTFj9Y1AWnY3Xe2Fmzr97Qf7L4y1nc2As9fRNVukh?=
+ =?windows-1256?Q?FKviACc3hq/5Pq0n2gCxxva2lGXLXGD84SzETVm7loqk23fte+Ka2DTf?=
+ =?windows-1256?Q?dz+rpGaF8TZXaESeWtkZc2lsDmm2SVjXeK+JKPaXm3Sm1myxsKjE6N3G?=
+ =?windows-1256?Q?rT2ba9zkY9Uo4LkGDkKk5Egoqx4MOMkKwWwUrUeu9cDbMg6nPn5tJukn?=
+ =?windows-1256?Q?/X+uXNvMNCl0tQfn6XcyJsmvEkQs7rZEi+P830n5Epbu35CC6aW2dtA8?=
+ =?windows-1256?Q?8x6NqWJDUsQX1+sryOxn5ALPpT6w6iuK0HyF4Me2n75l2wyiW2H07O5S?=
+ =?windows-1256?Q?ADOr2fLvnLhhMPkCdLxAdL3Tilw2idLgCMxwVt6oeXrrIknOj0dyf/N6?=
+ =?windows-1256?Q?TzW7GKlpuIFUBxfH2QCPqep6TNRHSgwBa+K0Y3DAV3qw6w3ePX7DF78j?=
+ =?windows-1256?Q?lVA4JUzOFa3aj1YCwFeFsQvPyzkoW2t/v+HBfTTwc4VlA8ZO2CEdpIQx?=
+ =?windows-1256?Q?TwsaZYvws1/2ncpHee88e4GfW7HGIAfh3/popY9kh5jtqovZe5yGRL+q?=
+ =?windows-1256?Q?a7uFAjUqslWKjV34VharmKWs5LFdm9dLK1un2zqScvKJ0e50N04i4h/9?=
+ =?windows-1256?Q?3DnWpBV575neES9Rx31VNzZ66Ql2SMFvfZepbNiWCxYoqr4eaB3pmWoN?=
+ =?windows-1256?Q?q0vihuBXRjDfROBZxpx7/Zrq/Xfhq5sKlMqKy2ahXu0rlrRkDPTo1hja?=
+ =?windows-1256?Q?F4Q2i11Kj/IFOn8GryrELsJe1wgsojnSV6UPL6qw2f0YKDpqsEEwamd/?=
+ =?windows-1256?Q?3DDZF+pgMMBsj8MBBArD3ndqRZHNViXGipNErQ+rQGLeQ/Rt2IXyMrMk?=
+ =?windows-1256?Q?MXNWxNGuVvE33y0/Jsznou/M0fKwfzUhlNpLe7y+cGUdkvTV/7X0JGEm?=
+ =?windows-1256?Q?iic4+ZIZgRRcdhCqSR7KFhdzS6ba8mGtELxmZnMgfSOuW4mz6bCdGY3G?=
+ =?windows-1256?Q?PhSuK2SXtdTRgYLYPi01C+O93CIJ0hgxb7TSz8nbaCN320qIcjl2zUTT?=
+ =?windows-1256?Q?niz3bADW2+OkwgqW2DBPfAzHok250Lx8EnSltrobl6hQQWVAFew9Uw4V?=
+ =?windows-1256?Q?19RpWXbhClM2k/29UOpPSwFsM/6atg8KpNWh7EpW8NG/HsCkHxsc/JI8?=
+ =?windows-1256?Q?a5vnTsE/lgyFS/P5NhmiAk1hB//YD94ZATYFpvoWGhHqDag+pnC4YjsB?=
+ =?windows-1256?Q?dleHG40/kjeZ81xi4I0eytI814Gw2HG9NpsNHA24aBGI5U94TVhpVCP6?=
+ =?windows-1256?Q?aVR/zgT7RajP89Y302cHhE871c8bjzmiGJSYnOdBPK3txWa38iVZA2VG?=
+ =?windows-1256?Q?reE/PxPt6Pm1OoHxDLWHFnvzTbfnkpDFL7+UxSsr9PusuwZYnaUv54S3?=
+ =?windows-1256?Q?8Hp+4K4D2GeRhDOyEhdbluMK5YN32A=3D=3D?=
+MIME-Version: 1.0
+
+--_NexPart_001_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+EXTERNAL: This email originated from a sender outside of Viterbo. Use cauti=
+on when clicking on links or opening attachments.
+
+Your 30% Off + Free Shipping Code is Inside
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C
+
+
+<https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpUsft8RVXx8mZpxAe=
+BzQM6WIlflVdqKmgqajnPCCih3HFN2WrDqaWFM6WodFVzzurV8jqhwVtjz0vk4%2Be9FOhtkpxl=
+2%2BlG4taYgVG>
+[Corwin official company logo]<https://k12.corwin.com/optiext/optiextension=
+.dll?ID=3DpTSpVg533Mb2O_EHL8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4=
+GAqXDoKfEVYT8PFYCt6eE_QQBYXlQ8VuGsan3pb>
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+
+
+
+Dear Eric,
+
+We hope this school year has been going well for you, your team, and your s=
+tudents. At Corwin, we continue to be your premier provider of professional=
+ learning products and services designed to equip you with the resources ne=
+eded to improve your teaching and learning. We are honored that you continu=
+e to look to us and invest in our professional development books. We sincer=
+ely thank you and appreciate all that you do.
+
+As as a small token of our appreciation, please use code Corwin30 for 30% o=
+ff plus FREE shipping on your next book purchase at Corwin.com.
+
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+
+
+Shop<https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpVg533Mb2O_EH=
+L8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKfEVYT8PFYCt6eE_QQBY=
+XlQ8VuGsan3pb>
+
+
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+Customer Favorites & Bestsellers
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+
+
+[Teaching Students to Drive Their Learning book]<https://k12.corwin.com/opt=
+iext/optiextension.dll?ID=3DpTSpUkPGw1gs5_9f9j%2BkL4dobOCdow4rF0oXnmKdFC7dU=
+LCFMc%2BvVD0Zmc9i7zzkSExgjK_Ryd1jO6WaP4aey3UpyIozBraZP_xP22pz>
+[Visible learning the sequel book image]<https://k12.corwin.com/optiext/opt=
+iextension.dll?ID=3DpTSpPca%2Bh310m75xOgUL62lL2b_BdNHXHzxLZVbWIgs%2BLIQFMp4=
+3Vvp2LEZdJ_oblqW2HEUdCRM3Rayh9XhzkIuFjTI6SlNfKHWLefVT>
+[seen heard valued book cover]<https://k12.corwin.com/optiext/optiextension=
+.dll?ID=3DpTSpVveb7GqtKbWTnix13YKG3s%2BZ0_itoXzQsBo63qWYGDBFNkhQ5fuygd0GIoX=
+Q8pAOsoUVrbxcMuiR42zsheCUjN14oeOGQ_yecOpR>
+[https://k12.corwin.com/images/SMC/books-cover---long-term-success-for-exp-=
+multi.jpg]<https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpQosJya=
+uaYTmwsQ7MRQNkvLRQWBr297geqstrMIHzpOwFNIC9cGzn3Rjh4_5i_W632LeEkTKKJYUaUGB1G=
+VpyjNlXHakPRHY3fkpj>
+
+
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+[Corwin new website banner order with ease]<https://k12.corwin.com/optiext/=
+optiextension.dll?ID=3DpTSpVg533Mb2O_EHL8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8=
+yF7_vwbPAxuP4GAqXDoKfEVYT8PFYCt6eE_QQBYXlQ8VuGsan3pb>
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+
+
+[https://k12.corwin.com/images/SMC/corwin%20connect%20blog.png]<https://k12=
+.corwin.com/optiext/optiextension.dll?ID=3DpTSpPbkJA6EVZBevT9Mx2asBvTHqQXi6=
+rQeKMvnvqXGgJdG%2BNi1TUYOB2_lttgQA0jxla8ID9OzM2QjglPgRyb7Ih7VJtY68j0XWCxpC>
+Corwin Connect Blog<https://k12.corwin.com/optiext/optiextension.dll?ID=3Dp=
+TSpPbkJA6EVZBevT9Mx2asBvTHqQXi6rQeKMvnvqXGgJdG%2BNi1TUYOB2_lttgQA0jxla8ID9O=
+zM2QjglPgRyb7Ih7VJtY68j0XWCxpC>
+[https://k12.corwin.com/images/SMC/contact%20my%20rep.png]<https://k12.corw=
+in.com/optiext/optiextension.dll?ID=3DpTSpTGk3_zHU4qr9xJnj1guriObs1w%2BEBri=
+GPEllxPgAvOI%2BNKCK2gwmX8eN4BcYKVh4lJczEJKu6tJH3xpyK989ttLiES31infiripa>
+Contact My PD Advisor<https://k12.corwin.com/optiext/optiextension.dll?ID=
+=3DpTSpTGk3_zHU4qr9xJnj1guriObs1w%2BEBriGPEllxPgAvOI%2BNKCK2gwmX8eN4BcYKVh4=
+lJczEJKu6tJH3xpyK989ttLiES31infiripa>
+[https://k12.corwin.com/images/SMC/manage%20account.png]<https://k12.corwin=
+.com/optiext/optiextension.dll?ID=3DpTSpQPWENe65DHdj0SIOfQbLsffgDW4FS2ACjnA=
+5HbkIiOe%2BNaiow1prFENMOmjzi5nE1wjN84%2BRsOuuoq0%2BgYUeIeHUEVcWCwOJwypf>
+Manage My Account<https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTS=
+pVg533Mb2O_EHL8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKfEVYT8=
+PFYCt6eE_QQBYXlQ8VuGsan3pb>
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+
+
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+Follow us @CorwinPress
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+
+
+[https://k12.corwin.com/images/SMC/social%20icons/twitter.png]<https://k12.=
+corwin.com/optiext/optiextension.dll?ID=3DpTSpV8ZQ_WojNlfNL3xODqb0UHzGxmiMr=
+TnoD8ktOUt6U2HFN8CyUGpzGBrpK%2BhZdsjchn3KxNkvXAZ7XqiXtBfHHTqGwJClD2QiSXp7>
+[https://k12.corwin.com/images/SMC/social%20icons/facebook.png]<https://k12=
+.corwin.com/optiext/optiextension.dll?ID=3DpTSpUfZVgpGfZRr4u1b3hYbOIg3T5gp6=
+f3ih61hP2xUuLC0%2BMsq4s7Xxawg6p_larmQ1ePdgrGnLFzdTnAip6cHJ3jux_TYjGfPAbiVM>
+[https://k12.corwin.com/images/SMC/social%20icons/instagram.png]<https://k1=
+2.corwin.com/optiext/optiextension.dll?ID=3DpTSpT9PduVuBVzIU5MZb1Ia2zj0H%2B=
+X_nljtCstorQPm1pn_FNU643SBsEGru5an4O8V_NBh%2BUDy%2BDN7bMv8mADIYnRShOtTz3VYu=
+6tp4>
+[https://k12.corwin.com/images/SMC/social%20icons/pinterest.png]<https://k1=
+2.corwin.com/optiext/optiextension.dll?ID=3DpTSpQ5yDL6ly7lbHpYAPPVJTQ3Ho5iK=
+i96TIQHhMRZTTf6C%2BMqy_njfD95Ftm8lBeyXp1fhwPIO7HP_SiPG9SvWF9tPQiGHu4QLVrEpz=
+>
+[https://k12.corwin.com/images/SMC/social%20icons/linkedin.png]<https://k12=
+.corwin.com/optiext/optiextension.dll?ID=3DpTSpVvq2JncVK3BCF1iifQAd8HCUDQ7r=
+lJD0cFIeZtuLVEIFNtbWYfKasNCSS2FH90ESRZucsPAK0mRlOozEO86CKWcWEEmr%2B2ddBNVq>
+[https://k12.corwin.com/images/SMC/social%20icons/youtube.png]<https://k12.=
+corwin.com/optiext/optiextension.dll?ID=3DpTSpR7%2BCHcusigGOP4fW7gZPj4VNJ60=
+c4t4G%2BiZ77RWs2wg%2BNO1aTjCONiAfU1wVUdcIT04Pp719g8yU9fMw09CJQVS6PN6XZkCtp1=
+VH>
+
+
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+Corwin has one mission: to enhance education through intentional profession=
+al learning. We build long-term relationships with our authors, educators, =
+clients, and associations who partner with us to develop and continuously i=
+mprove the best, evidence-based practices that establish and support lifelo=
+ng learning.
+
+
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+Find out more<https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpVX6=
+FpjCf9kfmMSdBNyoeRInWEx1UTEQn_GiSTXh3bNq%2BNzF_RNIL6PexD4c3RnoZ0bbl8laUj8GG=
+ZAlCs8hzgxVCiiwU_mEcDNVI>
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+
+
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+
+2455 Teller Road, Thousand Oaks, CA 91320, USA | (800) 233-9936
+Level 20, 114 William Street, Melbourne, VIC 3000, Australia | (03) 8612 20=
+00
+www.corwin.com<https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpVg=
+533Mb2O_EHL8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKfEVYT8PFY=
+Ct6eE_QQBYXlQ8VuGsan3pb> | au.corwin.com<https://k12.corwin.com/optiext/opt=
+iextension.dll?ID=3DpTSpRTJi7Bnl2%2BZpmvzfzT_qG3CdGXu7ZucwGsbMHlZU1e%2BFNc2=
+eVNntxxj0mYePMU7ZAy8bZJsCOauyxgOa7Hehh4U2RpGtmuQ1c2VK> | ca.corwin.com<http=
+s://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpTkd7GHAy2iK7uxbRhoi3K=
+DevYwppkSjU3Rooi8BV5OIFNHQvGqkswzQxNCC3viPyAlNfTvxQ5q0kBqjb7ZCZ7rDP8ll_6jig=
+54pF>
+
+Email not displaying correctly? View in browser<https://k12.corwin.com/opti=
+ext/optiextension.dll?ID=3DpTSpOwGu7uodLECX2MF5cKlK32FFApzyMvTUG3HDL%2BORSZ=
+JFhovYVIAseEXN2jmytZhgakkGanv82WPhMlbGfECXGbGxa>.
+
+To ensure our emails reach your inbox, add info@k12.corwin.com to your addr=
+ess book.
+
+View our privacy policy<https://k12.corwin.com/optiext/optiextension.dll?ID=
+=3DpTSpVXiJ7STcKc5LP0xs%2BenQOPWW_DF8O9Lm4K9ZDdiWQ1GFNYTeyO5jJZk2kiTRfx6F76=
+UCjkARE6R2qoRClE65aA3QFR1Vx7vQavpr>.
+
+This message was sent to egweinberg@viterbo.edu. If you'd rather not receiv=
+e emails from Corwin, you may unsubscribe<https://k12.corwin.com/optiext/op=
+tiextension.dll?ID=3DpTSpV6PCXNBhrJ14RR35HhpOgMCkI9H8MwV2kayS9ODonv1%2BMH0S=
+7cHsLkYU%2BgxFxj4Zdg1CkeIiFPfLOEhDxC_mOVE_lZZSJfD_1ppR>.
+
+
+
+<https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpUsft8RVXx8mZpxAe=
+BzQM6WIlflVdqKmgqajnPCCih3HFN2WrDqaWFM6WodFVzzurV8jqhwVtjz0vk4%2Be9FOhtkpxl=
+2%2BlG4taYgVG>
+[https://k12.corwin.com/Portal/resourcehandler/static/x.png]
+
+=C2=A9 2023
+FF23717300
+
+
+
+--_NexPart_001_
+Content-Type: text/html;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"x-apple-disable-message-reformatting">
+<title>A Little Something to Say Thank You</title>
+<!--[if (gte mso 9)|(IE)]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:Pi=
+xelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-=
+-><style type=3D"text/css">*{-ms-text-size-adjust:100%;-webkit-text-size-ad=
+just:100%}html,body{padding:0!important;height:100%!important;width:100%!im=
+portant;margin:0!important}div[style*=3D"margin: 16px 0"]{margin:0!importan=
+t}table,td{mso-table-lspace:0!important;mso-table-rspace:0!important}table{=
+border-spacing:0!important;margin:0 auto!important}.yshortcuts a{border-bot=
+tom:none!important}a[x-apple-data-detectors]{color:inherit!important;text-d=
+ecoration:underline!important}.applelinks a{color:#222;text-decoration:none=
+}th{padding:0!important;margin:0!important;font-weight:normal}span.MsoHyper=
+link{mso-style-priority:99;color:inherit}span.MsoHyperlinkFollowed{mso-styl=
+e-priority:99;color:inherit}#MessageViewBody,#MessageWebViewDiv{width:100%!=
+important}@media screen yahoo{*{overflow:visible!important;}.y-overflow-hid=
+den{overflow:hidden!important;}.m_show{display:none;}}.columns{display:inli=
+ne-block;text-align:center}#preheader{display:none}.m_show table{display:no=
+ne}
+@media screen and (max-width:600px){
+    .quarter{width:25%!important;max-width:25%!important}.third{width:33.33=
+3%!important;max-width:33.333%!important}.second{width:50%!important;max-wi=
+dth:50%!important}.full{width:100%!important;max-width:100%!important}.m_hi=
+de{display:none!important}.m_show{display:table!important}.m_hide table{dis=
+play:none!important}.m_show table{display:table!important}.geniuswrapper{wi=
+dth:320px!important;padding:0!important}.geniuscontainer{width:300px!import=
+ant;padding:0!important}.geniusmobile{width:300px!important;display:block!i=
+mportant;padding:0!important}.btn_table{display:table!important}.btn_td{dis=
+play:block!important}
+}
+@media screen and (max-width:480px){
+    .quarter{width:50%!important;max-width:50%!important}.second,.third{wid=
+th:100%!important;max-width:100%!important}
+}@media screen and (max-width: 600px){.m_wrapper{padding: 0 10px !important=
+;}}</style>
+</head>
+<body bgcolor=3D"#ffffff" width=3D"100%" style=3D"margin:0;padding:0;-sg-mo=
+bile-margin:10px">
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div>
+<div style=3D"display:none;font-size:0px;color:#999999;line-height:0px;max-=
+height:0px;max-width:0px;opacity:0;overflow:hidden;">
+Your 30% Off + Free Shipping Code is Inside</div>
+<div style=3D"display:none;max-height:0px;overflow:hidden;">&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;</div>
+<img width=3D"1" height=3D"1" src=3D"https://k12.corwin.com/optiext/optiext=
+ension.dll?ID=3DpTSpUGBg1UY_WeSIic_z442cMeYkrHRRvofzBOodsjxe1NV%2BMRjjYKyRw=
+SRLTkgW81b3UOE1TcOO27CYyl73Srf%2BfmRM47mbR63Zegpy" style=3D"display:none; m=
+argin:0; padding:0; visibility:hidden; overflow:hidden; max-height:0;width:=
+0px;height:0px;font-size:0;color:#FFFFFF;mso-hide:all;float: left;line-heig=
+ht:0;" alt=3D"">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:6=
+00px;text-align:left;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpUsft8RVXx8mZpxAeBzQM6WIlflVdqKmgqajnPCCih3HFN2WrDqaWFM6WodFVzzurV8jqh=
+wVtjz0vk4%252Be9FOhtkpxl2%252BlG4taYgVG&amp;data=3D05%7C01%7Cegweinberg%40v=
+iterbo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441c=
+c9b0b%7C0%7C0%7C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAw=
+MDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdat=
+a=3D5ZOM2Rb9YkHHd65zvRT7RznHILB9QwQDgjtYkkb1Yxk%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpUsft8RVX=
+x8mZpxAeBzQM6WIlflVdqKmgqajnPCCih3HFN2WrDqaWFM6WodFVzzurV8jqhwVtjz0vk4%2Be9=
+FOhtkpxl2%2BlG4taYgVG" shash=3D"MRWtXTUtdUdraNgQNZScE16iUkBs9okONBxHZhzsr6k=
+e4rR1nmfYukVVJtMs8PSSJBdBBAYuh2MRgD4WZwtGu5cDqm8BZTThFrBWwBp00OGAyfDwLQYFE5=
+RWHhN7TlKyO/an6lbwHpapfwCoocSlbFLfOBYQ0QWS5BaCvfpmI+s=3D" rel=3D"noopener n=
+oreferrer" target=3D"_blank" style=3D"text-decoration:none;cursor:default">=
+<img id=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/im=
+ages/SMC/tracking-pixel-image.png" alt=3D"do not click" border=3D"0" width=
+=3D"1" style=3D"max-width:100%;display:block;width:1px"></a></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpVg533Mb2O_EHL8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKf=
+EVYT8PFYCt6eE_QQBYXlQ8VuGsan3pb&amp;data=3D05%7C01%7Cegweinberg%40viterbo.e=
+du%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b%7C=
+0%7C0%7C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQ=
+IjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DxrTo=
+Kh4Mg768MLl%2FFIT1FHPAS5IPpFKTkvWfhkICoKI%3D&amp;reserved=3D0" originalsrc=
+=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpVg533Mb2O_EHL=
+8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKfEVYT8PFYCt6eE_QQBYX=
+lQ8VuGsan3pb" shash=3D"cGJfGhUmLwO9loygaF10d0ufDpW3sL2jfqGGJiPI2lwc7DmiQoUt=
+mTyWrH0TPgIpQV3VjKr2ZKmtpRKYU6kyLW8L9MqSYz7+DpLtQQT9uV9OVV9Tk8nCBC8xRwlAz0j=
+wG9yu+daYs0FxYj4RZL9u/trHnSwNSYiK/OSyN/oKgyg=3D" rel=3D"noopener noreferrer=
+" target=3D"_blank" style=3D"text-decoration:none;cursor:default"><img id=
+=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/images/SM=
+C/GP23419753%20Corwin%20Email%20header%20banner_600x100%20(1).png" alt=3D"C=
+orwin official company logo" border=3D"0" class=3D"full" width=3D"600" styl=
+e=3D"max-width:100%;display:block;width:600px"></a></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"20" style=3D"line-height:20px;height:20px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"20" style=3D"display:block;height:20px"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%" bgcolor=3D"#9A9A9A">
+<tbody>
+<tr>
+<td height=3D"1" style=3D"line-height:1px;height:1px"><img alt=3D"" border=
+=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png" h=
+eight=3D"1" style=3D"height:1px;display:block"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"20" style=3D"line-height:20px;height:20px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"20" style=3D"display:block;height:20px"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:6=
+00px;text-align:left;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"font-family:Arial;font-size:14px;color:#333333 !important;font=
+-weight:normal;word-wrap:break-word;word-break:normal;line-height:20px;text=
+-align:left">
+<p style=3D"font-family:Arial;font-size:14px;color:#333333 !important;font-=
+weight:normal;word-wrap:break-word;word-break:normal;line-height:20px">
+Dear Eric,</p>
+<p style=3D"font-family:Arial;font-size:14px;color:#333333 !important;font-=
+weight:normal;word-wrap:break-word;word-break:normal;line-height:20px">
+We hope this school year has been going well for you, your team, and your s=
+tudents. At Corwin, we continue to be your premier provider of professional=
+ learning products and services designed to equip you with the resources ne=
+eded to improve your teaching and
+ learning. We are honored that you continue to look to us and invest in our=
+ professional development books. We sincerely thank you and appreciate all =
+that you do.</p>
+<p style=3D"font-family:Arial;font-size:14px;color:#333333 !important;font-=
+weight:normal;word-wrap:break-word;word-break:normal;line-height:20px">
+As as a small token of our appreciation, please use code<strong> Corwin30 f=
+or 30% off plus FREE shipping</strong> on your next book purchase at Corwin=
+.com.<br>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"20" style=3D"line-height:20px;height:20px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"20" style=3D"display:block;height:20px"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:6=
+00px;text-align:left;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" class=3D"btn_table" width=3D"100" style=3D"display:table">
+<tbody>
+<tr>
+<td class=3D"btn_td" bgcolor=3D"#cc0000" width=3D"100" style=3D"font-family=
+:Arial;line-height:16px;font-size:16px;color:#ffffff;padding-top:5px;paddin=
+g-right:5px;padding-bottom:5px;padding-left:5px;text-align:center;text-deco=
+ration:none;border-radius:3px;text-overflow:ellipsis;overflow:hidden;word-w=
+rap:break-word;word-break:normal;font-weight:normal;mso-height-rule:exactly=
+">
+<a class=3D"btn" href=3D"https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%3DpTSpV=
+g533Mb2O_EHL8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKfEVYT8PF=
+YCt6eE_QQBYXlQ8VuGsan3pb&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cb4=
+fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7=
+C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2l=
+uMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DxrToKh4Mg76=
+8MLl%2FFIT1FHPAS5IPpFKTkvWfhkICoKI%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpVg533Mb2O_EHL8JwKkJXX=
+kyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKfEVYT8PFYCt6eE_QQBYXlQ8VuGsa=
+n3pb" shash=3D"cGJfGhUmLwO9loygaF10d0ufDpW3sL2jfqGGJiPI2lwc7DmiQoUtmTyWrH0T=
+PgIpQV3VjKr2ZKmtpRKYU6kyLW8L9MqSYz7+DpLtQQT9uV9OVV9Tk8nCBC8xRwlAz0jwG9yu+da=
+Ys0FxYj4RZL9u/trHnSwNSYiK/OSyN/oKgyg=3D" target=3D"_blank" rel=3D"noopener =
+noreferrer" style=3D"color:#ffffff;text-decoration:none">Shop</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:6=
+00px;text-align:left;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"20" style=3D"line-height:20px;height:20px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"20" style=3D"display:block;height:20px"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%" bgcolor=3D"#9A9A9A">
+<tbody>
+<tr>
+<td height=3D"1" style=3D"line-height:1px;height:1px"><img alt=3D"" border=
+=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png" h=
+eight=3D"1" style=3D"height:1px;display:block"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"20" style=3D"line-height:20px;height:20px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"20" style=3D"display:block;height:20px"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"font-family:Arial;font-size:14px;color:#333333 !important;font=
+-weight:normal;word-wrap:break-word;word-break:normal;line-height:20px;text=
+-align:left">
+<strong><span style=3D"font-size:14px;">Customer Favorites &amp; Bestseller=
+s</span><span style=3D"font-size:14px;"></span></strong></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"20" style=3D"line-height:20px;height:20px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"20" style=3D"display:block;height:20px"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#ffffff" style=3D"width:600px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" style=3D"text-align: center">
+<tbody>
+<tr style=3D"font-size: 0">
+<th class=3D"columns second" valign=3D"top" bgcolor=3D"#ffffff" style=3D"te=
+xt-align:left;word-wrap:break-word;word-break:normal;display:inline-block;m=
+in-width:150px;max-width:50%;width:25%;min-width:-webkit-calc(25%);min-widt=
+h:calc(25%);width:-webkit-calc(230400px - 48000%);width:calc(230400px - 480=
+00%)">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpUkPGw1gs5_9f9j%252BkL4dobOCdow4rF0oXnmKdFC7dULCFMc%252BvVD0Zmc9i7zzkS=
+ExgjK_Ryd1jO6WaP4aey3UpyIozBraZP_xP22pz&amp;data=3D05%7C01%7Cegweinberg%40v=
+iterbo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441c=
+c9b0b%7C0%7C0%7C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAw=
+MDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdat=
+a=3DR7d5uzi8PzfDLrwVIX2yHgGkapHZZTtQd3YrzJgH2lM%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpUkPGw1gs=
+5_9f9j%2BkL4dobOCdow4rF0oXnmKdFC7dULCFMc%2BvVD0Zmc9i7zzkSExgjK_Ryd1jO6WaP4a=
+ey3UpyIozBraZP_xP22pz" shash=3D"GtoQIwswn4R17qEf5N7zE7giOXW/MQ6uwBACJnIfVFO=
++1roEZDnciJvdHhxGkoiShup16Xj3kIOq9OJKt46bpeCTkm/eHOTe8cFMPSRNm1f2O+R91t2/Cr=
+fsWnrbsJskz+ojtQ/HENbEkRqO86NbIIu+PhkACXHfz79PNZLbD2A=3D" rel=3D"noopener n=
+oreferrer" target=3D"_blank" style=3D"text-decoration:none;cursor:default">=
+<img id=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/im=
+ages/SMC/teaching%20students%20to%20drive%20their%20learning.jpg" alt=3D"Te=
+aching Students to Drive Their Learning book" border=3D"0" width=3D"122" st=
+yle=3D"max-width:100%;display:block;width:122px"></a></td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class=3D"columns second" valign=3D"top" bgcolor=3D"#ffffff" style=3D"te=
+xt-align:left;word-wrap:break-word;word-break:normal;display:inline-block;m=
+in-width:150px;max-width:50%;width:25%;min-width:-webkit-calc(25%);min-widt=
+h:calc(25%);width:-webkit-calc(230400px - 48000%);width:calc(230400px - 480=
+00%)">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpPca%252Bh310m75xOgUL62lL2b_BdNHXHzxLZVbWIgs%252BLIQFMp43Vvp2LEZdJ_obl=
+qW2HEUdCRM3Rayh9XhzkIuFjTI6SlNfKHWLefVT&amp;data=3D05%7C01%7Cegweinberg%40v=
+iterbo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441c=
+c9b0b%7C0%7C0%7C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAw=
+MDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdat=
+a=3D%2BvlC3KwT2%2BtbqnHej1clf9IlTXJD8DBK6Vv6pAr1keY%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpPca%=
+2Bh310m75xOgUL62lL2b_BdNHXHzxLZVbWIgs%2BLIQFMp43Vvp2LEZdJ_oblqW2HEUdCRM3Ray=
+h9XhzkIuFjTI6SlNfKHWLefVT" shash=3D"ywXyY/haG8WAuf8b7WgvWqKI1G2G5pX/GqwpEiD=
+8zElqcPQ9FT1hcL6jJiM6Dpp1sSaz52agsH5Hv/lmYWayMzUUBl1Spv/CVwpBrYyXyeSCcifM+h=
+Di9TvCWOuet1G8Ii9LgXilBIxL6i/amXOTHJZWZA+Mfmj4vA5FTzNPO1E=3D" rel=3D"noopen=
+er noreferrer" target=3D"_blank" style=3D"text-decoration:none;cursor:defau=
+lt"><img id=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.co=
+m/images/SMC/Hattie%20Visible%20Learning%20the%20Sequel.jpg" alt=3D"Visible=
+ learning the sequel book image" border=3D"0" width=3D"112" style=3D"max-wi=
+dth:100%;display:block;width:112px"></a></td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class=3D"columns second" valign=3D"top" bgcolor=3D"#ffffff" style=3D"te=
+xt-align:left;word-wrap:break-word;word-break:normal;display:inline-block;m=
+in-width:150px;max-width:50%;width:25%;min-width:-webkit-calc(25%);min-widt=
+h:calc(25%);width:-webkit-calc(230400px - 48000%);width:calc(230400px - 480=
+00%)">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpVveb7GqtKbWTnix13YKG3s%252BZ0_itoXzQsBo63qWYGDBFNkhQ5fuygd0GIoXQ8pAOs=
+oUVrbxcMuiR42zsheCUjN14oeOGQ_yecOpR&amp;data=3D05%7C01%7Cegweinberg%40viter=
+bo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0=
+b%7C0%7C0%7C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D=
+pcH4k06vyZr4TSJnocaWmUA9pTc%2FKBt9TQ1NKhA3Muk%3D&amp;reserved=3D0" original=
+src=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpVveb7GqtKb=
+WTnix13YKG3s%2BZ0_itoXzQsBo63qWYGDBFNkhQ5fuygd0GIoXQ8pAOsoUVrbxcMuiR42zsheC=
+UjN14oeOGQ_yecOpR" shash=3D"izG7OXrMhVkG1V7dPqoXbpsSow2nBZCsp2yE4bIV5Hv7Q9H=
+ryTF4SjX1oukCKRf3+bZO+6lkCJj1/LuXffPyhqYbhJEwMfZqWNUNbn4c3j3Q8zhu/aeVpUpqlr=
+nOOf9lZv0zk0HUSjzNE2KjNiXQg1XPDZiSixyjZDdQnKWJ7+0=3D" rel=3D"noopener noref=
+errer" target=3D"_blank" style=3D"text-decoration:none;cursor:default"><img=
+ id=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/images=
+/SMC/Jung_Seen_Heard_Valued_cover.png" alt=3D"seen heard valued book cover"=
+ border=3D"0" width=3D"110" style=3D"max-width:100%;display:block;width:110=
+px"></a></td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class=3D"columns second" valign=3D"top" bgcolor=3D"#ffffff" style=3D"te=
+xt-align:left;word-wrap:break-word;word-break:normal;display:inline-block;m=
+in-width:150px;max-width:50%;width:25%;min-width:-webkit-calc(25%);min-widt=
+h:calc(25%);width:-webkit-calc(230400px - 48000%);width:calc(230400px - 480=
+00%)">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpQosJyauaYTmwsQ7MRQNkvLRQWBr297geqstrMIHzpOwFNIC9cGzn3Rjh4_5i_W632LeEk=
+TKKJYUaUGB1GVpyjNlXHakPRHY3fkpj&amp;data=3D05%7C01%7Cegweinberg%40viterbo.e=
+du%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b%7C=
+0%7C0%7C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQ=
+IjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3Df9Ac=
+WfYt0Muurj4kg%2FhDZ8uFjXCIaZVP4fsUUS19nVI%3D&amp;reserved=3D0" originalsrc=
+=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpQosJyauaYTmws=
+Q7MRQNkvLRQWBr297geqstrMIHzpOwFNIC9cGzn3Rjh4_5i_W632LeEkTKKJYUaUGB1GVpyjNlX=
+HakPRHY3fkpj" shash=3D"vEjEBwkJZ/bajPwDonfTECRsv6j5yM7f/Ai+NwgQOMYZXvuGyvkL=
+S4BGwBOvx91gbQbj427PN5d/TYN/w2xGZrcY3KwvHQX7WRbYVYU5n/OnuhMoWr7YYGzVmaE665U=
+Uirc/e4pp4ROx8F+W6bDBxcyWrhHYQh6u1YUmqbno9F8=3D" rel=3D"noopener noreferrer=
+" target=3D"_blank" style=3D"text-decoration:none;cursor:default"><img id=
+=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/images/SM=
+C/books-cover---long-term-success-for-exp-multi.jpg" alt=3D"" border=3D"0" =
+width=3D"110" style=3D"max-width:100%;display:block;width:110px"></a></td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:6=
+00px;text-align:left;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"25" style=3D"line-height:25px;height:25px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"25" style=3D"display:block;height:25px"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpVg533Mb2O_EHL8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKf=
+EVYT8PFYCt6eE_QQBYXlQ8VuGsan3pb&amp;data=3D05%7C01%7Cegweinberg%40viterbo.e=
+du%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b%7C=
+0%7C0%7C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQ=
+IjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DxrTo=
+Kh4Mg768MLl%2FFIT1FHPAS5IPpFKTkvWfhkICoKI%3D&amp;reserved=3D0" originalsrc=
+=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpVg533Mb2O_EHL=
+8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKfEVYT8PFYCt6eE_QQBYX=
+lQ8VuGsan3pb" shash=3D"cGJfGhUmLwO9loygaF10d0ufDpW3sL2jfqGGJiPI2lwc7DmiQoUt=
+mTyWrH0TPgIpQV3VjKr2ZKmtpRKYU6kyLW8L9MqSYz7+DpLtQQT9uV9OVV9Tk8nCBC8xRwlAz0j=
+wG9yu+daYs0FxYj4RZL9u/trHnSwNSYiK/OSyN/oKgyg=3D" rel=3D"noopener noreferrer=
+" target=3D"_blank" style=3D"text-decoration:none;cursor:default"><img id=
+=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/images/SM=
+C/PLS23331954_600x100-3_banner%20(1).png" alt=3D"Corwin new website banner =
+order with ease" border=3D"0" class=3D"full" width=3D"600" style=3D"max-wid=
+th:100%;display:block;width:600px"></a></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"15" style=3D"line-height:15px;height:15px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"15" style=3D"display:block;height:15px"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#ffffff" style=3D"width:600px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" style=3D"text-align: center">
+<tbody>
+<tr style=3D"font-size: 0">
+<th class=3D"columns full" valign=3D"top" bgcolor=3D"#ffffff" style=3D"text=
+-align:left;word-wrap:break-word;word-break:normal;display:inline-block;min=
+-width:200px;max-width:100%;width:33.333%;min-width:-webkit-calc(33.333%);m=
+in-width:calc(33.333%);width:-webkit-calc(230400px - 48000%);width:calc(230=
+400px - 48000%)">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpPbkJA6EVZBevT9Mx2asBvTHqQXi6rQeKMvnvqXGgJdG%252BNi1TUYOB2_lttgQA0jxla=
+8ID9OzM2QjglPgRyb7Ih7VJtY68j0XWCxpC&amp;data=3D05%7C01%7Cegweinberg%40viter=
+bo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0=
+b%7C0%7C0%7C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D=
+5yi2KYnXUQihD0VcZaGxqwNzvvLgnBgXinmSin0idD8%3D&amp;reserved=3D0" originalsr=
+c=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpPbkJA6EVZBev=
+T9Mx2asBvTHqQXi6rQeKMvnvqXGgJdG%2BNi1TUYOB2_lttgQA0jxla8ID9OzM2QjglPgRyb7Ih=
+7VJtY68j0XWCxpC" shash=3D"Ihu3areVyZkfYsQwGPg9wM5IFMFJhnsUKzZllIlYj8eEL2Y0p=
+CZCoMOwRRCo5H8csHXWu3YnBOV6z2+oXJqjIR1W59dLMJxc/WK7oIeDrZM8Ti9YMSCE8vZAc554=
+oKNsol7+4P1mdobVnuQFyaMqH3UcyJWqfDB8m55X9nJeVMo=3D" rel=3D"noopener norefer=
+rer" target=3D"_blank" style=3D"text-decoration:none;cursor:default"><img i=
+d=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/images/S=
+MC/corwin%20connect%20blog.png" alt=3D"" border=3D"0" width=3D"25" style=3D=
+"max-width:100%;display:block;width:25px"></a></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" class=3D"btn_table" width=3D"180" style=3D"display:table">
+<tbody>
+<tr>
+<td class=3D"btn_td" bgcolor=3D"#ffffff" width=3D"180" style=3D"font-family=
+:Arial;line-height:16px;font-size:16px;color:#000000;padding-top:5px;paddin=
+g-right:5px;padding-bottom:5px;padding-left:5px;text-align:center;text-deco=
+ration:none;border-radius:3px;text-overflow:ellipsis;overflow:hidden;word-w=
+rap:break-word;word-break:normal;font-weight:normal;mso-height-rule:exactly=
+">
+<a class=3D"btn" href=3D"https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%3DpTSpP=
+bkJA6EVZBevT9Mx2asBvTHqQXi6rQeKMvnvqXGgJdG%252BNi1TUYOB2_lttgQA0jxla8ID9OzM=
+2QjglPgRyb7Ih7VJtY68j0XWCxpC&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%=
+7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7=
+C0%7C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjo=
+iV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D5yi2KYn=
+XUQihD0VcZaGxqwNzvvLgnBgXinmSin0idD8%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpPbkJA6EVZBevT9Mx2as=
+BvTHqQXi6rQeKMvnvqXGgJdG%2BNi1TUYOB2_lttgQA0jxla8ID9OzM2QjglPgRyb7Ih7VJtY68=
+j0XWCxpC" shash=3D"Ihu3areVyZkfYsQwGPg9wM5IFMFJhnsUKzZllIlYj8eEL2Y0pCZCoMOw=
+RRCo5H8csHXWu3YnBOV6z2+oXJqjIR1W59dLMJxc/WK7oIeDrZM8Ti9YMSCE8vZAc554oKNsol7=
++4P1mdobVnuQFyaMqH3UcyJWqfDB8m55X9nJeVMo=3D" target=3D"_blank" rel=3D"noope=
+ner noreferrer" style=3D"color:#000000;text-decoration:none">Corwin
+ Connect Blog</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class=3D"columns full" valign=3D"top" bgcolor=3D"#ffffff" style=3D"text=
+-align:left;word-wrap:break-word;word-break:normal;display:inline-block;min=
+-width:200px;max-width:100%;width:33.333%;min-width:-webkit-calc(33.333%);m=
+in-width:calc(33.333%);width:-webkit-calc(230400px - 48000%);width:calc(230=
+400px - 48000%)">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpTGk3_zHU4qr9xJnj1guriObs1w%252BEBriGPEllxPgAvOI%252BNKCK2gwmX8eN4BcYK=
+Vh4lJczEJKu6tJH3xpyK989ttLiES31infiripa&amp;data=3D05%7C01%7Cegweinberg%40v=
+iterbo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441c=
+c9b0b%7C0%7C0%7C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAw=
+MDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdat=
+a=3DqUnh1S0MBYfsx3vlepPLvYpgZZg7x59xYMW8AOF%2F%2FM4%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpTGk3=
+_zHU4qr9xJnj1guriObs1w%2BEBriGPEllxPgAvOI%2BNKCK2gwmX8eN4BcYKVh4lJczEJKu6tJ=
+H3xpyK989ttLiES31infiripa" shash=3D"uY2JHnpQzycp5/m1iLJDF/mKggT07IpXCDy7F+u=
+TjBhiBfreMeq+40egup7IT+PsS/GZnKLmUAbeCi3WJFKUtTCjr/Ox9+DnYjiFa8X/tBsB41+AT9=
+XWoYTBx6EkA6HJNkuOEYjEdQF66srgykSIac/lzlSUZ3ok8mX8p7bLPnQ=3D" rel=3D"noopen=
+er noreferrer" target=3D"_blank" style=3D"text-decoration:none;cursor:defau=
+lt"><img id=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.co=
+m/images/SMC/contact%20my%20rep.png" alt=3D"" border=3D"0" width=3D"25" sty=
+le=3D"max-width:100%;display:block;width:25px"></a></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" class=3D"btn_table" width=3D"180" style=3D"display:table">
+<tbody>
+<tr>
+<td class=3D"btn_td" bgcolor=3D"#ffffff" width=3D"180" style=3D"font-family=
+:Arial;line-height:16px;font-size:16px;color:#000000;padding-top:5px;paddin=
+g-right:5px;padding-bottom:5px;padding-left:5px;text-align:center;text-deco=
+ration:none;border-radius:3px;text-overflow:ellipsis;overflow:hidden;word-w=
+rap:break-word;word-break:normal;font-weight:normal;mso-height-rule:exactly=
+">
+<a class=3D"btn" href=3D"https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%3DpTSpT=
+Gk3_zHU4qr9xJnj1guriObs1w%252BEBriGPEllxPgAvOI%252BNKCK2gwmX8eN4BcYKVh4lJcz=
+EJKu6tJH3xpyK989ttLiES31infiripa&amp;data=3D05%7C01%7Cegweinberg%40viterbo.=
+edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b%7=
+C0%7C0%7C638327398096247358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DqUn=
+h1S0MBYfsx3vlepPLvYpgZZg7x59xYMW8AOF%2F%2FM4%3D&amp;reserved=3D0" originals=
+rc=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpTGk3_zHU4qr=
+9xJnj1guriObs1w%2BEBriGPEllxPgAvOI%2BNKCK2gwmX8eN4BcYKVh4lJczEJKu6tJH3xpyK9=
+89ttLiES31infiripa" shash=3D"uY2JHnpQzycp5/m1iLJDF/mKggT07IpXCDy7F+uTjBhiBf=
+reMeq+40egup7IT+PsS/GZnKLmUAbeCi3WJFKUtTCjr/Ox9+DnYjiFa8X/tBsB41+AT9XWoYTBx=
+6EkA6HJNkuOEYjEdQF66srgykSIac/lzlSUZ3ok8mX8p7bLPnQ=3D" target=3D"_blank" re=
+l=3D"noopener noreferrer" style=3D"color:#000000;text-decoration:none">Cont=
+act
+ My PD Advisor</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class=3D"columns full" valign=3D"top" bgcolor=3D"#ffffff" style=3D"text=
+-align:left;word-wrap:break-word;word-break:normal;display:inline-block;min=
+-width:200px;max-width:100%;width:33.333%;min-width:-webkit-calc(33.333%);m=
+in-width:calc(33.333%);width:-webkit-calc(230400px - 48000%);width:calc(230=
+400px - 48000%)">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpQPWENe65DHdj0SIOfQbLsffgDW4FS2ACjnA5HbkIiOe%252BNaiow1prFENMOmjzi5nE1=
+wjN84%252BRsOuuoq0%252BgYUeIeHUEVcWCwOJwypf&amp;data=3D05%7C01%7Cegweinberg=
+%40viterbo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08=
+441cc9b0b%7C0%7C0%7C638327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;=
+sdata=3DebTB0a%2BEEnD0vjMcZXlucu7J%2Bn4HrojvAdmqG1AWFH8%3D&amp;reserved=3D0=
+" originalsrc=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSp=
+QPWENe65DHdj0SIOfQbLsffgDW4FS2ACjnA5HbkIiOe%2BNaiow1prFENMOmjzi5nE1wjN84%2B=
+RsOuuoq0%2BgYUeIeHUEVcWCwOJwypf" shash=3D"oUxy365pVN2HbqBAfEQ5V05zfhBUl8Fq5=
+xVpUithJ+j4E6cGprGysGPlppQDk5JgArFRP3r0GbisWcFCFk9xYkR9MmuZupMOIGbVKFUcEtFy=
+IbTsaJBDuYgq/pklMDtW67fKh1+YDLzrFY1TeLs3OlHN+lUlRtqBCxUMEBw93TU=3D" rel=3D"=
+noopener noreferrer" target=3D"_blank" style=3D"text-decoration:none;cursor=
+:default"><img id=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.cor=
+win.com/images/SMC/manage%20account.png" alt=3D"" border=3D"0" width=3D"25"=
+ style=3D"max-width:100%;display:block;width:25px"></a></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" class=3D"btn_table" width=3D"180" style=3D"display:table">
+<tbody>
+<tr>
+<td class=3D"btn_td" bgcolor=3D"#ffffff" width=3D"180" style=3D"font-family=
+:Arial;line-height:16px;font-size:16px;color:#000000;padding-top:5px;paddin=
+g-right:5px;padding-bottom:5px;padding-left:5px;text-align:center;text-deco=
+ration:none;border-radius:3px;text-overflow:ellipsis;overflow:hidden;word-w=
+rap:break-word;word-break:normal;font-weight:normal;mso-height-rule:exactly=
+">
+<a class=3D"btn" href=3D"https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%3DpTSpV=
+g533Mb2O_EHL8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKfEVYT8PF=
+YCt6eE_QQBYXlQ8VuGsan3pb&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cb4=
+fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7=
+C638327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2l=
+uMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D4jWUIoCLdDV=
+lr5up0EJ1s9HUGok5zrABQ%2FEHHoqdlGE%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpVg533Mb2O_EHL8JwKkJXX=
+kyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKfEVYT8PFYCt6eE_QQBYXlQ8VuGsa=
+n3pb" shash=3D"qrqb8weHX/SZEdj6eLHW5GX7DAkSvTrtJAUn2Z7seBypl784UThj0R/ninYz=
+oK0wPLBnlEJL9qvXrt2qXOmfEWwJVoq8jAdZWqC2IKvG9T8HTN4t5FLtLLD9xZmV6HTfq2Y1E5z=
+xQEQIcRV5p7t5RexJq8NF6xemtcff6g71Zsg=3D" target=3D"_blank" rel=3D"noopener =
+noreferrer" style=3D"color:#000000;text-decoration:none">Manage
+ My Account</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"15" style=3D"line-height:15px;height:15px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"15" style=3D"display:block;height:15px"></td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#eeeeee" valign=3D"top" style=3D"width:6=
+00px;text-align:left;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"15" style=3D"line-height:15px;height:15px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"15" style=3D"display:block;height:15px"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"font-family:Arial;font-size:14px;color:#333333 !important;font=
+-weight:normal;word-wrap:break-word;word-break:normal;line-height:20px;text=
+-align:left">
+<div style=3D"text-align:center;">Follow us @CorwinPress</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"15" style=3D"line-height:15px;height:15px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"15" style=3D"display:block;height:15px"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#eeeeee" style=3D"width:600px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" style=3D"text-align: center">
+<tbody>
+<tr style=3D"font-size: 0">
+<th class=3D"columns" valign=3D"top" style=3D"text-align:right;width:40%">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td bgcolor=3D"#eeeeee" style=3D"word-wrap:break-word;word-break:normal;wid=
+th:100%;padding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" style=3D"table-layout: fixed;" align=3D"right">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"white-space:nowrap;text-wrap:none;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"right"><a href=3D"https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%3=
+DpTSpV8ZQ_WojNlfNL3xODqb0UHzGxmiMrTnoD8ktOUt6U2HFN8CyUGpzGBrpK%252BhZdsjchn=
+3KxNkvXAZ7XqiXtBfHHTqGwJClD2QiSXp7&amp;data=3D05%7C01%7Cegweinberg%40viterb=
+o.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b=
+%7C0%7C0%7C638327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiL=
+CJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DS=
+tIhG3oSJn9KM3DfK0SocFT5vnnYkJ65DgWyVcnEih8%3D&amp;reserved=3D0" originalsrc=
+=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpV8ZQ_WojNlfNL=
+3xODqb0UHzGxmiMrTnoD8ktOUt6U2HFN8CyUGpzGBrpK%2BhZdsjchn3KxNkvXAZ7XqiXtBfHHT=
+qGwJClD2QiSXp7" shash=3D"LDE9wyHQOJj1KUmA2xvy7WYPSUmWATyKlkhUFY2WiPKIanDV8j=
+SjGLsst3QbsF6dKrVgMxxNp+N63dcwoAoEzt4D8hQa4nHmuyD2ViG1B5iwQE5eI0uRelCCWQmpt=
+r0fR0S1OcdD21xlzqrhEhz8xXDZ3ccCARusKSoqpwyj1nM=3D" rel=3D"noopener noreferr=
+er" target=3D"_blank" style=3D"text-decoration:none;cursor:default"><img id=
+=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/images/SM=
+C/social%20icons/twitter.png" alt=3D"" border=3D"0" width=3D"59" style=3D"m=
+ax-width:100%;display:block;width:59px;min-width:calc(59px - 0px - 0px);max=
+-width:calc(59px - 0px - 0px);min-width:-webkit-calc(59px - 0px - 0px);max-=
+width:-webkit-calc(59px - 0px - 0px);"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign=3D"top" style=3D"white-space:nowrap;text-wrap:none;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpUfZVgpGfZRr4u1b3hYbOIg3T5gp6f3ih61hP2xUuLC0%252BMsq4s7Xxawg6p_larmQ1e=
+PdgrGnLFzdTnAip6cHJ3jux_TYjGfPAbiVM&amp;data=3D05%7C01%7Cegweinberg%40viter=
+bo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0=
+b%7C0%7C0%7C638327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D=
+BLjVp5bHHmIaqJQXbapJ1aipthNDLjnVWrLAEe5c8aQ%3D&amp;reserved=3D0" originalsr=
+c=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpUfZVgpGfZRr4=
+u1b3hYbOIg3T5gp6f3ih61hP2xUuLC0%2BMsq4s7Xxawg6p_larmQ1ePdgrGnLFzdTnAip6cHJ3=
+jux_TYjGfPAbiVM" shash=3D"EOlrPR4MXjJ4D9jyXbSJXpyZEeRiKS77VSFlCHbdJc96POdXl=
+zwJVjZQIYCELHqXOISlnVD7RkuW1toTOzwNKBDUItg3njtBP9DGuEmLZVkzfoFbiJicCFlvcUck=
+2QICjaqlH7G3FnktcBMBKN6QwBpwGEu2dFVD4evBTdi9fgQ=3D" rel=3D"noopener norefer=
+rer" target=3D"_blank" style=3D"text-decoration:none;cursor:default"><img i=
+d=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/images/S=
+MC/social%20icons/facebook.png" alt=3D"" border=3D"0" width=3D"59" style=3D=
+"max-width:100%;display:block;width:59px;min-width:calc(59px - 0px - 0px);m=
+ax-width:calc(59px - 0px - 0px);min-width:-webkit-calc(59px - 0px - 0px);ma=
+x-width:-webkit-calc(59px - 0px - 0px);"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class=3D"columns" valign=3D"top" style=3D"text-align:left;width:20%">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td bgcolor=3D"#eeeeee" style=3D"word-wrap:break-word;word-break:normal;pad=
+ding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" style=3D"table-layout: fixed;" align=3D"left">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"white-space:nowrap;text-wrap:none;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpT9PduVuBVzIU5MZb1Ia2zj0H%252BX_nljtCstorQPm1pn_FNU643SBsEGru5an4O8V_N=
+Bh%252BUDy%252BDN7bMv8mADIYnRShOtTz3VYu6tp4&amp;data=3D05%7C01%7Cegweinberg=
+%40viterbo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08=
+441cc9b0b%7C0%7C0%7C638327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;=
+sdata=3D3d45JTBa%2FMF4P8H2Js%2FW%2BdalTgOKA5f5RwW6jp5RVao%3D&amp;reserved=
+=3D0" originalsrc=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3D=
+pTSpT9PduVuBVzIU5MZb1Ia2zj0H%2BX_nljtCstorQPm1pn_FNU643SBsEGru5an4O8V_NBh%2=
+BUDy%2BDN7bMv8mADIYnRShOtTz3VYu6tp4" shash=3D"ggIoXP8YD7mbei+vjCUuhczRcX2e5=
+mCVvLgfxjED9vCf6OqQqVE5H2rQmtYteyjY1aex2CJ2iSjbvBohrn9uh/RaXum/3meaiiWJuws8=
+owVmVhDyGq3xIraj/4zD+oA56H0qhcktUHbj67Az4ZU/Y4Rp7jGNDTy3dotS/jEOFvA=3D" rel=
+=3D"noopener noreferrer" target=3D"_blank" style=3D"text-decoration:none;cu=
+rsor:default"><img id=3D"OWATemporaryImageDivContainer1" src=3D"https://k12=
+.corwin.com/images/SMC/social%20icons/instagram.png" alt=3D"" border=3D"0" =
+width=3D"59" style=3D"max-width:100%;display:block;width:59px;min-width:cal=
+c(59px - 0px - 0px);max-width:calc(59px - 0px - 0px);min-width:-webkit-calc=
+(59px - 0px - 0px);max-width:-webkit-calc(59px - 0px - 0px);"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign=3D"top" style=3D"white-space:nowrap;text-wrap:none;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpQ5yDL6ly7lbHpYAPPVJTQ3Ho5iKi96TIQHhMRZTTf6C%252BMqy_njfD95Ftm8lBeyXp1=
+fhwPIO7HP_SiPG9SvWF9tPQiGHu4QLVrEpz&amp;data=3D05%7C01%7Cegweinberg%40viter=
+bo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0=
+b%7C0%7C0%7C638327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D=
+YHJHWPyxfhvlT98z5XCFolX8Rm3Z9mk9QIe02bSP5Aw%3D&amp;reserved=3D0" originalsr=
+c=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpQ5yDL6ly7lbH=
+pYAPPVJTQ3Ho5iKi96TIQHhMRZTTf6C%2BMqy_njfD95Ftm8lBeyXp1fhwPIO7HP_SiPG9SvWF9=
+tPQiGHu4QLVrEpz" shash=3D"XUaHesTbOxORGNWmuCUbBR46ezEGLffFlJ9lj2XoPyH/iZTDG=
+zPAZ/gI1rTjK0llIdK6HeQj1RoZA2hiDT8GS/laT8IoiyYXsAAPskkcFTvXhtk1D13QHWJmqiCL=
+Y0wXJXGNZ6UrVpMcL69N+b3KQeWhZ55CV7Ilp4DsGvWC63U=3D" rel=3D"noopener norefer=
+rer" target=3D"_blank" style=3D"text-decoration:none;cursor:default"><img i=
+d=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/images/S=
+MC/social%20icons/pinterest.png" alt=3D"" border=3D"0" width=3D"59" style=
+=3D"max-width:100%;display:block;width:59px;min-width:calc(59px - 0px - 0px=
+);max-width:calc(59px - 0px - 0px);min-width:-webkit-calc(59px - 0px - 0px)=
+;max-width:-webkit-calc(59px - 0px - 0px);"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class=3D"columns" valign=3D"top" style=3D"text-align:left;width:40%">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td bgcolor=3D"#eeeeee" style=3D"word-wrap:break-word;word-break:normal;pad=
+ding:0px">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" style=3D"table-layout: fixed;" align=3D"left">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"white-space:nowrap;text-wrap:none;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpVvq2JncVK3BCF1iifQAd8HCUDQ7rlJD0cFIeZtuLVEIFNtbWYfKasNCSS2FH90ESRZucs=
+PAK0mRlOozEO86CKWcWEEmr%252B2ddBNVq&amp;data=3D05%7C01%7Cegweinberg%40viter=
+bo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0=
+b%7C0%7C0%7C638327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D=
+QqubGQwStBSkwcLCkxyXFuUG4A3uCfMvDihEqU%2BXgRY%3D&amp;reserved=3D0" original=
+src=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpVvq2JncVK3=
+BCF1iifQAd8HCUDQ7rlJD0cFIeZtuLVEIFNtbWYfKasNCSS2FH90ESRZucsPAK0mRlOozEO86CK=
+WcWEEmr%2B2ddBNVq" shash=3D"kansT9bMcVi6xxivSOqDzOC8elTzCrwQXFJ8Lg+RByzhN34=
+sm523nYvMKBqA6UFoarKmevHunKy/4TowwWUnLpfZ8PF+JybnozLwD0cf4XKAGwby9ajLSRxMe0=
+I/wCvHpNBPydhDkqbn4x4cLmAVO8Jmz0W8IJAaUNIYOTmgbfw=3D" rel=3D"noopener noref=
+errer" target=3D"_blank" style=3D"text-decoration:none;cursor:default"><img=
+ id=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/images=
+/SMC/social%20icons/linkedin.png" alt=3D"" border=3D"0" width=3D"59" style=
+=3D"max-width:100%;display:block;width:59px;min-width:calc(59px - 0px - 0px=
+);max-width:calc(59px - 0px - 0px);min-width:-webkit-calc(59px - 0px - 0px)=
+;max-width:-webkit-calc(59px - 0px - 0px);"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign=3D"top" style=3D"white-space:nowrap;text-wrap:none;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpR7%252BCHcusigGOP4fW7gZPj4VNJ60c4t4G%252BiZ77RWs2wg%252BNO1aTjCONiAfU=
+1wVUdcIT04Pp719g8yU9fMw09CJQVS6PN6XZkCtp1VH&amp;data=3D05%7C01%7Cegweinberg=
+%40viterbo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08=
+441cc9b0b%7C0%7C0%7C638327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;=
+sdata=3DY4b%2B7IOyFwNOKIsxWhnXeSIWitniHN%2FHQejUJh%2B%2Beb0%3D&amp;reserved=
+=3D0" originalsrc=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3D=
+pTSpR7%2BCHcusigGOP4fW7gZPj4VNJ60c4t4G%2BiZ77RWs2wg%2BNO1aTjCONiAfU1wVUdcIT=
+04Pp719g8yU9fMw09CJQVS6PN6XZkCtp1VH" shash=3D"rdoKFYFRzqQcerOhgM9mBXUEph0Zp=
+7CW5JAgX4tBmnf4A6pMhandpiVAvNZLVS450s2sVIyyTa1iXUyyzMyRzU2yaLYESVqL6q9ZY/1m=
+vBx69COPuz+zwhA3inMgoDPYVWExKtYupDJx3CpEGsbBZ7uzGPGm+NIjUZW/flxj1c0=3D" rel=
+=3D"noopener noreferrer" target=3D"_blank" style=3D"text-decoration:none;cu=
+rsor:default"><img id=3D"OWATemporaryImageDivContainer1" src=3D"https://k12=
+.corwin.com/images/SMC/social%20icons/youtube.png" alt=3D"" border=3D"0" wi=
+dth=3D"59" style=3D"max-width:100%;display:block;width:59px;min-width:calc(=
+59px - 0px - 0px);max-width:calc(59px - 0px - 0px);min-width:-webkit-calc(5=
+9px - 0px - 0px);max-width:-webkit-calc(59px - 0px - 0px);"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#eeeeee" valign=3D"top" style=3D"width:6=
+00px;text-align:center;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"15" style=3D"line-height:15px;height:15px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"15" style=3D"display:block;height:15px"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"font-family:Arial;font-size:14px;color:#333333 !important;font=
+-weight:normal;word-wrap:break-word;word-break:normal;line-height:20px;text=
+-align:center">
+Corwin has one mission: to enhance education through intentional profession=
+al learning. We build long-term relationships with our authors, educators, =
+clients, and associations who partner with us to develop and continuously i=
+mprove the best, evidence-based
+ practices that establish and support lifelong learning.</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#eeeeee" valign=3D"top" style=3D"width:6=
+00px;text-align:center;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"15" style=3D"line-height:15px;height:15px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"15" style=3D"display:block;height:15px"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" class=3D"btn_table" width=3D"150" style=3D"display:table">
+<tbody>
+<tr>
+<td class=3D"btn_td" bgcolor=3D"#000000" width=3D"150" style=3D"font-family=
+:Arial;line-height:16px;font-size:16px;color:#ffffff;padding-top:5px;paddin=
+g-right:5px;padding-bottom:5px;padding-left:5px;text-align:center;text-deco=
+ration:none;border-radius:3px;text-overflow:ellipsis;overflow:hidden;word-w=
+rap:break-word;word-break:normal;font-weight:normal;mso-height-rule:exactly=
+">
+<a class=3D"btn" href=3D"https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%3DpTSpV=
+X6FpjCf9kfmMSdBNyoeRInWEx1UTEQn_GiSTXh3bNq%252BNzF_RNIL6PexD4c3RnoZ0bbl8laU=
+j8GGZAlCs8hzgxVCiiwU_mEcDNVI&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%=
+7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7=
+C0%7C638327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjo=
+iV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D6q%2F70=
+e6%2B2i2Y1I0u7Wd0dPvmmJxDwOGRhkPg%2BSXhCBE%3D&amp;reserved=3D0" originalsrc=
+=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpVX6FpjCf9kfmM=
+SdBNyoeRInWEx1UTEQn_GiSTXh3bNq%2BNzF_RNIL6PexD4c3RnoZ0bbl8laUj8GGZAlCs8hzgx=
+VCiiwU_mEcDNVI" shash=3D"bEmHOJ22NbjiCi3uvaTExwtDmiWy2O+uf00v+O1U7FTn95dh0Z=
+bGwhreKWvJbsFNSVZGm0mV3Bp/HHUeCXk6XRdyqQxjf+mlMjG1omk4+ZI2L59b8MO5ItqPaaUBm=
+EOGVd6Ow+u0DgAfKEtox0WaD5Xp1sbccpKGrlMu/nxXTlQ=3D" target=3D"_blank" rel=3D=
+"noopener noreferrer" style=3D"color:#ffffff;text-decoration:none">Find
+ out more</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"20" style=3D"line-height:20px;height:20px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"20" style=3D"display:block;height:20px"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:6=
+00px;text-align:left;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"15" style=3D"line-height:15px;height:15px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"15" style=3D"display:block;height:15px"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"font-family:Arial;font-size:14px;color:#333333 !important;font=
+-weight:normal;word-wrap:break-word;word-break:normal;line-height:20px;text=
+-align:left">
+<p align=3D"center" style=3D"font-family:Arial;font-size:14px;color:#333333=
+ !important;font-weight:normal;word-wrap:break-word;word-break:normal;line-=
+height:20px">
+<span style=3D"color:#999999;">2455 Teller Road, Thousand Oaks, CA 91320, U=
+SA | (800) 233-9936</span><br>
+<span style=3D"color:#999999;">Level 20, 114 William Street, Melbourne, VIC=
+ 3000, Australia | (03) 8612 2000</span><br>
+<span style=3D"color:#999999;"><a href=3D"https://nam02.safelinks.protectio=
+n.outlook.com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension=
+.dll%3FID%3DpTSpVg533Mb2O_EHL8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxu=
+P4GAqXDoKfEVYT8PFYCt6eE_QQBYXlQ8VuGsan3pb&amp;data=3D05%7C01%7Cegweinberg%4=
+0viterbo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb0844=
+1cc9b0b%7C0%7C0%7C638327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sd=
+ata=3D4jWUIoCLdDVlr5up0EJ1s9HUGok5zrABQ%2FEHHoqdlGE%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpVg53=
+3Mb2O_EHL8JwKkJXXkyU5JYfCMGSjjMdJ7whTUjFMVo8yF7_vwbPAxuP4GAqXDoKfEVYT8PFYCt=
+6eE_QQBYXlQ8VuGsan3pb" shash=3D"qrqb8weHX/SZEdj6eLHW5GX7DAkSvTrtJAUn2Z7seBy=
+pl784UThj0R/ninYzoK0wPLBnlEJL9qvXrt2qXOmfEWwJVoq8jAdZWqC2IKvG9T8HTN4t5FLtLL=
+D9xZmV6HTfq2Y1E5zxQEQIcRV5p7t5RexJq8NF6xemtcff6g71Zsg=3D" style=3D"text-dec=
+oration:underline;color:#999999;">www.corwin.com</a>
+ | <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3=
+A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%3DpTSpRTJi7Bnl2%25=
+2BZpmvzfzT_qG3CdGXu7ZucwGsbMHlZU1e%252BFNc2eVNntxxj0mYePMU7ZAy8bZJsCOauyxgO=
+a7Hehh4U2RpGtmuQ1c2VK&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cb4fed=
+fd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63=
+8327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DpG40VE2AMux4Fg=
+zFRS0XCW4zCQuK1%2BP4BMQOspLiJ64%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpRTJi7Bnl2%2BZpmvzfzT_qG3=
+CdGXu7ZucwGsbMHlZU1e%2BFNc2eVNntxxj0mYePMU7ZAy8bZJsCOauyxgOa7Hehh4U2RpGtmuQ=
+1c2VK" shash=3D"fIyWv3KcvWxIfs8jHnemJ+2TnCII7Or//wAAd3jzHD/ZXims9pwIMJeynDz=
+fwiWJyVaGK/5QIL6n7ryp2ueEwkoyRerdzFKkLefFi86og1hOxZ7kM0uW7/zAMVSiGzlNumeEjR=
+kvWnlUHCRBZ+enuLdMuJmCxc/qyi/83jAd99E=3D" style=3D"text-decoration:underlin=
+e;color:#999999;">
+au.corwin.com</a>&nbsp;</span><span style=3D"text-align:-webkit-center;colo=
+r:#999999;">|
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%3DpTSpTkd7GHAy2iK7uxb=
+Rhoi3KDevYwppkSjU3Rooi8BV5OIFNHQvGqkswzQxNCC3viPyAlNfTvxQ5q0kBqjb7ZCZ7rDP8l=
+l_6jig54pF&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cb4fedfd5bc834302=
+964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383273980964=
+04041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6I=
+k1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DwBza2oGCPT8IFtc1cKrgHhCUm=
+phyFByK7j7i1X6MEr4%3D&amp;reserved=3D0" originalsrc=3D"https://k12.corwin.c=
+om/optiext/optiextension.dll?ID=3DpTSpTkd7GHAy2iK7uxbRhoi3KDevYwppkSjU3Rooi=
+8BV5OIFNHQvGqkswzQxNCC3viPyAlNfTvxQ5q0kBqjb7ZCZ7rDP8ll_6jig54pF" shash=3D"e=
+VEF7Kij2L4Cdow48CtqHt8OViLj4FmtVc9NO2TWka3Xx/tto3+vUeukO2deo65RtDtJHsdNaQNi=
+cq5kovHFygAvvRk0ytroryi72tfBs3UkxcTPoWsx08dYtHD8FCUC3POx/UfulVBEQq6tZ3B9r+y=
+KieQkKNtPn0XreTEFTbw=3D" style=3D"text-decoration:underline;color:#999999;"=
+>
+ca.corwin.com</a>&nbsp;</span></p>
+<p align=3D"center" style=3D"font-family:Arial;font-size:14px;color:#333333=
+ !important;font-weight:normal;word-wrap:break-word;word-break:normal;line-=
+height:20px">
+<span style=3D"color:#999999;">Email not displaying correctly? <a href=3D"h=
+ttps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fk12.corw=
+in.com%2Foptiext%2Foptiextension.dll%3FID%3DpTSpOwGu7uodLECX2MF5cKlK32FFApz=
+yMvTUG3HDL%252BORSZJFhovYVIAseEXN2jmytZhgakkGanv82WPhMlbGfECXGbGxa&amp;data=
+=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C=
+6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327398096404041%7CUnknown%7CT=
+WFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%=
+3D%7C3000%7C%7C%7C&amp;sdata=3DgOCEZ4yhHla%2ByDwWSlpq5DY064vddjh46CmBaUp4dW=
+I%3D&amp;reserved=3D0" originalsrc=3D"https://k12.corwin.com/optiext/optiex=
+tension.dll?ID=3DpTSpOwGu7uodLECX2MF5cKlK32FFApzyMvTUG3HDL%2BORSZJFhovYVIAs=
+eEXN2jmytZhgakkGanv82WPhMlbGfECXGbGxa" shash=3D"oxfNl17b/GzM8aPz46rlyWFEj1P=
+6hlzTa5E31XV0DxJ2qYy6zhb1Uc/fMsE89xPSSHtA4RQE7SXVLejnO2IFHESR99DAwpgbUQG8Q0=
+8aokYqCFpZotpKgQUpGASzH9Aeno5o7EYFRRMf8Ak2lYmmCTWKPqmY9hqUeLEmQtZQ75g=3D" s=
+tyle=3D"text-decoration:underline;color:#999999;">
+View in browser</a>.</span></p>
+<p align=3D"center" style=3D"font-family:Arial;font-size:14px;color:#333333=
+ !important;font-weight:normal;word-wrap:break-word;word-break:normal;line-=
+height:20px">
+<span style=3D"color:#999999;">To ensure our emails reach your inbox, add i=
+nfo@k12.corwin.com to your address book.</span></p>
+<p align=3D"center" style=3D"font-family:Arial;font-size:14px;color:#333333=
+ !important;font-weight:normal;word-wrap:break-word;word-break:normal;line-=
+height:20px">
+<span style=3D"color:#999999;">View our <a href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Fopti=
+extension.dll%3FID%3DpTSpVXiJ7STcKc5LP0xs%252BenQOPWW_DF8O9Lm4K9ZDdiWQ1GFNY=
+TeyO5jJZk2kiTRfx6F76UCjkARE6R2qoRClE65aA3QFR1Vx7vQavpr&amp;data=3D05%7C01%7=
+Cegweinberg%40viterbo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d7=
+4958976cb08441cc9b0b%7C0%7C0%7C638327398096404041%7CUnknown%7CTWFpbGZsb3d8e=
+yJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C=
+%7C%7C&amp;sdata=3D1oslw%2BylHmpnzqza9Q04Zk6Vl3R5tYqquqeILyf83Lo%3D&amp;res=
+erved=3D0" originalsrc=3D"https://k12.corwin.com/optiext/optiextension.dll?=
+ID=3DpTSpVXiJ7STcKc5LP0xs%2BenQOPWW_DF8O9Lm4K9ZDdiWQ1GFNYTeyO5jJZk2kiTRfx6F=
+76UCjkARE6R2qoRClE65aA3QFR1Vx7vQavpr" shash=3D"P3A+vBNSieS+tNWDIHnsbUx4GyGD=
+dG5amiTUWBd2mOdV31gssjzA9vUeQbYJd4CegJyI8u69HUk3B4nLm4493ZQd9ChUyYEmeNAisU7=
+r78KbkFb8gHP1QCgsD6TrjtTSANHFPCKcF9CG51bu+FOfsJpVOkEgM5TCharF1A9dXmM=3D" st=
+yle=3D"text-decoration:underline;color:#999999;">
+privacy policy</a>. </span></p>
+<p align=3D"center" style=3D"font-family:Arial;font-size:14px;color:#333333=
+ !important;font-weight:normal;word-wrap:break-word;word-break:normal;line-=
+height:20px">
+<span style=3D"color:#999999;">This message was sent to egweinberg@viterbo.=
+edu. If you'd rather not receive emails from Corwin, you may
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%3DpTSpV6PCXNBhrJ14RR3=
+5HhpOgMCkI9H8MwV2kayS9ODonv1%252BMH0S7cHsLkYU%252BgxFxj4Zdg1CkeIiFPfLOEhDxC=
+_mOVE_lZZSJfD_1ppR&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cb4fedfd5=
+bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63832=
+7398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiL=
+CJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DQW%2FO%2F62Ed%2FU=
+TJNAr%2BMTdJ4cMg8whSTOTJk2Aep%2BNJng%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpV6PCXNBhrJ14RR35Hhp=
+OgMCkI9H8MwV2kayS9ODonv1%2BMH0S7cHsLkYU%2BgxFxj4Zdg1CkeIiFPfLOEhDxC_mOVE_lZ=
+ZSJfD_1ppR" shash=3D"WCsPzEQrIgSMyOTbe06uuya60kgKCHZALdsSNpX/EcKxyYU4YvBM03=
+ZN+1YJU6O/SR+jXeRztL3WnJI1igwkcjoFl7y1ExoochohHVo/oYyIalzp+h35DNEtiM3R/IViq=
+5zD26c25/h6rSs7qz4BiDZIVHBjFxMW5zoSgw6OY3g=3D" style=3D"color:#999999;text-=
+decoration:underline;">
+unsubscribe</a>.</span><br>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:6=
+00px;text-align:left;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fk12.corwin.com%2Foptiext%2Foptiextension.dll%3FID%=
+3DpTSpUsft8RVXx8mZpxAeBzQM6WIlflVdqKmgqajnPCCih3HFN2WrDqaWFM6WodFVzzurV8jqh=
+wVtjz0vk4%252Be9FOhtkpxl2%252BlG4taYgVG&amp;data=3D05%7C01%7Cegweinberg%40v=
+iterbo.edu%7Cb4fedfd5bc834302964408dbcb62f35d%7C6b9fc982e8d74958976cb08441c=
+c9b0b%7C0%7C0%7C638327398096404041%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAw=
+MDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdat=
+a=3DKKaKfrMM1PYpEY3leiTln7Z155s9P2PsJK1zygbAthg%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://k12.corwin.com/optiext/optiextension.dll?ID=3DpTSpUsft8RVX=
+x8mZpxAeBzQM6WIlflVdqKmgqajnPCCih3HFN2WrDqaWFM6WodFVzzurV8jqhwVtjz0vk4%2Be9=
+FOhtkpxl2%2BlG4taYgVG" shash=3D"JQ+fFySZ9Rjplw5w0oO+20KwLTCoNu+05m/JNAmMPTn=
+UHh6Q8z8kQOTZXMJGxxVG/Nwb4GI+L7w3kzAFaqvemHQHEr+6L6Kmz3iArzXs7u3Fp3SbLdlgjl=
+NGiPtbSU6PAxb59ehbtvZ3V3sAtqDFbLCgzHrHJmOd6L0kqIFWIqs=3D" rel=3D"noopener n=
+oreferrer" target=3D"_blank" style=3D"text-decoration:none;cursor:default">=
+<img id=3D"OWATemporaryImageDivContainer1" src=3D"https://k12.corwin.com/im=
+ages/SMC/tracking-pixel-image.png" alt=3D"do not click" border=3D"0" width=
+=3D"1" style=3D"max-width:100%;display:block;width:1px"></a></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"15" style=3D"line-height:15px;height:15px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://k12.corwin.com/Portal/resourcehandler/static/x.png"=
+ height=3D"15" style=3D"display:block;height:15px"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%" style=3D"display:table">
+<tbody>
+<tr>
+<td style=3D"font-family:Arial;font-size:14px;color:#333333 !important;font=
+-weight:normal;word-wrap:break-word;word-break:normal;line-height:20px;widt=
+h:100%;text-align:left">
+<p style=3D"font-family:Arial;font-size:14px;color:#333333 !important;font-=
+weight:normal;word-wrap:break-word;word-break:normal;line-height:20px">
+<span style=3D"color:#999999;">=C2=A9 2023<br>
+</span><span style=3D"color:#b2b2b2;">FF23717300</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
+
+--_NexPart_001_--

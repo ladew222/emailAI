@@ -1,0 +1,673 @@
+Received: from SA1PR20MB4540.namprd20.prod.outlook.com (2603:10b6:806:234::9)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Fri, 13 Oct 2023
+ 14:56:57 +0000
+Received: from SA9PR13CA0063.namprd13.prod.outlook.com (2603:10b6:806:23::8)
+ by SA1PR20MB4540.namprd20.prod.outlook.com (2603:10b6:806:234::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.46; Fri, 13 Oct
+ 2023 14:56:55 +0000
+Received: from SN1PEPF0002636E.namprd02.prod.outlook.com
+ (2603:10b6:806:23:cafe::6c) by SA9PR13CA0063.outlook.office365.com
+ (2603:10b6:806:23::8) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.29 via Frontend
+ Transport; Fri, 13 Oct 2023 14:56:55 +0000
+Authentication-Results: spf=pass (sender IP is 23.251.237.107)
+ smtp.mailfrom=us-west-2.amazonses.com; dkim=pass (signature was verified)
+ header.d=my.workfront.com;dmarc=pass action=none
+ header.from=my.workfront.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of us-west-2.amazonses.com
+ designates 23.251.237.107 as permitted sender)
+ receiver=protection.outlook.com; client-ip=23.251.237.107;
+ helo=e237-107.smtp-out.us-west-2.amazonses.com; pr=C
+Received: from e237-107.smtp-out.us-west-2.amazonses.com (23.251.237.107) by
+ SN1PEPF0002636E.mail.protection.outlook.com (10.167.241.139) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Fri, 13 Oct 2023 14:56:55 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=5n73nhcel2qoi6ksjfxlca3svigkappv; d=my.workfront.com;
+	t=1697209014;
+	h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=1GCjM3J9y8YrPfaAlFDwVoUgH5rkxp7n9RGjJrtXA6c=;
+	b=Og1buYv/wSaK9/RrDvP4eDIol+9CCnr0ZXa5JIzqpu5zQPI162iCMVQqVIOCroZ8
+	0j16Sbqtoi8e737qzpznJJ4xLmtezXzokJlB2zicyACTZ6jEOmuY2MErG+c13tkan2c
+	ZUUJSDz/H35U1Q+XcJ8uXcCZEKPuIuh4iFX4e370=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1697209014;
+	h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
+	bh=1GCjM3J9y8YrPfaAlFDwVoUgH5rkxp7n9RGjJrtXA6c=;
+	b=kCBJ4qZa8c+9VJiuDshkHoUbM4ATdJKvgh9+LYiz7jT9zhPsOXPSIsCxlaLbYmRK
+	nxo5EONeWz8bxQgH629e5ghBmHSAJOk+SNBO5ovzHLS+H8aX8UjT+4ZuJajF+ZBc26m
+	7uLAWlBAbx7ssRYedELu8EIjzBC3qkwSmP2/3sEc=
+Date: Fri, 13 Oct 2023 14:56:53 +0000
+From: Eric Weinberg <notifications@my.workfront.com>
+Reply-To: viterbo.my.workfront.com+9b2acefe5760f981e053a7656a0a1f42+OPTASK_65295ab300113e7717955ac84f73b794@intake1.my.workfront.com
+To: egweinberg@viterbo.edu
+Message-ID: <0101018b298a55d0-2a0b6981-ac10-431b-b3e2-2bc981b7f203-000000@us-west-2.amazonses.com>
+Subject: Request Submitted: CSCI Lab Wall Adhesive on Design Work Request
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_10079_616845468.1697209013701"
+X-AtTask-Message-ID: b149014b-39c1-49ba-bb8c-6d31e5916531
+AtTask-Preference-Name: default.eventhandler.helpdeskrequestadd.issueowner
+X-AtTask-ObjCode: OPTASK
+X-AtTask-ObjID: 65295ab300113e7717955ac84f73b794
+Feedback-ID: 1.us-west-2.qdKVY72eVsxRLm/Yi+bt7Neveb62FNS6pWia2kTyvkI=:AmazonSES
+X-SES-Outgoing: 2023.10.13-23.251.237.107
+Return-Path:
+ 0101018b298a55d0-2a0b6981-ac10-431b-b3e2-2bc981b7f203-000000@us-west-2.amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2023 14:56:55.5582
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ c62c044d-c41b-4c21-4517-08dbcbfca487
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ SN1PEPF0002636E:EE_|SA1PR20MB4540:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ SN1PEPF0002636E.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: c62c044d-c41b-4c21-4517-08dbcbfca487
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:2;
+X-Forefront-Antispam-Report:
+ CIP:23.251.237.107;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:SKN;H:e237-107.smtp-out.us-west-2.amazonses.com;PTR:e237-107.smtp-out.us-west-2.amazonses.com;CAT:NONE;SFS:(13230031)(4636009)(286005)(451199024)(1690799017)(956004)(79850400001)(36736006)(6916009)(83380400001)(7636003)(356005)(7596003)(166002)(83170400001)(26005)(8676002)(9316004)(336012)(42882007)(1096003)(71280400001)(6486002)(9686003)(19627405001)(33964004)(6506007)(7696005);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2023 14:56:55.1832
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: c62c044d-c41b-4c21-4517-08dbcbfca487
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1PEPF0002636E.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1PR20MB4540
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.5540936
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?cCSvsoAYAgAwGgIDtvYSN3vAXofpri3wTifq1wkFzTJWM6K82U0IUEMGeUWM?=
+ =?us-ascii?Q?EDAAwzofZ2tivXs5+D7neQZG7hZ5dNcz/i3Rc0R2O/pL1ZX3Mc+slphJ90pN?=
+ =?us-ascii?Q?LUZ3Wxg7nvcdQ/UuUNT3A9jqrafu3rEQEQxY2Kj+keORqbO6bsuBl97L2NLr?=
+ =?us-ascii?Q?Ftwi2fUnblZTXvAgQ98luoXYmTDTR6r4G8Oz08/6y8Crp34TQ7L0FVKUj/rC?=
+ =?us-ascii?Q?HwcHOWQJV5Vf2q7Z7J1qk7kJo9Hhf3JmNusu8H6A0pSU1vzoZOqXqIZvlp0I?=
+ =?us-ascii?Q?dHPBisxrME9xRmO+Lhu/tK1xBMNGZnSo284tl6J4NvTQdGKLg/+gj1UPDXeG?=
+ =?us-ascii?Q?FPnTGRKnZXAuYn0PfCrX2Gs/nUALP0zvFtmtTHjCOtkA5ptAWuTQn3T/po+o?=
+ =?us-ascii?Q?BRpEEqTwI2d9R1UQZC/hmop+VTel4O/yVghBoxjjwb1oZdJBia3e5RQe/ViU?=
+ =?us-ascii?Q?rNA3XBRRLSiMJjOJrMftsJbwdsaHLtmVhmeOTLcPfQSeEOgtCLfGQFfErB4T?=
+ =?us-ascii?Q?gOG99Zle9XMuD693X9g79oTYqi0WV4y6kGo+U4fehmepvqy5s1YJ9if55B7s?=
+ =?us-ascii?Q?MeZA//tNH5PrVJq5qQKavSiKdHlx1Nn4SEkK+ibprKyQyKITWNcjWLq1Ejih?=
+ =?us-ascii?Q?WzOy9F4M/XGroULjn3Q3DmjLbbo6zO0s4t6PVNS9lIO2MijcsDI3Ar2sV0lY?=
+ =?us-ascii?Q?RwPzPArRCCmcTJywYMxz8cbYpEHof3K/RA6ie6ZfgLnEXu064iCGUlZOB5DG?=
+ =?us-ascii?Q?LzCtU4GqqIblbR9oqkdL1a/LoQ3udaOaLb5IJ5FiS2HZoJBrTsRHX8KhBtEF?=
+ =?us-ascii?Q?PF+3hW0m+Q6KMDdEeMq8ZSWKsSHugLEQ9KopA9mYVdw6+evH/UdbueeOGl5R?=
+ =?us-ascii?Q?Sj1D0654G48jg5VACQ1lwDrW3wufj02T0E4dst64JZR8YfOktusaLvmd02B7?=
+ =?us-ascii?Q?3OmCIynLdqGNRc9qKKP6K+TQExA42vpkhuGOWnZn7jvdxI0rZEpyiOYj1p1i?=
+ =?us-ascii?Q?t3rXvcY5B5/o25ss2+GXga8Q58vUxF83+tX2w8Q8LZuN/fDse20KMEU61OYx?=
+ =?us-ascii?Q?2n12rDVQAJ/yUSdWOHYf+Hrba0hxUufwBC3aGs55vqhJqyhNNHmF12PvG0Xx?=
+ =?us-ascii?Q?OvNk4KJlO3umWWI9q0K6isNYNi0CPW8jp8DaEWPrz+SEf70Qkl2wcsL/jOah?=
+ =?us-ascii?Q?Mz4lGdKiBenhlDMX1CMsmZY1mb+GW8yBAa1WW5u4YvYsUKuve+Z9zZOOasRS?=
+ =?us-ascii?Q?AIkb0IqeYfFaSXIP3NhkeXpg944EFk/5ftPM8r3X/CfzyMednF8q35fw6kG+?=
+ =?us-ascii?Q?U6Y7g6CZucJ4ALN3DELj+L19plxrFQvobzUx/iRa5sdWQc9HycKgCzbWGNRr?=
+ =?us-ascii?Q?5VqSH1xKup7Zvz8eNkCtvbUJ4oIm4rgNUucCjhLBd6V3ubSOGXKN2RiIqVdl?=
+ =?us-ascii?Q?4m215Sutj3gm615/K31WbODOQOjfnHscK/o+fzf6TnOYXt4VB6O1rkljkwgA?=
+ =?us-ascii?Q?SWAmnVyXiN1Xg8C/CX5+/uHcN5Vzzgm0jEZ6KhIi5Ivj5XO691AIz6FUvC73?=
+ =?us-ascii?Q?6dv/Hu1f5qQ2OWWb+eDVs7B9Ux+cH79vCHM+y6d8YFsEhdA5N7SL+tOujgLI?=
+ =?us-ascii?Q?OwsCfTwuaVddLKgudXdl9wfvNw5L8JrgxjO3d+jjt1uS5vExs2L3SdQ7L801?=
+ =?us-ascii?Q?0NiwCUDEtxx9qz9Dcod/cfILzVncWizlss2L+GiVFhz5XCASCnteiLQBSKUS?=
+ =?us-ascii?Q?gOUrQEEa0iibJW/xabWgkVxakoahbzsfF1pva12L1LWS4Gr8F4ny?=
+MIME-Version: 1.0
+
+------=_Part_10079_616845468.1697209013701
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This e-mail is an HTML formatted e-mail. Your e-mail client cannot display HTML.
+------=_Part_10079_616845468.1697209013701
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns=3D"http://www.w3.org/1999/xht=
+ml" lang=3D"en" xml:lang=3D"en"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width"></head><body style=
+=3D"-moz-box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-box-sizing=
+:border-box;-webkit-text-size-adjust:100%;Margin:0;box-sizing:border-box;co=
+lor:#545454;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font=
+-weight:400;line-height:18px;margin:0;min-width:100%;padding:0;text-align:l=
+eft;width:100%!important"><style>@media only screen{html{min-height:100%;ba=
+ckground:#efefef}}@media only screen and (max-width:674px){.small-float-cen=
+ter{margin:0 auto!important;float:none!important;text-align:center!importan=
+t}.small-text-center{text-align:center!important}.small-text-left{text-alig=
+n:left!important}.small-text-right{text-align:right!important}}@media only =
+screen and (max-width:674px){.hide-for-large{display:block!important;width:=
+auto!important;overflow:visible!important;max-height:none!important;font-si=
+ze:inherit!important;line-height:inherit!important}}@media only screen and =
+(max-width:674px){table.body table.container .hide-for-large,table.body tab=
+le.container .row.hide-for-large{display:table!important;width:100%!importa=
+nt}}@media only screen and (max-width:674px){table.body table.container .ca=
+llout-inner.hide-for-large{display:table-cell!important;width:100%!importan=
+t}}@media only screen and (max-width:674px){table.body table.container .sho=
+w-for-large{display:none!important;width:0;mso-hide:all;overflow:hidden}}@m=
+edia only screen and (max-width:674px){table.body img{width:auto;height:aut=
+o}table.body center{min-width:0!important}table.body .container{width:95%!i=
+mportant}table.body .column,table.body .columns{height:auto!important;-moz-=
+box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;p=
+adding-left:24px!important;padding-right:24px!important}table.body .column =
+.column,table.body .column .columns,table.body .columns .column,table.body =
+.columns .columns{padding-left:0!important;padding-right:0!important}table.=
+body .collapse .column,table.body .collapse .columns{padding-left:0!importa=
+nt;padding-right:0!important}td.small-1,th.small-1{display:inline-block!imp=
+ortant;width:8.33333%!important}td.small-2,th.small-2{display:inline-block!=
+important;width:16.66667%!important}td.small-3,th.small-3{display:inline-bl=
+ock!important;width:25%!important}td.small-4,th.small-4{display:inline-bloc=
+k!important;width:33.33333%!important}td.small-5,th.small-5{display:inline-=
+block!important;width:41.66667%!important}td.small-6,th.small-6{display:inl=
+ine-block!important;width:50%!important}td.small-7,th.small-7{display:inlin=
+e-block!important;width:58.33333%!important}td.small-8,th.small-8{display:i=
+nline-block!important;width:66.66667%!important}td.small-9,th.small-9{displ=
+ay:inline-block!important;width:75%!important}td.small-10,th.small-10{displ=
+ay:inline-block!important;width:83.33333%!important}td.small-11,th.small-11=
+{display:inline-block!important;width:91.66667%!important}td.small-12,th.sm=
+all-12{display:inline-block!important;width:100%!important}.column td.small=
+-12,.column th.small-12,.columns td.small-12,.columns th.small-12{display:b=
+lock!important;width:100%!important}table.body td.small-offset-1,table.body=
+ th.small-offset-1{margin-left:8.33333%!important;Margin-left:8.33333%!impo=
+rtant}table.body td.small-offset-2,table.body th.small-offset-2{margin-left=
+:16.66667%!important;Margin-left:16.66667%!important}table.body td.small-of=
+fset-3,table.body th.small-offset-3{margin-left:25%!important;Margin-left:2=
+5%!important}table.body td.small-offset-4,table.body th.small-offset-4{marg=
+in-left:33.33333%!important;Margin-left:33.33333%!important}table.body td.s=
+mall-offset-5,table.body th.small-offset-5{margin-left:41.66667%!important;=
+Margin-left:41.66667%!important}table.body td.small-offset-6,table.body th.=
+small-offset-6{margin-left:50%!important;Margin-left:50%!important}table.bo=
+dy td.small-offset-7,table.body th.small-offset-7{margin-left:58.33333%!imp=
+ortant;Margin-left:58.33333%!important}table.body td.small-offset-8,table.b=
+ody th.small-offset-8{margin-left:66.66667%!important;Margin-left:66.66667%=
+!important}table.body td.small-offset-9,table.body th.small-offset-9{margin=
+-left:75%!important;Margin-left:75%!important}table.body td.small-offset-10=
+,table.body th.small-offset-10{margin-left:83.33333%!important;Margin-left:=
+83.33333%!important}table.body td.small-offset-11,table.body th.small-offse=
+t-11{margin-left:91.66667%!important;Margin-left:91.66667%!important}table.=
+body table.columns td.expander,table.body table.columns th.expander{display=
+:none!important}table.body .right-text-pad,table.body .text-pad-right{paddi=
+ng-left:10px!important}table.body .left-text-pad,table.body .text-pad-left{=
+padding-right:10px!important}table.menu{width:100%!important}table.menu td,=
+table.menu th{width:auto!important;display:inline-block!important}table.men=
+u.small-vertical td,table.menu.small-vertical th,table.menu.vertical td,tab=
+le.menu.vertical th{display:block!important}table.menu[align=3Dcenter]{widt=
+h:auto!important}table.button.small-expand,table.button.small-expanded{widt=
+h:100%!important}table.button.small-expand table,table.button.small-expande=
+d table{width:100%}table.button.small-expand table a,table.button.small-exp=
+anded table a{text-align:center!important;width:100%!important;padding-left=
+:0!important;padding-right:0!important}table.button.small-expand center,tab=
+le.button.small-expanded center{min-width:0}}@media only screen and (max-wi=
+dth:674px){.digest-image{margin:0 8px}}@media only screen and (max-width:67=
+4px){.digest-count{font-size:32px!important;line-height:26px!important}}@me=
+dia only screen and (max-width:674px){.comment-received-count{font-size:32p=
+x!important}}@media only screen and (max-width:674px){.digest-received-labe=
+l{font-size:20px!important}}@media only screen and (max-width:674px){.work-=
+item-link{font-size:16px!important}}@media only screen and (max-width:674px=
+){.more-comments{font-size:12px!important}}@media only screen and (max-widt=
+h:674px){.parent-avatar{margin-right:14px}}@media only screen and (min-widt=
+h:410px) and (max-width:565px){.banner-text{font-size:26px!important;top:55=
+px!important}}@media only screen and (min-width:320px) and (max-width:410px=
+){.banner-text{font-size:22px!important;top:55px!important}}@media only scr=
+een and (max-width:320px){.banner-text{font-size:19px!important;top:55px!im=
+portant}}@media only screen and (max-width:674px){.mobile-indent{margin-lef=
+t:24px!important}}@media only screen and (max-width:674px){th.mobile-indent=
+{margin-left:24px!important}}</style><table class=3D"body" style=3D"Margin:=
+0;background:#efefef;border-collapse:collapse;border-spacing:0;color:#54545=
+4;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:40=
+0;height:100%;line-height:18px;margin:0;padding:0;text-align:left;vertical-=
+align:top;width:100%"><tr style=3D"padding:0;text-align:left;vertical-align=
+:top"><td class=3D"center" align=3D"center" valign=3D"top" style=3D"-moz-hy=
+phens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important=
+;color:#545454;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;f=
+ont-weight:400;hyphens:auto;line-height:18px;margin:0;padding:0;text-align:=
+left;vertical-align:top;word-wrap:break-word"><center style=3D"min-width:65=
+0px;width:100%"><table align=3D"center" class=3D"spacer float-center" style=
+=3D"Margin:0 auto;border-collapse:collapse;border-spacing:0;float:none;marg=
+in:0 auto;padding:0;text-align:center;vertical-align:top;width:100%"><tbody=
+><tr style=3D"padding:0;text-align:left;vertical-align:top"><td height=3D"2=
+4" style=3D"-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse=
+:collapse!important;color:#545454;font-family:'Proxima Nova',Arial,sans-ser=
+if;font-size:24px;font-weight:400;hyphens:auto;line-height:24px;margin:0;ms=
+o-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;wor=
+d-wrap:break-word">&nbsp;</td></tr></tbody></table><table align=3D"center" =
+class=3D"container email-body" style=3D"Margin:0 auto;background:#fff;borde=
+r-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:inh=
+erit;vertical-align:top;width:650px"><tbody><tr style=3D"padding:0;text-ali=
+gn:left;vertical-align:top"><td style=3D"-moz-hyphens:auto;-webkit-hyphens:=
+auto;Margin:0;border-collapse:collapse!important;color:#545454;font-family:=
+'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;hyphens:auto=
+;line-height:18px;margin:0;padding:0;text-align:left;vertical-align:top;wor=
+d-wrap:break-word"><table class=3D"row collapse" style=3D"border-collapse:c=
+ollapse;border-spacing:0;display:table;padding:0;position:relative;text-ali=
+gn:left;vertical-align:top;width:100%"><tbody><tr style=3D"padding:0;text-a=
+lign:left;vertical-align:top"><th class=3D"small-12 large-12 columns first =
+last" style=3D"Margin:0 auto;color:#545454;font-family:'Proxima Nova',Arial=
+,sans-serif;font-size:14px;font-weight:400;line-height:18px;margin:0 auto;p=
+adding:0;padding-bottom:16px;padding-left:0;padding-right:0;text-align:left=
+;width:662px"><table style=3D"border-collapse:collapse;border-spacing:0;pad=
+ding:0;text-align:left;vertical-align:top;width:100%"><tbody><tr style=3D"p=
+adding:0;text-align:left;vertical-align:top"><th style=3D"Margin:0;color:#5=
+45454;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weigh=
+t:400;line-height:18px;margin:0;padding:0;text-align:left"><table align=3D"=
+center" class=3D"container work-item-header" style=3D"Margin:0 auto;backgro=
+und:#fff;border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;=
+text-align:inherit;vertical-align:top;width:100%"><tbody><tr style=3D"paddi=
+ng:0;text-align:left;vertical-align:top"><td style=3D"-moz-hyphens:auto;-we=
+bkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#545454=
+;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400=
+;hyphens:auto;line-height:18px;margin:0;padding:0;text-align:left;vertical-=
+align:top;word-wrap:break-word"><table class=3D"spacer" style=3D"border-col=
+lapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:to=
+p;width:100%"><tbody><tr style=3D"padding:0;text-align:left;vertical-align:=
+top"><td height=3D"22" style=3D"-moz-hyphens:auto;-webkit-hyphens:auto;Marg=
+in:0;border-collapse:collapse!important;color:#545454;font-family:'Proxima =
+Nova',Arial,sans-serif;font-size:22px;font-weight:400;hyphens:auto;line-hei=
+ght:22px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;ve=
+rtical-align:top;word-wrap:break-word">&nbsp;</td></tr></tbody></table><tab=
+le class=3D"row" style=3D"border-collapse:collapse;border-spacing:0;display=
+:table;padding:0;position:relative;text-align:left;vertical-align:top;width=
+:100%"><tbody><tr style=3D"padding:0;text-align:left;vertical-align:top"><t=
+h class=3D"small-12 large-12 columns first last" style=3D"Margin:0 auto;col=
+or:#545454;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-=
+weight:400;line-height:18px;margin:0 auto;padding:0;padding-bottom:2px;padd=
+ing-left:0!important;padding-right:0!important;text-align:left;width:100%">=
+<table style=3D"border-collapse:collapse;border-spacing:0;padding:0;text-al=
+ign:left;vertical-align:top;width:100%"><tbody><tr style=3D"padding:0;text-=
+align:left;vertical-align:top"><th style=3D"Margin:0;color:#545454;font-fam=
+ily:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;line-hei=
+ght:18px;margin:0;padding:0;text-align:left"><table class=3D"row collapse" =
+style=3D"border-collapse:collapse;border-spacing:0;display:table;padding:0;=
+position:relative;text-align:left;vertical-align:top;width:100%"><tbody><tr=
+ style=3D"padding:0;text-align:left;vertical-align:top"><th class=3D"small-=
+12 large-9 columns first" style=3D"Margin:0 auto;color:#545454;font-family:=
+'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;line-height:=
+18px;margin:0 auto;padding:0;padding-bottom:2px;padding-left:0!important;pa=
+dding-right:0!important;text-align:left;width:75%"><table style=3D"border-c=
+ollapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:=
+top;width:100%"><tbody><tr style=3D"padding:0;text-align:left;vertical-alig=
+n:top"><th style=3D"Margin:0;color:#545454;font-family:'Proxima Nova',Arial=
+,sans-serif;font-size:14px;font-weight:400;line-height:18px;margin:0;paddin=
+g:0;text-align:left"><img class=3D"float-left work-item-icon" src=3D"https:=
+//viterbo.my.workfront.com/static/img/emailTemplates/modern/icon-email-PROJ=
+.png" style=3D"-ms-interpolation-mode:bicubic;clear:both;display:block;floa=
+t:left;margin-right:16px;max-width:100%;outline:0;text-align:left;text-deco=
+ration:none;width:50px"><h6 class=3D"no-margin-bottom" style=3D"Margin:0;Ma=
+rgin-bottom:4px;color:#333;font-family:'Proxima Nova',Arial,sans-serif;font=
+-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:0;padding=
+:0;text-align:left;word-wrap:normal"><a class=3D"ref-obj bold-text" href=3D=
+"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fviterb=
+o.my.workfront.com%2Fproject%2Fview%3FID%3D5e99fe6d00b6943fa1f7ab36de4c1b00=
+%26email-source%3DissueAdd&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+c62c044dc41b4c21451708dbcbfca487%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638328058179247582%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DBcS2rPXNs=
+nXSx69KnGS%2Fr%2FZM9UvKlcQhBvv%2Fi5wp%2FvE%3D&amp;reserved=3D0" originalsrc=
+=3D"https://viterbo.my.workfront.com/project/view?ID=3D5e99fe6d00b6943fa1f7=
+ab36de4c1b00&amp;email-source=3DissueAdd" shash=3D"LmVEZtllwT6uWT8FG+5C1hTU=
+6tLmZnankeT4swnPbdbt3VojTDIZZo0vqOmwY9wBBT0d2RmNm3Rao9PPDvnB479c4cgsSozVzeX=
+OYpVnkEnex6J39jiaagTKA1ZUHVBZ59zyYNzYHcbMWJdPxWRz1YAJrXuIFigkv3fmMoA1894=3D=
+" style=3D"Margin:0;color:#2f609f;font-family:'Proxima Nova',Arial,sans-ser=
+if;font-weight:700;line-height:1.3;margin:0;padding:0;text-align:left;text-=
+decoration:none">Design Work Request</a></h6><a href=3D"https://nam02.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fviterbo.my.workfront.com%2=
+Fportfolio%2Fview%3FID%3D9b2acefe58fcf981e053a7656a0a1f42%26email-source%3D=
+issueAdd&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc62c044dc41b4c2145=
+1708dbcbfca487%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638328058179247=
+582%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1=
+haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DhV%2BtzD0hjPMUQ8RFyLvpivavZ=
+FSF1JXfcCE9CBP08b0%3D&amp;reserved=3D0" originalsrc=3D"https://viterbo.my.w=
+orkfront.com/portfolio/view?ID=3D9b2acefe58fcf981e053a7656a0a1f42&amp;email=
+-source=3DissueAdd" shash=3D"wmfYw2B6D9sFyqMWERV7Gb6yvZo/N+Vb/PnxUUR3L+d2jq=
+Nor9Su8p7V/72DySqITx09/iegjdk3klgh8Kv/o3LW84iyYCJzTsny5T8JXjdQQ7NT2c9wsQAPd=
+ZuG0nn7Z1DAmQvdNXff5TxYR4F90bT1NfXVPxoNlY83SpyDs9E=3D" style=3D"Margin:0;co=
+lor:#2f609f;font-family:'Proxima Nova',Arial,sans-serif;font-weight:400;lin=
+e-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none"><span=
+ class=3D"top-obj secondary" style=3D"color:#999;font-size:12px">Workfront =
+Administration</span></a></th></tr></tbody></table></th><th class=3D"small-=
+12 large-3 columns last" style=3D"Margin:0 auto;color:#545454;font-family:'=
+Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;line-height:1=
+8px;margin:0 auto;padding:0;padding-bottom:2px;padding-left:0!important;pad=
+ding-right:0!important;text-align:left;width:25%"><table style=3D"border-co=
+llapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:t=
+op;width:100%"><tbody><tr style=3D"padding:0;text-align:left;vertical-align=
+:top"><th style=3D"Margin:0;color:#545454;font-family:'Proxima Nova',Arial,=
+sans-serif;font-size:14px;font-weight:400;line-height:18px;margin:0;padding=
+:0;text-align:left"><p class=3D"text-right small-text-left" style=3D"Margin=
+:0;Margin-bottom:16px;color:#545454;font-family:'Proxima Nova',Arial,sans-s=
+erif;font-size:14px;font-weight:400;line-height:18px;margin:0;margin-bottom=
+:16px;padding:0;text-align:right"> <span class=3D"secondary uppercase" styl=
+e=3D"color:#999;font-size:12px;text-transform:uppercase">REF# 285800</span>=
+<br> <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Fviterbo.my.workfront.com%2Fissue%2Fview%3FID%3D65295ab300113e77179=
+55ac84f73b794%26email-source%3DissueAdd&amp;data=3D05%7C01%7Cegweinberg%40v=
+iterbo.edu%7Cc62c044dc41b4c21451708dbcbfca487%7C6b9fc982e8d74958976cb08441c=
+c9b0b%7C0%7C0%7C638328058179247582%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAw=
+MDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdat=
+a=3DkvDThQaA8eESe0zR0Ftax6XbliAxlLb72teXhV%2FLeyg%3D&amp;reserved=3D0" orig=
+inalsrc=3D"https://viterbo.my.workfront.com/issue/view?ID=3D65295ab300113e7=
+717955ac84f73b794&amp;email-source=3DissueAdd" shash=3D"GmvzZFw+9PWqpl8yljV=
+jjn0eTCVDx712rBkvdI0nBUHEAGFzuW7HF8pr3jIov74ZhFaE7sWlS4Imy6VleQnv/+WMCDO/3i=
+KSd/9nVHqwjHW5ymw+w5u6yM+DfPmXELWzdGkmhUDLpfMGhs2Bk9JbXpr6Dl4QSkXsVO5X9+dTj=
+D4=3D" class=3D"see-it-in-workfront" style=3D"Margin:0;color:#2f609f;font-f=
+amily:'Proxima Nova',Arial,sans-serif;font-size:12px;font-weight:400;line-h=
+eight:1.3;margin:0;padding:0;text-align:left;text-decoration:none">See it i=
+n Workfront</a></p></th></tr></tbody></table></th></tr></tbody></table><hr =
+style=3D"padding-bottom:10px"></th></tr></tbody></table></th></tr></tbody><=
+/table></td></tr></tbody></table></th></tr></tbody></table></th></tr></tbod=
+y></table><table class=3D"row content-row" style=3D"background-color:#fff;b=
+order-collapse:collapse;border-spacing:0;display:table;padding:0;position:r=
+elative;text-align:left;vertical-align:top;width:100%"><tbody><tr style=3D"=
+padding:0;text-align:left;vertical-align:top"><th class=3D"small-12 large-1=
+2 columns first last" style=3D"Margin:0 auto;color:#545454;font-family:'Pro=
+xima Nova',Arial,sans-serif;font-size:14px;font-weight:400;line-height:18px=
+;margin:0 auto;padding:0;padding-bottom:16px;padding-left:20px;padding-righ=
+t:24px;text-align:left;width:626px"><table style=3D"border-collapse:collaps=
+e;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%"=
+><tbody><tr style=3D"padding:0;text-align:left;vertical-align:top"><th styl=
+e=3D"Margin:0;color:#545454;font-family:'Proxima Nova',Arial,sans-serif;fon=
+t-size:14px;font-weight:400;line-height:18px;margin:0;padding:0;text-align:=
+left"><table align=3D"center" class=3D"container content-container" style=
+=3D"Margin:0 auto;background:#fff;border-collapse:collapse;border-spacing:0=
+;margin:0 auto;padding:0;text-align:inherit;vertical-align:top;width:100%">=
+<tbody><tr style=3D"padding:0;text-align:left;vertical-align:top"><td style=
+=3D"-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collaps=
+e!important;color:#545454;font-family:'Proxima Nova',Arial,sans-serif;font-=
+size:14px;font-weight:400;hyphens:auto;line-height:18px;margin:0;padding:0;=
+text-align:left;vertical-align:top;word-wrap:break-word"><table class=3D"ro=
+w" style=3D"border-collapse:collapse;border-spacing:0;display:table;padding=
+:0;position:relative;text-align:left;vertical-align:top;width:100%"><tbody>=
+<tr style=3D"padding:0;text-align:left;vertical-align:top"><th class=3D"sma=
+ll-12 large-12 columns first last" style=3D"Margin:0 auto;color:#545454;fon=
+t-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;lin=
+e-height:18px;margin:0 auto;padding:0;padding-bottom:8px;padding-left:0!imp=
+ortant;padding-right:0!important;text-align:left;width:100%"><table style=
+=3D"border-collapse:collapse;border-spacing:0;padding:0;text-align:left;ver=
+tical-align:top;width:100%"><tbody><tr style=3D"padding:0;text-align:left;v=
+ertical-align:top"><th style=3D"Margin:0;color:#545454;font-family:'Proxima=
+ Nova',Arial,sans-serif;font-size:14px;font-weight:400;line-height:18px;mar=
+gin:0;padding:0;text-align:left"><h5 style=3D"Margin:0;Margin-bottom:4px;co=
+lor:#333;font-family:'Proxima Nova',Arial,sans-serif;font-size:20px;font-we=
+ight:400;line-height:1.3;margin:0;margin-bottom:4px;padding:0;text-align:le=
+ft;word-wrap:normal"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fviterbo.my.workfront.com%2Fuser%2Fview%3FID%3D5e67=
+f60700662467076eb38ecb5bcb5e&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%=
+7Cc62c044dc41b4c21451708dbcbfca487%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7=
+C0%7C638328058179247582%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjo=
+iV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DKzAQ2z%=
+2FvxLeFINn0VruIpgUmIV1eXuCGAA5nSyBbAMA%3D&amp;reserved=3D0" originalsrc=3D"=
+https://viterbo.my.workfront.com/user/view?ID=3D5e67f60700662467076eb38ecb5=
+bcb5e" shash=3D"IiR63hoao+TJJjB/6PMq1/oxkYZbHd+AQ54DbmHJwrl3f5v9sGKPY7GtSjh=
+tx3twePbAokbMljzIs7G0D+jU+LtCJeF50mOwwpBaPgwTXT5OZ02vOn1jvBoswzTuAwe1YEFg5B=
+D5IDinYLXEIxVAtuWbDdC6ME3UG483IodBz94=3D" style=3D"color: #2F609F; cursor: =
+pointer; text-decoration: none;">Eric Weinberg</a> added this Request:</h5>=
+<h1 class=3D"text-alert" style=3D"Margin:0;Margin-bottom:4px;color:#d0021b!=
+important;font-family:'Proxima Nova',Arial,sans-serif;font-size:32px;font-w=
+eight:400;line-height:1.3;margin:0;margin-bottom:0;max-width:650px;overflow=
+-wrap:break-word;padding:0;text-align:left;word-break:break-word;word-wrap:=
+break-word"><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fviterbo.my.workfront.com%2Fissue%2Fview%3FID%3D65295ab3001=
+13e7717955ac84f73b794&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc62c0=
+44dc41b4c21451708dbcbfca487%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63=
+8328058179247582%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DhBmUreE92K0m%2=
+BYPcbLjoJzA77FdryunwcqTTaJGhJ1Q%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/viterbo.my.workfront.com/issue/view?ID=3D65295ab300113e7717955ac84f73b794"=
+ shash=3D"yAWQkvbVqzRg+aPZyffomca5KWX1FXDG8c3VyHX5G2tvamogqJmtc2ZLSLMUeVHQq=
+zNyPOK3HjrFyYl+EVvf2bsu7+XdWArzQ9n8UN+HT4k7IXiqhkAbpJLcdxbbPzcZ06AOrQozWN/N=
+mZuHNVpKSW7xHUk6EIPSW/O4HiOyNfY=3D" style=3D"Margin:0;color:#2f609f;font-fa=
+mily:'Proxima Nova',Arial,sans-serif;font-weight:400;line-height:1.3;margin=
+:0;padding:0;text-align:left;text-decoration:none">CSCI Lab Wall Adhesive</=
+a></h1></th><th class=3D"expander" style=3D"Margin:0;color:#545454;font-fam=
+ily:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;line-hei=
+ght:18px;margin:0;padding:0!important;text-align:left;visibility:hidden;wid=
+th:0"></th></tr></tbody></table></th></tr></tbody></table><table class=3D"r=
+ow" style=3D"border-collapse:collapse;border-spacing:0;display:table;paddin=
+g:0;position:relative;text-align:left;vertical-align:top;width:100%"><tbody=
+><tr style=3D"padding:0;text-align:left;vertical-align:top"><th class=3D"sm=
+all-12 large-12 columns first last" style=3D"Margin:0 auto;color:#545454;fo=
+nt-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;li=
+ne-height:18px;margin:0 auto;padding:0;padding-bottom:8px;padding-left:0!im=
+portant;padding-right:0!important;text-align:left;width:100%"><table style=
+=3D"border-collapse:collapse;border-spacing:0;padding:0;text-align:left;ver=
+tical-align:top;width:100%"><tbody><tr style=3D"padding:0;text-align:left;v=
+ertical-align:top"><th style=3D"Margin:0;color:#545454;font-family:'Proxima=
+ Nova',Arial,sans-serif;font-size:14px;font-weight:400;line-height:18px;mar=
+gin:0;padding:0;text-align:left"><p class=3D"info-card" style=3D"Margin:0;M=
+argin-bottom:16px;color:#545454;font-family:'Proxima Nova',Arial,sans-serif=
+;font-size:16px;font-weight:400;line-height:18px;margin:0;margin-bottom:0;p=
+adding:0;text-align:left"><span class=3D"info" style=3D"color:#999;font-siz=
+e:12px">Date Entered</span><br>Fri, 13 Oct 2023</p></th><th class=3D"expand=
+er" style=3D"Margin:0;color:#545454;font-family:'Proxima Nova',Arial,sans-s=
+erif;font-size:14px;font-weight:400;line-height:18px;margin:0;padding:0!imp=
+ortant;text-align:left;visibility:hidden;width:0"></th></tr></tbody></table=
+></th></tr></tbody></table><table class=3D"row" style=3D"border-collapse:co=
+llapse;border-spacing:0;display:table;padding:0;position:relative;text-alig=
+n:left;vertical-align:top;width:100%"><tbody><tr style=3D"padding:0;text-al=
+ign:left;vertical-align:top"><th class=3D"small-6 large-6 columns first" me=
+dium=3D"12" style=3D"Margin:0 auto;color:#545454;font-family:'Proxima Nova'=
+,Arial,sans-serif;font-size:14px;font-weight:400;line-height:18px;margin:0 =
+auto;padding:0;padding-bottom:8px;padding-left:0!important;padding-right:12=
+px!important;text-align:left;width:50%"><table style=3D"border-collapse:col=
+lapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:1=
+00%"><tbody><tr style=3D"padding:0;text-align:left;vertical-align:top"><th =
+style=3D"Margin:0;color:#545454;font-family:'Proxima Nova',Arial,sans-serif=
+;font-size:14px;font-weight:400;line-height:18px;margin:0;padding:0;text-al=
+ign:left"><p class=3D"info-card" style=3D"Margin:0;Margin-bottom:16px;color=
+:#545454;font-family:'Proxima Nova',Arial,sans-serif;font-size:16px;font-we=
+ight:400;line-height:18px;margin:0;margin-bottom:0;padding:0;text-align:lef=
+t"><span class=3D"info" style=3D"color:#999;font-size:12px">Issue Priority<=
+/span><br>Normal</p></th></tr></tbody></table></th><th class=3D"small-6 lar=
+ge-6 columns last" medium=3D"12" style=3D"Margin:0 auto;color:#545454;font-=
+family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;line-=
+height:18px;margin:0 auto;padding:0;padding-bottom:8px;padding-left:12px!im=
+portant;padding-right:0!important;text-align:left;width:50%"><table style=
+=3D"border-collapse:collapse;border-spacing:0;padding:0;text-align:left;ver=
+tical-align:top;width:100%"><tbody><tr style=3D"padding:0;text-align:left;v=
+ertical-align:top"><th style=3D"Margin:0;color:#545454;font-family:'Proxima=
+ Nova',Arial,sans-serif;font-size:14px;font-weight:400;line-height:18px;mar=
+gin:0;padding:0;text-align:left"><p class=3D"info-card" style=3D"Margin:0;M=
+argin-bottom:16px;color:#545454;font-family:'Proxima Nova',Arial,sans-serif=
+;font-size:16px;font-weight:400;line-height:18px;margin:0;margin-bottom:0;p=
+adding:0;text-align:left"><span class=3D"info" style=3D"color:#999;font-siz=
+e:12px">Issue Status</span><br>New</p></th></tr></tbody></table></th></tr><=
+/tbody></table><table class=3D"row" style=3D"border-collapse:collapse;borde=
+r-spacing:0;display:table;padding:0;position:relative;text-align:left;verti=
+cal-align:top;width:100%"><tbody><tr style=3D"padding:0;text-align:left;ver=
+tical-align:top"><th class=3D"small-6 large-6 columns first" style=3D"Margi=
+n:0 auto;color:#545454;font-family:'Proxima Nova',Arial,sans-serif;font-siz=
+e:14px;font-weight:400;line-height:18px;margin:0 auto;padding:0;padding-bot=
+tom:8px;padding-left:0!important;padding-right:12px!important;text-align:le=
+ft;width:50%"><table style=3D"border-collapse:collapse;border-spacing:0;pad=
+ding:0;text-align:left;vertical-align:top;width:100%"><tbody><tr style=3D"p=
+adding:0;text-align:left;vertical-align:top"><th style=3D"Margin:0;color:#5=
+45454;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weigh=
+t:400;line-height:18px;margin:0;padding:0;text-align:left"><p style=3D"Marg=
+in:0;Margin-bottom:16px;color:#545454;font-family:'Proxima Nova',Arial,sans=
+-serif;font-size:14px;font-weight:400;line-height:18px;margin:0;margin-bott=
+om:16px;padding:0;text-align:left"><span class=3D"info" style=3D"color:#999=
+;font-size:12px">Assigned To</span><br> Unassigned </p></th></tr></tbody></=
+table></th><th class=3D"small-6 large-6 columns last" medium=3D"12" style=
+=3D"Margin:0 auto;color:#545454;font-family:'Proxima Nova',Arial,sans-serif=
+;font-size:14px;font-weight:400;line-height:18px;margin:0 auto;padding:0;pa=
+dding-bottom:8px;padding-left:12px!important;padding-right:0!important;text=
+-align:left;width:50%"><table style=3D"border-collapse:collapse;border-spac=
+ing:0;padding:0;text-align:left;vertical-align:top;width:100%"><tbody><tr s=
+tyle=3D"padding:0;text-align:left;vertical-align:top"><th style=3D"Margin:0=
+;color:#545454;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;f=
+ont-weight:400;line-height:18px;margin:0;padding:0;text-align:left"><p styl=
+e=3D"Margin:0;Margin-bottom:16px;color:#545454;font-family:'Proxima Nova',A=
+rial,sans-serif;font-size:14px;font-weight:400;line-height:18px;margin:0;ma=
+rgin-bottom:16px;padding:0;text-align:left"><span class=3D"info" style=3D"c=
+olor:#999;font-size:12px">Primary Contact</span><br><a href=3D"https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fviterbo.my.workfron=
+t.com%2Fuser%2Fview%3FID%3D5e67f60700662467076eb38ecb5bcb5e&amp;data=3D05%7=
+C01%7Cegweinberg%40viterbo.edu%7Cc62c044dc41b4c21451708dbcbfca487%7C6b9fc98=
+2e8d74958976cb08441cc9b0b%7C0%7C0%7C638328058179247582%7CUnknown%7CTWFpbGZs=
+b3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C30=
+00%7C%7C%7C&amp;sdata=3DKzAQ2z%2FvxLeFINn0VruIpgUmIV1eXuCGAA5nSyBbAMA%3D&am=
+p;reserved=3D0" originalsrc=3D"https://viterbo.my.workfront.com/user/view?I=
+D=3D5e67f60700662467076eb38ecb5bcb5e" shash=3D"IiR63hoao+TJJjB/6PMq1/oxkYZb=
+Hd+AQ54DbmHJwrl3f5v9sGKPY7GtSjhtx3twePbAokbMljzIs7G0D+jU+LtCJeF50mOwwpBaPgw=
+TXT5OZ02vOn1jvBoswzTuAwe1YEFg5BD5IDinYLXEIxVAtuWbDdC6ME3UG483IodBz94=3D" st=
+yle=3D"Margin:0;color:#2f609f;font-family:'Proxima Nova',Arial,sans-serif;f=
+ont-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-deco=
+ration:none">Eric Weinberg</a></p></th></tr></tbody></table></th></tr></tbo=
+dy></table></td></tr></tbody></table></th></tr></tbody></table></th></tr></=
+tbody></table></td></tr></tbody></table><table align=3D"center" class=3D"co=
+ntainer footer" style=3D"Margin:0 auto;background:#fff;background-color:#47=
+4c55;border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text=
+-align:inherit;vertical-align:top;width:650px"><tbody><tr style=3D"padding:=
+0;text-align:left;vertical-align:top"><td style=3D"-moz-hyphens:auto;-webki=
+t-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#545454;fo=
+nt-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;hy=
+phens:auto;line-height:18px;margin:0;padding:0;text-align:left;vertical-ali=
+gn:top;word-wrap:break-word"><table class=3D"row spacer-row collapse bg-row=
+" style=3D"background-color:#efefef;border-collapse:collapse;border-spacing=
+:0;display:table;margin-bottom:8px;padding:0;position:relative;text-align:l=
+eft;vertical-align:top;width:100%"><tbody><tr style=3D"padding:0;text-align=
+:left;vertical-align:top"><th class=3D"small-12 large-12 columns first last=
+" style=3D"Margin:0 auto;color:#545454;font-family:'Proxima Nova',Arial,san=
+s-serif;font-size:14px;font-weight:400;line-height:18px;margin:0 auto;paddi=
+ng:0;padding-bottom:16px;padding-left:0;padding-right:0;text-align:left;wid=
+th:662px"><table style=3D"border-collapse:collapse;border-spacing:0;padding=
+:0;text-align:left;vertical-align:top;width:100%"><tbody><tr style=3D"paddi=
+ng:0;text-align:left;vertical-align:top"><th style=3D"Margin:0;color:#54545=
+4;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:40=
+0;line-height:18px;margin:0;padding:0;text-align:left"></th><th class=3D"ex=
+pander" style=3D"Margin:0;color:#545454;font-family:'Proxima Nova',Arial,sa=
+ns-serif;font-size:14px;font-weight:400;line-height:18px;margin:0;padding:0=
+!important;text-align:left;visibility:hidden;width:0"></th></tr></tbody></t=
+able></th></tr></tbody></table><table class=3D"row" style=3D"border-collaps=
+e:collapse;border-spacing:0;display:table;padding:0;position:relative;text-=
+align:left;vertical-align:top;width:100%"><tbody><tr style=3D"padding:0;tex=
+t-align:left;vertical-align:top"><th class=3D"small-12 large-12 columns fir=
+st last" style=3D"Margin:0 auto;color:#545454;font-family:'Proxima Nova',Ar=
+ial,sans-serif;font-size:14px;font-weight:400;line-height:18px;margin:0 aut=
+o;padding:0;padding-bottom:16px;padding-left:24px;padding-right:24px;text-a=
+lign:left;width:626px"><table style=3D"border-collapse:collapse;border-spac=
+ing:0;padding:0;text-align:left;vertical-align:top;width:100%"><tbody><tr s=
+tyle=3D"padding:0;text-align:left;vertical-align:top"><th style=3D"Margin:0=
+;color:#545454;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;f=
+ont-weight:400;line-height:18px;margin:0;padding:0;text-align:left"></th><t=
+h class=3D"expander" style=3D"Margin:0;color:#545454;font-family:'Proxima N=
+ova',Arial,sans-serif;font-size:14px;font-weight:400;line-height:18px;margi=
+n:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th></t=
+r></tbody></table></th></tr></tbody></table><table class=3D"row footer-cont=
+ent-row" style=3D"border-collapse:collapse;border-spacing:0;display:table;p=
+adding:0;position:relative;text-align:left;vertical-align:top;width:100%"><=
+tbody><tr style=3D"padding:0;text-align:left;vertical-align:top"><th class=
+=3D"small-12 large-9 columns first" style=3D"Margin:0 auto;color:#545454;fo=
+nt-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;li=
+ne-height:18px;margin:0 auto;padding:0;padding-bottom:8px;padding-left:24px=
+;padding-right:12px;text-align:left;width:463.5px"><table style=3D"border-c=
+ollapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:=
+top;width:100%"><tbody><tr style=3D"padding:0;text-align:left;vertical-alig=
+n:top"><th style=3D"Margin:0;color:#545454;font-family:'Proxima Nova',Arial=
+,sans-serif;font-size:14px;font-weight:400;line-height:18px;margin:0;paddin=
+g:0;text-align:left"><table class=3D"button change-notification-settings" s=
+tyle=3D"Margin:0;border-collapse:collapse;border-spacing:0;margin:0;padding=
+:0;text-align:left;vertical-align:top;width:auto"><tbody><tr style=3D"paddi=
+ng:0;text-align:left;vertical-align:top"><td style=3D"-moz-hyphens:auto;-we=
+bkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#545454=
+;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400=
+;hyphens:auto;line-height:18px;margin:0;padding:0;text-align:left;vertical-=
+align:top;word-wrap:break-word"><table style=3D"border-collapse:collapse;bo=
+rder-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%"><tb=
+ody><tr style=3D"padding:0;text-align:left;vertical-align:top"><td style=3D=
+"-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;background:#474c55;border:=
+0 solid #b4b4b4;border-collapse:collapse!important;color:#fff;font-family:'=
+Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;hyphens:auto;=
+line-height:18px;margin:0;padding:0;text-align:left;vertical-align:top;word=
+-wrap:break-word"><a href=3D"https://nam02.safelinks.protection.outlook.com=
+/?url=3Dhttps%3A%2F%2Fviterbo.my.workfront.com%2Fhome%3FshowMySettings%3Dtr=
+ue%26enableDigest%3DREQUESTS_MADE%3Adefault.eventhandler.helpdeskrequestadd=
+.issueowner%26disableInstant%3DREQUESTS_MADE%3Adefault.eventhandler.helpdes=
+krequestadd.issueowner&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Cc62c=
+044dc41b4c21451708dbcbfca487%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6=
+38328058179403802%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luM=
+zIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D7YQggEurnti4R=
+MbSZatMmVK50hRuDoKZX%2BQs7nbV0W4%3D&amp;reserved=3D0" originalsrc=3D"https:=
+//viterbo.my.workfront.com/home?showMySettings=3Dtrue&amp;enableDigest=3DRE=
+QUESTS_MADE:default.eventhandler.helpdeskrequestadd.issueowner&amp;disableI=
+nstant=3DREQUESTS_MADE:default.eventhandler.helpdeskrequestadd.issueowner" =
+shash=3D"k9PClpcjLPvwSHl1O2G+sB5RDQczpQlx8NwmtqSgxhWGFHhoJXMpAMsNhwcJLs0xYq=
+0lX7w/rgKodpN0iRInosu1a0c9f9U0/0b39J9pTRJalRBtaO+OjZvOLz79R9k2bql7sIi8tUvCb=
+2OMutqe0L94V4dwz7mKL4sXE7v0Lzc=3D" style=3D"Margin:0;border:1px solid #b4b4=
+b4;border-radius:2px;color:#b4b4b4!important;display:inline-block;font-fami=
+ly:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;line-heig=
+ht:1.3;margin:0;padding:6px 16px 6px 16px;text-align:left;text-decoration:n=
+one">Add This to a Daily Digest</a></td></tr></tbody></table></td></tr></tb=
+ody></table> <a class=3D"small-text footer-link" href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fviterbo.my.workfront.com%=
+2Fhome%3FshowMySettings%3Dtrue%26disableInstant%3DREQUESTS_MADE%3Adefault.e=
+venthandler.helpdeskrequestadd.issueowner&amp;data=3D05%7C01%7Cegweinberg%4=
+0viterbo.edu%7Cc62c044dc41b4c21451708dbcbfca487%7C6b9fc982e8d74958976cb0844=
+1cc9b0b%7C0%7C0%7C638328058179403802%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sd=
+ata=3DvghD0tLw0qOpY7%2FD6cOaIrnR26GZQd7U7H4QLlzbMJw%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://viterbo.my.workfront.com/home?showMySettings=3Dtrue&am=
+p;disableInstant=3DREQUESTS_MADE:default.eventhandler.helpdeskrequestadd.is=
+sueowner" shash=3D"DDUtQ4XAT0jDxKoYqDorSeudyFpwY66Vm2IFDxwWI0VaIW2J4t2xhakZ=
+WHmn4bMpqWrVgEScSK0o6fJWrQp1E9q8nMR9R9U7ZfOtlniA7BIKn+qwgXjelydk4Z/nbvpA+ix=
+JoTCGOMdvVUrg8VQA2XKPkhSGenO13QaO9gZQPN0=3D" style=3D"Margin:0;color:#b4b4b=
+4;display:inline-block!important;font-family:'Proxima Nova',Arial,sans-seri=
+f;font-size:12px;font-weight:400;line-height:1.3;margin:0;margin-top:12px!i=
+mportant;padding:0;text-align:left;text-decoration:none">Stop Emails of Thi=
+s Type</a></th></tr></tbody></table></th><th class=3D"small-12 large-3 colu=
+mns last" valign=3D"middle" style=3D"Margin:0 auto;color:#545454;font-famil=
+y:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;line-heigh=
+t:18px;margin:0 auto;padding:0;padding-bottom:8px;padding-left:12px;padding=
+-right:24px;text-align:left;width:138.5px"><table style=3D"border-collapse:=
+collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;widt=
+h:100%"><tbody><tr style=3D"padding:0;text-align:left;vertical-align:top"><=
+th style=3D"Margin:0;color:#545454;font-family:'Proxima Nova',Arial,sans-se=
+rif;font-size:14px;font-weight:400;line-height:18px;margin:0;padding:0;text=
+-align:left"><img height=3D"23" width=3D"133" src=3D"https://viterbo.my.wor=
+kfront.com/static/img/emailTemplates/modern/wf-logo-white.png" style=3D"-ms=
+-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline=
+:0;text-decoration:none;width:auto"></th></tr></tbody></table></th></tr></t=
+body></table><table class=3D"row" style=3D"border-collapse:collapse;border-=
+spacing:0;display:table;padding:0;position:relative;text-align:left;vertica=
+l-align:top;width:100%"><tbody><tr style=3D"padding:0;text-align:left;verti=
+cal-align:top"><th class=3D"small-12 large-12 columns first last" style=3D"=
+Margin:0 auto;color:#545454;font-family:'Proxima Nova',Arial,sans-serif;fon=
+t-size:14px;font-weight:400;line-height:18px;margin:0 auto;padding:0;paddin=
+g-bottom:16px;padding-left:24px;padding-right:24px;text-align:left;width:62=
+6px"><table style=3D"border-collapse:collapse;border-spacing:0;padding:0;te=
+xt-align:left;vertical-align:top;width:100%"><tbody><tr style=3D"padding:0;=
+text-align:left;vertical-align:top"><th style=3D"Margin:0;color:#545454;fon=
+t-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-weight:400;lin=
+e-height:18px;margin:0;padding:0;text-align:left"></th><th class=3D"expande=
+r" style=3D"Margin:0;color:#545454;font-family:'Proxima Nova',Arial,sans-se=
+rif;font-size:14px;font-weight:400;line-height:18px;margin:0;padding:0!impo=
+rtant;text-align:left;visibility:hidden;width:0"></th></tr></tbody></table>=
+</th></tr></tbody></table></td></tr></tbody></table><table class=3D"row spa=
+cer-row bg-row collapse" style=3D"background-color:#efefef;border-collapse:=
+collapse;border-spacing:0;margin-bottom:8px;padding:0;position:relative;tex=
+t-align:left;vertical-align:top;width:100%"><tbody><tr style=3D"padding:0;t=
+ext-align:left;vertical-align:top"><th class=3D"small-12 large-12 columns f=
+irst last" style=3D"Margin:0 auto;color:#545454;font-family:'Proxima Nova',=
+Arial,sans-serif;font-size:14px;font-weight:400;line-height:18px;margin:0 a=
+uto;padding:0;padding-bottom:16px;padding-left:0;padding-right:0;text-align=
+:left;width:662px"><table style=3D"border-collapse:collapse;border-spacing:=
+0;padding:0;text-align:left;vertical-align:top;width:100%"><tbody><tr style=
+=3D"padding:0;text-align:left;vertical-align:top"><th style=3D"Margin:0;col=
+or:#545454;font-family:'Proxima Nova',Arial,sans-serif;font-size:14px;font-=
+weight:400;line-height:18px;margin:0;padding:0;text-align:left"></th><th cl=
+ass=3D"expander" style=3D"Margin:0;color:#545454;font-family:'Proxima Nova'=
+,Arial,sans-serif;font-size:14px;font-weight:400;line-height:18px;margin:0;=
+padding:0!important;text-align:left;visibility:hidden;width:0"></th></tr></=
+tbody></table></th></tr></tbody></table></center></td></tr></table></body><=
+/html>=
+
+------=_Part_10079_616845468.1697209013701--

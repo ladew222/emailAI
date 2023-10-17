@@ -1,0 +1,677 @@
+Delivered-To: egweinbe@gmail.com
+Received: by 2002:a05:7108:401c:b0:31f:8fa7:e4ff with SMTP id a28csp2660182gdh;
+        Sat, 14 Oct 2023 13:42:01 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IF6zjQtuCHj1L5ymVAi3EjQ6sKVKzrdW3PCBmcv5aUZY5hVHI3Xn8FXf5oQydt4HMlgvUI+
+X-Received: by 2002:a17:90a:cb03:b0:27d:2949:9e05 with SMTP id z3-20020a17090acb0300b0027d29499e05mr5318232pjt.11.1697316120767;
+        Sat, 14 Oct 2023 13:42:00 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1697316120; cv=none;
+        d=google.com; s=arc-20160816;
+        b=fIn07Q1+G2FKKBKzU3pONsu0fu2kDKS0ksjX0rrnN87VMavKamZlM10WlyjfUz51sh
+         iTfS4yhnoKs3fikl1XBmczrf7CY4Lwu/8dEehHRR2oT0OUHLom0grGPyqaaUXO2xQzZD
+         bJATcvJx3bkvVXH76ACGfe4GjAVQSToMTHTFhyCnotyj0P0JPRzdfPafJ3TdzHRVJA/m
+         Itx4PkwnXVFgYiPpIpymsBNs+7hgv/+S8VNT5Db12fAv9RG+YuP6O11kuzMQBVuRrUdQ
+         ///agtvZCIx8I129RHMdyV2IkHrsIqyd/tL5YI2tFMbgJlKQ442uoFxlPMAsBj59IoiZ
+         guXg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:reply-to:list-unsubscribe:list-unsubscribe-post
+         :content-transfer-encoding:mime-version:subject:message-id:from:date
+         :dkim-signature:dkim-signature;
+        bh=HIaDBXZ88vzx60K6dTKlEhpJaVXrmZXlcd2GuTmJ0tQ=;
+        fh=++Dz6nQYWua0JvdvPCku5tvjlMaMNQOEGj1z0VZrleg=;
+        b=TlKB5oJSOE6mMYdqVXB7qmqkg8whGctKeUl6Zhy6uZRztM0wsb/C1hqqyWOyFun9PJ
+         I5PTggKQRURZhcXGN/4821StBFRGlqN+l22JUI8T34Exb4oZ+yZ8QsoK4CJkgJQ1gTit
+         VvV0JENcSlNzLB3fLULFvz8VVdIqULUhXZyXkjpcDtzVQCs5pWrSVZEcJ8d0EmxZPZzN
+         qju1lCfsvqas2IEHHVt9ORqp2tnMm6F/DiBC2QKAh9/qdaw7BVpn5Vf2sX/5BZ4OOAB0
+         jhfJG814pEzz4NuO2XwDoRlmTsgkfQ9D2GvZuN3mp3JUp8pKW1HJ/vowS8q4+vXCK67f
+         5cvw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@hirefrederick.com header.s=s1 header.b=KTDOh7vu;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=ajdM4cAJ;
+       spf=pass (google.com: domain of bounces+14357918-d126-egweinbe=gmail.com@em.hirefrederick.com designates 50.31.34.169 as permitted sender) smtp.mailfrom="bounces+14357918-d126-egweinbe=gmail.com@em.hirefrederick.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=hirefrederick.com
+Return-Path: <bounces+14357918-d126-egweinbe=gmail.com@em.hirefrederick.com>
+Received: from pnkfnnxw.outbound-mail.sendgrid.net (pnkfnnxw.outbound-mail.sendgrid.net. [50.31.34.169])
+        by mx.google.com with ESMTPS id me17-20020a17090b17d100b0026b4d5844ccsi3227497pjb.27.2023.10.14.13.41.59
+        for <egweinbe@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 14 Oct 2023 13:42:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+14357918-d126-egweinbe=gmail.com@em.hirefrederick.com designates 50.31.34.169 as permitted sender) client-ip=50.31.34.169;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hirefrederick.com header.s=s1 header.b=KTDOh7vu;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=ajdM4cAJ;
+       spf=pass (google.com: domain of bounces+14357918-d126-egweinbe=gmail.com@em.hirefrederick.com designates 50.31.34.169 as permitted sender) smtp.mailfrom="bounces+14357918-d126-egweinbe=gmail.com@em.hirefrederick.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=hirefrederick.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hirefrederick.com;
+	h=from:subject:mime-version:content-type:content-transfer-encoding:
+	list-unsubscribe:reply-to:x-feedback-id:to:cc:content-type:from:subject:to;
+	s=s1; bh=HIaDBXZ88vzx60K6dTKlEhpJaVXrmZXlcd2GuTmJ0tQ=;
+	b=KTDOh7vu66lZC7Am3+DMY2/2y7l19ssvVi+2eMD8A+lyk9yjeT8UWBoOeS10SYlCRdfO
+	TUmR49Xr+B5T070YLMJIMizWp1er0/SCAimIlpXJpZyQRwGN3NhVVUjriZakR8Z3Q9k9Rw
+	fuPKNMEd8bdUgfRTSgby34wi474GorBjsylQQgqTIJuMGBLTPuzd/NCYuvJlDtTzJdDl6z
+	pC1nNFkAhJ582aArpk3yI7ADG9fGDOxcfOgGjsoFVXqeNAlzt5WHSaZQFkOnw38eF5SUbZ
+	ooSOyVbakMWAoySdEJd3U2stFXi2+oymdsh6XSwjb9TY3LS8/TEf7en8LplfIT8g==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
+	h=from:subject:mime-version:content-type:content-transfer-encoding:
+	list-unsubscribe:reply-to:x-feedback-id:to:cc:content-type:from:subject:to;
+	s=smtpapi; bh=HIaDBXZ88vzx60K6dTKlEhpJaVXrmZXlcd2GuTmJ0tQ=;
+	b=ajdM4cAJMZuszOTdYg7FoEFIu2fRBEYBOZDL3a8VZ/saj+ly3gy9O4n3glF0Lr1JW3Nw
+	899uFX9hqz8MGwsFi1pT3K+R/AZjmdt8OxdPg94NivvPU7mIjVRMdjZJKdd8hg4mxEuL8G
+	KEtGkXxVPrWNRjS55JrmBEGMtRJq3tdK4=
+Received: by filterdrecv-59599c7cbd-zd6cv with SMTP id filterdrecv-59599c7cbd-zd6cv-1-652AFD16-24
+        2023-10-14 20:41:58.693992555 +0000 UTC m=+346720.580948999
+Received: from hirefrederick.com (unknown)
+	by geopod-ismtpd-35 (SG)
+	with ESMTP id 1J1aXiXGTumq_l0d8Kz8Ug
+	for <egweinbe@gmail.com>;
+	Sat, 14 Oct 2023 20:41:58.539 +0000 (UTC)
+Date: Sat, 14 Oct 2023 20:41:58 +0000 (UTC)
+From: The Salon Professional Academy <noreply@hirefrederick.com>
+Message-ID: <652afd16313bd_23fd776c1b64046802876@05b3517e-72e4-422b-8cf6-6d21c6709250.mail>
+Subject: Last-minute openings Monday!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_652afd161e920_23fd776c1b64046802226";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-FRED-EMAIL-ID: 252cc845-2470-4e77-983c-74c133406f75
+X-LOCATION-ID: 24eeb595-8df3-4d3f-bd53-7b250584f4a3
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://hirefrederick.com/emails/252cc845-2470-4e77-983c-74c133406f75/unsubscribe>
+Reply-To: customercare@salonproacademy.com
+X-Feedback-ID: 14357918:SG
+X-SG-EID: 
+ =?us-ascii?Q?12A1JHUYRyxUFBhDPG+iEJhv6fww3wLQwS2+tJR0Bpf4h98B4Tyt9m6hchTcGL?=
+ =?us-ascii?Q?1FJaAcvNZt=2Fh34zW=2FKJ9k3G3Brkd19KwRWVsBzK?=
+ =?us-ascii?Q?lpQmu5hAILrxcC5G4=2F0U6F12HVOYw4hemN+XgnK?=
+ =?us-ascii?Q?xLttqKPZvn1lX83F=2FTtwMTuw44EORzCLShU2v4U?=
+ =?us-ascii?Q?9QV7NXR5X7ahd3KXOi+SadNUMidaoF87hjEu8TP?=
+ =?us-ascii?Q?7mYfB2xNCskLc5mkGmKqFfc6zdDs=2Fwjx3S6iGDy?=
+ =?us-ascii?Q?Ilo3kuNXdjLpt=2F12+HXrQ=3D=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi=2FJcDzyJyu4AHEuK4Sv4nd?=
+ =?us-ascii?Q?F+pbPA8f8uFIxt7+bkbl69nByXv1tbsPMTjfZAK?=
+ =?us-ascii?Q?wEtsHi=2FEhw60gFPHGCUGDcppabV?=
+To: egweinbe@gmail.com
+X-Entity-ID: gxpV0zgamrAfexPJH+5aXA==
+
+
+----==_mimepart_652afd161e920_23fd776c1b64046802226
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+We have openings available for Monday!
+
+Ready to book? We've got last-minute openings!
+----------------------------------------------
+
+We have openings including Haircut Level 2
+Clipper Cut and thought you might be interested since you've
+booked this before.
+
+We have openings available for Monday!
+
+Book Now 
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs2S4Sx0pWjtGdiLlr-2FW5xVabQrT3zscEejgemPnfpMG-2Bduz-2FOOvcWt-2BV-2FQtf3btNIzkdRSrdFUEmtkwWy5xNlNYIvTsAx2zqpc-2B4sGhvFahCwJjptDMJMbbNV-2B56zWbapQj5-2FPskkByoqjOxTBqJRpvTLEmHSfFLnBzYFeeIpuYwJYOzLH2g-2Bl23wq-2FBMylodRkUU1dqsWQ-2BmJwgtrgQxfQRfpwpQP4jWR2pXRvxRmJZwi3lw7fvO1YfVKD4Mh3MGA-3D-3D4a2r_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6YrAveQfpKZFT8xfCCZKbiWU9om-2FZgiSyJW-2BGPAX9J3D0G2cn1-2F2d6rCY9V1DtXec3ag9dhUSeMSMXEkL-2FKrwsHdxlSeDXp5enLWFNFgDmLSMNDUMw72T0yvvRAYCBivm4UbBgXZXb4GcK1f1fjgesw-3D )
+
+
+Not ready to book?
+
+I'm interested, but can't make it this time
+
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs2OMHdyzgxqa5ZRWt59GlpbJIi-2Boalmqeqj1cVZvfRc7LHVW_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6Sj0-2BPHtBP605z19zlTZzlwte51Ouqu5BfFQ2wrECPVChTsCwbs1mNIv6YtU8QixV7mr1oRghLmLPkNobEBX06EqELU7w828mtuVa5-2Fwd3WJ8Lw50-2B589Rfsxofl2FU3FjtSKkidz0Ia-2B3TadnA6QH8-3D )
+
+
+Don't send me last minute openings 
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs7pMcB7JPN-2BlMLoy8NJVODwuq9tMSGs-2FAcHeIUotRhNd6qeFVcE472F0WVybBFkdBw-3D-3Df77p_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6ZlFOJlr-2FBvLR68UQYGDDqFbYRAz0l11ISHEzrvHx9LDKXZlMDLQ0qDyQgwCE-2BeVA7H0Cy8JB4qWKAgVgo8YbxO5Wcd7hPG3yBT9crpDsqYxMSTNURuDcXIcBO3J1-2BAEyAnhKtN44mXwuMA7FTRFi7w-3D )
+
+
+Yoawqyfrjygriadv8gwv?signature=389f71d96c67d7d899609d0def7b3194bc5c339fe7b55f226aafd8f59ed5f5c4&policy=eyjjywxsijoicmvhzcisimv4cglyesi6ndyzmzm2mtq2oh0%3d
+
+The Salon Professional Academy
+------------------------------
+
+566 Theater Road
+
+Onalaska, WI 54650
+
++1 (608) 336-5219
+
+Visit Our Website 
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs9eGtTiQbIydlkZfSXkhABjVObmkDv2jF7Ps5Um2qD1I76ru_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6Shm-2F2gL-2FjT4AF485eRLJwWtob6FRTI9-2FmlgMfJuzPaDFRTZf-2Bv70bz9KNi-2BWeFtABP11cVJvBXgZlkQy0NP93eqdWRy7wCYNYvrd1E0oVPHAUoHTxTdb8nEvaBP3SQGOErDNu4em60QXGZCuoY5QQA-3D )
+
+
+Refer Your Friends! 
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs2S4Sx0pWjtGdiLlr-2FW5xVabQrT3zscEejgemPnfpMG-2Bduz-2FOOvcWt-2BV-2FQtf3btNI-2BGtg6SL70Bqu8g-2BM7WJOP4P5NG21RIws9y09HUggO8u5lV-2BPCDaNI8PoFYCLnAsMsSKko9vPn-2FaPXi-2BQB-2BXIqSbIK-2F6hdUBTPk8YD1N7dZeJOmG5i8Qa-2F7k3Y2lUezBFA-3D-3DzKJF_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6WCC972aVmWlC46dNsgc5HNuGxEvKFUqHnFIsPPUcXFbPdhBu2nYsvpNuN8uAWmGaqm3CS1Eb8hBeJgZcbxZlx5galv8CtsIsIAU6BiMiWvhdoqvuHuQJK4xZcgTevrdbG1JJzKRdwcVuKadnBBgORw-3D )
+
+
+Facebook 
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs9eGtTiQbIydlkZfSXkhABhUD7PIGdIQov7dhtIT5kS9xvfNOFxgSLSZFrjV8qB-2F-2BCcdpCj7wd9F6c9e12gdzUUUSbDJgpxmelmj6GumVgSF8yi-_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6QtxclB9x0MmNkNvRhUBpxc-2B02pRDTCziT4-2F44Mp12lTNCxPBACTNzaqbj1cpamv51-2B7BO7WztA9u4AofXzZYusbHoetcDCkJC9Zkpu9bQQR25DN07dcKw93gm3POXeHFLInw0rfLovkiGN75qmttSc-3D )
+
+•
+Google 
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs9eGtTiQbIydlkZfSXkhABhUD7PIGdIQov7dhtIT5kS9kWvTeFdej2FxoLkoAZk4HogGYl2xi-2BmdMX-2BGWewUe7apgU3mJmRXlLvQbRQBRsGA1Cof_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6ehMGmMQGxv8IpAB8DaxboUnRBF0naxLnkGAgiboHfotKakCo0xUzK52DQWpWJyNCPEIr5Si4CciXnBwK1LAoEqeynhEelCn8-2BcABUZ4nmYrgQ3szZ97xsIEG5f7UTKCnSfdVOt5ot32QOIAqKUPPOE-3D )
+
+
+Get Directions » 
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs2S4Sx0pWjtGdiLlr-2FW5xVabQrT3zscEejgemPnfpMG-2Bduz-2FOOvcWt-2BV-2FQtf3btNI0tlXY7iEM52G33Msxs07g3Pv-2F1pgMJDWyDDQzk7ZfjF7FWVZuqXDLpSAOFwjelq-2FJNZDMMCZNghDG6bOEuRgPi-2FFvIWLTiItVQ2uaHPYXIhOminPcuVc2GxmpZ8K8nTzoT-2FpXmqL0Xv3vRfVH-2FaObc-3DBxzc_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6b39GSIgzj5OmvoCs-2BDD89161DkMJN59sZ2vu7ZfzcJqncI2L2qzklAAwlDXPuv7jjkDNQ7IywXQDu3GOteOQIaAFbXciz7v8Pn2CaeLjCVhuW-2Fq4eHmrEHrQg1zbn-2FMEd33y1LWQcY-2F-2FshnzY-2BVVb4-3D )
+
+
+
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs2S4Sx0pWjtGdiLlr-2FW5xVabQrT3zscEejgemPnfpMG-2Bduz-2FOOvcWt-2BV-2FQtf3btNI0tlXY7iEM52G33Msxs07g3Pv-2F1pgMJDWyDDQzk7ZfjF7FWVZuqXDLpSAOFwjelq-2FJNZDMMCZNghDG6bOEuRgPi-2FFvIWLTiItVQ2uaHPYXIhOminPcuVc2GxmpZ8K8nTzoT-2FpXmqL0Xv3vRfVH-2FaObc-3DN0UQ_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6dcTkV3gRd-2F-2B8923yQv7kAAr4pP2-2BXX-2BFG50xh25ZxohENjDCIF-2FDEkKIxhW4hMFVN7eR822T07GqfJ1adgNJwkPnRcCqFHKvLokLZgO9tOd6y51D-2BRYOJPGOmOiDmpGk-2BLQtVoVoBSmD-2FD4dHmauig-3D )
+
+
+Get our special offers via text message!
+
+Click here to opt-in to text messages 
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs7pMcB7JPN-2BlMLoy8NJVODywu4rxMPS2US0Z7wRK5LsxMS2ql0JV1ClKso7lA0Ynxg-3D-3DjcSt_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6T-2BjjIFMIkhHOrQOEjH418BrYYKCmOEycBRJQsCftLyy148pxj2Xct-2FvusteKzS-2FWQvd-2F5OfYY0nrH7wrAeaIyIqy8rHaJTUFrHAO-2BaoKypog7aN0QJLkdkGvQbSVw1HXwb5zKi-2BcA-2BakQRfMLGTn68-3D )
+ - No purchase necessary.
+
+You are currently subscribed to marketing emails
+from The Salon Professional Academy.
+
+No longer want these emails?
+Unsubscribe 
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSswkfszgRazxWlpUKi3M4sZGekDOsqLSGceBtqA4xkii0tKSe_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6WXzIZfe-2B5j2CevMp3Hla1mmDLn5hm6izekrC2oT4RbblpysDEaI5eolz-2FEuov-2BwQeE2Ffymgf9vV2oUHxDurVlyBw9oMFlSjN6G4OdCUIlsQlDZ4i0N8j0WYskZnIJNMx3b59EJZZGyk9LHWmfdJdw-3D )
+
+
+Powered by Mindbody 
+( http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0EMT1gORKFCBgMdczPaxeW9980p-2BfzaNOw8fP3XyCnuqBIvU9AnTFHQYhlqqwemGmeG3dRn02BcI7v-2BLGBefTDlJyYDsvUitu1SqEPA4x2qeiL6M4BvqwYupzOnSy9Xwfg-3D-3DhWb3_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6Xh4VhpKN5usdw3H3Esh79oVaPU-2Fq8Jn67s9ViZMPV4ZccYXvOQFJbCqOXrRJxjv7Yptk4vydWr1NKzMSME8xjbd6hqDN28NMGF-2B3uJGxXHYtdztlnLtonIAdc2uHCtKwumlLZT-2FmqTXdMI7Dc572vk-3D )
+----==_mimepart_652afd161e920_23fd776c1b64046802226
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Last-minute openings Monday!</title>
+  
+  
+  
+<style>body {
+width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass {
+line-height: 100%;
+}
+#backgroundTable {
+margin: 0; padding: 0; width: 100% !important; line-height: 100% !important;
+}
+img {
+outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; clear: both; display: block;
+}
+body {
+color: #222222; font-family: "Helvetica", "Arial", sans-serif; font-weight: normal; padding: 0; margin: 0; text-align: left; line-height: 1.3;
+}
+body {
+font-size: 14px; line-height: 19px;
+}
+table.tiny-button:hover td a {
+color: #ffffff !important;
+}
+table.tiny-button:active td a {
+color: #ffffff !important;
+}
+table.tiny-button td a:visited {
+color: #ffffff !important;
+}
+table.small-button:hover td a {
+color: #ffffff !important;
+}
+table.small-button:active td a {
+color: #ffffff !important;
+}
+table.small-button td a:visited {
+color: #ffffff !important;
+}
+table.medium-button:hover td a {
+color: #ffffff !important;
+}
+table.medium-button:active td a {
+color: #ffffff !important;
+}
+table.medium-button td a:visited {
+color: #ffffff !important;
+}
+table.large-button:hover td a {
+color: #ffffff !important;
+}
+table.large-button:active td a {
+color: #ffffff !important;
+}
+table.button td a:visited {
+color: #ffffff !important;
+}
+table.button:active td a {
+color: #ffffff !important;
+}
+table.alert:hover td {
+background: #970b0e !important;
+}
+body.outlook p {
+display: inline !important;
+}
+body {
+color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif;
+}
+body {
+font-size: 15px;
+}
+table.secondary:hover td {
+background: #086372 !important; color: #fff !important;
+}
+table.secondary:hover td a {
+color: #fff !important;
+}
+table.secondary td a:visited {
+color: #fff !important;
+}
+table.secondary:active td a {
+color: #fff !important;
+}
+table.facebook:hover td {
+background: #2d4473 !important;
+}
+table.twitter:hover td {
+background: #0087bb !important;
+}
+table.google-plus:hover td {
+background: #CC0000 !important;
+}
+table.primary:hover td {
+background-color: #f8f8f8 !important; border-color: #999999 #999999 #999999;
+}
+table.primary:hover td a {
+color: #337ab7 !important;
+}
+table.primary td a:visited {
+color: #337ab7 !important;
+}
+.email-primary-btn:hover {
+filter: brightness(90%);
+}
+a:hover {
+text-decoration: underline;
+}
+body {
+font-weight: 400;
+}
+@media only screen and (max-width: 600px) {
+  table[class="body"] img {
+    width: auto !important; height: auto !important;
+  }
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+  table[class="body"] .row {
+    width: 100% !important; display: block !important;
+  }
+  table[class="body"] .wrapper {
+    display: block !important; padding-right: 0 !important;
+  }
+  table[class="body"] .columns {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .column {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .wrapper.first .columns {
+    display: table !important;
+  }
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+  table[class="body"] table.columns td {
+    width: 100% !important;
+  }
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+  table[class="body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] td.offset-by-one {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-two {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-three {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-four {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-five {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-six {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-seven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eight {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-nine {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-ten {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+  table[class="body"] .right-text-pad {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .text-pad-right {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .left-text-pad {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .text-pad-left {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class="body"] .show-for-small {
+    display: inherit !important;
+  }
+  table[class="body"] .hide-for-desktop {
+    display: inherit !important;
+  }
+  img.frederick-logo {
+    max-width: 50px;
+  }
+  table[class="body"] .right-text-pad {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .left-text-pad {
+    padding-right: 10px !important;
+  }
+  .brand {
+    padding-left: 0 !important;
+  }
+  .login {
+    padding-right: 0 !important;
+  }
+  .visible-mobile {
+    display: inline !important; width: auto !important; overflow: visible !important; float: none !important;
+  }
+  .panel-section-content {
+    padding: 10px 12px 10px 10px !important;
+  }
+  table[class="body"] img.retina60 {
+    width: 60px !important; height: 60px !important;
+  }
+  .center-mobile-table-half {
+    display: table; margin: auto; width: 50%;
+  }
+  .center-mobile-table-full {
+    display: table; margin: auto; width: 100%;
+  }
+}
+</style></head>
+<body class="fill_last_minute_opening_automation" style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; text-align: left; line-height: 19px; font-size: 15px; margin: 0; padding: 0;">
+<div style="display: none; white-space: nowrap; color: #ffffff; width: 600px !important; min-width: 600px !important; max-width: 600px !important; font: 15px/0 courier;">                                                           </div>
+  <p class="preheader" style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 10px !important; display: none !important; margin: 0; padding: 0;" align="center">We have openings available for Monday!</p>
+<table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0;">
+  <tr style="vertical-align: top; padding: 0;" align="left">
+    <td class="center" align="center" valign="top" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0;">
+      <center style="width: 100%; min-width: 580px;">
+
+        
+
+        <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
+          <br />
+          <tr style="vertical-align: top; padding: 0;" align="left">
+  <td style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0;" align="left" valign="top">
+    <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+      <tr style="vertical-align: top; padding: 0;" align="left">
+        <td class="wrapper" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; position: relative; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 10px 20px 0px 0px;" align="left" valign="top">
+
+          <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
+            <tr style="vertical-align: top; padding: 0;" align="left">
+              <td style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                  <h5 style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 1.3; word-break: normal; font-size: 24px; margin: 0; padding: 0;" align="left">Ready to book? We've got last-minute openings!</h5>
+                  <br />
+                <p class="no-margin-bottom" style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0;" align="inherit">We have openings including <strong style="font-weight: bolder !important;">Haircut Level 2 Clipper Cut</strong> and thought you might be interested since you've booked this before.<br /><br /> We have openings available for Monday!</p>
+                <br />
+                <!--TODO [#141036829]: remove nil from selected discount check-->
+
+                <table class="button success radius" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: inherit; padding: 0;">
+                  <tr style="vertical-align: top; padding: 0;" align="left">
+                    
+    <td style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 16px; display: block; width: auto !important; background: default; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; cursor: pointer; margin: 0; padding: 8px 0; border: 1px solid #4caac9;" class="email-primary-btn" align="center" bgcolor="#4caac9" valign="top">
+      <a style="color: #ffffff !important; text-decoration: none; font-weight: normal !important; font-size: 16px; display: block;" target="_blank" href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs2S4Sx0pWjtGdiLlr-2FW5xVabQrT3zscEejgemPnfpMG-2Bduz-2FOOvcWt-2BV-2FQtf3btNIzkdRSrdFUEmtkwWy5xNlNYIvTsAx2zqpc-2B4sGhvFahCwJjptDMJMbbNV-2B56zWbapQj5-2FPskkByoqjOxTBqJRpvTLEmHSfFLnBzYFeeIpuYwJYOzLH2g-2Bl23wq-2FBMylodRkUU1dqsWQ-2BmJwgtrgQxfQRfpwpQP4jWR2pXRvxRmJZwi3lw7fvO1YfVKD4Mh3MGA-3D-3DvEfd_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6bEBjf23eoqKGdHcUgbo4licPxictC1Nr8mfGFdzIDuY-2BrSI0TudX2WxJjltfHzoPI9rjr-2B57xZywQJTyyax1LSL8dfeE4zv3G6Sd32QkFIzCCVwYQNUvQt3y46d4hayvATcU33DqJ3bzGlIO0hYxLs-3D">
+        Book Now
+      </a>
+    </td>
+    
+                  </tr>
+                </table>
+                <br />
+                <p class="center" style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0 0 10px; padding: 0;" align="center"><strong style="font-weight: bolder !important;">Not ready to book?</strong></p>
+                <table class="tiny-button secondary radius" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: inherit; padding: 0;">
+                  <tr style="vertical-align: top; padding: 0;" align="left">
+                    <td style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #fff; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 13px; display: block; width: auto !important; background: default; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin: 0; padding: 5px 0 4px; border: 1px solid #0a7c8e;" align="center" bgcolor="#0a7c8e" valign="top">
+                      <a target="_blank" href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs2OMHdyzgxqa5ZRWt59GlpbJIi-2Boalmqeqj1cVZvfRc7pNXM_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6URqtc-2BZ2sIIdZovhbS5uY3rFbT3wJRyEbir0MlrhIyEou0-2F3XWBi2JiUeeGw-2BDtWUp26ZWA6awVLKhfDNriA8A3kmThNoachk1aPVMnL-2BT1jT5iptJqaT15-2BXAxCNVxWP7zEZFNKBsEgVgtW7tiqp4-3D" style="color: #fff !important; text-decoration: none; font-weight: normal !important; font-size: 13px; display: block;">
+                        I'm interested, but can't make it this time
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+                <br />
+                <table class="tiny-button secondary radius" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: inherit; padding: 0;">
+                  <tr style="vertical-align: top; padding: 0;" align="left">
+                    <td style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #fff; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 13px; display: block; width: auto !important; background: default; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin: 0; padding: 5px 0 4px; border: 1px solid #0a7c8e;" align="center" bgcolor="#0a7c8e" valign="top">
+                      <a target="_blank" href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs7pMcB7JPN-2BlMLoy8NJVODwuq9tMSGs-2FAcHeIUotRhNd6qeFVcE472F0WVybBFkdBw-3D-3DuSHw_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6fD46CjSYz-2FxRA-2FMZ8-2Fwhgy5dMJ8mkptIwOe7wrCT6g1afqLG-2FEGbpA3-2FkWEs3Tn7PCBCqAjE3AvRGgZ4n9zOEy0XdgAijgCAGWaXq2AG0WSkWrTpNuNqRa1cwz-2BaRFStQ6mU8vIUyTqq5bGXGJlMwc-3D" style="color: #fff !important; text-decoration: none; font-weight: normal !important; font-size: 13px; display: block;">
+                        Don't send me last minute openings
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="expander" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; visibility: hidden; width: 0px; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0;" align="left" valign="top"></td>
+            </tr>
+          </table>
+        </td>
+        <td class="wrapper last" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; position: relative; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+  <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
+    <tr style="vertical-align: top; padding: 0;" align="left">
+      <td class="center" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0px 0px 10px;" align="center" valign="top">
+          <img class="profile-image" style="max-width: 280px; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; clear: both; display: inline !important; border-radius: 4px; margin-bottom: 5px; padding: 4px; border: 1px solid #dddddd;" src="https://cdn.filestackcontent.com/yOAwQYFRjygriaDv8gWV?signature=389f71d96c67d7d899609d0def7b3194bc5c339fe7b55f226aafd8f59ed5f5c4&amp;policy=eyJjYWxsIjoicmVhZCIsImV4cGlyeSI6NDYzMzM2MTQ2OH0%3D" alt="Yoawqyfrjygriadv8gwv?signature=389f71d96c67d7d899609d0def7b3194bc5c339fe7b55f226aafd8f59ed5f5c4&amp;policy=eyjjywxsijoicmvhzcisimv4cglyesi6ndyzmzm2mtq2oh0%3d" align="none" />
+          <br />
+        <h6 class="center" style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 1.3; word-break: normal; font-size: 20px; margin: 0 0 5px; padding: 0;" align="center">The Salon Professional Academy</h6>
+
+          566 Theater Road
+  <br />
+  Onalaska, WI 54650<br />
+
+          <p class="center" style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0 0 10px; padding: 0;" align="center">
+    <strong style="font-weight: bolder !important;">+1 (608) 336-5219</strong>
+  </p>
+
+          <p class="center" style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0 0 10px; padding: 0;" align="center">
+    <a target="_blank" href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs9eGtTiQbIydlkZfSXkhABjVObmkDv2jF7Ps5Um2qD1I4XCX_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6RzNK53uKx1C0CfxLNgALtKeOWV7F1oiCbDxlsLOFd99n0CXQVPCRHJX7JnUC87-2Fvi0PSBRWLapGhA-2BrdFjwgL6ncVPGR1oL9S2GwaXwS-2Fo2vl84TmmYRQuo1FBc3bsmU1NQOIE9T6CfceH5NIMbQuE-3D" style="color: #0a7c8e; text-decoration: none;">
+      Visit Our Website
+    </a>
+  </p>
+
+          <p class="center" style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0 0 10px; padding: 0;" align="center">
+            <a data-bypass="true" href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs2S4Sx0pWjtGdiLlr-2FW5xVabQrT3zscEejgemPnfpMG-2Bduz-2FOOvcWt-2BV-2FQtf3btNI-2BGtg6SL70Bqu8g-2BM7WJOP4P5NG21RIws9y09HUggO8u5lV-2BPCDaNI8PoFYCLnAsMsSKko9vPn-2FaPXi-2BQB-2BXIqSbIK-2F6hdUBTPk8YD1N7dZeJOmG5i8Qa-2F7k3Y2lUezBFA-3D-3DsA8Z_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6YLWMUIHnGw2DHaJ0SSFuldF33lY5knvzvVhhjhVyzOGwlaWXOuSlu1ZEtLoQatRCSfiAZVM5Ismvlf-2BkdWU9Ed95SuX-2BfBIapoCQPnTtNqT8mIk6-2FMp6Ls94VRZ8LUZfFKqqFt34Wyf4vtcSgy8Mu4-3D" style="color: #0a7c8e; text-decoration: none;">
+              Refer Your Friends!
+            </a>
+          </p>
+        <p class="center" style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0 0 10px; padding: 0;" align="center">
+    <a target="_blank" href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs9eGtTiQbIydlkZfSXkhABhUD7PIGdIQov7dhtIT5kS9xvfNOFxgSLSZFrjV8qB-2F-2BCcdpCj7wd9F6c9e12gdzUUUSbDJgpxmelmj6GumVgSFlbFz_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6VpnyiqO81GwzV5P7lrspJMOXS00JRe-2B7VYuLZoCclnv9LGokXdosRaIxHgWvq-2FGAtdFfmfSyyQlB9sX30so9J-2Bq5LwIA-2FwVsJFy9uPnkxgOa3-2Fa6HdI-2BJSVZG3LFAXsWgiEvfajd2Ku2HAeVjf9Aps-3D" style="color: #0a7c8e; text-decoration: none;">Facebook</a>
+     • 
+    <a target="_blank" href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs9eGtTiQbIydlkZfSXkhABhUD7PIGdIQov7dhtIT5kS9kWvTeFdej2FxoLkoAZk4HogGYl2xi-2BmdMX-2BGWewUe7apgU3mJmRXlLvQbRQBRsGA3NvS_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6USRFWXC9wWbdhLx5bPfXwknTHpKvK52oLDcKvmCfvI6ejwVOHqkBOrMQozeQv-2B-2FToboojW9LZBLe-2FI3F3Voxoe53Ki8tDTtGhIQFLdtMqOsZAOQ-2Fx9LcqD5zYzsvkFuEOA-2BbpyaqUsRMmrTUH3R3Io-3D" style="color: #0a7c8e; text-decoration: none;">Google</a>
+    
+</p>
+
+          <p class="center" style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0 0 10px; padding: 0;" align="center">
+    <a target="_blank" href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs2S4Sx0pWjtGdiLlr-2FW5xVabQrT3zscEejgemPnfpMG-2Bduz-2FOOvcWt-2BV-2FQtf3btNI0tlXY7iEM52G33Msxs07g3Pv-2F1pgMJDWyDDQzk7ZfjF7FWVZuqXDLpSAOFwjelq-2FJNZDMMCZNghDG6bOEuRgPi-2FFvIWLTiItVQ2uaHPYXIhOminPcuVc2GxmpZ8K8nTzoT-2FpXmqL0Xv3vRfVH-2FaObc-3DHvp0_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6U9e9QOwBFCv3ODdNGOfoJU0Kt-2BkY73hsOYrEbUGCveZcINdwGOnkVY8sWmPvJtXNV-2B2o-2B3h9iSV1I1pU04AOeZ0tBxYoCATCVJBZOdtHzG4VA9osTE-2FM4vIPE6fluwGfmwtxz-2BSVQPJ4PN9TbK9NFs-3D" style="color: #0a7c8e; text-decoration: none;">
+      Get Directions »
+    </a>
+  </p>
+
+          <p class="center no-margin-bottom" style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0;" align="center">
+    <a target="_blank" class="center" href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs2S4Sx0pWjtGdiLlr-2FW5xVabQrT3zscEejgemPnfpMG-2Bduz-2FOOvcWt-2BV-2FQtf3btNI0tlXY7iEM52G33Msxs07g3Pv-2F1pgMJDWyDDQzk7ZfjF7FWVZuqXDLpSAOFwjelq-2FJNZDMMCZNghDG6bOEuRgPi-2FFvIWLTiItVQ2uaHPYXIhOminPcuVc2GxmpZ8K8nTzoT-2FpXmqL0Xv3vRfVH-2FaObc-3DxaoR_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6a8lo-2BBrd3pfSKPwvEtdq-2F0wvzGHXliunDJT9pFikrtKbXaVqu5c-2FhbFf913crOejkKCW-2BJw9w7qVPV78fr1n5smMCXhh7Y0MOnwJngknwImM5EEed43H9sT0xXYKgDMlSC5FywFelqv1bpM3NOTIEU-3D" style="color: #0a7c8e; text-decoration: none;">
+      <img class="bordered map" src="https://d34oxwxegf4jrt.cloudfront.net/api/google_maps_helpers/24eeb595-8df3-4d3f-bd53-7b250584f4a3/static_map/1621017513.png?size=250x220" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; clear: both; display: inline !important; border: 1px solid #ccc;" align="none" />
+    </a>
+  </p>
+
+      </td>
+      <td class="expander" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; visibility: hidden; width: 0px; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0;" align="left" valign="top"></td>
+    </tr>
+  </table>
+</td>
+
+      </tr>
+    </table>
+      <table class="row callout" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+    <tr style="vertical-align: top; padding: 0;" align="left">
+      <td class="wrapper last no-padding-bottom" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; position: relative; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 10px 0px 0;" align="left" valign="top">
+        <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+          <tr style="vertical-align: top; padding: 0;" align="left">
+            <td class="center" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0px 0px 10px;" align="center" valign="top">
+              <center style="width: 100%; min-width: 580px;">
+                  <span class="center" style="display: block; width: 100%; text-align: center;"><strong style="font-weight: bolder !important;">Get our special offers via text message!</strong>
+                    <br />
+                    <a href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSs7pMcB7JPN-2BlMLoy8NJVODywu4rxMPS2US0Z7wRK5LsxMS2ql0JV1ClKso7lA0Ynxg-3D-3DikHB_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6XivHxJ3NPvIM2UTFd5NBkJa52D3ULdKpUqd0BnMjiKmSLGU4ohcTjO4wwexekRBl3DWp8PUIzlSbUflGOa1Pt3kYuBVjtzqVKnR-2FdubsJpkooTSfiV2eJETl40KrE1W-2FncFOKr4CFrg1XSTQoeIUpE-3D" target="_blank" style="color: #0a7c8e; text-decoration: none;">Click here to opt-in to text messages</a> - No purchase necessary.
+                  </span>
+              </center>
+            </td>
+            <td class="expander" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; visibility: hidden; width: 0px; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0;" align="left" valign="top"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+    
+    <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+  <tr style="vertical-align: top; padding: 0;" align="left">
+    <td class="wrapper last" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; position: relative; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+
+      <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
+        <tr style="vertical-align: top; padding: 0;" align="left">
+          <td align="center" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0px 0px 10px;" valign="top">
+            <p class="center footer" style="color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 14px; font-size: 12px; margin: 0 0 10px; padding: 0;" align="center">
+              You are currently subscribed to marketing emails from The Salon Professional Academy.
+              <br />
+              No longer want these emails?
+              <a target="_blank" href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0LwHRW-2B9hWEZyjk9NIThQjVdYl-2Bgs8Nc5AXCJpGLRuVPFojszJhAH56C7cWdNidSswkfszgRazxWlpUKi3M4sZGekDOsqLSGceBtqA4xkii0Tk4A_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6UkYjy4KyBuHc3Sf1irseiL7HwGVIE3sASs2os3Gt04YdxKKyih7DuIt6kQGY4-2FSAj5tQw-2B-2BYX6v41Zbu1I2mlNsK4bNKQ3thmdQttj4NkImRQwZNE4Tlmdnlojm6RmS31f0MZYM2nit-2Ba3csPDUA7w-3D" style="color: #0a7c8e; text-decoration: none;">Unsubscribe</a>
+              <img id="opened-tracker" src="https://hirefrederick.com/emails/252cc845-2470-4e77-983c-74c133406f75/opened.gif" style="height: 1px !important; width: 1px !important; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; clear: both; display: block; margin: 0; padding: 0; border: 0;" border="0" alt="" width="1" height="1" />
+              <br /><br />
+              <a target="blank" href="http://cl.hirefrederick.com/ls/click?upn=9yBBLl0otc5NS53sQVbL0EMT1gORKFCBgMdczPaxeW9980p-2BfzaNOw8fP3XyCnuqBIvU9AnTFHQYhlqqwemGmeG3dRn02BcI7v-2BLGBefTDlJyYDsvUitu1SqEPA4x2qeiL6M4BvqwYupzOnSy9Xwfg-3D-3DG2ju_pMMt9G-2BNGQm6YsIzqDuSwk2AWe-2BWeCh7Ehz3TtqioWSR2rWKfdSd0V4lTKYB3WDOR4PWNkRvjCvHSrsIwrCSSSTjomHfgo0A9-2BlBOHX6VTlfy22zfCbabSSwU2fCbShrG9kKp5iqnoMoVVtXo-2FhN6VPKWhvWPRDwZsfZWI0aqHXiV8i1qXRiMoFCzOTPEdkewdjssg16PMcuW6Iv7UMKaVmLr1hOviNIG6GG1IrrTdZ5ZJwUns81aNbiNBl-2F-2F3EBEVMXNHJkjO898K-2BrxM8P2OJ2c2F0z20W4gXHISE3pDc-3D" style="color: #0a7c8e; text-decoration: none;"><img class="powered-by-logo" alt="Powered by Mindbody" src="https://d3r1k37civ3kcv.cloudfront.net/assets/mb-powered-by-lockup-charcoal-v1.png" width="115" height="34" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: 115px; max-width: 100%; clear: both; display: block; height: 34px; margin: 0 auto; border: none;" /></a>
+            </p>
+          </td>
+          <td class="expander" style="word-break: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; visibility: hidden; width: 0px; color: #393939; font-family: 'Helvetica Neue', helvetica, verdana, arial, sans-serif; font-weight: 400; line-height: 19px; font-size: 15px; margin: 0; padding: 0;" align="left" valign="top"></td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+  </td>
+</tr>
+
+        </table>
+
+      </center>
+    </td>
+  </tr>
+</table>
+<img src="http://cl.hirefrederick.com/wf/open?upn=mweMMgkj8FbV4Zh-2B4o4HFyTa58yCHLcOqcxhjPZaBFG0qJ4rfm-2Fpv3DZVtWi93hVXDDtLHfGDqarBc2bwlU-2FKS3d7ztxyLto1b9K-2FPUQW6IL2-2FgU-2FW2HIkuLlFrS-2FQtMv9RJ8URS2LBobkBVYlUryEGw5dVAi2qj5VLfot2UgTUU25n4yqD00PwG4p5CuxatiuAiQ7tFT-2BDE2wvdA-2FpXcb0CrRGg7dc1hRP3r3622zapRIjLq-2B6-2FmVycRDnRNTob9MN7-2BAmBYfhRDn4pdshknkeq8qv6UPf-2Ftx9OrJShQMQ-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+
+----==_mimepart_652afd161e920_23fd776c1b64046802226--

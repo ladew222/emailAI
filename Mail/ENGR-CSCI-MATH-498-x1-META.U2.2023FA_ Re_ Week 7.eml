@@ -1,0 +1,441 @@
+Received: from PH0PR20MB4397.namprd20.prod.outlook.com (2603:10b6:510:143::9)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023
+ 19:38:27 +0000
+Received: from CH2PR12CA0010.namprd12.prod.outlook.com (2603:10b6:610:57::20)
+ by PH0PR20MB4397.namprd20.prod.outlook.com (2603:10b6:510:143::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.38; Thu, 12 Oct
+ 2023 19:38:24 +0000
+Received: from CO1PEPF000044F2.namprd05.prod.outlook.com
+ (2603:10b6:610:57:cafe::19) by CH2PR12CA0010.outlook.office365.com
+ (2603:10b6:610:57::20) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.27 via Frontend
+ Transport; Thu, 12 Oct 2023 19:38:24 +0000
+Authentication-Results: spf=pass (sender IP is 167.89.52.170)
+ smtp.mailfrom=sendgrid.net; dkim=pass (signature was verified)
+ header.d=sendgrid.net;dmarc=none action=none
+ header.from=viterbo.edu;compauth=pass reason=704
+Received-SPF: Pass (protection.outlook.com: domain of sendgrid.net designates
+ 167.89.52.170 as permitted sender) receiver=protection.outlook.com;
+ client-ip=167.89.52.170; helo=xtrwpqxx.outbound-mail.sendgrid.net; pr=C
+Received: from xtrwpqxx.outbound-mail.sendgrid.net (167.89.52.170) by
+ CO1PEPF000044F2.mail.protection.outlook.com (10.167.241.72) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Thu, 12 Oct 2023 19:38:23 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=from:subject:list-id:list-help:list-unsubscribe:in-reply-to:
+	references:mime-version:reply-to:to:content-type:cc:content-type:from:subject:to;
+	s=smtpapi; bh=jUWQemQa5pqnAA/6s49Y3OtCC52WkVB6gDwMdAgXKZE=;
+	b=qfr8EMdE2LNLYtlCmUjwiZBO8bsJUgTJ/92SFfN/gkYh8p3emNNwTH1SP2AE2uiJGS8Z
+	VW0GIBzZ48NDN0/TBtJceRR9Hjz0dMdJvsc+kse2QnSlaJkGKu9TDiJxejCYWwjVc63JFm
+	HkfYijPFw9eejCgsVlp6HKH8WvufT6gww=
+Received: by filterdrecv-844d58c894-djbcz with SMTP id filterdrecv-844d58c894-djbcz-1-65284B2E-74
+        2023-10-12 19:38:22.821917792 +0000 UTC m=+170098.825516477
+Received: from saas-admin01c (unknown)
+	by geopod-ismtpd-1 (SG) with ESMTP
+	id 1A_-NQKFRruPqllYcH1ncg
+	for <egweinberg@viterbo.edu>;
+	Thu, 12 Oct 2023 19:38:22.786 +0000 (UTC)
+Date: Thu, 12 Oct 2023 19:38:22 +0000 (UTC)
+From: "Gabriel Rombalski (via Viterbo)" <gromba76084@viterbo.edu>
+Subject: ENGR-CSCI-MATH-498-x1-META.U2.2023FA: Re: Week 7
+Message-ID: <9d131811f656ada85f15f20eaf685226c91d25a35a416c638b3ab0121df234e7@moodle.viterbo.edu>
+X-Mailer: PHPMailer 6.5.3 (https://github.com/PHPMailer/PHPMailer)
+List-Id: "Meeting Minutes" <moodleforum144139@moodle.viterbo.edu>
+List-Help: https://moodle.viterbo.edu/mod/forum/view.php?f=144139
+X-Course-Id: 59610
+X-Course-Name: ENGR-CSCI-MATH-498-x1-META.U2.2023FA
+Precedence: Bulk
+X-Auto-Response-Suppress: All
+Auto-Submitted: auto-generated
+List-Unsubscribe: <https://moodle.viterbo.edu/mod/forum/subscribe.php?id=144139&d=623119>
+In-Reply-To: <c37f92d736cec08ef630fd564348e6e55b6772ec278f6f8602b369f65add02ab@moodle.viterbo.edu>
+References: <c37f92d736cec08ef630fd564348e6e55b6772ec278f6f8602b369f65add02ab@moodle.viterbo.edu>
+Thread-Topic: ENGR-CSCI-MATH-498-x1-META.U2.2023FA: Week 7
+Thread-Index: c37f92d736cec08ef630fd564348
+Reply-To: Gabriel Rombalski <gromba76084@viterbo.edu>
+X-SG-EID:
+ =?us-ascii?Q?Q0rxmTVFwGukHT87OYNDGSZaI5FSH2DpMf+0F+sLDwhVuRr5cWuV+O5BZqkaXJ?=
+ =?us-ascii?Q?7Rfu2XeAsLI5ynpywlngywKhwHwI+AJmf8iOsfH?=
+ =?us-ascii?Q?nKdioMO=2FFpvbViFXQ9BhVYvTCP5VI8FFeGrRhLn?=
+ =?us-ascii?Q?+v8ATqq=2FaincCKeMuMzCUEt0WfCloGr6s1QKuFs?=
+ =?us-ascii?Q?tvlF5HAG6fPaSA2ARNcfEUi3cAyt2ILanJ4nVd1?=
+ =?us-ascii?Q?TIaRpYz0OyZMIySwD=2FTbHhJ4Md6tIpKeMjfbaR5?=
+ =?us-ascii?Q?AsZEWr0SCjtmWflWuhl8IM6kITkDKE9DYJd0mFY?= =?us-ascii?Q?Bm0=3D?=
+To: Eric Weinberg <egweinberg@viterbo.edu>
+X-Entity-ID: D4NCMPyVXHFW/SCj6o5gxg==
+Content-Type: multipart/alternative;
+ boundary="b1_MPz0vbqrv1RVErPwt22vDe213nC4kaoFfcQHGmDePg"
+Return-Path: bounces+13139427-4f1b-egweinberg=viterbo.edu@sendgrid.net
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2023 19:38:23.6637
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ ed489e0a-91c3-4224-ea6b-08dbcb5acc35
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ CO1PEPF000044F2:EE_|PH0PR20MB4397:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ CO1PEPF000044F2.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: ed489e0a-91c3-4224-ea6b-08dbcb5acc35
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:167.89.52.170;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:SKN;H:xtrwpqxx.outbound-mail.sendgrid.net;PTR:xtrwpqxx.outbound-mail.sendgrid.net;CAT:NONE;SFS:(13230031)(4636009)(451199024)(1690799017)(966005)(66899024)(26005)(7636003)(426003)(16799955002)(83170400001)(356005)(84300400001)(166002)(336012)(42882007)(3450700001)(7596003)(83380400001)(58800400005)(6916009)(6636002)(8676002)(19810500001)(76236004)(5660300002)(1096003)(76899018)(1406899027)(39280500004);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2023 19:38:23.4450
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: ed489e0a-91c3-4224-ea6b-08dbcb5acc35
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1PEPF000044F2.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR20MB4397
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.0512725
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?ngp1SRXFNsuyTtg3U1HyWq99WOnlh/g0uUlsquj0F5K7W2e6zDG6VfZLjf?=
+ =?iso-8859-1?Q?KXTrO1TA7n3YGFIZosBb/RMrjfSuNILBGYUaUThHiwOZkN44f/9jTmQtUS?=
+ =?iso-8859-1?Q?a++TVfFZ387E416OlX7kNY0dHtTACsElH1hCL1TtSpwuRiiS5wTQ9/QQy9?=
+ =?iso-8859-1?Q?Rn7jM0jowDeOXYmxY+9dfRtsPGftJCFuFY+pvngGxpK8A5gHx/wAZ8mvyd?=
+ =?iso-8859-1?Q?WbXmbPyZqY5x/WZTWWpQeDpIPrTYoR4KOhGBtT5Afrwlrc3/dBkFK/Icxw?=
+ =?iso-8859-1?Q?dL91Y10nGSE5YiYjGPgLHoNWeKvKSvYVGpqOnhK2QpquGNoQm5n2klC/4r?=
+ =?iso-8859-1?Q?ypbffHKCoxjB9arj/v9skRZIge3N3kRLfKYqVtxdmS0tl2oXasDqJbnSIF?=
+ =?iso-8859-1?Q?WE2hhBK9y2oCucKJ09WE4strVEpoEC3LBulJtvxHpuvl6qVo9wUYGGrpy4?=
+ =?iso-8859-1?Q?mgHzbZHpfak8+sW37P+e12tmWrquFOOH2Z0XV0llNwjEoMToJqDxrnZNap?=
+ =?iso-8859-1?Q?zdfl0ryVdofecAzbLOO2fn3fwAxvXm/LGUv+eoaG+rCvZm04mx2GTsPFNf?=
+ =?iso-8859-1?Q?SnToHJ5j98ZmNCBoCZR1FOjeEYWG1Z5gLyOWmxBLYj1ll9zvMZGlAnetD2?=
+ =?iso-8859-1?Q?HTiG7+l1OkfaSrKcgvpzEU5cjNK8FBItD3AqD0dBroxoyRATibJ4NaQL9y?=
+ =?iso-8859-1?Q?ICwAyHTmunjZb1Y3NV/rKcxDONLFYhXYcjkuHzdZqC6aSIomwcNt0G28VG?=
+ =?iso-8859-1?Q?S4YkkegTqtHmN26HUV5Kj+ySVD6HEXKRNQk3/JDx/3AdbCjbQVFx0WMUhx?=
+ =?iso-8859-1?Q?wFJ3srQFsIqzpCgch4dFg+emCnw/uvBIKgD+l71iJjQOKyVmnDRgAsx9KQ?=
+ =?iso-8859-1?Q?OA546zIoZ/tpHdIoRRuaIV+L5EFJMM9BLLpFuC4AIs74UUkMUAMDdXv3Af?=
+ =?iso-8859-1?Q?mYTAN68nTEAxO3HUV4zxv8CsoEtUGN93fiGH5+DWWZRi1nG3S8tEqp68YE?=
+ =?iso-8859-1?Q?d51BkAaF4mBYT1gIdneHO2K883wsLIU7wG/DjGNaErFSy3+NTLS06IOXPq?=
+ =?iso-8859-1?Q?6pmwggLK/eYaKNzR18fPxsBNnr756nd7kR7ErsdAoZV9EAlnCT+kixU/G+?=
+ =?iso-8859-1?Q?jA48iMezLxo3NEIhr0PL6kAcGPR9P3zZ7SbbC4eAu9Kvg4fO8IeRdK70ss?=
+ =?iso-8859-1?Q?QptjV4Fee8XuNzQe49OjUiIyxoPu18SOIzwiG3WoAdoCGLOTYbZ/B/+CdQ?=
+ =?iso-8859-1?Q?yV0B2e/q8AmXnfFNRNwgtFwuRiJ9tTX5IuNazHEBbZEMZ6yDmZGKu3gCeU?=
+ =?iso-8859-1?Q?4z1xK+26GlfX5JxHg+P5j1n2PNQfASMrT76ndGdgVTb+v3Obh0WDO/HJNu?=
+ =?iso-8859-1?Q?ruWVsJZ/iCyMhJ4M8VwIDOgKtp/HaNhw=3D=3D?=
+MIME-Version: 1.0
+
+--b1_MPz0vbqrv1RVErPwt22vDe213nC4kaoFfcQHGmDePg
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+
+ENGR-CSCI-MATH-498-x1-META.U2.2023FA -> Forums -> Meeting Minutes -> Week 7
+https://moodle.viterbo.edu/mod/forum/discuss.php?d=3D623119#p2046706
+Re: Week 7
+by Gabriel Rombalski - Thursday, October 12, 2023, 2:07 PM
+---------------------------------------------------------------------
+10/12/2023 - Meeting (entire team)
+
+*
+Eric: since the database schema is built every time the app runs, if we are
+running the app on a server here, and then we need to change to a
+cloud-based server, will we lose the data and the database and start from
+scratch again?=A0
+
+*
+That would be bad
+
+*
+Add a training section to the app where facilities can add any training
+they want
+
+*
+Attendance:=A0
+
+*
+Gabe (meeting organizer)
+
+*
+Grace
+
+*
+Stefan
+
+*
+Goals for this meeting:
+
+*
+Set up goals for Sprint 2
+
+*
+Come up with a strategy for meetings going forward
+
+*
+Narrowing the scope of the project
+
+*
+Decide means of communication outside of meetings (Snapchat, text, etc.)
+
+*
+Notes
+
+*
+Grace had divided the outlook for the project, ideas for designating tasks
+to certain people
+
+*
+We set up our goals for Sprint 2, and we divvied tasks for the coming weeks
+
+*
+To do by the next meeting
+
+*
+Gabe: Come up with an idea of who to collect data from, what data to
+collect
+
+*
+Stefan: Troubleshooting code / brainstorm possible app implementations
+
+*
+Grace: Start trying to establish connections with volunteers, contact Colin
+Burns-Gilbert
+
+---------------------------------------------------------------------
+This is a copy of a message posted in ENGR-CSCI-MATH-498-x1-META.U2.2023FA.
+
+To reply click on this link:
+https://moodle.viterbo.edu/mod/forum/post.php?reply=3D2046706
+Unsubscribe from this forum:
+https://moodle.viterbo.edu/mod/forum/subscribe.php?id=3D144139
+Unsubscribe from this discussion:
+https://moodle.viterbo.edu/mod/forum/subscribe.php?id=3D144139&d=3D623119
+Change your forum digest preferences:
+https://moodle.viterbo.edu/mod/forum/index.php?id=3D59610
+
+--b1_MPz0vbqrv1RVErPwt22vDe213nC4kaoFfcQHGmDePg
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1"><div class=3D"navbar">
+    <a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fcourse%2Fview.php%3Fid%3D596=
+10&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ced489e0a91c34224ea6b08db=
+cb5acc35%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327363076368732%7C=
+Unknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiL=
+CJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DXv0NkZkzzDfjmQ86341AZp75J9xNww%2B=
+fFq73dTttb5o%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.viterbo.edu=
+/course/view.php?id=3D59610" shash=3D"kX5RYL7SBYU7VwkcJMstKr0Iq2guKYlzI616Q=
++9nmg5R8T2M1Gd9kQELDkvCUw4sDCPhQ2jyiABbdJ9qTPWgD0Cf5yGpdHgrTbOD6wEjmrj6hkCg=
+1CcXk4EvXTTqenZw9c7V53lNbCMxnjaQ9/JmPE4wOS8ybdSXhXS0pjQ8UMk=3D">ENGR-CSCI-M=
+ATH-498-x1-META.U2.2023FA</a>
+    =BB
+    <a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Findex.php%3Fid=
+%3D59610&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ced489e0a91c34224ea=
+6b08dbcb5acc35%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327363076368=
+732%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1=
+haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DIiqIa0Lg3v%2BVJd5EzCcr3Ey4G=
+3Yh6xkd1WudA0SxlNg%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.viter=
+bo.edu/mod/forum/index.php?id=3D59610" shash=3D"OxcoIPAbAIqDFvAAFZtxU1/EiKT=
+q2IZTOLhseY/NbSwwue9hZqXQNQrIPFgN+IS0lIWspjwMtMdk5p7TFBkgLN2I0jFk4pMexALDPx=
+xUTG7IiwTw5V5ysmmx7bPU3kj632vDyPilvMbtGcyWMxqNz1WHRnghCF/6eY1frN1MN+s=3D">F=
+orums</a>
+    =BB
+    <a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Fview.php%3Ff%3=
+D144139&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ced489e0a91c34224ea6=
+b08dbcb5acc35%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383273630763687=
+32%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1h=
+aWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DTfiD%2BrAd1YU1HhR%2F8zkuTK62=
+crCOXSuXz%2Fv5k5IiYEI%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.vi=
+terbo.edu/mod/forum/view.php?f=3D144139" shash=3D"ZdjnG/pHeT2eFlKGDpqPMunKT=
+4DeptHU1W5cPKeyaTbfnwIj2pP+UJLQW6AA9gK2tJUI6Yvd0itb6Q/VcjfBM1vReqaFiDVLc6oY=
+zCHS7V0HWVVpB/UFSafQjEsXLXU2UF06C0/NcWqcO5P6RA+p/75JEZaiYXif8WPvGq7wc4E=3D"=
+>Meeting Minutes</a>
+    =BB
+    <a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Fdiscuss.php%3F=
+d%3D623119&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ced489e0a91c34224=
+ea6b08dbcb5acc35%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383273630763=
+68732%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6I=
+k1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D8NtSRVluzO5qklNF8BvU0IgiA=
+4mlzpRdbL4NRWnmEG4%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.viter=
+bo.edu/mod/forum/discuss.php?d=3D623119" shash=3D"UE791b3IqQmSxGuJt1DLFlLVc=
+EaF8qFt4wwDM9AuOjlYMBrIfKcH/Wk6kzIJOd6ZqZEWvYK0xxAATc/ru4OrgaQJ9eXgOlG1PTcJ=
+nZ/csW2TPeGcM3atso3mEGDDmUTe0R1DWPKI4bqjGWfBYHAjwz7tIYd9pcNYN8YT+OBhMCM=3D"=
+>Week 7</a>
+</div>
+
+<table border=3D"0" cellpadding=3D"3" cellspacing=3D"0" class=3D"forumpost"=
+>
+    <tr class=3D"header">
+        <td width=3D"35" valign=3D"top" class=3D"picture left">
+            <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fuser%2Fview.php%3Fid%3D46636%26course=
+%3D59610&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ced489e0a91c34224ea=
+6b08dbcb5acc35%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327363076368=
+732%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1=
+haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3Dr0167kjg1TsQkh14rl%2BIMr%2F=
+IlC%2BLx7fs3lsUNeFdZ%2Bo%3D&amp;reserved=3D0" originalsrc=3D"https://moodle=
+.viterbo.edu/user/view.php?id=3D46636&amp;course=3D59610" shash=3D"LxKmFerw=
+rnGHtF7EBC8w1xFK+/Me4zxP7PMcAgXDk1cjejC1nbsYrO6e/TILuAJPQG0OyVILSwQjjpu8c4m=
+wl6vaaFfP+JIh7pfInU1N9evFBP17Ox3pfaTaQo2AO7ZX0js5Zhc3RnZPVSEOXDfiSOmhiZQSKg=
+ESx/yP05Th4OE=3D" class=3D"d-inline-block aabtn"><img src=3D"https://moodle=
+.viterbo.edu/pluginfile.php/1368909/user/icon/boost_campus/f2?rev=3D2543383=
+2" class=3D"userpicture" width=3D"35" height=3D"35" alt=3D""></a>
+        </td>
+        <td class=3D"topic ">
+            <div class=3D"subject">
+                Re: Week 7
+            </div>
+            <div class=3D"author">
+                by <a target=3D"_blank" href=3D"https://nam02.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fuser%2Fview.p=
+hp%3Fid%3D46636%26course%3D59610&amp;data=3D05%7C01%7Cegweinberg%40viterbo.=
+edu%7Ced489e0a91c34224ea6b08dbcb5acc35%7C6b9fc982e8d74958976cb08441cc9b0b%7=
+C0%7C0%7C638327363076368732%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3Dr01=
+67kjg1TsQkh14rl%2BIMr%2FIlC%2BLx7fs3lsUNeFdZ%2Bo%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://moodle.viterbo.edu/user/view.php?id=3D46636&amp;course=3D=
+59610" shash=3D"LxKmFerwrnGHtF7EBC8w1xFK+/Me4zxP7PMcAgXDk1cjejC1nbsYrO6e/TI=
+LuAJPQG0OyVILSwQjjpu8c4mwl6vaaFfP+JIh7pfInU1N9evFBP17Ox3pfaTaQo2AO7ZX0js5Zh=
+c3RnZPVSEOXDfiSOmhiZQSKgESx/yP05Th4OE=3D">Gabriel Rombalski</a> - Thursday,=
+ October 12, 2023, 2:07 PM
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class=3D"left side" valign=3D"top">
+                &nbsp;
+        </td>
+        <td class=3D"content">
+            <div class=3D"text_to_html"><b></b><p dir=3D"ltr">10/12/2023 - =
+Meeting (entire team)</p><ul><li dir=3D"ltr"><p dir=3D"ltr">Eric: since the=
+ database schema is built every time the app runs, if we are running the ap=
+p on a server here, and then we need to change to a cloud-based server, wil=
+l we lose the data and the database and start from scratch again?&nbsp;</p>=
+<ul><li dir=3D"ltr"><p dir=3D"ltr">That would be bad</p></li></ul></li><li =
+dir=3D"ltr"><p dir=3D"ltr">Add a training section to the app where faciliti=
+es can add any training they want</p></li><li dir=3D"ltr"><p dir=3D"ltr">At=
+tendance:&nbsp;</p><ul><li dir=3D"ltr"><p dir=3D"ltr">Gabe (meeting organiz=
+er)</p></li><li dir=3D"ltr"><p dir=3D"ltr">Grace</p></li><li dir=3D"ltr"><p=
+ dir=3D"ltr">Stefan</p></li></ul></li><li dir=3D"ltr"><p dir=3D"ltr">Goals =
+for this meeting:</p><ul><li dir=3D"ltr"><p dir=3D"ltr">Set up goals for Sp=
+rint 2</p></li><li dir=3D"ltr"><p dir=3D"ltr">Come up with a strategy for m=
+eetings going forward</p></li><li dir=3D"ltr"><p dir=3D"ltr">Narrowing the =
+scope of the project</p></li><li dir=3D"ltr"><p dir=3D"ltr">Decide means of=
+ communication outside of meetings (Snapchat, text, etc.)</p></li></ul></li=
+><li dir=3D"ltr"><p dir=3D"ltr">Notes</p><ul><li dir=3D"ltr"><p dir=3D"ltr"=
+>Grace had divided the outlook for the project, ideas for designating tasks=
+ to certain people</p></li><li dir=3D"ltr"><p dir=3D"ltr">We set up our goa=
+ls for Sprint 2, and we divvied tasks for the coming weeks</p></li></ul></l=
+i><li dir=3D"ltr"><p dir=3D"ltr">To do by the next meeting</p><ul><li dir=
+=3D"ltr"><p dir=3D"ltr">Gabe: Come up with an idea of who to collect data f=
+rom, what data to collect</p></li><li dir=3D"ltr"><p dir=3D"ltr">Stefan: Tr=
+oubleshooting code / brainstorm possible app implementations</p></li><li di=
+r=3D"ltr"><p dir=3D"ltr">Grace: Start trying to establish connections with =
+volunteers, contact Colin Burns-Gilbert</p></li></ul></li></ul>
+</div>
+
+            <div class=3D"commands">
+                    <a target=3D"_blank" href=3D"https://nam02.safelinks.pr=
+otection.outlook.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%=
+2Fdiscuss.php%3Fd%3D623119%26parent%3D2011790&amp;data=3D05%7C01%7Cegweinbe=
+rg%40viterbo.edu%7Ced489e0a91c34224ea6b08dbcb5acc35%7C6b9fc982e8d74958976cb=
+08441cc9b0b%7C0%7C0%7C638327363076368732%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&am=
+p;sdata=3DoHlAfSr4Kaz1tfZis3riNxzJzN%2B6Qvp8Nzo9RGRLbVQ%3D&amp;reserved=3D0=
+" originalsrc=3D"https://moodle.viterbo.edu/mod/forum/discuss.php?d=3D62311=
+9&amp;parent=3D2011790" shash=3D"chGV9hYQoXD4bC2hAY4n0kIiBPsY8bL2NwRx6vv5Qe=
+dVBGS+Uism0MT6HwaQozSiaa3lpP+FZ/x86QVWjtLv0T5bTFBbGMV+FiJXOlzHCfNHSQvA5Yqo7=
+9FwaikjBkbIxgteyWLy/dHsHaD6OpZZWLFiYnC5m0GKixW0eptwFfs=3D">
+                        Show parent
+                    </a>
+                        |
+                    <a target=3D"_blank" href=3D"https://nam02.safelinks.pr=
+otection.outlook.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%=
+2Fpost.php%3Freply%3D2046706&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%=
+7Ced489e0a91c34224ea6b08dbcb5acc35%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7=
+C0%7C638327363076524953%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjo=
+iV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DaaPBrmA=
+MkgZRlj1%2FV19XhElQLGgOviC6nTe0KmC0sBQ%3D&amp;reserved=3D0" originalsrc=3D"=
+https://moodle.viterbo.edu/mod/forum/post.php?reply=3D2046706" shash=3D"XI9=
+xEBIFsYtT+TOR3uK9hwM+uxORkku4b1tMwUqJjje6DiIcidD/vMl5fSAqDQiQnB/NhMWjOMZbME=
+zUuMCCmCzFjYutN6wbKJZ6crhmatdYmDp150M3PN1AQbJ0+YSD6IOarFm8+txgRmmBqAz+BvO23=
+uwqeK1NlH+wDwuOGho=3D">
+                        Reply
+                    </a>
+            </div>
+
+            <div class=3D"link">
+                <a target=3D"_blank" href=3D"https://nam02.safelinks.protec=
+tion.outlook.com/?url=3Dhttps%3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Fdi=
+scuss.php%3Fd%3D623119%23p2046706&amp;data=3D05%7C01%7Cegweinberg%40viterbo=
+.edu%7Ced489e0a91c34224ea6b08dbcb5acc35%7C6b9fc982e8d74958976cb08441cc9b0b%=
+7C0%7C0%7C638327363076524953%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLC=
+JQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D6t=
+T6PFkLPBUCYHvWiN%2BqN0so8huqw8BNE5Othad%2BqZo%3D&amp;reserved=3D0" original=
+src=3D"https://moodle.viterbo.edu/mod/forum/discuss.php?d=3D623119#p2046706=
+" shash=3D"tIE2TOR3HUzbY6+tM5bz2LoZh3hOO+zdsi0ipZt98ZjwVD4rMbcPCilxXXG4lT16=
+WZi9vh2vQrS4ieuZSUiX3qcek21BBjMHw6gYjMs6TLe18rtr/XVWi5rrfcykPq+y4STyCSryzKC=
+FEAu5Rjf2Ngfwy+HCYvLv7Qct8EcWynE=3D">
+                    See this post in context
+                </a>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<hr>
+<div class=3D"mdl-align unsubscribelink">
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Fsubscribe.php%3Fid%3D144139&amp;=
+data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ced489e0a91c34224ea6b08dbcb5acc3=
+5%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327363076524953%7CUnknown=
+%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6=
+Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DzUVr2PQBKYo38Y0CNEEYVvc2OLVSLUYk%2BEBg6%=
+2BuZqb4%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.viterbo.edu/mod/=
+forum/subscribe.php?id=3D144139" shash=3D"JOMd2+O6hT+1sMylhbx7s6TCQ0nHxtVWp=
+Xh5sLlYjNNJgr+xn2kLJe+R2CckkCu1NsACQ8/Mn/Pu3+0s1u3XpB3xKbJh/1mg7aApLaDhqD68=
+Ocx3fdDekBBCZY53NpaIDomIJzyCHpguupVFeaUsr6peXzhqzE5bl6+cSJpxFYg=3D">Unsubsc=
+ribe from this forum</a>&nbsp;
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Fsubscribe.php%3Fid%3D144139%26d%=
+3D623119&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ced489e0a91c34224ea=
+6b08dbcb5acc35%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327363076524=
+953%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1=
+haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DNRTfTrfnWxdMEgVyTpqAlXQ3cxd=
+I%2Bq8tHe%2BtTn3vBYg%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.vit=
+erbo.edu/mod/forum/subscribe.php?id=3D144139&amp;d=3D623119" shash=3D"m4xQn=
+ebAq82roNr0a2ZQqwTHGTeOrZVxwZ4ZGNGx/+adThWrZqkCsQs7qoDxRQLpIzy3YfbSP8v9bG2n=
+XpJUO8zsama8/uRKlgCP20xtejEP1PeMXY3PIl7qMFwXREBBYSp+MOmat6FVFPdN5WlJgRoO55W=
+sENx1xVu3XlTX99U=3D">Unsubscribe from this discussion</a>&nbsp;
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fmoodle.viterbo.edu%2Fmod%2Fforum%2Findex.php%3Fid%3D59610&amp;data=
+=3D05%7C01%7Cegweinberg%40viterbo.edu%7Ced489e0a91c34224ea6b08dbcb5acc35%7C=
+6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327363076524953%7CUnknown%7CT=
+WFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%=
+3D%7C3000%7C%7C%7C&amp;sdata=3D8lKCqf7yfPaaR%2BYsssZMNGJHFAKsUCXAMscokqvE2l=
+4%3D&amp;reserved=3D0" originalsrc=3D"https://moodle.viterbo.edu/mod/forum/=
+index.php?id=3D59610" shash=3D"pIi+5LLl58YGrsM69nYtwrFm4EEd+4sP9fRids1i/Den=
+fCUwletHOr507N1Y+9pYjMRPHOhlxYB6DJkz8Rxb1sd7l3Tkrp5bGELITPz4zGW7Udm/V1kqLn6=
+lERqRvX94enJvEWioDSENiOa6Muwwjy+wiDdodjtWws9QaF3wxRA=3D">Change your forum =
+digest preferences</a>
+</div>
+<img src=3D"https://u13139427.ct.sendgrid.net/wf/open?upn=3DmweMMgkj8FbV4Zh=
+-2B4o4HF5rMdjckcxKsVog0fMxU67S1HWbR7DJ3PIDHEDUbqpGE4WHKCLnYiLgCjY5PPK6n6JAy=
+FsQCAbUCPdrvxRWIoC1h7Pce1xR0kF72GV0GQaGjqOQTXn8N0K1ioIUDyixvqra0ogQSEjXK21n=
+ZRINU-2BlszpNqEctwxygy5zHYY7URO-2FmbVblSsC3meDmrqZtOE7Bvu-2FgXjVkW1NArF66rt=
+-2Buk-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1p=
+x !important;width:1px !important;border-width:0 !important;margin-top:0 !i=
+mportant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0=
+ !important;padding-top:0 !important;padding-bottom:0 !important;padding-ri=
+ght:0 !important;padding-left:0 !important;">=
+
+--b1_MPz0vbqrv1RVErPwt22vDe213nC4kaoFfcQHGmDePg--

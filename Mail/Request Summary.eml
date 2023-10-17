@@ -1,0 +1,135 @@
+Received: from DS7PR20MB4878.namprd20.prod.outlook.com (2603:10b6:8:96::14) by
+ PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Fri, 13 Oct 2023 13:28:59
+ +0000
+Received: from MN2PR17CA0035.namprd17.prod.outlook.com (2603:10b6:208:15e::48)
+ by DS7PR20MB4878.namprd20.prod.outlook.com (2603:10b6:8:96::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.45; Fri, 13 Oct
+ 2023 13:28:56 +0000
+Received: from BL02EPF0001A105.namprd05.prod.outlook.com
+ (2603:10b6:208:15e:cafe::a6) by MN2PR17CA0035.outlook.office365.com
+ (2603:10b6:208:15e::48) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.30 via Frontend
+ Transport; Fri, 13 Oct 2023 13:28:56 +0000
+Authentication-Results: spf=softfail (sender IP is 198.150.52.195)
+ smtp.mailfrom=viterbo.edu; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=viterbo.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ viterbo.edu discourages use of 198.150.52.195 as permitted sender)
+Received: from mail.viterbo.edu (198.150.52.195) by
+ BL02EPF0001A105.mail.protection.outlook.com (10.167.241.137) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.20.6838.22 via Frontend Transport; Fri, 13 Oct 2023 13:28:56 +0000
+Received: from vuExchange16.exchange.viterbo.edu (10.20.2.195) by
+ vuExchange16.exchange.viterbo.edu (10.20.2.195) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2507.34; Fri, 13 Oct 2023 08:28:55 -0500
+Received: from vuEMSWEB2019 (10.20.40.69) by vuExchange16.exchange.viterbo.edu
+ (10.20.2.195) with Microsoft SMTP Server id 15.1.2507.34 via Frontend
+ Transport; Fri, 13 Oct 2023 08:28:55 -0500
+From: Scheduling Office <scheduling@viterbo.edu>
+To: <egweinberg@viterbo.edu>
+Date: Fri, 13 Oct 2023 08:28:55 -0500
+Subject: Request Summary
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <2e323732-e24c-42c9-831f-a7f4882ef69c@vuExchange16.exchange.viterbo.edu>
+Return-Path: scheduling@viterbo.edu
+X-CrossPremisesHeadersFilteredBySendConnector:
+ vuExchange16.exchange.viterbo.edu
+X-OrganizationHeadersPreserved: vuExchange16.exchange.viterbo.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2023 13:28:56.2280
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a982842f-4579-49c1-698e-08dbcbf059cd
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ BL02EPF0001A105:EE_|DS7PR20MB4878:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ BL02EPF0001A105.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: viterbo.edu
+X-MS-Office365-Filtering-Correlation-Id: a982842f-4579-49c1-698e-08dbcbf059cd
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:198.150.52.195;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:SKN;H:mail.viterbo.edu;PTR:mailhost.exchange.viterbo.edu;CAT:NONE;SFS:(13230031)(4636009)(26402899012)(186009)(19302899012)(451199024)(82310400011)(58800400005)(6916009)(6636002)(31686004)(26005)(8676002)(75432002)(8936002)(426003)(336012)(1096003)(7116003)(3480700007)(7636003)(356005)(5660300002)(31696002)(86362001)(558084003)(43540500003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2023 13:28:56.1499
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a982842f-4579-49c1-698e-08dbcbf059cd
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=6b9fc982-e8d7-4958-976c-b08441cc9b0b;Ip=[198.150.52.195];Helo=[mail.viterbo.edu]
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL02EPF0001A105.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS7PR20MB4878
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.6412525
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?1cqH3dlIVHHwk/OTI069S2TwcWbgfY34up2r4m2HAJFgZ/yr/gPnUyEXpZTV?=
+ =?us-ascii?Q?Zcw62MYUSFWCYmO+Ux+X2ibhU59IkWoo1n2w76OcFsqAxX+PGDui3qOxmkWX?=
+ =?us-ascii?Q?x3kFno6uv9sCPL8XzT9aS0B4IgnwtgVhDrc09V0r6X3DJyfJCoJ1v+hFe8IW?=
+ =?us-ascii?Q?kbNeY0fSVs8uHY7KsE0tIXFst9TM3eC0sK7m27UCqHdlyqjnkumguYZT7XMZ?=
+ =?us-ascii?Q?P/ZgqH0Uy4C6HO25LjoHpTUCqWO6jXVVfkQjcEBqHD4Iu7UTgyegTJFir9NC?=
+ =?us-ascii?Q?Oz2dkvXesAPIjr0CPbelyXJgCDZZs8AGXG+hrSX/gCxLjRuL5N0lEkOEXRjD?=
+ =?us-ascii?Q?Gd/kOamWDcmbOyHafqfZcFqKBpjLKhSRzsfUPSE3OfsyRoUcCZDbS1IrIuTv?=
+ =?us-ascii?Q?ceBz74Lr0aIMGNPQsLFlSlM8CIK9DZVrDB2vymb0DYGgKtOQoxv/DaH57fXg?=
+ =?us-ascii?Q?bZsD3bkWZ66y+VRv1CSHM1tolyyzuT+kkFPKHyzST6pgd8Gx7jOtmID6Yv0H?=
+ =?us-ascii?Q?nBsQB+jIIaO/zf5R+vzeyNaHvMyAZnRmTiJAR2gfEoDJnEHfwL+KnnpT8lAi?=
+ =?us-ascii?Q?7JCU3B1fhnb/4gaxr5jQk4ZI3PK31rppniq9R8WoOZEdqeuTxO5rBg3xO4Mg?=
+ =?us-ascii?Q?49wPocgRUAHaT1qRYEJNM4+uQWCPHUogAaXDNSSzUYvGASJFhi9m0WvSNOkG?=
+ =?us-ascii?Q?55EM60wKVjK7uAq/kinDQDc4CHq2YTa7gwl+O5PW5MOtaoBFvx3l8crcoWsN?=
+ =?us-ascii?Q?22MyFY5XOuP582bvFkI2jgi9Ko970sfkTGKsJfnsy5pg2+ejWncOU9RRWYcA?=
+ =?us-ascii?Q?yQXHC0+oCPaUkIU69zOUJ6Lzrav21Qixt2OHTKTDenV/bMp3SydUOJJBv+eP?=
+ =?us-ascii?Q?Ld/Dl6DJ36/CQoWlxFD/+wdw2RW3ertRzIKhKlZN+yohyoHqpvuRON/eKxpp?=
+ =?us-ascii?Q?AefHvNtciETvQa9Opqo9PkicxObZmEqXJAdxTauDb1jcVlzMx1EZ7bfkfPDP?=
+ =?us-ascii?Q?suUJEU/jDInvLr83d+vNahKmqN2zGwPOKWzSM0bPFfT62nOnl1fpXHxMMeGK?=
+ =?us-ascii?Q?ApCDVRHog0wmCnD0KZLkel0BYW+RxJXAEPiYzcZ4ChBilHy9SrjCDvM51BdU?=
+ =?us-ascii?Q?nu/ueQ6nw2jdZ2+Jh2D7vE0iNMIv5+kcdXoct4gtvJCLXHf8l/XypW7O9JJI?=
+ =?us-ascii?Q?6nz3lzMyXWxb3QU9Jg72ruyErHMqw1uaol7Adgfxtdb7W/+en+DpnIVLac/l?=
+ =?us-ascii?Q?rG2BjPZaDl9BQE/W/zdYEijmw2NleVa9oQvABQFoOq1AmsIztQrNSDpJXhWk?=
+ =?us-ascii?Q?v4YA5k0nwBTpSPvnvrgs/RPpq272Nz44G4Vjha/CRpkIJAk6dYhZ28IE3GDs?=
+ =?us-ascii?Q?06YV2xqxDqsxczykesy3WXoALd0trdRX9CVc0DKtCt14H0iay2W70HTYC6iP?=
+ =?us-ascii?Q?Ic94hFK4T9leZnCDUrl6rhOaeSBSXHP521KDn+KwXbJ0xbItADSEnrSlFdO2?=
+ =?us-ascii?Q?46uoxdD7eFe4urprYDnsIPfC+K3RFmJh8HQRkjNJ9yt4x7izgELxX6XvL39n?=
+ =?us-ascii?Q?kxZL3pp7Nnz8j/ZP0M+CealFF36dTykPSI+6IhgkVVJov7hfX95iWTCiMDXU?=
+ =?us-ascii?Q?bDPpfAszcHeM1W+r0oCanoXxxgwMot/BYHlkRirChSRJYJ4q5rWlh8hVBBkU?=
+ =?us-ascii?Q?A/pYWOdtaXYFQT54OeJqSec2iQZT8pYI/o+peSMSNntjgU/63ZU4jkgjJhEB?=
+ =?us-ascii?Q?yZT+nUZDCWWej+bLYignQgIzNHVXzOTki1NrhfmeRGOYgJ3AU88G020xufJc?=
+ =?us-ascii?Q?RpSAnJFCCtN7Rg=3D=3D?=
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+><div tabindex=3D"0" aria-label=3D"Reservation ID: 160895">Reservation ID: =
+160895</div><div tabindex=3D"0" aria-label=3D"Dept/Customer: School of Natu=
+ral Science, Mathematics, and Engine">Dept/Customer: School of Natural Scie=
+nce, Mathematics, and Engine</div><br><table style=3D"width:100%; font-fami=
+ly: Arial; text-align: left;font-size: 8pt"><thead><tr><th tabindex=3D"0" a=
+ria-label=3D"Date" style=3D"text-align: left;width: 10%;border-bottom: blac=
+k thin solid;">Date</td><th tabindex=3D"0" aria-label=3D"Start" style=3D"te=
+xt-align: left;width: 5%;border-bottom: black thin solid;">Start</td><th ta=
+bindex=3D"0" aria-label=3D"End" style=3D"text-align: left;width: 5%;border-=
+bottom: black thin solid;">End</td><th tabindex=3D"0" aria-label=3D"Buildin=
+g" style=3D"text-align: left;width: 10%;border-bottom: black thin solid;">B=
+uilding</th><th tabindex=3D"0" aria-label=3D"Room" style=3D"text-align: lef=
+t;width: 10%;border-bottom: black thin solid;">Room</th><th tabindex=3D"0" =
+aria-label=3D"Status" style=3D"text-align: left;width: 30%;border-bottom: b=
+lack thin solid;">Status</td></tr></thead><tbody><tr><td tabindex=3D"0" ari=
+a-label=3D"10/13/2023" style=3D"font-size: 10pt;">10/13/2023</td><td tabind=
+ex=3D"0" aria-label=3D"2:00" PM=3D"" style=3D"font-size: 10pt;text-align:ri=
+ght;">2:00 PM</td><td tabindex=3D"0" aria-label=3D"4:00" PM=3D"" style=3D"f=
+ont-size: 10pt;text-align:right;">4:00 PM</td><td tabindex=3D"0" aria-label=
+=3D"RCE" style=3D"font-size: 10pt; ">RCE</td><td tabindex=3D"0" aria-label=
+=3D"RCE 132" style=3D"font-size: 10pt; ">RCE 132</td><td tabindex=3D"0" ari=
+a-label=3D"Web Reserve" style=3D"font-size: 10pt; ">Web Reserve</td></tr></=
+tbody></table>
+

@@ -1,0 +1,1606 @@
+Received: from PH0PR20MB6155.namprd20.prod.outlook.com (2603:10b6:510:2a3::16)
+ by PH7PR20MB4988.namprd20.prod.outlook.com with HTTPS; Thu, 12 Oct 2023
+ 17:17:04 +0000
+Received: from DM6PR02CA0090.namprd02.prod.outlook.com (2603:10b6:5:1f4::31)
+ by PH0PR20MB6155.namprd20.prod.outlook.com (2603:10b6:510:2a3::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6863.36; Thu, 12 Oct
+ 2023 17:17:01 +0000
+Received: from DS1PEPF00017097.namprd05.prod.outlook.com
+ (2603:10b6:5:1f4:cafe::e7) by DM6PR02CA0090.outlook.office365.com
+ (2603:10b6:5:1f4::31) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.30 via Frontend
+ Transport; Thu, 12 Oct 2023 17:17:01 +0000
+Authentication-Results: spf=pass (sender IP is 199.15.212.193)
+ smtp.mailfrom=discover.newrelic.com; dkim=pass (signature was verified)
+ header.d=newrelic.com;dmarc=pass action=none
+ header.from=newrelic.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of discover.newrelic.com
+ designates 199.15.212.193 as permitted sender)
+ receiver=protection.outlook.com; client-ip=199.15.212.193;
+ helo=discover.newrelic.com; pr=C
+Received: from discover.newrelic.com (199.15.212.193) by
+ DS1PEPF00017097.mail.protection.outlook.com (10.167.18.101) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6838.22 via Frontend Transport; Thu, 12 Oct 2023 17:17:01 +0000
+X-MSFBL: uJfnObSJnQHm6dNnolDGZLCjPEBFDNIc3a3J/Inun3U=|eyJnIjoiYmctYWJkLTI
+	yMCIsInIiOiJlZ3dlaW5iZXJnQHZpdGVyYm8uZWR1IiwidSI6IjM0MS1YS1AtMzE
+	wOjA6MzgzMzQ6MjM5NjczOjEyODU3NzY6Mzg5Mzc6OToxMzYwNjI6MjMzMTU2NzU
+	iLCJiIjoiZHZwLTE5OS0xNS0yMTItMTkzIn0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1697130968;
+	s=m1; d=newrelic.com; i=@newrelic.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=jeewUcfvgmdobsmfYARYdJmie9/xTi27fCpwz41NoXU=;
+	b=XoZe4U31oHWRlYK1LkYa2SXs1aqjNdQsOUyktcVJW4t8HG3HJuxWlnd8RUM0xehE
+	OHPkfGoCNLAHNllG7KjL3RH2swrl4zN0hfGb67CowJj+EDkWLIiAEALW9b0eBbGMcVG
+	O2TcEobwOk6tD3QfswC4Ys9v2dnUZ39njXD6P97I=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1697130968;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=jeewUcfvgmdobsmfYARYdJmie9/xTi27fCpwz41NoXU=;
+	b=oeswlckCalwIrVUON5r2ddM4gj+Z/KRPhuMo1TjQZay14DYxtJHRnYMVsrYGpEoj
+	3NpHuU1RgLxitOcK+cYRzqKBs+i2BVgXrqEnaqQwIGe25XRzr6vVeOGrQ863ojhnz8P
+	4v9YX23elqp+9S5d+PEVkaOB9fI9VZeGM/QhuTK4=
+Date: Thu, 12 Oct 2023 12:16:08 -0500 (CDT)
+From: New Relic Changelog <datanerd@newrelic.com>
+Reply-To: datanerd@newrelic.com
+To: egweinberg@viterbo.edu
+Message-ID: <242936045.54352543.1697130968368@abmktmail-batch1n.marketo.org>
+Subject: How Shutterstock boosted KPIs and lowered costs
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_54352542_135363259.1697130968367"
+X-Binding: bg-abd-220
+List-Unsubscribe: <mailto:LFKTC5CLOU2DE23IKRUF6URSGZVWOTSMJFGU6NLXNA2HCRTVIE2EUUKVI53FIZDMNFQWGPI=.136062.38937.9@unsub-ab.mktomail.com>
+X-MarketoID: 341-XKP-310:0:38334:239673:1285776:38937:9:136062:23315675
+X-PVIQ: mkto-341XKP310-000001-000000-136062
+X-Mailfrom: 341-XKP-310.0.136062.0.0.38937.9.23315675@discover.newrelic.com
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+Return-Path: 341-XKP-310.0.136062.0.0.38937.9.23315675@discover.newrelic.com
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2023 17:17:01.3933
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 6c75c60a-0883-4278-285a-08dbcb470c62
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6b9fc982-e8d7-4958-976c-b08441cc9b0b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ DS1PEPF00017097:EE_|PH0PR20MB6155:EE_|PH7PR20MB4988:EE_
+X-MS-Exchange-Organization-AuthSource:
+ DS1PEPF00017097.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 6c75c60a-0883-4278-285a-08dbcb470c62
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:199.15.212.193;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:discover.newrelic.com;PTR:discover.newrelic.com;CAT:NONE;SFS:(13230031)(4636009)(286005)(1690799017)(451199024)(76236004)(7636003)(356005)(40140700001)(7596003)(9316004)(19627405001)(66899024)(6916009)(6486002)(6512007)(9686003)(30864003)(1096003)(3450700001)(58800400005)(33964004)(118246002)(336012)(83380400001)(956004)(36736006)(66574015)(8676002)(26005)(166002)(83170400001)(1406899027)(4306899006)(76899018)(559001)(579004);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2023 17:17:01.2839
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6c75c60a-0883-4278-285a-08dbcb470c62
+X-MS-Exchange-CrossTenant-Id: 6b9fc982-e8d7-4958-976c-b08441cc9b0b
+X-MS-Exchange-CrossTenant-AuthSource:
+ DS1PEPF00017097.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR20MB6155
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.9057743
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6863.043
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420103);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?i6lwtX1cdB0WwOHwrp9fdJT1m+rl7hjoRrHDfzdbp4YhphTuVHsz9dBo?=
+ =?Windows-1252?Q?bWlNaWm0c9iUW0YYNH2UVcb48sHCXlo00tMDuNOPZ1CuaFu9kHQCba6D?=
+ =?Windows-1252?Q?Tk06cyvEGs14Zu5nL+GMsNh6An+buGiUja1I3UpORB7klwCZwSWY56VA?=
+ =?Windows-1252?Q?e6E8SnoGNZ5zfQWDNZsg9293i82Qeie0XbwgdevGPvxdAYy51IxFgooe?=
+ =?Windows-1252?Q?nElm7C8rXiSswzWbXB6BH3SCOMWU+sRyurlHlXK7k4JJup5k6A/dZp8V?=
+ =?Windows-1252?Q?Nl0Asybs8ZM1CqZqHQu0n8v+1oAfA0XaGfyc2d3MKjIg+UYCFwYcBhZw?=
+ =?Windows-1252?Q?tI6RshM0yQkbwapkdf2f8w1F5B2s8/PDy/vE6xPJ4QrqA4aK3hO4JSaS?=
+ =?Windows-1252?Q?YMbWbukpR60dGOehBaKvEaN4n7cmWOoUF1BE1UMA301GRZAy905xocIs?=
+ =?Windows-1252?Q?VyDSov3HjFHoIbgcEkGNb0Fvygjmzsgfn8A/esvShPqWphux7hmI49+r?=
+ =?Windows-1252?Q?99ErzHVbwjNYgJ0mpWxOJr/1BX92f+K0AZzMT0ClLvRXk+YZY+e9Nnsr?=
+ =?Windows-1252?Q?WkpBHAjmk+r3O+BdnRJ8LX0XUTS+RrZFRyuD/pj2hLKOYPHpMXQ3M6Cj?=
+ =?Windows-1252?Q?880DSRLLYMIBMho5LK58Jr2eGEfZubstK1RZAnVTeUDwtnqF9vOG5bHs?=
+ =?Windows-1252?Q?rfF8evOxk3ybBDS85UTG7USuekysAtqSvM3+B4WsXe8vltY+eugo/T3G?=
+ =?Windows-1252?Q?cpycevN1qXm2LzSkq/8LMQUoIVLMCP/W7KbYVayf+QOV2TYzXXItO8E4?=
+ =?Windows-1252?Q?N28XHGjZAc4MupnT0iCx7YX0X0fXQJiPiJI38BMRekYHipNzF2YDQRaa?=
+ =?Windows-1252?Q?nwjpf4U+HnLDyhEvUxv3yN6qf8nZ0/nZ606uYWnqxr5mp4DefuLdZuDO?=
+ =?Windows-1252?Q?sOWDuveGLqK16fFkXqA8O422fIGjIxTFp3QndkcpI+N3XeOmHWxKcRmU?=
+ =?Windows-1252?Q?I96HWfvqOWg9U+c4J37ehTkFtnUxovzB2c38gqXJJtymF3wR+O8sXHPw?=
+ =?Windows-1252?Q?TJmOSxY+Qg+xRdFkKkYUARwHbOUQBL9tbvMYLdo6OhPi33PbB5N06jPJ?=
+ =?Windows-1252?Q?l4XyFcf/HYEUXMgfhGgpRPVSCswzwOKLmEKJnhc3Qr1uIePw2wkI9QY5?=
+ =?Windows-1252?Q?gMJ+VL+IkQ6yNiQEVa/nU6L+0KvMdZ/FdnHmy/HbIbp7XeigNQWGSpac?=
+ =?Windows-1252?Q?B7CdeO093R96LjlShPnYonFMJ1dIgCQHSfHMG1FfpNAtlOXFQJSfgSI0?=
+ =?Windows-1252?Q?dZYU9zCTSwiCONhLqe4bojQPkEn+gIkoIzj3XRad7a70i/giBZHV75Js?=
+ =?Windows-1252?Q?025hh1+r38yY+bWbSjzSvzRiMbuGH83gsIQ+0t2F0l1+2U8jY5QS2N5z?=
+ =?Windows-1252?Q?7CpJqAaw9IYPNAQWxxbVb5toJf5628LUkGWQFFEBA835+IK5KZU5Cx00?=
+ =?Windows-1252?Q?vCsCl3p4GeHEzbbmJnX4TnbyXLlpjkVbgr1ldAZzzb6jMiwO2qtoS2PV?=
+ =?Windows-1252?Q?1yqSrnYV/zpzAU+4UqP6OzgqlxsAmQahYjcIxBK725bO2HSDYeHWSbmW?=
+ =?Windows-1252?Q?e24uMjFVSN5O/ogjS9RIk37FSqF4wsInPmYVGL76LRmXrjnDNoaGYzPt?=
+ =?Windows-1252?Q?wII2k92T+I8Jb/34vRYlhA/OZRUlHbFt1DAEvxI6eUmzyZ8yeA1dbRvL?=
+ =?Windows-1252?Q?WBc/7UYkeMbVGO+XuXKpRjT7G+CTsyPEud2uTGmWCvCn0nOfHJPpFgwM?=
+ =?Windows-1252?Q?aHYOf6/1sd+XOzJJbDe67fE5cPIwDh2ouhFGaIFIT2ysALpYsYkkMl6Z?=
+ =?Windows-1252?Q?iLlyC0VQvBPo7kvp9n7EUr18E/3jBjptcV8/kFway05ydV3UxO2DRvyd?=
+ =?Windows-1252?Q?mMahvqNqqSloNXg9K8vH3A=3D=3D?=
+MIME-Version: 1.0
+
+------=_Part_54352542_135363259.1697130968367
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+EXTERNAL: This email originated from a sender outside of Viterbo. Use cauti=
+on when clicking on links or opening attachments.
+
+Shutterstock consolidated tools and increased productivity on New Relic=E2=
+=80=94read their story.
+
+
+[New Relic] <https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKFz6SL-MiwsPm=
+6yU47zA-dEkPbGdjLxPKvr8IdsKCZC12AglPzfsxQlpowJ6Bg_j74A=3D>
+October 12th, 2023
+[Changelog Newsletter]<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKP2=
+APR0kh6atPg7Ygd5gRvuNFNyEKJerUfsP72_3itPzxLfMwkJh4tdknTi3-W-j1zo=3D>
+What=E2=80=99s new at New Relic
+Learn more about these new features and the rest of our latest releases by =
+checking out What's New<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ9=
+4zIYg3sxDgvgFHy4lJ65XnRA8hod_O95AICfYBeKUMVKf9boetuoLMknNYFecLL-8=3D>.
+
+  *   Manage NRQL lookup tables with the NRQL Lookups API<https://get.newre=
+lic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ2Xtq5GubKQ-jCloZ8jfeEUhwpR8nxdzg7jkOFIVBZZ=
+z-bl7cxvfYdEFL4DiexyXpl0=3D>
+
+  *   Introducing New Relic session replay<https://get.newrelic.com/MzQxLVh=
+LUC0zMTAAAAGOw9wlKDtQKnHVjs_WsgVFLzDflpxm9hnLOh3LJrORusb4JINAUee_rEwuWn_STO=
+m49-ov7Wc=3D>, now in limited preview
+
+  *   Introducing our new incident signal analysis feature<https://get.newr=
+elic.com/MzQxLVhLUC0zMTAAAAGOw9wlKKsguGZXjhHTr19RHt1M2ORSkUkIqKYXWaL4_uJRa3=
+DDIAhC3OuWRl6Jc4_u43-4Ok0=3D> for enhanced monitoring and response
+
+        Log In Now<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ9B0KQ9=
+tdtUj5NhkoUHx2PQwYl0ZdGu3Gl3EaISV07i-9gQTyGTXOI92vuIUQ8Ma9uU=3D>
+        Log In Now<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ9B0KQ9=
+tdtUj5NhkoUHx2PQwYl0ZdGu3Gl3EaISV07i-9gQTyGTXOI92vuIUQ8Ma9uU=3D>
+<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJwluXbUW5nrsw73j616UIu7n0=
+54dwWTlHHVMqIXYxGK_XLhnZGGM0pYkZzIiXESipxM=3D>
+[Customer Story Shutterstock]<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGO=
+w9wlJwluXbUW5nrsw73j616UIu7n054dwWTlHHVMqIXYxGK_XLhnZGGM0pYkZzIiXESipxM=3D>
+Shutterstock protects customer information and gains efficiency by standard=
+izing on New Relic
+Shutterstock significantly improves developer productivity, saving time and=
+ money, while having visibility into metrics to improve KPIs by consolidati=
+ng tools and standardizing practices.
+Learn More [https://try.newrelic.com/rs/341-XKP-310/images/arrow-green.png]=
+ <https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJwluXbUW5nrsw73j616UIu7n=
+054dwWTlHHVMqIXYxGK_XLhnZGGM0pYkZzIiXESipxM=3D>
+<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ6kaxl90DIryD0mvjkOWgAGor=
+Dngblq3P39CiuALVA4JyYnAZW4rKSFUJZquLWw3UOM=3D>
+[Data Session Koneska]<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ6k=
+axl90DIryD0mvjkOWgAGorDngblq3P39CiuALVA4JyYnAZW4rKSFUJZquLWw3UOM=3D>
+Data Sessions: Koneksa runs on New Relic to empower developers with real-ti=
+me data
+Koneksa runs on New Relic to observe and seamlessly manage a complex infras=
+tructure, and empower developers with real-time data. With New Relic, the K=
+oneksa engineering team can manage 20 million APM transactions a day.
+Watch Video [https://try.newrelic.com/rs/341-XKP-310/images/arrow-green.png=
+] <https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ6kaxl90DIryD0mvjkOWgAG=
+orDngblq3P39CiuALVA4JyYnAZW4rKSFUJZquLWw3UOM=3D>
+[Image]
+
+Business Insights for Adobe Commerce
+
+Want to know how many orders are lost due to downtime? Curious about which =
+products to stock more of? With the Adobe Commerce quickstart, you can boos=
+t your ecommerce site with unmatched visibility into key business metrics<h=
+ttps://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ4iyDKX6c3zCsZ3FnlnG-ePramk=
+9lkepPaZDYjLSU-9GrdUWydQTkwucSobrI3MX1j8=3D> to keep your customers returni=
+ng. Install<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKDhrjy0OlOVvN3=
+nS2P7V7ktt8WsMsOF9CVE8kQgCD2ZylJKAMesk9Fu0WGnpol04WBc=3D>
+
+[Image]
+
+Why You Need a Single Tool for Infrastructure Monitoring and APM
+
+View our newest ebook to discover how to consolidate infrastructure monitor=
+ing and APM into a single tool to minimize downtime, reduce tool sprawl, an=
+d quickly solve performance issues. It includes the top 10 must-haves of a =
+consolidated monitoring tool. View Ebook<https://get.newrelic.com/MzQxLVhLU=
+C0zMTAAAAGOw9wlKNUzVItYaukxnuFoqs54v5kLWpWJd8jFjeaMbxZVNB-l5n714paKTxVXVETl=
+qo7AaFU=3D>
+
+[Image]
+
+All Things Open
+
+New Relic is a Silver sponsor at All Things Open on October 15=E2=80=9317 w=
+here our DevRel Relics will offer sessions<https://get.newrelic.com/MzQxLVh=
+LUC0zMTAAAAGOw9wlJ_N-2T7ftYUmP0vm3I7zaH4preU3MRZIuv9P2S_qHDjzLhhblRCFqxJKn9=
+ct_T_sVxU=3D> you don=E2=80=99t want to miss. Visit our booth to play games=
+, get prizes, and learn cool things. Register now and receive a discount co=
+de for maximum rewards. Register Now<https://get.newrelic.com/MzQxLVhLUC0zM=
+TAAAAGOw9wlKG6uPCQSLm14buzjZGHisCdXcF6kRX0-Z-muO9Bq9TiRB6jqsbJXAzqjGwyZTQyR=
+3Rg=3D>
+
+
+[Webinar] Enhancing Observability with OpenTelemetry: Leveraging New Relic =
+Support
+
+Register to join us on Wednesday, October 18 at 1pm EST to learn how your o=
+rganization can reap the rewards of open source software and observability =
+with OpenTelemetry and New Relic. Register Now<https://get.newrelic.com/MzQ=
+xLVhLUC0zMTAAAAGOw9wlKJ1_aFilyVkYpJTFEvMI3EePilP4lCpWQNTflEru2V19A8jallt7Uk=
+tKthW7xE_oCL4=3D>
+
+Not an existing New Relic user? Sign up for a free account<https://get.newr=
+elic.com/MzQxLVhLUC0zMTAAAAGOw9wlKFGrjKVW0whI4UYp8Uc2lehT7me8TgakrUJJ4LEb1I=
+iL-vWbxSHTbxDv38DZDKLsndk=3D> to get started!
+
+
+[Logo]
+[https://try.newrelic.com/rs/341-XKP-310/images/badge-appstore.png] <https:=
+//get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKOOPpEvS1mRFmxQCXtqZAbnAZuzh58da=
+7XH8qB1uEj_mnBpgZz0AtSDdoFHflIR-bmA=3D> [https://try.newrelic.com/rs/341-XK=
+P-310/images/badge-playstore.png]  <https://get.newrelic.com/MzQxLVhLUC0zMT=
+AAAAGOw9wlJ7MO42Uuwp1_bgGk2Y6L0xz6-SiQBjkfZcIbmIRhSjdcs57mLGb9EIU4reEIepv_X=
+R8=3D>
+Need help? Let's get in touch.
+[https://try.newrelic.com/rs/341-XKP-310/images/hexIcon-Community.png]<http=
+s://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ5OWsLSbOaGKZSnefpn2TbpiXyvdTf=
+YgeLMG6wGBsHP8E5A7il5AY5gUKge2J9hAX4o=3D>
+Ask Community<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ5OWsLSbOaGK=
+ZSnefpn2TbpiXyvdTfYgeLMG6wGBsHP8E5A7il5AY5gUKge2J9hAX4o=3D>
+[https://try.newrelic.com/rs/341-XKP-310/images/hexIcon-Support.png]<https:=
+//get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJwbNJ1rAA8mw-85jsA93vpqFoIRIoOMA=
+OqQX25lDpZTbdFVPl5vuttWSRRo9ZxFCSqw=3D>
+Ask Support<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJwbNJ1rAA8mw-8=
+5jsA93vpqFoIRIoOMAOqQX25lDpZTbdFVPl5vuttWSRRo9ZxFCSqw=3D>
+[https://try.newrelic.com/rs/341-XKP-310/images/hexIcon-Sales.png]<https://=
+get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKA_dHpZDjcBqUjWCf0DvzYEuo5MhZ9XOAD=
+tvc2imIMWbp-LqYEr9kNHLwDwIuE-XXTY=3D>
+Contact Sales<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKA_dHpZDjcBq=
+UjWCf0DvzYEuo5MhZ9XOADtvc2imIMWbp-LqYEr9kNHLwDwIuE-XXTY=3D>
+This email is sent from an account used for sending messages only. Please d=
+o not reply to this email to contact us=E2=80=94we will not get your respon=
+se.
+
+View in browser<https://get.newrelic.com/v/MzQxLVhLUC0zMTAAAAGOw9wlJ-7YbjSt=
+VL7y3Y-nua8mCZNuHp02X9A54rQ5IrI2K8eKJnTxDFdTt4VwpubwVDNN0qA=3D>
+
+This email was sent to egweinberg@viterbo.edu Update your email preferences=
+.<https://try.newrelic.com/UnsubscribePage.html?mkt_unsubscribe=3D1&mkt_tok=
+=3DMzQxLVhLUC0zMTAAAAGOw9wlKLQs1S9mpJQPcbOY8OaSGKCMJ9zXsc-FdmABzx-pyiMJkenR=
+TodznE6zpmNxYy6kMeftcqT6EukONwAezWttu9CGo7eQg9V9vVVCA6vosHM>
+
+For information about our privacy practices, see our Privacy Policy<https:/=
+/get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKLBQZvHtTDk9NIteCzxNBSOf7HyfCUApa=
+UbiAhdAc7yrx6aqgBTg4qQtN9oxwKsLt2Y=3D>.
+
+Need to contact New Relic? You can chat or call us at 888-643-8776.
+New Relic, Inc. 188 Spear St, San Francisco, CA 94105.
+
+=C2=A9 2023 New Relic, Inc. All rights reserved. New Relic logo are tradema=
+rks of New Relic, Inc.
+
+Global unsubscribe<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJx4gWMz=
+6LobvlicQUHJ-OH4b4cvWGvpX1aheTILESRkDP7ZbDBtrGPbszyk8qQ_ZPao=3D> page.
+
+<https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKO-Ufu-KF6E_eePlcaVXQ0xZ4=
+C3Kx-IsfA8eUc0mHqpTc0lehlMyB_gnTIF1Qsy-XeE=3D>
+
+------=_Part_54352542_135363259.1697130968367
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html lang=3D"en" xmlns=3D"ht=
+tp://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns=
+:o=3D"urn:schemas-microsoft-com:office:office"><head><!--[if gte mso 9]><xm=
+l>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1, m=
+inimum-scale=3D1, maximum-scale=3D1">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"format-detection" content=3D"telephone=3Dno">
+<title>New Relic</title>
+<!-- Start Marketo Variable Definitions --><!-- Tokens I care about --><!--=
+ Tokens that are helpful for transitioning --><!-- Language --><!-- Head --=
+><!-- Spacers --><!-- BG Image --><!-- Align --><!-- Switches --><!-- Mobil=
+e Image Widths  --><!-- Button --><!-- Colors --><!-- Fonts -->
+<meta name=3D"color-scheme" content=3D"light dark">
+<meta name=3D"supported-color-schemes" content=3D"light dark">
+<!-- Start Marketo Variable Definitions --><!--[if mso]>
+<style type=3D"text/css">
+.outlook-font {font-family:Helvetica, Arial, sans-serif!important;}
+</style>
+<![endif]--><style type=3D"text/css">
+      body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none; backg=
+round-color:#f5f6f4; -webkit-font-smoothing:antialiased; -moz-osx-font-smoo=
+thing:grayscale; margin:0!important; padding:0!important;}
+      table td {border-collapse:collapse;}
+      table {mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;}
+      p {margin:0; padding:0; margin-bottom:0;}
+      h1,h2,h3,h4,h5,h6 {margin:0; padding:0;}
+      body,
+      #body_style {background-color:#f5f6f4; width:100%; min-width:100%!imp=
+ortant;}
+      a[x-apple-data-detectors] {
+        color:inherit!important;
+        font-size:inherit!important;
+        font-family:inherit!important;
+        font-weight:inherit!important;
+        line-height:inherit!important;
+      }
+      u + #body a {
+        color:inherit;
+        font-size:inherit;
+        font-family:inherit;
+        font-weight:inherit;
+        line-height:inherit;
+      }
+      a,
+      a:link,
+      a:visited {color:#0085ca; text-decoration:none;}
+      @media only screen and (max-width:700px) {
+        body {min-width:100%!important;}
+        table.button {width:100%!important;}
+        p {padding-left:0!important; padding-right:0!important;}
+        table.tableCollapse {width:100%!important;}
+        table.threeColCollapse {height:auto !important;}
+        td.mobCenter {text-align:center!important;}
+        td.w25 {padding-left:25px!important; padding-right:25px!important;}
+        td.w25w {width:25px!important;}
+        img.w100 {width:100%!important; height:auto!important;}
+        td.padBot30 {padding-bottom:30px!important;}
+        td.padBot35 {padding-bottom:35px!important;}
+        td.padBot50 {padding-bottom:50px!important;}
+        td.padTop25 {padding-top:25px!important;}
+        td.padTop40 {padding-top:40px!important;}
+        div.w100 img {width:100%!important;}
+        br.hideBr {display:none!important;}
+        .hideOnMobile (display:none !Important;)
+        .w100 {width:100%!important;}
+        .w80 {width:80%!important;}
+        .mw100 {width:100%!important;}
+        .mw90 {width:90%!important;}
+        .mw80 {width:80%!important;}
+        .mw70 {width:70%!important;}
+        .mw60 {width:60%!important;}
+        .mw50 {width:50%!important;}
+        .mw40 {width:40%!important;}
+        .mw30 {width:30%!important;}
+        .mw20 {width:20%!important;}
+        .mw10 {width:10%!important;}
+
+
+      }
+      h1{
+        font-size:44px;
+        line-height:50px;
+      }
+      h2{
+        font-size:24px;
+        line-height:30px;
+      }
+
+      @media (prefers-color-scheme: dark ) {
+        /* Shows Dark Mode-Only Content, Like Images */
+        .dark-img { display:block !important; width: auto !important; overf=
+low: visible !important; float: none !important; max-height:inherit !import=
+ant; max-width:inherit !important; line-height: auto !important; margin-top=
+:0px !important; visibility:inherit !important; }
+        /* Hides Light Mode-Only Content, Like Images */
+        .light-img { display:none; display:none !important; }
+
+        /* Custom Dark Mode Background Color */
+        .darkmode { background-color: #272623 !important; }
+
+
+        body, #body_style, .backgroundDarkMode{
+          background-color: #000000 !important;
+        }
+        .button{
+          border: 1px solid #AAAFB2 !important;
+          color: white !important;
+        }
+        .primary-button{border:none !important;}
+
+        .button-light, .button-dark{
+          background-color:black !important;
+          border-color:#FFFFFF !important;
+        }
+        .newsletterLight h1,.newsletterLight h2,.newsletterLight p,.newslet=
+terLight span,.newsletterLight a,.newsletterLight b,.newsletterLight div{
+        }
+        .mktoModule{
+          background-color: #1D252C !important;
+        }
+
+        /* Custom Dark Mode Font Colors */
+        h1, h2, p, span, a, b, div { color: #AAAFB2 !important; }
+
+        .primary-button a span{
+          color: black !important;
+        }
+
+        /* Custom Dark Mode Text Link Color */
+        .link { color: #FFFFFF !important; }
+
+      }
+
+      [data-ogsc] .dark-img { display:block !important; width: auto !import=
+ant; overflow: visible !important; float: none !important; max-height:inher=
+it !important; max-width:inherit !important; line-height: auto !important; =
+margin-top:0px !important; visibility:inherit !important; }
+      [data-ogsc] .light-img { display:none; display:none !important; }
+      [data-ogsc] .darkmode { background-color: #272623 !important; }
+      [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [dat=
+a-ogsc] a, [data-ogsc] .mktoText { color: #AAAFB2!important; }
+      [data-ogsc] .link { color: #000000 !important; }
+      [data-ogsc] body, [data-ogsc] #body_style, [data-ogsc] .backgroundDar=
+kMode {
+        background-color: #000000 !important;
+      }
+      [data-ogsc] .mktoModule{
+        background-color: #1D252C !important;
+      }
+    </style>
+</head>
+<body bgcolor=3D"#f5f6f4">
+<b><font color=3D"red">EXTERNAL: This email originated from a sender outsid=
+e of Viterbo. Use caution when clicking on links or opening attachments.
+</b></font><br>
+<br>
+<div><style type=3D"text/css">div#emailPreHeader{ display: none !important;=
+ }</style>
+<div id=3D"emailPreHeader" style=3D"mso-hide:all; visibility:hidden; opacit=
+y:0; color:transparent; mso-line-height-rule:exactly; line-height:0; font-s=
+ize:0px; overflow:hidden; border-width:0; display:none !important;">
+Shutterstock consolidated tools and increased productivity on New Relic=E2=
+=80=94read their story.</div>
+<div id=3D"body_style" style=3D"background-color:#f5f6f4;">
+<table role=3D"presentation" width=3D"100%" bgcolor=3D"#f5f6f4" class=3D"ba=
+ckgroundDarkMode" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D=
+"center" style=3D"margin:0px auto; width:100%!important; min-width:100%!imp=
+ortant;">
+<tbody>
+<tr>
+<td></td>
+<td width=3D"600"><br>
+<br>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"600" class=3D"tableCollapse" align=3D"center" style=3D"margin:0=
+px auto; width:600px;">
+<tbody>
+<tr>
+<td class=3D"mktoContainer" id=3D"MainContainer" align=3D"center" valign=3D=
+"top">
+<table role=3D"presentation" bgcolor=3D"#ffffff" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"LogoModule" style=3D"background-color:#ffffff; margin:=
+0px auto; width:100%!important; min-width:100%!important;">
+<tbody>
+<tr>
+<td class=3D"w25" valign=3D"top" align=3D"left" style=3D"padding-top:35px; =
+padding-bottom:35px; padding-left:40px; padding-right:40px;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKFz6SL-MiwsPm6yU47zA-dEkPbGd=
+jLxPKvr8IdsKCZC12AglPzfsxQlpowJ6Bg_j74A%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3Dckg%2B9ThoIIw7cA%2F1IArOVGsVYYGtCch7LpvmufVE1A0%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKFz6SL-Miw=
+sPm6yU47zA-dEkPbGdjLxPKvr8IdsKCZC12AglPzfsxQlpowJ6Bg_j74A=3D" shash=3D"SDik=
+wlRsjCF+WpFu2A2r3yVjsoGiwYRPx60C+K3d0b0f217fAISAyiln0Aa7L2/FjIIXKJ9MjJJRCUl=
+K0fNOB6oeUhuULifZUtHCbOvVnPCapFnSuShFVL5tNfFJdASlDfPhwI0qJLXtOnlDK4ihnDJxTu=
+rXo5nwDTy2TwmbpHY=3D"><img src=3D"https://try.newrelic.com/rs/341-XKP-310/i=
+mages/logo-nr-small-green.png" width=3D"138" alt=3D"New Relic" style=3D"tex=
+t-align:center; font-weight:bold; font-size:36px; line-height:40px; text-de=
+coration: none; margin: 0 auto; padding: 0;" border=3D"0">
+</a></td>
+<td class=3D"w25" style=3D"width:400px; text-align: right;padding-top:35px;=
+ padding-bottom:35px; padding-left:40px; padding-right:40px;font-family:'Op=
+en Sans', sans-serif;font-size:16px;" align=3D"right" width=3D"300">
+<div class=3D"mktoText" id=3D"headerTextDM">
+<div><span style=3D"color: #000000; font-family: 'Open Sans', sans-serif; f=
+ont-size: medium; font-style: normal; font-variant-ligatures: normal; font-=
+variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2;=
+ text-align: right; text-indent: 0px; text-transform: none; white-space: no=
+rmal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; backgro=
+und-color: #ffffff; text-decoration-thickness: initial; text-decoration-sty=
+le: initial; text-decoration-color: initial; display: inline !important; fl=
+oat: none;">October
+ 12th, 2023</span> <br>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#ffffff" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"BannerModule5a7c8cb8-6975-466e-8647-ed9594db1e11" styl=
+e=3D"background-color:#ffffff; margin:0px auto; width:100%!important; min-w=
+idth:100%!important;">
+<tbody>
+<tr>
+<td valign=3D"top" align=3D"center" style=3D"padding-top:0px; padding-botto=
+m:0px;" class=3D"mobCenter">
+<div class=3D"mktoImg" id=3D"FullWidthBanner7f5c10f3-4f77-44e2-8ecb-67b5518=
+4643a" style=3D"display:inline-block;" mktolockimgsize=3D"false" mktolockim=
+gstyle=3D"false">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKP2APR0kh6atPg7Ygd5gRvuNFNyE=
+KJerUfsP72_3itPzxLfMwkJh4tdknTi3-W-j1zo%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3Dh6bFPRvjFK%2BwOLDT4RlF3XlUKvLCTI3r6m4rha%2B8y00%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKP2APR0kh6=
+atPg7Ygd5gRvuNFNyEKJerUfsP72_3itPzxLfMwkJh4tdknTi3-W-j1zo=3D" shash=3D"V5Hs=
+3bHZOZQwIeQveTEU5EsoYOm39tIAJZhvmD/L5nlGcUV4NNlWnmTk2ovyEzlx38V84qxWVyZvmG5=
+yJtSmpyIvCynxN7GdCoyKP1EmqyLW9aBNzWrhMOx/WqpvvAd1t1JP9M7/b8FSKKyRMHmVlzTjd6=
+vYeONNBUqB3eX5VNY=3D" target=3D"_blank"><img src=3D"https://try.newrelic.co=
+m/rs/341-XKP-310/images/Changelog Headerx3.png" width=3D"1200" height=3D"40=
+0" alt=3D"Changelog Newsletter" style=3D"width:600px; height:auto; display:=
+inline-block; border:none; outline:none; text-decoration:none; vertical-ali=
+gn:middle;"></a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#EFF0F0" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"HeroSelect2891b007-3eab-4e38-bf7e-3ca04813867a" style=
+=3D"background-color:#FFFFFF; margin:0px auto; width:100%!important; min-wi=
+dth:100%!important; height:300px;">
+<tbody>
+<tr>
+<td background=3D"" valign=3D"top" width=3D"100%" style=3D"background-posit=
+ion:center bottom;background-repeat:no-repeat;background-size:cover;width:6=
+00px;height:300px">
+<!--[if gte mso 9]>
+                                              <v:rect xmlns:v=3D"urn:schema=
+s-microsoft-com:vml" fill=3D"true" stroke=3D"false" style=3D"width:600px;he=
+ight:300px;">
+                                              <v:fill type=3D"frame" src=3D=
+"" color=3D"#FFFFFF" />
+                                              <v:textbox style=3D"mso-fit-s=
+hape-to-text:true" inset=3D"0,0,0,0">
+                                              <![endif]-->
+<div>
+<table role=3D"presentation" width=3D"600px" align=3D"left" cellpadding=3D"=
+0" cellspacing=3D"0" border=3D"0" class=3D"tableCollapse" style=3D"width:60=
+0px">
+<tbody>
+<tr>
+<td class=3D"w25" style=3D"padding-top:45px; padding-bottom:0px; padding-le=
+ft:40px; padding-right:40px; font-family:'Open Sans', sans-serif;">
+<span class=3D"sectionTitle" style=3D"font-size:44px;line-height:50px;lette=
+r-spacing: -1px;font-weight:700; color:#1D252C">What=E2=80=99s new at New R=
+elic</span>
+</td>
+</tr>
+<tr>
+<td class=3D"outlook-font w25 mktEditable" id=3D"selectableHeroText0d469cc9=
+-28af-4c7a-8362-460de63f7214" style=3D"padding-top:30px; padding-bottom:0px=
+; padding-left:40px; padding-right:40px; font-family:'Open Sans', sans-seri=
+f; font-size:16px; line-height:21px; color:#1D252C; text-align:left;">
+<div>Learn more about these new features and the rest of our latest release=
+s by checking out
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJ94zIYg3sxDgvgFHy4lJ65XnRA8h=
+od_O95AICfYBeKUMVKf9boetuoLMknNYFecLL-8%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3DibhcjOIx517UjbHp0SJ13V7TN5gAB65YCJrIIltIjCA%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ94zIYg3sxDgvg=
+FHy4lJ65XnRA8hod_O95AICfYBeKUMVKf9boetuoLMknNYFecLL-8=3D" shash=3D"Hnm4mFVO=
+8KEao+9hz+N0woW3e1D5Fa9mwQdEEsSZ2gSvBZDHcPm9gOfBMyZKOl9ZJbe+8Bjp6dhtWlbr7Wt=
+zl2GMWJ32Mk72hfd4BS7HlbZv/7aoOG91jAc2S0uxXtMIdSN8gg6XCiMUEII8eSb2KszcTqRolZ=
+gTBowepf51AIk=3D" target=3D"_blank" style=3D"color: #1d252c; text-decoratio=
+n: underline;">
+What's New</a>. </div>
+<div>
+<ul>
+<li>Manage NRQL lookup tables with the <a href=3D"https://nam02.safelinks.p=
+rotection.outlook.com/?url=3Dhttps%3A%2F%2Fget.newrelic.com%2FMzQxLVhLUC0zM=
+TAAAAGOw9wlJ2Xtq5GubKQ-jCloZ8jfeEUhwpR8nxdzg7jkOFIVBZZz-bl7cxvfYdEFL4DiexyX=
+pl0%3D&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C6c75c60a08834278285a=
+08dbcb470c62%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63832727824408384=
+7%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1ha=
+WwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3Dp0zkqsj2DNmbweXHyro4xSsL2rhiy=
+ZoLcddOVkA6WOg%3D&amp;reserved=3D0" originalsrc=3D"https://get.newrelic.com=
+/MzQxLVhLUC0zMTAAAAGOw9wlJ2Xtq5GubKQ-jCloZ8jfeEUhwpR8nxdzg7jkOFIVBZZz-bl7cx=
+vfYdEFL4DiexyXpl0=3D" shash=3D"ez1IhPx+RXsIe6JCeXboSuWa/gJ6xK5jjt+HNPsGuqk6=
+wEKsDD0XGmxGHGWpBKotlfFTT8nm93I28kTHKFjwVWCpq7vJOZMxbgT1EpJoS3ErEl9DbK/RS4L=
+PDIsIMM71kOF7h8GyQWzL/1532Tv55V0r0+nFBi7HzjXNIEqAm4A=3D" target=3D"_blank" =
+style=3D"color: #1d252c; text-decoration: underline;">
+NRQL Lookups API</a></li></ul>
+<ul>
+<li>Introducing <a href=3D"https://nam02.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKDtQKnHVjs_W=
+sgVFLzDflpxm9hnLOh3LJrORusb4JINAUee_rEwuWn_STOm49-ov7Wc%3D&amp;data=3D05%7C=
+01%7Cegweinberg%40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982=
+e8d74958976cb08441cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CTWFpbGZsb=
+3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C300=
+0%7C%7C%7C&amp;sdata=3DFP%2F%2BZWcAqUvHf4DqViycwF098fEhypLHXkvx3UEXxRQ%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAA=
+GOw9wlKDtQKnHVjs_WsgVFLzDflpxm9hnLOh3LJrORusb4JINAUee_rEwuWn_STOm49-ov7Wc=
+=3D" shash=3D"vzKEEjlkRLYpq0qcqN5P9sOgj/L/yOJ1ykplP4KXTMKc/OdxskvLC14oa0ggN=
+JGZBNaC5F3/UFHE4BjluBbit9Pi5QQU/oyDUGP8yLIqP0ekI8R1NmU9RsEmG8NWXzVwVP4OCtkb=
+HkO0PCTtqLMtG5KxCLzx54YzXVzFT6XN+AA=3D" target=3D"_blank" style=3D"color: #=
+1d252c; text-decoration: underline;">
+New Relic session replay</a>, now in limited preview</li></ul>
+<ul>
+<li>Introducing our new <a href=3D"https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttps%3A%2F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKKsg=
+uGZXjhHTr19RHt1M2ORSkUkIqKYXWaL4_uJRa3DDIAhC3OuWRl6Jc4_u43-4Ok0%3D&amp;data=
+=3D05%7C01%7Cegweinberg%40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C=
+6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CT=
+WFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%=
+3D%7C3000%7C%7C%7C&amp;sdata=3DCC44lVhTjixYCr99i9n2hfcisXz6ENJ4QH%2FlmAGain=
+A%3D&amp;reserved=3D0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0z=
+MTAAAAGOw9wlKKsguGZXjhHTr19RHt1M2ORSkUkIqKYXWaL4_uJRa3DDIAhC3OuWRl6Jc4_u43-=
+4Ok0=3D" shash=3D"hFTBrOsv6vaUlE/0Efl4xCVYIdVQTdFUYS2C0y5ipabrVJKVo2E8Z97D2=
+aJ9ib/QtcLrvYBDTLIdQSySPrmOf9pW2ylr8o3XtuIeAGGfvrN8wqH9z/q7qaP7AqiKWp+vV9Ht=
+Kwg4qjQmstN2x5aPCiItvsge2kNvzFR5b9VNNwI=3D" style=3D"color: #1d252c; text-d=
+ecoration: underline;">
+incident signal analysis feature</a> for enhanced monitoring and response</=
+li></ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"outlook-font" style=3D"padding-top:30px; padding-bottom:30px; =
+padding-left:0px; padding-right:0px;">
+<div style=3D"display:none; mso-hide:all;max-height:0;overflow:hidden;">
+<table role=3D"presentation" align=3D"left" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"display:none; mso-hide:all;max-height:0;overfl=
+ow:hidden;">
+<tbody>
+<tr>
+<td class=3D"w25w" width=3D"40" style=3D"width:40px;background: none;border=
+: none;">&nbsp;</td>
+<td class=3D"outlook-font w-25 button" align=3D"center" valign=3D"middle" s=
+tyle=3D"background-color:none; border:1px solid #1D252C; -webkit-border-rad=
+ius:4px; -moz-border-radius:4px; border-radius:4px; padding-right:32px; pad=
+ding-left:32px; padding-top:12px; padding-bottom:12px; font-family:'Open Sa=
+ns', sans-serif; font-size:16px; line-height:24px; color:#1D252C; display:b=
+lock; mso-line-height-rule:exactly; font-weight:300; text-decoration:none; =
+text-align:center;display:none; mso-hide:all;max-height:0;overflow:hidden;"=
+>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJ9B0KQ9tdtUj5NhkoUHx2PQwYl0Z=
+dGu3Gl3EaISV07i-9gQTyGTXOI92vuIUQ8Ma9uU%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3Dhqs%2FMObDE%2F%2B%2BvvppCZwPrl9l5xIIcyhzqnq2Xjs0f9A%3D&amp;reserved=
+=3D0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ9B0K=
+Q9tdtUj5NhkoUHx2PQwYl0ZdGu3Gl3EaISV07i-9gQTyGTXOI92vuIUQ8Ma9uU=3D" shash=3D=
+"a+o1k3qANKm3WQDtYfOvTGa476SXy7VWPfYngAmeXIf2PxVDxmpHRo1MKZQj/3TlAnJ56gHFwA=
+JQ5kBSsK068qV0z7Kn4/EP8YkNvsTpHMyQ8Gr9cagKGlUKVCGfjbkIVW0+/MVwmeAQip05jo9YK=
+3HtlbcvOcYVTRSD/AQUE3g=3D" style=3D"color:#1D252C; text-decoration:none;"><=
+span style=3D"color:#1D252C; text-decoration:none;">Log In Now</span></a>
+</td>
+<td class=3D"w25w" width=3D"40" style=3D"width:40px;background: none;border=
+: none;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style=3D"display:block;">
+<table role=3D"presentation" align=3D"left" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"display:block;">
+<tbody>
+<tr>
+<td class=3D"w25w" width=3D"40" style=3D"width:40px;background: none;border=
+: none;">&nbsp;</td>
+<td bgcolor=3D"#1CE783" class=3D"outlook-font button primary-button" align=
+=3D"center" valign=3D"middle" style=3D"background-color:#1CE783; border:0px=
+ solid black; color:#1D252C; -webkit-border-radius:4px; -moz-border-radius:=
+4px; border-radius:4px; padding-right:32px; padding-left:32px; padding-top:=
+12px; padding-bottom:12px; font-family:'Open Sans', sans-serif; font-size:1=
+6px; line-height:24px; display:block; mso-line-height-rule:exactly; font-we=
+ight:300; text-decoration:none; text-align:center;display:block;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJ9B0KQ9tdtUj5NhkoUHx2PQwYl0Z=
+dGu3Gl3EaISV07i-9gQTyGTXOI92vuIUQ8Ma9uU%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3Dhqs%2FMObDE%2F%2B%2BvvppCZwPrl9l5xIIcyhzqnq2Xjs0f9A%3D&amp;reserved=
+=3D0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ9B0K=
+Q9tdtUj5NhkoUHx2PQwYl0ZdGu3Gl3EaISV07i-9gQTyGTXOI92vuIUQ8Ma9uU=3D" shash=3D=
+"a+o1k3qANKm3WQDtYfOvTGa476SXy7VWPfYngAmeXIf2PxVDxmpHRo1MKZQj/3TlAnJ56gHFwA=
+JQ5kBSsK068qV0z7Kn4/EP8YkNvsTpHMyQ8Gr9cagKGlUKVCGfjbkIVW0+/MVwmeAQip05jo9YK=
+3HtlbcvOcYVTRSD/AQUE3g=3D" style=3D"color:#1D252C; text-decoration:none;"><=
+span style=3D"color:#1D252C; text-decoration:none;">Log In Now</span></a>
+</td>
+<td class=3D"w25w" width=3D"40" style=3D"width:40px;background: none;border=
+: none;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if gte mso 9]>
+                                              </v:textbox>
+                                              </v:rect>
+                                              <![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#ffffff" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"headline91df2f36-b098-420d-8703-6d5bc8533792" style=3D=
+"background-color:#ffffff; margin:0px auto; width:100%!important; min-width=
+:100%!important;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"w25" valign=3D"top" style=3D"padding-top:40px=
+; padding-bottom:20px; padding-left:40px; padding-right:40px;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJwluXbUW5nrsw73j616UIu7n054d=
+wWTlHHVMqIXYxGK_XLhnZGGM0pYkZzIiXESipxM%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3D%2FVW5IW7bgKZ11Q0y12QbpXueufJBx8FWK7ti%2FX1hkC8%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJwluXbUW5n=
+rsw73j616UIu7n054dwWTlHHVMqIXYxGK_XLhnZGGM0pYkZzIiXESipxM=3D" shash=3D"fdqo=
+ClTC2pEdGqlmsIUhvFI571Uj//9Zb2Pmiso7GSw2D1EQd24yePxVXIkmB6JqKhsg9D3KOoSDHv3=
+LVxtNZsbvPahWmN2TWczocRA2DHMoDvlmbcLzD9JoA+RvSWXql4u18R0QlV+epKqs2FOeG9lYud=
+MOe1ybR7ORZfeEmhI=3D" style=3D"color:#1D252C;text-decoration:none;"></a>
+<div class=3D"mktoImg " id=3D"headlineImgc11b414a-7293-4e9b-997e-07f807bcab=
+c9" style=3D"display:inline-block;" mktolockimgsize=3D"false" mktolockimgst=
+yle=3D"false">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJwluXbUW5nrsw73j616UIu7n054d=
+wWTlHHVMqIXYxGK_XLhnZGGM0pYkZzIiXESipxM%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3D%2FVW5IW7bgKZ11Q0y12QbpXueufJBx8FWK7ti%2FX1hkC8%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJwluXbUW5n=
+rsw73j616UIu7n054dwWTlHHVMqIXYxGK_XLhnZGGM0pYkZzIiXESipxM=3D" shash=3D"fdqo=
+ClTC2pEdGqlmsIUhvFI571Uj//9Zb2Pmiso7GSw2D1EQd24yePxVXIkmB6JqKhsg9D3KOoSDHv3=
+LVxtNZsbvPahWmN2TWczocRA2DHMoDvlmbcLzD9JoA+RvSWXql4u18R0QlV+epKqs2FOeG9lYud=
+MOe1ybR7ORZfeEmhI=3D" target=3D"_blank"><img src=3D"https://try.newrelic.co=
+m/rs/341-XKP-310/images/Customer-Story-Stat_974x500.jpg" width=3D"1461" hei=
+ght=3D"750" alt=3D"Customer Story Shutterstock" style=3D"width:520px; heigh=
+t:auto; display:inline-block; border:none; outline:none; text-decoration:no=
+ne; vertical-align:middle;"></a>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"w25" style=3D"padding-top:0px; padding-bottom:0px; padding-lef=
+t:40px; padding-right:40px; font-family:'Open Sans', sans-serif;">
+<span class=3D"sectionTitle" style=3D"font-size:24px;line-height:30px;lette=
+r-spacing: -1px;font-weight:700; color:#1D252C">Shutterstock protects custo=
+mer information and gains efficiency by standardizing on New Relic</span>
+</td>
+</tr>
+<tr>
+<td class=3D"outlook-font mktEditable w25" id=3D"HeadlineTextfaa4e662-a284-=
+4bff-b180-148e3f98fa1d" style=3D"padding-top:25px; padding-bottom:0px; padd=
+ing-left:40px; padding-right:40px; font-family:'Open Sans', sans-serif; fon=
+t-size:16px; line-height:24px; color:#1D252C;  font-weight:400;">
+<div>Shutterstock significantly improves developer productivity, saving tim=
+e and money, while having visibility into metrics to improve KPIs by consol=
+idating tools and standardizing practices.
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"w25" style=3D"padding-top:25px; padding-bottom:40px; padding-l=
+eft:40px; padding-right:40px; font-family:'Open Sans', sans-serif; font-siz=
+e:18px; line-height:28px;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJwluXbUW5nrsw73j616UIu7n054d=
+wWTlHHVMqIXYxGK_XLhnZGGM0pYkZzIiXESipxM%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3D%2FVW5IW7bgKZ11Q0y12QbpXueufJBx8FWK7ti%2FX1hkC8%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJwluXbUW5n=
+rsw73j616UIu7n054dwWTlHHVMqIXYxGK_XLhnZGGM0pYkZzIiXESipxM=3D" shash=3D"fdqo=
+ClTC2pEdGqlmsIUhvFI571Uj//9Zb2Pmiso7GSw2D1EQd24yePxVXIkmB6JqKhsg9D3KOoSDHv3=
+LVxtNZsbvPahWmN2TWczocRA2DHMoDvlmbcLzD9JoA+RvSWXql4u18R0QlV+epKqs2FOeG9lYud=
+MOe1ybR7ORZfeEmhI=3D" style=3D"color:#1D252C;text-decoration:none;"><span s=
+tyle=3D"color:#1D252C;text-decoration:underline;">Learn More</span>
+<img src=3D"https://try.newrelic.com/rs/341-XKP-310/images/arrow-green.png"=
+ style=3D"display:inline-block;vertical-align:bottom;height:28px;width:auto=
+;"></a>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#ffffff" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"headline02108386-17e6-4365-80ac-86b01bdd8ae7" style=3D=
+"background-color:#ffffff; margin:0px auto; width:100%!important; min-width=
+:100%!important;">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"w25" valign=3D"top" style=3D"padding-top:40px=
+; padding-bottom:20px; padding-left:40px; padding-right:40px;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJ6kaxl90DIryD0mvjkOWgAGorDng=
+blq3P39CiuALVA4JyYnAZW4rKSFUJZquLWw3UOM%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3DAXCPbpmsZZRasiT7%2FO5VgX3PA6Qis3peNuoJSiUhoUY%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ6kaxl90DIry=
+D0mvjkOWgAGorDngblq3P39CiuALVA4JyYnAZW4rKSFUJZquLWw3UOM=3D" shash=3D"McY5Wg=
+HS8MKK/tbk5vAVpSCFQdK1OySXzkLHaQw4fhRWqmlsZJ3Ch2dGjVPumNYCJ7SN48VVykmX3RMLk=
+arAjmI/gRE6GXOZavLAt2jzNZqz7/vGIYPrKOJByNruYSZP3BZJR3JcUT/iletlqrWM4AF2TifM=
+pVl1atNQRkkhsNk=3D" style=3D"color:#1D252C;text-decoration:none;"></a>
+<div class=3D"mktoImg " id=3D"headlineImg167b5151-c93f-4d67-b197-b67ca31828=
+9c" style=3D"display:inline-block;" mktolockimgsize=3D"false" mktolockimgst=
+yle=3D"false">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJ6kaxl90DIryD0mvjkOWgAGorDng=
+blq3P39CiuALVA4JyYnAZW4rKSFUJZquLWw3UOM%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244083847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3DAXCPbpmsZZRasiT7%2FO5VgX3PA6Qis3peNuoJSiUhoUY%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ6kaxl90DIry=
+D0mvjkOWgAGorDngblq3P39CiuALVA4JyYnAZW4rKSFUJZquLWw3UOM=3D" shash=3D"McY5Wg=
+HS8MKK/tbk5vAVpSCFQdK1OySXzkLHaQw4fhRWqmlsZJ3Ch2dGjVPumNYCJ7SN48VVykmX3RMLk=
+arAjmI/gRE6GXOZavLAt2jzNZqz7/vGIYPrKOJByNruYSZP3BZJR3JcUT/iletlqrWM4AF2TifM=
+pVl1atNQRkkhsNk=3D" target=3D"_blank"><img src=3D"https://try.newrelic.com/=
+rs/341-XKP-310/images/Data-Session-Koneska.png" width=3D"974" height=3D"500=
+" alt=3D"Data Session Koneska" style=3D"width:520px; height:auto; display:i=
+nline-block; border:none; outline:none; text-decoration:none; vertical-alig=
+n:middle;"></a>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"w25" style=3D"padding-top:0px; padding-bottom:0px; padding-lef=
+t:40px; padding-right:40px; font-family:'Open Sans', sans-serif;">
+<span class=3D"sectionTitle" style=3D"font-size:24px;line-height:30px;lette=
+r-spacing: -1px;font-weight:700; color:#1D252C">Data Sessions: Koneksa runs=
+ on New Relic to empower developers with real-time data</span>
+</td>
+</tr>
+<tr>
+<td class=3D"outlook-font mktEditable w25" id=3D"HeadlineText31dc2890-0067-=
+4760-8768-5707488a71ac" style=3D"padding-top:25px; padding-bottom:0px; padd=
+ing-left:40px; padding-right:40px; font-family:'Open Sans', sans-serif; fon=
+t-size:16px; line-height:24px; color:#1D252C;  font-weight:400;">
+<div>Koneksa runs on New Relic to observe and seamlessly manage a complex i=
+nfrastructure, and empower developers with real-time data. With New Relic, =
+the Koneksa engineering team can manage 20 million APM transactions a day.
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"w25" style=3D"padding-top:25px; padding-bottom:40px; padding-l=
+eft:40px; padding-right:40px; font-family:'Open Sans', sans-serif; font-siz=
+e:18px; line-height:28px;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJ6kaxl90DIryD0mvjkOWgAGorDng=
+blq3P39CiuALVA4JyYnAZW4rKSFUJZquLWw3UOM%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3DnvTL8oOjqKAtylTx5cRUm8c3PGrXksZs3ZUrP%2BlLoZk%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ6kaxl90DIry=
+D0mvjkOWgAGorDngblq3P39CiuALVA4JyYnAZW4rKSFUJZquLWw3UOM=3D" shash=3D"KasiS7=
+eFNiE6TizpT9sir8SGNvDT3sOMdcVpLFr5w76dRGRDQ3p/KsfGfKKBGCgg8aFjWBBkAnUx+HaaJ=
+e+/FZ4P8/xvrizX2xWG2t2CZj1sdVLBKn6VurQ4x8q9qsCVjcuLyEh5bBObBeMBOq44y8kdOovi=
+PqTlA+fe2335ook=3D" style=3D"color:#1D252C;text-decoration:none;"><span sty=
+le=3D"color:#1D252C;text-decoration:underline;">Watch Video</span>
+<img src=3D"https://try.newrelic.com/rs/341-XKP-310/images/arrow-green.png"=
+ style=3D"display:inline-block;vertical-align:bottom;height:28px;width:auto=
+;"></a>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#ffffff" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"ImageDividerModule7210a9a6-ad55-4436-840c-c782719573ab=
+" style=3D"background-color:#ffffff; margin:0px auto; width:100%!important;=
+ min-width:100%!important;">
+<tbody>
+<tr>
+<td valign=3D"top" align=3D"center" style=3D"padding-top:0px; padding-botto=
+m:40px;" class=3D"mobCenter">
+<div style=3D"display:inline-block;"><img width=3D"600" border=3D"0" alt=3D=
+"Image" src=3D"https://try.newrelic.com/rs/341-XKP-310/images/divider-quick=
+start-green.png" style=3D"width:600px; height:auto; display:inline-block; b=
+order:none; outline:none; text-decoration:none; vertical-align:middle;">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#ffffff" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"TextBCModule6bdbbb42-e775-4bd5-afda-1861c28b0627" styl=
+e=3D"background-color:#ffffff; margin:0px auto; width:100%!important; min-w=
+idth:100%!important;">
+<tbody>
+<tr>
+<td class=3D"outlook-font mktEditable w25" id=3D"TextBC41492d20-3828-463d-8=
+071-379bae316f5b" style=3D"padding-top:0px; padding-bottom:0px; padding-lef=
+t:40px; padding-right:40px; font-family:'Open Sans', sans-serif; font-size:=
+16px; line-height:24px; color:#54565A; text-align:left; font-weight:400;">
+<p style=3D"color: #1d252c; font-size: 24px; line-height: 30px; letter-spac=
+ing: -1px; font-variant: normal; text-decoration: none; vertical-align: bas=
+eline; white-space: pre-wrap;">
+<strong>Business Insights for Adobe Commerce</strong></p>
+<p style=3D"color: #1d252c;">Want to know how many orders are lost due to d=
+owntime? Curious about which products to stock more of? With the Adobe Comm=
+erce quickstart, you can boost your ecommerce site with unmatched visibilit=
+y into
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJ4iyDKX6c3zCsZ3FnlnG-ePramk9=
+lkepPaZDYjLSU-9GrdUWydQTkwucSobrI3MX1j8%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3DxmgL0FGqAGKdOMvzIwETf1qF9InqhgkChGYentx8e8U%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ4iyDKX6c3zCsZ=
+3FnlnG-ePramk9lkepPaZDYjLSU-9GrdUWydQTkwucSobrI3MX1j8=3D" shash=3D"buAjlpA5=
+ala5PUh9fwUUc24y8NX4DsO4R2ufMfwsuGBQkp7aFtklENpO3S7a46u4X9Hi7e75EBT6EcBDxlf=
+NLtWNqW49ggxeu2jZTCNLfVEy+EMo6F9vMhrlU4EPvVNPsAbCpGRnesvxPF24fCxb7sywBQzLXa=
+tkQOura6vfvKM=3D" target=3D"_blank" style=3D"color: #1d252c; text-decoratio=
+n: underline;">
+key business metrics</a> to keep your customers returning. <a href=3D"https=
+://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fget.newrelic=
+.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKDhrjy0OlOVvN3nS2P7V7ktt8WsMsOF9CVE8kQgCD2Zy=
+lJKAMesk9Fu0WGnpol04WBc%3D&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C=
+6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0=
+%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DKZ4QK0zCR=
+wVj%2Fx1WsOivky%2BHOhFV%2Fh5rqshHTtGe3Ps%3D&amp;reserved=3D0" originalsrc=
+=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKDhrjy0OlOVvN3nS2P7V7k=
+tt8WsMsOF9CVE8kQgCD2ZylJKAMesk9Fu0WGnpol04WBc=3D" shash=3D"PbKa9LRkvX5Nc+Dw=
+RnfRqtHjNNfaaVgdvdyM76a4H41U9fxGoT97I1RBOx0QH8LfCEjpPMCFxI0AVCzgTU1xlaIt3gQ=
+uyg9dMtial2sii6w/qHQzdeFWa8IyZ2iuu9apu0waf7ijiPy6iiGoq5qmOwDQoJVmIN2hMccdLL=
+gNmk0=3D" target=3D"_blank" style=3D"color: #1d252c; text-decoration: under=
+line;">
+Install</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#ffffff" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"ImageDividerModule778121e8-6b5d-4aa1-a986-d45acae4ecce=
+" style=3D"background-color:#ffffff; margin:0px auto; width:100%!important;=
+ min-width:100%!important;">
+<tbody>
+<tr>
+<td valign=3D"top" align=3D"center" style=3D"padding-top:40px; padding-bott=
+om:40px;" class=3D"mobCenter">
+<div style=3D"display:inline-block;"><img width=3D"600" border=3D"0" alt=3D=
+"Image" src=3D"https://try.newrelic.com/rs/341-XKP-310/images/divider-usefu=
+l_reads-black.png" style=3D"width:600px; height:auto; display:inline-block;=
+ border:none; outline:none; text-decoration:none; vertical-align:middle;">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#ffffff" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"TextBCModule0980b15f-7924-4c71-8a46-954183bceaea" styl=
+e=3D"background-color:#ffffff; margin:0px auto; width:100%!important; min-w=
+idth:100%!important;">
+<tbody>
+<tr>
+<td class=3D"outlook-font mktEditable w25" id=3D"TextBC131816a2-c893-4902-8=
+30e-7a4b7ae1371e" style=3D"padding-top:0px; padding-bottom:0px; padding-lef=
+t:40px; padding-right:40px; font-family:'Open Sans', sans-serif; font-size:=
+16px; line-height:24px; color:#54565A; text-align:left; font-weight:400;">
+<p style=3D"color: #1d252c; font-size: 24px; line-height: 30px; letter-spac=
+ing: -1px; font-variant: normal; text-decoration: none; vertical-align: bas=
+eline; white-space: pre-wrap;">
+<strong>Why You Need a Single Tool for Infrastructure Monitoring and APM </=
+strong>
+</p>
+<p style=3D"color: #1d252c;">View our newest ebook to discover how to conso=
+lidate infrastructure monitoring and APM into a single tool to minimize dow=
+ntime, reduce tool sprawl, and quickly solve performance issues. It include=
+s the top 10 must-haves of a consolidated
+ monitoring tool. <a href=3D"https://nam02.safelinks.protection.outlook.com=
+/?url=3Dhttps%3A%2F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKNUzVItYau=
+kxnuFoqs54v5kLWpWJd8jFjeaMbxZVNB-l5n714paKTxVXVETlqo7AaFU%3D&amp;data=3D05%=
+7C01%7Cegweinberg%40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc9=
+82e8d74958976cb08441cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZ=
+sb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3=
+000%7C%7C%7C&amp;sdata=3Dpv9SkwVa%2FljrFJ9%2F0g4FDTAJbYdMMNXGdBos%2Fj1cHXM%=
+3D&amp;reserved=3D0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMT=
+AAAAGOw9wlKNUzVItYaukxnuFoqs54v5kLWpWJd8jFjeaMbxZVNB-l5n714paKTxVXVETlqo7Aa=
+FU=3D" shash=3D"FtiPRKd/Me7a8hAzLstOD7+/aYatMPdaKWY988riZG4Tsus04QjDvityKq7=
+GLeoxk9KKZxwmQsI1lTtbK3MQ5ZPDqW2p6gBFY9GqSYhyQgKgl5SVIv3mjSCChAoTzoe2G6EkrM=
+jOBbi+LxIvfB4l6p5jcfkZD5jc6cRBilcyGrg=3D" target=3D"_blank" style=3D"color:=
+ #1d252c; text-decoration: underline;">
+View Ebook</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#ffffff" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"ImageDividerModuled3554fd5-b829-4a41-9a27-b02b5d4639a1=
+" style=3D"background-color:#ffffff; margin:0px auto; width:100%!important;=
+ min-width:100%!important;">
+<tbody>
+<tr>
+<td valign=3D"top" align=3D"center" style=3D"padding-top:40px; padding-bott=
+om:40px;" class=3D"mobCenter">
+<div style=3D"display:inline-block;"><img width=3D"600" border=3D"0" alt=3D=
+"Image" src=3D"https://try.newrelic.com/rs/341-XKP-310/images/divider-upcom=
+ing_events-green.png" style=3D"width:600px; height:auto; display:inline-blo=
+ck; border:none; outline:none; text-decoration:none; vertical-align:middle;=
+">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#ffffff" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"TextBCModuledba14012-e269-40f4-a2c3-821183b699a2" styl=
+e=3D"background-color:#ffffff; margin:0px auto; width:100%!important; min-w=
+idth:100%!important;">
+<tbody>
+<tr>
+<td class=3D"outlook-font mktEditable w25" id=3D"TextBCc3d16022-a306-4782-a=
+199-a3d3ff11d675" style=3D"padding-top:0px; padding-bottom:0px; padding-lef=
+t:40px; padding-right:40px; font-family:'Open Sans', sans-serif; font-size:=
+16px; line-height:24px; color:#54565A; text-align:left; font-weight:400;">
+<p style=3D"color: #1d252c; font-size: 24px; line-height: 30px; letter-spac=
+ing: -1px; font-variant: normal; text-decoration: none; vertical-align: bas=
+eline; white-space: pre-wrap;">
+<strong>All Things Open </strong><br>
+<strong></strong></p>
+<p style=3D"color: #1d252c;">New Relic is a Silver sponsor at All Things Op=
+en&nbsp;on&nbsp;<span style=3D"font-size: 11pt; font-family: Arial,sans-ser=
+if; color: #000000; background-color: transparent; font-weight: 400; font-v=
+ariant: normal; text-decoration: none; vertical-align: baseline; white-spac=
+e: pre-wrap;">October
+ 15=E2=80=9317 where o</span>ur DevRel Relics will&nbsp;offer&nbsp;<a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fget=
+.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJ_N-2T7ftYUmP0vm3I7zaH4preU3MRZIuv9=
+P2S_qHDjzLhhblRCFqxJKn9ct_T_sVxU%3D&amp;data=3D05%7C01%7Cegweinberg%40viter=
+bo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb08441cc9b0=
+b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D=
+NHi1ZYs%2Fx1oBwDKjj%2FXa6G2hnII%2BvvXzz2DrnVgmuhk%3D&amp;reserved=3D0" orig=
+inalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ_N-2T7ftYUmP0v=
+m3I7zaH4preU3MRZIuv9P2S_qHDjzLhhblRCFqxJKn9ct_T_sVxU=3D" shash=3D"LpTmlXarr=
+wOMepBQ58Q08v1ocX3kWXeHoMu64BN39HQtO6BbZniw/vFnkRQJS4+mzTvrA4KIGXfXlQcOn47C=
+c015JWdd2HiigPt/X9mTluvFyDRfc3n0V33k9QUvmSGqrpn/S6t7TqE9sBg7sZVDFKpx3fhCT0+=
+st0+WJiCh710=3D" style=3D"color: #1d252c; text-decoration: underline;" targ=
+et=3D"_blank">sessions</a>&nbsp;you
+ don=E2=80=99t want to miss. Visit our booth to play games, get prizes, and=
+ learn cool things.&nbsp;Register now and receive a discount code for maxim=
+um rewards.<span>&nbsp;</span><a href=3D"https://nam02.safelinks.protection=
+.outlook.com/?url=3Dhttps%3A%2F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9=
+wlKG6uPCQSLm14buzjZGHisCdXcF6kRX0-Z-muO9Bq9TiRB6jqsbJXAzqjGwyZTQyR3Rg%3D&am=
+p;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C6c75c60a08834278285a08dbcb470=
+c62%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C638327278244240067%7CUnkno=
+wn%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVC=
+I6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DEWtCjQm%2B4yl%2FaSWPZSUsvY1BYnk5k9vOiW=
+0NuNVw%2Flk%3D&amp;reserved=3D0" originalsrc=3D"https://get.newrelic.com/Mz=
+QxLVhLUC0zMTAAAAGOw9wlKG6uPCQSLm14buzjZGHisCdXcF6kRX0-Z-muO9Bq9TiRB6jqsbJXA=
+zqjGwyZTQyR3Rg=3D" shash=3D"LggaapEPKm3WO9qRx3GlAXiRcxBk4aukXBnHUQ0rLL4L4CF=
+7bhcRavrxQxkHyxqTQ4aHBTT094B7FCUK22Sngr3k4U8Cq3jHBJIpDgvfqLzCGo+4RgnteLZ3bh=
+J/ULL3fvg7TeCLbQi1AiYfxzN0qE+Hm2ebjpfxjsTwYrbUpeY=3D" style=3D"color: #1d25=
+2c; text-decoration: underline;" target=3D"_blank">Register
+ Now</a></p>
+<p style=3D"color: #1d252c;"><br>
+</p>
+<p style=3D"color: #1d252c; font-size: 24px; line-height: 30px; letter-spac=
+ing: -1px; font-variant: normal; text-decoration: none; vertical-align: bas=
+eline; white-space: pre-wrap;">
+<strong>[Webinar] Enhancing Observability with OpenTelemetry: Leveraging Ne=
+w Relic Support</strong></p>
+<p style=3D"color: #1d252c;">Register to join us on Wednesday, October 18 a=
+t 1pm EST to learn how your organization can reap the rewards of open sourc=
+e software and observability with OpenTelemetry and New Relic.
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKJ1_aFilyVkYpJTFEvMI3EePilP4=
+lCpWQNTflEru2V19A8jallt7UktKthW7xE_oCL4%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3D7aF58fu9CiUnHAFFFFJwpr%2F4Tl1Hi20m9vWPQFIbRQY%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKJ1_aFilyVkY=
+pJTFEvMI3EePilP4lCpWQNTflEru2V19A8jallt7UktKthW7xE_oCL4=3D" shash=3D"zcahcM=
+8INYa0n4y1PbLVNjw/VYUw7MzoHu6N5+Ub24fNQOJ5DkfGoPalhsDvRsvM2GqQtaok5V2rrs/SQ=
+zuz3/R3+AziCL+oTQJjFL21LND+HtVdrRJcJNc7bx6Onh3b68U4rTI0ys9Y15yM8vIg9wBGSG8f=
+pHk+SqEGLtLdPl0=3D" style=3D"color: #1d252c; text-decoration: underline;">
+Register Now</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#ffffff" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"TextBCModule063bde01-77f5-4dec-b27d-f9a4c60d4097" styl=
+e=3D"background-color:#ffffff; margin:0px auto; width:100%!important; min-w=
+idth:100%!important;">
+<tbody>
+<tr>
+<td class=3D"outlook-font mktEditable w25" id=3D"TextBC370b971a-d072-4100-8=
+a01-ea7e15c821d6" style=3D"padding-top:0px; padding-bottom:0px; padding-lef=
+t:40px; padding-right:40px; font-family:'Open Sans', sans-serif; font-size:=
+16px; line-height:24px; color:#54565A; text-align:left; font-weight:400;">
+<p><br>
+<span style=3D"font-size: 14px;">Not an existing New Relic user?<span>&nbsp=
+;</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKFGrjKVW0whI4UYp8Uc2=
+lehT7me8TgakrUJJ4LEb1IiL-vWbxSHTbxDv38DZDKLsndk%3D&amp;data=3D05%7C01%7Cegw=
+einberg%40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958=
+976cb08441cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWI=
+joiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%=
+7C&amp;sdata=3DbJAM0hAGKE9YbWDWKHbu6gief80mZpjKr2414mvunws%3D&amp;reserved=
+=3D0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKFGrj=
+KVW0whI4UYp8Uc2lehT7me8TgakrUJJ4LEb1IiL-vWbxSHTbxDv38DZDKLsndk=3D" shash=3D=
+"brs3R8jJ74PwpehOCo83wMqWU9J7p62fpMg1L+OgLQXx12C/5C6NLjDRqMyJzEfp1THDYCjtaT=
+Cqb+IFTbHtdD3FdtMO7G9D4ujKBloPbGRR27MXY9fRfSNYGTfsUqvtXSfYME25c5Q+E2RQfr1Jk=
+FDnjXga1CCszaDdUbdoC8Y=3D" target=3D"_blank" style=3D"color: #1d252c; text-=
+decoration: underline;">Sign
+ up for a free account</a><span>&nbsp;</span>to get started!</span></p>
+<p><br>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bbgcolor=3D"#000000" width=3D"100%" align=3D"c=
+enter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule=
+ tableCollapse mobCenter" id=3D"FooterModule7bcd1f72-7d5a-495c-bad7-99511db=
+ce762" style=3D"background-color:#000000; margin:0px auto; width:100%!impor=
+tant; min-width:100%!important;text-align:left;">
+<tbody>
+<tr>
+<td class=3D"w25" style=3D"padding-top:25px; padding-bottom:15px;"><!--[if =
+(gte mso 9)|(IE)]>
+                                              <table role=3D"presentation" =
+width=3D"600" align=3D"left" cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" style=3D"width:600px;">
+                                              <tr>
+                                              <td valign=3D"top" width=3D"3=
+00" style=3D"width:300px;">
+                                              <![endif]-->
+<table role=3D"presentation" width=3D"300" align=3D"left" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" class=3D"tableCollapse" style=3D"width:100%=
+;max-width: 300px">
+<tbody>
+<tr>
+<td class=3D"w25 mobCenter" style=3D"width:120px; padding-bottom:10px; padd=
+ing-top:5px;padding-left:40px; height:24px;">
+<div class=3D"" id=3D"Footer-Logo" style=3D"display:inline-block;"><img hei=
+ght=3D"20" border=3D"0" alt=3D"Logo" src=3D"https://try.newrelic.com/rs/341=
+-XKP-310/images/logo-nr-small-green.png" style=3D"height:20px; width:auto; =
+display:inline-block; border:none; outline:none; text-decoration:none; vert=
+ical-align:middle;">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                              </td>
+                                              <td valign=3D"top" width=3D"3=
+00" style=3D"width:300px;">
+                                              <![endif]-->
+<table role=3D"presentation" width=3D"300" align=3D"left" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" class=3D"tableCollapse" style=3D"width:100%=
+;max-width: 300px">
+<tbody>
+<tr>
+<td class=3D"w25 mobCenter" id=3D"SocialIcons" style=3D"padding-left:40px; =
+padding-right:40px; border:none; border-collapse: collapse;text-align:right=
+;">
+<div style=3D"display:inline-block;vertical-align:bottom;height:28px;width:=
+auto;"><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKOOPpEvS1mRFmxQCXtqZA=
+bnAZuzh58da7XH8qB1uEj_mnBpgZz0AtSDdoFHflIR-bmA%3D&amp;data=3D05%7C01%7Cegwe=
+inberg%40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d749589=
+76cb08441cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3DXmgEKV1eRyPh1tJec%2Bwt%2FQ8drpfZBCSi9272Oj5rUk0%3D&amp;reserv=
+ed=3D0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKOO=
+PpEvS1mRFmxQCXtqZAbnAZuzh58da7XH8qB1uEj_mnBpgZz0AtSDdoFHflIR-bmA=3D" shash=
+=3D"MQM7YojYCor2MvhO7+BSbtKTTd71zL/p+qGhIY0uTWZaQFwqjNS0iANw9B38YrYOnAN+qhh=
+ALsGAHnK6bAk1OyQfjELWMkWEiReJHG+TFl6sTnrq2+ztNaOy0p4P8hrzR8iNDNoueiT+i/eDzJ=
+d7pQjn45nM4np/i55Hesf6geA=3D"><img src=3D"https://try.newrelic.com/rs/341-X=
+KP-310/images/badge-appstore.png" style=3D"height: 30px;width: 100px;" widt=
+h=3D"100" height=3D"30">
+</a><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJ7MO42Uuwp1_bgGk2Y6L0xz6=
+-SiQBjkfZcIbmIRhSjdcs57mLGb9EIU4reEIepv_XR8%3D&amp;data=3D05%7C01%7Cegweinb=
+erg%40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976c=
+b08441cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiM=
+C4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&a=
+mp;sdata=3DRFzgSdSUdmX%2B5RRLYh5Fo1g1rq6Ed%2ByN4KOJFICxncc%3D&amp;reserved=
+=3D0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ7MO4=
+2Uuwp1_bgGk2Y6L0xz6-SiQBjkfZcIbmIRhSjdcs57mLGb9EIU4reEIepv_XR8=3D" shash=3D=
+"Q4ASdZ0RUCPWClLrWLZiwfdoU+vQzW8oh42f9y3hKr32v9HEqwgpnnIjHB/i92SZh21V9N/bn1=
+Ns3ixck85Sm7wSffRfvUCHro8TEVok5xFce8yjRwuqAfth8CrCi9zUz5v29syf6zcKobPx2S+UP=
+PfxoxdgrtpN1Szsc/Ic3rY=3D"><img src=3D"https://try.newrelic.com/rs/341-XKP-=
+310/images/badge-playstore.png" style=3D"height: 30px;width: 100px;" width=
+=3D"100" height=3D"30">
+</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                                </td>
+
+                                                </tr>
+                                                </table>
+                                                <![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#000000" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"footerContactUs5fa958fb-3442-4548-9c6a-4437941b0eef" s=
+tyle=3D"background-color:#000000; margin:0px auto; width:100%!important; mi=
+n-width:100%!important;">
+<tbody>
+<tr>
+<td style=3D"padding-bottom:35px;">
+<table role=3D"presentation" width=3D"100%" align=3D"center" style=3D"margi=
+n:0px auto; width:100%!important; min-width:100%!important;">
+<tbody>
+<tr>
+<td class=3D"" style=3D"padding-top:10px; padding-bottom:0px; padding-left:=
+40px; padding-right:40px; font-family:'Open Sans', sans-serif;">
+<span class=3D"sectionTitle" style=3D"font-size:24px;line-height:32px;lette=
+r-spacing: -1px;font-weight:700; color:white">Need help? Let's get in touch=
+.</span>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" width=3D"100%" align=3D"center" class=3D"table=
+Collapse" style=3D"margin:0px auto; width:100%!important; min-width:100%!im=
+portant;">
+<tbody>
+<tr>
+<td style=3D"padding-top:20px; padding-bottom:0px;padding-left:40px;padding=
+-right:40px;">
+<!--[if (gte mso 9)|(IE)]>
+                                                          <table role=3D"pr=
+esentation" width=3D"520" align=3D"center" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"width:520px;">
+                                                          <tr>
+                                                          <td valign=3D"top=
+" width=3D"172" style=3D"width:172px;">
+                                                          <![endif]-->
+<table role=3D"presentation" width=3D"172" align=3D"left" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" class=3D"tableCollapse w25" style=3D"width:=
+172px;padding-bottom: 20px;">
+<tbody>
+<tr>
+<td class=3D"outlook-font " style=3D"padding-bottom:0px;padding-left:0px; p=
+adding-right:0px; font-family:'Open Sans', sans-serif; font-size:18px; line=
+-height:24px; color:#00838F; text-align:left; font-weight:600;width:45px;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJ5OWsLSbOaGKZSnefpn2TbpiXyvd=
+TfYgeLMG6wGBsHP8E5A7il5AY5gUKge2J9hAX4o%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3DS%2FopIVwdzvIyRFXJzCMkzqECLiPx9W%2BrApLLRaiIQG0%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ5OWsLSbOa=
+GKZSnefpn2TbpiXyvdTfYgeLMG6wGBsHP8E5A7il5AY5gUKge2J9hAX4o=3D" shash=3D"FTTI=
+xyGs/mavc+3IoLLXiQNKLR1v4f2vb0VHCiigKcW26h7XcDiN+rLMvjjFi67kbg+fIVJl/oqBzTL=
+Bo/uLhmLMh+6u6k0EZuH8oOGiOxGaakSetk0aAnTXQcPP0rnJbFd7cIA3WWbQUpixzyWac7aHXp=
+LnNb4Iw32Jao3/lzE=3D" style=3D"text-decoration:none;"><img src=3D"https://t=
+ry.newrelic.com/rs/341-XKP-310/images/hexIcon-Community.png" style=3D"heigh=
+t:45px;width:45px"></a>
+</td>
+<td style=3D"font-family:'Open Sans', sans-serif; font-size:14px; line-heig=
+ht:24px; color:#00838F; text-align:left; font-weight:600;padding-left: 10px=
+;">
+<div><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJ5OWsLSbOaGKZSnefpn2Tbp=
+iXyvdTfYgeLMG6wGBsHP8E5A7il5AY5gUKge2J9hAX4o%3D&amp;data=3D05%7C01%7Cegwein=
+berg%40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976=
+cb08441cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi=
+MC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&=
+amp;sdata=3DS%2FopIVwdzvIyRFXJzCMkzqECLiPx9W%2BrApLLRaiIQG0%3D&amp;reserved=
+=3D0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJ5OWs=
+LSbOaGKZSnefpn2TbpiXyvdTfYgeLMG6wGBsHP8E5A7il5AY5gUKge2J9hAX4o=3D" shash=3D=
+"FTTIxyGs/mavc+3IoLLXiQNKLR1v4f2vb0VHCiigKcW26h7XcDiN+rLMvjjFi67kbg+fIVJl/o=
+qBzTLBo/uLhmLMh+6u6k0EZuH8oOGiOxGaakSetk0aAnTXQcPP0rnJbFd7cIA3WWbQUpixzyWac=
+7aHXpLnNb4Iw32Jao3/lzE=3D" style=3D"text-decoration: none;color: white;">As=
+k Community</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                                          </td>
+                                                          <td valign=3D"top=
+" width=3D"172" style=3D"width:172px;">
+                                                          <![endif]-->
+<table role=3D"presentation" width=3D"172" align=3D"left" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" class=3D"tableCollapse w25" style=3D"width:=
+172px;padding-bottom: 20px;">
+<tbody>
+<tr>
+<td class=3D"outlook-font" style=3D"padding-bottom:0px;padding-left:0px; pa=
+dding-right:0px; font-family:'Open Sans', sans-serif; font-size:18px; line-=
+height:24px; color:#00838F; text-align:left; font-weight:600;width:45px;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJwbNJ1rAA8mw-85jsA93vpqFoIRI=
+oOMAOqQX25lDpZTbdFVPl5vuttWSRRo9ZxFCSqw%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3D%2BfCBcA%2FByIA97zsyRSjmPCSRq0KZO7OTAQF8XaJgv6Y%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJwbNJ1rAA8=
+mw-85jsA93vpqFoIRIoOMAOqQX25lDpZTbdFVPl5vuttWSRRo9ZxFCSqw=3D" shash=3D"fonE=
+5VknTacu7c1yLiAj5dgJPFmk0zqDa60doDr1hCih2i5BGlNsQiSRQ/jp573jQEthk4bgRKLJ5yj=
+FZndiaezy4XcRAG4gloh6YS3mO5i5rcGqsLXnwOLvOXdlI1lswCOprD2dNaKlbAwQhxF6gqtnLI=
+ZbWgf56OnqB0egs/4=3D" style=3D"text-decoration:none;"><img src=3D"https://t=
+ry.newrelic.com/rs/341-XKP-310/images/hexIcon-Support.png" style=3D"height:=
+45px;width:45px"></a>
+</td>
+<td style=3D"font-family:'Open Sans', sans-serif; font-size:14px; line-heig=
+ht:24px; color:#00838F; text-align:left; font-weight:600; padding-left: 10p=
+x;">
+<div><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlJwbNJ1rAA8mw-85jsA93vpq=
+FoIRIoOMAOqQX25lDpZTbdFVPl5vuttWSRRo9ZxFCSqw%3D&amp;data=3D05%7C01%7Cegwein=
+berg%40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976=
+cb08441cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi=
+MC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&=
+amp;sdata=3D%2BfCBcA%2FByIA97zsyRSjmPCSRq0KZO7OTAQF8XaJgv6Y%3D&amp;reserved=
+=3D0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJwbNJ=
+1rAA8mw-85jsA93vpqFoIRIoOMAOqQX25lDpZTbdFVPl5vuttWSRRo9ZxFCSqw=3D" shash=3D=
+"fonE5VknTacu7c1yLiAj5dgJPFmk0zqDa60doDr1hCih2i5BGlNsQiSRQ/jp573jQEthk4bgRK=
+LJ5yjFZndiaezy4XcRAG4gloh6YS3mO5i5rcGqsLXnwOLvOXdlI1lswCOprD2dNaKlbAwQhxF6g=
+qtnLIZbWgf56OnqB0egs/4=3D" style=3D"text-decoration: none;color: white;">As=
+k Support</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                                          </td>
+                                                          <td valign=3D"top=
+" width=3D"172" style=3D"width:172px;">
+                                                          <![endif]-->
+<table role=3D"presentation" width=3D"172" align=3D"left" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" class=3D"tableCollapse w25" style=3D"width:=
+172px;padding-bottom: 20px;">
+<tbody>
+<tr>
+<td class=3D"outlook-font" style=3D"padding-bottom:0px;padding-left:0px; pa=
+dding-right:0px; font-family:'Open Sans', sans-serif; font-size:18px; line-=
+height:24px; color:#00838F; text-align:left; font-weight:600; width:45px;">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKA_dHpZDjcBqUjWCf0DvzYEuo5Mh=
+Z9XOADtvc2imIMWbp-LqYEr9kNHLwDwIuE-XXTY%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3Dvu7Z%2FtbySBjV7gL82c19LJIGoRG5wKszjNfm1G88sgM%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKA_dHpZDjcBq=
+UjWCf0DvzYEuo5MhZ9XOADtvc2imIMWbp-LqYEr9kNHLwDwIuE-XXTY=3D" shash=3D"LRlJQ+=
+4rVFXfRony5Om5q3HxWt0PaluHgyBGA7EkEP9ULYi0MG20OTK6opW9qhXxdYAOph4CH18dbdovS=
+O8PwVq9FDPFAqoPgczQCEgLUmhYQIEob+i4H+ehsT0hMaGCqqcfbmxObunIOhEqA/TZwNTnAOMA=
+QuGIwfmovVp/8bw=3D" style=3D"text-decoration:none;"><img src=3D"https://try=
+.newrelic.com/rs/341-XKP-310/images/hexIcon-Sales.png" style=3D"height:45px=
+;width:45px"></a>
+</td>
+<td style=3D"font-family:'Open Sans', sans-serif; font-size:14px; line-heig=
+ht:24px; color:#00838F; text-align:left; font-weight:600; padding-left: 10p=
+x;">
+<div><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKA_dHpZDjcBqUjWCf0DvzYE=
+uo5MhZ9XOADtvc2imIMWbp-LqYEr9kNHLwDwIuE-XXTY%3D&amp;data=3D05%7C01%7Cegwein=
+berg%40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976=
+cb08441cc9b0b%7C0%7C0%7C638327278244240067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi=
+MC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&=
+amp;sdata=3Dvu7Z%2FtbySBjV7gL82c19LJIGoRG5wKszjNfm1G88sgM%3D&amp;reserved=
+=3D0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKA_dH=
+pZDjcBqUjWCf0DvzYEuo5MhZ9XOADtvc2imIMWbp-LqYEr9kNHLwDwIuE-XXTY=3D" shash=3D=
+"LRlJQ+4rVFXfRony5Om5q3HxWt0PaluHgyBGA7EkEP9ULYi0MG20OTK6opW9qhXxdYAOph4CH1=
+8dbdovSO8PwVq9FDPFAqoPgczQCEgLUmhYQIEob+i4H+ehsT0hMaGCqqcfbmxObunIOhEqA/TZw=
+NTnAOMAQuGIwfmovVp/8bw=3D" style=3D"text-decoration: none;color: white;">Co=
+ntact Sales</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                                          </td>
+                                                          </tr>
+                                                          </table>
+                                                          <![endif]--></td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" width=3D"100%" align=3D"center" style=3D"margi=
+n:0px auto; width:100%!important; min-width:100%!important;">
+<tbody>
+<tr>
+<td class=3D"outlook-font mktEditable w25" id=3D"ContactText666ac47b-aaa0-4=
+9e3-83c4-256d4e864dfa" style=3D"padding-top:0px; padding-bottom:0px; paddin=
+g-left:40px; padding-right:40px; font-family:'Open Sans', sans-serif; font-=
+size:14px; line-height:22px; color:white; text-align:left; font-weight:400;=
+">
+<div>This email is sent from an account used for sending messages only. Ple=
+ase do not reply to this email to contact us=E2=80=94we will not get your r=
+esponse.
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table role=3D"presentation" bgcolor=3D"#000000" width=3D"100%" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mktoModule =
+tableCollapse" id=3D"SnippetFooter" style=3D"background-color:#000000; marg=
+in:0px auto; width:100%!important; min-width:100%!important;">
+<tbody>
+<tr>
+<td style=3D"padding-bottom:35px;">
+<table role=3D"presentation" width=3D"600" align=3D"left" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" class=3D"tableCollapse" style=3D"width:600p=
+x;">
+<tbody>
+<tr>
+<td class=3D"outlook-font w25 padTop25" id=3D"SnippetFooterLink" mktoname=
+=3D"Footer Copyright &amp; Links" style=3D"padding-top:15px; padding-bottom=
+:20px; padding-left:40px; padding-right:40px; font-family:'Open Sans', sans=
+-serif; font-size:12px; line-height:16px; color:#AAAFB2; text-align:left; f=
+ont-weight:400;">
+<div class=3D"mktoSnippet" id=3D"unsubscribeFooter">
+<p><span style=3D"color: #e3e3e3;"><a href=3D"https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Fget.newrelic.com%2Fv%2FMzQxLVhLUC0zM=
+TAAAAGOw9wlJ-7YbjStVL7y3Y-nua8mCZNuHp02X9A54rQ5IrI2K8eKJnTxDFdTt4VwpubwVDNN=
+0qA%3D&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C6c75c60a08834278285a=
+08dbcb470c62%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C63832727824424006=
+7%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1ha=
+WwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D1fzoqdKHqrG665cruSbM4mlPFM4de=
+K708rCIO%2B5ZyhQ%3D&amp;reserved=3D0" originalsrc=3D"https://get.newrelic.c=
+om/v/MzQxLVhLUC0zMTAAAAGOw9wlJ-7YbjStVL7y3Y-nua8mCZNuHp02X9A54rQ5IrI2K8eKJn=
+TxDFdTt4VwpubwVDNN0qA=3D" shash=3D"xZ1UVxnS7pwelNwdRGxyxUs8RU8IOC4PFd92U19a=
+nQKLC9ggA0wh5XVAaQmW6/knsSyebEQJ/ckEzfnuLZhwJyRr4qzrh0r1uP4EUFhz/BGXcOkEiUl=
+OXUknhcaSEC/GtQYBj3ynrARYI3j6QYCXFdFZGiyWl4bOmfvXkoDecHM=3D" target=3D"_bla=
+nk" style=3D"color: #e3e3e3; text-decoration: underline;">View in browser</=
+a>
+</span><br>
+<br>
+<span style=3D"color: #e3e3e3;">This email was sent to egweinberg@viterbo.e=
+du&nbsp;</span><span style=3D"color: #e3e3e3;"><a href=3D"https://nam02.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ftry.newrelic.com%2FUnsub=
+scribePage.html%3Fmkt_unsubscribe%3D1%26mkt_tok%3DMzQxLVhLUC0zMTAAAAGOw9wlK=
+LQs1S9mpJQPcbOY8OaSGKCMJ9zXsc-FdmABzx-pyiMJkenRTodznE6zpmNxYy6kMeftcqT6EukO=
+NwAezWttu9CGo7eQg9V9vVVCA6vosHM&amp;data=3D05%7C01%7Cegweinberg%40viterbo.e=
+du%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb08441cc9b0b%7C=
+0%7C0%7C638327278244396279%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQ=
+IjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DOcKC=
+Qyl9Sc4C313hf27YR3il8tJZ%2FYlh7udP5vJtByo%3D&amp;reserved=3D0" originalsrc=
+=3D"https://try.newrelic.com/UnsubscribePage.html?mkt_unsubscribe=3D1&amp;m=
+kt_tok=3DMzQxLVhLUC0zMTAAAAGOw9wlKLQs1S9mpJQPcbOY8OaSGKCMJ9zXsc-FdmABzx-pyi=
+MJkenRTodznE6zpmNxYy6kMeftcqT6EukONwAezWttu9CGo7eQg9V9vVVCA6vosHM" shash=3D=
+"RP7e/xSq49svN3/MdkVtnZiEcUYagMmaeqQmUAChPSGCwkrR6oh2XGbsh4XhVSshn+HvX1yTSo=
+/ISVggyh1668z/+UitY5lm/hpprXPcI0GRzFLrw/imMvpUJCcXsTgl+sLxMyfq2ZKr6CHVtIuZK=
+k4PstFhr6ZyHL5RYMtz0QY=3D" target=3D"_blank" style=3D"color: #e3e3e3;">Upda=
+te
+ your email preferences.</a></span></p>
+<p><span style=3D"color: #e3e3e3;">For information about our privacy practi=
+ces, see our
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKLBQZvHtTDk9NIteCzxNBSOf7Hyf=
+CUApaUbiAhdAc7yrx6aqgBTg4qQtN9oxwKsLt2Y%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244396279%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3Dw1H3UYcrogYsJN24dzgHKjswklwl4AE%2FbxJKSVC81Es%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKLBQZvHtTDk9=
+NIteCzxNBSOf7HyfCUApaUbiAhdAc7yrx6aqgBTg4qQtN9oxwKsLt2Y=3D" shash=3D"EO4hiF=
+6k1UeGG9OMytlDcfEeaAKtGKlYqrvTIknC/XTqgKeVsrjtoC12lJbDfJZHmfQ1KPN4AjRxiHarh=
+Uur102YiIdRSVNp2Dgp5Vs9uRUZKaf8UISxygUsAlaK0gKzRKVoAdbPqC8QDcHd3SUv5Dap+7LV=
+4kpqgIo7IpA/aow=3D" target=3D"_blank" id=3D"" style=3D"color: #e3e3e3;">
+Privacy Policy</a>.</span></p>
+<div style=3D"text-align: left;"><span style=3D"color: #e3e3e3;">Need to co=
+ntact New Relic? You can chat or call us at 888-643-8776.
+</span><br>
+<span style=3D"color: #e3e3e3;">New Relic, Inc. 188 Spear St, San Francisco=
+, CA 94105.
+</span><br>
+<br>
+<span style=3D"color: #ffffff;"><span style=3D"color: #e3e3e3;">=C2=A9 2023=
+ New Relic, Inc. All rights reserved. New Relic logo are trademarks of New =
+Relic, Inc</span>.</span>
+</div>
+<p><span style=3D"color: #999999; font-size: 10px;"><a href=3D"https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fget.newrelic.com%2F=
+MzQxLVhLUC0zMTAAAAGOw9wlJx4gWMz6LobvlicQUHJ-OH4b4cvWGvpX1aheTILESRkDP7ZbDBt=
+rGPbszyk8qQ_ZPao%3D&amp;data=3D05%7C01%7Cegweinberg%40viterbo.edu%7C6c75c60=
+a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb08441cc9b0b%7C0%7C0%7C6383=
+27278244396279%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIi=
+LCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DxfdrR%2BMuqUKnbe=
+iE9029gpZg1pT8O%2Bn0taJu8aQ1MJ4%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlJx4gWMz6LobvlicQUHJ-OH4b4cvWGvpX1=
+aheTILESRkDP7ZbDBtrGPbszyk8qQ_ZPao=3D" shash=3D"mrNffOWEhtqonLPKY9f5y5AftFh=
+cP2BuA2f2JrNg2YeTG/GHgz4QLshjCOXrLMQuWYd6QeMaVwb3cPoz4TciKS3s2syPLvRX7Dk6Ac=
+iP2gl2zWj3IHoxlQuGwW8p9TPUH3TX4nlKMUMGl0jSbl72FAogkCsw83P1cN3JZ3UV9Ok=3D" t=
+arget=3D"_blank" style=3D"color: #999999; text-decoration: none;">Global un=
+subscribe</a>&nbsp;page.</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fget.newrelic.com%2FMzQxLVhLUC0zMTAAAAGOw9wlKO-Ufu-KF6E_eePlcaVXQ0xZ4C3K=
+x-IsfA8eUc0mHqpTc0lehlMyB_gnTIF1Qsy-XeE%3D&amp;data=3D05%7C01%7Cegweinberg%=
+40viterbo.edu%7C6c75c60a08834278285a08dbcb470c62%7C6b9fc982e8d74958976cb084=
+41cc9b0b%7C0%7C0%7C638327278244396279%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;s=
+data=3DQqyu4QKy8iemyYY%2Fypst%2B8CByRKM50DA5j6U%2Bldjbr8%3D&amp;reserved=3D=
+0" originalsrc=3D"https://get.newrelic.com/MzQxLVhLUC0zMTAAAAGOw9wlKO-Ufu-K=
+F6E_eePlcaVXQ0xZ4C3Kx-IsfA8eUc0mHqpTc0lehlMyB_gnTIF1Qsy-XeE=3D" shash=3D"pi=
+NjHpsE0uZGJE+u7q9vUOgG5u7S/SGL+TzeruMxeuRPSTvA1dItIDB2C6hz84UdXPt6AdWkjV+l2=
+Z4rcyuYhCyhFMfopMnrKIW8k1g32Xmp2OcAws5EvHm7wE0EV88qYZuJd9vjnudobZkHWuwUhc4B=
+kCtT5evbAFtNAaM4ZL8=3D"></a><img src=3D"https://get.newrelic.com/trk?t=3D1&=
+amp;mid=3DMzQxLVhLUC0zMTAAAAGOw9wlKHvrVtDPGfPCTtsvPrm_xxjzofmw-dpDa69_OiISP=
+cgQSVX4L9ocwudUVxdQ2SjPEMAle11W3Ux4z_lmsYAsgpzvTZjRqxH5BCStek28yK71okRql7yh=
+JvPY-trpe1-gUo_BX5Dhzy15ipDqtMs" width=3D"1" height=3D"1" style=3D"display:=
+none !important;" alt=3D"">
+</div>
+</body>
+</html>
+
+------=_Part_54352542_135363259.1697130968367--
